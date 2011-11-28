@@ -5,6 +5,7 @@
 # Version 5 of this schema. Tables defined Search for /table/ jaa 2011/08/31
 # Version 6 of this schema. added new USFM/style markers search for /!!/ jaa 2011/09/14
 # Version 7 of this schema. corrected errors in comments above. No change to the schema itself. jaa 2001/11/04
+# Version 8 of this schema. Commented out USXV. Removed class attribute.
 # To Be Done:
 # 
 #     * Make a separate kind of Table paragraph and restrict table cell Char's to only occur there
@@ -15,13 +16,12 @@ namespace a = "http://relaxng.org/ns/compatibility/annotations/1.0"
 namespace xsi = "http://www.w3.org/2001/XMLSchema-instance"
 
 
-## our test data has this. Ignore. 
-start = USX | USXV
+# Removed USXV for now. See end of document for removed code
+start = USX
 USX =
     element usx {
         attribute xsi:noNamespaceSchemaLocation { text }?,
         
-        ## our test data has this. Ignore. 
         Book,
         HeaderPara*,
         TitlePara+,
@@ -30,33 +30,10 @@ USX =
         # Chapter is used to separate intro from scripture text. All books will have chapter including the single chapter books: OBA, PHM, 2JN, 3JN, JUD
         (Chapter | Para | Table | Footnote | CrossReference)*
     }
-USXV =
-    element usxv {
-        attribute xsi:noNamespaceSchemaLocation { text }?,
-        
-        ## our test data has this. Ignore. 
-        BookForVerseStyle+
-    }
-BookForVerseStyle =
-    element book {
-        BookIdAttr,
-        # e.g. id="GEN"
-        attribute style { "id" },
-        text?,
-        # Brief description of project
-        Heading?,
-        Title,
-        Intro?,
-        Body
-    }
-Heading = element heading { HeaderPara+ }
-Title = element title { TitlePara+ }
-Intro = element intro { IntroPara* }
-Body = element body { ChapterForVerseStyle+ }
 Book =
     element book {
         (BookIdAttr,
-         # e.g. id="GEN"
+         # e.g. code="GEN"
          attribute style { "id" },
          text?)
         # Brief description of project
@@ -64,13 +41,6 @@ Book =
     }
 HeaderPara =
     element para {
-        attribute class {
-            ("Table_Of_Contents1"
-             | # "toc1"
-               "Running_Header")
-            # "h"
-            
-        }?,
         attribute style {
             ("ide"
              | # File encoding information
@@ -96,17 +66,6 @@ HeaderPara =
     }
 TitlePara =
     element para {
-        attribute class {
-            ("Main_Title"
-             | # "mt1"
-               "Secondary_Title"
-             | # "mt2"
-               "Tertiary_Title"
-             | # "mt3"
-               "Sub_Title")
-            # "st"      
-            
-        }?,
         attribute style {
             ("mt"
              | # The main title of the book (if single level)
@@ -199,90 +158,7 @@ IntroPara =
         },
         (Footnote | Char | IntroChar | Figure | Table | text)*
     }
-paraClassAndStyle =
-    attribute class {
-        "Attribution"
-        | # !! "qr_attribution"
-          "Citation_Line1"
-        | #  !! cl1				MRK 1.1-4 (NET)
-          "Citation_Line2"
-        | #  !! cl2				MRK 1.1-4 (NET)
-          "Doxology"
-        | # "qc"
-          "Embedded_Text_Closing"
-        | # "pmc"
-          "Embedded_Text_Opening"
-        | # "pmo"
-          "Embedded_Text_Paragraph"
-        | # "pm"
-          "Embedded_Text_Refrain"
-        | # "pmr"
-          "Hebrew_Title"
-        | # "d"
-          "Inscription_Paragraph"
-        | # "pc"
-          "Letter_Closing_Paragraph"
-        | # !! "p_letter_closing"
-          "Letter_Opening_Paragraph"
-        | # !! "p_letter_opening"
-          "Line1"
-        | # "q1"
-          "Line2"
-        | # "q2"
-          "Line3"
-        | # "q3"
-          "List_Item1"
-        | # "ph1"
-          "List_Item1_Additional"
-        | # "pi1"
-          "List_Item2"
-        | # "ph2"
-          "List_Item3"
-        | # "ph3"
-          "Paragraph chapter"
-        | # !! "p"      added info saying that the paragraph is also the first paragraph containing the chapter numberr
-          "Paragraph"
-        | # "p"
-          "Paragraph_Conclusion"
-        | #  !! p_conclusion			e.g., EZK 7:27f; 23:34d; 24:14		Biblica; pConclusion  A paragraph containing a summary (or conclusion) statement related to the preceding text. Usually rendered with line space preceding and following. pm
-          "Paragraph_Continuation"
-        | # "m"
-          "Paragraph_Introduction"
-        | #  !! p_introduction		e.g., GEN 5:1, 6:9; JER 48:1a; 49:1a	Biblica: pIntroduction  An introduction statement (paragraph) related to the following text. Usually rendered with a line space preceding and following. pm
-          "Paragraph_Variant"
-        | # !! p_variant			e.g., JHN 8; MRK 16			often in italic
-          "Parallel_Passage"
-        | # "r"
-          "Refrain"
-        | # !! "qr_refrain"
-          "Section_Head"
-        | # "s1"
-          "Section_Head_Major"
-        | # "ms"
-          "Section_Head_Minor"
-        | # "s2"
-          "Section_Head_Range"
-        | # "mr"
-          "Section_Head_Series"
-        | # "qa"
-          "Section_Head_Variant"
-        | #  !! s_variant			e.g., JHN 8; MRK 16			sometimes a line above and italic
-          "Section_Tail_Variant"
-        | #  !! s_variant_tail			e.g., JHN 8				formatted with line
-          "Selah"
-        | # !! "qr_selah"
-          "Set_Apart_Paragraph"
-        | # !! "sap"
-          "Set_Apart_Paragraph_Conclusion"
-        | # !! "sap_conclusion"
-          "Set_Apart_Paragraph_Continuation"
-        | # !! "sap_continuation"
-          "Set_Apart_Paragraph_Introduction"
-        | # !! "sap_introduction"
-          "Speech_Speaker"
-        | # "sp"
-          "Stanza_Break"
-    }?,
+paraStyle =
     attribute style {
         ("restore"
          | # Comment about when text was restored
@@ -456,13 +332,6 @@ Reference =
     }
 Table =
     element para {
-        attribute class {
-            ("Table_Row"
-             | # "tr"  Table row
-               "Remark")
-            # remark
-            
-        }?,
         attribute style {
             ("tr"
              | # Table row
@@ -474,43 +343,6 @@ Table =
     }
 TableContent =
     element char {
-        attribute class {
-            (
-             ## These ought to only be allowed in <para style="tr">
-             "Table_Heading1"
-             | # "th1"   A table heading, column 1
-               "Table_Cell1"
-             | # "tc1"  A table cell item, column 1
-               "Table_Heading1_Right"
-             | # "thr1"  A table heading, column 1, right aligned
-               "Table_Cell1_Right"
-             | # tcr1" A table cell item, column 1, right aligned
-               "Table_Heading2"
-             | # "th2"   A table heading, column 2
-               "Table_Cell2"
-             | # "tc2"  A table cell item, column 2
-               "Table_Heading2_Right"
-             | # "thr2"  A table heading, column 2, right aligned
-               "Table_Cell2_Right"
-             | # tcr2" A table cell item, column 2, right aligned
-               "Table_Heading3"
-             | # "th3"   A table heading, column 3
-               "Table_Cell3"
-             | # "tc3"  A table cell item, column 3
-               "Table_Heading3_Right"
-             | # "thr3"  A table heading, column 3, right aligned
-               "Table_Cell3_Right"
-             | # tcr3" A table cell item, column 3, right aligned
-               "Table_Heading4"
-             | # "th4"   A table heading, column 4
-               "Table_Cell4"
-             | # "tc4"  A table cell item, column 4
-               "Table_Heading4_Right"
-             | # "thr4"  A table heading, column 4, right aligned
-               "Table_Cell4_Right")
-            # tcr4" A table cell item, column 4, right aligned
-            
-        }?,
         attribute style {
             (
              ## These ought to only be allowed in <para style="tr">
@@ -556,37 +388,10 @@ TableContent =
     }
 Para =
     element para {
-        paraClassAndStyle, (Reference | Footnote | CrossReference | Char | Figure | Verse | text)*
-    }
-# !! I think following might be obsolete now jaa. See ParaStart and ParaEnd      
-ParaForVerseStyle =
-    element para {
-        attribute style {
-            ("no_break_verse_paragraph"
-             | # No break verse paragraph
-               "breaking_verse_paragraph")
-            # Breaking verse paragraph
-            
-        },
-        (Para | Footnote | CrossReference | Char | Figure | Verse | text)*
+        paraStyle, (Reference | Footnote | CrossReference | Char | Figure | Verse | text)*
     }
 Char =
     element char {
-        (attribute class {
-             ("Alternate_Reading"
-              | # "fqa"
-                "Inscription"
-              | # "sc"
-                "Foreign_Word"
-              | # "tl"
-                "Name_Of_God"
-              | # "nd"
-                "Verse_Number_In_Note"
-              | # "fv"
-                "Words_Of_Jesus")
-             # "wj"
-             
-         }?,
          attribute style {
              ("va"
               | # Second (alternate) verse number (for coding dual numeration in Psalms; see also NRSV Exo 22.1-4)
@@ -661,7 +466,7 @@ Char =
          attribute closed { 'true' | 'false' }?,
          # Present to allow roundtripping to USFM, not needed for publishing
          text?,
-         (Reference | Char | Footnote | text)*)
+         (Reference | Char | Footnote | text)*
         # foreign word inside of words of Jesus
         #
         
@@ -682,74 +487,24 @@ IntroChar =
 Chapter =
     element chapter {
         # Start of new chapter
-        attribute usxid { text }?,
-        attribute class { "Chapter_Number" }?,
         attribute style { "c" },
         attribute number { xsd:integer },
         empty
     }
 Verse =
     element verse {
-        attribute usxid { text }?,
-        attribute class {
-            ("Verse_Number" | "Verse_Number verse_one")?
-            # "v"     added info saying that the verse contains verse one  could be  1  or  1,2   or 1-3
-            
-        }?,
         attribute style { "v" },
         attribute number { text },
         empty
     }
-ChapterForVerseStyle =
-    element c {
-        # Start of new chapter
-        attribute usxid { text },
-        attribute book { EnnumeratedBookNames },
-        attribute chapter { xsd:integer },
-        attribute number { xsd:integer },
-        VerseForVerseStyle+
-    }
-VerseForVerseStyle =
-    element v {
-        attribute usxid { text },
-        attribute book { EnnumeratedBookNames },
-        attribute chapter { xsd:integer },
-        attribute verse { text },
-        attribute verseStart { xsd:integer }?,
-        attribute verseEnd { xsd:integer }?,
-        attribute number { text },
-        # ParaForVerseStyle ,
-        (ParaStart
-         | ParaEnd
-         | Para
-         | Footnote
-         | CrossReference
-         | Char
-         | Figure
-         | Chapter
-         | Verse
-         | text)*
-    }
 Footnote =
     element note {
-        attribute class { "Note_General" }?,
         attribute style { "f" | "fe" },
         attribute caller { text },
         (FootnoteChar | Char | text )+
     }
 FootnoteChar =
     element char {
-        attribute class {
-            ("Alternate_Reading"
-             | # "fqa"
-               "Footnote_Text"
-             | # ft
-               "Abbreviation"
-             | # sc
-               "Verse_Number_In_Note")
-            # "fv"
-            
-        }?,
         attribute style {
             ("fr"
              | # The origin reference for the footnote
@@ -773,7 +528,6 @@ FootnoteChar =
             # Footnote text, applies to Deuterocanon only
             
         },
-        attribute usxid { text? }?,
        attribute closed { 'true' | 'false' }?,
           # Present to allow roundtripping to USFM, not needed for publishing
         text?
@@ -1061,13 +815,77 @@ EnnumeratedBookNames =
 
 )
     
-ParaStart =
-    element paraStart {
-        # ForVerseStyle   milestone
-        paraClassAndStyle
-    }
-ParaEnd =
-    element paraEnd {
-        # ForVerseStyle   milestone
-        paraClassAndStyle
-    }
+#start = USX | USXV
+#USXV =
+#    element usxv {
+#        attribute xsi:noNamespaceSchemaLocation { text }?,
+#        
+#        ## our test data has this. Ignore. 
+#        BookForVerseStyle+
+#    }
+#BookForVerseStyle =
+#    element book {
+#        BookIdAttr,
+#        # e.g. id="GEN"
+#        attribute style { "id" },
+#        text?,
+#        # Brief description of project
+#        Heading?,
+#        Title,
+#        Intro?,
+#        Body
+#    }
+#Heading = element heading { HeaderPara+ }
+#Title = element title { TitlePara+ }
+#Intro = element intro { IntroPara* }
+#Body = element body { ChapterForVerseStyle+ }
+
+# !! I think following might be obsolete now jaa. See ParaStart and ParaEnd      
+#ParaForVerseStyle =
+#    element para {
+#        attribute style {
+#            ("no_break_verse_paragraph"
+#             | # No break verse paragraph
+#               "breaking_verse_paragraph")
+#            # Breaking verse paragraph
+#            
+#        },
+#        (Para | Footnote | CrossReference | Char | Figure | Verse | text)*
+#    }
+#ChapterForVerseStyle =
+#    element c {
+#        # Start of new chapter
+#        attribute book { EnnumeratedBookNames },
+#        attribute chapter { xsd:integer },
+#        attribute number { xsd:integer },
+#        VerseForVerseStyle+
+#    }
+#VerseForVerseStyle =
+#    element v {
+#        attribute book { EnnumeratedBookNames },
+#        attribute chapter { xsd:integer },
+#        attribute verse { text },
+#        attribute verseStart { xsd:integer }?,
+#        attribute verseEnd { xsd:integer }?,
+#        attribute number { text },
+#        (ParaStart
+#         | ParaEnd
+#         | Para
+#         | Footnote
+#         | CrossReference
+#         | Char
+#         | Figure
+#         | Chapter
+#         | Verse
+#         | text)*
+#    }
+#ParaStart =
+#    element paraStart {
+#        # ForVerseStyle   milestone
+#        paraStyle
+#    }
+#ParaEnd =
+#    element paraEnd {
+#        # ForVerseStyle   milestone
+#        paraStyle
+#    }
