@@ -466,7 +466,7 @@ Char =
          attribute closed { 'true' | 'false' }?,
          # Present to allow roundtripping to USFM, not needed for publishing
          text?,
-         (Reference | Char | Footnote | text)*
+         (Reference | Char | Footnote | text)*)
         # foreign word inside of words of Jesus
         #
         
