@@ -209,7 +209,7 @@ start =
         element allowCrossReferences { "Yes" | "No" | "" },
 		# default to No? 
         element allowNewPublishers { "Yes" | "No" | "" },
-        element denyPlatforms { platform* },
+        element denyPlatforms { empty },
         element exchangeLicenseFCBH { licenseType | "No" | "Yes" } # REMOVE THIS YES once decision made
       }
     },
@@ -258,7 +258,6 @@ start =
 nameLocal = element nameLocal { text }
 abbreviation = element abbreviation { text }
 abbreviationLocal = element abbreviationLocal { text }
-platform = element platform { "facebook" | "twitter" }  # TODO remove if decision is made to remove platforms
 htmlMarkup = (text
          | element p { (text | htmlCharMarkup)+ }
          | element h1 { text }
