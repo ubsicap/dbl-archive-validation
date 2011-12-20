@@ -94,11 +94,11 @@ start =
     element translation { 
       element type { 
         attribute dcds:propertyURI { "type/translationType" }, 
-        ("First" | "New" | "Revision" | "") 
+        ("First" | "New" | "Revision") ?
         }, 
       element level {
         attribute dcds:propertyURI { "audience" }, 
-        ( "Basic" | "Common" | "Common - Literary" | "Literary" | "Liturgical" | "")
+        ( "Basic" | "Common" | "Common - Literary" | "Literary" | "Liturgical")?
         }},
     # bookNames/book is overwritten by Paratext
     element bookNames { 
@@ -188,13 +188,13 @@ start =
       element dateLicense {
         attribute dcds:propertyURI { "accessRights/pubLicenseDate" },
         attribute dcds:sesURI { "http://purl.org/dc/terms/W3CDTF" },
-        (xsd:date)?
+        xsd:date?
       },
 	  # yyyy-mm-dd (must be after dateLicense) 
       element dateLicenseExpiry {
         attribute dcds:propertyURI { "accessRights/pubLicenseExpiryDate" },
         attribute dcds:sesURI { "http://purl.org/dc/terms/W3CDTF" },
-        (xsd:date)?
+        xsd:date?
       },
 	  # For example: ©1983, 1992 SIL International 
       element rightsStatement {
@@ -208,7 +208,7 @@ start =
         element allowFootnotes { "Yes" | "No" | "" },
         element allowCrossReferences { "Yes" | "No" | "" },
 		# default to No? 
-        element allowNewPublishers { "Yes" | "No" | ""},
+        element allowNewPublishers { "Yes" | "No" | "" },
         element denyPlatforms { platform* },
         element exchangeLicenseFCBH { licenseType | "No" | "Yes" } # REMOVE THIS YES once decision made
       }
@@ -396,7 +396,7 @@ bookCode = ("GEN"   # Genesis
          | "GLO" # Glossary 
          | "TDX" # Topical Index 
          | "NDX") # Names Index 
-licenseType = ("BY" # Attributaion only
+licenseType = ("BY" # Attribution only
          | "BY-ND"       #  Attribution-NoDerivatives
          | "BY-NC-ND" # Attribution-NonCommercial- NoDerivatives 
          | "BY-NC"       # Attribution-NonCommercial 
