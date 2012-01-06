@@ -14,7 +14,7 @@
 
 namespace a = "http://relaxng.org/ns/compatibility/annotations/1.0"
 namespace xsi = "http://www.w3.org/2001/XMLSchema-instance"
-
+datatypes xsd = "http://www.w3.org/2001/XMLSchema-datatypes"
 
 # Removed USXV for now. See end of document for removed code
 start = USX
