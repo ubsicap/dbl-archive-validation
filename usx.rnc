@@ -1,13 +1,22 @@
 # This is a compact syntax Relax NG Schema for USX (extension .rnc).
-# Version 2 of this schema. It includes ordering restrictions. nm
-# Version 3 of this schema. It includes usxv styles. Search for /ForVerseStyle/ jaa 2011/08/10
-# Version 4 of this schema. It includes class attribute to handle exceptions for Biblica. Search for /class/ jaa 2011/08/27
-# Version 5 of this schema. Tables defined Search for /table/ jaa 2011/08/31
-# Version 6 of this schema. added new USFM/style markers search for /!!/ jaa 2011/09/14
-# Version 7 of this schema. corrected errors in comments above. No change to the schema itself. jaa 2001/11/04
-# Version 8 of this schema. Commented out USXV. Removed class attribute.
+# == DBL bundle 1.1
+# Version 2: Includes ordering restrictions. nm
+# Version 3: Includes usxv styles. Search for /ForVerseStyle/ jaa 2011/08/10
+# Version 4: Includes class attribute to handle exceptions for Biblica. Search for /class/ jaa 2011/08/27
+# Version 5: Tables defined Search for /table/ jaa 2011/08/31
+# Version 6: Added new USFM/style markers search for /!!/ jaa 2011/09/14
+# Version 7: Corrected errors in comments above. No change to the schema itself. jaa 2001/11/04
+# Version 8: Commented out USXV. Removed class attribute. (Must validate on current Paratext 7.3 output) cg
+# == DBL bundle 1.2
+# Version 9: Added TitleParaIntroEnd pattern. Some texts only have titles at end of intro, or repeat. jk
+#            - Added ChapterLabelBookWide to support para style="cl" before chapter 1 (book wide label).
+#            - Temporarily support alternate chapter number (<char style="ca">#</char>) immediately after <chapter>
+#                until export to USX delivers <chapter number="" alternate="" publishable="" style="c" />
+#            - Allow Footnotes in title paragraphs (TitlePara and TitleParaIntroEnd)
+#            - Allow notes and verse numbers within table cells
+#
 # To Be Done:
-# 
+#
 #     * Make a separate kind of Table paragraph and restrict table cell Char's to only occur there
 #
 #  think this is done now.
@@ -26,6 +35,8 @@ USX =
         HeaderPara*,
         TitlePara+,
         IntroPara*,
+        TitleParaIntroEnd*,
+        ChapterLabelBookWide?,
         Chapter,
         # Chapter is used to separate intro from scripture text. All books will have chapter including the single chapter books: OBA, PHM, 2JN, 3JN, JUD
         (Chapter | Para | Table | Footnote | CrossReference)*
@@ -37,7 +48,6 @@ Book =
          attribute style { "id" },
          text?)
         # Brief description of project
-        
     }
 HeaderPara =
     element para {
@@ -60,7 +70,6 @@ HeaderPara =
              | # Book Abbreviation
                "rem")
             # Remark
-            
         },
         text?
     }
@@ -77,11 +86,16 @@ TitlePara =
              | # !! A tertiary title occurring after the main title  was: A secondary title occurring after the main title
                "mt4"
              | # !! I have not seen a use case for this   was: A small secondary title sometimes occuring within parentheses
+               "imt"
+             | # Introduction major title, level 1 (if single level)
+               "imt1"
+             | # Introduction major title, level 1 (if multiple levels)
+               "imt2"
+             | # Introduction major title, level 2
                "rem")
             # Remark
-            
         },
-        text?
+        (Footnote | text)*
     }
 IntroPara =
     element para {
@@ -153,10 +167,31 @@ IntroPara =
                "imte2"
              | # Introduction major title at introduction end, level 2
                "rem")
-            # Remark
-            
+            # Remark 
         },
         (Footnote | Char | IntroChar | Figure | Table | text)*
+    }
+TitleParaIntroEnd =
+    element para {
+        attribute style {
+            ("mt"
+             | # The main title of the book (if single level)
+               "mt1"
+             | # The main title of the book (if multiple levels)
+               "mt2"
+             | # A secondary title usually occurring before the main title
+               "mt3"
+             | # !! A tertiary title occurring after the main title  was: A secondary title occurring after the main title
+               "mt4"
+             | # !! I have not seen a use case for this   was: A small secondary title sometimes occuring within parentheses
+               "imt"
+             | # Introduction major title, level 1 (if single level)
+               "imt1"
+             | # Introduction major title, level 1 (if multiple levels)
+               "imt2")
+               # Introduction major title, level 2
+        },
+        (Footnote | text)*
     }
 paraStyle =
     attribute style {
@@ -284,46 +319,8 @@ paraStyle =
          | # Concordance main entry text or keyword, level 1
            "k2"
          | # Concordance main entry text or keyword, level 2
-           "rem"
-         | # Remark
-           
-           # requested additions to styles
-           "psa"
-         | # !! Set_Apart_Paragraph			e.g., DEU 28:3-6; JOS 15:2-12a
-           "psa_conclusion"
-         | # !! Set_Apart_Paragraph_Conclusion	e.g., EXO 6:25b
-           "psa_continuation"
-         | #  !! Set_Apart_Paragraph_Continuation	e.g., NUM 7:13-17, 19-23, etc. JOS 13:2-5
-           "psa_introduction"
-         | # !! Set_Apart_Paragraph_Introduction	e.g., EXO 6:14
-           "p_letter_closing"
-         | #  !! Letter_Closing_Paragraph							Biblica: pClosing
-           "p_letter_opening"
-         | #  !! Letter_Opening_Paragraph		e.g., ROM 1:1-6, 7a, 7b			Biblica pOpening
-           "s_variant"
-         | #  !! Section_Head_Variant			e.g., JHN 8; MRK 16			sometimes a line above and italic
-           "s_variant_tail"
-         | #  !! Section_Tail_Variant			e.g., JHN 8				formatted with line
-           "p_variant"
-         | # !! Paragraph_Variant			e.g., JHN 8; MRK 16			often in italic
-           "p_introduction"
-         | #  !! Paragraph_Introduction		e.g., GEN 5:1, 6:9; JER 48:1a; 49:1a	Biblica: pIntroduction  An introduction statement (paragraph) related to the following text. Usually rendered with a line space preceding and following. pm
-           "p_conclusion"
-         | #  !! Paragraph_Conclusion			e.g., EZK 7:27f; 23:34d; 24:14		Biblica; pConclusion  A paragraph containing a summary (or conclusion) statement related to the preceding text. Usually rendered with line space preceding and following. pm
-           "qr_refrain"
-         | #  !! Refrain					e.g., PSA 136:1-3 (NIV); 		His love endures forever.
-           #   DEU 27:16-21 (NIV)		Then all the people shall say, â€œAmen!â€  In NIV this is Embedded_Text_Refrain
-           "qr_attribution"
-         | #  !! Attribution				e.g., ACT 7:49-50 (NIV) 			says the Lord (Acts 7:49, 1 Corinthians 14:21, 2 Corinthians 6:17, 18)
-           # declares the Lord (Hebrews 8:9, 2 Kings 19:33, Isaiah 14:22)
-           # More examples are found in Isaiah, Jeremiah, Ezekiel, Hosea, Amos, Obadiah, Zephaniah, and Zechariah.
-           "qr_selah"
-         | #  !! Selah					e.g., PSA and HAB only
-           "cl1"
-         | #  !! Citation Line1				MRK 1.1-4 (NET)
-           "cl2")
-        #  !! Citation Line2				MRK 1.1-4 (NET)
-        
+           "rem")
+           # Remark
     }
 Reference =
     element reference {
@@ -337,9 +334,8 @@ Table =
              | # Table row
                "rem")
             # remark
-            
         },
-        TableContent+
+        (Verse | TableContent)+
     }
 TableContent =
     element char {
@@ -380,10 +376,8 @@ TableContent =
              | # A table cell item, column 1, right aligned
                "rem")
             # Remark
-            
         },
         attribute closed { 'true' | 'false' }?,
-         
         (Footnote | CrossReference | Char | Figure | Verse | text)*
     }
 Para =
@@ -468,8 +462,6 @@ Char =
          text?,
          (Reference | Char | Footnote | text)*
         # foreign word inside of words of Jesus
-        #
-        
     }
 IntroChar =
     element char {
@@ -490,6 +482,17 @@ Chapter =
         attribute style { "c" },
         attribute number { xsd:integer },
         empty
+    },
+    element char {
+        # This is a temporary solution until USX stores chapters as <chapter number="" alternate="" publishable="" style="c"/>
+        attribute style { "ca" },
+        text
+    }?
+ChapterLabelBookWide =
+    element para {
+        # A chapter label specified once prior to chpater 1; text to be used for all chapter headings in the current book 
+        attribute style { "cl" },
+        text
     }
 Verse =
     element verse {
@@ -889,3 +892,22 @@ EnnumeratedBookNames =
 #        # ForVerseStyle   milestone
 #        paraStyle
 #    }
+
+# ==========
+# Known requested additions to para styles - jaa
+# psa - Set_Apart_Paragraph e.g. DEU 28:3-6; JOS 15:2-12a
+# psa_conclusion - Set_Apart_Paragraph_Conclusion e.g. EXO 6:25b
+# psa_continuation - Set_Apart_Paragraph_Continuation e.g. NUM 7:13-17, 19-23, etc. JOS 13:2-5
+# psa_introduction - Set_Apart_Paragraph_Introduction e.g. EXO 6:14
+# p_letter_closing - Letter_Closing_Paragraph; Biblica: pClosing
+# p_letter_opening - Letter_Opening_Paragraph e.g. ROM 1:1-6, 7a, 7b; Biblica pOpening
+# s_variant - Section_Head_Variant e.g. JHN 8; MRK 16 (sometimes a line above and italic)
+# s_variant_tail - Section_Tail_Variant e.g. JHN 8 (formatted with line)
+# p_variant - Paragraph_Variant e.g. JHN 8; MRK 16 (often in italic)
+# p_introduction - Paragraph_Introduction e.g. GEN 5:1, 6:9; JER 48:1a; 49:1a;	Biblica: pIntroduction; An introduction statement (paragraph) related to the following text. Usually rendered with a line space preceding and following. pm
+# p_conclusion - Paragraph_Conclusion e.g., EZK 7:27f; 23:34d; 24:14; Biblica; pConclusion; A paragraph containing a summary (or conclusion) statement related to the preceding text. Usually rendered with line space preceding and following. pm
+# qr_refrain - Refrain e.g. PSA 136:1-3 (NIV) - His love endures forever; DEU 27:16-21 (NIV) - Then all the people shall say, "Amen!" (In NIV this is Embedded_Text_Refrain)
+# qr_attribution - Attribution e.g. ACT 7:49-50 (NIV) - says the Lord (Acts 7:49, 1 Corinthians 14:21, 2 Corinthians 6:17, 18); declares the Lord (Hebrews 8:9, 2 Kings 19:33, Isaiah 14:22); More examples are found in Isaiah, Jeremiah, Ezekiel, Hosea, Amos, Obadiah, Zephaniah, and Zechariah.
+# qr_selah - Selah e.g. PSA and HAB only
+# cl1 - Citation Line1 e.g. MRK 1.1-4 (NET)
+# cl2 - Citation Line2 e.g. MRK 1.1-4 (NET)
