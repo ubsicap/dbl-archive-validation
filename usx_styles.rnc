@@ -27,9 +27,25 @@ USX_styles =
 
 property =
       element property {
-        attribute name { xsd:NCName },
+        attribute name { ( "color"
+        | "font-family"
+        | "font-size"
+        | "font-style"
+        | "font-weight"
+        | "margin-bottom"
+        | "margin-left"
+        | "margin-right"
+        | "margin-bottom"
+        | "margin-top"
+        | "text-align"
+        | "text-decoration"
+        | "text-indent"
+        | "vertical-align"
+        | "white-space") },
         # a CSS property name
-        attribute unit { text }?,
+        attribute unit { ( "%"
+        | "in"
+        | "pt") }?,
         # units to use for the property, if required
         text
         # the CSS property value
