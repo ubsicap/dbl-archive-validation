@@ -7,7 +7,6 @@
 # Version 6: Added new USFM/style markers search for /!!/ jaa 2011/09/14
 # Version 7: Corrected errors in comments above. No change to the schema itself. jaa 2001/11/04
 # Version 8: Commented out USXV. Removed class attribute. (Must validate on current Paratext 7.3 output) cg
-# == DBL bundle 1.2
 # Version 9: Added TitleParaIntroEnd pattern. Some texts only have titles at end of intro, or repeat. jk
 #            - Added ChapterLabelBookWide to support para style="cl" before chapter 1 (book wide label).
 #            - Temporarily support alternate chapter number (<char style="ca">#</char>) immediately after <chapter>
