@@ -1,0 +1,747 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DBLScriptureProject resourceURI="https://dbl.ubs-archives.org/entry/index?uid=eng-66f69e2e951292b7" xml:base="http://purl.org/ubs/metadata/dc/terms/" xmlns:dcds="http://purl.org/dc/xmlns/2008/09/01/dc-ds-xml/">
+  <identification>
+    <systemId type="dbl" dcds:propertyURI="identifier/dblID">eng-66f69e2e951292b7</systemId>
+    <name dcds:propertyURI="title">Good News Translation</name>
+    <nameLocal>Good News Translation</nameLocal>
+    <abbreviation>eng-GNT</abbreviation>
+    <abbreviationLocal>GNT</abbreviationLocal>
+    <scope dcds:propertyURI="title/scriptureScope">Bible with Deuterocanon</scope>
+    <description dcds:propertyURI="description">English Good News Translation Bible with Deuterocanon</description>
+    <dateCompleted dcds:propertyURI="date" dcds:sesURI="http://purl.org/dc/terms/W3CDTF">1992-10-01</dateCompleted>
+    <systemId type="tms" dcds:propertyURI="identifier/tmsID">401d0abc-018b-4036-81b7-13845ace8612</systemId>
+    <systemId type="reap" dcds:propertyURI="identifier/reapID"></systemId>
+    <systemId type="paratext" dcds:propertyURI="identifier/ptxID">66f69e2e951292b7d66582d3e2444332f641775b</systemId>
+    <isResource>Yes</isResource>
+    <bundleVersion>1.1</bundleVersion>
+    <bundleProducer>Paratext/7.3.0.36</bundleProducer>
+  </identification>
+  <confidential dcds:propertyURI="accessRights/confidential">No</confidential>
+  <agencies>
+    <etenPartner>UBS</etenPartner> <!-- Currently "UBS", "WBT", "Biblica" -->
+    <translation dcds:propertyURI="description/sponsorship">American Bible Society</translation>
+    <publishing dcds:propertyURI="publisher">American Bible Society</publishing>
+  </agencies>
+  <language>
+  	<iso dcds:propertyURI="language/iso" dcds:sesURI="http://purl.org/dc/terms/ISO639-3">eng</iso>
+    <name dcds:propertyURI="subject/subjectLanguage" dcds:sesURI="http://purl.org/dc/terms/ISO639-3">English</name>
+    <script dcds:propertyURI="language/script">Roman</script>
+    <scriptDirection dcds:propertyURI="language/scriptDirection">LTR</scriptDirection><!-- LTR (Left to Right) or RTL (Right to Left) -->
+  </language>
+  <country>
+  	<iso dcds:propertyURI="coverage/spatial" dcds:sesURI="http://purl.org/dc/terms/ISO3166">USA</iso>
+    <name dcds:propertyURI="subject/subjectCountry">United States</name>
+  </country>
+  <translation>
+    <type dcds:propertyURI="type/translationType">Revision</type>
+    <level dcds:propertyURI="audience">Common</level>
+  </translation>
+  <bookNames>
+    <book id="GEN">
+      <name type="long">GENESIS</name>
+      <name type="short">Genesis</name>
+      <name type="abbr">Gn</name>
+    </book>
+    <book id="EXO">
+      <name type="long">EXODUS</name>
+      <name type="short">Exodus</name>
+      <name type="abbr">Ex</name>
+    </book>
+    <book id="LEV">
+      <name type="long">LEVITICUS</name>
+      <name type="short">Leviticus</name>
+      <name type="abbr">Lv</name>
+    </book>
+    <book id="NUM">
+      <name type="long">NUMBERS</name>
+      <name type="short">Numbers</name>
+      <name type="abbr">Nu</name>
+    </book>
+    <book id="DEU">
+      <name type="long">DEUTERONOMY</name>
+      <name type="short">Deuteronomy</name>
+      <name type="abbr">Dt</name>
+    </book>
+    <book id="JOS">
+      <name type="long">The Book of JOSHUA</name>
+      <name type="short">Joshua</name>
+      <name type="abbr">Js</name>
+    </book>
+    <book id="JDG">
+      <name type="long">The Book of JUDGES</name>
+      <name type="short">Judges</name>
+      <name type="abbr">Jg</name>
+    </book>
+    <book id="RUT">
+      <name type="long">The Book of RUTH</name>
+      <name type="short">Ruth</name>
+      <name type="abbr">Ru</name>
+    </book>
+    <book id="1SA">
+      <name type="long">The First Book of SAMUEL</name>
+      <name type="short">1 Samuel</name>
+      <name type="abbr">1 S</name>
+    </book>
+    <book id="2SA">
+      <name type="long">The Second Book of SAMUEL</name>
+      <name type="short">2 Samuel</name>
+      <name type="abbr">2 S</name>
+    </book>
+    <book id="1KI">
+      <name type="long">The First Book of KINGS</name>
+      <name type="short">1 Kings</name>
+      <name type="abbr">1 K</name>
+    </book>
+    <book id="2KI">
+      <name type="long">The Second Book of KINGS</name>
+      <name type="short">2 Kings</name>
+      <name type="abbr">2 K</name>
+    </book>
+    <book id="1CH">
+      <name type="long">The First Book of CHRONICLES</name>
+      <name type="short">1 Chronicles</name>
+      <name type="abbr">1 Ch</name>
+    </book>
+    <book id="2CH">
+      <name type="long">The Second Book of CHRONICLES</name>
+      <name type="short">2 Chronicles</name>
+      <name type="abbr">2 Ch</name>
+    </book>
+    <book id="EZR">
+      <name type="long">The Book of EZRA</name>
+      <name type="short">Ezra</name>
+      <name type="abbr">Ezra</name>
+    </book>
+    <book id="NEH">
+      <name type="long">The Book of NEHEMIAH</name>
+      <name type="short">Nehemiah</name>
+      <name type="abbr">Ne</name>
+    </book>
+    <book id="EST">
+      <name type="long">The Book of ESTHER</name>
+      <name type="short">Esther</name>
+      <name type="abbr">Es</name>
+    </book>
+    <book id="JOB">
+      <name type="long">The Book of JOB</name>
+      <name type="short">Job</name>
+      <name type="abbr">Job</name>
+    </book>
+    <book id="PSA">
+      <name type="long">PSALMS</name>
+      <name type="short">Psalm</name>
+      <name type="abbr">Ps</name>
+    </book>
+    <book id="PRO">
+      <name type="long">PROVERBS</name>
+      <name type="short">Proverbs</name>
+      <name type="abbr">Pr</name>
+    </book>
+    <book id="ECC">
+      <name type="long">ECCLESIASTES</name>
+      <name type="short">Ecclesiastes</name>
+      <name type="abbr">Ec</name>
+    </book>
+    <book id="SNG">
+      <name type="long">SONG OF SONGS</name>
+      <name type="short">Song of Songs</name>
+      <name type="abbr">Sgs</name>
+    </book>
+    <book id="ISA">
+      <name type="long">The Book of ISAIAH</name>
+      <name type="short">Isaiah</name>
+      <name type="abbr">Is</name>
+    </book>
+    <book id="JER">
+      <name type="long">The Book of JEREMIAH</name>
+      <name type="short">Jeremiah</name>
+      <name type="abbr">Jr</name>
+    </book>
+    <book id="LAM">
+      <name type="long">LAMENTATIONS</name>
+      <name type="short">Lamentations</name>
+      <name type="abbr">Lm</name>
+    </book>
+    <book id="EZK">
+      <name type="long">The Book of EZEKIEL</name>
+      <name type="short">Ezekiel</name>
+      <name type="abbr">Ez</name>
+    </book>
+    <book id="DAN">
+      <name type="long">The Book of DANIEL</name>
+      <name type="short">Daniel</name>
+      <name type="abbr">Dn</name>
+    </book>
+    <book id="HOS">
+      <name type="long">The Book of HOSEA</name>
+      <name type="short">Hosea</name>
+      <name type="abbr">Ho</name>
+    </book>
+    <book id="JOL">
+      <name type="long">The Book of JOEL</name>
+      <name type="short">Joel</name>
+      <name type="abbr">Jl</name>
+    </book>
+    <book id="AMO">
+      <name type="long">The Book of AMOS</name>
+      <name type="short">Amos</name>
+      <name type="abbr">Am</name>
+    </book>
+    <book id="OBA">
+      <name type="long">The Book of OBADIAH</name>
+      <name type="short">Obadiah</name>
+      <name type="abbr">Ob</name>
+    </book>
+    <book id="JON">
+      <name type="long">The Book of JONAH</name>
+      <name type="short">Jonah</name>
+      <name type="abbr">Jon</name>
+    </book>
+    <book id="MIC">
+      <name type="long">The Book of MICAH</name>
+      <name type="short">Micah</name>
+      <name type="abbr">Mic</name>
+    </book>
+    <book id="NAM">
+      <name type="long">The Book of NAHUM</name>
+      <name type="short">Nahum</name>
+      <name type="abbr">Nh</name>
+    </book>
+    <book id="HAB">
+      <name type="long">The Book of HABAKKUK</name>
+      <name type="short">Habakkuk</name>
+      <name type="abbr">Hb</name>
+    </book>
+    <book id="ZEP">
+      <name type="long">The Book of ZEPHANIAH</name>
+      <name type="short">Zephaniah</name>
+      <name type="abbr">Zep</name>
+    </book>
+    <book id="HAG">
+      <name type="long">The Book of HAGGAI</name>
+      <name type="short">Haggai</name>
+      <name type="abbr">Hg</name>
+    </book>
+    <book id="ZEC">
+      <name type="long">The Book of ZECHARIAH</name>
+      <name type="short">Zechariah</name>
+      <name type="abbr">Zec</name>
+    </book>
+    <book id="MAL">
+      <name type="long">The Book of MALACHI</name>
+      <name type="short">Malachi</name>
+      <name type="abbr">Ml</name>
+    </book>
+    <book id="TOB">
+      <name type="long">The Book of TOBIT</name>
+      <name type="short">Tobit</name>
+      <name type="abbr">Tb</name>
+    </book>
+    <book id="JDT">
+      <name type="long">The Book of JUDITH</name>
+      <name type="short">Judith</name>
+      <name type="abbr">Jdt</name>
+    </book>
+    <book id="ESG">
+      <name type="long">The Book of ESTHER</name>
+      <name type="short">Esther (Greek)</name>
+      <name type="abbr">Gk Est</name>
+    </book>
+    <book id="WIS">
+      <name type="long">THE WISDOM OF SOLOMON</name>
+      <name type="short">The Wisdom of Solomon</name>
+      <name type="abbr">Ws</name>
+    </book>
+    <book id="SIR">
+      <name type="long">SIRACH THE WISDOM OF JESUS, SON OF SIRACH</name>
+      <name type="short">Sirach</name>
+      <name type="abbr">Si</name>
+    </book>
+    <book id="BAR">
+      <name type="long">The Book of BARUCH</name>
+      <name type="short">Baruch</name>
+      <name type="abbr">Ba</name>
+    </book>
+    <book id="LJE">
+      <name type="long">The Letter of JEREMIAH</name>
+      <name type="short">Letter of Jeremiah</name>
+      <name type="abbr">Let Jer</name>
+    </book>
+    <book id="S3Y">
+      <name type="long">THE PRAYER OF AZARIAH AND THE SONG OF THE THREE YOUNG MEN</name>
+      <name type="short">Song of Three Young Men</name>
+      <name type="abbr">S of 3 Y</name>
+    </book>
+    <book id="SUS">
+      <name type="long">The Book of SUSANNA</name>
+      <name type="short">Susanna</name>
+      <name type="abbr">Su</name>
+    </book>
+    <book id="BEL">
+      <name type="long">BEL AND THE DRAGON</name>
+      <name type="short">Bel and the Dragon</name>
+      <name type="abbr">Bel</name>
+    </book>
+    <book id="1MA">
+      <name type="long">The First Book of the MACCABEES</name>
+      <name type="short">1 Maccabees</name>
+      <name type="abbr">1 Macc</name>
+    </book>
+    <book id="2MA">
+      <name type="long">The Second Book of the MACCABEES</name>
+      <name type="short">2 Maccabees</name>
+      <name type="abbr">2 Macc</name>
+    </book>
+    <book id="1ES">
+      <name type="long">The First Book of ESDRAS</name>
+      <name type="short">1 Esdras</name>
+      <name type="abbr">1 Esd</name>
+    </book>
+    <book id="2ES">
+      <name type="long">The Second Book of ESDRAS</name>
+      <name type="short">2 Esdras</name>
+      <name type="abbr">2 Esd</name>
+    </book>
+    <book id="MAN">
+      <name type="long">THE PRAYER OF MANASSEH</name>
+      <name type="short">The Prayer of Manasseh</name>
+      <name type="abbr">Man</name>
+    </book>
+    <book id="MAT">
+      <name type="long">The Gospel according to MATTHEW</name>
+      <name type="short">Matthew</name>
+      <name type="abbr">Mt</name>
+    </book>
+    <book id="MRK">
+      <name type="long">The Gospel according to MARK</name>
+      <name type="short">Mark</name>
+      <name type="abbr">Mk</name>
+    </book>
+    <book id="LUK">
+      <name type="long">The Gospel according to LUKE</name>
+      <name type="short">Luke</name>
+      <name type="abbr">Lk</name>
+    </book>
+    <book id="JHN">
+      <name type="long">The Gospel according to JOHN</name>
+      <name type="short">John</name>
+      <name type="abbr">Jn</name>
+    </book>
+    <book id="ACT">
+      <name type="long">THE ACTS of the Apostles</name>
+      <name type="short">Acts</name>
+      <name type="abbr">Ac</name>
+    </book>
+    <book id="ROM">
+      <name type="long">Paul's Letter to the ROMANS</name>
+      <name type="short">Romans</name>
+      <name type="abbr">Ro</name>
+    </book>
+    <book id="1CO">
+      <name type="long">Paul's First Letter to the CORINTHIANS</name>
+      <name type="short">1 Corinthians</name>
+      <name type="abbr">1 Co</name>
+    </book>
+    <book id="2CO">
+      <name type="long">Paul's Second Letter to the CORINTHIANS</name>
+      <name type="short">2 Corinthians</name>
+      <name type="abbr">2 Co</name>
+    </book>
+    <book id="GAL">
+      <name type="long">Paul's Letter to the GALATIANS</name>
+      <name type="short">Galatians</name>
+      <name type="abbr">Ga</name>
+    </book>
+    <book id="EPH">
+      <name type="long">Paul's Letter to the EPHESIANS</name>
+      <name type="short">Ephesians</name>
+      <name type="abbr">Eph</name>
+    </book>
+    <book id="PHP">
+      <name type="long">Paul's Letter to the PHILIPPIANS</name>
+      <name type="short">Philippians</name>
+      <name type="abbr">Phil</name>
+    </book>
+    <book id="COL">
+      <name type="long">Paul's Letter to the COLOSSIANS</name>
+      <name type="short">Colossians</name>
+      <name type="abbr">Col</name>
+    </book>
+    <book id="1TH">
+      <name type="long">Paul's First Letter to the THESSALONIANS</name>
+      <name type="short">1 Thessalonians</name>
+      <name type="abbr">1 Th</name>
+    </book>
+    <book id="2TH">
+      <name type="long">Paul's Second Letter to the THESSALONIANS</name>
+      <name type="short">2 Thessalonians</name>
+      <name type="abbr">2 Th</name>
+    </book>
+    <book id="1TI">
+      <name type="long">Paul's First Letter to TIMOTHY</name>
+      <name type="short">1 Timothy</name>
+      <name type="abbr">1 Ti</name>
+    </book>
+    <book id="2TI">
+      <name type="long">Paul's Second Letter to TIMOTHY</name>
+      <name type="short">2 Timothy</name>
+      <name type="abbr">2 Ti</name>
+    </book>
+    <book id="TIT">
+      <name type="long">Paul's Letter to TITUS</name>
+      <name type="short">Titus</name>
+      <name type="abbr">Titus</name>
+    </book>
+    <book id="PHM">
+      <name type="long">Paul's Letter to PHILEMON</name>
+      <name type="short">Philemon</name>
+      <name type="abbr">Phm</name>
+    </book>
+    <book id="HEB">
+      <name type="long">The Letter to the HEBREWS</name>
+      <name type="short">Hebrews</name>
+      <name type="abbr">He</name>
+    </book>
+    <book id="JAS">
+      <name type="long">The Letter from JAMES</name>
+      <name type="short">James</name>
+      <name type="abbr">Jas</name>
+    </book>
+    <book id="1PE">
+      <name type="long">The First Letter from PETER</name>
+      <name type="short">1 Peter</name>
+      <name type="abbr">1 P</name>
+    </book>
+    <book id="2PE">
+      <name type="long">The Second Letter from PETER</name>
+      <name type="short">2 Peter</name>
+      <name type="abbr">2 P</name>
+    </book>
+    <book id="1JN">
+      <name type="long">The First Letter of JOHN</name>
+      <name type="short">1 John</name>
+      <name type="abbr">1 Jn</name>
+    </book>
+    <book id="2JN">
+      <name type="long">The Second Letter of JOHN</name>
+      <name type="short">2 John</name>
+      <name type="abbr">2 Jn</name>
+    </book>
+    <book id="3JN">
+      <name type="long">The Third Letter of JOHN</name>
+      <name type="short">3 John</name>
+      <name type="abbr">3 Jn</name>
+    </book>
+    <book id="JUD">
+      <name type="long">The Letter from JUDE</name>
+      <name type="short">Jude</name>
+      <name type="abbr">Jd</name>
+    </book>
+    <book id="REV">
+      <name type="long">THE REVELATION to John</name>
+      <name type="short">Revelation</name>
+      <name type="abbr">Rev</name>
+    </book>
+  </bookNames>
+  <contents dcds:propertyURI="tableOfContents">
+    <bookList id="default">
+      <name>Good News Translation</name>
+      <nameLocal>Good News Translation</nameLocal>
+      <abbreviation>eng-GNT</abbreviation>
+      <abbreviationLocal>GNT</abbreviationLocal>
+      <description>Western Protestant Bible</description> <!-- <Name> from Canons.xml -->
+      <range>Protestant Bible (66 books)</range> <!-- from Canons.xml -->
+      <tradition>Western Protestant order</tradition> <!-- from Canons.xml -->
+      <division id="OT">
+        <books>
+          <book id="GEN"/>
+          <book id="EXO"/>
+          <book id="LEV"/>
+          <book id="NUM"/>
+          <book id="DEU"/>
+          <book id="JOS"/>
+          <book id="JDG"/>
+          <book id="RUT"/>
+          <book id="1SA"/>
+          <book id="2SA"/>
+          <book id="1KI"/>
+          <book id="2KI"/>
+          <book id="1CH"/>
+          <book id="2CH"/>
+          <book id="EZR"/>
+          <book id="NEH"/>
+          <book id="EST"/>
+          <book id="JOB"/>
+          <book id="PSA"/>
+          <book id="PRO"/>
+          <book id="ECC"/>
+          <book id="SNG"/>
+          <book id="ISA"/>
+          <book id="JER"/>
+          <book id="LAM"/>
+          <book id="EZK"/>
+          <book id="DAN"/>
+          <book id="HOS"/>
+          <book id="JOL"/>
+          <book id="AMO"/>
+          <book id="OBA"/>
+          <book id="JON"/>
+          <book id="MIC"/>
+          <book id="NAM"/>
+          <book id="HAB"/>
+          <book id="ZEP"/>
+          <book id="HAG"/>
+          <book id="ZEC"/>
+          <book id="MAL"/>
+        </books>
+      </division>
+      <division id="NT">
+        <books>
+          <book id="MAT"/>
+          <book id="MRK"/>
+          <book id="LUK"/>
+          <book id="JHN"/>
+          <book id="ACT"/>
+          <book id="ROM"/>
+          <book id="1CO"/>
+          <book id="2CO"/>
+          <book id="GAL"/>
+          <book id="EPH"/>
+          <book id="PHP"/>
+          <book id="COL"/>
+          <book id="1TH"/>
+          <book id="2TH"/>
+          <book id="1TI"/>
+          <book id="2TI"/>
+          <book id="TIT"/>
+          <book id="PHM"/>
+          <book id="HEB"/>
+          <book id="JAS"/>
+          <book id="1PE"/>
+          <book id="2PE"/>
+          <book id="1JN"/>
+          <book id="2JN"/>
+          <book id="3JN"/>
+          <book id="JUD"/>
+          <book id="REV"/>
+        </books>
+      </division>
+    </bookList>
+    <bookList>
+      <name>Good News Translation with Deuterocanonicals/Apocrypha</name>
+      <nameLocal>Good News Translation with Deuterocanonicals/Apocrypha</nameLocal>
+      <abbreviation>eng-GNTD</abbreviation>
+      <abbreviationLocal>GNTD</abbreviationLocal>
+      <description>Ecumenical Bible with combined Catholic DCs + Anglican KJV Apocrypha</description> <!-- <Name> from Canons.xml -->
+      <range>Interconfessional Bible with DC/ Apocrypha section</range> <!-- from Canons.xml -->
+      <tradition>Bible with Catholic DCs + 3 KJV Apocryphal books</tradition> <!-- from Canons.xml -->
+      <division id="OT">
+        <books>
+          <book id="GEN"/>
+          <book id="EXO"/>
+          <book id="LEV"/>
+          <book id="NUM"/>
+          <book id="DEU"/>
+          <book id="JOS"/>
+          <book id="JDG"/>
+          <book id="RUT"/>
+          <book id="1SA"/>
+          <book id="2SA"/>
+          <book id="1KI"/>
+          <book id="2KI"/>
+          <book id="1CH"/>
+          <book id="2CH"/>
+          <book id="EZR"/>
+          <book id="NEH"/>
+          <book id="EST"/>
+          <book id="JOB"/>
+          <book id="PSA"/>
+          <book id="PRO"/>
+          <book id="ECC"/>
+          <book id="SNG"/>
+          <book id="ISA"/>
+          <book id="JER"/>
+          <book id="LAM"/>
+          <book id="EZK"/>
+          <book id="DAN"/>
+          <book id="HOS"/>
+          <book id="JOL"/>
+          <book id="AMO"/>
+          <book id="OBA"/>
+          <book id="JON"/>
+          <book id="MIC"/>
+          <book id="NAM"/>
+          <book id="HAB"/>
+          <book id="ZEP"/>
+          <book id="HAG"/>
+          <book id="ZEC"/>
+          <book id="MAL"/>
+        </books>
+      </division>
+      <division id="DC">
+        <books>
+          <book id="TOB"/>
+          <book id="JDT"/>
+          <book id="ESG"/>
+          <book id="WIS"/>
+          <book id="SIR"/>
+          <book id="BAR"/>
+          <book id="LJE"/>
+          <book id="S3Y"/>
+          <book id="SUS"/>
+          <book id="BEL"/>
+          <book id="1MA"/>
+          <book id="2MA"/>
+          <book id="1ES"/>
+          <book id="2ES"/>
+          <book id="MAN"/>
+        </books>
+      </division>
+      <division id="NT">
+        <books>
+          <book id="MAT"/>
+          <book id="MRK"/>
+          <book id="LUK"/>
+          <book id="JHN"/>
+          <book id="ACT"/>
+          <book id="ROM"/>
+          <book id="1CO"/>
+          <book id="2CO"/>
+          <book id="GAL"/>
+          <book id="EPH"/>
+          <book id="PHP"/>
+          <book id="COL"/>
+          <book id="1TH"/>
+          <book id="2TH"/>
+          <book id="1TI"/>
+          <book id="2TI"/>
+          <book id="TIT"/>
+          <book id="PHM"/>
+          <book id="HEB"/>
+          <book id="JAS"/>
+          <book id="1PE"/>
+          <book id="2PE"/>
+          <book id="1JN"/>
+          <book id="2JN"/>
+          <book id="3JN"/>
+          <book id="JUD"/>
+          <book id="REV"/>
+        </books>
+      </division>
+    </bookList>
+  </contents>
+  <progress dcds:propertyURI="description/stage"><!-- 1 = draft, 2 = internalReview, 3 = extenalReview, 4 = finalReview -->
+    <book id="GEN" stage="4"/>
+    <book id="EXO" stage="4"/>
+    <book id="LEV" stage="4"/>
+    <book id="NUM" stage="4"/>
+    <book id="DEU" stage="4"/>
+    <book id="JOS" stage="4"/>
+    <book id="JDG" stage="4"/>
+    <book id="RUT" stage="4"/>
+    <book id="1SA" stage="4"/>
+    <book id="2SA" stage="4"/>
+    <book id="1KI" stage="4"/>
+    <book id="2KI" stage="4"/>
+    <book id="1CH" stage="4"/>
+    <book id="2CH" stage="4"/>
+    <book id="EZR" stage="4"/>
+    <book id="NEH" stage="4"/>
+    <book id="EST" stage="4"/>
+    <book id="JOB" stage="4"/>
+    <book id="PSA" stage="4"/>
+    <book id="PRO" stage="4"/>
+    <book id="ECC" stage="4"/>
+    <book id="SNG" stage="4"/>
+    <book id="ISA" stage="4"/>
+    <book id="JER" stage="4"/>
+    <book id="LAM" stage="4"/>
+    <book id="EZK" stage="4"/>
+    <book id="DAN" stage="4"/>
+    <book id="HOS" stage="4"/>
+    <book id="JOL" stage="4"/>
+    <book id="AMO" stage="4"/>
+    <book id="OBA" stage="4"/>
+    <book id="JON" stage="4"/>
+    <book id="MIC" stage="4"/>
+    <book id="NAM" stage="4"/>
+    <book id="HAB" stage="4"/>
+    <book id="ZEP" stage="4"/>
+    <book id="HAG" stage="4"/>
+    <book id="ZEC" stage="4"/>
+    <book id="MAL" stage="4"/>
+    <book id="MAT" stage="4"/>
+    <book id="MRK" stage="4"/>
+    <book id="LUK" stage="4"/>
+    <book id="JHN" stage="4"/>
+    <book id="ACT" stage="4"/>
+    <book id="ROM" stage="4"/>
+    <book id="1CO" stage="4"/>
+    <book id="2CO" stage="4"/>
+    <book id="GAL" stage="4"/>
+    <book id="EPH" stage="4"/>
+    <book id="PHP" stage="4"/>
+    <book id="COL" stage="4"/>
+    <book id="1TH" stage="4"/>
+    <book id="2TH" stage="4"/>
+    <book id="1TI" stage="4"/>
+    <book id="2TI" stage="4"/>
+    <book id="TIT" stage="4"/>
+    <book id="PHM" stage="4"/>
+    <book id="HEB" stage="4"/>
+    <book id="JAS" stage="4"/>
+    <book id="1PE" stage="4"/>
+    <book id="2PE" stage="4"/>
+    <book id="1JN" stage="4"/>
+    <book id="2JN" stage="4"/>
+    <book id="3JN" stage="4"/>
+    <book id="JUD" stage="4"/>
+    <book id="REV" stage="4"/>
+    <book id="TOB" stage="4"/>
+    <book id="JDT" stage="4"/>
+    <book id="ESG" stage="4"/>
+    <book id="WIS" stage="4"/>
+    <book id="SIR" stage="4"/>
+    <book id="BAR" stage="4"/>
+    <book id="LJE" stage="4"/>
+    <book id="S3Y" stage="4"/>
+    <book id="SUS" stage="4"/>
+    <book id="BEL" stage="4"/>
+    <book id="1MA" stage="4"/>
+    <book id="2MA" stage="4"/>
+    <book id="1ES" stage="4"/>
+    <book id="2ES" stage="4"/>
+    <book id="MAN" stage="4"/>
+    <book id="XXA" stage="4"/>
+    <book id="FRT" stage="4"/>
+    <book id="BAK" stage="4"/>
+    <book id="INT" stage="4"/>
+    <book id="GLO" stage="4"/>
+    <book id="TDX" stage="4"/>
+  </progress>
+  <contact>
+    <rightsHolder dcds:propertyURI="rightsHolder">American Bible Society</rightsHolder>
+    <rightsHolderLocal dcds:propertyURI="rightsHolder/contactLocal">American Bible Society</rightsHolderLocal>
+    <rightsHolderAbbreviation dcds:propertyURI="rightsHolder/contactAbbreviation">ABS</rightsHolderAbbreviation>
+      <rightsHolderURL dcds:propertyURI="rightsHolder/contactURL">http://www.americanbible.org</rightsHolderURL>
+    <rightsHolderFacebook dcds:propertyURI="rightsHolder/contactFacebook">https://www.facebook.com/americanbible</rightsHolderFacebook>
+  </contact>
+  <rights>
+    <rightsStatement dcds:propertyURI="rights" contentType="xhtml"><p>Good News Translation with Deuterocanonicals/Apocrypha. Scripture taken from the Good News Translation (r) (Today's English Version, Second Edition). Copyright (c) 1992 American Bible Society. Used by permission.</p></rightsStatement>
+      <!-- Allow XHTML: <h1> <h2> <h3> <p> <blockquote> <ul> <ol> <li> <br> <strong> <em> <a> -->
+  </rights>
+  <promotion>
+    <promoVersionInfo dcds:propertyURI="description/pubPromoVersionInfo" contentType="xhtml"><p>The <em>Good News Translation</em> of the Bible is a translation which seeks to state clearly and accurately the meaning of the original texts in words and forms that are widely accepted by people who use English as a means of communication. This translation does not follow the traditional vocabulary and style found in the historic English Bible versions. Rather it attempts for our time to set forth the biblical content and message in the standard, everyday, natural form of English.</p>
+      <p>The aim of this Bible is to give today's reader best possible understanding of the content of the original texts. The Preface sets forth the basic principles which the translators followed in their work and explains the nature of special aids for readers.</p>
+      <p>The bk Good News Translation was translated and published by the United Bible Societies for use throughout the world. The Bible Societies trust that the reading and study of this translation will result in a better understanding of the meaning of the Bible. We also earnestly pray that readers will discover the message of saving faith and hope for all people, which the Bible announces anew to each generation.</p></promoVersionInfo>
+      <!-- Allow XHTML: <h1> <h2> <h3> <p> <blockquote> <ul> <ol> <li> <br> <strong> <em> <a> -->
+    <promoEmail dcds:propertyURI="description/pubPromoEmail">This is where we place the text emailed to the user after downloading an offline version.</promoEmail>
+  </promotion>
+  <archiveStatus>
+    <archivistName dcds:propertyURI="contributor/archivist">Jeff Klassen</archivistName>
+    <dateArchived dcds:propertyURI="dateSubmitted" dcds:sesURI="http://purl.org/dc/terms/W3CDTF">2011-04-19</dateArchived>
+    <dateUpdated dcds:propertyURI="modified" dcds:sesURI="http://purl.org/dc/terms/W3CDTF">2011-06-24</dateUpdated>
+    <comments dcds:propertyURI="abstract">Initial submission to DBL</comments>
+  </archiveStatus>
+  <format dcds:propertyURI="format" dcds:sesURI="http://purl.org/dc/terms/IMT">text/xml</format>
+</DBLScriptureProject>
