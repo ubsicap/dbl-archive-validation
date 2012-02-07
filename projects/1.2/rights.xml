@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rights dblId="66f69e2e951292b7" xmlns:dcds="http://purl.org/dc/xmlns/2008/09/01/dc-ds-xml/">
+  <dateLicense dcds:propertyURI="accessRights/pubLicenseDate" dcds:sesURI="http://purl.org/dc/terms/W3CDTF">2011-10-01</dateLicense>
+  <dateLicenseExpiry dcds:propertyURI="accessRights/pubLicenseExpiryDate" dcds:sesURI="http://purl.org/dc/terms/W3CDTF">2014-09-30</dateLicenseExpiry>
+  <rightsStatement dcds:propertyURI="rights" contentType="xhtml"><p>Good News Translation (Today’s English Version, Second Edition) © 1992 American Bible Society. All rights reserved.</p></rightsStatement>
+  <!-- Allow XHTML: <h1> <h2> <h3> <p> <blockquote> <ul> <ol> <li> <br> <strong> <em> <a> -->
+  <publicationRights>
+    <allowOffline>No</allowOffline>
+    <allowIntroductions>Yes</allowIntroductions>
+    <allowFootnotes>Yes</allowFootnotes>
+    <allowCrossReferences>Yes</allowCrossReferences>
+    <allowExtendedNotes>No</allowExtendedNotes>
+  </publicationRights>
+</rights>

@@ -1,0 +1,64 @@
+# rights.rnc
+# This is a compact syntax Relax NG Schema for the DBL bundle rights information file - rights.xml
+# DBL bundle version = 1.2
+
+default namespace = ""
+datatypes xsd = "http://www.w3.org/2001/XMLSchema-datatypes"
+namespace dcds = "http://purl.org/dc/xmlns/2008/09/01/dc-ds-xml/"
+
+start =
+  element rights {
+    # dblId is overwritten by Paratext
+    attribute dblId { xsd:NMTOKEN { pattern="[a-f0-9]{16}" } },
+    # yyyy-mm-dd
+    element dateLicense {
+      attribute dcds:propertyURI { "accessRights/pubLicenseDate" },
+      attribute dcds:sesURI { "http://purl.org/dc/terms/W3CDTF" },
+      xsd:date?
+    },
+	# yyyy-mm-dd (must be after dateLicense) 
+    element dateLicenseExpiry {
+      attribute dcds:propertyURI { "accessRights/pubLicenseExpiryDate" },
+      attribute dcds:sesURI { "http://purl.org/dc/terms/W3CDTF" },
+      xsd:date?
+    },
+	# For example: ©2002, 2012 United Bible Societies 
+    element rightsStatement {
+      attribute contentType { "xhtml" },
+      attribute dcds:propertyURI { "rights" },
+      htmlMarkup
+    },
+    element publicationRights {
+      element allowOffline { "Yes" | "No" | ""},
+      element allowIntroductions { "Yes" | "No" | ""},
+      element allowFootnotes { "Yes" | "No" | ""},
+      element allowCrossReferences { "Yes" | "No" | ""},
+      element allowExtendedNotes { "Yes" | "No" | ""}
+    }
+  }
+
+htmlMarkup = (text
+         | element p { (text | htmlCharMarkup)+ }
+         | element h1 { text }
+         | element h2 { text }
+         | element h3 { text }
+         | element ul { 
+             element li { text }+}
+         | element ol { 
+             element li { text }+}
+         | element blockquote { text }
+         | element img {
+            attribute src { xsd:anyURI },
+            text
+            }
+         | htmlCharMarkup)+
+
+htmlCharMarkup = (element a {
+           attribute href { xsd:anyURI }, 
+           text
+           }
+         | element br { empty }
+         | element strong { text }
+         | element b { text }
+         | element em { text }
+         | element i { text })
