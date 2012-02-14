@@ -1,0 +1,41 @@
+# license.rnc
+# This is a compact syntax Relax NG Schema for the DBL bundle license information file - license.xml
+# DBL bundle version = 1.2
+
+default namespace = ""
+datatypes xsd = "http://www.w3.org/2001/XMLSchema-datatypes"
+namespace dcds = "http://purl.org/dc/xmlns/2008/09/01/dc-ds-xml/"
+
+start =
+  element license {
+    # dblId is overwritten by Paratext
+    attribute dblId { xsd:NMTOKEN { pattern="[a-f0-9]{16}" } },
+    attribute type { licenseType }?,
+    # yyyy-mm-dd
+    element dateLicense {
+      attribute dcds:sesURI { "http://purl.org/dc/terms/W3CDTF" },
+      xsd:date?
+    },
+	# yyyy-mm-dd (must be after dateLicense) 
+    element dateLicenseExpiry {
+      attribute dcds:sesURI { "http://purl.org/dc/terms/W3CDTF" },
+      xsd:date?
+    },
+    element publicationRights {
+      element allowOffline { "Yes" | "No" | ""},
+      element allowIntroductions { "Yes" | "No" | ""},
+      element allowFootnotes { "Yes" | "No" | ""},
+      element allowCrossReferences { "Yes" | "No" | ""},
+      element allowExtendedNotes { "Yes" | "No" | ""}
+    }
+  }
+
+# The are Creative Commons license types (http://creativecommons.org/licenses/).
+# Others could be added.
+licenseType = ("BY" # Attribution only
+         | "BY-ND"       #  Attribution-NoDerivatives
+         | "BY-NC-ND" # Attribution-NonCommercial- NoDerivatives 
+         | "BY-NC"       # Attribution-NonCommercial 
+         | "BY-NC-SA" # Attribution-NonCommercial- ShareAlike 
+         | "BY-SA"       # Attribution-ShareAlike 
+         | "PD")           # Dedicated to or marked as being in the public domain

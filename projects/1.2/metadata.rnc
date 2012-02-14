@@ -74,7 +74,7 @@ start =
         },
       element subtag { 
         attribute dcds:propertyURI { "language/subtag" },
-        xsd:string { pattern = "[a-z]{2}(\-[A-Za-z]+){0,3}" }
+        xsd:string { pattern = "[a-z]{2}(\-[A-Za-z]+){0,3}" }?
         },
       element rod { 
         attribute dcds:propertyURI { "language/rod" }, 
@@ -185,13 +185,15 @@ start =
         xsd:anyURI
       }
     },
-    element promotion {
-      # For example: ©2002, 2012 United Bible Societies 
-      element rightsStatement {
+    element copyright {
+      # For example: ©2002, 2012 United Bible Societies
+      element statement {
         attribute contentType { "xhtml" },
         attribute dcds:propertyURI { "rights" },
         htmlMarkup
-      },
+      }
+    },
+    element promotion {
       element promoVersionInfo {
         attribute contentType { "xhtml" },
         attribute dcds:propertyURI { "description/pubPromoVersionInfo" },
@@ -399,11 +401,3 @@ bookCode = ("GEN"   # Genesis
          | "GLO" # Glossary 
          | "TDX" # Topical Index 
          | "NDX") # Names Index 
-
-licenseType = ("BY" # Attribution only
-         | "BY-ND"       #  Attribution-NoDerivatives
-         | "BY-NC-ND" # Attribution-NonCommercial- NoDerivatives 
-         | "BY-NC"       # Attribution-NonCommercial 
-         | "BY-NC-SA" # Attribution-NonCommercial- ShareAlike 
-         | "BY-SA"       # Attribution-ShareAlike 
-         | "PD")           # Dedicated to or marked as being in the public domain
