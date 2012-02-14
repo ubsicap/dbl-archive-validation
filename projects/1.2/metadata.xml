@@ -726,8 +726,10 @@
     <rightsHolderURL dcds:propertyURI="rightsHolder/contactURL">http://www.americanbible.org</rightsHolderURL>
     <rightsHolderFacebook dcds:propertyURI="rightsHolder/contactFacebook">https://www.facebook.com/americanbible</rightsHolderFacebook>
   </contact>
+  <copyright>
+    <statement dcds:propertyURI="rights" contentType="xhtml"><p>Good News Translation (Today’s English Version, Second Edition) © 1992 American Bible Society. All rights reserved.</p></statement>
+  </copyright>
   <promotion>
-    <rightsStatement dcds:propertyURI="rights" contentType="xhtml"><p>Good News Translation (Today’s English Version, Second Edition) © 1992 American Bible Society. All rights reserved.</p></rightsStatement>
     <!-- Allow XHTML: <h1> <h2> <h3> <p> <blockquote> <ul> <ol> <li> <br> <strong> <em> <a> -->
     <promoVersionInfo dcds:propertyURI="description/pubPromoVersionInfo" contentType="xhtml"><p>The <em>Good News Translation</em> of the Bible is a translation which seeks to state clearly and accurately the meaning of the original texts in words and forms that are widely accepted by people who use English as a means of communication. This translation does not follow the traditional vocabulary and style found in the historic English Bible versions. Rather it attempts for our time to set forth the biblical content and message in the standard, everyday, natural form of English.</p>
       <p>The aim of this Bible is to give today's reader best possible understanding of the content of the original texts. The Preface sets forth the basic principles which the translators followed in their work and explains the nature of special aids for readers.</p>
