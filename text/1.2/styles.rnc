@@ -10,11 +10,11 @@ start =
     property+,
     element style {
     # style info for a USX para or char element
-      attribute id { xsd:NCName }&
+      attribute id { xsd:string { pattern = "[a-zA-Z1-8\-]+" } }&
       # name of USX element (e.g. mt1, p, q1, q2, nd, tl etc.)
-      attribute publishable { 'true' | 'false' }&
+      attribute publishable { xsd:boolean }&
       # text is publishable
-      attribute versetext { 'true' | 'false' }&
+      attribute versetext { xsd:boolean }&
       # normal verse body text
       element name { text }&
       # Paratext stylehsheet name for this element in USFM
