@@ -1,5 +1,5 @@
 # styles.rnc
-# This is a compact syntax Relax NG Schema for the DBL bundle USX styles reference file - styles.xml
+# This is a compact syntax Relax NG Schema for the DBL @type="text" bundle USX styles reference - styles.xml
 # DBL bundle version = 1.1
 
 default namespace = ""
@@ -10,15 +10,15 @@ start =
     property+,
     element style {
     # style info for a USX para or char element
-      attribute id { xsd:NCName },
+      attribute id { xsd:NCName }&
       # name of USX element (e.g. mt1, p, q1, q2, nd, tl etc.)
-      attribute publishable { 'true' | 'false' },
+      attribute publishable { 'true' | 'false' }&
       # text is publishable
-      attribute versetext { 'true' | 'false' },
+      attribute versetext { 'true' | 'false' }&
       # normal verse body text
-      element name { text },
+      element name { text }&
       # Paratext stylehsheet name for this element in USFM
-      element description { text },
+      element description { text }&
       # description supplied in the Paratext stylesheet
       property+
       # to supply a list of CSS properties and values
@@ -41,11 +41,11 @@ property =
     | "text-decoration"
     | "text-indent"
     | "vertical-align"
-    | "white-space") },
+    | "white-space") }&
     # a CSS property name
     attribute unit { ( "%"
     | "in"
-    | "pt") }?,
+    | "pt") }?&
     # units to use for the property, if required
     text
     # the CSS property value
