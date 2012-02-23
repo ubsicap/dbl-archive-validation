@@ -327,21 +327,20 @@ Reference =
         attribute usxRef { text },
         text?
     }
-Table =
-    element para {
-        attribute style {
-            ("tr"
-             | # Table row
-               "rem")
-            # remark
-        },
-        (Verse | TableContent)+
+Table = 
+    element table {
+        element row {
+            attribute style {
+                ("tr") # Table row
+            },
+            (Verse | TableContent)+
+        }+
     }
 TableContent =
-    element char {
+    element cell {
         attribute style {
             (
-             ## These ought to only be allowed in <para style="tr">
+             ## These ought to only be allowed in <row style="tr">
              "th1"
              | # A table heading, column 1
                "tc1"
@@ -351,33 +350,42 @@ TableContent =
                "tcr1"
              | # A table cell item, column 1, right aligned
                "th2"
-             | # A table heading, column 1
+             | # A table heading, column 2
                "tc2"
-             | # A table cell item, column 1
+             | # A table cell item, column 2
                "thr2"
-             | # A table heading, column 1, right aligned
+             | # A table heading, column 2, right aligned
                "tcr2"
-             | # A table cell item, column 1, right aligned
+             | # A table cell item, column 2, right aligned
                "th3"
-             | # A table heading, column 1
+             | # A table heading, column 3
                "tc3"
-             | # A table cell item, column 1
+             | # A table cell item, column 3
                "thr3"
-             | # A table heading, column 1, right aligned
+             | # A table heading, column 3, right aligned
                "tcr3"
-             | # A table cell item, column 1, right aligned
+             | # A table cell item, column 3, right aligned
                "th4"
-             | # A table heading, column 1
+             | # A table heading, column 4
                "tc4"
-             | # A table cell item, column 1
+             | # A table cell item, column 4
                "thr4"
-             | # A table heading, column 1, right aligned
+             | # A table heading, column 4, right aligned
                "tcr4"
-             | # A table cell item, column 1, right aligned
+             | # A table cell item, column 4, right aligned
+               "th5"
+             | # A table heading, column 5
+               "tc5"
+             | # A table cell item, column 5
+               "thr5"
+             | # A table heading, column 5, right aligned
+               "tcr5"
+             | # A table cell item, column 5, right aligned
                "rem")
             # Remark
         },
-        attribute closed { 'true' | 'false' }?,
+        attribute align { "start" | "center" | "end" },
+        # Represent "left", "center", and "right" respectively in LTR, and "right", "center", "left" in RTL texts.
         (Footnote | CrossReference | Char | Figure | Verse | text)*
     }
 Para =
@@ -457,11 +465,11 @@ Char =
              #   Label !! (inline section head)		EZR 10:18-24 (TEV)
              
          },
-         attribute closed { 'true' | 'false' }?,
+         attribute closed { xsd:boolean }?,
          # Present to allow roundtripping to USFM, not needed for publishing
-         text?,
+         text,
          (Reference | Char | Footnote | text)*
-        # foreign word inside of words of Jesus
+         # Nested character <char> markup
     }
 IntroChar =
     element char {
@@ -472,7 +480,7 @@ IntroChar =
             # For quoted scripture text appearing in the introduction
             
         },
-      attribute closed { 'true' | 'false' }?,
+      attribute closed { xsd:boolean }?,
            # Present to allow roundtripping to USFM, not needed for publishing
         text?
     }
@@ -531,7 +539,7 @@ FootnoteChar =
             # Footnote text, applies to Deuterocanon only
             
         },
-       attribute closed { 'true' | 'false' }?,
+       attribute closed { xsd:boolean }?,
           # Present to allow roundtripping to USFM, not needed for publishing
         text?
     }
@@ -560,7 +568,7 @@ CrossReferenceChar =
             # Cross-reference target reference(s), Deuterocanon only
             
         },
-     attribute closed { 'true' | 'false' }?,
+     attribute closed { xsd:boolean }?,
             text?
     }
 Figure =
