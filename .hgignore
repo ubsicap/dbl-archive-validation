@@ -1,4 +1,5 @@
 syntax: glob
+build
 *.swp
 metadata_project.rng
 usx.rng
