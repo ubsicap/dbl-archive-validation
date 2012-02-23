@@ -11,10 +11,13 @@ cd scriptpath
 for rncpath in `ls $sourcedir/*/*/*.rnc`
 do
     rncpath=${rncpath##*/source/}
-    echo rncpath=$rncpath
-    #base=${rnc##*/}
-    #base=${base%.rnc}
-    #java -jar $scriptdir/trang.jar -I rnc -O rng $rnc $base.rng
+    rngpath=$outdir/${rncpath%.rnc}.rng
+    rngdir=${rngpath%/*.rng}
+    echo rncpath=$rncpath 
+    echo   rngpath=$rngpath
+    echo   rngdir=$rngdir
+    mkdir -p $rngdir
+    java -jar $scriptdir/trang.jar -I rnc -O rng $rncpath $rngpath
 done
 exit 0
 
