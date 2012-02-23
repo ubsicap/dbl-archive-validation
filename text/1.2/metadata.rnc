@@ -81,7 +81,7 @@ start =
         }?&
       element rod { 
         attribute dcds:propertyURI { "language/rod" }, 
-        xsd:string { pattern = "[0-9]{5}" }?
+        xsd:string { pattern = "[0-9]{5}" }
         }?&
       element script {
         attribute dcds:propertyURI { "language/script" },
@@ -247,9 +247,9 @@ start =
     }
   }
 
-nameLocal = element nameLocal { text }
-abbreviation = element abbreviation { text }
-abbreviationLocal = element abbreviationLocal { text }
+#nameLocal = element nameLocal { text }
+#abbreviation = element abbreviation { text }
+#abbreviationLocal = element abbreviationLocal { text }
 
 htmlMarkup = (text
          | element p { (text | htmlCharMarkup)+ }
