@@ -3,15 +3,21 @@
 
 scriptpath=`readlink -f $0`
 scriptdir=${scriptpath%/*}
-sourcedir=$scriptdir/$1
+sourcedir=$scriptdir/source
+outdir=$scriptdir/build
 
-for rnc in `ls $sourcedir/*.rnc`
+cd scriptpath
+
+for rncpath in `ls $sourcedir/*/*/*.rnc`
 do
-    base=${rnc##*/}
-    base=${base%.rnc}
-    java -jar $scriptdir/trang.jar -I rnc -O rng $rnc $base.rng
+    rncpath=${rncpath##*/source/}
+    echo rncpath=$rncpath
+    #base=${rnc##*/}
+    #base=${base%.rnc}
+    #java -jar $scriptdir/trang.jar -I rnc -O rng $rnc $base.rng
 done
 exit 0
-java -jar trang.jar -I rnc -O rng usx.rnc usx.rng
-java -jar trang.jar -I rnc -O rng metadata_project.rnc metadata_project.rng
-java -jar trang.jar -I rnc -O rng usx_styles.rnc usx_styles.rng
+
+#java -jar trang.jar -I rnc -O rng usx.rnc usx.rng
+#java -jar trang.jar -I rnc -O rng metadata_project.rnc metadata_project.rng
+#java -jar trang.jar -I rnc -O rng usx_styles.rnc usx_styles.rng
