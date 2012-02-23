@@ -1,21 +1,9 @@
 #!/bin/bash
-#TODO: consider modifying tree to be version/type instead of type/version?
+# traverse source rnc files and compile into apropriate rng file, mirroring source directory structure.
 
 scriptpath=`readlink -f $0`
 scriptdir=${scriptpath%/*}
 sourcedir=$scriptdir/$1
-
-
-usage () {
-    echo "$0 version_dir"
-    echo " "
-    echo "compiles all rnc files from $scriptdir/<version_dir> to current dir."
-}
-
-if [ -z $1 ] ; then
-    usage
-    exit 0
-fi
 
 for rnc in `ls $sourcedir/*.rnc`
 do
