@@ -7,15 +7,17 @@ sourcedir=$scriptdir/source
 outdir=$scriptdir/build
 
 cd scriptpath
+rm -rf $outdir
 
 for rncpath in `ls $sourcedir/*/*/*.rnc`
 do
-    rncpath=${rncpath##*/source/}
-    rngpath=$outdir/${rncpath%.rnc}.rng
+    relpath=${rncpath##*/source/}
+    rngpath=$outdir/${relpath%.rnc}.rng
     rngdir=${rngpath%/*.rng}
-    echo rncpath=$rncpath 
-    echo   rngpath=$rngpath
-    echo   rngdir=$rngdir
+#    echo rncpath=$rncpath 
+#    echo   rngpath=$rngpath
+#    echo   rngdir=$rngdir
+    echo "Converting $relpath "
     mkdir -p $rngdir
     java -jar $scriptdir/trang.jar -I rnc -O rng $rncpath $rngpath
 done
