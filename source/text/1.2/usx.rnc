@@ -487,15 +487,14 @@ IntroChar =
 Chapter =
     element chapter {
         # Start of new chapter
-        attribute style { "c" },
-        attribute number { xsd:integer },
+        attribute number { xsd:integer }&
+        attribute style { "c" }&
+        attribute altnumber { xsd:integer }?&
+        attribute pubnumber { xsd:string { minLength = "1" } }?&
         empty
-    },
-    element char {
-        # This is a temporary solution until USX stores chapters as <chapter number="" alternate="" publishable="" style="c"/>
-        attribute style { "ca" },
-        text
-    }?
+    }
+    # e.g. <chapter number="1" style="c" altnumber="2" pubnumber="A" />
+    
 ChapterLabelBookWide =
     element para {
         # A chapter label specified once prior to chpater 1; text to be used for all chapter headings in the current book 
@@ -504,10 +503,13 @@ ChapterLabelBookWide =
     }
 Verse =
     element verse {
-        attribute style { "v" },
-        attribute number { text },
+        attribute number { xsd:string { minLength = "1" pattern = "[0-9]+[a-z]?(\-[0-9]+[a-z]?)?" } }&
+        attribute style { "v" }&
+        attribute altnumber { xsd:string { minLength = "1" pattern = "[0-9]+[a-z]?(\-[0-9]+[a-z]?)?" } }?&
+        attribute pubnumber { xsd:string { minLength = "1" } }?&
         empty
     }
+    # e.g. <verse number="1" style="v" altnumber="2" pubnumber="B" />
 Footnote =
     element note {
         attribute style { "f" | "fe" },
