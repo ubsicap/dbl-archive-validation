@@ -6,7 +6,7 @@ scriptdir=${scriptpath%/*}
 sourcedir=$scriptdir/source
 outdir=$scriptdir/build
 
-cd scriptpath
+cd #scriptpath
 rm -rf $outdir
 
 for rncpath in `ls $sourcedir/*/*/*.rnc`
