@@ -723,7 +723,7 @@
     <rightsHolderLocal dcds:propertyURI="rightsHolder/contactLocal">American Bible Society</rightsHolderLocal>
     <rightsHolderAbbreviation dcds:propertyURI="rightsHolder/contactAbbreviation">ABS</rightsHolderAbbreviation>
     <rightsHolderURL dcds:propertyURI="rightsHolder/contactURL">http://www.americanbible.org</rightsHolderURL>
-    <rightsHolderFacebook dcds:propertyURI="rightsHolder/contactFacebook">https://www.facebook.com/americanbible</rightsHolderFacebook>
+    <rightsHolderFacebook dcds:propertyURI="rightsHolder/contactFacebook">http://www.facebook.com/americanbible</rightsHolderFacebook>
   </contact>
   <copyright>
     <!-- Allow XHTML: <h1> <h2> <h3> <p> <blockquote> <ul> <ol> <li> <br> <strong> <em> <a> -->
@@ -739,8 +739,8 @@
   </promotion>
   <archiveStatus>
     <archivistName dcds:propertyURI="contributor/archivist">Jeff Klassen</archivistName>
-    <dateArchived dcds:propertyURI="dateSubmitted" dcds:sesURI="http://purl.org/dc/terms/W3CDTF">2011-04-19</dateArchived>
-    <dateUpdated dcds:propertyURI="modified" dcds:sesURI="http://purl.org/dc/terms/W3CDTF">2011-06-24</dateUpdated>
+    <dateArchived dcds:propertyURI="dateSubmitted" dcds:sesURI="http://purl.org/dc/terms/W3CDTF">2011-04-19T00:00:00</dateArchived>
+    <dateUpdated dcds:propertyURI="modified" dcds:sesURI="http://purl.org/dc/terms/W3CDTF">2011-06-24T00:00:00</dateUpdated>
     <comments dcds:propertyURI="abstract">Initial submission to DBL</comments>
   </archiveStatus>
   <format dcds:propertyURI="format" dcds:sesURI="http://purl.org/dc/terms/IMT">text/xml</format>

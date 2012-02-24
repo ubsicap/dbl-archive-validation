@@ -26,11 +26,11 @@ start =
        element scope {
            attribute dcds:propertyURI { "title/scriptureScope" },
            text 
-           }?&
+           }&
        element description {
            attribute dcds:propertyURI { "description" },
            text 
-           }?&
+           }&
        element dateCompleted {
            attribute dcds:propertyURI { "date" },
            attribute dcds:sesURI { "http://purl.org/dc/terms/W3CDTF" },
@@ -46,7 +46,7 @@ start =
            xsd:string { minLength = "2" } 
            }*&
       # bundleProducer is overwritten by Paratext
-      element bundleProducer { xsd:string { minLength = "2" } }?
+      element bundleProducer { xsd:string { minLength = "2" } }
     }&
     element confidential {
       attribute dcds:propertyURI { "accessRights/confidential" },
@@ -77,12 +77,12 @@ start =
         }&
       element subtag { 
         attribute dcds:propertyURI { "language/subtag" },
-        xsd:string { pattern = "[a-z]{2}(\-[A-Za-z]+){0,3}" }
-        }?&
+        xsd:string { pattern = "[a-z]{2}(\-[A-Za-z]+){0,3}" }?
+        }&
       element rod { 
         attribute dcds:propertyURI { "language/rod" }, 
-        xsd:string { pattern = "[0-9]{5}" }
-        }?&
+        xsd:string { pattern = "[0-9]{5}" }?
+        }&
       element script {
         attribute dcds:propertyURI { "language/script" },
         xsd:string { minLength = "2" }
@@ -96,7 +96,7 @@ start =
       element numerals {
         attribute dcds:propertyURI { "language/numerals" },
         numeralSystem
-        }?
+        }
     }&
     element country { 
       element iso { 
@@ -112,11 +112,11 @@ start =
     element translation { 
       element type { 
         attribute dcds:propertyURI { "type/translationType" }, 
-        ("First" | "New" | "Revision") ?
+        translationType ?
         }, 
       element level {
         attribute dcds:propertyURI { "audience" }, 
-        ( "Basic" | "Common" | "Common - Literary" | "Literary" | "Liturgical")?
+        translationLevel ?
         }
       }&
     # bookNames/book is overwritten by Paratext
@@ -163,13 +163,12 @@ start =
           }+
         }+
       }&
-    # 1 = draft, 2 = internalReview, 3 = extenalReview, 4 = finalReview 
     # progress is overwritten by Paratext
     element progress {
       attribute dcds:propertyURI { "description/stage" },
       element book {
         attribute code { bookCode },
-        attribute stage {"1" | "2" | "3" | "4"}
+        attribute stage { translationStage }
       }+
     }?&
 	# Default to Publisher (from agencies) 
@@ -220,20 +219,20 @@ start =
       element archivistName {
         attribute dcds:propertyURI { "contributor/archivist" },
         xsd:string { minLength = "2" }
-      },
+      }&
 	  # yyyy-mm-dd
       # dateArchived is overwritten by Paratext
       element dateArchived {
         attribute dcds:propertyURI { "dateSubmitted" },
         attribute dcds:sesURI { "http://purl.org/dc/terms/W3CDTF" },
-        (xsd:date | xsd:dateTime)
-      },
+        xsd:dateTime
+      }&
       # dateUpdated is overwritten by Paratext
       element dateUpdated {
         attribute dcds:propertyURI { "modified" },
         attribute dcds:sesURI { "http://purl.org/dc/terms/W3CDTF" },
-        (xsd:date | xsd:dateTime)
-      },
+        xsd:dateTime
+      }&
       element comments {
         attribute dcds:propertyURI { "abstract" },
         xsd:string { minLength = "2" maxLength = "255" }
@@ -246,10 +245,6 @@ start =
       "text/xml"
     }
   }
-
-#nameLocal = element nameLocal { text }
-#abbreviation = element abbreviation { text }
-#abbreviationLocal = element abbreviationLocal { text }
 
 htmlMarkup = (text
          | element p { (text | htmlCharMarkup)+ }
@@ -277,7 +272,8 @@ htmlCharMarkup = (element a {
          | element em { text }
          | element i { text })
 
-numeralSystem = ("Arabic" # (a.k.a. 'Hindu') = 0123456789
+numeralSystem = (
+           "Arabic" # (a.k.a. 'Hindu') = 0123456789
          | "Bengali"
          | "Burmese"
          | "Devanagari"
@@ -295,7 +291,23 @@ numeralSystem = ("Arabic" # (a.k.a. 'Hindu') = 0123456789
          | "Thai"
          | "Tibetan")
 
-bookCode = ("GEN"   # Genesis
+translationType = (
+           "First"
+         | "New"
+         | "Revision")
+
+translationLevel = (
+           "Basic"
+         | "Common"
+         | "Common - Literary"
+         | "Literary"
+         | "Liturgical")
+
+# 1 = draft, 2 = internalReview, 3 = extenalReview, 4 = finalReview
+translationStage = ( "1" | "2" | "3" | "4")
+
+bookCode = (
+           "GEN"   # Genesis
          | "EXO" # Exodus
          | "LEV" # Leviticus
          | "NUM" # Numbers
