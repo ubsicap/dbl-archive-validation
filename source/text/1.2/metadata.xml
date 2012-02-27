@@ -21,7 +21,7 @@
   <language>
   	<iso dcds:propertyURI="language/iso" dcds:sesURI="http://purl.org/dc/terms/ISO639-3">eng</iso>
     <name dcds:propertyURI="subject/subjectLanguage" dcds:sesURI="http://purl.org/dc/terms/ISO639-3">English  Name</name>
-    <subtag dcds:propertyURI="language/subtag">en</subtag>
+    <ldml dcds:propertyURI="language/ldml">en</ldml>
     <rod dcds:propertyURI="language/rod"></rod>
     <script dcds:propertyURI="language/script">Roman</script>
     <scriptDirection dcds:propertyURI="language/scriptDirection">LTR</scriptDirection><!-- LTR (Left to Right) or RTL (Right to Left) -->

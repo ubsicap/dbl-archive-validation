@@ -75,8 +75,8 @@ start =
         attribute dcds:sesURI { "http://purl.org/dc/terms/ISO639-3" }, 
         xsd:string { minLength = "2" }
         }&
-      element subtag { 
-        attribute dcds:propertyURI { "language/subtag" },
+      element ldml { 
+        attribute dcds:propertyURI { "language/ldml" },
         xsd:string { pattern = "[a-z]{2}(\-[A-Za-z]+){0,3}" }?
         }&
       element rod { 
