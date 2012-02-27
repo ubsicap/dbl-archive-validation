@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="12.2">
+    <meta>
+        <filters directoryPatterns="" filePatterns="" positiveFilePatterns="" showHiddenFiles="false"/>
+        <options/>
+    </meta>
+    <projectTree name="dblAudioBundle_1.0.xpr">
+        <file name="license.xml"/>
+        <file name="metadata.xml"/>
+        <file name="stream.xml"/>
+    </projectTree>
+</project>
