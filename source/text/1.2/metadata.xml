@@ -20,7 +20,7 @@
   </agencies>
   <language>
   	<iso dcds:propertyURI="language/iso" dcds:sesURI="http://purl.org/dc/terms/ISO639-3">eng</iso>
-    <name dcds:propertyURI="subject/subjectLanguage" dcds:sesURI="http://purl.org/dc/terms/ISO639-3">English  Name</name>
+    <name dcds:propertyURI="subject/subjectLanguage" dcds:sesURI="http://purl.org/dc/terms/ISO639-3">English</name>
     <ldml dcds:propertyURI="language/ldml">en</ldml>
     <rod dcds:propertyURI="language/rod"></rod>
     <script dcds:propertyURI="language/script">Roman</script>

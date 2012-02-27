@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DBLMetadata type="audio" id="1111111111111111" rel="66f69e2e951292b7" version="1.0" xml:base="http://purl.org/ubs/metadata/dc/terms/" xmlns:dcds="http://purl.org/dc/xmlns/2008/09/01/dc-ds-xml/">
+    <identification>
+        <name></name>
+        <nameLocal></nameLocal>
+        <scope></scope>
+        <description></description>
+        <bundleProducer></bundleProducer>
+    </identification>
+    <date>
+        <issued></issued>
+        <digitised></digitised>
+    </date>
+    <agencies>
+        <creator></creator>
+        <publisher></publisher>
+        <contributor></contributor>
+    </agencies>
+    <language>
+        <iso>eng</iso>
+        <name>English</name>
+        <ldml>en</ldml>
+        <rod></rod>
+    </language>
+    <type>
+        <targetAudience></targetAudience>
+    </type>
+    <format>
+        <mimeType></mimeType>
+        <audioEncoding></audioEncoding>
+        <audioTrackConfiguration></audioTrackConfiguration>
+        
+    </format>
+</DBLMetadata>
