@@ -54,15 +54,20 @@ start =
     }&
     element agencies {
       element etenPartner { "UBS" | "WBT" | "Biblica" }?&
-      element translation { 
-        attribute dcds:propertyURI { "description/sponsorship" },
+      # primary translation or coordination/sponsorship agency
+      element creator { 
+        attribute dcds:propertyURI { "creator" },
         xsd:string { minLength = "2" } 
         }+&
-      # publishing may be the same as translation (description/sponsorship) 
-      element publishing {
+      # publisher may be the same as translation (description/sponsorship) 
+      element publisher {
         attribute dcds:propertyURI { "publisher" },
         xsd:string { minLength = "2" } 
-        }+
+        }+&
+      element contributor {
+        attribute dcds:propertyURI { "contributor" },
+        text 
+        }*
     }&
     element language {
       element iso { 
@@ -109,12 +114,12 @@ start =
         xsd:string { minLength = "2" } 
         }
       }&
-    element translation { 
-      element type { 
+    element type { 
+      element translationType { 
         attribute dcds:propertyURI { "type/translationType" }, 
         translationType ?
         }, 
-      element level {
+      element audience {
         attribute dcds:propertyURI { "audience" }, 
         translationLevel ?
         }

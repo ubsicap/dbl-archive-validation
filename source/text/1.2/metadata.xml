@@ -15,8 +15,9 @@
   <confidential dcds:propertyURI="accessRights/confidential">false</confidential>
   <agencies>
     <etenPartner>UBS</etenPartner> <!-- Currently "UBS", "WBT", "Biblica" -->
-    <translation dcds:propertyURI="description/sponsorship">American Bible Society</translation>
-    <publishing dcds:propertyURI="publisher">American Bible Society</publishing>
+    <creator dcds:propertyURI="creator">American Bible Society</creator><!-- primary translation agency/sponsorship -->
+    <publisher dcds:propertyURI="publisher">American Bible Society</publisher><!-- primary publishing agency> -->
+    <contributor  dcds:propertyURI="contributor"></contributor>
   </agencies>
   <language>
   	<iso dcds:propertyURI="language/iso" dcds:sesURI="http://purl.org/dc/terms/ISO639-3">eng</iso>
@@ -31,10 +32,10 @@
   	<iso dcds:propertyURI="coverage/spatial" dcds:sesURI="http://purl.org/dc/terms/ISO3166">USA</iso>
     <name dcds:propertyURI="subject/subjectCountry">United States</name>
   </country>
-  <translation>
-    <type dcds:propertyURI="type/translationType">Revision</type>
-    <level dcds:propertyURI="audience">Common</level>
-  </translation>
+  <type>
+    <translationType dcds:propertyURI="type/translationType">Revision</translationType>
+    <audience dcds:propertyURI="audience">Common</audience>
+  </type>
   <bookNames>
     <book code="GEN">
       <name type="long">GENESIS</name>
