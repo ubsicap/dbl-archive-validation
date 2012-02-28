@@ -1,0 +1,6 @@
+licenserights.id,licenserights.entrytype,licenserights.name,licenserights.sort
+1,text,allowOffline,1
+2,text,allowIntroductions,2
+3,text,allowFootnotes,3
+4,text,allowCrossReferences,4
+5,text,allowExtendedNotes,5
