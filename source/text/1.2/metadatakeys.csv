@@ -1,4 +1,4 @@
-"metadatakeys.entrytype","metadatakeys.bundleversion","metadatakeys.key","metadatakeys.name","metadatakeys.xpath","metadatakeys.sort","metadatakeys.important","metadatakeys.xhtml"
+"metadatakeys.entrytype","metadatakeys.version","metadatakeys.key","metadatakeys.name","metadatakeys.xpath","metadatakeys.sort","metadatakeys.important","metadatakeys.xhtml"
 "text",1.2,"uid","Project Archive UID","@id",15,"TRUE","FALSE"
 "text",1.2,"nameCommon","Common Version Name","identification/name",5,"TRUE","FALSE"
 "text",1.2,"nameCommonLocal","Common Version Name Local","identification/nameLocal",999,"FALSE","FALSE"
