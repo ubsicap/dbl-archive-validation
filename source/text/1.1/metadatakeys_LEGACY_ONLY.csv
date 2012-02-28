@@ -1,0 +1,52 @@
+metadatakeys.id,metadatakeys.key,metadatakeys.name,metadatakeys.xpath,metadatakeys.sort,metadatakeys.important,metadatakeys.xhtml,metadatakeys.entrytype,metadatakeys.bundleversion
+1,uid,Project Archive UID,identification/systemId[@type='dbl'],15,True,False,project,1.1
+2,nameCommon,Common Version Name,identification/name,5,True,False,project,1.1
+3,nameCommonLocal,Common Version Name Local,identification/nameLocal,999,False,False,project,1.1
+4,nameAbbreviation,Version Abbreviation,identification/abbreviation,6,True,False,project,1.1
+5,nameAbbreviationLocal,Version Abbreviation Local,identification/abbreviationLocal,999,False,False,project,1.1
+6,scope,Scope,identification/scope,7,True,False,project,1.1
+7,description,Description,identification/description,999,False,False,project,1.1
+8,dateCompleted,Completion Date,identification/dateCompleted,8,True,False,project,1.1
+9,idTMS,TMS Project Id,identification/systemId[@type='tms'],999,False,False,project,1.1
+10,idSIL,SIL Project Id,identification/systemId[@type='reap'],999,False,False,project,1.1
+11,idParatext,Paratext GUID,identification/systemId[@type='paratext'],999,False,False,project,1.1
+12,isResource,Is Paratext Resource?,identification/isResource,999,False,False,project,1.1
+13,bundleVersion,Bundle Version,identification/bundleVersion,16,True,False,project,1.1
+14,bundleProducer,Bundle Producer,identification/bundleProducer,999,False,False,project,1.1
+15,confidential,Confidential Project,confidential,999,False,False,project,1.1
+16,agencyETEN,ETEN Partner Agency,agencies/etenPartner,9,True,False,project,1.1
+17,agencyTranslation,Translation Agency,agencies/translation,999,False,False,project,1.1
+18,agencyPublishing,Publishing Agency,agencies/publishing,999,False,False,project,1.1
+19,languageCode,Language Code,language/iso,2,True,False,project,1.1
+20,languageName,Language Name,language/name,1,True,False,project,1.1
+21,languageScript,Script,language/script,3,True,False,project,1.1
+22,languageScriptDirection,Script Direction,language/scriptDirection,999,False,False,project,1.1
+23,countryCode,Country Code,country/iso,999,False,False,project,1.1
+24,countryName,Country Name,country/name,4,True,False,project,1.1
+25,translationType,Translation Type,translation/type,999,False,False,project,1.1
+26,languageLevel,Language Level,translation/level,999,False,False,project,1.1
+27,contents,Books in Publication Order,"contents/bookList[@id=""default""]",999,False,False,project,1.1
+28,progress,Project Progress,progress,999,False,False,project,1.1
+29,validatedMarkers,Markers Validated Successfully,checking/validatedMarkers,999,False,False,project,1.1
+30,validatedVerses,Chapters/Verses Validated Successfully,checking/validatedVerses,999,False,False,project,1.1
+31,rightsHolder,Rights Holder Name,contact/rightsHolder,10,True,False,project,1.1
+32,rightsHolderLocal,Rights Holder Name Local,contact/rightsHolderLocal,999,False,False,project,1.1
+33,rightsHolderAbbreviation,Rights Holder Abbreviation,contact/rightsHolderAbbreviation,999,False,False,project,1.1
+34,rightsHolderURL,Rights Holder URL,contact/rightsHolderURL,999,False,False,project,1.1
+35,rightsHolderFacebook,Rights Holder Facebook Page,contact/rightsHolderFacebook,999,False,False,project,1.1
+36,pubLicenseDate,DBL Publishing License Date,rights/dateLicense,11,True,False,project,1.1
+37,pubLicenseDateExpiry,DBL Publishing License Expiry Date,rights/dateLicenseExpiry,12,True,False,project,1.1
+38,rightsInfo,Rights Information Statement,rights/rightsStatement,999,False,True,project,1.1
+39,pubAllowOffline,Allow Offline Display,rights/publicationRights/allowOffline,999,False,False,project,1.1
+40,pubAllowAudio,Allow Audio,rights/publicationRights/allowAudio,999,False,False,project,1.1
+41,pubAllowNewPublishers,Allow New DBL Publishers,rights/publicationRights/allowNewPublishers,999,False,False,project,1.1
+42,pubDenyPlatforms,Deny Publishing To Platforms,rights/publicationRights/denyPlatforms/platform,999,False,False,project,1.1
+43,pubExchangeLicenseFCBH,Allow License Exchange With FCBH,rights/publicationRights/exchangeLicenseFCBH,999,False,False,project,1.1
+44,pubPromoVersionInfo,Promotion Version Info,promotion/promoVersionInfo,999,False,True,project,1.1
+45,pubPromoEmail,Promotion Email Message,promotion/promoEmail,999,False,False,project,1.1
+46,archivist,Archivist,archiveStatus/archivistName,999,False,False,project,1.1
+47,dateArchived,Original Archive Date,archiveStatus/dateArchived,999,False,False,project,1.1
+48,dateUpdated,Last Archive Date,archiveStatus/dateUpdated,13,True,False,project,1.1
+49,comments,Comments,archiveStatus/comments,14,True,False,project,1.1
+50,pubAllowFootnotes,Allow Standard Footnotes,rights/publicationRights/allowFootnotes,999,False,False,project,1.1
+51,pubAllowCrossReferences,Allow Standard Cross References,rights/publicationRights/allowCrossReferences,999,False,False,project,1.1
