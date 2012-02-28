@@ -4,7 +4,7 @@
     <name dcds:propertyURI="title">Good News Translation Audio Bible</name>
     <nameLocal>Good News Translation Audio Bible</nameLocal>
     <scope dcds:propertyURI="title/scriptureScope">Bible with Deuterocanon</scope>
-    <description>English Good News Translation Dramatized Audio Bible</description>
+    <description dcds:propertyURI="description">English Good News Translation Dramatized Audio Bible</description>
     <dateCompleted dcds:propertyURI="date" dcds:sesURI="http://purl.org/dc/terms/W3CDTF">1992-10-01</dateCompleted>
     <systemId type="fcbh" dcds:propertyURI="identifier/fcbhID">0a1b2c3d4r5f6789</systemId>
     <bundleProducer>Paratext/7.3.0.92</bundleProducer>
@@ -25,7 +25,8 @@
   </language>
   <type>
     <audioType dcds:propertyURI="type/translationType">Dramatized</audioType>
-    <audience dcds:propertyURI="audience">Common</audience>
+    <!-- What might audience be used for here? The text id relation already specifies the translation audience. -->
+    <!-- <audience dcds:propertyURI="audience">Common</audience> -->
   </type>
   <format>
     <mimeType>audio/mpeg</mimeType>
@@ -108,4 +109,26 @@
     <book code="JUD"/>
     <book code="REV"/>
   </books>
+  <contact>
+    <rightsHolder dcds:propertyURI="rightsHolder">Faith Comes By Hearing</rightsHolder>
+    <rightsHolderLocal dcds:propertyURI="rightsHolder/contactLocal">Faith Comes By Hearing</rightsHolderLocal>
+    <rightsHolderAbbreviation dcds:propertyURI="rightsHolder/contactAbbreviation">FCBH</rightsHolderAbbreviation>
+    <rightsHolderURL dcds:propertyURI="rightsHolder/contactURL">http://www.faithcomesbyhearing.com/</rightsHolderURL>
+    <rightsHolderFacebook dcds:propertyURI="rightsHolder/contactFacebook">http://www.facebook.com/pages/Albuquerque-NM/Faith-Comes-By-Hearing/5655514986</rightsHolderFacebook>
+  </contact>
+  <copyright>
+    <!-- Allow XHTML: <h1> <h2> <h3> <p> <blockquote> <ul> <ol> <li> <br> <strong> <em> <a> -->
+    <statement dcds:propertyURI="rights" contentType="xhtml"><p>Good News Translation Audio Bible © 1992 Faith Comes By Hearing. All rights reserved.</p></statement>
+  </copyright>
+  <promotion>
+    <!-- Allow XHTML: <h1> <h2> <h3> <p> <blockquote> <ul> <ol> <li> <br> <strong> <em> <a> -->
+    <promoVersionInfo dcds:propertyURI="description/pubPromoVersionInfo" contentType="xhtml"><p>Audio background and promotion information.</p></promoVersionInfo>
+    <!-- Allow XHTML: <h1> <h2> <h3> <p> <blockquote> <ul> <ol> <li> <br> <strong> <em> <a> -->
+  </promotion>
+  <archiveStatus>
+    <archivistName dcds:propertyURI="contributor/archivist">Jeff Klassen</archivistName>
+    <dateArchived dcds:propertyURI="dateSubmitted" dcds:sesURI="http://purl.org/dc/terms/W3CDTF">2011-04-19T00:00:00</dateArchived>
+    <dateUpdated dcds:propertyURI="modified" dcds:sesURI="http://purl.org/dc/terms/W3CDTF">2011-06-24T00:00:00</dateUpdated>
+    <comments dcds:propertyURI="abstract">Initial submission to DBL</comments>
+  </archiveStatus>
 </DBLMetadata>

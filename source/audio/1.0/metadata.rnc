@@ -1,6 +1,6 @@
 # metadata.rnc
-# This is a compact syntax Relax NG Schema for the DBL @type="text" metadata information file.
-# DBL bundle version = 1.2
+# This is a compact syntax Relax NG Schema for the DBL @type="audio" metadata information file.
+# DBL bundle version = 1.0
 
 default namespace = ""
 datatypes xsd = "http://www.w3.org/2001/XMLSchema-datatypes"
@@ -8,174 +8,112 @@ namespace dcds = "http://purl.org/dc/xmlns/2008/09/01/dc-ds-xml/"
 
 start =
   element DBLMetadata {
-    attribute type { "text" }&
+    attribute type { "audio" }&
     # id is overwritten at submission 
     attribute id { xsd:string { pattern="[a-f0-9]{16}" } }&
     attribute version { xsd:decimal }&
     attribute xml:base { "http://purl.org/ubs/metadata/dc/terms/" }&
     element identification {
-      element name {
-        attribute dcds:propertyURI { "title" },
-        xsd:string { minLength = "2" }
-      }&
-      # nameLocal should default to name 
-      element nameLocal { xsd:string { minLength = "2" } }&
-      element abbreviation { xsd:string { pattern="[A-Za-z0-9\-]{2,8}" } }&
-      # abbreviationLocal should default to abbreviation
-      element abbreviationLocal { xsd:string { pattern="[A-Za-z0-9\-]{2,8}" } }&
-      element scope {
-        attribute dcds:propertyURI { "title/scriptureScope" },
-        text 
-      }&
-      element description {
-        attribute dcds:propertyURI { "description" },
-        text 
-      }&
-      element dateCompleted {
-        attribute dcds:propertyURI { "date" },
-        attribute dcds:sesURI { "http://purl.org/dc/terms/W3CDTF" },
-        (xsd:date | xsd:gYear | xsd:gYearMonth | xsd:dateTime )
-	  }&
-      # systemId[@type='paratext'] is overwritten by Paratext
-      element systemId {(
-        (attribute type { "tms" }, attribute dcds:propertyURI { "identifier/tmsID" })|
-        (attribute type { "paratext" }, attribute dcds:propertyURI { "identifier/ptxID" })|
-        (attribute type { "reap" }, attribute dcds:propertyURI { "identifier/reapID" })|
-        (attribute type { "biblica" }, attribute dcds:propertyURI { "identifier/biblicaID" })
-        ),
-        xsd:string { minLength = "2" } 
-      }*&
+       element name {
+           attribute dcds:propertyURI { "title" },
+            xsd:string { minLength = "2" }
+            }&
+       # nameLocal should default to name 
+       element nameLocal { xsd:string { minLength = "2" } }&
+       element scope {
+           attribute dcds:propertyURI { "title/scriptureScope" },
+           text 
+           }&
+       element description {
+           attribute dcds:propertyURI { "description" },
+           text 
+           }&
+       element dateCompleted {
+           attribute dcds:propertyURI { "date" },
+           attribute dcds:sesURI { "http://purl.org/dc/terms/W3CDTF" },
+           (xsd:date | xsd:gYear | xsd:gYearMonth | xsd:dateTime )
+	       }&
+       # systemId[@type='paratext'] is overwritten by Paratext
+       element systemId {(
+           (attribute type { "fcbh" }, attribute dcds:propertyURI { "identifier/fcbhID" })|
+           (attribute type { text }, attribute dcds:propertyURI { "identifier" })
+           ),
+           xsd:string { minLength = "2" } 
+           }*&
       # bundleProducer is overwritten by Paratext
       element bundleProducer { xsd:string { minLength = "2" } }
     }&
-    element confidential {
-      attribute dcds:propertyURI { "accessRights/confidential" },
-      xsd:boolean
+    element relationships {
+      element relation {
+        attribute type { bundleTypes },
+        xsd:string { pattern="[a-f0-9]{16}" }
+        } 
     }&
     element agencies {
-      element etenPartner { "UBS" | "WBT" | "Biblica" }?&
-      # primary translation or coordination/sponsorship agency
+      # primary coordination/sponsorship agency
       element creator { 
         attribute dcds:propertyURI { "creator" },
         xsd:string { minLength = "2" } 
-      }+&
-      # publisher may be the same as translation (description/sponsorship) 
+        }+&
+      # publisher may be the same as creator 
       element publisher {
         attribute dcds:propertyURI { "publisher" },
         xsd:string { minLength = "2" } 
-      }+&
+        }+&
       element contributor {
         attribute dcds:propertyURI { "contributor" },
         text 
-      }*
+        }*
     }&
     element language {
       element iso { 
         attribute dcds:propertyURI { "language/iso" },
         attribute dcds:sesURI { "http://purl.org/dc/terms/ISO639-3" },
         xsd:string { pattern = "[a-z][a-z][a-z]" }
-      }&
+        }&
       element name { 
         attribute dcds:propertyURI { "subject/subjectLanguage" },
         attribute dcds:sesURI { "http://purl.org/dc/terms/ISO639-3" }, 
         xsd:string { minLength = "2" }
-      }&
+        }&
       element ldml { 
         attribute dcds:propertyURI { "language/ldml" },
         xsd:string { pattern = "[a-z]{2}(\-[A-Za-z]+){0,3}" }?
-      }&
+        }&
       element rod { 
         attribute dcds:propertyURI { "language/rod" }, 
         xsd:string { pattern = "[0-9]{5}" }?
-      }&
-      element script {
-        attribute dcds:propertyURI { "language/script" },
-        xsd:string { minLength = "2" }
-      }&
-      # LTR (Left to Right) or RTL (Right to Left) 
-      # scriptDirection is overwritten by Paratext
-      element scriptDirection {
-        attribute dcds:propertyURI { "language/scriptDirection" },
-        ("LTR" | "RTL") 
-      }&
-      element numerals {
-        attribute dcds:propertyURI { "language/numerals" },
-        ( empty | numeralSystem )
-      }
-    }&
-    element country { 
-      element iso { 
-        attribute dcds:propertyURI { "coverage/spatial" },
-        attribute dcds:sesURI { "http://purl.org/dc/terms/ISO3166" }, 
-        xsd:string { pattern = "[A-Z][A-Z][A-Z]?" } 
-      },
-      element name { 
-        attribute dcds:propertyURI { "subject/subjectCountry" }, 
-        xsd:string { minLength = "2" } 
-      }
+        }
     }&
     element type { 
-      element translationType { 
+      element audioType { 
         attribute dcds:propertyURI { "type/translationType" }, 
-        translationType ?
-      }, 
-      element audience {
-        attribute dcds:propertyURI { "audience" }, 
-        translationLevel ?
-      }
-    }&
-    # bookNames/book is overwritten by Paratext
-    element bookNames { 
-      element book { 
-        attribute code { bookCode }, 
-        element name { 
-          attribute type {"long"}, 
-          text 
-        }, 
-        element name { 
-          attribute type {"short"}, 
-          text 
-        }, 
-        element name { 
-          attribute type {"abbr"}, 
-          text 
+        audioType ?
         }
-      }*
+      #element audience {
+      #  attribute dcds:propertyURI { "audience" }, 
+      #  audioLevel ?
+      #  }
     }&
-    element contents {
-      attribute dcds:propertyURI { "tableOfContents" },
-      element bookList {
-        attribute id { "default" }?&
-        # default to name from identification section  
-        element name { text }&
-        # default to name local from identification section 
-        element nameLocal { text }& 
-        element abbreviation { text }& 
-        element abbreviationLocal { text }&
-        # e.g. "NT" | "NT + OT" or <Name> from Cannons.xml
-        element description { text }&
-        # e.g Protestant Bible (66 books) 
-        element range { text }&
-        # e.g Western Protestant order 
-        element tradition { text }&
-        element division {
-          attribute id { "OT" | "NT" | "DC" },
-          element books { 
-            element book { 
-              attribute code { bookCode }
-            }+
-          }
-        }+
+    element format {
+      element mimeType { audioMimeTypes }&
+      element compression {
+        attribute ebuCompressionCode { xsd:decimal },
+        audioCompressionTypes
+      }&
+      element trackConfiguration {
+        attribute ebuFormatCode { xsd:integer },
+        audioTrackConfigurations
+      }&
+      element bitRate { xsd:integer }&
+      element bitDepth { xsd:integer }&
+      element samplingRate { xsd:integer }
+    }&
+    element books { 
+      element book { 
+        attribute code { bookCode }
       }+
     }&
-    # progress is overwritten by Paratext
-    element progress {
-      attribute dcds:propertyURI { "description/stage" },
-      element book {
-        attribute code { bookCode },
-        attribute stage { translationStage }
-      }+
-    }?&
 	# Default to Publisher (from agencies) 
     element contact {
       element rightsHolder {
@@ -213,10 +151,6 @@ start =
         attribute contentType { "xhtml" },
         attribute dcds:propertyURI { "description/pubPromoVersionInfo" },
 		htmlMarkup
-      }&
-      element promoEmail {
-        attribute dcds:propertyURI { "description/pubPromoEmail" },
-        text
       }
     }?&
     element archiveStatus {
@@ -241,12 +175,6 @@ start =
         attribute dcds:propertyURI { "abstract" },
         xsd:string { minLength = "2" maxLength = "255" }
       }
-    }&
-    # format is overwritten by Paratext
-    element format {
-      attribute dcds:propertyURI { "format" },
-      attribute dcds:sesURI { "http://purl.org/dc/terms/IMT" },
-      "text/xml"
     }
   }
 
@@ -276,39 +204,24 @@ htmlCharMarkup = (element a {
          | element em { text }
          | element i { text })
 
-numeralSystem = (
-           "Arabic" # (a.k.a. 'Hindu') = 0123456789
-         | "Bengali"
-         | "Burmese"
-         | "Devanagari"
-         | "Ethiopic"
-         | "Farsi"
-         | "Gujarati"
-         | "Gurmukhi"
-         | "Hindi" # (i.e. 'Arabic' as used in Egypt)
-         | "Kannada"
-         | "Khmer"
-         | "Malayalam"
-         | "Oriya"
-         | "Tamil"
-         | "Telugu"
-         | "Thai"
-         | "Tibetan")
+bundleTypes = (
+           "text" # (a.k.a. 'Hindu') = 0123456789
+         | "print"
+         | "audio"
+         | "video")
 
-translationType = (
-           "First"
-         | "New"
-         | "Revision")
+audioType = (
+           "Dramatized"
+         | "Non-Dramatized")
+         
+audioMimeTypes = (
+           "audio/mpeg")
 
-translationLevel = (
-           "Basic"
-         | "Common"
-         | "Common - Literary"
-         | "Literary"
-         | "Liturgical")
+audioCompressionTypes = (
+           "MP3")
 
-# 1 = draft, 2 = internalReview, 3 = extenalReview, 4 = finalReview
-translationStage = ( "1" | "2" | "3" | "4")
+audioTrackConfigurations = (
+           "2/0 (Stereo)")
 
 bookCode = (
            "GEN"   # Genesis
