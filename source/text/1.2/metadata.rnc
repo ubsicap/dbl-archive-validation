@@ -100,7 +100,7 @@ start =
         }&
       element numerals {
         attribute dcds:propertyURI { "language/numerals" },
-        numeralSystem
+        ( empty | numeralSystem )
         }
     }&
     element country { 
