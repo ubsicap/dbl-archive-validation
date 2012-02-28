@@ -1,34 +1,111 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<DBLMetadata type="audio" id="1111111111111111" rel="66f69e2e951292b7" version="1.0" xml:base="http://purl.org/ubs/metadata/dc/terms/" xmlns:dcds="http://purl.org/dc/xmlns/2008/09/01/dc-ds-xml/">
-    <identification>
-        <name></name>
-        <nameLocal></nameLocal>
-        <scope></scope>
-        <description></description>
-        <bundleProducer></bundleProducer>
-    </identification>
-    <date>
-        <issued></issued>
-        <digitised></digitised>
-    </date>
-    <agencies>
-        <creator></creator>
-        <publisher></publisher>
-        <contributor></contributor>
-    </agencies>
-    <language>
-        <iso>eng</iso>
-        <name>English</name>
-        <ldml>en</ldml>
-        <rod></rod>
-    </language>
-    <type>
-        <targetAudience></targetAudience>
-    </type>
-    <format>
-        <mimeType></mimeType>
-        <audioEncoding></audioEncoding>
-        <audioTrackConfiguration></audioTrackConfiguration>
-        
-    </format>
+<DBLMetadata type="audio" id="1111111111111111" version="1.0" xml:base="http://purl.org/ubs/metadata/dc/terms/" xmlns:dcds="http://purl.org/dc/xmlns/2008/09/01/dc-ds-xml/">
+  <identification>
+    <name dcds:propertyURI="title">Good News Translation Audio Bible</name>
+    <nameLocal>Good News Translation Audio Bible</nameLocal>
+    <scope dcds:propertyURI="title/scriptureScope">Bible with Deuterocanon</scope>
+    <description>English Good News Translation Dramatized Audio Bible</description>
+    <dateCompleted dcds:propertyURI="date" dcds:sesURI="http://purl.org/dc/terms/W3CDTF">1992-10-01</dateCompleted>
+    <systemId type="fcbh" dcds:propertyURI="identifier/fcbhID">0a1b2c3d4r5f6789</systemId>
+    <bundleProducer>Paratext/7.3.0.92</bundleProducer>
+  </identification>
+  <relationships>
+    <relation type="text">66f69e2e951292b7</relation>
+  </relationships>
+  <agencies>
+    <creator dcds:propertyURI="creator">Faith Comes By Hearing</creator>
+    <publisher dcds:propertyURI="publisher">Faith Comes By Hearing</publisher>
+    <contributor dcds:propertyURI="contributor"></contributor>
+  </agencies>
+  <language>
+    <iso dcds:propertyURI="language/iso" dcds:sesURI="http://purl.org/dc/terms/ISO639-3">eng</iso>
+    <name dcds:propertyURI="subject/subjectLanguage" dcds:sesURI="http://purl.org/dc/terms/ISO639-3">English</name>
+    <ldml dcds:propertyURI="language/ldml">en</ldml>
+    <rod dcds:propertyURI="language/rod"></rod>
+  </language>
+  <type>
+    <audioType dcds:propertyURI="type/translationType">Dramatized</audioType>
+    <audience dcds:propertyURI="audience">Common</audience>
+  </type>
+  <format>
+    <mimeType>audio/mpeg</mimeType>
+    <compression ebuCompressionCode="8.4">MP3</compression>
+    <trackConfiguration ebuFormatCode="4">2/0 (Stereo)</trackConfiguration>
+    <bitRate>128000</bitRate><!-- bits/s -->
+    <bitDepth>16</bitDepth>
+    <samplingRate>44100</samplingRate><!-- bits/s -->
+  </format>
+  <!-- possible book attributes
+    duration="00:00:00"
+    start="00:00:00"
+    end="00:00:00"
+  -->
+  <books>
+    <book code="GEN"/>
+    <book code="EXO"/>
+    <book code="LEV"/>
+    <book code="NUM"/>
+    <book code="DEU"/>
+    <book code="JOS"/>
+    <book code="JDG"/>
+    <book code="RUT"/>
+    <book code="1SA"/>
+    <book code="2SA"/>
+    <book code="1KI"/>
+    <book code="2KI"/>
+    <book code="1CH"/>
+    <book code="2CH"/>
+    <book code="EZR"/>
+    <book code="NEH"/>
+    <book code="EST"/>
+    <book code="JOB"/>
+    <book code="PSA"/>
+    <book code="PRO"/>
+    <book code="ECC"/>
+    <book code="SNG"/>
+    <book code="ISA"/>
+    <book code="JER"/>
+    <book code="LAM"/>
+    <book code="EZK"/>
+    <book code="DAN"/>
+    <book code="HOS"/>
+    <book code="JOL"/>
+    <book code="AMO"/>
+    <book code="OBA"/>
+    <book code="JON"/>
+    <book code="MIC"/>
+    <book code="NAM"/>
+    <book code="HAB"/>
+    <book code="ZEP"/>
+    <book code="HAG"/>
+    <book code="ZEC"/>
+    <book code="MAL"/>
+    <book code="MAT"/>
+    <book code="MRK"/>
+    <book code="LUK"/>
+    <book code="JHN"/>
+    <book code="ACT"/>
+    <book code="ROM"/>
+    <book code="1CO"/>
+    <book code="2CO"/>
+    <book code="GAL"/>
+    <book code="EPH"/>
+    <book code="PHP"/>
+    <book code="COL"/>
+    <book code="1TH"/>
+    <book code="2TH"/>
+    <book code="1TI"/>
+    <book code="2TI"/>
+    <book code="TIT"/>
+    <book code="PHM"/>
+    <book code="HEB"/>
+    <book code="JAS"/>
+    <book code="1PE"/>
+    <book code="2PE"/>
+    <book code="1JN"/>
+    <book code="2JN"/>
+    <book code="3JN"/>
+    <book code="JUD"/>
+    <book code="REV"/>
+  </books>
 </DBLMetadata>
