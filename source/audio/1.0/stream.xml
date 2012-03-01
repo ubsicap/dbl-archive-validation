@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<stream id="1111111111111111">
-  <baseUrl>http://cloud.faithcomesbyhearing.com/mp3audiobibles2</baseUrl>
-  <api>
-    <syntax>{baseUrl}/?key={key}|id={id}|{book}/{chapter}/{time}</syntax>
-    <key>3e0eed1a69fc6e012fef51b8a28cc6ff</key>
-    <id>ENGGNTC2DA</id>
-  </api>
-</stream>

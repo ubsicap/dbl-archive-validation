@@ -212,7 +212,8 @@ bundleTypes = (
 
 audioType = (
            "Dramatized"
-         | "Non-Dramatized")
+         | "Non-Dramatized"
+         | "Single-Voice")
          
 audioMimeTypes = (
            "audio/mpeg")
