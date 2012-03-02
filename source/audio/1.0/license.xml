@@ -3,6 +3,6 @@
   <dateLicense dcds:sesURI="http://purl.org/dc/terms/W3CDTF">2011-10-01</dateLicense>
   <dateLicenseExpiry dcds:sesURI="http://purl.org/dc/terms/W3CDTF">2014-09-30</dateLicenseExpiry>
   <publicationRights>
-    <allowOffline>false</allowOffline>
+    <!-- what should go here? -->
   </publicationRights>
 </license>

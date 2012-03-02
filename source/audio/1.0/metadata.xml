@@ -4,8 +4,8 @@
     <name dcds:propertyURI="title">Good News Translation Audio Bible</name>
     <nameLocal>Good News Translation Audio Bible</nameLocal>
     <description dcds:propertyURI="description">English Good News Translation Dramatized Audio Bible</description>
-    <dateCompleted dcds:propertyURI="date" dcds:sesURI="http://purl.org/dc/terms/W3CDTF">1992-10-01</dateCompleted><!-- opt NULL -->
-    <systemId type="fcbh" dcds:propertyURI="identifier/fcbhID">0a1b2c3d4r5f6789</systemId>
+    <dateCompleted dcds:propertyURI="date" dcds:sesURI="http://purl.org/dc/terms/W3CDTF">1992-10-01</dateCompleted><!-- !! opt NULL -->
+    <systemId type="dbp" dcds:propertyURI="identifier/dbpID">0a1b2c3d4r5f6789</systemId>
     <bundleProducer>DBP</bundleProducer>
   </identification>
   <relationships>
@@ -17,17 +17,16 @@
     <contributor dcds:propertyURI="contributor"></contributor>
   </agencies>
   <language>
-    <ldml>en-Latn-US</ldml><!-- gather from text -->
+    <ldml dcds:propertyURI="language/ldml">en-Latn-US</ldml><!-- gather from text -->
   </language>
   <type>
     <audioType dcds:propertyURI="type/audioType">Dramatized</audioType>
-    <!-- What might audience be used for here? The text id relation already specifies the translation audience. -->
-    <!-- <audience dcds:propertyURI="audience">Common</audience> -->
   </type>
-  <format><!-- !! Optionaly empty -->
+  <format>
     <mimeType>audio/mpeg</mimeType>
-    <compression>MP3</compression>
-    <trackConfiguration>2/0 (Stereo)</trackConfiguration>
+    <!-- remaining format elements must be present, but can be empty -->
+    <compression>MP3</compression><!-- use EBU types -->
+    <trackConfiguration>2/0 (Stereo)</trackConfiguration><!-- use EBU types -->
     <bitRate>128000</bitRate><!-- bits/s -->
     <bitDepth>16</bitDepth>
     <samplingRate>44100</samplingRate><!-- bits/s -->
