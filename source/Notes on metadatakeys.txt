@@ -1,0 +1,13 @@
+There are certain reserved metadata keys:
+
+'entryrev' is entryrevs.id
+'entry' is entries.id
+'revnum' is entryrevs.revnum
+'latest' is true if latest revision
+'obsolete' is true if obsolete
+'obsoletedby' is uid of replacing text
+
+There are certain obligatory metadata keys:
+
+dateArchived: Original Archive Date
+dateUpdated: Last Archive Date
