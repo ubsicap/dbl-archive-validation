@@ -1,41 +1,24 @@
 entrytype,version,key,name,xpath,sort,important,xhtml
-audio,1.2,uid,Project Archive UID,@id,15,TRUE,FALSE
-audio,1.2,nameCommon,Common Version Name,identification/name,5,TRUE,FALSE
-audio,1.2,nameCommonLocal,Common Version Name Local,identification/nameLocal,999,FALSE,FALSE
-audio,1.2,nameAbbreviation,Version Abbreviation,identification/abbreviation,6,TRUE,FALSE
-audio,1.2,nameAbbreviationLocal,Version Abbreviation Local,identification/abbreviationLocal,999,FALSE,FALSE
-audio,1.2,scope,Scope,identification/scope,7,TRUE,FALSE
-audio,1.2,description,Description,identification/description,999,FALSE,FALSE
-audio,1.2,dateCompleted,Completion Date,identification/dateCompleted,8,TRUE,FALSE
-audio,1.2,idTMS,TMS Project Id,identification/systemId[@type='tms'],999,FALSE,FALSE
-audio,1.2,idSIL,SIL Project Id,identification/systemId[@type='reap'],999,FALSE,FALSE
-audio,1.2,idParatext,Paratext GUID,identification/systemId[@type='paratext'],999,FALSE,FALSE
-audio,1.2,version,Bundle Version,@version,16,TRUE,FALSE
-audio,1.2,bundleProducer,Bundle Producer,identification/bundleProducer,999,FALSE,FALSE
-audio,1.2,confidential,Confidential Project,confidential,999,FALSE,FALSE
-audio,1.2,agencyETEN,ETEN Partner Agency,agencies/etenPartner,9,TRUE,FALSE
-audio,1.2,agencyTranslation,Translation Agency,agencies/creator,999,FALSE,FALSE
-audio,1.2,agencyPublishing,Publishing Agency,agencies/publisher,999,FALSE,FALSE
-audio,1.2,languageCode,Language Code,language/iso,2,TRUE,FALSE
-audio,1.2,languageName,Language Name,language/name,1,TRUE,FALSE
-audio,1.2,languageScript,Script,language/script,3,TRUE,FALSE
-audio,1.2,languageScriptDirection,Script Direction,language/scriptDirection,999,FALSE,FALSE
-audio,1.2,countryCode,Country Code,country/iso,999,FALSE,FALSE
-audio,1.2,countryName,Country Name,country/name,4,TRUE,FALSE
-audio,1.2,translationType,Translation Type,type/translationType,999,FALSE,FALSE
-audio,1.2,languageLevel,Language Level,type/audience,999,FALSE,FALSE
-audio,1.2,rightsHolder,Rights Holder Name,contact/rightsHolder,10,TRUE,FALSE
-audio,1.2,rightsHolderLocal,Rights Holder Name Local,contact/rightsHolderLocal,999,FALSE,FALSE
-audio,1.2,rightsHolderAbbreviation,Rights Holder Abbreviation,contact/rightsHolderAbbreviation,999,FALSE,FALSE
-audio,1.2,rightsHolderURL,Rights Holder URL,contact/rightsHolderURL,999,FALSE,FALSE
-audio,1.2,rightsHolderFacebook,Rights Holder Facebook Page,contact/rightsHolderFacebook,999,FALSE,FALSE
-audio,1.2,pubPromoVersionInfo,Promotion Version Info,promotion/promoVersionInfo,999,FALSE,TRUE
-audio,1.2,pubPromoEmail,Promotion Email Message,promotion/promoEmail,999,FALSE,FALSE
-audio,1.2,archivist,Archivist,archiveStatus/archivistName,999,FALSE,FALSE
-audio,1.2,dateArchived,Original Archive Date,archiveStatus/dateArchived,999,FALSE,FALSE
-audio,1.2,dateUpdated,Last Archive Date,archiveStatus/dateUpdated,13,TRUE,FALSE
-audio,1.2,comments,Comments,archiveStatus/comments,14,TRUE,FALSE
-audio,1.2,copyrightStatement,Rights Information Statement,copyright/statement,999,FALSE,TRUE
-audio,1.2,languageLDMLId,Unicode LDML Languae ID,language/ldml,999,FALSE,FALSE
-audio,1.2,languageDialectCode,HIS Dialect Code,language/rod,999,FALSE,FALSE
-audio,1.2,languageNumerals,Numeral System,language/numerals,999,FALSE,FALSE
+audio,1,uid,Project Archive UID,@id,6,TRUE,FALSE
+audio,1,revision,Revision,@revision,7,TRUE,FALSE
+audio,1,typeVersion,Bundle Type Version,@typeVersion,8,TRUE,FALSE
+audio,1,nameCommon,Common Version Name,identification/name,1,TRUE,FALSE
+audio,1,nameCommonLocal,Common Version Name Local,identification/nameLocal,999,FALSE,FALSE
+audio,1,description,Description,identification/description,999,FALSE,FALSE
+audio,1,dateCompleted,Completion Date,identification/dateCompleted,2,TRUE,FALSE
+audio,1,bundleProducer,Bundle Producer,identification/bundleProducer,999,FALSE,FALSE
+audio,1,agencyCreator,Creator Agency,agencies/creator,999,FALSE,FALSE
+audio,1,agencyPublishing,Publishing Agency,agencies/publisher,999,FALSE,FALSE
+audio,1,audioType,Audio Type,type/audioType,999,FALSE,FALSE
+audio,1,rightsHolder,Rights Holder Name,contact/rightsHolder,3,TRUE,FALSE
+audio,1,rightsHolderLocal,Rights Holder Name Local,contact/rightsHolderLocal,999,FALSE,FALSE
+audio,1,rightsHolderAbbreviation,Rights Holder Abbreviation,contact/rightsHolderAbbreviation,999,FALSE,FALSE
+audio,1,rightsHolderURL,Rights Holder URL,contact/rightsHolderURL,999,FALSE,FALSE
+audio,1,rightsHolderFacebook,Rights Holder Facebook Page,contact/rightsHolderFacebook,999,FALSE,FALSE
+audio,1,pubPromoVersionInfo,Promotion Version Info,promotion/promoVersionInfo,999,FALSE,TRUE
+audio,1,archivist,Archivist,archiveStatus/archivistName,999,FALSE,FALSE
+audio,1,dateArchived,Original Archive Date,archiveStatus/dateArchived,999,FALSE,FALSE
+audio,1,dateUpdated,Last Archive Date,archiveStatus/dateUpdated,4,TRUE,FALSE
+audio,1,comments,Comments,archiveStatus/comments,5,TRUE,FALSE
+audio,1,copyrightStatement,Rights Information Statement,copyright/statement,999,FALSE,TRUE
+audio,1,languageLDMLId,Unicode LDML Languae ID,language/ldml,999,FALSE,FALSE
