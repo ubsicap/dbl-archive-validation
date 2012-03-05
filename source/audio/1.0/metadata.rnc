@@ -10,8 +10,9 @@ start =
   element DBLMetadata {
     attribute type { "audio" }&
     # id is overwritten at submission 
+    attribute typeVersion { xsd:decimal }&
     attribute id { xsd:string { pattern="[a-f0-9]{16}" } }&
-    attribute version { xsd:decimal }&
+    attribute revision { xsd:integer }&
     attribute xml:base { "http://purl.org/ubs/metadata/dc/terms/" }&
     element identification {
        element name {

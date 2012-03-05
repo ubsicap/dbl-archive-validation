@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<DBLMetadata type="audio" id="1111111111111111" version="1.0" xml:base="http://purl.org/ubs/metadata/dc/terms/" xmlns:dcds="http://purl.org/dc/xmlns/2008/09/01/dc-ds-xml/">
+<DBLMetadata type="audio" typeVersion="1.0" id="1111111111111111" revision="1" xml:base="http://purl.org/ubs/metadata/dc/terms/" xmlns:dcds="http://purl.org/dc/xmlns/2008/09/01/dc-ds-xml/">
   <identification>
     <name dcds:propertyURI="title">Good News Translation Audio Bible</name>
     <nameLocal>Good News Translation Audio Bible</nameLocal>

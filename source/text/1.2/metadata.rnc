@@ -9,9 +9,10 @@ namespace dcds = "http://purl.org/dc/xmlns/2008/09/01/dc-ds-xml/"
 start =
   element DBLMetadata {
     attribute type { "text" }&
+    attribute typeVersion { xsd:decimal }&
     # id is overwritten at submission 
     attribute id { xsd:string { pattern="[a-f0-9]{16}" } }&
-    attribute version { xsd:decimal }&
+    attribute revision { xsd:integer }&
     attribute xml:base { "http://purl.org/ubs/metadata/dc/terms/" }&
     element identification {
       element name {
