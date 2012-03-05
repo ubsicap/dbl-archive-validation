@@ -10,7 +10,7 @@ start =
   element license {
     # id is overwritten by Paratext
     attribute id { xsd:string { pattern="[a-f0-9]{16}" } }&
-    attribute type { licenseType }?&
+    attribute licenseType { licenseType }?&
     # yyyy-mm-dd
     element dateLicense {
       attribute dcds:sesURI { "http://purl.org/dc/terms/W3CDTF" },
@@ -22,7 +22,7 @@ start =
       xsd:date
     }&
     element publicationRights {
-      element allowOffline { xsd:boolean | ""}&
+      element allowOffline { xsd:boolean | ""}
     }
   }
 
