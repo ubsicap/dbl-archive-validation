@@ -11,7 +11,7 @@ text,1.2,dateCompleted,Completion Date,identification/dateCompleted,8,TRUE,FALSE
 text,1.2,idTMS,TMS Project Id,identification/systemId[@type='tms'],999,FALSE,FALSE
 text,1.2,idSIL,SIL Project Id,identification/systemId[@type='reap'],999,FALSE,FALSE
 text,1.2,idParatext,Paratext GUID,identification/systemId[@type='paratext'],999,FALSE,FALSE
-text,1.2,typeVersion,Bundle Version,@typeVersion,16,TRUE,FALSE
+text,1.2,typeVersion,Bundle Type Version,@typeVersion,8,TRUE,FALSE
 text,1.2,bundleProducer,Bundle Producer,identification/bundleProducer,999,FALSE,FALSE
 text,1.2,confidential,Confidential Project,confidential,999,FALSE,FALSE
 text,1.2,agencyETEN,ETEN Partner Agency,agencies/etenPartner,9,TRUE,FALSE
