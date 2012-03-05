@@ -1,5 +1,5 @@
-entrytype,version,key,name,xpath,sort,important,xhtml
-audio,1.0,uid,Project Archive UID,@id,6,TRUE,FALSE
+entrytype,typeversion,key,name,xpath,sort,important,xhtml
+audio,1.0,id,Project Archive ID,@id,6,TRUE,FALSE
 audio,1.0,revision,Revision,@revision,7,TRUE,FALSE
 audio,1.0,typeVersion,Bundle Type Version,@typeVersion,8,TRUE,FALSE
 audio,1.0,nameCommon,Common Version Name,identification/name,1,TRUE,FALSE
