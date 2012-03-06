@@ -175,7 +175,7 @@ start =
       element book {
         attribute code { bookCode },
         attribute stage { translationStage }
-      }+
+      }*
     }?&
 	# Default to Publisher (from agencies) 
     element contact {
