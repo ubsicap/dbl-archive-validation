@@ -13,6 +13,7 @@ for rncpath in `ls $sourcedir/*/*/*.rnc`
 do
     relpath=${rncpath##*/source/}
     rngpath=$outdir/${relpath%.rnc}.rng
+    xsdpath=$outdir/${relpath%.rnc}.dtd
     rngdir=${rngpath%/*.rng}
 #    echo rncpath=$rncpath 
 #    echo   rngpath=$rngpath
@@ -20,6 +21,8 @@ do
     echo "Converting $relpath "
     mkdir -p $rngdir
     java -jar $scriptdir/trang.jar -I rnc -O rng $rncpath $rngpath
+    #This should work, but dtd doesn't appear to be able to handle everything RNG can
+    #java -jar $scriptdir/trang.jar -I rnc -O dtd $rncpath $xsdpath
 done
 exit 0
 
