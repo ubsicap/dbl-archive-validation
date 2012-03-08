@@ -217,7 +217,7 @@ start =
       }&
       element promoEmail {
         attribute dcds:propertyURI { "description/pubPromoEmail" },
-        text
+        htmlMarkup
       }
     }?&
     element archiveStatus {
