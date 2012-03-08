@@ -1,0 +1,17 @@
+11: (DBL 1.2 / USX2) Support <chapter number="" alternate="" publishable="" style="c" />
+    Support <table><row style="tr"><cell style=".." align=".."></cell></row></table>  jk
+10: Add pr, phi
+9:  Added TitleParaIntroEnd pattern. Some texts only have titles at end of intro, or repeat. jk
+    - Added ChapterLabelBookWide to support para style="cl" before chapter 1 (book wide label).
+    - Temporarily support alternate chapter number (<char style="ca">#</char>) immediately after <chapter>
+      until export to USX delivers <chapter number="" alternate="" publishable="" style="c" />
+    - Allow Footnotes in title paragraphs (TitlePara and TitleParaIntroEnd)
+    - Allow notes and verse numbers within table cells
+8:  Commented out USXV. Removed class attribute. (Must validate on current Paratext 7.3 output) cg
+7:  Corrected errors in comments above. No change to the schema itself. jaa 2001/11/04
+6:  Added new USFM/style markers search for /!!/ jaa 2011/09/14
+5:  Tables defined Search for /table/ jaa 2011/08/31
+4:  Includes class attribute to handle exceptions for Biblica. Search for /class/ jaa 2011/08/27
+3:  Includes usxv styles. Search for /ForVerseStyle/ jaa 2011/08/10
+2:  Includes ordering restrictions. nm
+1:  Initial draft schema. nm

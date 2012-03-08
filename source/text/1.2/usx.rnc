@@ -1,25 +1,6 @@
 # usx.rnc
 # This is a compact syntax Relax NG Schema for USX (extension .rnc).
-# DBL bundle version = 1.1
-#
-# Version 2:  Includes ordering restrictions. nm
-# Version 3:  Includes usxv styles. Search for /ForVerseStyle/ jaa 2011/08/10
-# Version 4:  Includes class attribute to handle exceptions for Biblica. Search for /class/ jaa 2011/08/27
-# Version 5:  Tables defined Search for /table/ jaa 2011/08/31
-# Version 6:  Added new USFM/style markers search for /!!/ jaa 2011/09/14
-# Version 7:  Corrected errors in comments above. No change to the schema itself. jaa 2001/11/04
-# Version 8:  Commented out USXV. Removed class attribute. (Must validate on current Paratext 7.3 output) cg
-# Version 9:  Added TitleParaIntroEnd pattern. Some texts only have titles at end of intro, or repeat. jk
-#             - Added ChapterLabelBookWide to support para style="cl" before chapter 1 (book wide label).
-#             - Temporarily support alternate chapter number (<char style="ca">#</char>) immediately after <chapter>
-#                 until export to USX delivers <chapter number="" alternate="" publishable="" style="c" />
-#             - Allow Footnotes in title paragraphs (TitlePara and TitleParaIntroEnd)
-#             - Allow notes and verse numbers within table cells
-# Version 10: Add pr, phi
-#             !! What about ca, and cp?
-
-# !! Update this schema for USX 2
-# !! See: https://docs.google.com/a/icapmail.org/document/d/17ZIjxYWYnc16snG3VTCrAMdRFgDc6Awa5kmHXcJI3Q8/edit?hl=en_US
+# DBL bundle version = 1.2
 
 namespace a = "http://relaxng.org/ns/compatibility/annotations/1.0"
 namespace xsi = "http://www.w3.org/2001/XMLSchema-instance"
