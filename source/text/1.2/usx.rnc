@@ -67,12 +67,6 @@ TitlePara =
              | # !! A tertiary title occurring after the main title  was: A secondary title occurring after the main title
                "mt4"
              | # !! I have not seen a use case for this   was: A small secondary title sometimes occuring within parentheses
-               "imt"
-             | # Introduction major title, level 1 (if single level)
-               "imt1"
-             | # Introduction major title, level 1 (if multiple levels)
-               "imt2"
-             | # Introduction major title, level 2
                "rem")
             # Remark
         },
@@ -371,7 +365,7 @@ TableContent =
     }
 Para =
     element para {
-        paraStyle, (Reference | Footnote | CrossReference | Char | Figure | Verse | text)*
+        paraStyle, (Reference | Footnote | CrossReference | Char | Figure | Verse | Break | text)+
     }
 Char =
     element char {
@@ -438,18 +432,13 @@ Char =
               | # A character style, use bold + italic text
                 "em"
               | # A character style, use emphasized text style
-                "sc"
-              | # A character style, for small capitalization text
-                "abbreviation"
-              | #  Abbreviation !! (character style)		e.g., JUD 1.9,14 (in footnote)		a.d. or  b.c.e to display in small caps. When rendering in HTML a mouse over event may show full text of abbreviation.
-                "label")
-             #   Label !! (inline section head)		EZR 10:18-24 (TEV)
-             
+                "sc")
+                # A character style, for small capitalization text
          },
          attribute closed { xsd:boolean }?,
          # Present to allow roundtripping to USFM, not needed for publishing
          text,
-         (Reference | Char | Footnote | text)*
+         (Reference | Char | Footnote | Break | text)*
          # Nested character <char> markup
     }
 IntroChar =
@@ -567,6 +556,8 @@ Figure =
         # Caption
         
     }
+Break = 
+    element optbreak { empty }
 BookIdAttr =
     attribute code { EnnumeratedBookNames     
     }
@@ -902,3 +893,5 @@ EnnumeratedBookNames =
 # qr_selah - Selah e.g. PSA and HAB only
 # cl1 - Citation Line1 e.g. MRK 1.1-4 (NET)
 # cl2 - Citation Line2 e.g. MRK 1.1-4 (NET)
+# abbreviation - Abbreviation (character style) e.g., JUD 1.9,14 (in footnote) a.d. or  b.c.e to display in small caps. When rendering in HTML a mouse over event may show full text of abbreviation.
+# label - Label (inline section head) e.g. EZR 10:18-24 (TEV)

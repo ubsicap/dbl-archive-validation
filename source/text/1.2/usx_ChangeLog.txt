@@ -1,5 +1,6 @@
 11: (DBL 1.2 / USX2) Support <chapter number="" alternate="" publishable="" style="c" />
-    Support <table><row style="tr"><cell style=".." align=".."></cell></row></table>  jk
+    - Support <table><row style="tr"><cell style=".." align=".."></cell></row></table>
+    - Support <optbreak/> = USFM //  jk
 10: Add pr, phi
 9:  Added TitleParaIntroEnd pattern. Some texts only have titles at end of intro, or repeat. jk
     - Added ChapterLabelBookWide to support para style="cl" before chapter 1 (book wide label).
