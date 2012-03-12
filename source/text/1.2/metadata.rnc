@@ -252,8 +252,8 @@ start =
     }
   }
 
-htmlMarkup = (text
-         | element p { (text | htmlCharMarkup)+ }
+htmlMarkup = (
+           element p { (text | htmlCharMarkup)+ }
          | element h1 { text }
          | element h2 { text }
          | element h3 { text }
@@ -262,17 +262,18 @@ htmlMarkup = (text
          | element ol { 
              element li { text }+}
          | element blockquote { text }
+         | htmlCharMarkup)+
+
+htmlCharMarkup = ( text
+		 | element a {
+             attribute href { xsd:anyURI },
+             htmlCharMarkup
+           }
          | element img {
             attribute src { xsd:anyURI },
             attribute alt { text }?,
             text
-            }
-         | htmlCharMarkup)+
-
-htmlCharMarkup = (element a {
-             attribute href { xsd:anyURI },
-             text
-           }
+            }           
          | element br { empty }
          | element strong { text }
          | element b { text }
