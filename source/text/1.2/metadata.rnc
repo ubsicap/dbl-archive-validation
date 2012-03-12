@@ -216,6 +216,7 @@ start =
 		htmlMarkup
       }&
       element promoEmail {
+        attribute contentType { "xhtml" },
         attribute dcds:propertyURI { "description/pubPromoEmail" },
         htmlMarkup
       }
@@ -263,6 +264,7 @@ htmlMarkup = (text
          | element blockquote { text }
          | element img {
             attribute src { xsd:anyURI },
+            attribute alt { text }?,
             text
             }
          | htmlCharMarkup)+
