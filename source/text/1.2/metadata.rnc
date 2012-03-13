@@ -35,7 +35,7 @@ start =
       element dateCompleted {
         attribute dcds:propertyURI { "date" },
         attribute dcds:sesURI { "http://purl.org/dc/terms/W3CDTF" },
-        (xsd:date | xsd:gYear | xsd:gYearMonth | xsd:dateTime )
+        (xsd:date | xsd:gYear | xsd:gYearMonth | xsd:dateTime )?
 	  }&
       # systemId[@type='paratext'] is overwritten by Paratext
       element systemId {(
