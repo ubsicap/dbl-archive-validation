@@ -21,4 +21,4 @@ audio,1.0,dateArchived,Original Archive Date,archiveStatus/dateArchived,999,FALS
 audio,1.0,dateUpdated,Last Archive Date,archiveStatus/dateUpdated,4,TRUE,FALSE
 audio,1.0,comments,Comments,archiveStatus/comments,5,TRUE,FALSE
 audio,1.0,copyrightStatement,Rights Information Statement,copyright/statement,999,FALSE,TRUE
-audio,1.0,languageLDMLId,Unicode LDML Languae ID,language/ldml,999,FALSE,FALSE
+audio,1.0,languageLDMLId,Unicode LDML Language ID,language/ldml,999,FALSE,FALSE

@@ -45,7 +45,7 @@ start =
         attribute type { bundleTypes },
         attribute id { xsd:string { pattern="[a-f0-9]{16}" } },
         attribute revision { xsd:integer }
-        }
+        }*
     }&
     element agencies {
       # primary coordination/sponsorship agency
@@ -183,7 +183,7 @@ htmlCharMarkup = (element a {
          | element i { text })
 
 bundleTypes = (
-           "text" # (a.k.a. 'Hindu') = 0123456789
+           "text"
          | "print"
          | "audio"
          | "video")

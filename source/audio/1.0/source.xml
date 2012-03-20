@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<stream id="1111111111111111">
-  <url>http://dbt.io/api?id={dblId}&amp;sec="{securityHash}"&amp;user="{downloaderId}"</url><!-- + optional /book=???/chapter=## -->
-</stream>
+<source id="1111111111111111">
+  <url>http://dbt.io/api?id={dblId}&amp;revision={revision#}&amp;user={downloader id}&amp;key={security hash}</url>
+  <!-- To use, append &book=<book code>&chapter=<chapter> -->
+</source>
