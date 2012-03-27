@@ -133,18 +133,27 @@ start =
     element bookNames { 
       element book { 
         attribute code { bookCode }& 
-        element name { 
-          attribute type {"long"}, 
+        element long { 
           text 
         }& 
-        element name { 
-          attribute type {"short"}, 
+        element short { 
           text 
         }& 
-        element name { 
-          attribute type {"abbr"}, 
+        element abbr { 
           text 
         }
+#        element name { 
+#          attribute type {"long"}, 
+#          text 
+#        }& 
+#        element name { 
+#          attribute type {"short"}, 
+#          text 
+#        }& 
+#        element name { 
+#          attribute type {"abbr"}, 
+#          text 
+#        }
       }*
     }&
     element contents {
