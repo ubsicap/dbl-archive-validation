@@ -4,7 +4,7 @@
 
 default namespace = ""
 datatypes xsd = "http://www.w3.org/2001/XMLSchema-datatypes"
-namespace dcds = "http://purl.org/dc/xmlns/2008/09/01/dc-ds-xml/"
+##namespace dcds = "http://purl.org/dc/xmlns/2008/09/01/dc-ds-xml/"
 
 start =
   element DBLMetadata {
@@ -13,10 +13,10 @@ start =
     # id is overwritten at submission 
     attribute id { xsd:string { pattern="[a-f0-9]{16}" } }&
     attribute revision { xsd:integer }&
-    attribute xml:base { "http://purl.org/ubs/metadata/dc/terms/" }&
+    ##attribute xml:base { "http://purl.org/ubs/metadata/dc/terms/" }&
     element identification {
       element name {
-        attribute dcds:propertyURI { "title" },
+        ##attribute dcds:propertyURI { "title" },
         xsd:string { minLength = "2" }
       }&
       # nameLocal should default to name 
@@ -25,16 +25,16 @@ start =
       # abbreviationLocal should default to abbreviation
       element abbreviationLocal { xsd:string { pattern="[A-Za-z0-9\-]{2,8}" } }&
       element scope {
-        attribute dcds:propertyURI { "title/scriptureScope" },
+        ##attribute dcds:propertyURI { "title/scriptureScope" },
         text 
       }&
       element description {
-        attribute dcds:propertyURI { "description" },
+        ##attribute dcds:propertyURI { "description" },
         text 
       }&
       element dateCompleted {
-        attribute dcds:propertyURI { "date" },
-        attribute dcds:sesURI { "http://purl.org/dc/terms/W3CDTF" },
+        ##attribute dcds:propertyURI { "date" },
+        ##attribute dcds:sesURI { "http://purl.org/dc/terms/W3CDTF" },
         (xsd:date | xsd:gYear | xsd:gYearMonth | xsd:dateTime )?
 	  }&
       # systemId[@type='paratext'] is overwritten by Paratext
@@ -50,78 +50,78 @@ start =
       element bundleProducer { xsd:string { minLength = "2" } }
     }&
     element confidential {
-      attribute dcds:propertyURI { "accessRights/confidential" },
+      ##attribute dcds:propertyURI { "accessRights/confidential" },
       xsd:boolean
     }&
     element agencies {
       element etenPartner { "UBS" | "WBT" | "Biblica" }?&
       # primary translation or coordination/sponsorship agency
       element creator { 
-        attribute dcds:propertyURI { "creator" },
+        ##attribute dcds:propertyURI { "creator" },
         xsd:string { minLength = "2" } 
       }+&
       # publisher may be the same as translation (description/sponsorship) 
       element publisher {
-        attribute dcds:propertyURI { "publisher" },
+        ##attribute dcds:propertyURI { "publisher" },
         xsd:string { minLength = "2" } 
       }+&
       element contributor {
-        attribute dcds:propertyURI { "contributor" },
+        ##attribute dcds:propertyURI { "contributor" },
         text 
       }*
     }&
     element language {
       element iso { 
-        attribute dcds:propertyURI { "language/iso" },
-        attribute dcds:sesURI { "http://purl.org/dc/terms/ISO639-3" },
+        ##attribute dcds:propertyURI { "language/iso" },
+        ##attribute dcds:sesURI { "http://purl.org/dc/terms/ISO639-3" },
         xsd:string { pattern = "[a-z][a-z][a-z]" }
       }&
       element name { 
-        attribute dcds:propertyURI { "subject/subjectLanguage" },
-        attribute dcds:sesURI { "http://purl.org/dc/terms/ISO639-3" }, 
+        ##attribute dcds:propertyURI { "subject/subjectLanguage" },
+        ##attribute dcds:sesURI { "http://purl.org/dc/terms/ISO639-3" }, 
         xsd:string { minLength = "2" }
       }&
       element ldml { 
-        attribute dcds:propertyURI { "language/ldml" },
+        ##attribute dcds:propertyURI { "language/ldml" },
         xsd:string { pattern = "[a-z]{2}(\-[A-Za-z]+){0,3}" }?
       }&
       element rod { 
-        attribute dcds:propertyURI { "language/rod" }, 
+        ##attribute dcds:propertyURI { "language/rod" }, 
         xsd:string { pattern = "[0-9]{5}" }?
       }&
       element script {
-        attribute dcds:propertyURI { "language/script" },
+        ##attribute dcds:propertyURI { "language/script" },
         xsd:string { minLength = "2" }
       }&
       # LTR (Left to Right) or RTL (Right to Left) 
       # scriptDirection is overwritten by Paratext
       element scriptDirection {
-        attribute dcds:propertyURI { "language/scriptDirection" },
+        ##attribute dcds:propertyURI { "language/scriptDirection" },
         ("LTR" | "RTL") 
       }&
       element numerals {
-        attribute dcds:propertyURI { "language/numerals" },
+        ##attribute dcds:propertyURI { "language/numerals" },
         ( empty | numeralSystem )
       }
     }&
     element country { 
       element iso { 
-        attribute dcds:propertyURI { "coverage/spatial" },
-        attribute dcds:sesURI { "http://purl.org/dc/terms/ISO3166" }, 
+        ##attribute dcds:propertyURI { "coverage/spatial" },
+        ##attribute dcds:sesURI { "http://purl.org/dc/terms/ISO3166" }, 
         xsd:string { pattern = "[A-Z][A-Z][A-Z]?" } 
       },
       element name { 
-        attribute dcds:propertyURI { "subject/subjectCountry" }, 
+        ##attribute dcds:propertyURI { "subject/subjectCountry" }, 
         xsd:string { minLength = "2" } 
       }
     }&
     element type { 
       element translationType { 
-        attribute dcds:propertyURI { "type/translationType" }, 
+        ##attribute dcds:propertyURI { "type/translationType" }, 
         translationType ?
       }, 
       element audience {
-        attribute dcds:propertyURI { "audience" }, 
+        ##attribute dcds:propertyURI { "audience" }, 
         translationLevel ?
       }
     }&
@@ -144,7 +144,7 @@ start =
       }*
     }&
     element contents {
-      attribute dcds:propertyURI { "tableOfContents" },
+      ##attribute dcds:propertyURI { "tableOfContents" },
       element bookList {
         attribute id { "default" }?&
         # default to name from identification section  
@@ -171,7 +171,7 @@ start =
     }&
     # progress is overwritten by Paratext
     element progress {
-      attribute dcds:propertyURI { "description/stage" },
+      ##attribute dcds:propertyURI { "description/stage" },
       element book {
         attribute code { bookCode },
         attribute stage { translationStage }
@@ -180,24 +180,24 @@ start =
 	# Default to Publisher (from agencies) 
     element contact {
       element rightsHolder {
-        attribute dcds:propertyURI { "rightsHolder" },
+        ##attribute dcds:propertyURI { "rightsHolder" },
         xsd:string { minLength = "2" }
       }&
 	  # Default to rights holder 
       element rightsHolderLocal {
-        attribute dcds:propertyURI { "rightsHolder/contactLocal" },
+        ##attribute dcds:propertyURI { "rightsHolder/contactLocal" },
         xsd:string { minLength = "2" }
       }&
       element rightsHolderAbbreviation {
-        attribute dcds:propertyURI { "rightsHolder/contactAbbreviation" },
+        ##attribute dcds:propertyURI { "rightsHolder/contactAbbreviation" },
         xsd:string { minLength = "2" }
       }&
       element rightsHolderURL {
-        attribute dcds:propertyURI { "rightsHolder/contactURL" },
+        ##attribute dcds:propertyURI { "rightsHolder/contactURL" },
         xsd:anyURI
       }&
       element rightsHolderFacebook {
-        attribute dcds:propertyURI { "rightsHolder/contactFacebook" },
+        ##attribute dcds:propertyURI { "rightsHolder/contactFacebook" },
         xsd:anyURI
       }
     }&
@@ -205,49 +205,49 @@ start =
       # For example: ©2002, 2012 United Bible Societies
       element statement {
         attribute contentType { "xhtml" },
-        attribute dcds:propertyURI { "rights" },
+        ##attribute dcds:propertyURI { "rights" },
         htmlMarkup
       }
     }&
     element promotion {
       element promoVersionInfo {
         attribute contentType { "xhtml" },
-        attribute dcds:propertyURI { "description/pubPromoVersionInfo" },
+        ##attribute dcds:propertyURI { "description/pubPromoVersionInfo" },
 		htmlMarkup
       }&
       element promoEmail {
         attribute contentType { "xhtml" },
-        attribute dcds:propertyURI { "description/pubPromoEmail" },
+        ##attribute dcds:propertyURI { "description/pubPromoEmail" },
         htmlMarkup
       }
     }?&
     element archiveStatus {
       # archivistName is overwritten by Paratext
       element archivistName {
-        attribute dcds:propertyURI { "contributor/archivist" },
+        ##attribute dcds:propertyURI { "contributor/archivist" },
         xsd:string { minLength = "2" }
       }&
       # dateArchived is overwritten by Paratext
       element dateArchived {
-        attribute dcds:propertyURI { "dateSubmitted" },
-        attribute dcds:sesURI { "http://purl.org/dc/terms/W3CDTF" },
+        ##attribute dcds:propertyURI { "dateSubmitted" },
+        ##attribute dcds:sesURI { "http://purl.org/dc/terms/W3CDTF" },
         xsd:dateTime
       }&
       # dateUpdated is overwritten by Paratext
       element dateUpdated {
-        attribute dcds:propertyURI { "modified" },
-        attribute dcds:sesURI { "http://purl.org/dc/terms/W3CDTF" },
+        ##attribute dcds:propertyURI { "modified" },
+        ##attribute dcds:sesURI { "http://purl.org/dc/terms/W3CDTF" },
         xsd:dateTime
       }&
       element comments {
-        attribute dcds:propertyURI { "abstract" },
+        ##attribute dcds:propertyURI { "abstract" },
         xsd:string { minLength = "2" maxLength = "255" }
       }
     }&
     # format is overwritten by Paratext
     element format {
-      attribute dcds:propertyURI { "format" },
-      attribute dcds:sesURI { "http://purl.org/dc/terms/IMT" },
+      ##attribute dcds:propertyURI { "format" },
+      ##attribute dcds:sesURI { "http://purl.org/dc/terms/IMT" },
       "text/xml"
     }
   }
