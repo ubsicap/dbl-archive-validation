@@ -40,13 +40,13 @@ start =
       # systemId[@type='paratext'] is overwritten by Paratext
       element systemId {(
         ## UBS Translation Management System database ID
-        (attribute type { "tms" }, attribute dcds:propertyURI { "identifier/tmsID" })|
+        (attribute type { "tms" })|
         ## Paratext Project GUID
-        (attribute type { "paratext" }, attribute dcds:propertyURI { "identifier/ptxID" })|
+        (attribute type { "paratext" })|
         ## SIL REAP database ID
-        (attribute type { "reap" }, attribute dcds:propertyURI { "identifier/reapID" })|
+        (attribute type { "reap" })|
         ## Biblica database id
-        (attribute type { "biblica" }, attribute dcds:propertyURI { "identifier/biblicaID" })
+        (attribute type { "biblica" })
         ),
         xsd:string { minLength = "2" } 
       }*&
@@ -132,7 +132,7 @@ start =
     # bookNames/book is overwritten by Paratext
     element bookNames { 
       element book { 
-        attribute code { bookCode }, 
+        attribute code { bookCode }& 
         element name { 
           attribute type {"long"}, 
           text 
