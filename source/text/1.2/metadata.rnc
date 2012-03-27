@@ -4,7 +4,6 @@
 
 default namespace = ""
 datatypes xsd = "http://www.w3.org/2001/XMLSchema-datatypes"
-##namespace dcds = "http://purl.org/dc/xmlns/2008/09/01/dc-ds-xml/"
 
 start =
   element DBLMetadata {
