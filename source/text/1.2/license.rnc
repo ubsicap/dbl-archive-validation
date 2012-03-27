@@ -13,12 +13,12 @@ start =
     attribute type { licenseType }?&
     # yyyy-mm-dd
     element dateLicense {
-      attribute dcds:sesURI { "http://purl.org/dc/terms/W3CDTF" },
+      ##attribute dcds:sesURI { "http://purl.org/dc/terms/W3CDTF" },
       xsd:date
     }&
 	# yyyy-mm-dd (must be after dateLicense) 
     element dateLicenseExpiry {
-      attribute dcds:sesURI { "http://purl.org/dc/terms/W3CDTF" },
+      ##attribute dcds:sesURI { "http://purl.org/dc/terms/W3CDTF" },
       xsd:date
     }&
     element publicationRights {
