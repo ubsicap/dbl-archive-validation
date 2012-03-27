@@ -1,40 +1,40 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<DBLMetadata type="text" typeVersion="1.2" id="66f69e2e951292b7" revision="1" xml:base="http://purl.org/ubs/metadata/dc/terms/" xmlns:dcds="http://purl.org/dc/xmlns/2008/09/01/dc-ds-xml/">
+<DBLMetadata type="text" typeVersion="1.2" id="66f69e2e951292b7" revision="1" xml:base="http://purl.org/ubs/metadata/dc/terms/">
   <identification>
-    <name dcds:propertyURI="title">Good News Translation</name>
+    <name>Good News Translation</name>
     <nameLocal>Good News Translation</nameLocal>
     <abbreviation>eng-GNT</abbreviation>
     <abbreviationLocal>GNT</abbreviationLocal>
-    <scope dcds:propertyURI="title/scriptureScope">Bible with Deuterocanon</scope>
-    <description dcds:propertyURI="description">English Good News Translation Bible with Deuterocanon</description>
-    <dateCompleted dcds:propertyURI="date" dcds:sesURI="http://purl.org/dc/terms/W3CDTF">1992-10-01</dateCompleted>
-    <systemId type="tms" dcds:propertyURI="identifier/tmsID">401d0abc-018b-4036-81b7-13845ace8612</systemId>
-    <systemId type="paratext" dcds:propertyURI="identifier/ptxID">66f69e2e951292b7d66582d3e2444332f641775b</systemId>
+    <scope>Bible with Deuterocanon</scope>
+    <description>English Good News Translation Bible with Deuterocanon</description>
+    <dateCompleted>1992-10-01</dateCompleted>
+    <systemId type="tms">401d0abc-018b-4036-81b7-13845ace8612</systemId>
+    <systemId type="paratext">66f69e2e951292b7d66582d3e2444332f641775b</systemId>
     <bundleProducer>Paratext/7.3.0.92</bundleProducer>
   </identification>
-  <confidential dcds:propertyURI="accessRights/confidential">false</confidential>
+  <confidential>false</confidential>
   <agencies>
     <etenPartner>UBS</etenPartner> <!-- Currently "UBS", "WBT", "Biblica" -->
-    <creator dcds:propertyURI="creator">American Bible Society</creator><!-- primary translation agency/sponsorship -->
-    <publisher dcds:propertyURI="publisher">American Bible Society</publisher><!-- primary publishing agency> -->
-    <contributor  dcds:propertyURI="contributor"></contributor>
+    <creator>American Bible Society</creator><!-- primary translation agency/sponsorship -->
+    <publisher>American Bible Society</publisher><!-- primary publishing agency> -->
+    <contributor ></contributor>
   </agencies>
   <language>
-  	<iso dcds:propertyURI="language/iso" dcds:sesURI="http://purl.org/dc/terms/ISO639-3">eng</iso>
-    <name dcds:propertyURI="subject/subjectLanguage" dcds:sesURI="http://purl.org/dc/terms/ISO639-3">English</name>
-    <ldml dcds:propertyURI="language/ldml">en</ldml>
-    <rod dcds:propertyURI="language/rod"></rod>
-    <script dcds:propertyURI="language/script">Roman</script>
-    <scriptDirection dcds:propertyURI="language/scriptDirection">LTR</scriptDirection><!-- LTR (Left to Right) or RTL (Right to Left) -->
-    <numerals dcds:propertyURI="language/numerals">Arabic</numerals>
+  	<iso>eng</iso>
+    <name>English</name>
+    <ldml>en</ldml>
+    <rod></rod>
+    <script>Roman</script>
+    <scriptDirection>LTR</scriptDirection><!-- LTR (Left to Right) or RTL (Right to Left) -->
+    <numerals>Arabic</numerals>
   </language>
   <country>
-  	<iso dcds:propertyURI="coverage/spatial" dcds:sesURI="http://purl.org/dc/terms/ISO3166">USA</iso>
-    <name dcds:propertyURI="subject/subjectCountry">United States</name>
+  	<iso>USA</iso>
+    <name>United States</name>
   </country>
   <type>
-    <translationType dcds:propertyURI="type/translationType">Revision</translationType>
-    <audience dcds:propertyURI="audience">Common</audience>
+    <translationType>Revision</translationType>
+    <audience>Common</audience>
   </type>
   <bookNames>
     <book code="GEN">
@@ -443,7 +443,7 @@
       <name type="abbr">Rev</name>
     </book>
   </bookNames>
-  <contents dcds:propertyURI="tableOfContents">
+  <contents>
     <bookList id="default">
       <name>Good News Translation</name>
       <nameLocal>Good News Translation</nameLocal>
@@ -630,7 +630,7 @@
       </division>
     </bookList>
   </contents>
-  <progress dcds:propertyURI="description/stage"><!-- 1 = draft, 2 = internalReview, 3 = extenalReview, 4 = finalReview -->
+  <progress><!-- 1 = draft, 2 = internalReview, 3 = extenalReview, 4 = finalReview -->
     <book code="GEN" stage="4"/>
     <book code="EXO" stage="4"/>
     <book code="LEV" stage="4"/>
@@ -720,29 +720,29 @@
     <book code="TDX" stage="4"/>
   </progress>
   <contact>
-    <rightsHolder dcds:propertyURI="rightsHolder">American Bible Society</rightsHolder>
-    <rightsHolderLocal dcds:propertyURI="rightsHolder/contactLocal">American Bible Society</rightsHolderLocal>
-    <rightsHolderAbbreviation dcds:propertyURI="rightsHolder/contactAbbreviation">ABS</rightsHolderAbbreviation>
-    <rightsHolderURL dcds:propertyURI="rightsHolder/contactURL">http://www.americanbible.org</rightsHolderURL>
-    <rightsHolderFacebook dcds:propertyURI="rightsHolder/contactFacebook">http://www.facebook.com/americanbible</rightsHolderFacebook>
+    <rightsHolder>American Bible Society</rightsHolder>
+    <rightsHolderLocal>American Bible Society</rightsHolderLocal>
+    <rightsHolderAbbreviation>ABS</rightsHolderAbbreviation>
+    <rightsHolderURL>http://www.americanbible.org</rightsHolderURL>
+    <rightsHolderFacebook>http://www.facebook.com/americanbible</rightsHolderFacebook>
   </contact>
   <copyright>
     <!-- Allow XHTML: <h1> <h2> <h3> <p> <blockquote> <ul> <ol> <li> <br> <strong> <em> <a> -->
-    <statement dcds:propertyURI="rights" contentType="xhtml"><p>Good News Translation (Today’s English Version, Second Edition) © 1992 American Bible Society. All rights reserved.</p></statement>
+    <statement contentType="xhtml"><p>Good News Translation (Today’s English Version, Second Edition) © 1992 American Bible Society. All rights reserved.</p></statement>
   </copyright>
   <promotion>
     <!-- Allow XHTML: <h1> <h2> <h3> <p> <blockquote> <ul> <ol> <li> <br> <strong> <em> <a> -->
-    <promoVersionInfo dcds:propertyURI="description/pubPromoVersionInfo" contentType="xhtml"><p>The <em>Good News Translation</em> of the Bible is a translation which seeks to state clearly and accurately the meaning of the original texts in words and forms that are widely accepted by people who use English as a means of communication. This translation does not follow the traditional vocabulary and style found in the historic English Bible versions. Rather it attempts for our time to set forth the biblical content and message in the standard, everyday, natural form of English.</p>
+    <promoVersionInfo contentType="xhtml"><p>The <em>Good News Translation</em> of the Bible is a translation which seeks to state clearly and accurately the meaning of the original texts in words and forms that are widely accepted by people who use English as a means of communication. This translation does not follow the traditional vocabulary and style found in the historic English Bible versions. Rather it attempts for our time to set forth the biblical content and message in the standard, everyday, natural form of English.</p>
       <p>The aim of this Bible is to give today's reader best possible understanding of the content of the original texts. The Preface sets forth the basic principles which the translators followed in their work and explains the nature of special aids for readers.</p>
       <p>The bk Good News Translation was translated and published by the United Bible Societies for use throughout the world. The Bible Societies trust that the reading and study of this translation will result in a better understanding of the meaning of the Bible. We also earnestly pray that readers will discover the message of saving faith and hope for all people, which the Bible announces anew to each generation.</p></promoVersionInfo>
       <!-- Allow XHTML: <h1> <h2> <h3> <p> <blockquote> <ul> <ol> <li> <br> <strong> <em> <a> -->
-    <promoEmail dcds:propertyURI="description/pubPromoEmail" contentType="xhtml">This is where we place the text emailed to the user after downloading an offline version.</promoEmail>
+    <promoEmail contentType="xhtml">This is where we place the text emailed to the user after downloading an offline version.</promoEmail>
   </promotion>
   <archiveStatus>
-    <archivistName dcds:propertyURI="contributor/archivist">Jeff Klassen</archivistName>
-    <dateArchived dcds:propertyURI="dateSubmitted" dcds:sesURI="http://purl.org/dc/terms/W3CDTF">2011-04-19T00:00:00</dateArchived>
-    <dateUpdated dcds:propertyURI="modified" dcds:sesURI="http://purl.org/dc/terms/W3CDTF">2011-06-24T00:00:00</dateUpdated>
-    <comments dcds:propertyURI="abstract">Initial submission to DBL</comments>
+    <archivistName>Jeff Klassen</archivistName>
+    <dateArchived>2011-04-19T00:00:00</dateArchived>
+    <dateUpdated>2011-06-24T00:00:00</dateUpdated>
+    <comments>Initial submission to DBL</comments>
   </archiveStatus>
-  <format dcds:propertyURI="format" dcds:sesURI="http://purl.org/dc/terms/IMT">text/xml</format>
+  <format>text/xml</format>
 </DBLMetadata>
