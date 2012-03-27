@@ -10,6 +10,7 @@ datatypes xsd = "http://www.w3.org/2001/XMLSchema-datatypes"
 start = USX
 USX =
     element usx {
+        attribute typeVersion { xsd:decimal }, #metadata.rnc has moved to explicit & for attributes
         attribute xsi:noNamespaceSchemaLocation { text }?,
         
         Book,
