@@ -1,42 +1,45 @@
 # metadata.rnc
+# ----------------------------------------------------------------------------------------------------------------------
 # This is a compact syntax Relax NG Schema for the DBL @type="audio" metadata information file.
 # DBL bundle version = 1.0
 
+# Suggested Dublin Core Metadata (DCMI) element/refinement relationships are added as documentation strings "## DCMI: "
+# A syntax encoding scheme may be mentioned after the DCMI documentation in parentheses; e.g. language/iso (ISO639-3)
+# ----------------------------------------------------------------------------------------------------------------------
+
 default namespace = ""
 datatypes xsd = "http://www.w3.org/2001/XMLSchema-datatypes"
-namespace dcds = "http://purl.org/dc/xmlns/2008/09/01/dc-ds-xml/"
 
 start =
   element DBLMetadata {
     attribute type { "audio" }&
+    attribute typeVersion { "1.0" }&
     # id is overwritten at submission 
-    attribute typeVersion { xsd:decimal }&
     attribute id { xsd:string { pattern="[a-f0-9]{16}" } }&
     attribute revision { xsd:integer }&
-    attribute xml:base { "http://purl.org/ubs/metadata/dc/terms/" }&
     element identification {
-       element name {
-           attribute dcds:propertyURI { "title" },
-            xsd:string { minLength = "2" }
-            }&
-       # nameLocal should default to name 
-       element nameLocal { xsd:string { minLength = "2" } }&
-       element description {
-           attribute dcds:propertyURI { "description" },
-           text 
-           }&
-       element dateCompleted {
-           attribute dcds:propertyURI { "date" },
-           attribute dcds:sesURI { "http://purl.org/dc/terms/W3CDTF" },
-           ( "" | xsd:date | xsd:gYear | xsd:gYearMonth | xsd:dateTime )
-	       }&
-       # systemId[@type='paratext'] is overwritten by Paratext
-       element systemId {(
-           (attribute type { "dbp" }, attribute dcds:propertyURI { "identifier/dbpID" })|
-           (attribute type { text }, attribute dcds:propertyURI { "identifier" })
-           ),
-           xsd:string { minLength = "2" } 
-           }*&
+      element name {
+        ## DCMI: title
+        xsd:string { minLength = "2" }
+      }&
+      # nameLocal should default to name 
+      element nameLocal { xsd:string { minLength = "2" } }&
+      element description {
+        ## DCMI: description
+        text 
+      }&
+      element dateCompleted {
+        ## DCMI: date
+        (xsd:date | xsd:gYear | xsd:gYearMonth | xsd:dateTime )?
+      }&
+      # systemId[@type='paratext'] is overwritten by Paratext
+      element systemId {(
+        ## FCBH Digital Bible Project DAM ID
+        (attribute type { "dbp" })|
+        (attribute type { text })
+        ),
+        xsd:string { minLength = "2" } 
+      }*&
       # bundleProducer is overwritten by Paratext
       element bundleProducer { xsd:string { minLength = "2" } }
     }&
@@ -48,32 +51,32 @@ start =
         }*
     }&
     element agencies {
-      # primary coordination/sponsorship agency
+      # primary translation or coordination/sponsorship agency
       element creator { 
-        attribute dcds:propertyURI { "creator" },
+        ## DCMI: creator
         xsd:string { minLength = "2" } 
-        }+&
-      # publisher may be the same as creator 
+      }+&
+      # publisher may be the same as translation (description/sponsorship) 
       element publisher {
-        attribute dcds:propertyURI { "publisher" },
+        ## DCMI: publisher
         xsd:string { minLength = "2" } 
-        }+&
+      }?&
       element contributor {
-        attribute dcds:propertyURI { "contributor" },
+        ## DCMI: contributor
         text 
-        }*
+      }*
     }&
     element language {
       element ldml { 
-        attribute dcds:propertyURI { "language/ldml" },
-        ( "" | xsd:string { pattern = "[a-z]{2}(\-[A-Za-z]+){0,3}" })?
-        }
+        ## DCMI: language/ldml
+        xsd:string { pattern = "[a-z]{2,3}(\-[A-Za-z]+){0,3}" }?
+      }
     }&
     element type { 
-      element audioType { 
-        attribute dcds:propertyURI { "type/audioType" }, 
+      element audioType {
+        ## DCMI: type/audioType
         audioType ?
-        }
+      }
     }&
     element format {
       element mimeType { audioMimeTypes }&
@@ -95,69 +98,67 @@ start =
 	# Default to Publisher (from agencies) 
     element contact {
       element rightsHolder {
-        attribute dcds:propertyURI { "rightsHolder" },
+        ## DCMI: rightsHolder
         xsd:string { minLength = "2" }
       }&
 	  # Default to rights holder 
       element rightsHolderLocal {
-        attribute dcds:propertyURI { "rightsHolder/contactLocal" },
-        xsd:string { minLength = "2" }
+        ## DCMI: rightsHolder/contactLocal
+        xsd:string { minLength = "2" }?
       }&
       element rightsHolderAbbreviation {
-        attribute dcds:propertyURI { "rightsHolder/contactAbbreviation" },
-        xsd:string { minLength = "2" }
+        ## DCMI: contactAbbreviation
+        xsd:string { minLength = "2" }?
       }&
       element rightsHolderURL {
-        attribute dcds:propertyURI { "rightsHolder/contactURL" },
-        xsd:anyURI
+        ## DCMI: rightsHolder/contactURL
+        xsd:anyURI?
       }&
       element rightsHolderFacebook {
-        attribute dcds:propertyURI { "rightsHolder/contactFacebook" },
-        xsd:anyURI
+        ## DCMI: rightsHolder/contactFacebook
+        xsd:anyURI?
       }
     }&
     element copyright {
       # For example: ©2002, 2012 United Bible Societies
       element statement {
         attribute contentType { "xhtml" },
-        attribute dcds:propertyURI { "rights" },
+        ## DCMI: rights
         htmlMarkup
       }
     }&
     element promotion {
       element promoVersionInfo {
         attribute contentType { "xhtml" },
-        attribute dcds:propertyURI { "description/pubPromoVersionInfo" },
+        ## DCMI: description/pubPromoVersionInfo
 		htmlMarkup
       }
     }?&
     element archiveStatus {
       # archivistName is overwritten by Paratext
       element archivistName {
-        attribute dcds:propertyURI { "contributor/archivist" },
+        ## DCMI: contributor/archivist
         xsd:string { minLength = "2" }
       }&
       # dateArchived is overwritten by Paratext
       element dateArchived {
-        attribute dcds:propertyURI { "dateSubmitted" },
-        attribute dcds:sesURI { "http://purl.org/dc/terms/W3CDTF" },
+        ## DCMI: dateSubmitted (xsd:dateTime)
         xsd:dateTime
       }&
       # dateUpdated is overwritten by Paratext
       element dateUpdated {
-        attribute dcds:propertyURI { "modified" },
-        attribute dcds:sesURI { "http://purl.org/dc/terms/W3CDTF" },
+        ## DCMI: modified (xsd:dateTime)
         xsd:dateTime
       }&
       element comments {
-        attribute dcds:propertyURI { "abstract" },
+        ## DCMI: abstract
         xsd:string { minLength = "2" maxLength = "255" }
       }
     }
   }
 
-htmlMarkup = (text
-         | element p { (text | htmlCharMarkup)+ }
+htmlMarkup = (
+           element p { (text | htmlCharMarkup)+ }
          | element h1 { text }
          | element h2 { text }
          | element h3 { text }
@@ -166,16 +167,18 @@ htmlMarkup = (text
          | element ol { 
              element li { text }+}
          | element blockquote { text }
-         | element img {
-            attribute src { xsd:anyURI },
-            text
-            }
          | htmlCharMarkup)+
 
-htmlCharMarkup = (element a {
+htmlCharMarkup = ( text
+		 | element a {
              attribute href { xsd:anyURI },
-             text
+             htmlCharMarkup
            }
+         | element img {
+            attribute src { xsd:anyURI },
+            attribute alt { text }?,
+            text
+            }           
          | element br { empty }
          | element strong { text }
          | element b { text }
