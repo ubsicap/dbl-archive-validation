@@ -22,7 +22,7 @@
   <language>
   	<iso>eng</iso>
     <name>English</name>
-    <ldml>en</ldml>
+    <ldml></ldml>
     <rod></rod>
     <script>Roman</script>
     <scriptDirection>LTR</scriptDirection><!-- LTR (Left to Right) or RTL (Right to Left) -->
