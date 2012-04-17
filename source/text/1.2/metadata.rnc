@@ -13,7 +13,7 @@ datatypes xsd = "http://www.w3.org/2001/XMLSchema-datatypes"
 start =
   element DBLMetadata {
     attribute type { "text" }&
-    attribute typeVersion {"1.2"}&
+    attribute typeVersion { "1.2" }&
     # id is overwritten at submission 
     attribute id { xsd:string { pattern="[a-f0-9]{16}" } }&
     attribute revision { xsd:integer }&
@@ -87,7 +87,7 @@ start =
       }&
       element ldml { 
         ## DCMI: language/ldml
-        xsd:string { pattern = "[a-z]{2}(\-[A-Za-z]+){0,3}" }?
+        xsd:string { pattern = "[a-z]{2,3}(\-[A-Za-z]+){0,3}" }?
       }&
       element rod { 
         ## DCMI: language/rod

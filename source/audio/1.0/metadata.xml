@@ -1,26 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<DBLMetadata type="audio" typeVersion="1.0" id="1111111111111111" revision="1" xml:base="http://purl.org/ubs/metadata/dc/terms/" xmlns:dcds="http://purl.org/dc/xmlns/2008/09/01/dc-ds-xml/">
+<DBLMetadata type="audio" typeVersion="1.0" id="1111111111111111" revision="1">
   <identification>
-    <name dcds:propertyURI="title">Good News Translation Audio Bible</name>
+    <name>Good News Translation Audio Bible</name>
     <nameLocal>Good News Translation Audio Bible</nameLocal>
-    <description dcds:propertyURI="description">English Good News Translation Dramatized Audio Bible</description>
-    <dateCompleted dcds:propertyURI="date" dcds:sesURI="http://purl.org/dc/terms/W3CDTF">1992-10-01</dateCompleted><!-- !! opt NULL -->
-    <systemId type="dbp" dcds:propertyURI="identifier/dbpID">0a1b2c3d4r5f6789</systemId>
+    <description>English Good News Translation Dramatized Audio Bible</description>
+    <dateCompleted>1992-10-01</dateCompleted><!-- !! opt NULL -->
+    <systemId type="dbp">0a1b2c3d4r5f6789</systemId>
     <bundleProducer>DBP</bundleProducer>
   </identification>
   <relationships>
     <relation type="text" id="66f69e2e951292b7" revision="1"/>
   </relationships>
   <agencies>
-    <creator dcds:propertyURI="creator">Faith Comes By Hearing</creator>
-    <publisher dcds:propertyURI="publisher">Faith Comes By Hearing</publisher>
-    <contributor dcds:propertyURI="contributor"></contributor>
+    <creator>Faith Comes By Hearing</creator>
+    <publisher>Faith Comes By Hearing</publisher>
+    <contributor></contributor>
   </agencies>
   <language>
-    <ldml dcds:propertyURI="language/ldml">en-Latn-US</ldml><!-- gather from text -->
+    <ldml>en-Latn-US</ldml><!-- gather from text -->
   </language>
   <type>
-    <audioType dcds:propertyURI="type/audioType">Dramatized</audioType>
+    <audioType>Dramatized</audioType>
   </type>
   <format>
     <mimeType>audio/mpeg</mimeType>
@@ -100,25 +100,25 @@
     <book code="REV"/>
   </books>
   <contact>
-    <rightsHolder dcds:propertyURI="rightsHolder">Faith Comes By Hearing</rightsHolder>
-    <rightsHolderLocal dcds:propertyURI="rightsHolder/contactLocal">Faith Comes By Hearing</rightsHolderLocal>
-    <rightsHolderAbbreviation dcds:propertyURI="rightsHolder/contactAbbreviation">FCBH</rightsHolderAbbreviation>
-    <rightsHolderURL dcds:propertyURI="rightsHolder/contactURL">http://www.faithcomesbyhearing.com/</rightsHolderURL>
-    <rightsHolderFacebook dcds:propertyURI="rightsHolder/contactFacebook">http://www.facebook.com/pages/Albuquerque-NM/Faith-Comes-By-Hearing/5655514986</rightsHolderFacebook>
+    <rightsHolder>Faith Comes By Hearing</rightsHolder>
+    <rightsHolderLocal>Faith Comes By Hearing</rightsHolderLocal>
+    <rightsHolderAbbreviation>FCBH</rightsHolderAbbreviation>
+    <rightsHolderURL>http://www.faithcomesbyhearing.com/</rightsHolderURL>
+    <rightsHolderFacebook>http://www.facebook.com/pages/Albuquerque-NM/Faith-Comes-By-Hearing/5655514986</rightsHolderFacebook>
   </contact>
   <copyright>
     <!-- Allow XHTML: <h1> <h2> <h3> <p> <blockquote> <ul> <ol> <li> <br> <strong> <em> <a> -->
-    <statement dcds:propertyURI="rights" contentType="xhtml"><p>Good News Translation Audio Bible © 1992 Faith Comes By Hearing. All rights reserved.</p></statement>
+    <statement contentType="xhtml"><p>Good News Translation Audio Bible © 1992 Faith Comes By Hearing. All rights reserved.</p></statement>
   </copyright>
   <promotion><!-- optionally empty -->
     <!-- Allow XHTML: <h1> <h2> <h3> <p> <blockquote> <ul> <ol> <li> <br> <strong> <em> <a> -->
-    <promoVersionInfo dcds:propertyURI="description/pubPromoVersionInfo" contentType="xhtml"><p>Audio background and promotion information.</p></promoVersionInfo>
+    <promoVersionInfo contentType="xhtml"><p>Audio background and promotion information.</p></promoVersionInfo>
     <!-- Allow XHTML: <h1> <h2> <h3> <p> <blockquote> <ul> <ol> <li> <br> <strong> <em> <a> -->
   </promotion>
   <archiveStatus>
-    <archivistName dcds:propertyURI="contributor/archivist">Jeff Klassen</archivistName>
-    <dateArchived dcds:propertyURI="dateSubmitted" dcds:sesURI="http://purl.org/dc/terms/W3CDTF">2011-04-19T00:00:00</dateArchived>
-    <dateUpdated dcds:propertyURI="modified" dcds:sesURI="http://purl.org/dc/terms/W3CDTF">2011-06-24T00:00:00</dateUpdated>
-    <comments dcds:propertyURI="abstract">Initial submission to DBL</comments>
+    <archivistName>Jeff Klassen</archivistName>
+    <dateArchived>2011-04-19T00:00:00</dateArchived>
+    <dateUpdated>2011-06-24T00:00:00</dateUpdated>
+    <comments>Initial submission to DBL</comments>
   </archiveStatus>
 </DBLMetadata>
