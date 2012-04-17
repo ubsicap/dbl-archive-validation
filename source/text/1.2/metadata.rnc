@@ -87,7 +87,7 @@ start =
       }&
       element ldml { 
         ## DCMI: language/ldml
-        xsd:string { pattern = "[a-z]{2}(\-[A-Za-z]+){0,3}" }?
+        xsd:string { pattern = "[a-z]{2,3}(\-[A-Za-z]+){0,3}" }?
       }&
       element rod { 
         ## DCMI: language/rod
