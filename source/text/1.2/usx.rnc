@@ -71,7 +71,7 @@ TitlePara =
                "rem")
             # Remark
         },
-        (Footnote | text)*
+        (Footnote | Char | text)*
     }
 IntroPara =
     element para {
@@ -167,7 +167,7 @@ TitleParaIntroEnd =
                "imt2")
                # Introduction major title, level 2
         },
-        (Footnote | text)*
+        (Footnote | Char | text)*
     }
 paraStyle =
     attribute style {
@@ -460,7 +460,7 @@ Chapter =
         # Start of new chapter
         attribute number { xsd:integer }&
         attribute style { "c" }&
-        attribute altnumber { xsd:integer }?&
+        attribute altnumber { xsd:string { minLength = "1" pattern = "[0-9]+[A-Za-z]?(\-[0-9]+[A-Za-z]?)?" } }?&
         attribute pubnumber { xsd:string { minLength = "1" } }?&
         empty
     }
