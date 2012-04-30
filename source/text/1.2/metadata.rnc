@@ -40,16 +40,16 @@ start =
         (xsd:date | xsd:gYear | xsd:gYearMonth | xsd:dateTime )?
 	  }&
       # systemId[@type='paratext'] is overwritten by Paratext
-      element systemId {(
+      element systemId {
+        attribute type {
         ## UBS Translation Management System database ID
-        (attribute type { "tms" })|
+        "tms" |
         ## Paratext Project GUID
-        (attribute type { "paratext" })|
+        "paratext" |
         ## SIL REAP database ID
-        (attribute type { "reap" })|
+        "reap" |
         ## Biblica database id
-        (attribute type { "biblica" })
-        ),
+        "biblica" },
         xsd:string { minLength = "2" } 
       }*&
       # bundleProducer is overwritten by Paratext
@@ -79,7 +79,7 @@ start =
     element language {
       element iso { 
         ## DCMI: language/iso (ISO639-3)
-        xsd:string { pattern = "[a-z][a-z][a-z]" }
+        xsd:string { pattern = "[a-z]{3}" }
       }&
       element name { 
         ## DCMI: subject/language (ISO639-3)
@@ -87,7 +87,7 @@ start =
       }&
       element ldml { 
         ## DCMI: language/ldml
-        xsd:string { pattern = "[a-z]{2,3}(\-[A-Za-z]+){0,3}" }?
+        xsd:string { pattern = "[A-Za-z]{2,3}([\-_][A-Za-z0-9]+){0,3}" }?
       }&
       element rod { 
         ## DCMI: language/rod
@@ -111,7 +111,7 @@ start =
     element country { 
       element iso { 
         ## DCMI: coverage/spatial (ISO3166)
-        xsd:string { pattern = "[A-Z][A-Z][A-Z]?" } 
+        xsd:string { pattern = "[A-Z]{2,3}" } 
       }&
       element name { 
         ## DCMI: subject/subjectCountry
@@ -214,7 +214,7 @@ start =
       }
     }&
     element copyright {
-      # For example: ©2002, 2012 United Bible Societies
+      # For example: (c) 2002, 2012 United Bible Societies
       element statement {
         attribute contentType { "xhtml" },
         ## DCMI: rights
@@ -320,7 +320,7 @@ translationLevel = (
          | "Literary"
          | "Liturgical")
 
-# 1 = draft, 2 = internalReview, 3 = extenalReview, 4 = finalReview
+# 1 = draft, 2 = internalReview, 3 = externalReview, 4 = finalReview
 translationStage = ( "1" | "2" | "3" | "4")
 
 bookCode = (
