@@ -33,13 +33,13 @@ start =
         (xsd:date | xsd:gYear | xsd:gYearMonth | xsd:dateTime )?
       }&
       # systemId[@type='paratext'] is overwritten by Paratext
-      element systemId {(
+      element systemId {
+        attribute type {
         ## FCBH Digital Bible Project DAM ID
-        (attribute type { "dbp" })|
-        (attribute type { text })
-        ),
+        "dbp" |
+        text },
         xsd:string { minLength = "2" } 
-      }*&
+      }*&      
       # bundleProducer is overwritten by Paratext
       element bundleProducer { xsd:string { minLength = "2" } }
     }&
@@ -69,7 +69,7 @@ start =
     element language {
       element ldml { 
         ## DCMI: language/ldml
-        xsd:string { pattern = "[a-z]{2,3}(\-[A-Za-z]+){0,3}" }?
+        xsd:string { pattern = "[A-Za-z]{2,3}([\-_][A-Za-z0-9]+){0,3}" }?
       }
     }&
     element type { 
@@ -120,7 +120,7 @@ start =
       }
     }&
     element copyright {
-      # For example: ©2002, 2012 United Bible Societies
+      # For example: (c) 2002, 2012 United Bible Societies
       element statement {
         attribute contentType { "xhtml" },
         ## DCMI: rights
