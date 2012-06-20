@@ -485,7 +485,7 @@ Footnote =
     element note {
         attribute style { "f" | "fe" },
         attribute caller { text },
-        (FootnoteChar | Char | text )+
+        (FootnoteChar | text )+
     }
 FootnoteChar =
     element char {
@@ -514,13 +514,13 @@ FootnoteChar =
         },
        attribute closed { xsd:boolean }?,
           # Present to allow roundtripping to USFM, not needed for publishing
-        text?
+       (text | Char)+
     }
 CrossReference =
     element note {
         attribute style { "x" },
         attribute caller { text },
-        (CrossReferenceChar | Char | text)+
+        (CrossReferenceChar | text)+
     }
 CrossReferenceChar =
     element char {
@@ -542,7 +542,7 @@ CrossReferenceChar =
             
         },
      attribute closed { xsd:boolean }?,
-            text?
+     (text | Char)+
     }
 Figure =
     element figure {
