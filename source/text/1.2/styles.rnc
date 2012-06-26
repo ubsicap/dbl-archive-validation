@@ -42,6 +42,9 @@ property =
     | "text-decoration"
     | "text-indent"
     | "vertical-align"
+    | "line-height"
+    | "direction"
+    | "writing-mode"
     | "white-space") }&
     # a CSS property name
     attribute unit { ( "%"
