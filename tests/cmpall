@@ -1,0 +1,26 @@
+#!/bin/bash
+
+errorlog=errors.log
+schema=metadata
+script_path=$(readlink -f $0)
+base=$(readlink -f ${script_path%/*}/..)
+schema_base=${base}/build/text/1.2
+old=${schema_base}/${schema}.rng
+new=${schema_base}/${schema}-modular.rng
+
+rm -f output?.log $errorlog
+
+for data in `ls /media/data/mirror/dbl/private/entries/text/01/*/*/metadata.xml`
+do
+    echo "Testing $data"
+    xmllint --noout --relaxng ${old} ${data} |& cat >> output1.log
+    resultOld=$?
+    xmllint --noout --relaxng ${new} ${data} |& cat >> output2.log
+    resultNew=$?
+
+    if [[ $resultOld -ne $resultNew ]]
+    then
+        echo "$resultOld $resultNew $data" >> ${errorlog}
+    fi
+done
+    
