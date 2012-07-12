@@ -32,7 +32,6 @@ start =
         ## DCMI: date
         (xsd:date | xsd:gYear | xsd:gYearMonth | xsd:dateTime )?
       }&
-      # systemId[@type='paratext'] is overwritten by Paratext
       element systemId {
         attribute type {
         ## FCBH Digital Bible Project DAM ID

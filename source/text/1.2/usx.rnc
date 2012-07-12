@@ -271,8 +271,6 @@ paraStyle =
          | # A list entry, level 3
            "li4"
          | # A list entry, level 4
-           "cp"
-         | # Published chapter number
            "cl"
          | # Chapter label used for translations that add a word such as "Chapter"
            "cd"
@@ -371,13 +369,7 @@ Para =
 Char =
     element char {
          attribute style {
-             ("va"
-              | # Second (alternate) verse number (for coding dual numeration in Psalms; see also NRSV Exo 22.1-4)
-                "vp"
-              | # Published verse marker - this is a verse marking that would be used in the published text
-                "ca"
-              | # Second (alternate) chapter number
-                "qac"
+             ("qac"
               | # Poetry text, Acrostic markup of the first character of a line of acrostic poetry
                 "qs"
               | # Poetry text, Selah
@@ -460,7 +452,7 @@ Chapter =
         # Start of new chapter
         attribute number { xsd:integer }&
         attribute style { "c" }&
-        attribute altnumber { xsd:string { minLength = "1" pattern = "[0-9]+[A-Za-z]?(\-[0-9]+[A-Za-z]?)?" } }?&
+        attribute altnumber { xsd:string { minLength = "1" pattern = "[0-9]+\w?(\x{200F}?[\-,][0-9]+\w?)*" } }?&
         attribute pubnumber { xsd:string { minLength = "1" } }?&
         empty
     }
@@ -474,9 +466,9 @@ ChapterLabelBookWide =
     }
 Verse =
     element verse {
-        attribute number { xsd:string { minLength = "1" pattern = "[0-9]+[a-z]?(\-[0-9]+[a-z]?)?" } }&
+        attribute number { xsd:string { minLength = "1" pattern = "[0-9]+\w?(\x{200F}?[\-,][0-9]+\w?)*" } }&
         attribute style { "v" }&
-        attribute altnumber { xsd:string { minLength = "1" pattern = "[0-9]+[a-z]?(\-[0-9]+[a-z]?)?" } }?&
+        attribute altnumber { xsd:string { minLength = "1" pattern = "[0-9]+\w?(\x{200F}?[\-,][0-9]+\w?)*" } }?&
         attribute pubnumber { xsd:string { minLength = "1" } }?&
         empty
     }
