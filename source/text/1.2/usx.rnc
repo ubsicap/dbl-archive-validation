@@ -271,6 +271,8 @@ paraStyle =
          | # A list entry, level 3
            "li4"
          | # A list entry, level 4
+           "cp"
+         | # Published chapter number
            "cl"
          | # Chapter label used for translations that add a word such as "Chapter"
            "cd"
@@ -369,7 +371,13 @@ Para =
 Char =
     element char {
          attribute style {
-             ("qac"
+             ("va"
+              | # Second (alternate) verse number (for coding dual numeration in Psalms; see also NRSV Exo 22.1-4)
+                "vp"
+              | # Published verse marker - this is a verse marking that would be used in the published text
+                "ca"
+              | # Second (alternate) chapter number
+                "qac"
               | # Poetry text, Acrostic markup of the first character of a line of acrostic poetry
                 "qs"
               | # Poetry text, Selah
