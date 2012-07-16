@@ -145,8 +145,8 @@ IntroPara =
                "rem")
             # Remark 
         },
-        (Footnote | Char | IntroChar | Figure | Table | text)*
-    }
+        (Footnote | Char | IntroChar | Figure | text)*
+    } | Table
 TitleParaIntroEnd =
     element para {
         attribute style {
@@ -317,7 +317,19 @@ TableContent =
         attribute style {
             (
              ## These ought to only be allowed in <row style="tr">
-             "th1"
+			   "th"
+             | # A table heading, any column
+               "tc"
+             | # A table cell item, any column
+			   "thr"
+             | # A table heading, any column, right aligned
+               "tcr"
+             | # A table cell item, any column, right aligned
+			   "thc"
+             | # A table heading, any column, center aligned
+               "tcc"
+             | # A table cell item, any column, center aligned
+               "th1"
              | # A table heading, column 1
                "tc1"
              | # A table cell item, column 1
