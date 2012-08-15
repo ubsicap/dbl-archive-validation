@@ -1,3 +1,4 @@
+12: Allow xrefs in main titles; Allow imt# at intro start without mt#
 11: (DBL 1.2 / USX2) Support <chapter number="" alternate="" publishable="" style="c" />
     - Support <table><row style="tr"><cell style=".." align=".."></cell></row></table>
     - Support <optbreak/> = USFM //  jk
