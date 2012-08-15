@@ -5,36 +5,88 @@
 default namespace = ""
 datatypes xsd = "http://www.w3.org/2001/XMLSchema-datatypes"
 
-start =
-  element license {
-    # id is overwritten by Paratext
-    attribute id { xsd:string { pattern="[a-f0-9]{16}" } }&
-    attribute type { licenseType }?&
-    # yyyy-mm-dd
-    element dateLicense {
-      ##attribute dcds:sesURI { "http://purl.org/dc/terms/W3CDTF" },
-      xsd:date
-    }&
-	# yyyy-mm-dd (must be after dateLicense) 
-    element dateLicenseExpiry {
-      ##attribute dcds:sesURI { "http://purl.org/dc/terms/W3CDTF" },
-      xsd:date
-    }&
+start = l.license
+
+div {
+   # id is overwritten by Paratext
+   l.license.id =
+    attribute id { xsd:string { pattern="[a-f0-9]{16}" } }
+   l.license.type =
+    attribute type { licenseType.enum }
+   l.license.attlist =
+      l.license.id &
+      l.license.type?
+   l.license =
+      element license {
+         l.license.attlist &
+         l.dateLicense &
+         l.dateLicenseExpiry &
+         l.publicationRights
+      }
+}
+
+div {
+   l.dateLicense =
+      ## yyyy-mm-dd
+      element dateLicense {
+         # attribute dcds:sesURI { "http://purl.org/dc/terms/W3CDTF" },
+         xsd:date
+      }
+}
+
+div {
+   l.dateLicenseExpiry =
+      ## yyyy-mm-dd (must be after dateLicense) 
+      element dateLicenseExpiry {
+         # attribute dcds:sesURI { "http://purl.org/dc/terms/W3CDTF" },
+         xsd:date
+      }
+}
+
+div {
+   l.publicationRights =
     element publicationRights {
-      element allowOffline { xsd:boolean | ""}&
-      element allowIntroductions { xsd:boolean | ""}&
-      element allowFootnotes { xsd:boolean | ""}&
-      element allowCrossReferences { xsd:boolean | ""}&
-      element allowExtendedNotes { xsd:boolean | ""}
+       l.allowOffline &
+       l.allowIntroductions &
+       l.allowFootnotes &
+       l.allowCrossReferences &
+       l.allowExtendedNotes
     }
-  }
+}
+
+div {
+   l.allowOffline =
+      element allowOffline { xsd:boolean | empty }
+}
+
+div {
+   l.allowIntroductions =
+      element allowIntroductions { xsd:boolean | empty }
+}
+
+div {
+   l.allowFootnotes =
+      element allowFootnotes { xsd:boolean | empty }
+}
+
+div {
+   l.allowCrossReferences =
+      element allowCrossReferences { xsd:boolean | empty }
+}
+
+div {
+   l.allowExtendedNotes =
+      element allowExtendedNotes { xsd:boolean | empty }
+}
 
 # The are Creative Commons license types (http://creativecommons.org/licenses/).
 # Others could be added.
-licenseType = ("BY" # Attribution only
-         | "BY-ND"       #  Attribution-NoDerivatives
-         | "BY-NC-ND" # Attribution-NonCommercial- NoDerivatives 
-         | "BY-NC"       # Attribution-NonCommercial 
-         | "BY-NC-SA" # Attribution-NonCommercial- ShareAlike 
-         | "BY-SA"       # Attribution-ShareAlike 
-         | "PD")           # Dedicated to or marked as being in the public domain
+licenseType.enum = (
+      "BY"       # Attribution only
+    | "BY-ND"    # Attribution - NoDerivatives
+    | "BY-NC-ND" # Attribution - NonCommercial - NoDerivatives 
+    | "BY-NC"    # Attribution - NonCommercial 
+    | "BY-NC-SA" # Attribution - NonCommercial - ShareAlike 
+    | "BY-SA"    # Attribution - ShareAlike 
+    | "PD"       # Dedicated to or marked as being in the public domain
+)

@@ -68,10 +68,16 @@ TitlePara =
              | # !! A tertiary title occurring after the main title  was: A secondary title occurring after the main title
                "mt4"
              | # !! I have not seen a use case for this   was: A small secondary title sometimes occuring within parentheses
+               "imt"
+             | # Introduction major title, level 1 (if single level)
+               "imt1"
+             | # Introduction major title, level 1 (if multiple levels)
+               "imt2"
+             |  # Introduction major title, level 2
                "rem")
             # Remark
         },
-        (Footnote | Char | text)*
+        (Footnote | CrossReference | Char | text)*
     }
 IntroPara =
     element para {
@@ -167,7 +173,7 @@ TitleParaIntroEnd =
                "imt2")
                # Introduction major title, level 2
         },
-        (Footnote | Char | text)*
+        (Footnote | CrossReference | Char | text)*
     }
 paraStyle =
     attribute style {
