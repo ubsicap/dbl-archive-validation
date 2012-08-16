@@ -36,10 +36,10 @@ div {
 
 div {
    l.dateLicenseExpiry =
-      ## yyyy-mm-dd (must be after dateLicense) 
+      ## yyyy-mm-dd (must be after dateLicense or empty for non-expiring) 
       element dateLicenseExpiry {
          # attribute dcds:sesURI { "http://purl.org/dc/terms/W3CDTF" },
-         xsd:date
+         xsd:date?
       }
 }
 
