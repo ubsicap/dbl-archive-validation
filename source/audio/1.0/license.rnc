@@ -11,15 +11,15 @@ start =
     # id is overwritten by Paratext
     attribute id { xsd:string { pattern="[a-f0-9]{16}" } }&
     attribute licenseType { licenseType }?&
-    # yyyy-mm-dd
+    # yyyy-mm-dd (empty for unknown or public domain)
     element dateLicense {
       attribute dcds:sesURI { "http://purl.org/dc/terms/W3CDTF" },
-      xsd:date
+      xsd:date?
     }&
-	# yyyy-mm-dd (must be after dateLicense) 
+	# yyyy-mm-dd (must be after dateLicense or empty for non-expiring) 
     element dateLicenseExpiry {
       attribute dcds:sesURI { "http://purl.org/dc/terms/W3CDTF" },
-      xsd:date
+      xsd:date?
     }&
     element publicationRights {
       element allowOffline { xsd:boolean | ""}
