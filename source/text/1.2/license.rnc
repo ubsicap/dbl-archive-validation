@@ -27,10 +27,10 @@ div {
 
 div {
    l.dateLicense =
-      ## yyyy-mm-dd
+      ## yyyy-mm-dd (empty for unknown or public domain)
       element dateLicense {
          # attribute dcds:sesURI { "http://purl.org/dc/terms/W3CDTF" },
-         xsd:date
+         xsd:date?
       }
 }
 
