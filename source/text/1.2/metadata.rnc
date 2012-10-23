@@ -242,7 +242,7 @@ div {
    m.ldml =
       ## DCMI: language/ldml
    element ldml {
-      xsd:string { pattern = "[a-z]{2,3}(\-[A-Za-z]+){0,3}" }?
+      xsd:string { pattern = "[A-Za-z]{2,3}([\-_][A-Za-z0-9]+){0,3}" }?
    }
 }
 
