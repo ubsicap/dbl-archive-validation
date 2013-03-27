@@ -148,6 +148,8 @@ IntroPara =
              | # Introduction major title at introduction end, level 1 (if multiple levels)
                "imte2"
              | # Introduction major title at introduction end, level 2
+               "iex"
+             | # Introduction explanatory or bridge text (e.g. explanation of missing book in Short Old Testament)
                "rem")
             # Remark 
         },
