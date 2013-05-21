@@ -8,6 +8,7 @@
     <systemId type="dbp">0a1b2c3d4r5f6789</systemId>
     <bundleProducer>DBP</bundleProducer>
   </identification>
+  <confidential>false</confidential>
   <relationships>
     <relation type="text" id="66f69e2e951292b7" revision="1"/>
   </relationships>

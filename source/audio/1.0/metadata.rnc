@@ -42,6 +42,9 @@ start =
       # bundleProducer is overwritten by Paratext
       element bundleProducer { xsd:string { minLength = "2" } }
     }&
+    element confidential {
+      xsd:boolean
+    }&
     element relationships {
       element relation {
         attribute type { bundleTypes },
