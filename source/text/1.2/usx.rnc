@@ -485,6 +485,7 @@ Chapter =
         empty
     }
     # e.g. <chapter number="1" style="c" altnumber="2" pubnumber="A" />
+    # This schema will not support a chapter:verse string within altnumber
     
 ChapterLabelBookWide =
     element para {
