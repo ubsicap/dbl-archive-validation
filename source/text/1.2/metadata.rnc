@@ -178,7 +178,7 @@ div {
 
 div {
    m.etenPartner.enum =
-      "UBS" | "WBT" | "Biblica"
+      "UBS" | "WBT" | "Biblica" | "PBT"
    ## Primary translation or coordination/sponsorship agency
    m.etenPartner =
       element etenPartner { m.etenPartner.enum }
