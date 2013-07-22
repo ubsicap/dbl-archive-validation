@@ -509,7 +509,7 @@ div {
    m.rightsHolderAbbreviation =
       ## DCMI: contactAbbreviation
       element rightsHolderAbbreviation {
-         m._datatype.string2?
+         m._datatype.string2
       }
 }
 
