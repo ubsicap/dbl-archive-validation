@@ -177,11 +177,14 @@ div {
 }
 
 div {
-   m.etenPartner.enum =
-      "UBS" | "WBT" | "Biblica" | "PBT" | "SIM"
+   #m.etenPartner.enum =
+   #   "UBS" | "WBT" | "Biblica" | "PBT" | "SIM"
    ## Primary translation or coordination/sponsorship agency
    m.etenPartner =
-      element etenPartner { m.etenPartner.enum }
+      element etenPartner { 
+         # m.etenPartner.enum
+         m._datatype.string2?
+      }
 }
 
 div {

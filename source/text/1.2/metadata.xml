@@ -14,7 +14,7 @@
   </identification>
   <confidential>false</confidential>
   <agencies>
-    <etenPartner>UBS</etenPartner> <!-- Currently "UBS", "WBT", "Biblica", "PBT" -->
+    <etenPartner>UBS</etenPartner> <!-- e.g "UBS", "WBT", "Biblica", "PBT", "SIM" -->
     <creator>American Bible Society</creator><!-- primary translation agency/sponsorship -->
     <publisher>American Bible Society</publisher><!-- primary publishing agency> -->
     <contributor ></contributor>
