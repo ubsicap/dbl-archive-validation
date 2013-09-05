@@ -1,12 +1,10 @@
 #!/bin/bash
 # traverse source rnc files and compile into apropriate rng file, mirroring source directory structure.
 
-scriptpath=`readlink -f $0`
-scriptdir=${scriptpath%/*}
+scriptdir=`pwd`
 sourcedir=$scriptdir/source
 outdir=$scriptdir/build
 
-cd #scriptpath
 rm -rf $outdir
 
 for rncpath in `ls $sourcedir/*/*/*.rnc`
