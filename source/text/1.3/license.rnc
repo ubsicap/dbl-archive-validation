@@ -1,0 +1,92 @@
+# license.rnc
+# This is a compact syntax Relax NG Schema for the DBL @type="text" bundle license information file - license.xml
+# DBL bundle version = 1.2
+
+default namespace = ""
+datatypes xsd = "http://www.w3.org/2001/XMLSchema-datatypes"
+
+start = l.license
+
+div {
+   # id is overwritten by Paratext
+   l.license.id =
+    attribute id { xsd:string { pattern="[a-f0-9]{16}" } }
+   l.license.type =
+    attribute type { licenseType.enum }
+   l.license.attlist =
+      l.license.id &
+      l.license.type?
+   l.license =
+      element license {
+         l.license.attlist &
+         l.dateLicense &
+         l.dateLicenseExpiry &
+         l.publicationRights
+      }
+}
+
+div {
+   l.dateLicense =
+      ## yyyy-mm-dd (empty for unknown or public domain)
+      element dateLicense {
+         # attribute dcds:sesURI { "http://purl.org/dc/terms/W3CDTF" },
+         xsd:date?
+      }
+}
+
+div {
+   l.dateLicenseExpiry =
+      ## yyyy-mm-dd (must be after dateLicense or empty for non-expiring) 
+      element dateLicenseExpiry {
+         # attribute dcds:sesURI { "http://purl.org/dc/terms/W3CDTF" },
+         xsd:date?
+      }
+}
+
+div {
+   l.publicationRights =
+    element publicationRights {
+       l.allowOffline &
+       l.allowIntroductions &
+       l.allowFootnotes &
+       l.allowCrossReferences &
+       l.allowExtendedNotes
+    }
+}
+
+div {
+   l.allowOffline =
+      element allowOffline { xsd:boolean | empty }
+}
+
+div {
+   l.allowIntroductions =
+      element allowIntroductions { xsd:boolean | empty }
+}
+
+div {
+   l.allowFootnotes =
+      element allowFootnotes { xsd:boolean | empty }
+}
+
+div {
+   l.allowCrossReferences =
+      element allowCrossReferences { xsd:boolean | empty }
+}
+
+div {
+   l.allowExtendedNotes =
+      element allowExtendedNotes { xsd:boolean | empty }
+}
+
+# The are Creative Commons license types (http://creativecommons.org/licenses/).
+# Others could be added.
+licenseType.enum = (
+      "BY"       # Attribution only
+    | "BY-ND"    # Attribution - NoDerivatives
+    | "BY-NC-ND" # Attribution - NonCommercial - NoDerivatives 
+    | "BY-NC"    # Attribution - NonCommercial 
+    | "BY-NC-SA" # Attribution - NonCommercial - ShareAlike 
+    | "BY-SA"    # Attribution - ShareAlike 
+    | "PD"       # Dedicated to or marked as being in the public domain
+)
