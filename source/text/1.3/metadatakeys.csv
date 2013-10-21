@@ -1,42 +1,43 @@
 entrytype,typeversion,key,name,xpath,sort,important,xhtml
-text,1.2,id,Project Archive ID,@id,15,TRUE,FALSE
-text,1.2,revision,Revision,@revision,7,TRUE,FALSE
-text,1.2,nameCommon,Common Version Name,identification/name,5,TRUE,FALSE
-text,1.2,nameCommonLocal,Common Version Name Local,identification/nameLocal,999,FALSE,FALSE
-text,1.2,nameAbbreviation,Version Abbreviation,identification/abbreviation,6,TRUE,FALSE
-text,1.2,nameAbbreviationLocal,Version Abbreviation Local,identification/abbreviationLocal,999,FALSE,FALSE
-text,1.2,scope,Scope,identification/scope,7,TRUE,FALSE
-text,1.2,description,Description,identification/description,999,FALSE,FALSE
-text,1.2,dateCompleted,Completion Date,identification/dateCompleted,8,TRUE,FALSE
-text,1.2,idTMS,TMS Project Id,identification/systemId[@type='tms'],999,FALSE,FALSE
-text,1.2,idSIL,SIL Project Id,identification/systemId[@type='reap'],999,FALSE,FALSE
-text,1.2,idParatext,Paratext GUID,identification/systemId[@type='paratext'],999,FALSE,FALSE
-text,1.2,typeVersion,Bundle Type Version,@typeVersion,8,TRUE,FALSE
-text,1.2,bundleProducer,Bundle Producer,identification/bundleProducer,999,FALSE,FALSE
-text,1.2,confidential,Confidential Project,confidential,999,FALSE,FALSE
-text,1.2,agencyETEN,ETEN Partner Agency,agencies/etenPartner,9,TRUE,FALSE
-text,1.2,agencyTranslation,Translation Agency,agencies/creator,999,FALSE,FALSE
-text,1.2,agencyPublishing,Publishing Agency,agencies/publisher,999,FALSE,FALSE
-text,1.2,languageCode,Language Code,language/iso,2,TRUE,FALSE
-text,1.2,languageName,Language Name,language/name,1,TRUE,FALSE
-text,1.2,languageScript,Script,language/script,3,TRUE,FALSE
-text,1.2,languageScriptDirection,Script Direction,language/scriptDirection,999,FALSE,FALSE
-text,1.2,countryCode,Country Code,country/iso,999,FALSE,FALSE
-text,1.2,countryName,Country Name,country/name,4,TRUE,FALSE
-text,1.2,translationType,Translation Type,type/translationType,999,FALSE,FALSE
-text,1.2,languageLevel,Language Level,type/audience,999,FALSE,FALSE
-text,1.2,rightsHolder,Rights Holder Name,contact/rightsHolder,10,TRUE,FALSE
-text,1.2,rightsHolderLocal,Rights Holder Name Local,contact/rightsHolderLocal,999,FALSE,FALSE
-text,1.2,rightsHolderAbbreviation,Rights Holder Abbreviation,contact/rightsHolderAbbreviation,999,FALSE,FALSE
-text,1.2,rightsHolderURL,Rights Holder URL,contact/rightsHolderURL,999,FALSE,FALSE
-text,1.2,rightsHolderFacebook,Rights Holder Facebook Page,contact/rightsHolderFacebook,999,FALSE,FALSE
-text,1.2,pubPromoVersionInfo,Promotion Version Info,promotion/promoVersionInfo,999,FALSE,TRUE
-text,1.2,pubPromoEmail,Promotion Email Message,promotion/promoEmail,999,FALSE,FALSE
-text,1.2,archivist,Archivist,archiveStatus/archivistName,999,FALSE,FALSE
-text,1.2,dateArchived,Original Archive Date,archiveStatus/dateArchived,999,FALSE,FALSE
-text,1.2,dateUpdated,Last Archive Date,archiveStatus/dateUpdated,13,TRUE,FALSE
-text,1.2,comments,Comments,archiveStatus/comments,14,TRUE,FALSE
-text,1.2,copyrightStatement,Rights Information Statement,copyright/statement,999,FALSE,TRUE
-text,1.2,languageLDMLId,Unicode LDML Languae ID,language/ldml,999,FALSE,FALSE
-text,1.2,languageDialectCode,HIS Dialect Code,language/rod,999,FALSE,FALSE
-text,1.2,languageNumerals,Numeral System,language/numerals,999,FALSE,FALSE
+text,1.3,id,Project Archive ID,@id,15,TRUE,FALSE
+text,1.3,revision,Revision,@revision,7,TRUE,FALSE
+text,1.3,nameCommon,Common Version Name,identification/name,5,TRUE,FALSE
+text,1.3,nameCommonLocal,Common Version Name Local,identification/nameLocal,999,FALSE,FALSE
+text,1.3,nameAbbreviation,Version Abbreviation,identification/abbreviation,6,TRUE,FALSE
+text,1.3,nameAbbreviationLocal,Version Abbreviation Local,identification/abbreviationLocal,999,FALSE,FALSE
+text,1.3,scope,Scope,identification/scope,7,TRUE,FALSE
+text,1.3,description,Description,identification/description,999,FALSE,FALSE
+text,1.3,descriptionLocal,Description Local,identification/descriptionLocal,999,FALSE,FALSE
+text,1.3,dateCompleted,Completion Date,identification/dateCompleted,8,TRUE,FALSE
+text,1.3,idTMS,TMS Project Id,identification/systemId[@type='tms'],999,FALSE,FALSE
+text,1.3,idSIL,SIL Project Id,identification/systemId[@type='reap'],999,FALSE,FALSE
+text,1.3,idParatext,Paratext GUID,identification/systemId[@type='paratext'],999,FALSE,FALSE
+text,1.3,typeVersion,Bundle Type Version,@typeVersion,8,TRUE,FALSE
+text,1.3,bundleProducer,Bundle Producer,identification/bundleProducer,999,FALSE,FALSE
+text,1.3,confidential,Confidential Project,confidential,999,FALSE,FALSE
+text,1.3,agencyETEN,ETEN Partner Agency,agencies/etenPartner,9,TRUE,FALSE
+text,1.3,agencyTranslation,Translation Agency,agencies/creator,999,FALSE,FALSE
+text,1.3,agencyPublishing,Publishing Agency,agencies/publisher,999,FALSE,FALSE
+text,1.3,languageCode,Language Code,language/iso,2,TRUE,FALSE
+text,1.3,languageName,Language Name,language/name,1,TRUE,FALSE
+text,1.3,languageScript,Script,language/script,3,TRUE,FALSE
+text,1.3,languageScriptDirection,Script Direction,language/scriptDirection,999,FALSE,FALSE
+text,1.3,countryCode,Country Code,country/iso,999,FALSE,FALSE
+text,1.3,countryName,Country Name,country/name,4,TRUE,FALSE
+text,1.3,translationType,Translation Type,type/translationType,999,FALSE,FALSE
+text,1.3,languageLevel,Language Level,type/audience,999,FALSE,FALSE
+text,1.3,rightsHolder,Rights Holder Name,contact/rightsHolder,10,TRUE,FALSE
+text,1.3,rightsHolderLocal,Rights Holder Name Local,contact/rightsHolderLocal,999,FALSE,FALSE
+text,1.3,rightsHolderAbbreviation,Rights Holder Abbreviation,contact/rightsHolderAbbreviation,999,FALSE,FALSE
+text,1.3,rightsHolderURL,Rights Holder URL,contact/rightsHolderURL,999,FALSE,FALSE
+text,1.3,rightsHolderFacebook,Rights Holder Facebook Page,contact/rightsHolderFacebook,999,FALSE,FALSE
+text,1.3,pubPromoVersionInfo,Promotion Version Info,promotion/promoVersionInfo,999,FALSE,TRUE
+text,1.3,pubPromoEmail,Promotion Email Message,promotion/promoEmail,999,FALSE,FALSE
+text,1.3,archivist,Archivist,archiveStatus/archivistName,999,FALSE,FALSE
+text,1.3,dateArchived,Original Archive Date,archiveStatus/dateArchived,999,FALSE,FALSE
+text,1.3,dateUpdated,Last Archive Date,archiveStatus/dateUpdated,13,TRUE,FALSE
+text,1.3,comments,Comments,archiveStatus/comments,14,TRUE,FALSE
+text,1.3,copyrightStatement,Rights Information Statement,copyright/statement,999,FALSE,TRUE
+text,1.3,languageLDMLId,Unicode LDML Languae ID,language/ldml,999,FALSE,FALSE
+text,1.3,languageDialectCode,HIS Dialect Code,language/rod,999,FALSE,FALSE
+text,1.3,languageNumerals,Numeral System,language/numerals,999,FALSE,FALSE
