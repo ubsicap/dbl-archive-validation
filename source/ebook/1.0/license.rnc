@@ -20,9 +20,6 @@ start =
     element dateLicenseExpiry {
       #attribute dcds:sesURI { "http://purl.org/dc/terms/W3CDTF" },
       xsd:date?
-    }&
-    element publicationRights {
-      element allowOffline { xsd:boolean | ""}
     }
   }
 
