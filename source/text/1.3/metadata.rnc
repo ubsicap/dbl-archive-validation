@@ -67,7 +67,6 @@ div {
       m.abbreviationLocal &
       m.scope &
       m.description &
-      m.descriptionLocal &
       m.dateCompleted &
       m.systemId* &
       m.bundleProducer
@@ -117,14 +116,6 @@ div {
    m.description =
       ## DCMI: description
       element description {
-         m._datatype.string2
-      }
-}
-
-div {
-   m.descriptionLocal =
-      ## DCMI: description
-      element descriptionLocal {
          m._datatype.string2
       }
 }
@@ -398,10 +389,21 @@ div {
         m.nameLocal &
         m.abbreviation &
         m.abbreviationLocal &
-        m.description &
-        m.descriptionLocal &
+        m.booklist.description &
+        m.booklist.descriptionLocal &
         m.books
       }
+}
+
+
+div {
+   m.booklist.description =
+       element name { text }
+}
+
+div {
+   m.booklist.descriptionLocal =
+       element name { text }
 }
 
 div {
