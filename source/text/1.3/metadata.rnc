@@ -1,7 +1,7 @@
 # metadata.rnc
 # ----------------------------------------------------------------------------------------------------------------------
 # This is a compact syntax Relax NG Schema for the DBL @type="text" metadata information file.
-# DBL bundle version = 1.2
+# DBL bundle version = 1.3
 
 # Suggested Dublin Core Metadata (DCMI) element/refinement relationships are added as documentation strings "## DCMI: "
 # A syntax encoding scheme may be mentioned after the DCMI documentation in parentheses; e.g. language/iso (ISO639-3)
@@ -27,7 +27,7 @@ div {
    m.DBLMetadata.type =
       attribute type { "text" }
    m.DBLMetadata.typeVersion =
-      attribute typeVersion { "1.2" }
+      attribute typeVersion { "1.3" }
    m.DBLMetadata.id =
       ## id is overwritten at submission
       attribute id { xsd:string { pattern="[a-f0-9]{16}" } }
@@ -116,7 +116,7 @@ div {
    m.description =
       ## DCMI: description
       element description {
-         text
+         m._datatype.string2
       }
 }
 
@@ -376,73 +376,34 @@ div {
 
 div {
    m.bookList.id =
-      attribute id { "default" }
+      attribute id { xsd:integer }
+   m.bookList.default
+      attribute default { xsd:boolean }
    m.bookList.attlist =
-      m.bookList.id?
+      m.bookList.id
+      m.bookList.default?
    m.bookList =
       element bookList {
         m.bookList.attlist &
-        m.booklist.name &
-        m.booklist.nameLocal &
-        m.booklist.abbreviation &
-        m.booklist.abbreviationLocal &
-        m.description &
-        m.range &
-        m.tradition &
-        m.division+
+        m.name &
+        m.nameLocal &
+        m.abbreviation &
+        m.abbreviationLocal &
+        m.booklist.description &
+        m.booklist.descriptionLocal &
+        m.books
       }
 }
 
+
 div {
-   m.booklist.name =
-      ## default to name from identification section
-   element name { text }
+   m.booklist.description =
+       element name { text }
 }
 
 div {
-   m.booklist.nameLocal =
-      ## default to name local from identification section
-   element nameLocal { text }
-}
-
-div {
-   m.booklist.abbreviation =
-      element abbreviation { text }
-}
-
-div {
-   m.booklist.abbreviationLocal =
-      element abbreviationLocal { text }
-}
-
-# m.description defined for m.identification
-
-div {
-   m.range =
-      # e.g Protestant Bible (66 books)
-   element range { text }
-}
-
-div {
-   m.tradition =
-      ## e.g Western Protestant order
-   element tradition { text }
-}
-
-div {
-   m.division.id.enum =
-      "OT" |
-      "NT" |
-      "DC"
-   m.division.id =
-      attribute id { m.division.id.enum }
-   m.division.attlist =
-      m.division.id
-   m.division =
-      element division {
-         m.division.attlist,
-         m.books
-      }
+   m.booklist.descriptionLocal =
+       element name { text }
 }
 
 div {
