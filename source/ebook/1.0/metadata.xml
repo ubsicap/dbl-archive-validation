@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DBLMetadata type="ebook" typeVersion="1.0" id="1111111111111111" revision="1">
+  <identification>
+    <name>Good News Translation Ebook</name>
+    <nameLocal>Good News Translation Ebook</nameLocal>
+    <description>Good News Translation with Deuterocanon in EPUB format</description>
+    <dateCompleted>2013-10-29</dateCompleted><!-- !! opt NULL -->
+    <systemId type="isbn">978-0-88834-992-7</systemId>
+    <bundleProducer>DBL</bundleProducer>
+  </identification>
+  <confidential>false</confidential>
+  <relationships>
+    <relation type="text" id="66f69e2e951292b7" booklistid="1" revision="1"/>
+  </relationships>
+  <agencies>
+    <creator>American Bible Society</creator>
+    <publisher>American Bible Society</publisher>
+    <contributor></contributor>
+  </agencies>
+  <language>
+    <ldml>en-Latn-US</ldml><!-- gather from text -->
+  </language>
+  <format>
+    <mimeType>application/epub+zip</mimeType>
+    <generator>dbl2epub</generator> <!-- e.g. dbl2epub, Adobe InDesign, SIL Pathway etc. -->
+    <ebook>epub</ebook> <!-- epub | azw | kf8 | ibooks | html | pdf  -->
+  </format>
+  <contact>
+    <rightsHolder>American Bible Society</rightsHolder>
+    <rightsHolderLocal>American Bible Society</rightsHolderLocal>
+    <rightsHolderAbbreviation>ABS</rightsHolderAbbreviation>
+    <rightsHolderURL>http://www.americanbible.org</rightsHolderURL>
+  </contact>
+  <copyright>
+    <!-- Allow XHTML: <h1> <h2> <h3> <p> <blockquote> <ul> <ol> <li> <br> <strong> <em> <a> -->
+    <statement contentType="xhtml"><p>Good News Translation EPUB © 2013 American Bible Society. All rights reserved.</p></statement>
+  </copyright>
+  <promotion><!-- optionally empty -->
+    <!-- Allow XHTML: <h1> <h2> <h3> <p> <blockquote> <ul> <ol> <li> <br> <strong> <em> <a> -->
+    <promoVersionInfo contentType="xhtml"><p>Ebook background and promotion information.</p></promoVersionInfo>
+    <!-- Allow XHTML: <h1> <h2> <h3> <p> <blockquote> <ul> <ol> <li> <br> <strong> <em> <a> -->
+  </promotion>
+  <archiveStatus>
+    <archivistName>Jeff Klassen</archivistName>
+    <dateArchived>2013-10-30T00:00:00</dateArchived>
+    <dateUpdated>2013-10-30T00:00:00</dateUpdated>
+    <comments>Initial submission to DBL</comments>
+  </archiveStatus>
+</DBLMetadata>

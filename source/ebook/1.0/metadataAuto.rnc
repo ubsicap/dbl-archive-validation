@@ -1,0 +1,67 @@
+default namespace = ""
+
+start =
+  element DBLMetadata {
+    attribute id { xsd:integer },
+    attribute revision { xsd:integer },
+    attribute type { xsd:NCName },
+    attribute typeVersion { xsd:decimal },
+    element identification {
+      element name { text },
+      element nameLocal { text },
+      element description { text },
+      element dateCompleted { xsd:date },
+      element systemId {
+        attribute type { xsd:NCName },
+        xsd:NMTOKEN
+      }+,
+      element bundleProducer { xsd:NCName }
+    },
+    element confidential { xsd:boolean },
+    element relationships {
+      element relation {
+        attribute booklistid { xsd:integer },
+        attribute id { xsd:NMTOKEN },
+        attribute revision { xsd:integer },
+        attribute type { xsd:NCName }
+      }
+    },
+    element agencies {
+      element creator { text },
+      element publisher { text },
+      element contributor { empty }
+    },
+    element language {
+      element ldml { xsd:NCName }
+    },
+    element format {
+      element generator { xsd:NCName },
+      element mimeType { text },
+      element ebook { xsd:NCName }
+    },
+    element contact {
+      element rightsHolder { text },
+      element rightsHolderLocal { text },
+      element rightsHolderAbbreviation { xsd:NCName },
+      element rightsHolderURL { xsd:anyURI }
+    },
+    element copyright {
+      element statement {
+        attribute contentType { xsd:NCName },
+        p
+      }
+    },
+    element promotion {
+      element promoVersionInfo {
+        attribute contentType { xsd:NCName },
+        p
+      }
+    },
+    element archiveStatus {
+      element archivistName { text },
+      element dateArchived { xsd:dateTime },
+      element dateUpdated { xsd:dateTime },
+      element comments { text }
+    }
+  }
+p = element p { text }

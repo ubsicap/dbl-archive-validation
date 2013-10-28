@@ -1,0 +1,24 @@
+entrytype,typeversion,key,name,xpath,sort,important,xhtml
+ebook,1,id,Project Archive ID,@id,8,TRUE,FALSE
+ebook,1,revision,Revision,@revision,9,TRUE,FALSE
+ebook,1,typeVersion,Bundle Type Version,@typeVersion,10,TRUE,FALSE
+ebook,1,nameCommon,Ebook Title,identification/name,1,TRUE,FALSE
+ebook,1,nameCommonLocal,Ebook Title Local,identification/nameLocal,999,FALSE,FALSE
+ebook,1,description,Description,identification/description,999,FALSE,FALSE
+ebook,1,dateCompleted,Completion Date,identification/dateCompleted,4,TRUE,FALSE
+ebook,1,bundleProducer,Bundle Producer,identification/bundleProducer,999,FALSE,FALSE
+ebook,1,agencyCreator,Creator Agency,agencies/creator,999,FALSE,FALSE
+ebook,1,agencyPublishing,Publishing Agency,agencies/publisher,999,FALSE,FALSE
+ebook,1,ebookFormat,Ebook Format,format/ebook,2,TRUE,FALSE
+ebook,1,ebookGenerator,Ebook Generator,format/generator,3,TRUE,FALSE
+ebook,1,rightsHolder,Rights Holder Name,contact/rightsHolder,5,TRUE,FALSE
+ebook,1,rightsHolderLocal,Rights Holder Name Local,contact/rightsHolderLocal,999,FALSE,FALSE
+ebook,1,rightsHolderAbbreviation,Rights Holder Abbreviation,contact/rightsHolderAbbreviation,999,FALSE,FALSE
+ebook,1,rightsHolderURL,Rights Holder URL,contact/rightsHolderURL,999,FALSE,FALSE
+ebook,1,pubPromoVersionInfo,Promotion Version Info,promotion/promoVersionInfo,999,FALSE,TRUE
+ebook,1,archivist,Archivist,archiveStatus/archivistName,999,FALSE,FALSE
+ebook,1,dateArchived,Original Archive Date,archiveStatus/dateArchived,999,FALSE,FALSE
+ebook,1,dateUpdated,Last Archive Date,archiveStatus/dateUpdated,6,TRUE,FALSE
+ebook,1,comments,Comments,archiveStatus/comments,7,TRUE,FALSE
+ebook,1,copyrightStatement,Rights Information Statement,copyright/statement,999,FALSE,TRUE
+ebook,1,languageLDMLId,Unicode LDML Language ID,language/ldml,999,FALSE,FALSE

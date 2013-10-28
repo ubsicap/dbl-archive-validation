@@ -1,0 +1,189 @@
+# metadata.rnc
+# ----------------------------------------------------------------------------------------------------------------------
+# This is a compact syntax Relax NG Schema for the DBL @type="audio" metadata information file.
+# DBL bundle version = 1.0
+
+# Suggested Dublin Core Metadata (DCMI) element/refinement relationships are added as documentation strings "## DCMI: "
+# A syntax encoding scheme may be mentioned after the DCMI documentation in parentheses; e.g. language/iso (ISO639-3)
+# ----------------------------------------------------------------------------------------------------------------------
+
+default namespace = ""
+datatypes xsd = "http://www.w3.org/2001/XMLSchema-datatypes"
+
+start =
+  element DBLMetadata {
+    attribute type { "ebook" }&
+    attribute typeVersion { "1.0" }&
+    # id is overwritten at submission 
+    attribute id { xsd:string { pattern="[a-f0-9]{16}" } }&
+    attribute revision { xsd:integer }&
+    element identification {
+      element name {
+        ## DCMI: title
+        xsd:string { minLength = "2" }
+      }&
+      # nameLocal should default to name 
+      element nameLocal { xsd:string { minLength = "2" } }&
+      element description {
+        ## DCMI: description
+        text 
+      }&
+      element dateCompleted {
+        ## DCMI: date
+        (xsd:date | xsd:gYear | xsd:gYearMonth | xsd:dateTime )?
+      }&
+      element systemId {
+        attribute type {
+        "isbn"},
+        xsd:string { pattern = "[\d\-]{13,17}" } 
+      }*&
+      # bundleProducer is overwritten by Paratext
+      element bundleProducer { xsd:string { minLength = "2" } }
+    }&
+    element confidential {
+      xsd:boolean
+    }&
+    element relationships {
+      element relation {
+        attribute type { bundleTypes },
+        attribute id { xsd:string { pattern="[a-f0-9]{16}" } },
+        attribute booklistid { xsd:integer }?,
+        attribute revision { xsd:integer }
+        }*
+    }&
+    element agencies {
+      # primary translation or coordination/sponsorship agency
+      element creator { 
+        ## DCMI: creator
+        xsd:string { minLength = "2" } 
+      }+&
+      # publisher may be the same as translation (description/sponsorship) 
+      element publisher {
+        ## DCMI: publisher
+        xsd:string { minLength = "2" } 
+      }?&
+      element contributor {
+        ## DCMI: contributor
+        text 
+      }*
+    }&
+    element language {
+      element ldml { 
+        ## DCMI: language/ldml
+        xsd:string { pattern = "[A-Za-z]{2,3}([\-_][A-Za-z0-9]+){0,3}" }?
+      }
+    }&
+    element format {
+      element mimeType { ebookMimeTypes }&
+      element generator { xsd:string }?&
+      element ebook { ebookFormats }&
+      element bitRate { xsd:integer }?&
+      element bitDepth { xsd:integer }?&
+      element samplingRate { xsd:integer }?
+    }&
+	# Default to Publisher (from agencies) 
+    element contact {
+      element rightsHolder {
+        ## DCMI: rightsHolder
+        xsd:string { minLength = "2" }
+      }&
+	  # Default to rights holder 
+      element rightsHolderLocal {
+        ## DCMI: rightsHolder/contactLocal
+        xsd:string { minLength = "2" }?
+      }&
+      element rightsHolderAbbreviation {
+        ## DCMI: contactAbbreviation
+        xsd:string { minLength = "2" }?
+      }&
+      element rightsHolderURL {
+        ## DCMI: rightsHolder/contactURL
+        xsd:anyURI?
+      }
+    }&
+    element copyright {
+      # For example: (c) 2002, 2012 United Bible Societies
+      element statement {
+        attribute contentType { "xhtml" },
+        ## DCMI: rights
+        htmlMarkup
+      }
+    }&
+    element promotion {
+      element promoVersionInfo {
+        attribute contentType { "xhtml" },
+        ## DCMI: description/pubPromoVersionInfo
+		htmlMarkup
+      }
+    }?&
+    element archiveStatus {
+      # archivistName is overwritten by Paratext
+      element archivistName {
+        ## DCMI: contributor/archivist
+        xsd:string { minLength = "2" }
+      }&
+      # dateArchived is overwritten by Paratext
+      element dateArchived {
+        ## DCMI: dateSubmitted (xsd:dateTime)
+        xsd:dateTime
+      }&
+      # dateUpdated is overwritten by Paratext
+      element dateUpdated {
+        ## DCMI: modified (xsd:dateTime)
+        xsd:dateTime
+      }&
+      element comments {
+        ## DCMI: abstract
+        xsd:string { minLength = "2" maxLength = "255" }
+      }
+    }
+  }
+
+htmlMarkup = (
+           element p { (text | htmlCharMarkup)+ }
+         | element h1 { text }
+         | element h2 { text }
+         | element h3 { text }
+         | element ul { 
+             element li { text }+}
+         | element ol { 
+             element li { text }+}
+         | element blockquote { text }
+         | htmlCharMarkup)+
+
+htmlCharMarkup = ( text
+		 | element a {
+             attribute href { xsd:anyURI },
+             htmlCharMarkup
+           }
+         | element img {
+            attribute src { xsd:anyURI },
+            attribute alt { text }?,
+            text
+            }           
+         | element br { empty }
+         | element strong { text }
+         | element b { text }
+         | element em { text }
+         | element i { text })
+
+bundleTypes = (
+           "text"
+         | "ebook"
+         | "print"
+         | "audio"
+         | "video")
+
+ebookMimeTypes = (
+           "application/epub+zip"
+         | "application/octet-stream"
+         | "text/html"
+         | "application/pdf")
+
+ebookFormats = (
+           "epub"
+         | "azw"
+         | "kf8"
+         | "ibooks"
+         | "html"
+         | "pdf")
