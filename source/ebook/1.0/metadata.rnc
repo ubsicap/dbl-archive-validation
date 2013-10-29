@@ -1,6 +1,6 @@
 # metadata.rnc
 # ----------------------------------------------------------------------------------------------------------------------
-# This is a compact syntax Relax NG Schema for the DBL @type="audio" metadata information file.
+# This is a compact syntax Relax NG Schema for the DBL @type="ebooks" metadata information file.
 # DBL bundle version = 1.0
 
 # Suggested Dublin Core Metadata (DCMI) element/refinement relationships are added as documentation strings "## DCMI: "

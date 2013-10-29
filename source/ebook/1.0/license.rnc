@@ -1,6 +1,6 @@
 # license.rnc
-# This is a compact syntax Relax NG Schema for the DBL @type="text" bundle license information file - license.xml
-# DBL bundle version = 1.2
+# This is a compact syntax Relax NG Schema for the DBL @type="ebook" bundle license information file - license.xml
+# DBL bundle version = 1.0
 
 default namespace = ""
 datatypes xsd = "http://www.w3.org/2001/XMLSchema-datatypes"
