@@ -377,10 +377,10 @@ div {
 div {
    m.bookList.id =
       attribute id { xsd:integer }
-   m.bookList.default
+   m.bookList.default =
       attribute default { xsd:boolean }
    m.bookList.attlist =
-      m.bookList.id
+      m.bookList.id &
       m.bookList.default?
    m.bookList =
       element bookList {
@@ -398,12 +398,12 @@ div {
 
 div {
    m.booklist.description =
-       element name { text }
+       element description { text }
 }
 
 div {
    m.booklist.descriptionLocal =
-       element name { text }
+       element descriptionLocal { text }
 }
 
 div {
