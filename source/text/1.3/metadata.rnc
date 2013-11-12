@@ -92,7 +92,7 @@ div {
 div {
    m.abbreviation =
       element abbreviation {
-         xsd:string { pattern="[A-Za-z0-9\-]{2,8}" }
+         xsd:string { pattern="[A-Za-z0-9\-]{2,12}" }
       }
 }
 
@@ -100,7 +100,7 @@ div {
    m.abbreviationLocal =
       ## abbreviationLocal should default to abbreviation
       element abbreviationLocal {
-         xsd:string { minLength="1" maxLength="8" }
+         xsd:string { minLength="1" maxLength="12" }
       }
 }
 
