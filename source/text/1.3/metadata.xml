@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<DBLMetadata type="text" typeVersion="1.2" id="66f69e2e951292b7" revision="1">
+<DBLMetadata type="text" typeVersion="1.3" id="66f69e2e951292b7" revision="1">
   <identification>
     <name>Good News Translation</name>
     <nameLocal>Good News Translation</nameLocal>
@@ -444,190 +444,170 @@
     </book>
   </bookNames>
   <contents>
-    <bookList id="default">
+    <bookList id="1" default="true">
       <name>Good News Translation</name>
       <nameLocal>Good News Translation</nameLocal>
       <abbreviation>eng-GNT</abbreviation>
       <abbreviationLocal>GNT</abbreviationLocal>
-      <description>Western Protestant Bible</description> <!-- <Name> from Canons.xml -->
-      <range>Protestant Bible (66 books)</range> <!-- from Canons.xml -->
-      <tradition>Western Protestant order</tradition> <!-- from Canons.xml -->
-      <division id="OT">
-        <books>
-          <book code="GEN"/>
-          <book code="EXO"/>
-          <book code="LEV"/>
-          <book code="NUM"/>
-          <book code="DEU"/>
-          <book code="JOS"/>
-          <book code="JDG"/>
-          <book code="RUT"/>
-          <book code="1SA"/>
-          <book code="2SA"/>
-          <book code="1KI"/>
-          <book code="2KI"/>
-          <book code="1CH"/>
-          <book code="2CH"/>
-          <book code="EZR"/>
-          <book code="NEH"/>
-          <book code="EST"/>
-          <book code="JOB"/>
-          <book code="PSA"/>
-          <book code="PRO"/>
-          <book code="ECC"/>
-          <book code="SNG"/>
-          <book code="ISA"/>
-          <book code="JER"/>
-          <book code="LAM"/>
-          <book code="EZK"/>
-          <book code="DAN"/>
-          <book code="HOS"/>
-          <book code="JOL"/>
-          <book code="AMO"/>
-          <book code="OBA"/>
-          <book code="JON"/>
-          <book code="MIC"/>
-          <book code="NAM"/>
-          <book code="HAB"/>
-          <book code="ZEP"/>
-          <book code="HAG"/>
-          <book code="ZEC"/>
-          <book code="MAL"/>
-        </books>
-      </division>
-      <division id="NT">
-        <books>
-          <book code="MAT"/>
-          <book code="MRK"/>
-          <book code="LUK"/>
-          <book code="JHN"/>
-          <book code="ACT"/>
-          <book code="ROM"/>
-          <book code="1CO"/>
-          <book code="2CO"/>
-          <book code="GAL"/>
-          <book code="EPH"/>
-          <book code="PHP"/>
-          <book code="COL"/>
-          <book code="1TH"/>
-          <book code="2TH"/>
-          <book code="1TI"/>
-          <book code="2TI"/>
-          <book code="TIT"/>
-          <book code="PHM"/>
-          <book code="HEB"/>
-          <book code="JAS"/>
-          <book code="1PE"/>
-          <book code="2PE"/>
-          <book code="1JN"/>
-          <book code="2JN"/>
-          <book code="3JN"/>
-          <book code="JUD"/>
-          <book code="REV"/>
-        </books>
-      </division>
+      <description>Protestant</description>
+      <books>
+        <book code="GEN"/>
+        <book code="EXO"/>
+        <book code="LEV"/>
+        <book code="NUM"/>
+        <book code="DEU"/>
+        <book code="JOS"/>
+        <book code="JDG"/>
+        <book code="RUT"/>
+        <book code="1SA"/>
+        <book code="2SA"/>
+        <book code="1KI"/>
+        <book code="2KI"/>
+        <book code="1CH"/>
+        <book code="2CH"/>
+        <book code="EZR"/>
+        <book code="NEH"/>
+        <book code="EST"/>
+        <book code="JOB"/>
+        <book code="PSA"/>
+        <book code="PRO"/>
+        <book code="ECC"/>
+        <book code="SNG"/>
+        <book code="ISA"/>
+        <book code="JER"/>
+        <book code="LAM"/>
+        <book code="EZK"/>
+        <book code="DAN"/>
+        <book code="HOS"/>
+        <book code="JOL"/>
+        <book code="AMO"/>
+        <book code="OBA"/>
+        <book code="JON"/>
+        <book code="MIC"/>
+        <book code="NAM"/>
+        <book code="HAB"/>
+        <book code="ZEP"/>
+        <book code="HAG"/>
+        <book code="ZEC"/>
+        <book code="MAL"/>
+        <book code="MAT"/>
+        <book code="MRK"/>
+        <book code="LUK"/>
+        <book code="JHN"/>
+        <book code="ACT"/>
+        <book code="ROM"/>
+        <book code="1CO"/>
+        <book code="2CO"/>
+        <book code="GAL"/>
+        <book code="EPH"/>
+        <book code="PHP"/>
+        <book code="COL"/>
+        <book code="1TH"/>
+        <book code="2TH"/>
+        <book code="1TI"/>
+        <book code="2TI"/>
+        <book code="TIT"/>
+        <book code="PHM"/>
+        <book code="HEB"/>
+        <book code="JAS"/>
+        <book code="1PE"/>
+        <book code="2PE"/>
+        <book code="1JN"/>
+        <book code="2JN"/>
+        <book code="3JN"/>
+        <book code="JUD"/>
+        <book code="REV"/>
+      </books>
     </bookList>
     <bookList>
       <name>Good News Translation with Deuterocanonicals/Apocrypha</name>
       <nameLocal>Good News Translation with Deuterocanonicals/Apocrypha</nameLocal>
       <abbreviation>eng-GNTD</abbreviation>
       <abbreviationLocal>GNTD</abbreviationLocal>
-      <description>Ecumenical Bible with combined Catholic DCs + Anglican KJV Apocrypha</description> <!-- <Name> from Canons.xml -->
-      <range>Interconfessional Bible with DC/ Apocrypha section</range> <!-- from Canons.xml -->
-      <tradition>Bible with Catholic DCs + 3 KJV Apocryphal books</tradition> <!-- from Canons.xml -->
-      <division id="OT">
-        <books>
-          <book code="GEN"/>
-          <book code="EXO"/>
-          <book code="LEV"/>
-          <book code="NUM"/>
-          <book code="DEU"/>
-          <book code="JOS"/>
-          <book code="JDG"/>
-          <book code="RUT"/>
-          <book code="1SA"/>
-          <book code="2SA"/>
-          <book code="1KI"/>
-          <book code="2KI"/>
-          <book code="1CH"/>
-          <book code="2CH"/>
-          <book code="EZR"/>
-          <book code="NEH"/>
-          <book code="EST"/>
-          <book code="JOB"/>
-          <book code="PSA"/>
-          <book code="PRO"/>
-          <book code="ECC"/>
-          <book code="SNG"/>
-          <book code="ISA"/>
-          <book code="JER"/>
-          <book code="LAM"/>
-          <book code="EZK"/>
-          <book code="DAN"/>
-          <book code="HOS"/>
-          <book code="JOL"/>
-          <book code="AMO"/>
-          <book code="OBA"/>
-          <book code="JON"/>
-          <book code="MIC"/>
-          <book code="NAM"/>
-          <book code="HAB"/>
-          <book code="ZEP"/>
-          <book code="HAG"/>
-          <book code="ZEC"/>
-          <book code="MAL"/>
-        </books>
-      </division>
-      <division id="DC">
-        <books>
-          <book code="TOB"/>
-          <book code="JDT"/>
-          <book code="ESG"/>
-          <book code="WIS"/>
-          <book code="SIR"/>
-          <book code="BAR"/>
-          <book code="LJE"/>
-          <book code="S3Y"/>
-          <book code="SUS"/>
-          <book code="BEL"/>
-          <book code="1MA"/>
-          <book code="2MA"/>
-          <book code="1ES"/>
-          <book code="2ES"/>
-          <book code="MAN"/>
-        </books>
-      </division>
-      <division id="NT">
-        <books>
-          <book code="MAT"/>
-          <book code="MRK"/>
-          <book code="LUK"/>
-          <book code="JHN"/>
-          <book code="ACT"/>
-          <book code="ROM"/>
-          <book code="1CO"/>
-          <book code="2CO"/>
-          <book code="GAL"/>
-          <book code="EPH"/>
-          <book code="PHP"/>
-          <book code="COL"/>
-          <book code="1TH"/>
-          <book code="2TH"/>
-          <book code="1TI"/>
-          <book code="2TI"/>
-          <book code="TIT"/>
-          <book code="PHM"/>
-          <book code="HEB"/>
-          <book code="JAS"/>
-          <book code="1PE"/>
-          <book code="2PE"/>
-          <book code="1JN"/>
-          <book code="2JN"/>
-          <book code="3JN"/>
-          <book code="JUD"/>
-          <book code="REV"/>
-        </books>
-      </division>
+      <description>Ecumenical Bible with combined Catholic DCs + Anglican KJV Apocrypha</description>
+      <books>
+        <book code="GEN"/>
+        <book code="EXO"/>
+        <book code="LEV"/>
+        <book code="NUM"/>
+        <book code="DEU"/>
+        <book code="JOS"/>
+        <book code="JDG"/>
+        <book code="RUT"/>
+        <book code="1SA"/>
+        <book code="2SA"/>
+        <book code="1KI"/>
+        <book code="2KI"/>
+        <book code="1CH"/>
+        <book code="2CH"/>
+        <book code="EZR"/>
+        <book code="NEH"/>
+        <book code="EST"/>
+        <book code="JOB"/>
+        <book code="PSA"/>
+        <book code="PRO"/>
+        <book code="ECC"/>
+        <book code="SNG"/>
+        <book code="ISA"/>
+        <book code="JER"/>
+        <book code="LAM"/>
+        <book code="EZK"/>
+        <book code="DAN"/>
+        <book code="HOS"/>
+        <book code="JOL"/>
+        <book code="AMO"/>
+        <book code="OBA"/>
+        <book code="JON"/>
+        <book code="MIC"/>
+        <book code="NAM"/>
+        <book code="HAB"/>
+        <book code="ZEP"/>
+        <book code="HAG"/>
+        <book code="ZEC"/>
+        <book code="MAL"/>
+        <book code="TOB"/>
+        <book code="JDT"/>
+        <book code="ESG"/>
+        <book code="WIS"/>
+        <book code="SIR"/>
+        <book code="BAR"/>
+        <book code="LJE"/>
+        <book code="S3Y"/>
+        <book code="SUS"/>
+        <book code="BEL"/>
+        <book code="1MA"/>
+        <book code="2MA"/>
+        <book code="1ES"/>
+        <book code="2ES"/>
+        <book code="MAN"/>
+        <book code="MAT"/>
+        <book code="MRK"/>
+        <book code="LUK"/>
+        <book code="JHN"/>
+        <book code="ACT"/>
+        <book code="ROM"/>
+        <book code="1CO"/>
+        <book code="2CO"/>
+        <book code="GAL"/>
+        <book code="EPH"/>
+        <book code="PHP"/>
+        <book code="COL"/>
+        <book code="1TH"/>
+        <book code="2TH"/>
+        <book code="1TI"/>
+        <book code="2TI"/>
+        <book code="TIT"/>
+        <book code="PHM"/>
+        <book code="HEB"/>
+        <book code="JAS"/>
+        <book code="1PE"/>
+        <book code="2PE"/>
+        <book code="1JN"/>
+        <book code="2JN"/>
+        <book code="3JN"/>
+        <book code="JUD"/>
+        <book code="REV"/>
+      </books>
     </bookList>
   </contents>
   <progress><!-- 1 = draft, 2 = internalReview, 3 = extenalReview, 4 = finalReview -->
