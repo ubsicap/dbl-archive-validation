@@ -1,7 +1,7 @@
 # metadata.rnc
 # ----------------------------------------------------------------------------------------------------------------------
 # This is a compact syntax Relax NG Schema for the DBL @type="audio" metadata information file.
-# DBL bundle version = 1.0
+# DBL audio bundle version = 1.0
 
 # Suggested Dublin Core Metadata (DCMI) element/refinement relationships are added as documentation strings "## DCMI: "
 # A syntax encoding scheme may be mentioned after the DCMI documentation in parentheses; e.g. language/iso (ISO639-3)
@@ -10,318 +10,663 @@
 default namespace = ""
 datatypes xsd = "http://www.w3.org/2001/XMLSchema-datatypes"
 
-start =
-  element DBLMetadata {
-    attribute type { "audio" }&
-    attribute typeVersion { "1.0" }&
-    # id is overwritten at submission 
-    attribute id { xsd:string { pattern="[a-f0-9]{16}" } }&
-    attribute revision { xsd:integer }&
-    element identification {
+start = m.DBLMetadata
+
+div {
+   m._.contentType.enum =
+      "xhtml"
+   m._.contentType =
+      attribute contentType { m._.contentType.enum }
+   m._.code =
+      attribute code { bookCode.enum }
+   m._datatype.string2 =
+      xsd:string { minLength = "2" }
+}
+
+div {
+   m.DBLMetadata.type =
+      attribute type { "audio" }
+   m.DBLMetadata.typeVersion =
+      attribute typeVersion { "1.0" }
+   m.DBLMetadata.id =
+      ## id is overwritten at submission
+      attribute id { xsd:string { pattern="[a-f0-9]{16}" } }
+   m.DBLMetadata.revision =
+      attribute revision { xsd:integer }
+   m.DBLMetadata.attlist =
+         m.DBLMetadata.type &
+         m.DBLMetadata.typeVersion &
+         m.DBLMetadata.id &
+         m.DBLMetadata.revision
+   m.DBLMetadata =
+      element DBLMetadata {
+         m.DBLMetadata.attlist &
+         m.identification &
+         m.confidential &
+         m.relationships &
+         m.agencies &
+         m.language &
+         m.type &
+         m.format &
+         m.books &
+         m.contact &
+         m.copyright &
+         m.promotion? &
+         m.archiveStatus
+      }
+}
+
+div {
+   m.identification =
+      element identification {
+         m.name &
+         m.nameLocal &
+         m.description &
+         m.dateCompleted &
+         m.systemId* &
+         m.bundleProducer
+      }
+}
+
+div {
+   m.name =
+      ## DCMI: title
       element name {
-        ## DCMI: title
-        xsd:string { minLength = "2" }
-      }&
-      # nameLocal should default to name 
-      element nameLocal { xsd:string { minLength = "2" } }&
+         m._datatype.string2
+      }
+}
+
+div {
+   m.nameLocal =
+      ## nameLocal should default to name
+      element nameLocal {
+         m._datatype.string2
+      }
+}
+
+div {
+   m.description =
+      ## DCMI: description
       element description {
-        ## DCMI: description
-        text 
-      }&
+         m._datatype.string2
+      }
+}
+
+div {
+   m.dateCompleted =
+      ## DCMI: date
       element dateCompleted {
-        ## DCMI: date
-        (xsd:date | xsd:gYear | xsd:gYearMonth | xsd:dateTime )?
-      }&
+         (xsd:date | xsd:gYear | xsd:gYearMonth | xsd:dateTime )?
+      }
+}
+
+div {
+   m.systemId.type.enum =
+      ## UBS Translation Management System database ID
+      "tms" |
+      ## SIL REAP database ID
+      "reap" |
+      ## FCBH Digital Bible Project DAM ID
+      "dbp"
+   m.systemId.type =
+      attribute type { m.systemId.type.enum }
+   m.systemId.attlist =
+      m.systemId.type
+   m.systemId =
       element systemId {
-        attribute type {
-        ## FCBH Digital Bible Project DAM ID
-        "dbp" |
-        text },
-        xsd:string { minLength = "2" } 
-      }*&      
-      # bundleProducer is overwritten by Paratext
-      element bundleProducer { xsd:string { minLength = "2" } }
-    }&
-    element confidential {
-      xsd:boolean
-    }&
-    element relationships {
+        m.systemId.attlist,
+        m._datatype.string2
+   }
+}
+
+div {
+   m.bundleProducer =
+      ## bundleProducer is overwritten by Paratext
+      element bundleProducer {
+         m._datatype.string2
+      }
+}
+
+div {
+   m.confidential =
+      ## DCMI: accessRights/confidential
+      element confidential {
+         xsd:boolean
+      }
+}
+
+div {
+   m.relationships =
+      element relationships {
+         m.relation
+      }
+}
+
+div {
+   m.relation.type.enum =
+      "text" | 
+      "print" | 
+      "audio" | 
+      "video" | 
+      "ebook"
+   m.relation.type =
+      attribute type { m.relation.type.enum }
+   m.relation.id =
+      attribute id { xsd:string { pattern="[a-f0-9]{16}" } }
+   m.relation.revision =
+      attribute revision { xsd:integer }
+   m.relation.attlist =
+      m.relation.type &
+      m.relation.id &
+      m.relation.revision
+   m.relation =
+      ## DCMI: relation
       element relation {
-        attribute type { bundleTypes },
-        attribute id { xsd:string { pattern="[a-f0-9]{16}" } },
-        attribute revision { xsd:integer }
-        }*
-    }&
-    element agencies {
-      # primary translation or coordination/sponsorship agency
-      element creator { 
-        ## DCMI: creator
-        xsd:string { minLength = "2" } 
-      }+&
-      # publisher may be the same as translation (description/sponsorship) 
-      element publisher {
-        ## DCMI: publisher
-        xsd:string { minLength = "2" } 
-      }?&
-      element contributor {
-        ## DCMI: contributor
-        text 
-      }*
-    }&
-    element language {
-      element ldml { 
-        ## DCMI: language/ldml
-        xsd:string { pattern = "[A-Za-z]{2,3}([\-_][A-Za-z0-9]+){0,3}" }?
+         m.relation.attlist
       }
-    }&
-    element type { 
-      element audioType {
-        ## DCMI: type/audioType
-        audioType ?
-      }
-    }&
-    element format {
-      element mimeType { audioMimeTypes }&
-      element compression {
-        audioCompressionTypes
-      }?&
-      element trackConfiguration {
-        audioTrackConfigurations
-      }?&
-      element bitRate { xsd:integer }?&
-      element bitDepth { xsd:integer }?&
-      element samplingRate { xsd:integer }?
-    }&
-    element books { 
-      element book { 
-        attribute code { bookCode }
-      }+
-    }&
-	# Default to Publisher (from agencies) 
-    element contact {
-      element rightsHolder {
-        ## DCMI: rightsHolder
-        xsd:string { minLength = "2" }
-      }&
-	  # Default to rights holder 
-      element rightsHolderLocal {
-        ## DCMI: rightsHolder/contactLocal
-        xsd:string { minLength = "2" }?
-      }&
-      element rightsHolderAbbreviation {
-        ## DCMI: contactAbbreviation
-        xsd:string { minLength = "2" }?
-      }&
-      element rightsHolderURL {
-        ## DCMI: rightsHolder/contactURL
-        xsd:anyURI?
-      }&
-      element rightsHolderFacebook {
-        ## DCMI: rightsHolder/contactFacebook
-        xsd:anyURI?
-      }
-    }&
-    element copyright {
-      # For example: (c) 2002, 2012 United Bible Societies
-      element statement {
-        attribute contentType { "xhtml" },
-        ## DCMI: rights
-        htmlMarkup
-      }
-    }&
-    element promotion {
-      element promoVersionInfo {
-        attribute contentType { "xhtml" },
-        ## DCMI: description/pubPromoVersionInfo
-		htmlMarkup
-      }
-    }?&
-    element archiveStatus {
-      # archivistName is overwritten by Paratext
-      element archivistName {
-        ## DCMI: contributor/archivist
-        xsd:string { minLength = "2" }
-      }&
-      # dateArchived is overwritten by Paratext
-      element dateArchived {
-        ## DCMI: dateSubmitted (xsd:dateTime)
-        xsd:dateTime
-      }&
-      # dateUpdated is overwritten by Paratext
-      element dateUpdated {
-        ## DCMI: modified (xsd:dateTime)
-        xsd:dateTime
-      }&
-      element comments {
-        ## DCMI: abstract
-        xsd:string { minLength = "2" maxLength = "255" }
-      }
+}
+
+div {
+   m.agencies =
+      element agencies {
+         m.etenPartner? &
+         m.creator+ &
+         m.publisher? &
+         m.contributor*
     }
-  }
+}
 
-htmlMarkup = (
-           element p { (text | htmlCharMarkup)+ }
-         | element h1 { text }
-         | element h2 { text }
-         | element h3 { text }
-         | element ul { 
-             element li { text }+}
-         | element ol { 
-             element li { text }+}
-         | element blockquote { text }
-         | htmlCharMarkup)+
+div {
+   #m.etenPartner.enum =
+   #   "UBS" | "WBT" | "Biblica" | "PBT" | "SIM"
+   ## Primary translation or coordination/sponsorship agency
+   m.etenPartner =
+      element etenPartner { 
+         # m.etenPartner.enum
+         m._datatype.string2?
+      }
+}
 
-htmlCharMarkup = ( text
-		 | element a {
-             attribute href { xsd:anyURI },
-             htmlCharMarkup
-           }
-         | element img {
-            attribute src { xsd:anyURI },
-            attribute alt { text }?,
-            text
-            }           
-         | element br { empty }
-         | element strong { text }
-         | element b { text }
-         | element em { text }
-         | element i { text })
+div {
+   m.creator =
+      ## DCMI: creator
+      element creator {
+         m._datatype.string2
+      }
+}
 
-bundleTypes = (
-           "text"
-         | "print"
-         | "audio"
-         | "video")
+div {
+   m.publisher =
+      ## publisher may be the same as translation (description/sponsorship)
+      ## DCMI: publisher
+      element publisher {
+         m._datatype.string2
+      }
+}
 
-audioType = (
-           "Dramatized"
-         | "Non-Dramatized"
-         | "Single-Voice")
-         
-audioMimeTypes = (
-           "audio/mpeg")
+div {
+   m.contributor =
+      ## DCMI: contributor
+      element contributor {
+        text
+      }
+}
 
-audioCompressionTypes = (
-           "MP3")
+div {
+   m.language =
+      element language {
+         m.ldml &
+         m.rod?
+      }
+}
 
-audioTrackConfigurations = (
-           "2/0 (Stereo)")
+div {
+   m.ldml =
+      ## DCMI: language/ldml
+      element ldml {
+         xsd:string { pattern = "[A-Za-z]{2,3}([\-_][A-Za-z0-9]+){0,3}" }?
+      }
+}
 
-bookCode = (
+div {
+   m.rod =
+      ## DCMI: language/rod
+      element rod {
+         xsd:string { pattern = "[0-9]{5}" }?
+      }
+}
+
+div {
+   m.type =
+      element type {
+         m.audioType
+   }
+}
+
+div {
+   m.audioType.enum = 
+      "Dramatized" |
+      "Non-Dramatized" |
+      "Single-Voice"
+   m.audioType =
+      ## DCMI: type/audioType
+      element audioType {
+         m.audioType.enum ?
+      }
+}
+
+div {
+   m.format =
+      ## DCMI: format
+      element format {
+         m.mimeType &
+         m.compression &
+         m.trackConfiguration &
+         m.bitRate &
+         m.bitDepth &
+         m.samplingRate
+      }
+}
+
+div {
+   m.mimeType.enum =
+      "audio/mpeg" |
+      "audio/wav"
+   m.mimeType =
+      element mimeType {
+         m.mimeType.enum
+      }
+}
+
+div {
+   m.compression.enum =
+      "MP3" |
+      "FLAC" |
+      "WAV" |
+      empty
+      ## http://www.ebu.ch/metadata/cs/web/ebu_AudioCompressionCodeCS_p.xml.htm
+   m.compression =
+      element compression {
+         m.compression.enum
+      }
+}
+
+div {
+   m.trackConfiguration.enum =
+      "1/0 (Mono)" |
+      "Dual mono" |
+      "2/0 (Stereo)" |
+      "5.1 Surround" |
+      empty
+      ## http://www.ebu.ch/metadata/cs/web/ebu_AudioFormatCodeCS_p.xml.htm
+   m.trackConfiguration =
+      element trackConfiguration {
+         m.trackConfiguration.enum
+      }
+}
+
+div {
+   m.bitRate =
+      element bitRate {
+         xsd:integer |
+         empty
+      }
+}
+
+div {
+   m.bitDepth =
+      element bitDepth {
+         xsd:integer |
+         empty
+      }
+}
+
+div {
+   m.samplingRate =
+      element samplingRate {
+         xsd:integer |
+         empty
+      }
+}
+
+div {
+   m.books =
+      element books {
+         m.book+
+      }
+}
+
+div {
+   m.book.attlist =
+      m._.code
+   m.book =
+      element book {
+         m.book.attlist
+      }
+}
+
+div {
+   m.contact =
+      ## Default to Publisher (from agencies)
+   element contact {
+      m.rightsHolder &
+      m.rightsHolderLocal &
+      m.rightsHolderAbbreviation &
+      m.rightsHolderURL &
+      m.rightsHolderFacebook
+    }
+}
+
+div {
+   m.rightsHolder =
+      ## DCMI: rightsHolder
+      element rightsHolder {
+         m._datatype.string2
+      }
+}
+
+div {
+   m.rightsHolderLocal =
+      ## DCMI: rightsHolder/contactLocal
+      element rightsHolderLocal {
+         m._datatype.string2?
+      }
+}
+
+div {
+   m.rightsHolderAbbreviation =
+      ## DCMI: contactAbbreviation
+      element rightsHolderAbbreviation {
+         m._datatype.string2
+      }
+}
+
+div {
+   m.rightsHolderURL =
+      ## DCMI: rightsHolder/contactURL
+      element rightsHolderURL {
+         xsd:anyURI?
+      }
+}
+
+div {
+   m.rightsHolderFacebook =
+      ## DCMI: rightsHolder/contactFacebook
+      element rightsHolderFacebook {
+         xsd:anyURI?
+      }
+}
+
+div {
+   m.copyright =
+      element copyright {
+         m.statement
+    }
+}
+
+div {
+   m.statement.attlist =
+      m._.contentType
+   m.statement =
+      ## For example: (C)2002, 2012 United Bible Societies
+      ## DCMI: rights
+      element statement {
+         m.statement.attlist,
+         m.htmlMarkup+
+      }
+}
+
+div {
+   m.promotion =
+      element promotion {
+         m.promoVersionInfo
+      }
+}
+
+div {
+   m.promoVersionInfo.attlist =
+      m._.contentType
+   m.promoVersionInfo =
+      ## DCMI: description/pubPromoVersionInfo
+      element promoVersionInfo {
+         m.promoVersionInfo.attlist,
+         m.htmlMarkup+
+      }
+}
+
+div {
+   m.archiveStatus =
+      element archiveStatus {
+         m.archivistName &
+         m.dateArchived &
+         m.dateUpdated &
+         m.comments
+      }
+}
+
+div {
+   m.archivistName =
+      ## archivistName is overwritten by Paratext
+      ## DCMI: contributor/archivist
+      element archivistName {
+         m._datatype.string2
+      }
+}
+
+div {
+   m.dateArchived =
+      ## dateArchived is overwritten by Paratext
+      ## DCMI: dateSubmitted (xsd:dateTime)
+      element dateArchived {
+         xsd:dateTime
+      }
+}
+
+div {
+   m.dateUpdated =
+      ## dateUpdated is overwritten by Paratext
+      ## DCMI: modified (xsd:dateTime)
+      element dateUpdated {
+         xsd:dateTime
+      }
+}
+
+div {
+   m.comments =
+      ## DCMI: abstract
+      element comments {
+         xsd:string { minLength = "2" maxLength = "255" }
+      }
+}
+
+div {
+   m.htmlMarkup = (
+      m.p
+    | m.h1
+    | m.h2
+    | m.h3
+    | m.ul
+    | m.ol
+    | m.blockquote
+    | m.htmlCharMarkup)
+
+   m.p =
+      element p { (text | m.htmlCharMarkup)+ }
+   m.h1 =
+      element h1 { text }
+   m.h2 =
+      element h2 { text }
+   m.h3 =
+      element h3 { text }
+   m.ol =
+      element ol { m.li+ }
+   m.ul =
+      element ul { m.li+ }
+   m.li =
+       element li { text }
+   m.blockquote =
+      element blockquote { text }
+}
+
+div {
+   m.htmlCharMarkup = (
+      text
+    | m.a
+    | m.img
+    | m.br
+    | m.strong
+    | m.b
+    | m.em
+    | m.i)
+
+   m.a.href =
+      attribute href { xsd:anyURI }
+   m.a.attlist =
+      m.a.href
+   m.a =
+      element a {
+         m.a.attlist,
+         m.htmlCharMarkup
+      }
+   m.img.src =
+      attribute src { xsd:anyURI }
+   m.img.alt =
+      attribute alt { text }
+   m.img.attlist =
+      (m.img.src,
+       m.img.alt?)
+   m.img =
+      element img {
+         m.img.attlist,
+         text
+      }
+   m.br =
+      element br { empty }
+   m.strong =
+      element strong { text }
+   m.b =
+      element b { text }
+   m.em =
+      element em { text }
+   m.i =
+      element i { text }
+}
+
+bookCode.enum = (
            "GEN"   # Genesis
          | "EXO" # Exodus
          | "LEV" # Leviticus
          | "NUM" # Numbers
-         | "DEU" # Deuteronomy   
-         | "JOS" # Joshua 
-         | "JDG" # Judges 
-         | "RUT" # Ruth 
-         | "1SA" # 1 Samuel 
-         | "2SA" # 2 Samuel 
-         | "1KI" # 1 Kings 
-         | "2KI" # 2 Kings 
-         | "1CH" # 1 Chronicles 
-         | "2CH" # 2 Chronicles 
-         | "EZR" # Ezra 
-         | "NEH" # Nehemiah 
+         | "DEU" # Deuteronomy
+         | "JOS" # Joshua
+         | "JDG" # Judges
+         | "RUT" # Ruth
+         | "1SA" # 1 Samuel
+         | "2SA" # 2 Samuel
+         | "1KI" # 1 Kings
+         | "2KI" # 2 Kings
+         | "1CH" # 1 Chronicles
+         | "2CH" # 2 Chronicles
+         | "EZR" # Ezra
+         | "NEH" # Nehemiah
          | "EST" # Esther (Hebrew)
-         | "JOB" # Job 
-         | "PSA" # Psalms 
-         | "PRO" # Proverbs 
-         | "ECC" # Ecclesiastes 
-         | "SNG" # Song of Songs 
-         | "ISA" # Isaiah 
-         | "JER" # Jeremiah 
-         | "LAM" # Lamentations 
-         | "EZK" # Ezekiel 
+         | "JOB" # Job
+         | "PSA" # Psalms
+         | "PRO" # Proverbs
+         | "ECC" # Ecclesiastes
+         | "SNG" # Song of Songs
+         | "ISA" # Isaiah
+         | "JER" # Jeremiah
+         | "LAM" # Lamentations
+         | "EZK" # Ezekiel
          | "DAN" # Daniel (Hebrew)
-         | "HOS" # Hosea 
-         | "JOL" # Joel 
-         | "AMO" # Amos 
-         | "OBA" # Obadiah 
-         | "JON" # Jonah 
-         | "MIC" # Micah 
-         | "NAM" # Nahum 
-         | "HAB" # Habakkuk 
-         | "ZEP" # Zephaniah 
-         | "HAG" # Haggai 
-         | "ZEC" # Zechariah 
-         | "MAL" # Malachi 
-         | "MAT" # Matthew 
-         | "MRK" # Mark 
-         | "LUK" # Luke 
-         | "JHN" # John 
-         | "ACT" # Acts 
-         | "ROM" # Romans 
-         | "1CO" # 1 Corinthians 
-         | "2CO" # 2 Corinthians 
-         | "GAL" # Galatians 
-         | "EPH" # Ephesians 
-         | "PHP" # Philippians 
-         | "COL" # Colossians 
-         | "1TH" # 1 Thessalonians 
-         | "2TH" # 2 Thessalonians 
-         | "1TI" # 1 Timothy 
-         | "2TI" # 2 Timothy 
-         | "TIT" # Titus 
-         | "PHM" # Philemon 
-         | "HEB" # Hebrews 
-         | "JAS" # James 
-         | "1PE" # 1 Peter 
-         | "2PE" # 2 Peter 
-         | "1JN" # 1 John 
-         | "2JN" # 2 John 
-         | "3JN" # 3 John 
-         | "JUD" # Jude 
-         | "REV" # Revelation 
-         | "TOB" # Tobit 
-         | "JDT" # Judith 
-         | "ESG" # Esther Greek 
-         | "WIS" # Wisdom of Solomon 
+         | "HOS" # Hosea
+         | "JOL" # Joel
+         | "AMO" # Amos
+         | "OBA" # Obadiah
+         | "JON" # Jonah
+         | "MIC" # Micah
+         | "NAM" # Nahum
+         | "HAB" # Habakkuk
+         | "ZEP" # Zephaniah
+         | "HAG" # Haggai
+         | "ZEC" # Zechariah
+         | "MAL" # Malachi
+         | "MAT" # Matthew
+         | "MRK" # Mark
+         | "LUK" # Luke
+         | "JHN" # John
+         | "ACT" # Acts
+         | "ROM" # Romans
+         | "1CO" # 1 Corinthians
+         | "2CO" # 2 Corinthians
+         | "GAL" # Galatians
+         | "EPH" # Ephesians
+         | "PHP" # Philippians
+         | "COL" # Colossians
+         | "1TH" # 1 Thessalonians
+         | "2TH" # 2 Thessalonians
+         | "1TI" # 1 Timothy
+         | "2TI" # 2 Timothy
+         | "TIT" # Titus
+         | "PHM" # Philemon
+         | "HEB" # Hebrews
+         | "JAS" # James
+         | "1PE" # 1 Peter
+         | "2PE" # 2 Peter
+         | "1JN" # 1 John
+         | "2JN" # 2 John
+         | "3JN" # 3 John
+         | "JUD" # Jude
+         | "REV" # Revelation
+         | "TOB" # Tobit
+         | "JDT" # Judith
+         | "ESG" # Esther Greek
+         | "WIS" # Wisdom of Solomon
          | "SIR" # Sirach (Ecclesiasticus)
-         | "BAR" # Baruch 
-         | "LJE" # Letter of Jeremiah 
-         | "S3Y" # Song of 3 Young Men 
-         | "SUS" # Susanna 
-         | "BEL" # Bel and the Dragon 
-         | "1MA" # 1 Maccabees 
-         | "2MA" # 2 Maccabees 
-         | "3MA" # 3 Maccabees 
-         | "4MA" # 4 Maccabees 
+         | "BAR" # Baruch
+         | "LJE" # Letter of Jeremiah
+         | "S3Y" # Song of 3 Young Men
+         | "SUS" # Susanna
+         | "BEL" # Bel and the Dragon
+         | "1MA" # 1 Maccabees
+         | "2MA" # 2 Maccabees
+         | "3MA" # 3 Maccabees
+         | "4MA" # 4 Maccabees
          | "1ES" # 1 Esdras (Greek)
          | "2ES" # 2 Esdras (Latin)
-         | "MAN" # Prayer of Manasseh 
+         | "MAN" # Prayer of Manasseh
          | "PS2" # Psalm 151
-         | "ODA" # Odes 
-         | "PSS" # Psalms of Solomon 
-         | "EZA" # Apocalypse of Ezra 
-         | "5EZ" # 5 Ezra 
-         | "6EZ" # 6 Ezra 
-         | "DAG" # Daniel Greek 
+         | "ODA" # Odes
+         | "PSS" # Psalms of Solomon
+         | "EZA" # Apocalypse of Ezra
+         | "5EZ" # 5 Ezra
+         | "6EZ" # 6 Ezra
+         | "DAG" # Daniel Greek
          | "PS3" # Psalms 152-155
          | "2BA" # 2 Baruch (Apocalypse)
-         | "LBA" # Letter of Baruch 
-         | "JUB" # Jubilees 
-         | "ENO" # Enoch 
-         | "1MQ" # 1 Meqabyan 
-         | "2MQ" # 2 Meqabyan 
-         | "3MQ" # 3 Meqabyan 
-         | "REP" # Reproof 
-         | "4BA" # 4 Baruch 
-         | "LAO" # Laodiceans 
+         | "LBA" # Letter of Baruch
+         | "JUB" # Jubilees
+         | "ENO" # Enoch
+         | "1MQ" # 1 Meqabyan
+         | "2MQ" # 2 Meqabyan
+         | "3MQ" # 3 Meqabyan
+         | "REP" # Reproof
+         | "4BA" # 4 Baruch
+         | "LAO" # Laodiceans
            # Non scripture text Id's
-         | "XXA" # Extra A, e.g. a hymnal 
-         | "XXB" # Extra B 
-         | "XXC" # Extra C 
-         | "XXD" # Extra D 
-         | "XXE" # Extra E 
-         | "XXF" # Extra F 
-         | "XXG" # Extra G 
-         | "FRT" # Front Matter 
-         | "BAK" # Back Matter 
-         | "OTH" # Other Matter 
-         | "INT" # Introduction 
-         | "CNC" # Concordance 
-         | "GLO" # Glossary 
-         | "TDX" # Topical Index 
-         | "NDX") # Names Index 
+         | "XXA" # Extra A, e.g. a hymnal
+         | "XXB" # Extra B
+         | "XXC" # Extra C
+         | "XXD" # Extra D
+         | "XXE" # Extra E
+         | "XXF" # Extra F
+         | "XXG" # Extra G
+         | "FRT" # Front Matter
+         | "BAK" # Back Matter
+         | "OTH" # Other Matter
+         | "INT" # Introduction
+         | "CNC" # Concordance
+         | "GLO" # Glossary
+         | "TDX" # Topical Index
+         | "NDX") # Names Index

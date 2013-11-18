@@ -5,8 +5,8 @@
     <nameLocal>Good News Translation Audio Bible</nameLocal>
     <description>English Good News Translation Dramatized Audio Bible</description>
     <dateCompleted>1992-10-01</dateCompleted><!-- !! opt NULL -->
-    <systemId type="dbp">0a1b2c3d4r5f6789</systemId>
-    <bundleProducer>DBP</bundleProducer>
+    <systemId type="tms">f29da3b3006e4e4e9cb9ebcc709f1450</systemId>
+    <bundleProducer>Paratext/7.3.0.92</bundleProducer>
   </identification>
   <confidential>false</confidential>
   <relationships>
@@ -101,15 +101,15 @@
     <book code="REV"/>
   </books>
   <contact>
-    <rightsHolder>Faith Comes By Hearing</rightsHolder>
-    <rightsHolderLocal>Faith Comes By Hearing</rightsHolderLocal>
-    <rightsHolderAbbreviation>FCBH</rightsHolderAbbreviation>
-    <rightsHolderURL>http://www.faithcomesbyhearing.com/</rightsHolderURL>
-    <rightsHolderFacebook>http://www.facebook.com/pages/Albuquerque-NM/Faith-Comes-By-Hearing/5655514986</rightsHolderFacebook>
+    <rightsHolder>American Bible Society</rightsHolder>
+    <rightsHolderLocal>American Bible Society</rightsHolderLocal>
+    <rightsHolderAbbreviation>ABS</rightsHolderAbbreviation>
+    <rightsHolderURL>http://www.americanbible.org</rightsHolderURL>
+    <rightsHolderFacebook>http://www.facebook.com/americanbible</rightsHolderFacebook>
   </contact>
   <copyright>
     <!-- Allow XHTML: <h1> <h2> <h3> <p> <blockquote> <ul> <ol> <li> <br> <strong> <em> <a> -->
-    <statement contentType="xhtml"><p>Good News Translation Audio Bible © 1992 Faith Comes By Hearing. All rights reserved.</p></statement>
+    <statement contentType="xhtml"><p>Good News Translation Audio Bible © 1992 American Bible Society. All rights reserved.</p></statement>
   </copyright>
   <promotion><!-- optionally empty -->
     <!-- Allow XHTML: <h1> <h2> <h3> <p> <blockquote> <ul> <ol> <li> <br> <strong> <em> <a> -->
