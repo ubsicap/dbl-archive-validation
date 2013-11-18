@@ -398,12 +398,12 @@ div {
 
 div {
    m.booklist.description =
-       element description { text }
+       element description { m._datatype.string2 }
 }
 
 div {
    m.booklist.descriptionLocal =
-       element descriptionLocal { text }
+       element descriptionLocal { m._datatype.string2 }
 }
 
 div {
