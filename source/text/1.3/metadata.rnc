@@ -100,7 +100,7 @@ div {
    m.abbreviationLocal =
       ## abbreviationLocal should default to abbreviation
       element abbreviationLocal {
-         xsd:string { minLength="1" maxLength="12" }
+         xsd:string { minLength="2" maxLength="12" }
       }
 }
 
