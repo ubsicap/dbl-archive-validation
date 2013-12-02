@@ -100,7 +100,7 @@ div {
    m.abbreviationLocal =
       ## abbreviationLocal should default to abbreviation
       element abbreviationLocal {
-         xsd:string { minLength="1" maxLength="12" }
+         xsd:string { minLength="2" maxLength="12" }
       }
 }
 
@@ -398,12 +398,12 @@ div {
 
 div {
    m.booklist.description =
-       element description { text }
+       element description { m._datatype.string2 }
 }
 
 div {
    m.booklist.descriptionLocal =
-       element descriptionLocal { text }
+       element descriptionLocal { m._datatype.string2 }
 }
 
 div {
