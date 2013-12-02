@@ -382,7 +382,7 @@ TableContent =
         },
         attribute align { "start" | "center" | "end" },
         # Represent "left", "center", and "right" respectively in LTR, and "right", "center", "left" in RTL texts.
-        (Footnote | CrossReference | Char | Figure | Verse | text)*
+        (Footnote | CrossReference | Char | Figure | Verse | Break | text)*
     }
 Para =
     element para {
