@@ -450,6 +450,7 @@
       <abbreviation>eng-GNT</abbreviation>
       <abbreviationLocal>GNT</abbreviationLocal>
       <description>Protestant</description>
+      <descriptionLocal>Protestant</descriptionLocal>
       <books>
         <book code="GEN"/>
         <book code="EXO"/>
@@ -525,6 +526,7 @@
       <abbreviation>eng-GNTD</abbreviation>
       <abbreviationLocal>GNTD</abbreviationLocal>
       <description>Ecumenical Bible with combined Catholic DCs + Anglican KJV Apocrypha</description>
+      <descriptionLocal>Ecumenical Bible with combined Catholic DCs + Anglican KJV Apocrypha</descriptionLocal>
       <books>
         <book code="GEN"/>
         <book code="EXO"/>
