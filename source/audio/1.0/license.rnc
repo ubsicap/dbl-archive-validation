@@ -22,7 +22,7 @@ start =
       xsd:date?
     }&
     element publicationRights {
-      element allowOffline { xsd:boolean | ""}
+      element allowOffline { xsd:boolean }
     }
   }
 

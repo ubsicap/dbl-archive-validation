@@ -56,27 +56,27 @@ div {
 
 div {
    l.allowOffline =
-      element allowOffline { xsd:boolean | empty }
+      element allowOffline { xsd:boolean }
 }
 
 div {
    l.allowIntroductions =
-      element allowIntroductions { xsd:boolean | empty }
+      element allowIntroductions { xsd:boolean }
 }
 
 div {
    l.allowFootnotes =
-      element allowFootnotes { xsd:boolean | empty }
+      element allowFootnotes { xsd:boolean }
 }
 
 div {
    l.allowCrossReferences =
-      element allowCrossReferences { xsd:boolean | empty }
+      element allowCrossReferences { xsd:boolean }
 }
 
 div {
    l.allowExtendedNotes =
-      element allowExtendedNotes { xsd:boolean | empty }
+      element allowExtendedNotes { xsd:boolean }
 }
 
 # The are Creative Commons license types (http://creativecommons.org/licenses/).
