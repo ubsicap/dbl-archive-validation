@@ -520,7 +520,7 @@
         <book code="REV"/>
       </books>
     </bookList>
-    <bookList>
+    <bookList id="2">
       <name>Good News Translation with Deuterocanonicals/Apocrypha</name>
       <nameLocal>Good News Translation with Deuterocanonicals/Apocrypha</nameLocal>
       <abbreviation>eng-GNTD</abbreviation>
