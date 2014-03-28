@@ -1,0 +1,56 @@
+# styles.rnc
+# This is a compact syntax Relax NG Schema for the DBL @type="text" bundle USX styles reference - styles.xml
+# DBL bundle version = 1.1
+
+default namespace = ""
+datatypes xsd = "http://www.w3.org/2001/XMLSchema-datatypes"
+
+start =
+  element stylesheet {
+    property+,
+    element style {
+    # style info for a USX para or char element
+      attribute id { xsd:string { pattern = "[a-zA-Z1-8\-]+" } }&
+      # name of USX element (e.g. mt1, p, q1, q2, nd, tl etc.)
+      attribute publishable { xsd:boolean }&
+      # text is publishable
+      attribute versetext { xsd:boolean }&
+      # normal verse body text
+      element name { text }&
+      # Paratext stylehsheet name for this element in USFM
+      element description { text }&
+      # description supplied in the Paratext stylesheet
+      property+
+      # to supply a list of CSS properties and values
+    }+
+  }
+
+property =
+  element property {
+    attribute name { ( "color"
+    | "font-family"
+    | "font-size"
+    | "font-style"
+    | "font-weight"
+    | "font-variant"
+    | "margin-bottom"
+    | "margin-left"
+    | "margin-right"
+    | "margin-bottom"
+    | "margin-top"
+    | "text-align"
+    | "text-decoration"
+    | "text-indent"
+    | "vertical-align"
+    | "line-height"
+    | "direction"
+    | "writing-mode"
+    | "white-space") }&
+    # a CSS property name
+    attribute unit { ( "%"
+    | "in"
+    | "pt") }?&
+    # units to use for the property, if required
+    text
+    # the CSS property value
+  }

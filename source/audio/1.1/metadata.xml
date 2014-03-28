@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DBLMetadata type="audio" typeVersion="1.1" id="1111111111111111" revision="1">
+  <identification>
+    <name>Good News Translation Audio Bible</name>
+    <nameLocal>Good News Translation Audio Bible</nameLocal>
+    <description>English Good News Translation Dramatized Audio Bible</description>
+    <dateCompleted>1992-10-01</dateCompleted><!-- !! opt NULL -->
+    <systemId type="tms">f29da3b3006e4e4e9cb9ebcc709f1450</systemId>
+    <systemId type="dbp">AA1AAAA1AA</systemId>
+    <bundleProducer>Paratext/7.3.0.92</bundleProducer>
+  </identification>
+  <confidential>false</confidential>
+  <relationships>
+    <relation type="text" id="66f69e2e951292b7" revision="1"/>
+  </relationships>
+  <agencies>
+    <creator>Faith Comes By Hearing</creator>
+    <publisher>Faith Comes By Hearing</publisher>
+    <contributor></contributor>
+  </agencies>
+  <language>
+    <iso>eng</iso><!-- gather from text -->
+    <ldml>en-Latn-US</ldml><!-- gather from text -->
+  </language>
+  <type>
+    <audioType>Dramatized</audioType>
+  </type>
+  <format>
+    <mimeType>audio/mpeg</mimeType>
+    <!-- remaining format elements must be present, but can be empty -->
+    <compression>MP3</compression><!-- use EBU types -->
+    <trackConfiguration>2/0 (Stereo)</trackConfiguration><!-- use EBU types -->
+    <bitRate>128000</bitRate><!-- bits/s -->
+    <bitDepth>16</bitDepth>
+    <samplingRate>44100</samplingRate><!-- bits/s -->
+  </format>
+  <books>
+    <book code="GEN"/>
+    <book code="EXO"/>
+    <book code="LEV"/>
+    <book code="NUM"/>
+    <book code="DEU"/>
+    <book code="JOS"/>
+    <book code="JDG"/>
+    <book code="RUT"/>
+    <book code="1SA"/>
+    <book code="2SA"/>
+    <book code="1KI"/>
+    <book code="2KI"/>
+    <book code="1CH"/>
+    <book code="2CH"/>
+    <book code="EZR"/>
+    <book code="NEH"/>
+    <book code="EST"/>
+    <book code="JOB"/>
+    <book code="PSA"/>
+    <book code="PRO"/>
+    <book code="ECC"/>
+    <book code="SNG"/>
+    <book code="ISA"/>
+    <book code="JER"/>
+    <book code="LAM"/>
+    <book code="EZK"/>
+    <book code="DAN"/>
+    <book code="HOS"/>
+    <book code="JOL"/>
+    <book code="AMO"/>
+    <book code="OBA"/>
+    <book code="JON"/>
+    <book code="MIC"/>
+    <book code="NAM"/>
+    <book code="HAB"/>
+    <book code="ZEP"/>
+    <book code="HAG"/>
+    <book code="ZEC"/>
+    <book code="MAL"/>
+    <book code="MAT"/>
+    <book code="MRK"/>
+    <book code="LUK"/>
+    <book code="JHN"/>
+    <book code="ACT"/>
+    <book code="ROM"/>
+    <book code="1CO"/>
+    <book code="2CO"/>
+    <book code="GAL"/>
+    <book code="EPH"/>
+    <book code="PHP"/>
+    <book code="COL"/>
+    <book code="1TH"/>
+    <book code="2TH"/>
+    <book code="1TI"/>
+    <book code="2TI"/>
+    <book code="TIT"/>
+    <book code="PHM"/>
+    <book code="HEB"/>
+    <book code="JAS"/>
+    <book code="1PE"/>
+    <book code="2PE"/>
+    <book code="1JN"/>
+    <book code="2JN"/>
+    <book code="3JN"/>
+    <book code="JUD"/>
+    <book code="REV"/>
+  </books>
+  <contact>
+    <rightsHolder>American Bible Society</rightsHolder>
+    <rightsHolderLocal>American Bible Society</rightsHolderLocal>
+    <rightsHolderAbbreviation>ABS</rightsHolderAbbreviation>
+    <rightsHolderURL>http://www.americanbible.org</rightsHolderURL>
+    <rightsHolderFacebook>http://www.facebook.com/americanbible</rightsHolderFacebook>
+  </contact>
+  <copyright>
+    <!-- Allow XHTML: <h1> <h2> <h3> <p> <blockquote> <ul> <ol> <li> <br> <strong> <em> <a> -->
+    <statement contentType="xhtml"><p>Good News Translation Audio Bible © 1992 American Bible Society. All rights reserved.</p></statement>
+  </copyright>
+  <promotion><!-- optionally empty -->
+    <!-- Allow XHTML: <h1> <h2> <h3> <p> <blockquote> <ul> <ol> <li> <br> <strong> <em> <a> -->
+    <promoVersionInfo contentType="xhtml"><p>Audio background and promotion information.</p></promoVersionInfo>
+    <!-- Allow XHTML: <h1> <h2> <h3> <p> <blockquote> <ul> <ol> <li> <br> <strong> <em> <a> -->
+  </promotion>
+  <archiveStatus>
+    <archivistName>Jeff Klassen</archivistName>
+    <dateArchived>2011-04-19T00:00:00</dateArchived>
+    <dateUpdated>2011-06-24T00:00:00</dateUpdated>
+    <comments>Initial submission to DBL</comments>
+  </archiveStatus>
+</DBLMetadata>
