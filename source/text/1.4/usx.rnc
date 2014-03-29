@@ -569,7 +569,7 @@ CrossReferenceChar =
     }
 Reference =
     element ref {
-        attribute loc { xsd:string { pattern = "[A-Z1-4]{3}( \d+(:\d+)?((\-\d+(:\d+)?))?)?" } },
+        attribute loc { xsd:string { pattern = "[A-Z1-4]{3} ?[a-z0-9\-,:]*" } },
         text?
     }
 Figure =
