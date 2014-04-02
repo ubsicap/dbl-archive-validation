@@ -140,7 +140,7 @@ div {
 div {
    m.relationships =
       element relationships {
-         m.relation
+         m.relation+
       }
 }
 
