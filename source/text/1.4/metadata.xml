@@ -14,12 +14,12 @@
     <systemId type="ptNameLong">English: Good News Translation</systemId>
     <bundleProducer>Paratext/7.3.0.92</bundleProducer>
   </identification>
-  <confidential>false</confidential>
+  <confidential>false</confidential>  
   <agencies>
     <etenPartner>UBS</etenPartner> <!-- e.g "UBS", "WBT", "Biblica", "PBT", "SIM" -->
-    <creator>American Bible Society</creator><!-- primary translation agency/sponsorship -->
-    <publisher>American Bible Society</publisher><!-- primary publishing agency> -->
-    <contributor ></contributor>
+    <contributor type="content">American Bible Society</contributor>
+    <contributor type="publication">American Bible Society</contributor>
+    <contributor type="management">American Bible Society</contributor>
   </agencies>
   <language>
     <iso>eng</iso>
@@ -709,6 +709,7 @@
     <rightsHolderAbbreviation>ABS</rightsHolderAbbreviation>
     <rightsHolderURL>http://www.americanbible.org</rightsHolderURL>
     <rightsHolderFacebook>http://www.facebook.com/americanbible</rightsHolderFacebook>
+    <rightsAdmin>Rights Administrator Here</rightsAdmin>
   </contact>
   <copyright>
     <!-- Allow XHTML: <h1> <h2> <h3> <p> <blockquote> <ul> <ol> <li> <br> <strong> <em> <a> -->

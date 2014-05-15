@@ -176,9 +176,7 @@ div {
    m.agencies =
       element agencies {
          m.etenPartner? &
-         m.creator+ &
-         m.publisher? &
-         m.contributor*
+         m.contributor+
     }
 }
 
@@ -194,27 +192,21 @@ div {
 }
 
 div {
-   m.creator =
-      ## DCMI: creator
-      element creator {
-         m._datatype.string2
-      }
-}
-
-div {
-   m.publisher =
-      ## publisher may be the same as translation (description/sponsorship)
-      ## DCMI: publisher
-      element publisher {
-         m._datatype.string2
-      }
-}
-
-div {
+   m.contributor.type.enum =
+      "content" |
+      "finance" |
+      "management" |
+      "publication" |
+      "qa"
+   m.contributor.type =
+      attribute type { m.contributor.type.enum }
+   m.contributor.attlist =
+      m.contributor.type
    m.contributor =
       ## DCMI: contributor
       element contributor {
-        text
+         m.contributor.attlist,
+         m._datatype.string2
       }
 }
 
@@ -455,7 +447,8 @@ div {
       m.rightsHolderLocal &
       m.rightsHolderAbbreviation &
       m.rightsHolderURL &
-      m.rightsHolderFacebook
+      m.rightsHolderFacebook? &
+      m.rightsAdmin?
     }
 }
 
@@ -496,6 +489,13 @@ div {
       ## DCMI: rightsHolder/contactFacebook
       element rightsHolderFacebook {
          xsd:anyURI?
+      }
+}
+
+div {
+   m.rightsAdmin =
+      element rightsAdmin {
+         m._datatype.string2
       }
 }
 
