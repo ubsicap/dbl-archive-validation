@@ -79,7 +79,7 @@ TitlePara =
                "rem")
             # Remark
         },
-        (Footnote | CrossReference | Char | text)*
+        (Footnote | CrossReference | Char | Break | text)*
     }
 IntroPara =
     element para {
@@ -177,7 +177,7 @@ TitleParaIntroEnd =
                "imt2")
                # Introduction major title, level 2
         },
-        (Footnote | CrossReference | Char | text)*
+        (Footnote | CrossReference | Char | Break | text)*
     }
 paraStyle =
     attribute style {
