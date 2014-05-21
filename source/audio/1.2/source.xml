@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<source id="1111111111111111">
+  <url>http://dbt.io/api?id={dblId}&amp;revision={revision#}&amp;user={downloader id}&amp;key={security hash}</url>
+  <!-- To use, append &book=<book code>&chapter=<chapter> -->
+  <streamable>True</streamable>
+</source>
