@@ -137,9 +137,9 @@ div {
       ## Paratext Project GUID
       "paratext" |
       ## Paratext Project Short Name
-      "ptNameShort" |
+      "paratext_name" |
       ## Paratext Project Long Name
-      "ptNameLong" |
+      "paratext_fullname" |
       ## SIL REAP database ID
       "reap" |
       ## Biblica database id

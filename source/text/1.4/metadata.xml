@@ -10,8 +10,8 @@
     <dateCompleted>1992-10-01</dateCompleted>
     <systemId type="tms">401d0abc-018b-4036-81b7-13845ace8612</systemId>
     <systemId type="paratext">66f69e2e951292b7d66582d3e2444332f641775b</systemId>
-    <systemId type="ptNameShort">GNT92</systemId>
-    <systemId type="ptNameLong">English: Good News Translation</systemId>
+    <systemId type="paratext_name">GNT92</systemId>
+    <systemId type="paratext_fullname">English: Good News Translation</systemId>
     <bundleProducer>Paratext/7.3.0.92</bundleProducer>
   </identification>
   <confidential>false</confidential>  
