@@ -5,3 +5,5 @@ build
 metadata_project.rng
 usx.rng
 *.log
+*.xpr
+source/text/usxtest/

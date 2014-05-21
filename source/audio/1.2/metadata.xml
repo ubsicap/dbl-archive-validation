@@ -21,6 +21,7 @@
   </agencies>
   <language>
     <iso>eng</iso><!-- gather from text -->
+    <name>English</name><!-- gather from text -->
     <ldml>en-Latn-US</ldml><!-- gather from text -->
   </language>
   <type>

@@ -210,6 +210,7 @@ div {
    m.language =
       element language {
          m.language.iso &
+         m.language.name &
          m.ldml &
          m.rod?
       }
@@ -220,6 +221,14 @@ div {
       ## DCMI: language/iso (ISO639-3)
    element iso {
       xsd:string { pattern = "[a-z][a-z][a-z]" }
+   }
+}
+
+div {
+   m.language.name =
+      ## DCMI: subject/language (ISO639-3)
+   element name {
+      m._datatype.string2
    }
 }
 
