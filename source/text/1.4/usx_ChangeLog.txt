@@ -1,3 +1,4 @@
+16: (DBL 1.4 / USX 2.5) May 22, 2014: Support study Bible markup (ef, ex, esb, cat).  jk
 15: Mar 28, 2014: Added Reference pattern for new ref tag to support machine readable references. jk
 14: Dec 2, 2013: Allow fv to properly nest within regular footnote content elements (ft, fq, fqa, fk). jk
     - For now, allow both nested and unnested fv, to not invalidate existing DBL data.

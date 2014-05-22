@@ -1,6 +1,6 @@
 # usx.rnc
 # -----------------------------------------------------------------------------
-# A compact syntax Relax NG Schema for USX 2.1.
+# A compact syntax Relax NG Schema for USX 2.5
 # DBL bundle version = 1.4
 # -----------------------------------------------------------------------------
 
@@ -12,7 +12,7 @@ datatypes xsd = "http://www.w3.org/2001/XMLSchema-datatypes"
 start = USX
 USX =
     element usx {
-        attribute version { "2.1" },
+        attribute version { "2.5" },
         attribute xsi:noNamespaceSchemaLocation { text }?,
         
         Book,
@@ -23,7 +23,7 @@ USX =
         ChapterLabelBookWide?,
         Chapter,
         # Chapter is used to separate intro from scripture text. All books will have chapter including the single chapter books: OBA, PHM, 2JN, 3JN, JUD
-        (Chapter | Para | Table | Footnote | CrossReference)*
+        (Chapter | Para | Table | Footnote | CrossReference | Sidebar)*
     }
 Book =
     element book {
@@ -189,6 +189,8 @@ paraStyle =
          | # Closure of an Epistle
            "iex"
          | # Introduction explanatory or bridge text (e.g. explanation of missing book in Short Old Testament)
+           "ip"
+         | # Division or Section introductory paragraph (study Bible)
            "lit"
          | # For a comment or note inserted for liturgical use
            "m"
@@ -464,7 +466,7 @@ IntroChar =
         attribute style {
             ("ior"
              | # Introduction references range for outline entry; for marking references separately
-               "iqt")
+             "iqt")
                # For quoted scripture text appearing in the introduction
         },
         attribute closed { xsd:boolean }?,
@@ -502,7 +504,7 @@ Verse =
     # e.g. <verse number="1" style="v" altnumber="2" pubnumber="B" />
 Footnote =
     element note {
-        attribute style { "f" | "fe" },
+        attribute style { "f" | "fe" | "ef" },
         attribute caller { text },
         (FootnoteChar | text )+
     }
@@ -511,8 +513,8 @@ FootnoteChar =
         attribute style {
             ("fr"
              | # The origin reference for the footnote
-               "sc"
-             | # used for abbreviations
+               "cat"
+             | # Note category (study Bible)
                "ft"
              | # Footnote text, Protocanon
                "fk"
@@ -527,8 +529,20 @@ FootnoteChar =
              | # A Footnote additional paragraph marker
                "fv"
              | # A verse number within the footnote text
-               "fdc")
-               # Footnote text, applies to Deuterocanon only
+               "fdc"
+             | # Footnote text, applies to Deuterocanon only
+               "xt"
+             | # A cross reference target reference(s)
+               "it"
+             | # A character style, use italic text
+               "bd"
+             | # A character style, use bold text
+               "bdit"
+             | # A character style, use bold + italic text
+               "em"
+             | # A character style, use emphasized text style
+               "sc")
+               # A character style, for small capitalization text; abbreviations
         },
         attribute closed { xsd:boolean }?,
         # Present to allow roundtripping to USFM, not needed for publishing
@@ -541,7 +555,7 @@ FootnoteVerse =
     }
 CrossReference =
     element note {
-        attribute style { "x" },
+        attribute style { "x" | "ex" },
         attribute caller { text },
         (CrossReferenceChar | text)+
     }
@@ -571,6 +585,12 @@ Reference =
     element ref {
         attribute loc { xsd:string { pattern = "[A-Z1-4]{3} ?[a-z0-9\-,:]*" } },
         text?
+    }
+Sidebar =
+    element sidebar {
+        attribute style { "esb" },
+        (attribute category { text })*,
+        (Para | Table | Footnote | CrossReference)+
     }
 Figure =
     element figure {
