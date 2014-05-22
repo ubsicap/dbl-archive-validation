@@ -1,7 +1,7 @@
 # metadata.rnc
 # -----------------------------------------------------------------------------
 # A compact syntax Relax NG Schema for the DBL @type="audio" metadata file.
-# DBL audio version = 1.1
+# DBL audio version = 1.2
 
 # - Suggested Dublin Core Metadata (DCMI) element/refinement relationships are 
 #   added as documentation strings "## DCMI: "
