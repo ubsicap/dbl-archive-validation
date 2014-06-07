@@ -1,6 +1,6 @@
 # styles.rnc
 # This is a compact syntax Relax NG Schema for the DBL @type="text" bundle USX styles reference - styles.xml
-# DBL bundle version = 1.1
+# DBL bundle version = 1.4
 
 default namespace = ""
 datatypes xsd = "http://www.w3.org/2001/XMLSchema-datatypes"

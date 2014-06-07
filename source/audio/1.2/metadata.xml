@@ -14,10 +14,11 @@
     <relation type="text" id="66f69e2e951292b7" revision="1"/>
   </relationships>
   <agencies>
-    <contributor type="content">Faith Comes By Hearing</contributor>
-    <contributor type="content">American Bible Society</contributor>
-    <contributor type="publication">Faith Comes By Hearing</contributor>
-    <contributor type="management">Faith Comes By Hearing</contributor>
+    <rightsHolder abbr="FCBH" url="http://www.faithcomesbyhearing.com" local="">Hosanna Ministries</rightsHolder>
+    <rightsHolder abbr="ABS" url="http://www.americanbible.org" local="">American Bible Society</rightsHolder>
+    <rightsAdmin>Rights administrator here...</rightsAdmin>
+    <contributor content="true" publication="true" management="true" qa="true">Faith Comes By Hearing</contributor>
+    <contributor content="true">American Bible Society</contributor>
   </agencies>
   <language>
     <iso>eng</iso><!-- gather from text -->
@@ -104,14 +105,6 @@
     <book code="JUD"/>
     <book code="REV"/>
   </books>
-  <contact>
-    <rightsHolder>Hosanna Ministries</rightsHolder>
-    <rightsHolderLocal>Hosanna Ministries</rightsHolderLocal>
-    <rightsHolderAbbreviation>FCBH</rightsHolderAbbreviation>
-    <rightsHolderURL>http://www.faithcomesbyhearing.com</rightsHolderURL>
-    <rightsHolderFacebook></rightsHolderFacebook>
-    <rightsAdmin>Rights Administrator Here</rightsAdmin>
-  </contact>
   <copyright>
     <!-- Allow XHTML: <h1> <h2> <h3> <p> <blockquote> <ul> <ol> <li> <br> <strong> <em> <a> -->
     <statement contentType="xhtml"><p>Good News Translation Audio Bible © 1992 American Bible Society. All rights reserved.</p></statement>

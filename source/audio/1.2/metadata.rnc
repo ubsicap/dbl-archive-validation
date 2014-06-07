@@ -1,7 +1,7 @@
 # metadata.rnc
 # -----------------------------------------------------------------------------
 # A compact syntax Relax NG Schema for the DBL @type="audio" metadata file.
-# DBL audio version = 1.2
+# DBL audio bundle version = 1.2
 
 # - Suggested Dublin Core Metadata (DCMI) element/refinement relationships are 
 #   added as documentation strings "## DCMI: "
@@ -51,7 +51,6 @@ div {
          m.type &
          m.format &
          m.books &
-         m.contact &
          m.copyright &
          m.promotion? &
          m.archiveStatus
@@ -171,33 +170,56 @@ div {
 div {
    m.agencies =
       element agencies {
-         m.etenPartner? &
+         m.rightsHolder+ &
+         m.rightsAdmin &
          m.contributor+
     }
 }
 
 div {
-   #m.etenPartner.enum =
-   #   "UBS" | "WBT" | "Biblica" | "PBT" | "SIM"
-   ## Primary translation or coordination/sponsorship agency
-   m.etenPartner =
-      element etenPartner { 
-         # m.etenPartner.enum
-         m._datatype.string2?
+   m.rightsHolder.abbr =
+      attribute abbr { m._datatype.string2 }
+   m.rightsHolder.url =
+      attribute url { xsd:anyURI }
+   m.rightsHolder.local =
+      attribute local { m._datatype.string2? }
+   m.rightsHolder.attlist =
+      m.rightsHolder.abbr &
+      m.rightsHolder.url &
+      m.rightsHolder.local?
+   m.rightsHolder =
+      ## DCMI: rightsHolder
+      element rightsHolder {
+         m.rightsHolder.attlist,
+         m._datatype.string2
       }
 }
 
 div {
-   m.contributor.type.enum =
-      "content" |
-      "finance" |
-      "management" |
-      "publication" |
-      "qa"
-   m.contributor.type =
-      attribute type { m.contributor.type.enum }
-   m.contributor.attlist =
-      m.contributor.type
+   m.rightsAdmin =
+      element rightsAdmin {
+         m._datatype.string2
+      }
+}
+
+div {
+   m.contributor.content =
+      attribute content { xsd:boolean }
+   m.contributor.publication = 
+      attribute publication { xsd:boolean }
+   m.contributor.management =
+      attribute management { xsd:boolean }
+   m.contributor.finance =
+      attribute finance { xsd:boolean }
+   m.contributor.qa =
+      attribute qa { xsd:boolean }
+   m.contributor.attlist = (
+      m.contributor.content |
+      m.contributor.publication |
+      m.contributor.management |
+      m.contributor.finance |
+      m.contributor.qa
+      )+
    m.contributor =
       ## DCMI: contributor
       element contributor {
@@ -354,66 +376,6 @@ div {
    m.book =
       element book {
          m.book.attlist
-      }
-}
-
-div {
-   m.contact =
-      ## Default to Publisher (from agencies)
-   element contact {
-      m.rightsHolder &
-      m.rightsHolderLocal &
-      m.rightsHolderAbbreviation &
-      m.rightsHolderURL &
-      m.rightsHolderFacebook &
-      m.rightsAdmin?
-    }
-}
-
-div {
-   m.rightsHolder =
-      ## DCMI: rightsHolder
-      element rightsHolder {
-         m._datatype.string2
-      }
-}
-
-div {
-   m.rightsHolderLocal =
-      ## DCMI: rightsHolder/contactLocal
-      element rightsHolderLocal {
-         m._datatype.string2?
-      }
-}
-
-div {
-   m.rightsHolderAbbreviation =
-      ## DCMI: contactAbbreviation
-      element rightsHolderAbbreviation {
-         m._datatype.string2
-      }
-}
-
-div {
-   m.rightsHolderURL =
-      ## DCMI: rightsHolder/contactURL
-      element rightsHolderURL {
-         xsd:anyURI?
-      }
-}
-
-div {
-   m.rightsHolderFacebook =
-      ## DCMI: rightsHolder/contactFacebook
-      element rightsHolderFacebook {
-         xsd:anyURI?
-      }
-}
-
-div {
-   m.rightsAdmin =
-      element rightsAdmin {
-         m._datatype.string2
       }
 }
 
@@ -659,6 +621,12 @@ bookCode.enum = (
          | "PS2" # Psalm 151
          | "ODA" # Odes
          | "PSS" # Psalms of Solomon
+         | "JSA" # actual variant text for JOS, now in LXA text
+         | "JDB" # actual variant text for JDG, now in LXA text
+         | "TBS" # actual variant text for TOB, now in LXA text
+         | "SST" # actual variant text for SUS, now in LXA text
+         | "DNT" # actual variant text for DAN, now in LXA text
+         | "BLT" # actual variant text for BEL, now in LXA text
          | "EZA" # Apocalypse of Ezra
          | "5EZ" # 5 Ezra
          | "6EZ" # 6 Ezra

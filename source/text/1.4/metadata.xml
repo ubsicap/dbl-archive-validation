@@ -16,10 +16,12 @@
   </identification>
   <confidential>false</confidential>  
   <agencies>
-    <etenPartner>UBS</etenPartner> <!-- e.g "UBS", "WBT", "Biblica", "PBT", "SIM" -->
-    <contributor type="content">American Bible Society</contributor>
-    <contributor type="publication">American Bible Society</contributor>
-    <contributor type="management">American Bible Society</contributor>
+    <rightsHolder abbr="ABS" url="http://www.americanbible.org" local="">American Bible Society</rightsHolder>
+    <rightsHolder abbr="UBS" url="http://www.unitedbiblesocieties.org/" local="">United Bible Societies</rightsHolder>
+    <rightsAdmin>Rights administrator here...</rightsAdmin>
+    <contributor content="true" publication="true" management="true" qa="true">American Bible Society</contributor>
+    <contributor qa="true">United Bible Societies</contributor>
+    <etenPartner>UBS</etenPartner>
   </agencies>
   <language>
     <iso>eng</iso>
@@ -703,14 +705,6 @@
     <book code="GLO" stage="4"/>
     <book code="TDX" stage="4"/>
   </progress>
-  <contact>
-    <rightsHolder>American Bible Society</rightsHolder>
-    <rightsHolderLocal>American Bible Society</rightsHolderLocal>
-    <rightsHolderAbbreviation>ABS</rightsHolderAbbreviation>
-    <rightsHolderURL>http://www.americanbible.org</rightsHolderURL>
-    <rightsHolderFacebook>http://www.facebook.com/americanbible</rightsHolderFacebook>
-    <rightsAdmin>Rights Administrator Here</rightsAdmin>
-  </contact>
   <copyright>
     <!-- Allow XHTML: <h1> <h2> <h3> <p> <blockquote> <ul> <ol> <li> <br> <strong> <em> <a> -->
     <statement contentType="xhtml"><p>Good News Translation (Today’s English Version, Second Edition) © 1992 American Bible Society. All rights reserved.</p></statement>
