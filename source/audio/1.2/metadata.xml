@@ -16,7 +16,7 @@
   <agencies>
     <rightsHolder abbr="FCBH" url="http://www.faithcomesbyhearing.com" local="">Hosanna Ministries</rightsHolder>
     <rightsHolder abbr="ABS" url="http://www.americanbible.org" local="">American Bible Society</rightsHolder>
-    <rightsAdmin>Rights administrator here...</rightsAdmin>
+    <rightsAdmin url="http://www.faithcomesbyhearing.com">Hosanna Ministries</rightsAdmin>
     <contributor content="true" publication="true" management="true" qa="true">Faith Comes By Hearing</contributor>
     <contributor content="true">American Bible Society</contributor>
   </agencies>

@@ -203,6 +203,7 @@ div {
 div {
    m.rightsAdmin =
       element rightsAdmin {
+         attribute url { xsd:anyURI }?,
          m._datatype.string2
       }
 }

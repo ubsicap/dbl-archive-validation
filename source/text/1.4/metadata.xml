@@ -14,11 +14,11 @@
     <systemId type="paratext_fullname">English: Good News Translation</systemId>
     <bundleProducer>Paratext/7.3.0.92</bundleProducer>
   </identification>
-  <confidential>false</confidential>  
+  <confidential>false</confidential>
   <agencies>
     <rightsHolder abbr="ABS" url="http://www.americanbible.org" local="">American Bible Society</rightsHolder>
     <rightsHolder abbr="UBS" url="http://www.unitedbiblesocieties.org/" local="">United Bible Societies</rightsHolder>
-    <rightsAdmin>Rights administrator here...</rightsAdmin>
+    <rightsAdmin url="http://www.americanbible.org">American Bible Society</rightsAdmin>
     <contributor content="true" publication="true" management="true" qa="true">American Bible Society</contributor>
     <contributor qa="true">United Bible Societies</contributor>
     <etenPartner>UBS</etenPartner>
