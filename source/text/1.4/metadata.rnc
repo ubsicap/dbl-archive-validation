@@ -229,7 +229,7 @@ div {
    m.contributor =
       ## DCMI: contributor
       element contributor {
-         m.contributor.attlist,
+         m.contributor.attlist?,
          m._datatype.string2
       }
 }
