@@ -175,7 +175,7 @@ div {
    m.agencies =
       element agencies {
          m.rightsHolder+ &
-         m.rightsAdmin &
+         m.rightsAdmin? &
          m.contributor+ &
          m.etenPartner?
     }
@@ -187,10 +187,10 @@ div {
    m.rightsHolder.url =
       attribute url { xsd:anyURI }
    m.rightsHolder.local =
-      attribute local { m._datatype.string2? }
+      attribute local { m._datatype.string2 }
    m.rightsHolder.attlist =
-      m.rightsHolder.abbr &
-      m.rightsHolder.url &
+      m.rightsHolder.abbr? &
+      m.rightsHolder.url? &
       m.rightsHolder.local?
    m.rightsHolder =
       ## DCMI: rightsHolder

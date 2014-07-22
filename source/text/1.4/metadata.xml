@@ -16,7 +16,7 @@
   </identification>
   <confidential>false</confidential>
   <agencies>
-    <rightsHolder abbr="ABS" url="http://www.americanbible.org" local="">American Bible Society</rightsHolder>
+    <rightsHolder abbr="ABS" url="http://www.americanbible.org">American Bible Society</rightsHolder>
     <rightsHolder abbr="UBS" url="http://www.unitedbiblesocieties.org/" local="Example Local Name">United Bible Societies</rightsHolder>
     <rightsAdmin url="http://www.americanbible.org">American Bible Society</rightsAdmin>
     <contributor content="true" publication="true" management="true" qa="true">American Bible Society</contributor>
