@@ -12,7 +12,7 @@ datatypes xsd = "http://www.w3.org/2001/XMLSchema-datatypes"
 start = USX
 USX =
     element usx {
-        attribute version { "2.5" },
+        attribute version { xsd:string { minLength = "3" pattern = "\d+\.\d+(\.\d+)?"} },
         attribute xsi:noNamespaceSchemaLocation { text }?,
         
         Book,
