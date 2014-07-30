@@ -19,7 +19,7 @@ text,1.4,bundleProducer,Bundle Producer,identification/bundleProducer,999,FALSE,
 text,1.4,confidential,Confidential Project,confidential,999,FALSE,FALSE
 text,1.4,agencyETEN,ETEN Partner Agency,agencies/etenPartner,9,TRUE,FALSE
 text,1.4,agencyTranslation,Translation Agencies,agencies/contributor[@content='true'],999,FALSE,FALSE
-text,1.4,agencyPublishing,Publication Agencies,agencies/contributor[@publisher='true'],999,FALSE,FALSE
+text,1.4,agencyPublishing,Publication Agencies,agencies/contributor[@publication='true'],999,FALSE,FALSE
 text,1.4,agencyManagement,Management Agencies,agencies/contributor[@management='true'],999,FALSE,FALSE
 text,1.4,agencyFinance,Finance Agencies,agencies/contributor[@finance='true'],999,FALSE,FALSE
 text,1.4,agencyQualityControl,Quality Control Agencies,agencies/contributor[@qa='true'],999,FALSE,FALSE

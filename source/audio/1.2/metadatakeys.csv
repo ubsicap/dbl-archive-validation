@@ -8,7 +8,7 @@ audio,1.2,description,Description,identification/description,999,FALSE,FALSE
 audio,1.2,dateCompleted,Completion Date,identification/dateCompleted,4,TRUE,FALSE
 audio,1.2,bundleProducer,Bundle Producer,identification/bundleProducer,999,FALSE,FALSE
 audio,1.2,agencyTranslation,Translation Agencies,agencies/contributor[@content='true'],999,FALSE,FALSE
-audio,1.2,agencyPublishing,Publication Agencies,agencies/contributor[@publisher='true'],999,FALSE,FALSE
+audio,1.2,agencyPublishing,Publication Agencies,agencies/contributor[@publication='true'],999,FALSE,FALSE
 audio,1.2,agencyManagement,Management Agencies,agencies/contributor[@management='true'],999,FALSE,FALSE
 audio,1.2,agencyFinance,Finance Agencies,agencies/contributor[@finance='true'],999,FALSE,FALSE
 audio,1.2,agencyQualityControl,Quality Control Agencies,agencies/contributor[@qa='true'],999,FALSE,FALSE
