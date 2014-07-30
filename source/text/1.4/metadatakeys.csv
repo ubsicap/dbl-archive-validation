@@ -14,7 +14,7 @@ text,1.4,idTMS,TMS Project Id,identification/systemId[@type='tms'],999,FALSE,FAL
 text,1.4,idSIL,SIL Project Id,identification/systemId[@type='reap'],999,FALSE,FALSE
 text,1.4,idParatext,Paratext GUID,identification/systemId[@type='paratext'],999,FALSE,FALSE
 text,1.4,idParatextName,Paratext Project Name,identification/systemId[@type='paratext_name'],999,FALSE,FALSE
-text,1.4,idParatextLongName,Paratext Project Long Name,identification/systemId[@type='paratext_longname'],999,FALSE,FALSE
+text,1.4,idParatextFullName,Paratext Project Full Name,identification/systemId[@type='paratext_fullname'],999,FALSE,FALSE
 text,1.4,bundleProducer,Bundle Producer,identification/bundleProducer,999,FALSE,FALSE
 text,1.4,confidential,Confidential Project,confidential,999,FALSE,FALSE
 text,1.4,agencyETEN,ETEN Partner Agency,agencies/etenPartner,9,TRUE,FALSE
