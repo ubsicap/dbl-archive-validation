@@ -7,6 +7,7 @@ audio,1.2,nameCommonLocal,Common Version Name Local,identification/nameLocal,999
 audio,1.2,description,Description,identification/description,999,FALSE,FALSE
 audio,1.2,dateCompleted,Completion Date,identification/dateCompleted,4,TRUE,FALSE
 audio,1.2,bundleProducer,Bundle Producer,identification/bundleProducer,999,FALSE,FALSE
+audio,1.2,confidential,Confidential Project,confidential,999,FALSE,FALSE
 audio,1.2,agencyTranslation,Translation Agencies,agencies/contributor[@content='true'],999,FALSE,FALSE
 audio,1.2,agencyPublishing,Publication Agencies,agencies/contributor[@publication='true'],999,FALSE,FALSE
 audio,1.2,agencyManagement,Management Agencies,agencies/contributor[@management='true'],999,FALSE,FALSE

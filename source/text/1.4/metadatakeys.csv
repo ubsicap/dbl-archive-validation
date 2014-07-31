@@ -8,7 +8,6 @@ text,1.4,nameAbbreviation,Version Abbreviation,identification/abbreviation,6,TRU
 text,1.4,nameAbbreviationLocal,Version Abbreviation Local,identification/abbreviationLocal,999,FALSE,FALSE
 text,1.4,scope,Scope,identification/scope,7,TRUE,FALSE
 text,1.4,description,Description,identification/description,999,FALSE,FALSE
-text,1.4,descriptionLocal,Description Local,identification/descriptionLocal,999,FALSE,FALSE
 text,1.4,dateCompleted,Completion Date,identification/dateCompleted,8,TRUE,FALSE
 text,1.4,idTMS,TMS Project Id,identification/systemId[@type='tms'],999,FALSE,FALSE
 text,1.4,idSIL,SIL Project Id,identification/systemId[@type='reap'],999,FALSE,FALSE
