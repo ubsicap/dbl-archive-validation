@@ -7,6 +7,7 @@ audio,1.0,nameCommonLocal,Common Version Name Local,identification/nameLocal,999
 audio,1.0,description,Description,identification/description,999,FALSE,FALSE
 audio,1.0,dateCompleted,Completion Date,identification/dateCompleted,2,TRUE,FALSE
 audio,1.0,bundleProducer,Bundle Producer,identification/bundleProducer,999,FALSE,FALSE
+audio,1.0,confidential,Confidential Project,confidential,999,FALSE,FALSE
 audio,1.0,agencyCreator,Creator Agency,agencies/creator,999,FALSE,FALSE
 audio,1.0,agencyPublishing,Publishing Agency,agencies/publisher,999,FALSE,FALSE
 audio,1.0,audioType,Audio Type,type/audioType,999,FALSE,FALSE
