@@ -40,7 +40,7 @@ text,1.4,translationType,Translation Type,type/translationType,999,FALSE,FALSE
 text,1.4,languageLevel,Language Level,type/audience,999,FALSE,FALSE
 text,1.4,copyrightStatement,Rights Information Statement,copyright/statement,999,FALSE,TRUE
 text,1.4,pubPromoVersionInfo,Promotion Version Info,promotion/promoVersionInfo,999,FALSE,TRUE
-text,1.4,pubPromoEmail,Promotion Email Message,promotion/promoEmail,999,FALSE,FALSE
+text,1.4,pubPromoEmail,Promotion Email Message,promotion/promoEmail,999,FALSE,TRUE
 text,1.4,archivist,Archivist,archiveStatus/archivistName,999,FALSE,FALSE
 text,1.4,dateArchived,Original Archive Date,archiveStatus/dateArchived,999,FALSE,FALSE
 text,1.4,dateUpdated,Last Archive Date,archiveStatus/dateUpdated,12,TRUE,FALSE
