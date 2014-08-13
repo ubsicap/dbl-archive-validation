@@ -497,7 +497,7 @@ div {
    m.promotion =
       element promotion {
          m.promoVersionInfo &
-         m.promoEmail
+         m.promoEmail?
       }
 }
 
