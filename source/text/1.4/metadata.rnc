@@ -496,8 +496,7 @@ div {
 div {
    m.promotion =
       element promotion {
-         m.promoVersionInfo &
-         m.promoEmail?
+         m.promoVersionInfo
       }
 }
 
@@ -508,17 +507,6 @@ div {
       ## DCMI: description/pubPromoVersionInfo
       element promoVersionInfo {
          m.promoVersionInfo.attlist,
-         m.htmlMarkup+
-      }
-}
-
-div {
-   m.promoEmail.attlist =
-      m._.contentType
-   m.promoEmail =
-      element promoEmail {
-         m.promoEmail.attlist,
-         ## DCMI: description/pubPromoEmail
          m.htmlMarkup+
       }
 }
