@@ -17,15 +17,6 @@ text,1.4,idParatextFullName,Paratext Project Full Name,identification/systemId[@
 text,1.4,bundleProducer,Bundle Producer,identification/bundleProducer,999,FALSE,FALSE
 text,1.4,confidential,Confidential Project,confidential,999,FALSE,FALSE
 text,1.4,agencyETEN,ETEN Partner Agency,agencies/etenPartner,9,TRUE,FALSE
-text,1.4,agencyTranslation,Translation Agencies,agencies/contributor[@content='true'],999,FALSE,FALSE
-text,1.4,agencyPublishing,Publication Agencies,agencies/contributor[@publication='true'],999,FALSE,FALSE
-text,1.4,agencyManagement,Management Agencies,agencies/contributor[@management='true'],999,FALSE,FALSE
-text,1.4,agencyFinance,Finance Agencies,agencies/contributor[@finance='true'],999,FALSE,FALSE
-text,1.4,agencyQualityControl,Quality Control Agencies,agencies/contributor[@qa='true'],999,FALSE,FALSE
-text,1.4,rightsHolder,Rights Holder Name,agencies/rightsHolder,10,TRUE,FALSE
-text,1.4,rightsHolderLocal,Rights Holder Name Local,agencies/rightsHolder/@local,999,FALSE,FALSE
-text,1.4,rightsHolderAbbreviation,Rights Holder Abbreviation,agencies/rightsHolder/@abbr,999,FALSE,FALSE
-text,1.4,rightsHolderURL,Rights Holder URL,agencies/rightsHolder/@url,11,TRUE,FALSE
 text,1.4,rightsAdmin,Rights Administrator Name,agencies/rightsAdmin,999,FALSE,FALSE
 text,1.4,rightsAdminURL,Rights Administrator URL,agencies/rightsAdmin/@url,999,FALSE,FALSE
 text,1.4,languageCode,Language Code,language/iso,2,TRUE,FALSE
