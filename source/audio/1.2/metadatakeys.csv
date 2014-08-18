@@ -18,6 +18,7 @@ audio,1.2,rightsHolderLocal,Rights Holder Name Local,agencies/rightsHolder/@loca
 audio,1.2,rightsHolderAbbreviation,Rights Holder Abbreviation,agencies/rightsHolder/@abbr,999,FALSE,FALSE
 audio,1.2,rightsHolderURL,Rights Holder URL,agencies/rightsHolder/@url,6,TRUE,FALSE
 audio,1.2,rightsAdmin,Rights Administrator Name,agencies/rightsAdmin,999,FALSE,FALSE
+audio,1.2,rightsAdminURL,Rights Administrator URL,agencies/rightsAdmin/@url,999,FALSE,FALSE
 audio,1.2,languageCode,Language Code,language/iso,2,TRUE,FALSE
 audio,1.2,languageName,Language Name,language/name,1,TRUE,FALSE
 audio,1.2,languageLDMLId,Unicode LDML Language ID,language/ldml,999,FALSE,FALSE
