@@ -17,8 +17,7 @@
         <xsl:variable name="vnumSiblings" select=
              "count(../*[name()=name(current())])"/>
         <xsl:if test="$vnumSiblings > 1">
-            <xsl:value-of select=
-                 "concat('[',']')"/>
+            <xsl:value-of select="'[]'"/>
         </xsl:if>
     </xsl:template>
 
