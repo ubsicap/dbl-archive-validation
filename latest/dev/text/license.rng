@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  license.rnc
+  This is a compact syntax Relax NG Schema for the DBL @type="text" bundle license information file - license.xml
+  DBL bundle version = 1.2
+-->
+<grammar ns="" xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0" xmlns="http://relaxng.org/ns/structure/1.0" datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes">
+  <start>
+    <ref name="l.license"/>
+  </start>
+  <div>
+    <!-- id is overwritten by Paratext -->
+    <define name="l.license.id">
+      <attribute name="id">
+        <data type="string">
+          <param name="pattern">[a-f0-9]{16}</param>
+        </data>
+      </attribute>
+    </define>
+    <define name="l.license.type">
+      <attribute name="type">
+        <ref name="licenseType.enum"/>
+      </attribute>
+    </define>
+    <define name="l.license.attlist">
+      <interleave>
+        <ref name="l.license.id"/>
+        <optional>
+          <ref name="l.license.type"/>
+        </optional>
+      </interleave>
+    </define>
+    <define name="l.license">
+      <element name="license">
+        <interleave>
+          <ref name="l.license.attlist"/>
+          <ref name="l.dateLicense"/>
+          <ref name="l.dateLicenseExpiry"/>
+          <ref name="l.publicationRights"/>
+        </interleave>
+      </element>
+    </define>
+  </div>
+  <div>
+    <define name="l.dateLicense">
+      <element name="dateLicense">
+        <a:documentation>yyyy-mm-dd (empty for unknown or public domain)</a:documentation>
+        <optional>
+          <!-- attribute dcds:sesURI { "http://purl.org/dc/terms/W3CDTF" }, -->
+          <data type="date"/>
+        </optional>
+      </element>
+    </define>
+  </div>
+  <div>
+    <define name="l.dateLicenseExpiry">
+      <element name="dateLicenseExpiry">
+        <a:documentation>yyyy-mm-dd (must be after dateLicense or empty for non-expiring) </a:documentation>
+        <optional>
+          <!-- attribute dcds:sesURI { "http://purl.org/dc/terms/W3CDTF" }, -->
+          <data type="date"/>
+        </optional>
+      </element>
+    </define>
+  </div>
+  <div>
+    <define name="l.publicationRights">
+      <element name="publicationRights">
+        <interleave>
+          <ref name="l.allowOffline"/>
+          <ref name="l.allowIntroductions"/>
+          <ref name="l.allowFootnotes"/>
+          <ref name="l.allowCrossReferences"/>
+          <ref name="l.allowExtendedNotes"/>
+        </interleave>
+      </element>
+    </define>
+  </div>
+  <div>
+    <define name="l.allowOffline">
+      <element name="allowOffline">
+        <data type="boolean"/>
+      </element>
+    </define>
+  </div>
+  <div>
+    <define name="l.allowIntroductions">
+      <element name="allowIntroductions">
+        <data type="boolean"/>
+      </element>
+    </define>
+  </div>
+  <div>
+    <define name="l.allowFootnotes">
+      <element name="allowFootnotes">
+        <data type="boolean"/>
+      </element>
+    </define>
+  </div>
+  <div>
+    <define name="l.allowCrossReferences">
+      <element name="allowCrossReferences">
+        <data type="boolean"/>
+      </element>
+    </define>
+  </div>
+  <div>
+    <define name="l.allowExtendedNotes">
+      <element name="allowExtendedNotes">
+        <data type="boolean"/>
+      </element>
+    </define>
+  </div>
+  <!--
+    The are Creative Commons license types (http://creativecommons.org/licenses/).
+    Others could be added.
+  -->
+  <define name="licenseType.enum">
+    <choice>
+      <value>BY</value>
+      <!-- Attribution only -->
+      <value>BY-ND</value>
+      <!-- Attribution - NoDerivatives -->
+      <value>BY-NC-ND</value>
+      <!-- Attribution - NonCommercial - NoDerivatives -->
+      <value>BY-NC</value>
+      <!-- Attribution - NonCommercial -->
+      <value>BY-NC-SA</value>
+      <!-- Attribution - NonCommercial - ShareAlike -->
+      <value>BY-SA</value>
+      <!-- Attribution - ShareAlike -->
+      <value>PD</value>
+    </choice>
+    <!-- Dedicated to or marked as being in the public domain -->
+  </define>
+</grammar>

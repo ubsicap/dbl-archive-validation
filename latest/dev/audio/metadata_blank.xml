@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DBLMetadata type="audio" typeVersion="1.2" id="0000000000000000" revision="0">
+  <identification>
+    <name></name>
+    <nameLocal></nameLocal>
+    <description></description>
+    <dateCompleted></dateCompleted>
+    <bundleProducer></bundleProducer>
+  </identification>
+  <confidential></confidential>
+  <relationships>
+    <relation type="text" id="" revision=""/>
+  </relationships>
+  <agencies>
+      <rightsHolder abbr="" url=""></rightsHolder>
+      <rightsAdmin url=""></rightsAdmin>
+      <contributor content="true"></contributor>
+  </agencies>
+  <language>
+    <iso></iso>
+    <name></name>
+    <ldml></ldml>
+  </language>
+  <type>
+    <audioType>Dramatized</audioType>
+  </type>
+  <format>
+    <mimeType>audio/mpeg</mimeType>
+    <!-- remaining format elements must be present, but can be empty -->
+    <compression>MP3</compression><!-- use EBU types -->
+    <trackConfiguration>2/0 (Stereo)</trackConfiguration><!-- use EBU types -->
+    <bitRate>128000</bitRate><!-- bits/s -->
+    <bitDepth>16</bitDepth>
+    <samplingRate>44100</samplingRate><!-- bits/s -->
+  </format>
+  <books>
+  </books>
+  <copyright>
+    <!-- Allow XHTML: <h1> <h2> <h3> <p> <blockquote> <ul> <ol> <li> <br> <strong> <em> <a> -->
+    <statement contentType="xhtml"></statement>
+  </copyright>
+  <promotion><!-- optionally empty -->
+    <!-- Allow XHTML: <h1> <h2> <h3> <p> <blockquote> <ul> <ol> <li> <br> <strong> <em> <a> -->
+    <promoVersionInfo contentType="xhtml"></promoVersionInfo>
+    <!-- Allow XHTML: <h1> <h2> <h3> <p> <blockquote> <ul> <ol> <li> <br> <strong> <em> <a> -->
+  </promotion>
+  <archiveStatus>
+    <archivistName></archivistName>
+    <dateArchived>1970-00-00T00:00:00</dateArchived>
+    <dateUpdated>1970-00-00T00:00:00</dateUpdated>
+    <comments></comments>
+  </archiveStatus>
+</DBLMetadata>
