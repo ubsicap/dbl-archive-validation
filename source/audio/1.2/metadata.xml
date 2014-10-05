@@ -15,11 +15,11 @@
     <relation type="text" id="66f69e2e951292b7" revision="1"/>
   </relationships>
   <agencies>
-    <rightsHolder abbr="FCBH" url="http://www.faithcomesbyhearing.com">Hosanna Ministries</rightsHolder>
-    <rightsHolder abbr="ABS" url="http://www.americanbible.org">American Bible Society</rightsHolder>
-    <rightsAdmin url="http://www.faithcomesbyhearing.com">Hosanna Ministries</rightsAdmin>
-    <contributor content="true" publication="true" management="true" qa="true">Faith Comes By Hearing</contributor>
-    <contributor content="true">American Bible Society</contributor>
+    <rightsHolder abbr="FCBH" url="http://www.faithcomesbyhearing.com" uid="52c5bee95dd14931">Hosanna Ministries</rightsHolder>
+    <rightsHolder abbr="ABS" url="http://www.americanbible.org" uid="d12dc7876e2945ac">American Bible Society</rightsHolder>
+    <rightsAdmin url="http://www.faithcomesbyhearing.com" uid="52c5bee95dd14931">Hosanna Ministries</rightsAdmin>
+    <contributor content="true" publication="true" management="true" qa="true" uid="d655d4edd0764640">Faith Comes By Hearing</contributor>
+    <contributor content="true" uid="d12dc7876e2945ac">American Bible Society</contributor>
   </agencies>
   <language>
     <iso>eng</iso><!-- gather from text -->

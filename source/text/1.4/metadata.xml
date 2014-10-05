@@ -17,12 +17,12 @@
   </identification>
   <confidential>false</confidential>
   <agencies>
-    <rightsHolder abbr="ABS" url="http://www.americanbible.org">American Bible Society</rightsHolder>
-    <rightsHolder abbr="UBS" url="http://www.unitedbiblesocieties.org/" local="Example Local Name">United Bible Societies</rightsHolder>
-    <rightsAdmin url="http://www.americanbible.org">American Bible Society</rightsAdmin>
-    <contributor content="true" publication="true" management="true" qa="true">American Bible Society</contributor>
-    <contributor qa="true">United Bible Societies</contributor>
-    <etenPartner>UBS</etenPartner>
+    <rightsHolder abbr="ABS" url="http://www.americanbible.org" uid="d12dc7876e2945ac">American Bible Society</rightsHolder>
+    <rightsHolder abbr="UBS" url="http://www.unitedbiblesocieties.org/" local="Example Local Name" uid="9f870b14e3e642fa">United Bible Societies</rightsHolder>
+    <rightsAdmin url="http://www.americanbible.org" uid="d12dc7876e2945ac">American Bible Society</rightsAdmin>
+    <contributor content="true" publication="true" management="true" qa="true" uid="d12dc7876e2945ac">American Bible Society</contributor>
+    <contributor qa="true" uid="9f870b14e3e642fa">United Bible Societies</contributor>
+    <etenPartner uid="9f870b14e3e642fa">UBS</etenPartner>
   </agencies>
   <language>
     <iso>eng</iso>
