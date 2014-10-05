@@ -5,6 +5,7 @@
     <nameLocal>Good News Translation Audio Bible</nameLocal>
     <description>English Good News Translation Dramatized Audio Bible</description>
     <dateCompleted>1992-10-01</dateCompleted><!-- !! opt NULL -->
+    <systemId type="gbc">63ac24395117ad56de2354a8</systemId>
     <systemId type="tms">f29da3b3006e4e4e9cb9ebcc709f1450</systemId>
     <systemId type="dbp">AA1AAAA1AA</systemId>
     <bundleProducer>Paratext/7.3.0.92</bundleProducer>

@@ -6,6 +6,7 @@ audio,1.2,nameCommon,Common Version Name,identification/name,3,TRUE,FALSE
 audio,1.2,nameCommonLocal,Common Version Name Local,identification/nameLocal,999,FALSE,FALSE
 audio,1.2,description,Description,identification/description,999,FALSE,FALSE
 audio,1.2,dateCompleted,Completion Date,identification/dateCompleted,4,TRUE,FALSE
+audio,1.2,idGBC,GBC Entry Id,identification/systemId[@type='gbc'],999,FALSE,FALSE
 audio,1.2,bundleProducer,Bundle Producer,identification/bundleProducer,999,FALSE,FALSE
 audio,1.2,confidential,Confidential Project,confidential,999,FALSE,FALSE
 audio,1.2,rightsAdmin,Rights Administrator Name,agencies/rightsAdmin,999,FALSE,FALSE
