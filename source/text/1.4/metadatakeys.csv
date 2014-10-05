@@ -12,6 +12,7 @@ text,1.4,dateCompleted,Completion Date,identification/dateCompleted,8,TRUE,FALSE
 text,1.4,idGBC,GBC Entry Id,identification/systemId[@type='gbc'],999,FALSE,FALSE
 text,1.4,idTMS,TMS Project Id,identification/systemId[@type='tms'],999,FALSE,FALSE
 text,1.4,idSIL,SIL Project Id,identification/systemId[@type='reap'],999,FALSE,FALSE
+text,1.4,idBiblica,Biblica Project Id,identification/systemId[@type='biblica'],999,FALSE,FALSE
 text,1.4,idParatext,Paratext GUID,identification/systemId[@type='paratext'],999,FALSE,FALSE
 text,1.4,idParatextName,Paratext Project Name,identification/systemId[@type='paratext_name'],999,FALSE,FALSE
 text,1.4,idParatextFullName,Paratext Project Full Name,identification/systemId[@type='paratext_fullname'],999,FALSE,FALSE
