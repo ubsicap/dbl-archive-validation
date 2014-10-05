@@ -9,6 +9,7 @@ text,1.4,nameAbbreviationLocal,Version Abbreviation Local,identification/abbrevi
 text,1.4,scope,Scope,identification/scope,7,TRUE,FALSE
 text,1.4,description,Description,identification/description,999,FALSE,FALSE
 text,1.4,dateCompleted,Completion Date,identification/dateCompleted,8,TRUE,FALSE
+text,1.4,idGBC,GBC Entry Id,identification/systemId[@type='gbc'],999,FALSE,FALSE
 text,1.4,idTMS,TMS Project Id,identification/systemId[@type='tms'],999,FALSE,FALSE
 text,1.4,idSIL,SIL Project Id,identification/systemId[@type='reap'],999,FALSE,FALSE
 text,1.4,idParatext,Paratext GUID,identification/systemId[@type='paratext'],999,FALSE,FALSE

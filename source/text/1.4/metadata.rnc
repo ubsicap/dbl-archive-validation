@@ -131,6 +131,8 @@ div {
 
 div {
    m.systemId.type.enum =
+      ## Global Bible Catalogue entry ID
+      "gbc" |
       ## UBS Translation Management System database ID
       "tms" |
       ## Paratext Project GUID
