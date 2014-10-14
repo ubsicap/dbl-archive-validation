@@ -12,9 +12,9 @@
     <relation type="text" id="" revision=""/>
   </relationships>
   <agencies>
-      <rightsHolder abbr="" url=""></rightsHolder>
-      <rightsAdmin url=""></rightsAdmin>
-      <contributor content="true"></contributor>
+      <rightsHolder uid="" abbr="" url=""></rightsHolder>
+      <rightsAdmin uid="" url=""></rightsAdmin>
+      <contributor uid="" content="true"></contributor>
   </agencies>
   <language>
     <iso></iso>

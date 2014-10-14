@@ -8,6 +8,7 @@
     <scope></scope>
     <description></description>
     <dateCompleted></dateCompleted>
+    <systemId type="gbc"></systemId>
     <systemId type="tms"></systemId>
     <systemId type="reap"></systemId>
     <systemId type="paratext"></systemId>

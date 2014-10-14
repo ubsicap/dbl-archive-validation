@@ -147,6 +147,8 @@
   <div>
     <define name="m.systemId.type.enum">
       <choice>
+        <value>gbc</value>
+        <a:documentation>Global Bible Catalogue entry ID</a:documentation>
         <value>tms</value>
         <a:documentation>UBS Translation Management System database ID</a:documentation>
         <value>reap</value>
@@ -286,18 +288,36 @@
       <element name="rightsHolder">
         <a:documentation>DCMI: rightsHolder</a:documentation>
         <ref name="m.rightsHolder.attlist"/>
+        <attribute name="uid">
+          <ref name="m._datatype.string2"/>
+        </attribute>
         <ref name="m._datatype.string2"/>
       </element>
     </define>
   </div>
   <div>
+    <define name="m.rightsAdmin.url">
+      <attribute name="url">
+        <data type="anyURI"/>
+      </attribute>
+    </define>
+    <define name="m.rightsAdmin.uid">
+      <attribute name="uid">
+        <ref name="m._datatype.string2"/>
+      </attribute>
+    </define>
+    <define name="m.rightsAdmin.attlist">
+      <optional>
+        <ref name="m.rightsAdmin.url"/>
+      </optional>
+    </define>
     <define name="m.rightsAdmin">
       <element name="rightsAdmin">
-        <optional>
-          <attribute name="url">
-            <data type="anyURI"/>
-          </attribute>
-        </optional>
+        <a:documentation>DCMI: rightsHolder</a:documentation>
+        <ref name="m.rightsAdmin.attlist"/>
+        <attribute name="uid">
+          <ref name="m._datatype.string2"/>
+        </attribute>
         <ref name="m._datatype.string2"/>
       </element>
     </define>
@@ -342,7 +362,12 @@
     <define name="m.contributor">
       <element name="contributor">
         <a:documentation>DCMI: contributor</a:documentation>
-        <ref name="m.contributor.attlist"/>
+        <optional>
+          <ref name="m.contributor.attlist"/>
+        </optional>
+        <attribute name="uid">
+          <ref name="m._datatype.string2"/>
+        </attribute>
         <ref name="m._datatype.string2"/>
       </element>
     </define>
