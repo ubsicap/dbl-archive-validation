@@ -131,6 +131,8 @@ div {
 
 div {
    m.systemId.type.enum =
+      ## Global Bible Catalogue entry ID
+      "gbc" |
       ## UBS Translation Management System database ID
       "tms" |
       ## Paratext Project GUID
@@ -196,14 +198,23 @@ div {
       ## DCMI: rightsHolder
       element rightsHolder {
          m.rightsHolder.attlist,
+         attribute uid { m._datatype.string2 },
          m._datatype.string2
       }
 }
 
 div {
+   m.rightsAdmin.url =
+      attribute url { xsd:anyURI }
+   m.rightsAdmin.uid =
+      attribute uid { m._datatype.string2 }
+   m.rightsAdmin.attlist =
+      m.rightsAdmin.url?
    m.rightsAdmin =
+      ## DCMI: rightsHolder
       element rightsAdmin {
-         attribute url { xsd:anyURI }?,
+         m.rightsAdmin.attlist,
+         attribute uid { m._datatype.string2 },
          m._datatype.string2
       }
 }
@@ -230,6 +241,7 @@ div {
       ## DCMI: contributor
       element contributor {
          m.contributor.attlist?,
+         attribute uid { m._datatype.string2 },
          m._datatype.string2
       }
 }
@@ -241,6 +253,7 @@ div {
    m.etenPartner =
       element etenPartner { 
          # m.etenPartner.enum
+         attribute uid { m._datatype.string2 },
          m._datatype.string2?
       }
 }
