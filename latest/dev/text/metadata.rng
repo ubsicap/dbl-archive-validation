@@ -296,11 +296,6 @@
         <data type="anyURI"/>
       </attribute>
     </define>
-    <define name="m.rightsAdmin.uid">
-      <attribute name="uid">
-        <ref name="m._datatype.string2"/>
-      </attribute>
-    </define>
     <define name="m.rightsAdmin.attlist">
       <optional>
         <ref name="m.rightsAdmin.url"/>
