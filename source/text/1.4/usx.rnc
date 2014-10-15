@@ -442,6 +442,8 @@ Char =
              | # A Hebrew wordlist text item
                "wj"
              | # For marking the words of Jesus
+               "xt"
+             | # A target reference(s)
                "no"
              | # A character style, use normal text
                "it"
@@ -546,7 +548,7 @@ FootnoteChar =
         },
         attribute closed { xsd:boolean }?,
         # Present to allow roundtripping to USFM, not needed for publishing
-        (text | Char | FootnoteVerse )+
+        (Char | FootnoteVerse | Reference | text)+
     }
 FootnoteVerse =
     element char {
@@ -579,7 +581,7 @@ CrossReferenceChar =
         },
      attribute closed { xsd:boolean }?,
      # Present to allow roundtripping to USFM, not needed for publishing
-     (text | Char | Reference)+
+     (Char | Reference | text)+
     }
 Reference =
     element ref {
