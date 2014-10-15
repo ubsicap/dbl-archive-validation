@@ -201,8 +201,6 @@ div {
 div {
    m.rightsAdmin.url =
       attribute url { xsd:anyURI }
-   m.rightsAdmin.uid =
-      attribute uid { m._datatype.string2 }
    m.rightsAdmin.attlist =
       m.rightsAdmin.url?
    m.rightsAdmin =
