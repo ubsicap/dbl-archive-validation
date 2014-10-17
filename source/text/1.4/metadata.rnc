@@ -137,10 +137,6 @@ div {
       "tms" |
       ## Paratext Project GUID
       "paratext" |
-      ## Paratext Project Short Name
-      "paratext_name" |
-      ## Paratext Project Long Name
-      "paratext_fullname" |
       ## SIL REAP database ID
       "reap" |
       ## Biblica database id
@@ -148,7 +144,9 @@ div {
    m.systemId.type =
       attribute type { m.systemId.type.enum }
    m.systemId.attlist =
-      m.systemId.type
+      m.systemId.type,
+      attribute name { m._datatype.string2 }?,
+      attribute fullname { m._datatype.string2 }?
    m.systemId =
       ## systemId[@type='paratext'] is overwritten by Paratext
       element systemId {
