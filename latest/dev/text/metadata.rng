@@ -188,10 +188,6 @@
         <a:documentation>UBS Translation Management System database ID</a:documentation>
         <value>paratext</value>
         <a:documentation>Paratext Project GUID</a:documentation>
-        <value>paratext_name</value>
-        <a:documentation>Paratext Project Short Name</a:documentation>
-        <value>paratext_fullname</value>
-        <a:documentation>Paratext Project Long Name</a:documentation>
         <value>reap</value>
         <a:documentation>SIL REAP database ID</a:documentation>
         <value>biblica</value>
@@ -205,6 +201,16 @@
     </define>
     <define name="m.systemId.attlist">
       <ref name="m.systemId.type"/>
+      <optional>
+        <attribute name="name">
+          <ref name="m._datatype.string2"/>
+        </attribute>
+      </optional>
+      <optional>
+        <attribute name="fullname">
+          <ref name="m._datatype.string2"/>
+        </attribute>
+      </optional>
     </define>
     <define name="m.systemId">
       <element name="systemId">
