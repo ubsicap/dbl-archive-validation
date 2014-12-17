@@ -1,0 +1,24 @@
+entrytype,typeversion,key,name,xpath,sort,important,xhtml
+audio,1.2,id,Project Archive ID,@id,9,TRUE,FALSE
+audio,1.2,revision,Revision,@revision,10,TRUE,FALSE
+audio,1.2,typeVersion,Bundle Type Version,@typeVersion,11,TRUE,FALSE
+audio,1.2,nameCommon,Common Version Name,identification/name,3,TRUE,FALSE
+audio,1.2,nameCommonLocal,Common Version Name Local,identification/nameLocal,999,FALSE,FALSE
+audio,1.2,description,Description,identification/description,999,FALSE,FALSE
+audio,1.2,dateCompleted,Completion Date,identification/dateCompleted,4,TRUE,FALSE
+audio,1.2,idGBC,GBC Entry Id,identification/systemId[@type='gbc'],999,FALSE,FALSE
+audio,1.2,bundleProducer,Bundle Producer,identification/bundleProducer,999,FALSE,FALSE
+audio,1.2,confidential,Confidential Project,confidential,999,FALSE,FALSE
+audio,1.2,rightsAdmin,Rights Administrator Name,agencies/rightsAdmin,999,FALSE,FALSE
+audio,1.2,rightsAdminURL,Rights Administrator URL,agencies/rightsAdmin/@url,999,FALSE,FALSE
+audio,1.2,rightsAdminUID,Rights Administrator UID,agencies/rightsAdmin/@uid,999,FALSE,FALSE
+audio,1.2,languageCode,Language Code,language/iso,2,TRUE,FALSE
+audio,1.2,languageName,Language Name,language/name,1,TRUE,FALSE
+audio,1.2,languageLDMLId,Unicode LDML Language ID,language/ldml,999,FALSE,FALSE
+audio,1.2,audioType,Audio Type,type/audioType,999,FALSE,FALSE
+audio,1.2,pubPromoVersionInfo,Promotion Version Info,promotion/promoVersionInfo,999,FALSE,TRUE
+audio,1.2,archivist,Archivist,archiveStatus/archivistName,999,FALSE,FALSE
+audio,1.2,dateArchived,Original Archive Date,archiveStatus/dateArchived,999,FALSE,FALSE
+audio,1.2,dateUpdated,Last Archive Date,archiveStatus/dateUpdated,7,TRUE,FALSE
+audio,1.2,comments,Comments,archiveStatus/comments,8,TRUE,FALSE
+audio,1.2,copyrightStatement,Rights Information Statement,copyright/statement,999,FALSE,TRUE
