@@ -250,7 +250,7 @@ div {
    m.etenPartner =
       element etenPartner { 
          # m.etenPartner.enum
-         attribute uid { m._datatype.string2 },
+         attribute uid { m._datatype.string2 }?,
          m._datatype.string2?
       }
 }

@@ -20,7 +20,7 @@
     <rightsAdmin url="http://www.americanbible.org" uid="d12dc7876e2945ac">American Bible Society</rightsAdmin>
     <contributor content="true" publication="true" management="true" qa="true" uid="d12dc7876e2945ac">American Bible Society</contributor>
     <contributor qa="true" uid="9f870b14e3e642fa">United Bible Societies</contributor>
-    <etenPartner uid="9f870b14e3e642fa">UBS</etenPartner>
+    <etenPartner>UBS</etenPartner>
   </agencies>
   <language>
     <iso>eng</iso>
