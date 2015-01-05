@@ -146,12 +146,13 @@ div {
    m.systemId.attlist =
       m.systemId.type,
       attribute name { m._datatype.string2 }?,
-      attribute fullname { m._datatype.string2 }?
+      attribute fullname { m._datatype.string2 }?,
+      attribute csetid { m._datatype.string2 }?
    m.systemId =
       ## systemId[@type='paratext'] is overwritten by Paratext
       element systemId {
-        m.systemId.attlist,
-        m._datatype.string2
+         m.systemId.attlist,
+         m._datatype.string2
    }
 }
 
