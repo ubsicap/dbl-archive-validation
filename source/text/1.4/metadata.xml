@@ -10,7 +10,7 @@
     <dateCompleted>1992-10-01</dateCompleted>
     <systemId type="gbc">de08848bef5aa286</systemId>
     <systemId type="tms">401d0abc-018b-4036-81b7-13845ace8612</systemId>
-    <systemId type="paratext" name="GNT92" fullname="English: Good News Translation">66f69e2e951292b7d66582d3e2444332f641775b</systemId>
+    <systemId type="paratext" name="GNT92" fullname="English: Good News Translation" csetid="277:6ff234ffa423634da2ae951f807648c8da872e76">66f69e2e951292b7d66582d3e2444332f641775b</systemId>
     <bundleProducer>Paratext/7.3.0.92</bundleProducer>
   </identification>
   <confidential>false</confidential>
@@ -20,7 +20,7 @@
     <rightsAdmin url="http://www.americanbible.org" uid="d12dc7876e2945ac">American Bible Society</rightsAdmin>
     <contributor content="true" publication="true" management="true" qa="true" uid="d12dc7876e2945ac">American Bible Society</contributor>
     <contributor qa="true" uid="9f870b14e3e642fa">United Bible Societies</contributor>
-    <etenPartner uid="9f870b14e3e642fa">UBS</etenPartner>
+    <etenPartner>UBS</etenPartner>
   </agencies>
   <language>
     <iso>eng</iso>
