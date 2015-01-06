@@ -14,6 +14,7 @@ text,1.4,idTMS,TMS Project Id,identification/systemId[@type='tms'],999,FALSE,FAL
 text,1.4,idSIL,SIL Project Id,identification/systemId[@type='reap'],999,FALSE,FALSE
 text,1.4,idBiblica,Biblica Project Id,identification/systemId[@type='biblica'],999,FALSE,FALSE
 text,1.4,idParatext,Paratext GUID,identification/systemId[@type='paratext'],999,FALSE,FALSE
+text,1.4,idParatextCset,Paratext Changeset Id,identification/systemId[@type='paratext']/@csetid,999,FALSE,FALSE
 text,1.4,idParatextName,Paratext Project Name,identification/systemId[@type='paratext']/@name,999,FALSE,FALSE
 text,1.4,idParatextFullName,Paratext Project Full Name,identification/systemId[@type='paratext']/@fullname,999,FALSE,FALSE
 text,1.4,bundleProducer,Bundle Producer,identification/bundleProducer,999,FALSE,FALSE

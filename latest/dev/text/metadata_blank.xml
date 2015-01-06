@@ -11,9 +11,8 @@
     <systemId type="gbc"></systemId>
     <systemId type="tms"></systemId>
     <systemId type="reap"></systemId>
-    <systemId type="paratext"></systemId>
-    <systemId type="paratext_name"></systemId>
-    <systemId type="paratext_fullname"></systemId>
+    <systemId type="paratext" name="" fullname="" csetid=""></systemId>
+    <systemId type="biblica"></systemId>
     <bundleProducer></bundleProducer>
   </identification>
   <confidential></confidential>

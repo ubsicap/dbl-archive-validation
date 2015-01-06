@@ -211,6 +211,11 @@
           <ref name="m._datatype.string2"/>
         </attribute>
       </optional>
+      <optional>
+        <attribute name="csetid">
+          <ref name="m._datatype.string2"/>
+        </attribute>
+      </optional>
     </define>
     <define name="m.systemId">
       <element name="systemId">
@@ -376,10 +381,12 @@
     <define name="m.etenPartner">
       <a:documentation>Primary translation or coordination/sponsorship agency</a:documentation>
       <element name="etenPartner">
-        <!-- m.etenPartner.enum -->
-        <attribute name="uid">
-          <ref name="m._datatype.string2"/>
-        </attribute>
+        <optional>
+          <!-- m.etenPartner.enum -->
+          <attribute name="uid">
+            <ref name="m._datatype.string2"/>
+          </attribute>
+        </optional>
         <optional>
           <ref name="m._datatype.string2"/>
         </optional>
