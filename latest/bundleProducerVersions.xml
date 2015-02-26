@@ -1,5 +1,0 @@
-﻿<clients>
-    <client name="Paratext">
-        <minimumVersion entryType="text" url="http://update.ubs-icap.org/DeveloperUseOnly/DBL4.0Paratext7.5.100.108Installer.msi">7.5.100.108</minimumVersion>
-    </client>
-</clients>
