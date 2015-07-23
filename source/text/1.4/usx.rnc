@@ -155,7 +155,7 @@ IntroPara =
                "rem")
             # Remark 
         },
-        (Reference | Footnote | Char | IntroChar | Figure | text)*
+        (Reference | Footnote | CrossReference | Char | IntroChar | Figure | text)*
     } | Table
 TitleParaIntroEnd =
     element para {
