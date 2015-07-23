@@ -212,6 +212,7 @@
           <choice>
             <ref name="Reference"/>
             <ref name="Footnote"/>
+            <ref name="CrossReference"/>
             <ref name="Char"/>
             <ref name="IntroChar"/>
             <ref name="Figure"/>
