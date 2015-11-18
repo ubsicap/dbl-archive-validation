@@ -1,7 +1,7 @@
 # metadata.rnc
 # -----------------------------------------------------------------------------
 # A compact syntax Relax NG Schema for the DBL @type="text" metadata file.
-# DBL text bundle version = 1.4
+# DBL text bundle version = 1.5
 
 # - Suggested Dublin Core Metadata (DCMI) element/refinement relationships are 
 #   added as documentation strings "## DCMI: "
@@ -29,7 +29,7 @@ div {
    m.DBLMetadata.type =
       attribute type { "text" }
    m.DBLMetadata.typeVersion =
-      attribute typeVersion { "1.4" }
+      attribute typeVersion { "1.5" }
    m.DBLMetadata.id =
       ## id is overwritten at submission
       attribute id { xsd:string { pattern="[a-f0-9]{16}" } }
@@ -177,8 +177,7 @@ div {
       element agencies {
          m.rightsHolder+ &
          m.rightsAdmin? &
-         m.contributor+ &
-         m.etenPartner?
+         m.contributor+
     }
 }
 
@@ -244,22 +243,11 @@ div {
 }
 
 div {
-   #m.etenPartner.enum =
-   #   "UBS" | "WBT" | "Biblica" | "PBT" | "SIM"
-   ## Primary translation or coordination/sponsorship agency
-   m.etenPartner =
-      element etenPartner { 
-         # m.etenPartner.enum
-         attribute uid { m._datatype.string2 }?,
-         m._datatype.string2?
-      }
-}
-
-div {
    m.language =
       element language {
        m.language.iso &
        m.language.name &
+       m.language.nameLocal &
        m.ldml &
        m.rod &
        m.script &
@@ -280,6 +268,14 @@ div {
    m.language.name =
       ## DCMI: subject/language (ISO639-3)
    element name {
+      m._datatype.string2
+   }
+}
+
+div {
+   m.language.nameLocal =
+      ## DCMI: subject/language (ISO639-3)
+   element nameLocal {
       m._datatype.string2
    }
 }

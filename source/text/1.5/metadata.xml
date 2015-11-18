@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<DBLMetadata type="text" typeVersion="1.4" id="66f69e2e951292b7" revision="1">
+<DBLMetadata type="text" typeVersion="1.5" id="66f69e2e951292b7" revision="1">
   <identification>
     <name>Good News Translation</name>
     <nameLocal>Good News Translation</nameLocal>
@@ -11,7 +11,7 @@
     <systemId type="gbc">de08848bef5aa286</systemId>
     <systemId type="tms">401d0abc-018b-4036-81b7-13845ace8612</systemId>
     <systemId type="paratext" name="GNT92" fullname="English: Good News Translation" csetid="277:6ff234ffa423634da2ae951f807648c8da872e76">66f69e2e951292b7d66582d3e2444332f641775b</systemId>
-    <bundleProducer>Paratext/7.3.0.92</bundleProducer>
+    <bundleProducer>Paratext/7.6.54.28</bundleProducer>
   </identification>
   <confidential>false</confidential>
   <agencies>
@@ -20,11 +20,11 @@
     <rightsAdmin url="http://www.americanbible.org" uid="d12dc7876e2945ac">American Bible Society</rightsAdmin>
     <contributor content="true" publication="true" management="true" qa="true" uid="d12dc7876e2945ac">American Bible Society</contributor>
     <contributor qa="true" uid="9f870b14e3e642fa">United Bible Societies</contributor>
-    <etenPartner>UBS</etenPartner>
   </agencies>
   <language>
     <iso>eng</iso>
     <name>English</name>
+    <nameLocal>English</nameLocal>
     <ldml></ldml>
     <rod></rod>
     <script>Roman</script>
