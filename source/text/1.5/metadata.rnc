@@ -1,0 +1,820 @@
+# metadata.rnc
+# -----------------------------------------------------------------------------
+# A compact syntax Relax NG Schema for the DBL @type="text" metadata file.
+# DBL text bundle version = 1.4
+
+# - Suggested Dublin Core Metadata (DCMI) element/refinement relationships are 
+#   added as documentation strings "## DCMI: "
+# - A syntax encoding scheme may be mentioned after the DCMI documentation in 
+#   parentheses; e.g. language/iso (ISO639-3)
+# -----------------------------------------------------------------------------
+
+default namespace = ""
+datatypes xsd = "http://www.w3.org/2001/XMLSchema-datatypes"
+
+start = m.DBLMetadata
+
+div {
+   m._.contentType.enum =
+      "xhtml"
+   m._.contentType =
+      attribute contentType { m._.contentType.enum }
+   m._.code =
+      attribute code { bookCode.enum }
+   m._datatype.string2 =
+      xsd:string { minLength = "2" }
+}
+
+div {
+   m.DBLMetadata.type =
+      attribute type { "text" }
+   m.DBLMetadata.typeVersion =
+      attribute typeVersion { "1.4" }
+   m.DBLMetadata.id =
+      ## id is overwritten at submission
+      attribute id { xsd:string { pattern="[a-f0-9]{16}" } }
+   m.DBLMetadata.revision =
+      attribute revision { xsd:integer }
+   m.DBLMetadata.attlist =
+         m.DBLMetadata.type &
+         m.DBLMetadata.typeVersion &
+         m.DBLMetadata.id &
+         m.DBLMetadata.revision
+   m.DBLMetadata =
+      element DBLMetadata {
+         m.DBLMetadata.attlist &
+         m.identification &
+         m.confidential &
+         m.agencies &
+         m.language &
+         m.country &
+         m.type &
+         m.bookNames &
+         m.contents &
+         m.progress? &
+         m.copyright &
+         m.promotion? &
+         m.archiveStatus &
+         m.format
+      }
+}
+
+div {
+   m.identification =
+      element identification {
+      m.name &
+      m.nameLocal &
+      m.abbreviation &
+      m.abbreviationLocal &
+      m.scope &
+      m.description &
+      m.dateCompleted &
+      m.systemId* &
+      m.bundleProducer
+    }
+}
+
+div {
+   m.name =
+      ## DCMI: title
+      element name {
+         m._datatype.string2
+      }
+}
+
+div {
+   m.nameLocal =
+      ## nameLocal should default to name
+      element nameLocal {
+         m._datatype.string2
+      }
+}
+
+div {
+   m.abbreviation =
+      element abbreviation {
+         xsd:string { pattern="[A-Za-z0-9\-]{2,12}" }
+      }
+}
+
+div {
+   m.abbreviationLocal =
+      ## abbreviationLocal should default to abbreviation
+      element abbreviationLocal {
+         xsd:string { minLength="2" maxLength="12" }
+      }
+}
+
+div {
+   m.scope =
+      ## DCMI: title/scriptureScope
+      element scope {
+         text
+      }
+}
+
+div {
+   m.description =
+      ## DCMI: description
+      element description {
+         m._datatype.string2
+      }
+}
+
+div {
+   m.dateCompleted =
+      ## DCMI: date
+      element dateCompleted {
+         (xsd:date | xsd:gYear | xsd:gYearMonth | xsd:dateTime )?
+      }
+}
+
+div {
+   m.systemId.type.enum =
+      ## Global Bible Catalogue entry ID
+      "gbc" |
+      ## UBS Translation Management System database ID
+      "tms" |
+      ## Paratext Project GUID
+      "paratext" |
+      ## SIL REAP database ID
+      "reap" |
+      ## Biblica database id
+      "biblica"
+   m.systemId.type =
+      attribute type { m.systemId.type.enum }
+   m.systemId.attlist =
+      m.systemId.type,
+      attribute name { m._datatype.string2 }?,
+      attribute fullname { m._datatype.string2 }?,
+      attribute csetid { m._datatype.string2 }?
+   m.systemId =
+      ## systemId[@type='paratext'] is overwritten by Paratext
+      element systemId {
+         m.systemId.attlist,
+         m._datatype.string2
+   }
+}
+
+div {
+   m.bundleProducer =
+      ## bundleProducer is overwritten by Paratext
+      element bundleProducer {
+         m._datatype.string2
+      }
+}
+
+div {
+   m.confidential =
+      ## DCMI: accessRights/confidential
+      element confidential {
+         xsd:boolean
+      }
+}
+
+div {
+   m.agencies =
+      element agencies {
+         m.rightsHolder+ &
+         m.rightsAdmin? &
+         m.contributor+ &
+         m.etenPartner?
+    }
+}
+
+div {
+   m.rightsHolder.abbr =
+      attribute abbr { m._datatype.string2 }
+   m.rightsHolder.url =
+      attribute url { xsd:anyURI }
+   m.rightsHolder.local =
+      attribute local { m._datatype.string2 }
+   m.rightsHolder.attlist =
+      m.rightsHolder.abbr? &
+      m.rightsHolder.url? &
+      m.rightsHolder.local?
+   m.rightsHolder =
+      ## DCMI: rightsHolder
+      element rightsHolder {
+         m.rightsHolder.attlist,
+         attribute uid { m._datatype.string2 },
+         m._datatype.string2
+      }
+}
+
+div {
+   m.rightsAdmin.url =
+      attribute url { xsd:anyURI }
+   m.rightsAdmin.attlist =
+      m.rightsAdmin.url?
+   m.rightsAdmin =
+      ## DCMI: rightsHolder
+      element rightsAdmin {
+         m.rightsAdmin.attlist,
+         attribute uid { m._datatype.string2 },
+         m._datatype.string2
+      }
+}
+
+div {
+   m.contributor.content =
+      attribute content { xsd:boolean }
+   m.contributor.publication = 
+      attribute publication { xsd:boolean }
+   m.contributor.management =
+      attribute management { xsd:boolean }
+   m.contributor.finance =
+      attribute finance { xsd:boolean }
+   m.contributor.qa =
+      attribute qa { xsd:boolean }
+   m.contributor.attlist = (
+      m.contributor.content |
+      m.contributor.publication |
+      m.contributor.management |
+      m.contributor.finance |
+      m.contributor.qa
+      )+
+   m.contributor =
+      ## DCMI: contributor
+      element contributor {
+         m.contributor.attlist?,
+         attribute uid { m._datatype.string2 },
+         m._datatype.string2
+      }
+}
+
+div {
+   #m.etenPartner.enum =
+   #   "UBS" | "WBT" | "Biblica" | "PBT" | "SIM"
+   ## Primary translation or coordination/sponsorship agency
+   m.etenPartner =
+      element etenPartner { 
+         # m.etenPartner.enum
+         attribute uid { m._datatype.string2 }?,
+         m._datatype.string2?
+      }
+}
+
+div {
+   m.language =
+      element language {
+       m.language.iso &
+       m.language.name &
+       m.ldml &
+       m.rod &
+       m.script &
+       m.scriptDirection &
+       m.numerals
+    }
+}
+
+div {
+   m.language.iso =
+      ## DCMI: language/iso (ISO639-3)
+   element iso {
+      xsd:string { pattern = "[a-z][a-z][a-z]" }
+   }
+}
+
+div {
+   m.language.name =
+      ## DCMI: subject/language (ISO639-3)
+   element name {
+      m._datatype.string2
+   }
+}
+
+div {
+   m.ldml =
+      ## DCMI: language/ldml
+   element ldml {
+      xsd:string { pattern = "[A-Za-z]{2,3}([\-_][A-Za-z0-9]+){0,3}" }?
+   }
+}
+
+div {
+   m.rod =
+      ## DCMI: language/rod
+   element rod {
+      xsd:string { pattern = "[0-9]{5}" }?
+   }
+
+}
+
+div {
+   m.script =
+      ## DCMI: language/script
+   element script {
+      m._datatype.string2
+   }
+}
+
+div {
+   m.scriptDirection.enum =
+      ## LTR (Left to Right)
+      "LTR" |
+      ## RTL (Right to Left)
+      "RTL"
+   m.scriptDirection =
+      ## scriptDirection is overwritten by Paratext
+   ## DCMI: language/scriptDirection
+   element scriptDirection {
+      ( m.scriptDirection.enum )
+   }
+}
+
+div {
+   m.numerals =
+      element numerals {
+         ## DCMI: language/numerals
+         ( empty | numeralSystem.enum )
+      }
+}
+
+div {
+   m.country =
+      element country {
+         m.country.iso &
+         m.country.name
+      }
+}
+
+div {
+   m.country.iso =
+      ## DCMI: coverage/spatial (ISO3166)
+   element iso {
+      xsd:string { pattern = "[A-Z][A-Z][A-Z]?" }
+   }
+}
+
+div {
+   m.country.name =
+      ## DCMI: subject/subjectCountry
+   element name {
+      m._datatype.string2
+   }
+}
+
+div {
+   m.type =
+      element type {
+         m.translationType &
+         element audience {
+            ## DCMI: audience
+            translationLevel.enum ?
+         }
+      }
+}
+
+div {
+   m.translationType =
+      ## DCMI: type/translationType
+      element translationType {
+         translationType.enum ?
+      }
+}
+
+div {
+   m.bookNames =
+      ## bookNames/book is overwritten by Paratext
+   element bookNames {
+      m.bookNames.book*
+    }
+}
+
+div {
+   m.bookNames.book.attlist =
+      m._.code
+   m.bookNames.book =
+      element book {
+         m.bookNames.book.attlist &
+         m.long &
+         m.short &
+         m.abbr
+      }
+}
+
+div {
+   m.long =
+      element long { text }
+}
+
+div {
+   m.short =
+      element short { text }
+}
+
+div {
+   m.abbr =
+      element abbr { text }
+}
+
+div {
+   m.contents =
+      ## DCMI: tableOfContents
+      element contents {
+         m.bookList+
+    }
+}
+
+div {
+   m.bookList.id =
+      attribute id { xsd:integer }
+   m.bookList.default =
+      attribute default { xsd:boolean }
+   m.bookList.attlist =
+      m.bookList.id &
+      m.bookList.default?
+   m.bookList =
+      element bookList {
+        m.bookList.attlist &
+        m.name &
+        m.nameLocal &
+        m.abbreviation &
+        m.abbreviationLocal &
+        m.booklist.description &
+        m.booklist.descriptionLocal &
+        m.books
+      }
+}
+
+
+div {
+   m.booklist.description =
+       element description { m._datatype.string2 }
+}
+
+div {
+   m.booklist.descriptionLocal =
+       element descriptionLocal { m._datatype.string2 }
+}
+
+div {
+   m.books =
+      element books {
+         m.book+
+      }
+}
+
+div {
+   m.book.attlist =
+      m._.code
+   m.book =
+      element book {
+         m.book.attlist
+      }
+}
+
+div {
+   m.progress =
+      ## progress is overwritten by Paratext
+   element progress { m.progress.book* }
+}
+
+div {
+   m.book.stage =
+      attribute stage { translationStage.enum }
+   m.progress.book.attlist =
+      (m.book.stage,
+       m._.code)
+   m.progress.book =
+      ## DCMI description/stage
+   element book {
+      m.progress.book.attlist
+   }
+}
+
+div {
+   m.copyright =
+      element copyright {
+         m.statement
+    }
+}
+
+div {
+   m.statement.attlist =
+      m._.contentType
+   m.statement =
+      ## For example: (C)2002, 2012 United Bible Societies
+   element statement {
+      m.statement.attlist,
+        ## DCMI: rights
+        m.htmlMarkup+
+      }
+}
+
+div {
+   m.promotion =
+      element promotion {
+         m.promoVersionInfo
+      }
+}
+
+div {
+   m.promoVersionInfo.attlist =
+      m._.contentType
+   m.promoVersionInfo =
+      ## DCMI: description/pubPromoVersionInfo
+      element promoVersionInfo {
+         m.promoVersionInfo.attlist,
+         m.htmlMarkup+
+      }
+}
+
+div {
+   m.archiveStatus =
+    element archiveStatus {
+      m.archivistName &
+      m.dateArchived &
+      m.dateUpdated &
+      m.comments
+    }
+}
+
+div {
+   m.archivistName =
+      ## archivistName is overwritten by Paratext
+   ## DCMI: contributor/archivist
+   element archivistName {
+      m._datatype.string2
+   }
+}
+
+div {
+   m.dateArchived =
+      ## dateArchived is overwritten by Paratext
+      ## DCMI: dateSubmitted (xsd:dateTime)
+   element dateArchived {
+      xsd:dateTime
+   }
+}
+
+div {
+   m.dateUpdated =
+      ## dateUpdated is overwritten by Paratext
+   element dateUpdated {
+      ## DCMI: modified (xsd:dateTime)
+      xsd:dateTime
+   }
+}
+
+div {
+   m.comments =
+      ## DCMI: abstract
+      element comments {
+         xsd:string { minLength = "2" maxLength = "255" }
+      }
+}
+
+div {
+   m.format.enum =
+      "text/xml"
+   m.format =
+    ## format is overwritten by Paratext
+   ## DCMI: format
+    element format {
+       m.format.enum
+    }
+}
+
+div {
+   m.htmlMarkup = (
+      m.p
+    | m.h1
+    | m.h2
+    | m.h3
+    | m.ul
+    | m.ol
+    | m.blockquote
+    | m.htmlCharMarkup)
+
+   m.p =
+      element p { (text | m.htmlCharMarkup)+ }
+   m.h1 =
+      element h1 { text }
+   m.h2 =
+      element h2 { text }
+   m.h3 =
+      element h3 { text }
+   m.ol =
+      element ol { m.li+ }
+   m.ul =
+      element ul { m.li+ }
+   m.li =
+       element li { text }
+   m.blockquote =
+      element blockquote { text }
+}
+
+div {
+   m.htmlCharMarkup = (
+      text
+    | m.a
+    | m.img
+    | m.br
+    | m.strong
+    | m.b
+    | m.em
+    | m.i)
+
+   m.a.href =
+      attribute href { xsd:anyURI }
+   m.a.attlist =
+      m.a.href
+   m.a =
+      element a {
+         m.a.attlist,
+         m.htmlCharMarkup
+      }
+   m.img.src =
+      attribute src { xsd:anyURI }
+   m.img.alt =
+      attribute alt { text }
+   m.img.attlist =
+      (m.img.src,
+       m.img.alt?)
+   m.img =
+      element img {
+         m.img.attlist,
+         text
+      }
+   m.br =
+      element br { empty }
+   m.strong =
+      element strong { text }
+   m.b =
+      element b { text }
+   m.em =
+      element em { text }
+   m.i =
+      element i { text }
+}
+
+numeralSystem.enum = (
+           "Arabic" # (a.k.a. 'Hindu') = 0123456789
+         | "Bengali"
+         | "Burmese"
+         | "Devanagari"
+         | "Ethiopic"
+         | "Farsi"
+         | "Gujarati"
+         | "Gurmukhi"
+         | "Hindi" # (i.e. 'Arabic' as used in Egypt)
+         | "Kannada"
+         | "Khmer"
+         | "Malayalam"
+         | "Oriya"
+         | "Tamil"
+         | "Telugu"
+         | "Thai"
+         | "Tibetan")
+
+translationType.enum = (
+           "First"
+         | "New"
+         | "Revision")
+
+translationLevel.enum = (
+           "Basic"
+         | "Common"
+         | "Common - Literary"
+         | "Literary"
+         | "Liturgical")
+
+# 1 = draft, 2 = internalReview, 3 = extenalReview, 4 = finalReview
+translationStage.enum = (
+   ## draft
+   "1"
+   | ## internalReview
+   "2"
+   |
+   ## externalReview
+   "3"
+   |
+   ## finalReview
+   "4")
+
+bookCode.enum = (
+           "GEN"   # Genesis
+         | "EXO" # Exodus
+         | "LEV" # Leviticus
+         | "NUM" # Numbers
+         | "DEU" # Deuteronomy
+         | "JOS" # Joshua
+         | "JDG" # Judges
+         | "RUT" # Ruth
+         | "1SA" # 1 Samuel
+         | "2SA" # 2 Samuel
+         | "1KI" # 1 Kings
+         | "2KI" # 2 Kings
+         | "1CH" # 1 Chronicles
+         | "2CH" # 2 Chronicles
+         | "EZR" # Ezra
+         | "NEH" # Nehemiah
+         | "EST" # Esther (Hebrew)
+         | "JOB" # Job
+         | "PSA" # Psalms
+         | "PRO" # Proverbs
+         | "ECC" # Ecclesiastes
+         | "SNG" # Song of Songs
+         | "ISA" # Isaiah
+         | "JER" # Jeremiah
+         | "LAM" # Lamentations
+         | "EZK" # Ezekiel
+         | "DAN" # Daniel (Hebrew)
+         | "HOS" # Hosea
+         | "JOL" # Joel
+         | "AMO" # Amos
+         | "OBA" # Obadiah
+         | "JON" # Jonah
+         | "MIC" # Micah
+         | "NAM" # Nahum
+         | "HAB" # Habakkuk
+         | "ZEP" # Zephaniah
+         | "HAG" # Haggai
+         | "ZEC" # Zechariah
+         | "MAL" # Malachi
+         | "MAT" # Matthew
+         | "MRK" # Mark
+         | "LUK" # Luke
+         | "JHN" # John
+         | "ACT" # Acts
+         | "ROM" # Romans
+         | "1CO" # 1 Corinthians
+         | "2CO" # 2 Corinthians
+         | "GAL" # Galatians
+         | "EPH" # Ephesians
+         | "PHP" # Philippians
+         | "COL" # Colossians
+         | "1TH" # 1 Thessalonians
+         | "2TH" # 2 Thessalonians
+         | "1TI" # 1 Timothy
+         | "2TI" # 2 Timothy
+         | "TIT" # Titus
+         | "PHM" # Philemon
+         | "HEB" # Hebrews
+         | "JAS" # James
+         | "1PE" # 1 Peter
+         | "2PE" # 2 Peter
+         | "1JN" # 1 John
+         | "2JN" # 2 John
+         | "3JN" # 3 John
+         | "JUD" # Jude
+         | "REV" # Revelation
+         | "TOB" # Tobit
+         | "JDT" # Judith
+         | "ESG" # Esther Greek
+         | "WIS" # Wisdom of Solomon
+         | "SIR" # Sirach (Ecclesiasticus)
+         | "BAR" # Baruch
+         | "LJE" # Letter of Jeremiah
+         | "S3Y" # Song of 3 Young Men
+         | "SUS" # Susanna
+         | "BEL" # Bel and the Dragon
+         | "1MA" # 1 Maccabees
+         | "2MA" # 2 Maccabees
+         | "3MA" # 3 Maccabees
+         | "4MA" # 4 Maccabees
+         | "1ES" # 1 Esdras (Greek)
+         | "2ES" # 2 Esdras (Latin)
+         | "MAN" # Prayer of Manasseh
+         | "PS2" # Psalm 151
+         | "ODA" # Odes
+         | "PSS" # Psalms of Solomon
+         | "JSA" # actual variant text for JOS, now in LXA text
+         | "JDB" # actual variant text for JDG, now in LXA text
+         | "TBS" # actual variant text for TOB, now in LXA text
+         | "SST" # actual variant text for SUS, now in LXA text
+         | "DNT" # actual variant text for DAN, now in LXA text
+         | "BLT" # actual variant text for BEL, now in LXA text
+         | "EZA" # Apocalypse of Ezra
+         | "5EZ" # 5 Ezra
+         | "6EZ" # 6 Ezra
+         | "DAG" # Daniel Greek
+         | "PS3" # Psalms 152-155
+         | "2BA" # 2 Baruch (Apocalypse)
+         | "LBA" # Letter of Baruch
+         | "JUB" # Jubilees
+         | "ENO" # Enoch
+         | "1MQ" # 1 Meqabyan
+         | "2MQ" # 2 Meqabyan
+         | "3MQ" # 3 Meqabyan
+         | "REP" # Reproof
+         | "4BA" # 4 Baruch
+         | "LAO" # Laodiceans
+           # Non scripture text Id's
+         | "XXA" # Extra A, e.g. a hymnal
+         | "XXB" # Extra B
+         | "XXC" # Extra C
+         | "XXD" # Extra D
+         | "XXE" # Extra E
+         | "XXF" # Extra F
+         | "XXG" # Extra G
+         | "FRT" # Front Matter
+         | "BAK" # Back Matter
+         | "OTH" # Other Matter
+         | "INT" # Introduction
+         | "CNC" # Concordance
+         | "GLO" # Glossary
+         | "TDX" # Topical Index
+         | "NDX") # Names Index
