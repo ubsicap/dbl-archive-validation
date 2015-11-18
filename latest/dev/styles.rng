@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  styles.rnc
+  This is a compact syntax Relax NG Schema for the DBL @type="text" bundle USX styles reference - styles.xml
+  DBL bundle version = 1.4
+-->
+<grammar ns="" xmlns="http://relaxng.org/ns/structure/1.0" datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes">
+  <start>
+    <element name="stylesheet">
+      <oneOrMore>
+        <ref name="property"/>
+      </oneOrMore>
+      <oneOrMore>
+        <element name="style">
+          <interleave>
+            <!-- style info for a USX para or char element -->
+            <attribute name="id">
+              <data type="string">
+                <param name="pattern">[a-zA-Z1-8\-]+</param>
+              </data>
+            </attribute>
+            <!-- name of USX element (e.g. mt1, p, q1, q2, nd, tl etc.) -->
+            <attribute name="publishable">
+              <data type="boolean"/>
+            </attribute>
+            <!-- text is publishable -->
+            <attribute name="versetext">
+              <data type="boolean"/>
+            </attribute>
+            <!-- normal verse body text -->
+            <element name="name">
+              <text/>
+            </element>
+            <!-- Paratext stylehsheet name for this element in USFM -->
+            <element name="description">
+              <text/>
+            </element>
+            <oneOrMore>
+              <!-- description supplied in the Paratext stylesheet -->
+              <ref name="property"/>
+            </oneOrMore>
+          </interleave>
+          <!-- to supply a list of CSS properties and values -->
+        </element>
+      </oneOrMore>
+    </element>
+  </start>
+  <define name="property">
+    <element name="property">
+      <interleave>
+        <attribute name="name">
+          <choice>
+            <value>color</value>
+            <value>font-family</value>
+            <value>font-size</value>
+            <value>font-style</value>
+            <value>font-weight</value>
+            <value>font-variant</value>
+            <value>margin-bottom</value>
+            <value>margin-left</value>
+            <value>margin-right</value>
+            <value>margin-bottom</value>
+            <value>margin-top</value>
+            <value>text-align</value>
+            <value>text-decoration</value>
+            <value>text-indent</value>
+            <value>vertical-align</value>
+            <value>line-height</value>
+            <value>direction</value>
+            <value>writing-mode</value>
+            <value>white-space</value>
+          </choice>
+        </attribute>
+        <optional>
+          <!-- a CSS property name -->
+          <attribute name="unit">
+            <choice>
+              <value>%</value>
+              <value>in</value>
+              <value>pt</value>
+            </choice>
+          </attribute>
+        </optional>
+        <!-- units to use for the property, if required -->
+        <text/>
+      </interleave>
+      <!-- the CSS property value -->
+    </element>
+  </define>
+</grammar>
