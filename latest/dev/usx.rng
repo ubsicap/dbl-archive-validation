@@ -125,6 +125,7 @@
           <ref name="Footnote"/>
           <ref name="CrossReference"/>
           <ref name="Char"/>
+          <ref name="WordlistChar"/>
           <ref name="Break"/>
           <text/>
         </choice>
@@ -214,6 +215,7 @@
             <ref name="Footnote"/>
             <ref name="CrossReference"/>
             <ref name="Char"/>
+            <ref name="WordlistChar"/>
             <ref name="IntroChar"/>
             <ref name="Figure"/>
             <text/>
@@ -250,6 +252,7 @@
           <ref name="Footnote"/>
           <ref name="CrossReference"/>
           <ref name="Char"/>
+          <ref name="WordlistChar"/>
           <ref name="Break"/>
           <text/>
         </choice>
@@ -482,6 +485,7 @@
           <ref name="Footnote"/>
           <ref name="CrossReference"/>
           <ref name="Char"/>
+          <ref name="WordlistChar"/>
           <ref name="Figure"/>
           <ref name="Verse"/>
           <ref name="Break"/>
@@ -499,6 +503,7 @@
           <ref name="Footnote"/>
           <ref name="CrossReference"/>
           <ref name="Char"/>
+          <ref name="WordlistChar"/>
           <ref name="Figure"/>
           <ref name="Verse"/>
           <ref name="Break"/>
@@ -556,8 +561,6 @@
             <!-- To represent where the original text is in a secondary language or from an alternate text source -->
             <value>tl</value>
             <!-- For transliterated words -->
-            <value>w</value>
-            <!-- A wordlist text item -->
             <value>wg</value>
             <!-- A Greek Wordlist text item -->
             <value>wh</value>
@@ -587,15 +590,41 @@
         </optional>
         <!-- Present to allow roundtripping to USFM, not needed for publishing -->
         <text/>
-        <zeroOrMore>
-          <choice>
-            <ref name="Reference"/>
-            <ref name="Char"/>
-            <ref name="Footnote"/>
-            <ref name="Break"/>
-            <text/>
-          </choice>
-        </zeroOrMore>
+        <ref name="CharNestOptions"/>
+      </group>
+      <!-- Nested character <char> markup -->
+    </element>
+  </define>
+  <define name="CharNestOptions">
+    <zeroOrMore>
+      <choice>
+        <ref name="Reference"/>
+        <ref name="Char"/>
+        <ref name="Footnote"/>
+        <ref name="Break"/>
+        <text/>
+      </choice>
+    </zeroOrMore>
+  </define>
+  <define name="WordlistChar">
+    <element name="char">
+      <group>
+        <attribute name="style">
+           <value>w</value>
+           <!-- A wordlist text item -->
+          <!-- A character style, for small capitalization text -->
+        </attribute>
+        <optional>
+          <attribute name="lemma">
+            <data type="string">
+              <param name="pattern">\w+</param>
+            </data>
+          </attribute>
+        </optional>
+        <data type="string">
+          <param name="pattern">\w+</param>
+        </data>
+        <ref name="CharNestOptions"/>
       </group>
       <!-- Nested character <char> markup -->
     </element>
@@ -622,6 +651,7 @@
           <choice>
             <ref name="Reference"/>
             <ref name="Char"/>
+            <ref name="WordlistChar"/>
             <ref name="IntroChar"/>
             <ref name="Footnote"/>
             <ref name="Break"/>
@@ -771,6 +801,7 @@
         <!-- Present to allow roundtripping to USFM, not needed for publishing -->
         <choice>
           <ref name="Char"/>
+          <ref name="WordlistChar"/>
           <ref name="FootnoteVerse"/>
           <ref name="Reference"/>
           <text/>
@@ -832,6 +863,7 @@
         <!-- Present to allow roundtripping to USFM, not needed for publishing -->
         <choice>
           <ref name="Char"/>
+          <ref name="WordlistChar"/>
           <ref name="Reference"/>
           <text/>
         </choice>
