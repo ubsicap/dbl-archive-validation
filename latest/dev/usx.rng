@@ -617,14 +617,14 @@
           <attribute name="lemma">
             <data type="string">
               <param name="minLength">1</param>
-              <param name="pattern">\w+( \w+)*</param>
+              <param name="pattern">\w+( \(?\w+)*\)?</param>
             </data>
           </attribute>
         </optional>
         <!-- Present to allow roundtripping to USFM, not needed for publishing -->
         <data type="string">
           <param name="minLength">1</param>
-          <param name="pattern">\w+( \w+)*</param>
+          <param name="pattern">\w+( \(?\w+)*\)?</param>
         </data>
       </interleave>
       <!-- (Reference | Char | Footnote | Break | text)* -->

@@ -469,9 +469,9 @@ WordlistCharWithLemma =
         # A wordlist text item
         }&
         attribute closed { xsd:boolean }?&
-        attribute lemma { xsd:string { minLength = "1" pattern = "\w+( \w+)*" } }?&
+        attribute lemma { xsd:string { minLength = "1" pattern = "\w+( \(?\w+)*\)?" } }?&
         # Present to allow roundtripping to USFM, not needed for publishing
-        xsd:string { minLength = "1" pattern = "\w+( \w+)*" }
+        xsd:string { minLength = "1" pattern = "\w+( \(?\w+)*\)?" }
         # (Reference | Char | Footnote | Break | text)*
     }
 
