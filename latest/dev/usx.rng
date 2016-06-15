@@ -603,7 +603,7 @@
   </define>
   <define name="WordlistCharWithLemma">
     <element name="char">
-      <interleave>
+      <group>
         <attribute name="style">
           <value>w</value>
           <!-- A wordlist text item -->
@@ -614,6 +614,7 @@
           </attribute>
         </optional>
         <optional>
+          <!-- Present to allow roundtripping to USFM, not needed for publishing -->
           <attribute name="lemma">
             <data type="string">
               <param name="minLength">1</param>
@@ -621,12 +622,12 @@
             </data>
           </attribute>
         </optional>
-        <!-- Present to allow roundtripping to USFM, not needed for publishing -->
+        <!-- lemma/citation form -->
         <data type="string">
           <param name="minLength">1</param>
           <param name="pattern">\w+( \(?\w+)*\)?</param>
         </data>
-      </interleave>
+      </group>
       <!-- (Reference | Char | Footnote | Break | text)* -->
     </element>
   </define>
