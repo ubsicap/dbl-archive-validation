@@ -509,121 +509,96 @@
   </define>
   <define name="Char">
     <element name="char">
-      <choice>
-        <group>
-          <attribute name="style">
-            <choice>
-              <value>va</value>
-              <!-- Second (alternate) verse number (for coding dual numeration in Psalms; see also NRSV Exo 22.1-4) -->
-              <value>vp</value>
-              <!-- Published verse marker - this is a verse marking that would be used in the published text -->
-              <value>ca</value>
-              <!-- Second (alternate) chapter number -->
-              <value>qac</value>
-              <!-- Poetry text, Acrostic markup of the first character of a line of acrostic poetry -->
-              <value>qs</value>
-              <!-- Poetry text, Selah -->
-              <value>add</value>
-              <!-- For a translational addition to the text -->
-              <value>addpn</value>
-              <!-- For chinese words to be dot underline & underline -->
-              <value>bk</value>
-              <!-- For the quoted name of a book -->
-              <value>dc</value>
-              <!-- Deuterocanonical/LXX additions or insertions in the Protocanonical text -->
-              <value>efm</value>
-              <!-- Reference to caller of previous footnote in a study Bible -->
-              <value>fm</value>
-              <!-- Reference to caller of previous footnote -->
-              <value>k</value>
-              <!-- For a keyword -->
-              <value>nd</value>
-              <!-- For name of deity -->
-              <value>ndx</value>
-              <!-- A subject index text item -->
-              <value>ord</value>
-              <!-- For the text portion of an ordinal number -->
-              <value>pn</value>
-              <!-- For a proper name -->
-              <value>pro</value>
-              <!-- For indicating pronunciation in CJK texts -->
-              <value>qt</value>
-              <!-- For Old Testament quoted text appearing in the New Testament -->
-              <value>rq</value>
-              <!-- A cross-reference indicating the source text for the preceding quotation. -->
-              <value>sig</value>
-              <!-- For the signature of the author of an Epistle -->
-              <value>sls</value>
-              <!-- To represent where the original text is in a secondary language or from an alternate text source -->
-              <value>tl</value>
-              <!-- For transliterated words -->
-              <value>wg</value>
-              <!-- A Greek Wordlist text item -->
-              <value>wh</value>
-              <!-- A Hebrew wordlist text item -->
-              <value>wj</value>
-              <!-- For marking the words of Jesus -->
-              <value>xt</value>
-              <!-- A target reference(s) -->
-              <value>no</value>
-              <!-- A character style, use normal text -->
-              <value>it</value>
-              <!-- A character style, use italic text -->
-              <value>bd</value>
-              <!-- A character style, use bold text -->
-              <value>bdit</value>
-              <!-- A character style, use bold + italic text -->
-              <value>em</value>
-              <!-- A character style, use emphasized text style -->
-              <value>sc</value>
-            </choice>
-            <!-- A character style, for small capitalization text -->
-          </attribute>
-          <optional>
-            <attribute name="closed">
-              <data type="boolean"/>
-            </attribute>
-          </optional>
-          <!-- Present to allow roundtripping to USFM, not needed for publishing -->
-          <text/>
-          <ref name="CharNestOptions"/>
-          <!-- Nested character <char> markup -->
-        </group>
-        <ref name="WordlistCharGroup"/>
-      </choice>
-    </element>
-  </define>
-  <define name="CharNestOptions">
-    <zeroOrMore>
-      <choice>
-        <ref name="Reference"/>
-        <ref name="Char"/>
-        <ref name="Footnote"/>
-        <ref name="Break"/>
-        <text/>
-      </choice>
-    </zeroOrMore>
-  </define>
-  <define name="WordlistCharGroup">
-    <group>
-      <attribute name="style">
-        <value>w</value>
-        <!-- A wordlist text item -->
-        <!-- A character style, for small capitalization text -->
-      </attribute>
-      <optional>
-        <attribute name="lemma">
-          <data type="string">
-            <param name="pattern">\w+</param>
-          </data>
+      <group>
+        <attribute name="style">
+          <choice>
+            <value>va</value>
+            <!-- Second (alternate) verse number (for coding dual numeration in Psalms; see also NRSV Exo 22.1-4) -->
+            <value>vp</value>
+            <!-- Published verse marker - this is a verse marking that would be used in the published text -->
+            <value>ca</value>
+            <!-- Second (alternate) chapter number -->
+            <value>qac</value>
+            <!-- Poetry text, Acrostic markup of the first character of a line of acrostic poetry -->
+            <value>qs</value>
+            <!-- Poetry text, Selah -->
+            <value>add</value>
+            <!-- For a translational addition to the text -->
+            <value>addpn</value>
+            <!-- For chinese words to be dot underline & underline -->
+            <value>bk</value>
+            <!-- For the quoted name of a book -->
+            <value>dc</value>
+            <!-- Deuterocanonical/LXX additions or insertions in the Protocanonical text -->
+            <value>efm</value>
+            <!-- Reference to caller of previous footnote in a study Bible -->
+            <value>fm</value>
+            <!-- Reference to caller of previous footnote -->
+            <value>k</value>
+            <!-- For a keyword -->
+            <value>nd</value>
+            <!-- For name of deity -->
+            <value>ndx</value>
+            <!-- A subject index text item -->
+            <value>ord</value>
+            <!-- For the text portion of an ordinal number -->
+            <value>pn</value>
+            <!-- For a proper name -->
+            <value>pro</value>
+            <!-- For indicating pronunciation in CJK texts -->
+            <value>qt</value>
+            <!-- For Old Testament quoted text appearing in the New Testament -->
+            <value>rq</value>
+            <!-- A cross-reference indicating the source text for the preceding quotation. -->
+            <value>sig</value>
+            <!-- For the signature of the author of an Epistle -->
+            <value>sls</value>
+            <!-- To represent where the original text is in a secondary language or from an alternate text source -->
+            <value>tl</value>
+            <!-- For transliterated words -->
+            <value>w</value>
+            <!-- A wordlist text item -->
+            <value>wg</value>
+            <!-- A Greek Wordlist text item -->
+            <value>wh</value>
+            <!-- A Hebrew wordlist text item -->
+            <value>wj</value>
+            <!-- For marking the words of Jesus -->
+            <value>xt</value>
+            <!-- A target reference(s) -->
+            <value>no</value>
+            <!-- A character style, use normal text -->
+            <value>it</value>
+            <!-- A character style, use italic text -->
+            <value>bd</value>
+            <!-- A character style, use bold text -->
+            <value>bdit</value>
+            <!-- A character style, use bold + italic text -->
+            <value>em</value>
+            <!-- A character style, use emphasized text style -->
+            <value>sc</value>
+          </choice>
+          <!-- A character style, for small capitalization text -->
         </attribute>
-      </optional>
-      <data type="string">
-        <param name="pattern">\w+</param>
-      </data>
-      <ref name="CharNestOptions"/>
+        <optional>
+          <attribute name="closed">
+            <data type="boolean"/>
+          </attribute>
+        </optional>
+        <!-- Present to allow roundtripping to USFM, not needed for publishing -->
+        <text/>
+        <zeroOrMore>
+          <choice>
+            <ref name="Reference"/>
+            <ref name="Char"/>
+            <ref name="Footnote"/>
+            <ref name="Break"/>
+            <text/>
+          </choice>
+        </zeroOrMore>
+      </group>
       <!-- Nested character <char> markup -->
-    </group>
+    </element>
   </define>
   <define name="IntroChar">
     <element name="char">
