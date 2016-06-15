@@ -3,7 +3,7 @@ syntax: glob
 build
 *.swp
 metadata_project.rng
-source/text/*/usx.rng
+source/*/*/*.rng
 *.log
 *.xpr
 source/text/usxtest/

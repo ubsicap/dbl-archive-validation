@@ -1,7 +1,0 @@
-syntax: glob
-*.orig
-build
-*.swp
-metadata_project.rng
-usx.rng
-*.log
