@@ -625,7 +625,7 @@
         <!-- lemma/citation form -->
         <data type="string">
           <param name="minLength">1</param>
-          <param name="pattern">\w+( \(?\w+)*\)?</param>
+          <param name="pattern">[^\|]+</param>
         </data>
       </group>
       <!-- (Reference | Char | Footnote | Break | text)* -->

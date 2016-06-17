@@ -472,7 +472,7 @@ WordlistCharWithLemma =
         # Present to allow roundtripping to USFM, not needed for publishing
         attribute lemma { xsd:string { minLength = "1" pattern = "\w+( \(?\w+)*\)?" } }?,
         # lemma/citation form
-        xsd:string { minLength = "1" pattern = "\w+( \(?\w+)*\)?" }
+        xsd:string { minLength = "1" pattern = "[^\|]+" }
         # (Reference | Char | Footnote | Break | text)*
     }
 
