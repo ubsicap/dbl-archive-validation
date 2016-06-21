@@ -618,17 +618,22 @@
           <attribute name="lemma">
             <data type="string">
               <param name="minLength">1</param>
-              <param name="pattern">\w+( \(?\w+)*\)?</param>
             </data>
           </attribute>
         </optional>
         <!-- lemma/citation form -->
-        <data type="string">
-          <param name="minLength">1</param>
-          <param name="pattern">[^\|]+</param>
-        </data>
+        <text/>
+        <zeroOrMore>
+          <choice>
+            <ref name="Reference"/>
+            <ref name="Char"/>
+            <ref name="Footnote"/>
+            <ref name="Break"/>
+            <text/>
+          </choice>
+        </zeroOrMore>
       </group>
-      <!-- (Reference | Char | Footnote | Break | text)* -->
+      <!-- Nested character <char> markup -->
     </element>
   </define>
   <define name="IntroChar">

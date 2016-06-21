@@ -470,10 +470,11 @@ WordlistCharWithLemma =
         },
         attribute closed { xsd:boolean }?,
         # Present to allow roundtripping to USFM, not needed for publishing
-        attribute lemma { xsd:string { minLength = "1" pattern = "\w+( \(?\w+)*\)?" } }?,
+        attribute lemma { xsd:string { minLength = "1"} }?,
         # lemma/citation form
-        xsd:string { minLength = "1" pattern = "[^\|]+" }
-        # (Reference | Char | Footnote | Break | text)*
+        text,
+        (Reference | Char | Footnote | Break | text)*
+        # Nested character <char> markup
     }
 
 IntroChar =
