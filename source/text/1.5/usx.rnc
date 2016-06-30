@@ -1,7 +1,7 @@
 # usx.rnc
 # -----------------------------------------------------------------------------
-# A compact syntax Relax NG Schema for USX 2.5
-# DBL bundle version = 1.4
+# A compact syntax Relax NG Schema for USX 2.6
+# DBL bundle version = 1.5
 # -----------------------------------------------------------------------------
 
 namespace a = "http://relaxng.org/ns/compatibility/annotations/1.0"
@@ -387,7 +387,7 @@ Para =
     element para {
         paraStyle, (Reference | Footnote | CrossReference | Char | Figure | Verse | Break | text)+
     }
-Char =
+Char = (
     element char {
         attribute style {
             ("va"
@@ -434,8 +434,6 @@ Char =
              | # To represent where the original text is in a secondary language or from an alternate text source
                "tl"
              | # For transliterated words
-               "w"
-             | # A wordlist text item
                "wg"
              | # A Greek Wordlist text item
                "wh"
@@ -462,7 +460,23 @@ Char =
         text,
         (Reference | Char | Footnote | Break | text)*
         # Nested character <char> markup
+    } | WordlistCharWithLemma)
+
+WordlistCharWithLemma = 
+    element char {
+        attribute style { 
+        "w" 
+        # A wordlist text item
+        },
+        attribute closed { xsd:boolean }?,
+        # Present to allow roundtripping to USFM, not needed for publishing
+        attribute lemma { xsd:string { minLength = "1"} }?,
+        # lemma/citation form
+        text,
+        (Reference | Char | Footnote | Break | text)*
+        # Nested character <char> markup
     }
+
 IntroChar =
     element char {
         attribute style {
