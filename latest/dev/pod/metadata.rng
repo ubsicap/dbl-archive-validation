@@ -1,0 +1,924 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  metadata.rnc
+  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+  A compact syntax Relax NG Schema for the DBL @type="pod" metadata file.
+  DBL pod bundle version = 1.0
+-->
+<!--
+  - Suggested Dublin Core Metadata (DCMI) element/refinement relationships are 
+    added as documentation strings "## DCMI: "
+  - A syntax encoding scheme may be mentioned after the DCMI documentation in 
+    parentheses; e.g. language/iso (ISO639-3)
+  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+-->
+<grammar ns="" xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0" xmlns="http://relaxng.org/ns/structure/1.0" datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes">
+  <start>
+    <ref name="m.DBLMetadata"/>
+  </start>
+  <div>
+    <define name="m._.contentType.enum">
+      <value>xhtml</value>
+    </define>
+    <define name="m._.contentType">
+      <attribute name="contentType">
+        <ref name="m._.contentType.enum"/>
+      </attribute>
+    </define>
+    <define name="m._.code">
+      <attribute name="code">
+        <ref name="bookCode.enum"/>
+      </attribute>
+    </define>
+    <define name="m._datatype.string2">
+      <data type="string">
+        <param name="minLength">2</param>
+      </data>
+    </define>
+  </div>
+  <div>
+    <define name="m.DBLMetadata.type">
+      <attribute name="type">
+        <value>pod</value>
+      </attribute>
+    </define>
+    <define name="m.DBLMetadata.typeVersion">
+      <attribute name="typeVersion">
+        <value>1.0</value>
+      </attribute>
+    </define>
+    <define name="m.DBLMetadata.id">
+      <attribute name="id">
+        <a:documentation>id is overwritten at submission</a:documentation>
+        <data type="string">
+          <param name="pattern">[a-f0-9]{16}</param>
+        </data>
+      </attribute>
+    </define>
+    <define name="m.DBLMetadata.revision">
+      <attribute name="revision">
+        <data type="integer"/>
+      </attribute>
+    </define>
+    <define name="m.DBLMetadata.attlist">
+      <interleave>
+        <ref name="m.DBLMetadata.type"/>
+        <ref name="m.DBLMetadata.typeVersion"/>
+        <ref name="m.DBLMetadata.id"/>
+        <ref name="m.DBLMetadata.revision"/>
+      </interleave>
+    </define>
+    <define name="m.DBLMetadata">
+      <element name="DBLMetadata">
+        <interleave>
+          <ref name="m.DBLMetadata.attlist"/>
+          <ref name="m.identification"/>
+          <ref name="m.confidential"/>
+          <ref name="m.relationships"/>
+          <ref name="m.agencies"/>
+          <ref name="m.language"/>
+          <ref name="m.books"/>
+          <ref name="m.copyright"/>
+          <optional>
+            <ref name="m.promotion"/>
+          </optional>
+          <ref name="m.archiveStatus"/>
+        </interleave>
+      </element>
+    </define>
+  </div>
+  <div>
+    <define name="m.identification">
+      <element name="identification">
+        <interleave>
+          <ref name="m.name"/>
+          <ref name="m.nameLocal"/>
+          <ref name="m.description"/>
+          <ref name="m.dateCompleted"/>
+          <zeroOrMore>
+            <ref name="m.systemId"/>
+          </zeroOrMore>
+          <ref name="m.bundleProducer"/>
+        </interleave>
+      </element>
+    </define>
+  </div>
+  <div>
+    <define name="m.name">
+      <element name="name">
+        <a:documentation>DCMI: title</a:documentation>
+        <ref name="m._datatype.string2"/>
+      </element>
+    </define>
+  </div>
+  <div>
+    <define name="m.nameLocal">
+      <element name="nameLocal">
+        <a:documentation>nameLocal should default to name</a:documentation>
+        <ref name="m._datatype.string2"/>
+      </element>
+    </define>
+  </div>
+  <div>
+    <define name="m.description">
+      <element name="description">
+        <a:documentation>DCMI: description</a:documentation>
+        <ref name="m._datatype.string2"/>
+      </element>
+    </define>
+  </div>
+  <div>
+    <define name="m.dateCompleted">
+      <element name="dateCompleted">
+        <a:documentation>DCMI: date</a:documentation>
+        <optional>
+          <choice>
+            <data type="date"/>
+            <data type="gYear"/>
+            <data type="gYearMonth"/>
+            <data type="dateTime"/>
+          </choice>
+        </optional>
+      </element>
+    </define>
+  </div>
+  <div>
+    <define name="m.systemId.type.enum">
+      <choice>
+        <value>gbc</value>
+        <a:documentation>Global Bible Catalogue entry ID</a:documentation>
+        <value>tms</value>
+        <a:documentation>UBS Translation Management System database ID</a:documentation>
+        <value>reap</value>
+        <a:documentation>SIL REAP database ID</a:documentation>
+        <value>dbp</value>
+        <a:documentation>FCBH Digital Bible Platform DAM ID</a:documentation>
+      </choice>
+    </define>
+    <define name="m.systemId.type">
+      <attribute name="type">
+        <ref name="m.systemId.type.enum"/>
+      </attribute>
+    </define>
+    <define name="m.systemId.attlist">
+      <ref name="m.systemId.type"/>
+    </define>
+    <define name="m.systemId">
+      <element name="systemId">
+        <ref name="m.systemId.attlist"/>
+        <ref name="m._datatype.string2"/>
+      </element>
+    </define>
+  </div>
+  <div>
+    <define name="m.bundleProducer">
+      <element name="bundleProducer">
+        <a:documentation>bundleProducer is overwritten by PA</a:documentation>
+        <ref name="m._datatype.string2"/>
+      </element>
+    </define>
+  </div>
+  <div>
+    <define name="m.confidential">
+      <element name="confidential">
+        <a:documentation>DCMI: accessRights/confidential</a:documentation>
+        <data type="boolean"/>
+      </element>
+    </define>
+  </div>
+  <div>
+    <define name="m.relationships">
+      <element name="relationships">
+        <oneOrMore>
+          <ref name="m.relation"/>
+        </oneOrMore>
+      </element>
+    </define>
+  </div>
+  <div>
+    <define name="m.relation.type.enum">
+      <choice>
+        <value>text</value>
+        <value>print</value>
+        <value>audio</value>
+        <value>video</value>
+        <value>ebook</value>
+        <value>pod</value>
+      </choice>
+    </define>
+    <define name="m.relation.type">
+      <attribute name="type">
+        <ref name="m.relation.type.enum"/>
+      </attribute>
+    </define>
+    <define name="m.relation.id">
+      <attribute name="id">
+        <data type="string">
+          <param name="pattern">[a-f0-9]{16}</param>
+        </data>
+      </attribute>
+    </define>
+    <define name="m.relation.revision">
+      <attribute name="revision">
+        <data type="integer"/>
+      </attribute>
+    </define>
+    <define name="m.relation.attlist">
+      <interleave>
+        <ref name="m.relation.type"/>
+        <ref name="m.relation.id"/>
+        <ref name="m.relation.revision"/>
+      </interleave>
+    </define>
+    <define name="m.relation">
+      <element name="relation">
+        <a:documentation>DCMI: relation</a:documentation>
+        <ref name="m.relation.attlist"/>
+      </element>
+    </define>
+  </div>
+  <div>
+    <define name="m.agencies">
+      <element name="agencies">
+        <interleave>
+          <oneOrMore>
+            <ref name="m.rightsHolder"/>
+          </oneOrMore>
+          <optional>
+            <ref name="m.rightsAdmin"/>
+          </optional>
+          <oneOrMore>
+            <ref name="m.contributor"/>
+          </oneOrMore>
+        </interleave>
+      </element>
+    </define>
+  </div>
+  <div>
+    <define name="m.rightsHolder.abbr">
+      <attribute name="abbr">
+        <ref name="m._datatype.string2"/>
+      </attribute>
+    </define>
+    <define name="m.rightsHolder.url">
+      <attribute name="url">
+        <data type="anyURI"/>
+      </attribute>
+    </define>
+    <define name="m.rightsHolder.local">
+      <attribute name="local">
+        <ref name="m._datatype.string2"/>
+      </attribute>
+    </define>
+    <define name="m.rightsHolder.attlist">
+      <interleave>
+        <optional>
+          <ref name="m.rightsHolder.abbr"/>
+        </optional>
+        <optional>
+          <ref name="m.rightsHolder.url"/>
+        </optional>
+        <optional>
+          <ref name="m.rightsHolder.local"/>
+        </optional>
+      </interleave>
+    </define>
+    <define name="m.rightsHolder">
+      <element name="rightsHolder">
+        <a:documentation>DCMI: rightsHolder</a:documentation>
+        <ref name="m.rightsHolder.attlist"/>
+        <attribute name="uid">
+          <ref name="m._datatype.string2"/>
+        </attribute>
+        <ref name="m._datatype.string2"/>
+      </element>
+    </define>
+  </div>
+  <div>
+    <define name="m.rightsAdmin.url">
+      <attribute name="url">
+        <data type="anyURI"/>
+      </attribute>
+    </define>
+    <define name="m.rightsAdmin.attlist">
+      <optional>
+        <ref name="m.rightsAdmin.url"/>
+      </optional>
+    </define>
+    <define name="m.rightsAdmin">
+      <element name="rightsAdmin">
+        <a:documentation>DCMI: rightsHolder</a:documentation>
+        <ref name="m.rightsAdmin.attlist"/>
+        <attribute name="uid">
+          <ref name="m._datatype.string2"/>
+        </attribute>
+        <ref name="m._datatype.string2"/>
+      </element>
+    </define>
+  </div>
+  <div>
+    <define name="m.contributor.content">
+      <attribute name="content">
+        <data type="boolean"/>
+      </attribute>
+    </define>
+    <define name="m.contributor.publication">
+      <attribute name="publication">
+        <data type="boolean"/>
+      </attribute>
+    </define>
+    <define name="m.contributor.management">
+      <attribute name="management">
+        <data type="boolean"/>
+      </attribute>
+    </define>
+    <define name="m.contributor.finance">
+      <attribute name="finance">
+        <data type="boolean"/>
+      </attribute>
+    </define>
+    <define name="m.contributor.qa">
+      <attribute name="qa">
+        <data type="boolean"/>
+      </attribute>
+    </define>
+    <define name="m.contributor.attlist">
+      <oneOrMore>
+        <choice>
+          <ref name="m.contributor.content"/>
+          <ref name="m.contributor.publication"/>
+          <ref name="m.contributor.management"/>
+          <ref name="m.contributor.finance"/>
+          <ref name="m.contributor.qa"/>
+        </choice>
+      </oneOrMore>
+    </define>
+    <define name="m.contributor">
+      <element name="contributor">
+        <a:documentation>DCMI: contributor</a:documentation>
+        <optional>
+          <ref name="m.contributor.attlist"/>
+        </optional>
+        <attribute name="uid">
+          <ref name="m._datatype.string2"/>
+        </attribute>
+        <ref name="m._datatype.string2"/>
+      </element>
+    </define>
+  </div>
+  <div>
+    <define name="m.language">
+      <element name="language">
+        <interleave>
+          <ref name="m.language.iso"/>
+          <ref name="m.language.name"/>
+          <ref name="m.ldml"/>
+          <optional>
+            <ref name="m.rod"/>
+          </optional>
+        </interleave>
+      </element>
+    </define>
+  </div>
+  <div>
+    <define name="m.language.iso">
+      <element name="iso">
+        <a:documentation>DCMI: language/iso (ISO639-3)</a:documentation>
+        <data type="string">
+          <param name="pattern">[a-z][a-z][a-z]</param>
+        </data>
+      </element>
+    </define>
+  </div>
+  <div>
+    <define name="m.language.name">
+      <element name="name">
+        <a:documentation>DCMI: subject/language (ISO639-3)</a:documentation>
+        <ref name="m._datatype.string2"/>
+      </element>
+    </define>
+  </div>
+  <div>
+    <define name="m.ldml">
+      <element name="ldml">
+        <a:documentation>DCMI: language/ldml</a:documentation>
+        <optional>
+          <data type="string">
+            <param name="pattern">[A-Za-z]{2,3}([\-_][A-Za-z0-9]+){0,3}</param>
+          </data>
+        </optional>
+      </element>
+    </define>
+  </div>
+  <div>
+    <define name="m.rod">
+      <element name="rod">
+        <a:documentation>DCMI: language/rod</a:documentation>
+        <optional>
+          <data type="string">
+            <param name="pattern">[0-9]{5}</param>
+          </data>
+        </optional>
+      </element>
+    </define>
+  </div>
+  <div>
+    <define name="m.books">
+      <element name="books">
+        <oneOrMore>
+          <ref name="m.book"/>
+        </oneOrMore>
+      </element>
+    </define>
+  </div>
+  <div>
+    <define name="m.book.attlist">
+      <ref name="m._.code"/>
+    </define>
+    <define name="m.book">
+      <element name="book">
+        <ref name="m.book.attlist"/>
+      </element>
+    </define>
+  </div>
+  <div>
+    <define name="m.copyright">
+      <element name="copyright">
+        <ref name="m.statement"/>
+      </element>
+    </define>
+  </div>
+  <div>
+    <define name="m.statement.attlist">
+      <ref name="m._.contentType"/>
+    </define>
+    <define name="m.statement">
+      <element name="statement">
+        <a:documentation>For example: (C)2002, 2012 United Bible Societies
+DCMI: rights</a:documentation>
+        <ref name="m.statement.attlist"/>
+        <oneOrMore>
+          <ref name="m.htmlMarkup"/>
+        </oneOrMore>
+      </element>
+    </define>
+  </div>
+  <div>
+    <define name="m.promotion">
+      <element name="promotion">
+        <ref name="m.promoVersionInfo"/>
+      </element>
+    </define>
+  </div>
+  <div>
+    <define name="m.promoVersionInfo.attlist">
+      <ref name="m._.contentType"/>
+    </define>
+    <define name="m.promoVersionInfo">
+      <element name="promoVersionInfo">
+        <a:documentation>DCMI: description/pubPromoVersionInfo</a:documentation>
+        <ref name="m.promoVersionInfo.attlist"/>
+        <oneOrMore>
+          <ref name="m.htmlMarkup"/>
+        </oneOrMore>
+      </element>
+    </define>
+  </div>
+  <div>
+    <define name="m.archiveStatus">
+      <element name="archiveStatus">
+        <interleave>
+          <ref name="m.archivistName"/>
+          <ref name="m.dateArchived"/>
+          <ref name="m.dateUpdated"/>
+          <ref name="m.comments"/>
+        </interleave>
+      </element>
+    </define>
+  </div>
+  <div>
+    <define name="m.archivistName">
+      <element name="archivistName">
+        <a:documentation>archivistName is overwritten by PA
+DCMI: contributor/archivist</a:documentation>
+        <ref name="m._datatype.string2"/>
+      </element>
+    </define>
+  </div>
+  <div>
+    <define name="m.dateArchived">
+      <element name="dateArchived">
+        <a:documentation>dateArchived is overwritten by PA
+DCMI: dateSubmitted (xsd:dateTime)</a:documentation>
+        <data type="dateTime"/>
+      </element>
+    </define>
+  </div>
+  <div>
+    <define name="m.dateUpdated">
+      <element name="dateUpdated">
+        <a:documentation>dateUpdated is overwritten by PA
+DCMI: modified (xsd:dateTime)</a:documentation>
+        <data type="dateTime"/>
+      </element>
+    </define>
+  </div>
+  <div>
+    <define name="m.comments">
+      <element name="comments">
+        <a:documentation>DCMI: abstract</a:documentation>
+        <data type="string">
+          <param name="minLength">2</param>
+          <param name="maxLength">255</param>
+        </data>
+      </element>
+    </define>
+  </div>
+  <div>
+    <define name="m.htmlMarkup">
+      <choice>
+        <ref name="m.p"/>
+        <ref name="m.h1"/>
+        <ref name="m.h2"/>
+        <ref name="m.h3"/>
+        <ref name="m.ul"/>
+        <ref name="m.ol"/>
+        <ref name="m.blockquote"/>
+        <ref name="m.htmlCharMarkup"/>
+      </choice>
+    </define>
+    <define name="m.p">
+      <element name="p">
+        <oneOrMore>
+          <choice>
+            <text/>
+            <ref name="m.htmlCharMarkup"/>
+          </choice>
+        </oneOrMore>
+      </element>
+    </define>
+    <define name="m.h1">
+      <element name="h1">
+        <text/>
+      </element>
+    </define>
+    <define name="m.h2">
+      <element name="h2">
+        <text/>
+      </element>
+    </define>
+    <define name="m.h3">
+      <element name="h3">
+        <text/>
+      </element>
+    </define>
+    <define name="m.ol">
+      <element name="ol">
+        <oneOrMore>
+          <ref name="m.li"/>
+        </oneOrMore>
+      </element>
+    </define>
+    <define name="m.ul">
+      <element name="ul">
+        <oneOrMore>
+          <ref name="m.li"/>
+        </oneOrMore>
+      </element>
+    </define>
+    <define name="m.li">
+      <element name="li">
+        <text/>
+      </element>
+    </define>
+    <define name="m.blockquote">
+      <element name="blockquote">
+        <text/>
+      </element>
+    </define>
+  </div>
+  <div>
+    <define name="m.htmlCharMarkup">
+      <choice>
+        <text/>
+        <ref name="m.a"/>
+        <ref name="m.img"/>
+        <ref name="m.br"/>
+        <ref name="m.strong"/>
+        <ref name="m.b"/>
+        <ref name="m.em"/>
+        <ref name="m.i"/>
+      </choice>
+    </define>
+    <define name="m.a.href">
+      <attribute name="href">
+        <data type="anyURI"/>
+      </attribute>
+    </define>
+    <define name="m.a.attlist">
+      <ref name="m.a.href"/>
+    </define>
+    <define name="m.a">
+      <element name="a">
+        <ref name="m.a.attlist"/>
+        <ref name="m.htmlCharMarkup"/>
+      </element>
+    </define>
+    <define name="m.img.src">
+      <attribute name="src">
+        <data type="anyURI"/>
+      </attribute>
+    </define>
+    <define name="m.img.alt">
+      <attribute name="alt"/>
+    </define>
+    <define name="m.img.attlist">
+      <ref name="m.img.src"/>
+      <optional>
+        <ref name="m.img.alt"/>
+      </optional>
+    </define>
+    <define name="m.img">
+      <element name="img">
+        <ref name="m.img.attlist"/>
+        <text/>
+      </element>
+    </define>
+    <define name="m.br">
+      <element name="br">
+        <empty/>
+      </element>
+    </define>
+    <define name="m.strong">
+      <element name="strong">
+        <text/>
+      </element>
+    </define>
+    <define name="m.b">
+      <element name="b">
+        <text/>
+      </element>
+    </define>
+    <define name="m.em">
+      <element name="em">
+        <text/>
+      </element>
+    </define>
+    <define name="m.i">
+      <element name="i">
+        <text/>
+      </element>
+    </define>
+  </div>
+  <define name="bookCode.enum">
+    <choice>
+      <value>GEN</value>
+      <!-- Genesis -->
+      <value>EXO</value>
+      <!-- Exodus -->
+      <value>LEV</value>
+      <!-- Leviticus -->
+      <value>NUM</value>
+      <!-- Numbers -->
+      <value>DEU</value>
+      <!-- Deuteronomy -->
+      <value>JOS</value>
+      <!-- Joshua -->
+      <value>JDG</value>
+      <!-- Judges -->
+      <value>RUT</value>
+      <!-- Ruth -->
+      <value>1SA</value>
+      <!-- 1 Samuel -->
+      <value>2SA</value>
+      <!-- 2 Samuel -->
+      <value>1KI</value>
+      <!-- 1 Kings -->
+      <value>2KI</value>
+      <!-- 2 Kings -->
+      <value>1CH</value>
+      <!-- 1 Chronicles -->
+      <value>2CH</value>
+      <!-- 2 Chronicles -->
+      <value>EZR</value>
+      <!-- Ezra -->
+      <value>NEH</value>
+      <!-- Nehemiah -->
+      <value>EST</value>
+      <!-- Esther (Hebrew) -->
+      <value>JOB</value>
+      <!-- Job -->
+      <value>PSA</value>
+      <!-- Psalms -->
+      <value>PRO</value>
+      <!-- Proverbs -->
+      <value>ECC</value>
+      <!-- Ecclesiastes -->
+      <value>SNG</value>
+      <!-- Song of Songs -->
+      <value>ISA</value>
+      <!-- Isaiah -->
+      <value>JER</value>
+      <!-- Jeremiah -->
+      <value>LAM</value>
+      <!-- Lamentations -->
+      <value>EZK</value>
+      <!-- Ezekiel -->
+      <value>DAN</value>
+      <!-- Daniel (Hebrew) -->
+      <value>HOS</value>
+      <!-- Hosea -->
+      <value>JOL</value>
+      <!-- Joel -->
+      <value>AMO</value>
+      <!-- Amos -->
+      <value>OBA</value>
+      <!-- Obadiah -->
+      <value>JON</value>
+      <!-- Jonah -->
+      <value>MIC</value>
+      <!-- Micah -->
+      <value>NAM</value>
+      <!-- Nahum -->
+      <value>HAB</value>
+      <!-- Habakkuk -->
+      <value>ZEP</value>
+      <!-- Zephaniah -->
+      <value>HAG</value>
+      <!-- Haggai -->
+      <value>ZEC</value>
+      <!-- Zechariah -->
+      <value>MAL</value>
+      <!-- Malachi -->
+      <value>MAT</value>
+      <!-- Matthew -->
+      <value>MRK</value>
+      <!-- Mark -->
+      <value>LUK</value>
+      <!-- Luke -->
+      <value>JHN</value>
+      <!-- John -->
+      <value>ACT</value>
+      <!-- Acts -->
+      <value>ROM</value>
+      <!-- Romans -->
+      <value>1CO</value>
+      <!-- 1 Corinthians -->
+      <value>2CO</value>
+      <!-- 2 Corinthians -->
+      <value>GAL</value>
+      <!-- Galatians -->
+      <value>EPH</value>
+      <!-- Ephesians -->
+      <value>PHP</value>
+      <!-- Philippians -->
+      <value>COL</value>
+      <!-- Colossians -->
+      <value>1TH</value>
+      <!-- 1 Thessalonians -->
+      <value>2TH</value>
+      <!-- 2 Thessalonians -->
+      <value>1TI</value>
+      <!-- 1 Timothy -->
+      <value>2TI</value>
+      <!-- 2 Timothy -->
+      <value>TIT</value>
+      <!-- Titus -->
+      <value>PHM</value>
+      <!-- Philemon -->
+      <value>HEB</value>
+      <!-- Hebrews -->
+      <value>JAS</value>
+      <!-- James -->
+      <value>1PE</value>
+      <!-- 1 Peter -->
+      <value>2PE</value>
+      <!-- 2 Peter -->
+      <value>1JN</value>
+      <!-- 1 John -->
+      <value>2JN</value>
+      <!-- 2 John -->
+      <value>3JN</value>
+      <!-- 3 John -->
+      <value>JUD</value>
+      <!-- Jude -->
+      <value>REV</value>
+      <!-- Revelation -->
+      <value>TOB</value>
+      <!-- Tobit -->
+      <value>JDT</value>
+      <!-- Judith -->
+      <value>ESG</value>
+      <!-- Esther Greek -->
+      <value>WIS</value>
+      <!-- Wisdom of Solomon -->
+      <value>SIR</value>
+      <!-- Sirach (Ecclesiasticus) -->
+      <value>BAR</value>
+      <!-- Baruch -->
+      <value>LJE</value>
+      <!-- Letter of Jeremiah -->
+      <value>S3Y</value>
+      <!-- Song of 3 Young Men -->
+      <value>SUS</value>
+      <!-- Susanna -->
+      <value>BEL</value>
+      <!-- Bel and the Dragon -->
+      <value>1MA</value>
+      <!-- 1 Maccabees -->
+      <value>2MA</value>
+      <!-- 2 Maccabees -->
+      <value>3MA</value>
+      <!-- 3 Maccabees -->
+      <value>4MA</value>
+      <!-- 4 Maccabees -->
+      <value>1ES</value>
+      <!-- 1 Esdras (Greek) -->
+      <value>2ES</value>
+      <!-- 2 Esdras (Latin) -->
+      <value>MAN</value>
+      <!-- Prayer of Manasseh -->
+      <value>PS2</value>
+      <!-- Psalm 151 -->
+      <value>ODA</value>
+      <!-- Odes -->
+      <value>PSS</value>
+      <!-- Psalms of Solomon -->
+      <value>JSA</value>
+      <!-- actual variant text for JOS, now in LXA text -->
+      <value>JDB</value>
+      <!-- actual variant text for JDG, now in LXA text -->
+      <value>TBS</value>
+      <!-- actual variant text for TOB, now in LXA text -->
+      <value>SST</value>
+      <!-- actual variant text for SUS, now in LXA text -->
+      <value>DNT</value>
+      <!-- actual variant text for DAN, now in LXA text -->
+      <value>BLT</value>
+      <!-- actual variant text for BEL, now in LXA text -->
+      <value>EZA</value>
+      <!-- Apocalypse of Ezra -->
+      <value>5EZ</value>
+      <!-- 5 Ezra -->
+      <value>6EZ</value>
+      <!-- 6 Ezra -->
+      <value>DAG</value>
+      <!-- Daniel Greek -->
+      <value>PS3</value>
+      <!-- Psalms 152-155 -->
+      <value>2BA</value>
+      <!-- 2 Baruch (Apocalypse) -->
+      <value>LBA</value>
+      <!-- Letter of Baruch -->
+      <value>JUB</value>
+      <!-- Jubilees -->
+      <value>ENO</value>
+      <!-- Enoch -->
+      <value>1MQ</value>
+      <!-- 1 Meqabyan -->
+      <value>2MQ</value>
+      <!-- 2 Meqabyan -->
+      <value>3MQ</value>
+      <!-- 3 Meqabyan -->
+      <value>REP</value>
+      <!-- Reproof -->
+      <value>4BA</value>
+      <!-- 4 Baruch -->
+      <value>LAO</value>
+      <!--
+        Laodiceans
+        Non scripture text Id's
+      -->
+      <value>XXA</value>
+      <!-- Extra A, e.g. a hymnal -->
+      <value>XXB</value>
+      <!-- Extra B -->
+      <value>XXC</value>
+      <!-- Extra C -->
+      <value>XXD</value>
+      <!-- Extra D -->
+      <value>XXE</value>
+      <!-- Extra E -->
+      <value>XXF</value>
+      <!-- Extra F -->
+      <value>XXG</value>
+      <!-- Extra G -->
+      <value>FRT</value>
+      <!-- Front Matter -->
+      <value>BAK</value>
+      <!-- Back Matter -->
+      <value>OTH</value>
+      <!-- Other Matter -->
+      <value>INT</value>
+      <!-- Introduction -->
+      <value>CNC</value>
+      <!-- Concordance -->
+      <value>GLO</value>
+      <!-- Glossary -->
+      <value>TDX</value>
+      <!-- Topical Index -->
+      <value>NDX</value>
+    </choice>
+  </define>
+</grammar>
+<!-- Names Index -->
