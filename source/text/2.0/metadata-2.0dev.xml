@@ -743,8 +743,8 @@
       <structure>
         <division id="div-FrontMatter">
           <name id="title"/>
-          <name id="foreword"/>
-          <name id="preface"/>
+          <name id="x-foreword-interconfessional"/>
+          <name id="x-preface-interconfessional"/>
         </division>
         <division id="div-OldTestament">
           <name id="x-intot-titlePage"/>
