@@ -41,7 +41,7 @@
   </type>
   <manifest>
     <container uri="USX">
-      <resource id="FRT" uri="FRT.usx" size="57328" checksum="1CF8C5FC169FB7B26B27B98933F17543" mime-type="application/xml"/>
+      <resource id="FRT" uri="FRT.usx" size="57271" checksum="BCB35EAC6074B80C8DE3BD55A47049F8" mime-type="application/xml"/>
       <resource id="INT" uri="INT.usx" size="4175" checksum="4118198A79A6F6A8FBD7938123FF6693" mime-type="application/xml"/>
       <resource id="GEN" uri="GEN.usx" size="304769" checksum="D814EBB8ABAEBC2C65CBBD64008C8AF0" mime-type="application/xml" />
       <resource id="EXO" uri="EXO.usx" size="249137" checksum="976E107C721CB6D7FA4E1E8BFCC13CFF" mime-type="application/xml"/>
