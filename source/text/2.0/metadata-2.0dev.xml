@@ -42,6 +42,7 @@
   <manifest>
     <container uri="USX">
       <resource id="FRT" uri="FRT.usx" size="57328" checksum="1CF8C5FC169FB7B26B27B98933F17543" mime-type="application/xml"/>
+      <resource id="INT" uri="INT.usx" size="4175" checksum="4118198A79A6F6A8FBD7938123FF6693" mime-type="application/xml"/>
       <resource id="GEN" uri="GEN.usx" size="304769" checksum="D814EBB8ABAEBC2C65CBBD64008C8AF0" mime-type="application/xml" />
       <resource id="EXO" uri="EXO.usx" size="249137" checksum="976E107C721CB6D7FA4E1E8BFCC13CFF" mime-type="application/xml"/>
       <resource id="LEV" uri="LEV.usx" size="170558" checksum="0F0FA752222024455921A1660D904B7D" mime-type="application/xml"/>
@@ -124,9 +125,9 @@
       <resource id="JUD" uri="JUD.usx" size="8973" checksum="BC3AF03305F24AED6DE40338E3FB2E61" mime-type="application/xml"/>
       <resource id="REV" uri="REV.usx" size="121606" checksum="699C2BD520D78D7091A6C9F2C3BF63B5" mime-type="application/xml"/>
     </container>
-    <resource id="metadata" uri="metadata.xml" size="" checksum="..." mime-type="application/xml"/>
-    <resource id="ldml" uri="eng_en.ldml" size="" checksum="..." mime-type="text/x-ldml"/>
-    <resource id="versification" uri="versification.vrs" size="" checksum="..." mime-type="text/x-vrs"/>
+    <resource id="metadata" uri="metadata.xml" size="39199" checksum="8B572F53CFA68E88FA1599B3891A591F" mime-type="application/xml"/>
+    <resource id="ldml" uri="eng_en.ldml" size="2789" checksum="47D3BE18DED83D365800B797EDDB70C1" mime-type="text/x-ldml"/>
+    <resource id="versification" uri="versification.vrs" size="13845" checksum="EB38C438B44651425898B0BCFD7217E8" mime-type="text/x-vrs"/>
   </manifest>
   <names>
     <name id="title" src="FRT#title">
