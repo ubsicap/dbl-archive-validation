@@ -140,7 +140,17 @@
       <short>Foreword</short>
       <abbr>Fwd</abbr>
     </name>
+    <name id="foreword" src="FRT#x-foreword-interconfessional">
+      <long>Foreword Long</long>
+      <short>Foreword</short>
+      <abbr>Fwd</abbr>
+    </name>
     <name id="preface" src="FRT#preface">
+      <long>Preface Long</long>
+      <short>Preface</short>
+      <abbr>Pre</abbr>
+    </name>
+    <name id="preface" src="FRT#x-preface-interconfessional">
       <long>Preface Long</long>
       <short>Preface</short>
       <abbr>Pre</abbr>
