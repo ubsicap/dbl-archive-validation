@@ -130,518 +130,518 @@
     <resource id="versification" uri="versification.vrs" size="13845" checksum="EB38C438B44651425898B0BCFD7217E8" mime-type="text/x-vrs"/>
   </manifest>
   <names>
-    <name id="title" src="FRT#title">
+    <name id="title">
       <long>Title Long</long>
       <short>Title</short>
       <abbr>Title</abbr>
     </name>
-    <name id="foreword" src="FRT#foreword">
+    <name id="foreword">
       <long>Foreword Long</long>
       <short>Foreword</short>
       <abbr>Fwd</abbr>
     </name>
-    <name id="foreword" src="FRT#x-foreword-interconfessional">
+    <name id="foreword_interconfessional">
       <long>Foreword Long</long>
       <short>Foreword</short>
       <abbr>Fwd</abbr>
     </name>
-    <name id="preface" src="FRT#preface">
+    <name id="preface">
       <long>Preface Long</long>
       <short>Preface</short>
       <abbr>Pre</abbr>
     </name>
-    <name id="preface" src="FRT#x-preface-interconfessional">
+    <name id="preface_interconfessional">
       <long>Preface Long</long>
       <short>Preface</short>
       <abbr>Pre</abbr>
     </name>
-    <name id="x-intot-titlePage" src="INT#x-intot-titlePage">
+    <name id="intot-titlePage">
       <long>The Holy Bible - Old Testament</long>
       <short>The Old Testament</short>
       <abbr>OT</abbr>
     </name>
-    <name id="intot" src="INT#intot">
+    <name id="intot">
       <long>Old Testament Introduction</long>
       <short>OT Introduction</short>
       <abbr>OT Intro</abbr>
     </name>
-    <name id="x-intnt-titlePage" src="INT#x-intnt-titlePage">
+    <name id="intnt-titlePage">
       <long>The Holy Bible - New Testament</long>
       <short>The New Testament</short>
       <abbr>NT</abbr>
     </name>
-    <name id="intnt" src="INT#intnt">
+    <name id="intnt">
       <long>New Testament Introduction</long>
       <short>NT Introduction</short>
       <abbr>NT Intro</abbr>
     </name>
-    <name id="x-intdc-titlePage" src="INT#x-intdc-titlePage">
+    <name id="intdc-titlePage">
       <long>The Holy Bible - Deuterocanon / Apocypha</long>
       <short>Deuterocanon / Apocypha</short>
       <abbr>DC</abbr>
     </name>
-    <name id="intdc" src="INT#intdc">
+    <name id="intdc">
       <long>Deuterocanon Introduction</long>
       <short>DC Introduction</short>
       <abbr>DC Intro</abbr>
     </name>
-    <name id="GEN" src="GEN">
+    <name id="GEN">
       <long>Genesis</long>
       <short>Genesis</short>
       <abbr>Gn</abbr>
     </name>
-    <name id="EXO" src="EXO">
+    <name id="EXO">
       <long>Exodus</long>
       <short>Exodus</short>
       <abbr>Ex</abbr>
     </name>
-    <name id="LEV" src="LEV">
+    <name id="LEV">
       <long>Leviticus</long>
       <short>Leviticus</short>
       <abbr>Lv</abbr>
     </name>
-    <name id="NUM" src="NUM">
+    <name id="NUM">
       <long>Numbers</long>
       <short>Numbers</short>
       <abbr>Nu</abbr>
     </name>
-    <name id="DEU" src="DEU">
+    <name id="DEU">
       <long>Deuteronomy</long>
       <short>Deuteronomy</short>
       <abbr>Dt</abbr>
     </name>
-    <name id="JOS" src="JOS">
+    <name id="JOS">
       <long>The Book of Joshua</long>
       <short>Joshua</short>
       <abbr>Js</abbr>
     </name>
-    <name id="JDG" src="JDG">
+    <name id="JDG">
       <long>The Book of Judges</long>
       <short>Judges</short>
       <abbr>Jg</abbr>
     </name>
-    <name id="RUT" src="RUT">
+    <name id="RUT">
       <long>The Book of Ruth</long>
       <short>Ruth</short>
       <abbr>Ru</abbr>
     </name>
-    <name id="1SA" src="1SA">
+    <name id="1SA">
       <long>The First Book of Samuel</long>
       <short>1 Samuel</short>
       <abbr>1 S</abbr>
     </name>
-    <name id="2SA" src="2SA">
+    <name id="2SA">
       <long>The Second Book of Samuel</long>
       <short>2 Samuel</short>
       <abbr>2 S</abbr>
     </name>
-    <name id="1KI" src="1KI">
+    <name id="1KI">
       <long>The First Book of Kings</long>
       <short>1 Kings</short>
       <abbr>1 K</abbr>
     </name>
-    <name id="2KI" src="2KI">
+    <name id="2KI">
       <long>The Second Book of Kings</long>
       <short>2 Kings</short>
       <abbr>2 K</abbr>
     </name>
-    <name id="1CH" src="1CH">
+    <name id="1CH">
       <long>The First Book of Chronicles</long>
       <short>1 Chronicles</short>
       <abbr>1 Ch</abbr>
     </name>
-    <name id="2CH" src="2CH">
+    <name id="2CH">
       <long>The Second Book of Chronicles</long>
       <short>2 Chronicles</short>
       <abbr>2 Ch</abbr>
     </name>
-    <name id="EZR" src="EZR">
+    <name id="EZR">
       <long>The Book of Ezra</long>
       <short>Ezra</short>
       <abbr>Ezra</abbr>
     </name>
-    <name id="NEH" src="NEH">
+    <name id="NEH">
       <long>The Book of Nehemiah</long>
       <short>Nehemiah</short>
       <abbr>Ne</abbr>
     </name>
-    <name id="EST" src="EST">
+    <name id="EST">
       <long>The Book of Esther</long>
       <short>Esther</short>
       <abbr>Es</abbr>
     </name>
-    <name id="JOB" src="JOB">
+    <name id="JOB">
       <long>The Book of Job</long>
       <short>Job</short>
       <abbr>Job</abbr>
     </name>
-    <name id="PSA" src="PSA">
+    <name id="PSA">
       <long>Psalms</long>
       <short>Psalms</short>
       <abbr>Ps</abbr>
     </name>
-    <name id="PRO" src="PRO">
+    <name id="PRO">
       <long>Proverbs</long>
       <short>Proverbs</short>
       <abbr>Pr</abbr>
     </name>
-    <name id="ECC" src="ECC">
+    <name id="ECC">
       <long>Ecclesiastes</long>
       <short>Ecclesiastes</short>
       <abbr>Ec</abbr>
     </name>
-    <name id="SNG" src="SNG">
+    <name id="SNG">
       <long>Song of Songs</long>
       <short>Song of Songs</short>
       <abbr>Sgs</abbr>
     </name>
-    <name id="ISA" src="ISA">
+    <name id="ISA">
       <long>The Book of Isaiah</long>
       <short>Isaiah</short>
       <abbr>Is</abbr>
     </name>
-    <name id="JER" src="JER">
+    <name id="JER">
       <long>The Book of Jeremiah</long>
       <short>Jeremiah</short>
       <abbr>Jr</abbr>
     </name>
-    <name id="LAM" src="LAM">
+    <name id="LAM">
       <long>Lamentations</long>
       <short>Lamentations</short>
       <abbr>Lm</abbr>
     </name>
-    <name id="EZK" src="EZK">
+    <name id="EZK">
       <long>The Book of Ezekiel</long>
       <short>Ezekiel</short>
       <abbr>Ez</abbr>
     </name>
-    <name id="DAN" src="DAN">
+    <name id="DAN">
       <long>The Book of Daniel</long>
       <short>Daniel</short>
       <abbr>Dn</abbr>
     </name>
-    <name id="HOS" src="HOS">
+    <name id="HOS">
       <long>The Book of Hosea</long>
       <short>Hosea</short>
       <abbr>Ho</abbr>
     </name>
-    <name id="JOL" src="JOL">
+    <name id="JOL">
       <long>The Book of Joel</long>
       <short>Joel</short>
       <abbr>Jl</abbr>
     </name>
-    <name id="AMO" src="AMO">
+    <name id="AMO">
       <long>The Book of Amos</long>
       <short>Amos</short>
       <abbr>Am</abbr>
     </name>
-    <name id="OBA" src="OBA">
+    <name id="OBA">
       <long>The Book of Obadiah</long>
       <short>Obadiah</short>
       <abbr>Ob</abbr>
     </name>
-    <name id="JON" src="JON">
+    <name id="JON">
       <long>The Book of Jonah</long>
       <short>Jonah</short>
       <abbr>Jon</abbr>
     </name>
-    <name id="MIC" src="MIC">
+    <name id="MIC">
       <long>The Book of Micah</long>
       <short>Micah</short>
       <abbr>Mic</abbr>
     </name>
-    <name id="NAM" src="NAM">
+    <name id="NAM">
       <long>The Book of Nahum</long>
       <short>Nahum</short>
       <abbr>Nh</abbr>
     </name>
-    <name id="HAB" src="HAB">
+    <name id="HAB">
       <long>The Book of Habakkuk</long>
       <short>Habakkuk</short>
       <abbr>Hb</abbr>
     </name>
-    <name id="ZEP" src="ZEP">
+    <name id="ZEP">
       <long>The Book of Zephaniah</long>
       <short>Zephaniah</short>
       <abbr>Zep</abbr>
     </name>
-    <name id="HAG" src="HAG">
+    <name id="HAG">
       <long>The Book of Haggai</long>
       <short>Haggai</short>
       <abbr>Hg</abbr>
     </name>
-    <name id="ZEC" src="ZEC">
+    <name id="ZEC">
       <long>The Book of Zechariah</long>
       <short>Zechariah</short>
       <abbr>Zec</abbr>
     </name>
-    <name id="MAL" src="MAL">
+    <name id="MAL">
       <long>The Book of Malachi</long>
       <short>Malachi</short>
       <abbr>Ml</abbr>
     </name>
-    <name id="TOB" src="TOB">
+    <name id="TOB">
       <long>The Book of Tobit</long>
       <short>Tobit</short>
       <abbr>Tb</abbr>
     </name>
-    <name id="JDT" src="JDT">
+    <name id="JDT">
       <long>The Book of Judith</long>
       <short>Judith</short>
       <abbr>Jdt</abbr>
     </name>
-    <name id="ESG" src="ESG">
+    <name id="ESG">
       <long>The Book of Esther</long>
       <short>Esther (Greek)</short>
       <abbr>Gk Est</abbr>
     </name>
-    <name id="WIS" src="WIS">
+    <name id="WIS">
       <long>The Wisdom of Solomon</long>
       <short>The Wisdom of Solomon</short>
       <abbr>Ws</abbr>
     </name>
-    <name id="SIR" src="SIR">
+    <name id="SIR">
       <long>Sirach The Wisdom of Jesus, Son of Sirach</long>
       <short>Sirach</short>
       <abbr>Si</abbr>
     </name>
-    <name id="BAR" src="BAR">
+    <name id="BAR">
       <long>The Book of Baruch</long>
       <short>Baruch</short>
       <abbr>Ba</abbr>
     </name>
-    <name id="LJE" src="LJE">
+    <name id="LJE">
       <long>The Letter of Jeremiah</long>
       <short>Letter of Jeremiah</short>
       <abbr>Let Jer</abbr>
     </name>
-    <name id="S3Y" src="S3Y">
+    <name id="S3Y">
       <long>The Prayer of Azariah and The Song of the Three Young Men</long>
       <short>Song of Three Young Men</short>
       <abbr>S of 3 Y</abbr>
     </name>
-    <name id="SUS" src="SUS">
+    <name id="SUS">
       <long>The Book of Susanna</long>
       <short>Susanna</short>
       <abbr>Su</abbr>
     </name>
-    <name id="BEL" src="BEL">
+    <name id="BEL">
       <long>Bel and the Dragon</long>
       <short>Bel and the Dragon</short>
       <abbr>Bel</abbr>
     </name>
-    <name id="1MA" src="1MA">
+    <name id="1MA">
       <long>The First Book of the Maccabees</long>
       <short>1 Maccabees</short>
       <abbr>1 Macc</abbr>
     </name>
-    <name id="2MA" src="2MA">
+    <name id="2MA">
       <long>The Second Book of the Maccabees</long>
       <short>2 Maccabees</short>
       <abbr>2 Macc</abbr>
     </name>
-    <name id="1ES" src="1ES">
+    <name id="1ES">
       <long>The First Book of Esdras</long>
       <short>1 Esdras</short>
       <abbr>1 Esd</abbr>
     </name>
-    <name id="2ES" src="2ES">
+    <name id="2ES">
       <long>The Second Book of Esdras</long>
       <short>2 Esdras</short>
       <abbr>2 Esd</abbr>
     </name>
-    <name id="MAN" src="MAN">
+    <name id="MAN">
       <long>The Prayer of Manasseh</long>
       <short>The Prayer of Manasseh</short>
       <abbr>Man</abbr>
     </name>
-    <name id="MAT" src="MAT">
+    <name id="MAT">
       <long>The Gospel according to Matthew</long>
       <short>Matthew</short>
       <abbr>Mt</abbr>
     </name>
-    <name id="MRK" src="MRK">
+    <name id="MRK">
       <long>The Gospel according to Mark</long>
       <short>Mark</short>
       <abbr>Mk</abbr>
     </name>
-    <name id="LUK" src="LUK">
+    <name id="LUK">
       <long>The Gospel according to Luke</long>
       <short>Luke</short>
       <abbr>Lk</abbr>
     </name>
-    <name id="JHN" src="JHN">
+    <name id="JHN">
       <long>The Gospel according to John</long>
       <short>John</short>
       <abbr>Jn</abbr>
     </name>
-    <name id="ACT" src="ACT">
+    <name id="ACT">
       <long>The Acts of the Apostles</long>
       <short>Acts</short>
       <abbr>Ac</abbr>
     </name>
-    <name id="ROM" src="ROM">
+    <name id="ROM">
       <long>Paul's Letter to the Romans</long>
       <short>Romans</short>
       <abbr>Ro</abbr>
     </name>
-    <name id="1CO" src="1CO">
+    <name id="1CO">
       <long>Paul's First Letter to the Corinthians</long>
       <short>1 Corinthians</short>
       <abbr>1 Co</abbr>
     </name>
-    <name id="2CO" src="2CO">
+    <name id="2CO">
       <long>Paul's Second Letter to the Corinthians</long>
       <short>2 Corinthians</short>
       <abbr>2 Co</abbr>
     </name>
-    <name id="GAL" src="GAL">
+    <name id="GAL">
       <long>Paul's Letter to the Galatians</long>
       <short>Galatians</short>
       <abbr>Ga</abbr>
     </name>
-    <name id="EPH" src="EPH">
+    <name id="EPH">
       <long>Paul's Letter to the Ephesians</long>
       <short>Ephesians</short>
       <abbr>Eph</abbr>
     </name>
-    <name id="PHP" src="PHP">
+    <name id="PHP">
       <long>Paul's Letter to the Philippians</long>
       <short>Philippians</short>
       <abbr>Phil</abbr>
     </name>
-    <name id="COL" src="COL">
+    <name id="COL">
       <long>Paul's Letter to the Colossians</long>
       <short>Colossians</short>
       <abbr>Col</abbr>
     </name>
-    <name id="1TH" src="1TH">
+    <name id="1TH">
       <long>Paul's First Letter to the Thessalonians</long>
       <short>1 Thessalonians</short>
       <abbr>1 Th</abbr>
     </name>
-    <name id="2TH" src="2TH">
+    <name id="2TH">
       <long>Paul's Second Letter to the Thessalonians</long>
       <short>2 Thessalonians</short>
       <abbr>2 Th</abbr>
     </name>
-    <name id="1TI" src="1TI">
+    <name id="1TI">
       <long>Paul's First Letter to Timothy</long>
       <short>1 Timothy</short>
       <abbr>1 Ti</abbr>
     </name>
-    <name id="2TI" src="2TI">
+    <name id="2TI">
       <long>Paul's Second Letter to Timothy</long>
       <short>2 Timothy</short>
       <abbr>2 Ti</abbr>
     </name>
-    <name id="TIT" src="TIT">
+    <name id="TIT">
       <long>Paul's Letter to Titus</long>
       <short>Titus</short>
       <abbr>Titus</abbr>
     </name>
-    <name id="PHM" src="PHM">
+    <name id="PHM">
       <long>Paul's Letter to Philemon</long>
       <short>Philemon</short>
       <abbr>Phm</abbr>
     </name>
-    <name id="HEB" src="HEB">
+    <name id="HEB">
       <long>The Letter to the Hebrews</long>
       <short>Hebrews</short>
       <abbr>He</abbr>
     </name>
-    <name id="JAS" src="JAS">
+    <name id="JAS">
       <long>The Letter from James</long>
       <short>James</short>
       <abbr>Jas</abbr>
     </name>
-    <name id="1PE" src="1PE">
+    <name id="1PE">
       <long>The First Letter from Peter</long>
       <short>1 Peter</short>
       <abbr>1 P</abbr>
     </name>
-    <name id="2PE" src="2PE">
+    <name id="2PE">
       <long>The Second Letter from Peter</long>
       <short>2 Peter</short>
       <abbr>2 P</abbr>
     </name>
-    <name id="1JN" src="1JN">
+    <name id="1JN">
       <long>The First Letter of John</long>
       <short>1 John</short>
       <abbr>1 Jn</abbr>
     </name>
-    <name id="2JN" src="2JN">
+    <name id="2JN">
       <long>The Second Letter of John</long>
       <short>2 John</short>
       <abbr>2 Jn</abbr>
     </name>
-    <name id="3JN" src="3JN">
+    <name id="3JN">
       <long>The Third Letter of John</long>
       <short>3 John</short>
       <abbr>3 Jn</abbr>
     </name>
-    <name id="JUD" src="JUD">
+    <name id="JUD">
       <long>The Letter from Jude</long>
       <short>Jude</short>
       <abbr>Jd</abbr>
     </name>
-    <name id="REV" src="REV">
+    <name id="REV">
       <long>The Revelation to John</long>
       <short>Revelation</short>
       <abbr>Rev</abbr>
     </name>
     <!-- Names without resources are simple division names only -->
-    <name id="div-FrontMatter">
+    <name id="div_FrontMatter">
       <long>Front Matter</long>
       <short>Front</short>
       <abbr>Frt</abbr>
     </name>
-    <name id="div-OldTestament">
+    <name id="div_OldTestament">
       <long>The Old Testament</long>
       <short>Old Testament</short>
       <abbr>OT</abbr>
     </name>
-    <name id="div-Pentateuch">
+    <name id="div_Pentateuch">
       <long>The Pentateuch</long>
       <short>Pentateuch</short>
       <abbr>Pent</abbr>
     </name>
-    <name id="div-History">
+    <name id="div_History">
       <long>The History Books</long>
       <short>History</short>
       <abbr>Hist</abbr>
     </name>
-    <name id="div-Wisdom">
+    <name id="div_Wisdom">
       <long>The Wisdom and Poetry Books</long>
       <short>Wisdom and Poetry</short>
       <abbr>Wisdom</abbr>
     </name>
-    <name id="div-Prophesy">
+    <name id="div_Prophesy">
       <long>The Books of Prophesy</long>
       <short>Prophesy</short>
       <abbr>Proph</abbr>
     </name>
-    <name id="div-NewTestament">
+    <name id="div_NewTestament">
       <long>The New Testament</long>
       <short>New Testament</short>
       <abbr>NT</abbr>
     </name>
-    <name id="div-Gospels">
+    <name id="div_Gospels">
       <long>The Gospels</long>
       <short>Gospels</short>
       <abbr>Gospels</abbr>
     </name>
-    <name id="div-Epistles">
+    <name id="div_Epistles">
       <long>The Epistles</long>
       <short>Epistles</short>
       <abbr>Epist</abbr>
     </name>
-    <name id="div-Letters">
+    <name id="div_Letters">
       <long>The Letters</long>
       <short>Letters</short>
       <abbr>Letters</abbr>
     </name>
-    <name id="div-Deuterocanon">
+    <name id="div_Deuterocanon">
       <long>The Deuterocanon / Apocrypha</long>
       <short>Deuterocanon</short>
       <abbr>Deut</abbr>
@@ -655,92 +655,92 @@
       <abbreviationLocal>HBPEL</abbreviationLocal>
       <description>Protestant Edition</description>
       <structure>
-        <division id="div-FrontMatter">
-          <name id="title"/>
-          <name id="foreword"/>
-          <name id="preface"/>
+        <division name="div_FrontMatter">
+          <content name="title" src="FRT#title"/>
+          <content name="foreword" src="FRT#foreword"/>
+          <content name="preface" src="FRT#preface"/>
         </division>
-        <division id="div-OldTestament">
-          <name id="x-intot-titlePage"/>
-          <name id="intot"/>
-          <division id="div-Pentateuch">
-            <name id="GEN"/>
-            <name id="EXO"/>
-            <name id="LEV"/>
-            <name id="NUM"/>
-            <name id="DEU"/>
+        <division name="div_OldTestament">
+          <content name="intot-titlePage" src="INT#intot-titlePage"/>
+          <content name="intot" src="INT#intot"/>
+          <division name="div_Pentateuch">
+            <content name="GEN" src="GEN"/>
+            <content name="EXO" src="EXO"/>
+            <content name="LEV" src="LEV"/>
+            <content name="NUM" src="NUM"/>
+            <content name="DEU" src="DEU"/>
           </division>
-          <division id="div-History">
-            <name id="JOS"/>
-            <name id="JDG"/>
-            <name id="RUT"/>
-            <name id="1SA"/>
-            <name id="2SA"/>
-            <name id="1KI"/>
-            <name id="2KI"/>
-            <name id="1CH"/>
-            <name id="2CH"/>
-            <name id="EZR"/>
-            <name id="NEH"/>
-            <name id="EST"/>
+          <division name="div_History">
+            <content name="JOS" src="JOS"/>
+            <content name="JDG" src="JDG"/>
+            <content name="RUT" src="RUT"/>
+            <content name="1SA" src="1SA"/>
+            <content name="2SA" src="2SA"/>
+            <content name="1KI" src="1KI"/>
+            <content name="2KI" src="2KI"/>
+            <content name="1CH" src="1CH"/>
+            <content name="2CH" src="2CH"/>
+            <content name="EZR" src="EZR"/>
+            <content name="NEH" src="NEH"/>
+            <content name="EST" src="EST"/>
           </division>
-          <division id="div-Wisdom">
-            <name id="JOB"/>
-            <name id="PSA"/>
-            <name id="PRO"/>
-            <name id="ECC"/>
-            <name id="SNG"/>
+          <division name="div_Wisdom">
+            <content name="JOB" src="JOB"/>
+            <content name="PSA" src="PSA"/>
+            <content name="PRO" src="PRO"/>
+            <content name="ECC" src="ECC"/>
+            <content name="SNG" src="SNG"/>
           </division>
-          <division id="div-Prophesy">
-            <name id="ISA"/>
-            <name id="JER"/>
-            <name id="LAM"/>
-            <name id="EZK"/>
-            <name id="DAN"/>
-            <name id="HOS"/>
-            <name id="JOL"/>
-            <name id="AMO"/>
-            <name id="OBA"/>
-            <name id="JON"/>
-            <name id="MIC"/>
-            <name id="NAM"/>
-            <name id="HAB"/>
-            <name id="ZEP"/>
-            <name id="HAG"/>
-            <name id="ZEC"/>
-            <name id="MAL"/>
+          <division name="div_Prophesy">
+            <content name="ISA" src="ISA"/>
+            <content name="JER" src="JER"/>
+            <content name="LAM" src="LAM"/>
+            <content name="EZK" src="EZK"/>
+            <content name="DAN" src="DAN"/>
+            <content name="HOS" src="HOS"/>
+            <content name="JOL" src="JOL"/>
+            <content name="AMO" src="AMO"/>
+            <content name="OBA" src="OBA"/>
+            <content name="JON" src="JON"/>
+            <content name="MIC" src="MIC"/>
+            <content name="NAM" src="NAM"/>
+            <content name="HAB" src="HAB"/>
+            <content name="ZEP" src="ZEP"/>
+            <content name="HAG" src="HAG"/>
+            <content name="ZEC" src="ZEC"/>
+            <content name="MAL" src="MAL"/>
           </division>
         </division>
-        <division id="div-NewTestament">
-          <name id="x-intnt-titlePage"/>
-          <name id="intnt"/>
-          <name id="MAT"/>
-          <name id="MRK"/>
-          <name id="LUK"/>
-          <name id="JHN"/>
-          <name id="ACT"/>
-          <name id="ROM"/>
-          <name id="1CO"/>
-          <name id="2CO"/>
-          <name id="GAL"/>
-          <name id="EPH"/>
-          <name id="PHP"/>
-          <name id="COL"/>
-          <name id="1TH"/>
-          <name id="2TH"/>
-          <name id="1TI"/>
-          <name id="2TI"/>
-          <name id="TIT"/>
-          <name id="PHM"/>
-          <name id="HEB"/>
-          <name id="JAS"/>
-          <name id="1PE"/>
-          <name id="2PE"/>
-          <name id="1JN"/>
-          <name id="2JN"/>
-          <name id="3JN"/>
-          <name id="JUD"/>
-          <name id="REV"/>
+        <division name="div_NewTestament">
+          <content name="intnt-titlePage" src="INT#intnt-titlePage"/>
+          <content name="intnt" src="INT#intnt"/>
+          <content name="MAT" src="MAT"/>
+          <content name="MRK" src="MRK"/>
+          <content name="LUK" src="LUK"/>
+          <content name="JHN" src="JHN"/>
+          <content name="ACT" src="ACT"/>
+          <content name="ROM" src="ROM"/>
+          <content name="1CO" src="1CO"/>
+          <content name="2CO" src="2CO"/>
+          <content name="GAL" src="GAL"/>
+          <content name="EPH" src="EPH"/>
+          <content name="PHP" src="PHP"/>
+          <content name="COL" src="COL"/>
+          <content name="1TH" src="1TH"/>
+          <content name="2TH" src="2TH"/>
+          <content name="1TI" src="1TI"/>
+          <content name="2TI" src="2TI"/>
+          <content name="TIT" src="TIT"/>
+          <content name="PHM" src="PHM"/>
+          <content name="HEB" src="HEB"/>
+          <content name="JAS" src="JAS"/>
+          <content name="1PE" src="1PE"/>
+          <content name="2PE" src="2PE"/>
+          <content name="1JN" src="1JN"/>
+          <content name="2JN" src="2JN"/>
+          <content name="3JN" src="3JN"/>
+          <content name="JUD" src="JUD"/>
+          <content name="REV" src="REV"/>
         </division>
       </structure>
     </publication>
@@ -751,111 +751,111 @@
       <abbreviationLocal>HBEEL</abbreviationLocal>
       <description>Ecumenical Edition</description>
       <structure>
-        <division id="div-FrontMatter">
-          <name id="title"/>
-          <name id="x-foreword-interconfessional"/>
-          <name id="x-preface-interconfessional"/>
+        <division name="div_FrontMatter">
+          <content name="title" src="FRT#title"/>
+          <content name="foreword_interconfessional" src="FRT#foreword_interconfessional"/>
+          <content name="preface_interconfessional" src="FRT#preface_interconfessional"/>
         </division>
-        <division id="div-OldTestament">
-          <name id="x-intot-titlePage"/>
-          <name id="intot"/>
-          <division id="div-Pentateuch">
-            <name id="GEN"/>
-            <name id="EXO"/>
-            <name id="LEV"/>
-            <name id="NUM"/>
-            <name id="DEU"/>
+        <division name="div_OldTestament">
+          <content name="intot-titlePage" src="INT#intot-titlePage"/>
+          <content name="intot" src="INT#intot"/>
+          <division name="div_Pentateuch">
+            <content name="GEN" src="GEN"/>
+            <content name="EXO" src="EXO"/>
+            <content name="LEV" src="LEV"/>
+            <content name="NUM" src="NUM"/>
+            <content name="DEU" src="DEU"/>
           </division>
-          <division id="div-History">
-            <name id="JOS"/>
-            <name id="JDG"/>
-            <name id="RUT"/>
-            <name id="1SA"/>
-            <name id="2SA"/>
-            <name id="1KI"/>
-            <name id="2KI"/>
-            <name id="1CH"/>
-            <name id="2CH"/>
-            <name id="EZR"/>
-            <name id="NEH"/>
-            <name id="EST"/>
+          <division name="div_History">
+            <content name="JOS" src="JOS"/>
+            <content name="JDG" src="JDG"/>
+            <content name="RUT" src="RUT"/>
+            <content name="1SA" src="1SA"/>
+            <content name="2SA" src="2SA"/>
+            <content name="1KI" src="1KI"/>
+            <content name="2KI" src="2KI"/>
+            <content name="1CH" src="1CH"/>
+            <content name="2CH" src="2CH"/>
+            <content name="EZR" src="EZR"/>
+            <content name="NEH" src="NEH"/>
+            <content name="EST" src="EST"/>
           </division>
-          <division id="div-Wisdom">
-            <name id="JOB"/>
-            <name id="PSA"/>
-            <name id="PRO"/>
-            <name id="ECC"/>
-            <name id="SNG"/>
+          <division name="div_Wisdom">
+            <content name="JOB" src="JOB"/>
+            <content name="PSA" src="PSA"/>
+            <content name="PRO" src="PRO"/>
+            <content name="ECC" src="ECC"/>
+            <content name="SNG" src="SNG"/>
           </division>
-          <division id="div-Prophesy">
-            <name id="ISA"/>
-            <name id="JER"/>
-            <name id="LAM"/>
-            <name id="EZK"/>
-            <name id="DAN"/>
-            <name id="HOS"/>
-            <name id="JOL"/>
-            <name id="AMO"/>
-            <name id="OBA"/>
-            <name id="JON"/>
-            <name id="MIC"/>
-            <name id="NAM"/>
-            <name id="HAB"/>
-            <name id="ZEP"/>
-            <name id="HAG"/>
-            <name id="ZEC"/>
-            <name id="MAL"/>
+          <division name="div_Prophesy">
+            <content name="ISA" src="ISA"/>
+            <content name="JER" src="JER"/>
+            <content name="LAM" src="LAM"/>
+            <content name="EZK" src="EZK"/>
+            <content name="DAN" src="DAN"/>
+            <content name="HOS" src="HOS"/>
+            <content name="JOL" src="JOL"/>
+            <content name="AMO" src="AMO"/>
+            <content name="OBA" src="OBA"/>
+            <content name="JON" src="JON"/>
+            <content name="MIC" src="MIC"/>
+            <content name="NAM" src="NAM"/>
+            <content name="HAB" src="HAB"/>
+            <content name="ZEP" src="ZEP"/>
+            <content name="HAG" src="HAG"/>
+            <content name="ZEC" src="ZEC"/>
+            <content name="MAL" src="MAL"/>
           </division>
         </division>
-        <division id="div-Deuterocanon">
-          <name id="x-intdc-titlePage"/>
-          <name id="intdc"/>
-          <name id="TOB"/>
-          <name id="JDT"/>
-          <name id="ESG"/>
-          <name id="WIS"/>
-          <name id="SIR"/>
-          <name id="BAR"/>
-          <name id="LJE"/>
-          <name id="S3Y"/>
-          <name id="SUS"/>
-          <name id="BEL"/>
-          <name id="1MA"/>
-          <name id="2MA"/>
-          <name id="1ES"/>
-          <name id="2ES"/>
-          <name id="MAN"/>
+        <division name="div_Deuterocanon">
+          <content name="intdc-titlePage" src="INT#intdc-titlePage"/>
+          <content name="intdc" src="INT#intdc"/>
+          <content name="TOB" src="TOB"/>
+          <content name="JDT" src="JDT"/>
+          <content name="ESG" src="ESG"/>
+          <content name="WIS" src="WIS"/>
+          <content name="SIR" src="SIR"/>
+          <content name="BAR" src="BAR"/>
+          <content name="LJE" src="LJE"/>
+          <content name="S3Y" src="S3Y"/>
+          <content name="SUS" src="SUS"/>
+          <content name="BEL" src="BEL"/>
+          <content name="1MA" src="1MA"/>
+          <content name="2MA" src="2MA"/>
+          <content name="1ES" src="1ES"/>
+          <content name="2ES" src="2ES"/>
+          <content name="MAN" src="MAN"/>
         </division>
-        <division id="div-NewTestament">
-          <name id="x-intnt-titlePage"/>
-          <name id="intnt"/>
-          <name id="MAT"/>
-          <name id="MRK"/>
-          <name id="LUK"/>
-          <name id="JHN"/>
-          <name id="ACT"/>
-          <name id="ROM"/>
-          <name id="1CO"/>
-          <name id="2CO"/>
-          <name id="GAL"/>
-          <name id="EPH"/>
-          <name id="PHP"/>
-          <name id="COL"/>
-          <name id="1TH"/>
-          <name id="2TH"/>
-          <name id="1TI"/>
-          <name id="2TI"/>
-          <name id="TIT"/>
-          <name id="PHM"/>
-          <name id="HEB"/>
-          <name id="JAS"/>
-          <name id="1PE"/>
-          <name id="2PE"/>
-          <name id="1JN"/>
-          <name id="2JN"/>
-          <name id="3JN"/>
-          <name id="JUD"/>
-          <name id="REV"/>
+        <division name="div_NewTestament">
+          <content name="intnt-titlePage" src="INT#intnt-titlePage"/>
+          <content name="intnt" src="INT#intnt"/>
+          <content name="MAT" src="MAT"/>
+          <content name="MRK" src="MRK"/>
+          <content name="LUK" src="LUK"/>
+          <content name="JHN" src="JHN"/>
+          <content name="ACT" src="ACT"/>
+          <content name="ROM" src="ROM"/>
+          <content name="1CO" src="1CO"/>
+          <content name="2CO" src="2CO"/>
+          <content name="GAL" src="GAL"/>
+          <content name="EPH" src="EPH"/>
+          <content name="PHP" src="PHP"/>
+          <content name="COL" src="COL"/>
+          <content name="1TH" src="1TH"/>
+          <content name="2TH" src="2TH"/>
+          <content name="1TI" src="1TI"/>
+          <content name="2TI" src="2TI"/>
+          <content name="TIT" src="TIT"/>
+          <content name="PHM" src="PHM"/>
+          <content name="HEB" src="HEB"/>
+          <content name="JAS" src="JAS"/>
+          <content name="1PE" src="1PE"/>
+          <content name="2PE" src="2PE"/>
+          <content name="1JN" src="1JN"/>
+          <content name="2JN" src="2JN"/>
+          <content name="3JN" src="3JN"/>
+          <content name="JUD" src="JUD"/>
+          <content name="REV" src="REV"/>
         </division>
       </structure>
     </publication>
