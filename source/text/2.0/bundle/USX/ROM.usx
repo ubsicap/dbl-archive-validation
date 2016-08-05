@@ -1,0 +1,545 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<usx version="2.5">
+  <book code="ROM" style="id">English: Good News Translation 2nd Ed. 1992</book>
+  <para style="ide">Unicode (UTF8)</para>
+  <para style="rem">For any non-Paratext use of this text, permission must be obtained from the copyright holder.</para>
+  <para style="rem">CAP Information: checked/corrected 2008</para>
+  <para style="h">Romans</para>
+  <para style="toc1">Paul's Letter to the ROMANS</para>
+  <para style="toc2">Romans</para>
+  <para style="toc3">Ro</para>
+  <para style="mt2">Paul's Letter to the</para>
+  <para style="mt1">ROMANS</para>
+  <para style="imt">Introduction</para>
+  <para style="ip">
+    <char style="bk">Paul's Letter to the Romans</char> was written to prepare the way for a visit Paul planned to make to the church at Rome. His plan was to work among the Christians there for a while and then, with their support, to go on to Spain. He wrote to explain his understanding of the Christian faith and its practical implications for the lives of Christians. The book contains Paul's most complete statement of his message.</para>
+  <para style="ip">After greeting the people of the church at Rome and telling them of his prayers for them, Paul states the theme of the letter: “The gospel reveals how God puts people right with himself: it is through faith from beginning to end” (1.17).</para>
+  <para style="ip">Paul then develops this theme. All people, both Jews and Gentiles, need to be put right with God, for all alike are under the power of sin. People are put right with God through faith in Jesus Christ. Next Paul describes the new life in union with Christ that results from this new relation with God. The believer has peace with God and is set free by God's Spirit from the power of sin and death. In chapters 5—8 Paul also discusses the purpose of the Law of God and the power of God's Spirit in the believer's life. Then the apostle wrestles with the question of how Jews and Gentiles fit into the plan of God for all people. He concludes that the Jewish rejection of Jesus is part of God's plan for bringing all people within the reach of God's grace in Jesus Christ, and he believes that the Jews will not always reject Jesus. Finally Paul writes about how the Christian life should be lived, especially about the way of love in relations with others. He takes up such themes as service to God, the duty of Christians to the state and to one another, and questions of conscience. He ends the letter with personal messages and with words of praise to God.</para>
+  <para style="iot">Outline of Contents</para>
+  <para style="io1">Introduction and theme <char style="ior">(1.1-17)</char></para>
+  <para style="io1">The universal human need of salvation <char style="ior">(1.18–3.20)</char></para>
+  <para style="io1">God's way of salvation <char style="ior">(3.21–4.25)</char></para>
+  <para style="io1">The new life in Christ <char style="ior">(5.1–8.39)</char></para>
+  <para style="io1">Israel in the plan of God <char style="ior">(9.1–11.36)</char></para>
+  <para style="io1">Christian conduct <char style="ior">(12.1–15.13)</char></para>
+  <para style="io1">Conclusion and personal greetings <char style="ior">(15.14–16.27)</char></para>
+  <chapter number="1" style="c" />
+  <para style="p">
+    <verse number="1" style="v" />From Paul, a servant of Christ Jesus and an apostle chosen and called by God to preach his Good News.</para>
+  <para style="p">
+    <verse number="2" style="v" />The Good News was promised long ago by God through his prophets, as written in the Holy Scriptures. <verse number="3" style="v" />It is about his Son, our Lord Jesus Christ: as to his humanity, he was born a descendant of David; <verse number="4" style="v" />as to his divine holiness, he was shown with great power to be the Son of God by being raised from death. <verse number="5" style="v" />Through him God gave me the privilege of being an apostle for the sake of Christ, in order to lead people of all nations to believe and obey. <verse number="6" style="v" />This also includes you who are in Rome, whom God has called to belong to Jesus Christ.</para>
+  <para style="p">
+    <verse number="7" style="v" />And so I write to all of you in Rome whom God loves and has called to be his own people:</para>
+  <para style="p">May God our Father and the Lord Jesus Christ give you grace and peace.</para>
+  <para style="s">Prayer of Thanksgiving</para>
+  <para style="p">
+    <verse number="8" style="v" />First, I thank my God through Jesus Christ for all of you, because the whole world is hearing about your faith. <verse number="9" style="v" />God is my witness that what I say is true—the God whom I serve with all my heart by preaching the Good News about his Son. God knows that I remember you <verse number="10" style="v" />every time I pray. I ask that God in his good will may at last make it possible for me to visit you now. <verse number="11" style="v" />For I want very much to see you, in order to share a spiritual blessing with you to make you strong. <verse number="12" style="v" />What I mean is that both you and I will be helped at the same time, you by my faith and I by yours.</para>
+  <para style="p">
+    <verse number="13" style="v" />
+    <note caller="-" style="x">
+      <char style="xo" closed="false">1.13: </char>
+      <char style="xt" closed="false">Ac 19.21.</char>
+    </note> You must remember, my friends, that many times I have planned to visit you, but something has always kept me from doing so. I want to win converts among you also, as I have among other Gentiles. <verse number="14" style="v" />For I have an obligation to all peoples, to the civilized and to the savage, to the educated and to the ignorant. <verse number="15" style="v" />So then, I am eager to preach the Good News to you also who live in Rome.</para>
+  <para style="s">The Power of the Gospel</para>
+  <para style="p">
+    <verse number="16" style="v" />
+    <note caller="-" style="x">
+      <char style="xo" closed="false">1.16: </char>
+      <char style="xt" closed="false">Mk 8.38.</char>
+    </note> I have complete confidence in the gospel; it is God's power to save all who believe, first the Jews and also the Gentiles. <verse number="17" style="v" /><note caller="-" style="x"><char style="xo" closed="false">1.17: </char><char style="xt" closed="false">Hb 2.4.</char></note> For the gospel reveals how God puts people right with himself: it is through faith from beginning to end. As the scripture says, “The person who is put right with God through faith shall live.” <note caller="+" style="f"><char style="fr" closed="false">1.17: </char><char style="fq" closed="false">put right with God through faith shall live; </char><char style="ft" closed="false">or </char><char style="fq" closed="false">put right with God shall live through faith.</char></note></para>
+  <para style="s">Human Guilt</para>
+  <para style="p">
+    <verse number="18" style="v" />God's anger is revealed from heaven against all the sin and evil of the people whose evil ways prevent the truth from being known. <verse number="19" style="v" />God punishes them, because what can be known about God is plain to them, for God himself made it plain. <verse number="20" style="v" /><note caller="-" style="x"><char style="xo" closed="false">1.20: </char><char style="xdc" closed="false">Ws 13.1-9; Si 17.8.</char></note> Ever since God created the world, his invisible qualities, both his eternal power and his divine nature, have been clearly seen; they are perceived in the things that God has made. So those people have no excuse at all! <verse number="21" style="v" /><note caller="-" style="x"><char style="xo" closed="false">1.21: </char><char style="xt" closed="false">Eph 4.17,18.</char></note> They know God, but they do not give him the honor that belongs to him, nor do they thank him. Instead, their thoughts have become complete nonsense, and their empty minds are filled with darkness. <verse number="22" style="v" />They say they are wise, but they are fools; <verse number="23" style="v" /><note caller="-" style="x"><char style="xo" closed="false">1.23: </char><char style="xt" closed="false">Dt 4.16-18 </char><char style="xdc">; Ws 11.15; 12.24; 13.10-19</char>.</note> instead of worshiping the immortal God, they worship images made to look like mortals or birds or animals or reptiles.</para>
+  <para style="p">
+    <verse number="24" style="v" />And so God has given those people over to do the filthy things their hearts desire, and they do shameful things with each other. <verse number="25" style="v" />They exchange the truth about God for a lie; they worship and serve what God has created instead of the Creator himself, who is to be praised forever! Amen.</para>
+  <para style="p">
+    <verse number="26" style="v" />Because they do this, God has given them over to shameful passions. Even the women pervert the natural use of their sex by unnatural acts. <verse number="27" style="v" />In the same way the men give up natural sexual relations with women and burn with passion for each other. Men do shameful things with each other, and as a result they bring upon themselves the punishment they deserve for their wrongdoing.</para>
+  <para style="p">
+    <verse number="28" style="v" />Because those people refuse to keep in mind the true knowledge about God, he has given them over to corrupted minds, so that they do the things that they should not do. <verse number="29" style="v" />They are filled with all kinds of wickedness, evil, greed, and vice; they are full of jealousy, murder, fighting, deceit, and malice. They gossip <verse number="30" style="v" />and speak evil of one another; they are hateful to God, insolent, <note caller="+" style="f"><char style="fr" closed="false">1.30: </char><char style="fq" closed="false">are hateful to God, insolent; </char><char style="ft" closed="false">or </char><char style="fq" closed="false">hate God, and are insolent.</char></note> proud, and boastful; they think of more ways to do evil; they disobey their parents; <verse number="31" style="v" />they have no conscience; they do not keep their promises, and they show no kindness or pity for others. <verse number="32" style="v" />They know that God's law says that people who live in this way deserve death. Yet, not only do they continue to do these very things, but they even approve of others who do them.</para>
+  <chapter number="2" style="c" />
+  <para style="s">God's Judgment</para>
+  <para style="p">
+    <verse number="1" style="v" />
+    <note caller="-" style="x">
+      <char style="xo" closed="false">2.1: </char>
+      <char style="xt" closed="false">Mt 7.1; Lk 6.37.</char>
+    </note> Do you, my friend, pass judgment on others? You have no excuse at all, whoever you are. For when you judge others and then do the same things which they do, you condemn yourself. <verse number="2" style="v" />We know that God is right when he judges the people who do such things as these. <verse number="3" style="v" />But you, my friend, do those very things for which you pass judgment on others! Do you think you will escape God's judgment? <verse number="4" style="v" /><note caller="-" style="x"><char style="xo" closed="false">2.4: </char><char style="xdc" closed="false">Ws 11.23.</char></note> Or perhaps you despise his great kindness, tolerance, and patience. Surely you know that God is kind, because he is trying to lead you to repent. <verse number="5" style="v" />But you have a hard and stubborn heart, and so you are making your own punishment even greater on the Day when God's anger and righteous judgments will be revealed. <verse number="6" style="v" /><note caller="-" style="x"><char style="xo" closed="false">2.6: </char><char style="xt" closed="false">Ps 62.12; Pr 24.12.</char></note> For God will reward each of us according to what we have done. <verse number="7" style="v" />Some people keep on doing good, and seek glory, honor, and immortal life; to them God will give eternal life. <verse number="8" style="v" />Other people are selfish and reject what is right, in order to follow what is wrong; on them God will pour out his anger and fury. <verse number="9" style="v" />There will be suffering and pain for all those who do what is evil, for the Jews first and also for the Gentiles. <verse number="10" style="v" />But God will give glory, honor, and peace to all who do what is good, to the Jews first and also to the Gentiles. <verse number="11" style="v" /><note caller="-" style="x"><char style="xo" closed="false">2.11: </char><char style="xt" closed="false">Dt 10.17.</char></note> For God judges everyone by the same standard.</para>
+  <para style="p">
+    <verse number="12" style="v" />The Gentiles do not have the Law of Moses; they sin and are lost apart from the Law. The Jews have the Law; they sin and are judged by the Law. <verse number="13" style="v" />For it is not by hearing the Law that people are put right with God, but by doing what the Law commands. <verse number="14" style="v" />The Gentiles do not have the Law; but whenever they do by instinct what the Law commands, they are their own law, even though they do not have the Law. <verse number="15" style="v" />Their conduct shows that what the Law commands is written in their hearts. Their consciences also show that this is true, since their thoughts sometimes accuse them and sometimes defend them. <verse number="16" style="v" />And so, according to the Good News I preach, this is how it will be on that Day when God through Jesus Christ will judge the secret thoughts of all.</para>
+  <para style="s">The Jews and the Law</para>
+  <para style="p">
+    <verse number="17" style="v" />What about you? You call yourself a Jew; you depend on the Law and boast about God; <verse number="18" style="v" />you know what God wants you to do, and you have learned from the Law to choose what is right; <verse number="19" style="v" />you are sure that you are a guide for the blind, a light for those who are in darkness, <verse number="20" style="v" />an instructor for the foolish, and a teacher for the ignorant. You are certain that in the Law you have the full content of knowledge and of truth. <verse number="21" style="v" />You teach others—why don't you teach yourself? You preach, “Do not steal”—but do you yourself steal? <verse number="22" style="v" />You say, “Do not commit adultery”—but do you commit adultery? You detest idols—but do you rob temples? <verse number="23" style="v" />You boast about having God's law—but do you bring shame on God by breaking his law? <verse number="24" style="v" /><note caller="-" style="x"><char style="xo" closed="false">2.24: </char><char style="xt" closed="false">Is 52.5 (LXX).</char></note> The scripture says, “Because of you Jews, the Gentiles speak evil of God.”</para>
+  <para style="p">
+    <verse number="25" style="v" />If you obey the Law, your circumcision is of value; but if you disobey the Law, you might as well never have been circumcised. <verse number="26" style="v" />If the Gentile, who is not circumcised, obeys the commands of the Law, will not God regard him as though he were circumcised? <verse number="27" style="v" />And so you Jews will be condemned by the Gentiles because you break the Law, even though you have it written down and are circumcised; but they obey the Law, even though they are not physically circumcised. <verse number="28" style="v" />After all, who is a real Jew, truly circumcised? It is not the man who is a Jew on the outside, whose circumcision is a physical thing. <verse number="29" style="v" /><note caller="-" style="x"><char style="xo" closed="false">2.29: </char><char style="xt" closed="false">Dt 30.6.</char></note> Rather, the real Jew is the person who is a Jew on the inside, that is, whose heart has been circumcised, and this is the work of God's Spirit, not of the written Law. Such a person receives praise from God, not from human beings.</para>
+  <chapter number="3" style="c" />
+  <para style="p">
+    <verse number="1" style="v" />Do the Jews then have any advantage over the Gentiles? Or is there any value in being circumcised? <verse number="2" style="v" />Much, indeed, in every way! In the first place, God trusted his message to the Jews. <verse number="3" style="v" />But what if some of them were not faithful? Does this mean that God will not be faithful? <verse number="4" style="v" /><note caller="-" style="x"><char style="xo" closed="false">3.4: </char><char style="xt" closed="false">Ps 51.4 (LXX).</char></note> Certainly not! God must be true, even though all human beings are liars. As the scripture says,</para>
+  <para style="q1">“You must be shown to be right when you speak;</para>
+  <para style="q2">you must win your case when you are being tried.”</para>
+  <para style="p">
+    <verse number="5" style="v" />But what if our doing wrong serves to show up more clearly God's doing right? Can we say that God does wrong when he punishes us? (This would be the natural question to ask.) <verse number="6" style="v" />By no means! If God is not just, how can he judge the world?</para>
+  <para style="p">
+    <verse number="7" style="v" />But what if my untruth serves God's glory by making his truth stand out more clearly? Why should I still be condemned as a sinner? <verse number="8" style="v" />Why not say, then, “Let us do evil so that good may come”? Some people, indeed, have insulted me by accusing me of saying this very thing! They will be condemned, as they should be.</para>
+  <para style="s">No One Is Righteous</para>
+  <para style="p">
+    <verse number="9" style="v" />Well then, are we Jews in any better condition than the Gentiles? Not at all! <note caller="+" style="f"><char style="fr" closed="false">3.9: </char><char style="fq" closed="false">any better condition than the Gentiles? Not at all!; </char><char style="ft" closed="false">or </char><char style="fq" closed="false">any worse condition than the Gentiles? Not altogether.</char></note> I have already shown that Jews and Gentiles alike are all under the power of sin. <verse number="10" style="v" /><note caller="-" style="x"><char style="xo" closed="false">3.10-12: </char><char style="xt" closed="false">Ps 14.1-3 (LXX); Ps 53.1-3 (LXX).</char></note> As the Scriptures say:</para>
+  <para style="q1">“There is no one who is righteous,</para>
+  <para style="q2">
+    <verse number="11" style="v" />no one who is wise</para>
+  <para style="q2">or who worships God.</para>
+  <para style="q1">
+    <verse number="12" style="v" />All have turned away from God;</para>
+  <para style="q2">they have all gone wrong;</para>
+  <para style="q2">no one does what is right, not even one.</para>
+  <para style="q1">
+    <verse number="13" style="v" />
+    <note caller="-" style="x">
+      <char style="xo" closed="false">3.13: a </char>
+      <char style="xt" closed="false">Ps 5.9 (LXX); </char>
+      <char style="xo" closed="false">b </char>
+      <char style="xt" closed="false">Ps 140.3.</char>
+    </note> Their words are full of deadly deceit;</para>
+  <para style="q2">wicked lies roll off their tongues,</para>
+  <para style="q2">and dangerous threats, like snake's poison, from their lips;</para>
+  <para style="q2">
+    <verse number="14" style="v" />
+    <note caller="-" style="x">
+      <char style="xo" closed="false">3.14: </char>
+      <char style="xt" closed="false">Ps 10.7 (LXX).</char>
+    </note> their speech is filled with bitter curses.</para>
+  <para style="q1">
+    <verse number="15" style="v" />
+    <note caller="-" style="x">
+      <char style="xo" closed="false">3.15-17: </char>
+      <char style="xt" closed="false">Is 59.7,8.</char>
+    </note> They are quick to hurt and kill;</para>
+  <para style="q2">
+    <verse number="16" style="v" />they leave ruin and destruction wherever they go.</para>
+  <para style="q1">
+    <verse number="17" style="v" />They have not known the path of peace,</para>
+  <para style="q2">
+    <verse number="18" style="v" />
+    <note caller="-" style="x">
+      <char style="xo" closed="false">3.18: </char>
+      <char style="xt" closed="false">Ps 36.1.</char>
+    </note> nor have they learned reverence for God.”</para>
+  <para style="p">
+    <verse number="19" style="v" />Now we know that everything in the Law applies to those who live under the Law, in order to stop all human excuses and bring the whole world under God's judgment. <verse number="20" style="v" /><note caller="-" style="x"><char style="xo" closed="false">3.20: </char><char style="xt" closed="false">Ps 143.2; Ga 2.16.</char></note> For no one is put right in God's sight by doing what the Law requires; what the Law does is to make us know that we have sinned.</para>
+  <para style="s">How We Are Put Right with God</para>
+  <para style="p">
+    <verse number="21" style="v" />But now God's way of putting people right with himself has been revealed. It has nothing to do with law, even though the Law of Moses and the prophets gave their witness to it. <verse number="22" style="v" /><note caller="-" style="x"><char style="xo" closed="false">3.22: </char><char style="xt" closed="false">Ga 2.16.</char></note> God puts people right through their faith in Jesus Christ. God does this to all who believe in Christ, because there is no difference at all: <verse number="23" style="v" />everyone has sinned and is far away from God's saving presence. <verse number="24" style="v" />But by the free gift of God's grace all are put right with him through Christ Jesus, who sets them free. <verse number="25-26" style="v" />God offered him, so that by his blood <note caller="+" style="f"><char style="fr" closed="false">3.25-26: </char><char style="fq" closed="false">by his blood; </char><char style="ft" closed="false">or </char><char style="fq" closed="false">by his sacrificial death.</char></note> he should become the means by which people's sins are forgiven through their faith in him. God did this in order to demonstrate that he is righteous. In the past he was patient and overlooked people's sins; but in the present time he deals with their sins, in order to demonstrate his righteousness. In this way God shows that he himself is righteous and that he puts right everyone who believes in Jesus.</para>
+  <para style="p">
+    <verse number="27" style="v" />What, then, can we boast about? Nothing! And what is the reason for this? Is it that we obey the Law? No, but that we believe. <verse number="28" style="v" />For we conclude that a person is put right with God only through faith, and not by doing what the Law commands. <verse number="29" style="v" />Or is God the God of the Jews only? Is he not the God of the Gentiles also? Of course he is. <verse number="30" style="v" /><note caller="-" style="x"><char style="xo" closed="false">3.30: </char><char style="xt" closed="false">Dt 6.4; Ga 3.20.</char></note> God is one, and he will put the Jews right with himself on the basis of their faith, and will put the Gentiles right through their faith. <verse number="31" style="v" />Does this mean that by this faith we do away with the Law? No, not at all; instead, we uphold the Law.</para>
+  <chapter number="4" style="c" />
+  <para style="s">The Example of Abraham</para>
+  <para style="p">
+    <verse number="1" style="v" />What shall we say, then, of Abraham, the father of our race? What was his experience? <verse number="2" style="v" />If he was put right with God by the things he did, he would have something to boast about—but not in God's sight. <verse number="3" style="v" /><note caller="-" style="x"><char style="xo" closed="false">4.3: </char><char style="xt" closed="false">Gn 15.6; Ga 3.6.</char></note> The scripture says, “Abraham believed God, and because of his faith God accepted him as righteous.” <verse number="4" style="v" />A person who works is paid wages, but they are not regarded as a gift; they are something that has been earned. <verse number="5" style="v" />But those who depend on faith, not on deeds, and who believe in the God who declares the guilty to be innocent, it is this faith that God takes into account in order to put them right with himself. <verse number="6" style="v" />This is what David meant when he spoke of the happiness of the person whom God accepts as righteous, apart from anything that person does:</para>
+  <para style="q1">
+    <verse number="7" style="v" />
+    <note caller="-" style="x">
+      <char style="xo" closed="false">4.7,8: </char>
+      <char style="xt" closed="false">Ps 32.1,2.</char>
+    </note> “Happy are those whose wrongs are forgiven,</para>
+  <para style="q2">whose sins are pardoned!</para>
+  <para style="q1">
+    <verse number="8" style="v" />Happy is the person whose sins the Lord will not keep account of!”</para>
+  <para style="p">
+    <verse number="9" style="v" />Does this happiness that David spoke of belong only to those who are circumcised? No indeed! It belongs also to those who are not circumcised. For we have quoted the scripture, “Abraham believed God, and because of his faith God accepted him as righteous.” <verse number="10" style="v" />When did this take place? Was it before or after Abraham was circumcised? It was before, not after. <verse number="11" style="v" /><note caller="-" style="x"><char style="xo" closed="false">4.11: </char><char style="xt" closed="false">Gn 17.10.</char></note> He was circumcised later, and his circumcision was a sign to show that because of his faith God had accepted him as righteous before he had been circumcised. And so Abraham is the spiritual father of all who believe in God and are accepted as righteous by him, even though they are not circumcised. <verse number="12" style="v" />He is also the father of those who are circumcised, that is, of those who, in addition to being circumcised, also live the same life of faith that our father Abraham lived before he was circumcised.</para>
+  <para style="s">God's Promise Is Received through Faith</para>
+  <para style="p">
+    <verse number="13" style="v" />
+    <note caller="-" style="x">
+      <char style="xo" closed="false">4.13: </char>
+      <char style="xt" closed="false">Gn 17.4-6; 22.17,18; Ga 3.29.</char>
+    </note> When God promised Abraham and his descendants that the world would belong to him, he did so, not because Abraham obeyed the Law, but because he believed and was accepted as righteous by God. <verse number="14" style="v" /><note caller="-" style="x"><char style="xo" closed="false">4.14: </char><char style="xt" closed="false">Ga 3.18.</char></note> For if what God promises is to be given to those who obey the Law, then faith means nothing and God's promise is worthless. <verse number="15" style="v" />The Law brings down God's anger; but where there is no law, there is no disobeying of the law.</para>
+  <para style="p">
+    <verse number="16" style="v" />
+    <note caller="-" style="x">
+      <char style="xo" closed="false">4.16: </char>
+      <char style="xt" closed="false">Ga 3.7.</char>
+    </note> And so the promise was based on faith, in order that the promise should be guaranteed as God's free gift to all of Abraham's descendants—not just to those who obey the Law, but also to those who believe as Abraham did. For Abraham is the spiritual father of us all; <verse number="17" style="v" /><note caller="-" style="x"><char style="xo" closed="false">4.17: </char><char style="xt" closed="false">Gn 17.5.</char></note> as the scripture says, “I have made you father of many nations.” So the promise is good in the sight of God, in whom Abraham believed—the God who brings the dead to life and whose command brings into being what did not exist. <verse number="18" style="v" /><note caller="-" style="x"><char style="xo" closed="false">4.18: </char><char style="xt" closed="false">Gn 15.5.</char></note> Abraham believed and hoped, even when there was no reason for hoping, and so became “the father of many nations.” Just as the scripture says, “Your descendants will be as many as the stars.” <verse number="19" style="v" /><note caller="-" style="x"><char style="xo" closed="false">4.19: </char><char style="xt" closed="false">Gn 17.17.</char></note> He was then almost one hundred years old; but his faith did not weaken when he thought of his body, which was already practically dead, or of the fact that Sarah could not have children. <verse number="20" style="v" />His faith did not leave him, and he did not doubt God's promise; his faith filled him with power, and he gave praise to God. <verse number="21" style="v" />He was absolutely sure that God would be able to do what he had promised. <verse number="22" style="v" />That is why Abraham, through faith, “was accepted as righteous by God.” <verse number="23" style="v" />The words “he was accepted as righteous” were not written for him alone. <verse number="24" style="v" />They were written also for us who are to be accepted as righteous, who believe in him who raised Jesus our Lord from death. <verse number="25" style="v" /><note caller="-" style="x"><char style="xo" closed="false">4.25: </char><char style="xt" closed="false">Is 53.4,5.</char></note> Because of our sins he was given over to die, and he was raised to life in order to put us right with God.</para>
+  <chapter number="5" style="c" />
+  <para style="s">Right with God</para>
+  <para style="p">
+    <verse number="1" style="v" />Now that we have been put right with God through faith, we have <note caller="+" style="f"><char style="fr" closed="false">5.1: </char><char style="fq" closed="false">we have; </char><char style="ft" closed="false">some manuscripts have </char><char style="fq" closed="false">let us have.</char></note> peace with God through our Lord Jesus Christ. <verse number="2" style="v" />He has brought us by faith into this experience of God's grace, in which we now live. And so we boast <note caller="+" style="f"><char style="fr" closed="false">5.2: </char><char style="fq" closed="false">we boast; </char><char style="ft" closed="false">or </char><char style="fq" closed="false">let us boast.</char></note> of the hope we have of sharing God's glory! <verse number="3" style="v" />We also boast <note caller="+" style="f"><char style="fr" closed="false">5.3: </char><char style="fq" closed="false">We also boast; </char><char style="ft" closed="false">or </char><char style="fq" closed="false">Let us also boast.</char></note> of our troubles, because we know that trouble produces endurance, <verse number="4" style="v" />endurance brings God's approval, and his approval creates hope. <verse number="5" style="v" />This hope does not disappoint us, for God has poured out his love into our hearts by means of the Holy Spirit, who is God's gift to us.</para>
+  <para style="p">
+    <verse number="6" style="v" />For when we were still helpless, Christ died for the wicked at the time that God chose. <verse number="7" style="v" />It is a difficult thing for someone to die for a righteous person. It may even be that someone might dare to die for a good person. <verse number="8" style="v" />But God has shown us how much he loves us—it was while we were still sinners that Christ died for us! <verse number="9" style="v" />By his blood <note caller="+" style="f"><char style="fr" closed="false">5.9: </char><char style="fq" closed="false">By his blood; </char><char style="ft" closed="false">or </char><char style="fq" closed="false">By his sacrificial death.</char></note> we are now put right with God; how much more, then, will we be saved by him from God's anger! <verse number="10" style="v" />We were God's enemies, but he made us his friends through the death of his Son. Now that we are God's friends, how much more will we be saved by Christ's life! <verse number="11" style="v" />But that is not all; we rejoice because of what God has done through our Lord Jesus Christ, who has now made us God's friends.</para>
+  <para style="s">Adam and Christ</para>
+  <para style="p">
+    <verse number="12" style="v" />
+    <note caller="-" style="x">
+      <char style="xo" closed="false">5.12: </char>
+      <char style="xt" closed="false">Gn 3.6 </char>
+      <char style="xdc">; Ws 2.24</char>.</note> Sin came into the world through one man, and his sin brought death with it. As a result, death has spread to the whole human race because everyone has sinned. <verse number="13" style="v" />There was sin in the world before the Law was given; but where there is no law, no account is kept of sins. <verse number="14" style="v" />But from the time of Adam to the time of Moses, death ruled over all human beings, even over those who did not sin in the same way that Adam did when he disobeyed God's command.</para>
+  <para style="p">Adam was a figure of the one who was to come. <verse number="15" style="v" />But the two are not the same, because God's free gift is not like Adam's sin. It is true that many people died because of the sin of that one man. But God's grace is much greater, and so is his free gift to so many people through the grace of the one man, Jesus Christ. <verse number="16" style="v" />And there is a difference between God's gift and the sin of one man. After the one sin, came the judgment of “Guilty”; but after so many sins, comes the undeserved gift of “Not guilty!” <verse number="17" style="v" />It is true that through the sin of one man death began to rule because of that one man. But how much greater is the result of what was done by the one man, Jesus Christ! All who receive God's abundant grace and are freely put right with him will rule in life through Christ.</para>
+  <para style="p">
+    <verse number="18" style="v" />
+    <note caller="-" style="x">
+      <char style="xo" closed="false">5.18: </char>
+      <char style="xdc" closed="false">2 Esd 7.11.</char>
+    </note> So then, as the one sin condemned all people, in the same way the one righteous act sets all people free and gives them life. <verse number="19" style="v" />And just as all people were made sinners as the result of the disobedience of one man, in the same way they will all be put right with God as the result of the obedience of the one man.</para>
+  <para style="p">
+    <verse number="20" style="v" />Law was introduced in order to increase wrongdoing; but where sin increased, God's grace increased much more. <verse number="21" style="v" />So then, just as sin ruled by means of death, so also God's grace rules by means of righteousness, leading us to eternal life through Jesus Christ our Lord.</para>
+  <chapter number="6" style="c" />
+  <para style="s">Dead to Sin but Alive in Union with Christ</para>
+  <para style="p">
+    <verse number="1" style="v" />What shall we say, then? Should we continue to live in sin so that God's grace will increase? <verse number="2" style="v" />Certainly not! We have died to sin—how then can we go on living in it? <verse number="3" style="v" />For surely you know that when we were baptized into union with Christ Jesus, we were baptized into union with his death. <verse number="4" style="v" /><note caller="-" style="x"><char style="xo" closed="false">6.4: </char><char style="xt" closed="false">Col 2.12.</char></note> By our baptism, then, we were buried with him and shared his death, in order that, just as Christ was raised from death by the glorious power of the Father, so also we might live a new life.</para>
+  <para style="p">
+    <verse number="5" style="v" />For since we have become one with him in dying as he did, in the same way we shall be one with him by being raised to life as he was. <verse number="6" style="v" />And we know that our old being has been put to death with Christ on his cross, in order that the power of the sinful self might be destroyed, so that we should no longer be the slaves of sin. <verse number="7" style="v" />For when we die, we are set free from the power of sin. <verse number="8" style="v" />Since we have died with Christ, we believe that we will also live with him. <verse number="9" style="v" />For we know that Christ has been raised from death and will never die again—death will no longer rule over him. <verse number="10" style="v" />And so, because he died, sin has no power over him; and now he lives his life in fellowship with God. <verse number="11" style="v" />In the same way you are to think of yourselves as dead, so far as sin is concerned, but living in fellowship with God through Christ Jesus.</para>
+  <para style="p">
+    <verse number="12" style="v" />Sin must no longer rule in your mortal bodies, so that you obey the desires of your natural self. <verse number="13" style="v" />Nor must you surrender any part of yourselves to sin to be used for wicked purposes. Instead, give yourselves to God, as those who have been brought from death to life, and surrender your whole being to him to be used for righteous purposes. <verse number="14" style="v" />Sin must not be your master; for you do not live under law but under God's grace.</para>
+  <para style="s">Slaves of Righteousness</para>
+  <para style="p">
+    <verse number="15" style="v" />What, then? Shall we sin, because we are not under law but under God's grace? By no means! <verse number="16" style="v" />Surely you know that when you surrender yourselves as slaves to obey someone, you are in fact the slaves of the master you obey—either of sin, which results in death, or of obedience, which results in being put right with God. <verse number="17" style="v" />But thanks be to God! For though at one time you were slaves to sin, you have obeyed with all your heart the truths found in the teaching you received. <verse number="18" style="v" />You were set free from sin and became the slaves of righteousness. <verse number="19" style="v" />(I use everyday language because of the weakness of your natural selves.) At one time you surrendered yourselves entirely as slaves to impurity and wickedness for wicked purposes. In the same way you must now surrender yourselves entirely as slaves of righteousness for holy purposes.</para>
+  <para style="p">
+    <verse number="20" style="v" />When you were the slaves of sin, you were free from righteousness. <verse number="21" style="v" />What did you gain from doing the things that you are now ashamed of? The result of those things is death! <verse number="22" style="v" />But now you have been set free from sin and are the slaves of God. Your gain is a life fully dedicated to him, and the result is eternal life. <verse number="23" style="v" />For sin pays its wage—death; but God's free gift is eternal life in union with Christ Jesus our Lord.</para>
+  <chapter number="7" style="c" />
+  <para style="s">An Illustration from Marriage</para>
+  <para style="p">
+    <verse number="1" style="v" />Certainly you will understand what I am about to say, my friends, because all of you know about law. The law rules over people only as long as they live. <verse number="2" style="v" />A married woman, for example, is bound by the law to her husband as long as he lives; but if he dies, then she is free from the law that bound her to him. <verse number="3" style="v" />So then, if she lives with another man while her husband is alive, she will be called an adulteress; but if her husband dies, she is legally a free woman and does not commit adultery if she marries another man. <verse number="4" style="v" />That is how it is with you, my friends. As far as the Law is concerned, you also have died because you are part of the body of Christ; and now you belong to him who was raised from death in order that we might be useful in the service of God. <verse number="5" style="v" />For when we lived according to our human nature, the sinful desires stirred up by the Law were at work in our bodies, and all we did ended in death. <verse number="6" style="v" />Now, however, we are free from the Law, because we died to that which once held us prisoners. No longer do we serve in the old way of a written law, but in the new way of the Spirit.</para>
+  <para style="s">Law and Sin</para>
+  <para style="p">
+    <verse number="7" style="v" />
+    <note caller="-" style="x">
+      <char style="xo" closed="false">7.7: </char>
+      <char style="xt" closed="false">Ex 20.17; Dt 5.21.</char>
+    </note> Shall we say, then, that the Law itself is sinful? Of course not! But it was the Law that made me know what sin is. If the Law had not said, “Do not desire what belongs to someone else,” I would not have known such a desire. <verse number="8" style="v" />But by means of that commandment sin found its chance to stir up all kinds of selfish desires in me. Apart from law, sin is a dead thing. <verse number="9" style="v" />I myself was once alive apart from law; but when the commandment came, sin sprang to life, <verse number="10" style="v" />and I died. And the commandment which was meant to bring life, in my case brought death. <verse number="11" style="v" /><note caller="-" style="x"><char style="xo" closed="false">7.11: </char><char style="xt" closed="false">Gn 3.13.</char></note> Sin found its chance, and by means of the commandment it deceived me and killed me.</para>
+  <para style="p">
+    <verse number="12" style="v" />So then, the Law itself is holy, and the commandment is holy, right, and good. <verse number="13" style="v" />But does this mean that what is good caused my death? By no means! It was sin that did it; by using what is good, sin brought death to me, in order that its true nature as sin might be revealed. And so, by means of the commandment sin is shown to be even more terribly sinful.</para>
+  <para style="s">The Conflict in Us</para>
+  <para style="p">
+    <verse number="14" style="v" />We know that the Law is spiritual; but I am a mortal, sold as a slave to sin. <verse number="15" style="v" /><note caller="-" style="x"><char style="xo" closed="false">7.15: </char><char style="xt" closed="false">Ga 5.17.</char></note> I do not understand what I do; for I don't do what I would like to do, but instead I do what I hate. <verse number="16" style="v" />Since what I do is what I don't want to do, this shows that I agree that the Law is right. <verse number="17" style="v" />So I am not really the one who does this thing; rather it is the sin that lives in me. <verse number="18" style="v" />I know that good does not live in me—that is, in my human nature. For even though the desire to do good is in me, I am not able to do it. <verse number="19" style="v" />I don't do the good I want to do; instead, I do the evil that I do not want to do. <verse number="20" style="v" />If I do what I don't want to do, this means that I am no longer the one who does it; instead, it is the sin that lives in me.</para>
+  <para style="p">
+    <verse number="21" style="v" />So I find that this law is at work: when I want to do what is good, what is evil is the only choice I have. <verse number="22" style="v" />My inner being delights in the law of God. <verse number="23" style="v" />But I see a different law at work in my body—a law that fights against the law which my mind approves of. It makes me a prisoner to the law of sin which is at work in my body. <verse number="24" style="v" />What an unhappy man I am! Who will rescue me from this body that is taking me to death? <verse number="25" style="v" />Thanks be to God, who does this through our Lord Jesus Christ!</para>
+  <para style="p">This, then, is my condition: on my own I can serve God's law only with my mind, while my human nature serves the law of sin.</para>
+  <chapter number="8" style="c" />
+  <para style="s">Life in the Spirit</para>
+  <para style="p">
+    <verse number="1" style="v" />There is no condemnation now for those who live in union with Christ Jesus. <verse number="2" style="v" />For the law of the Spirit, which brings us life in union with Christ Jesus, has set me <note caller="+" style="f"><char style="fr" closed="false">8.2: </char><char style="fq" closed="false">me; </char><char style="ft" closed="false">some manuscripts have </char><char style="fq" closed="false">you; </char><char style="ft" closed="false">others have </char><char style="fq" closed="false">us.</char></note> free from the law of sin and death. <verse number="3" style="v" />What the Law could not do, because human nature was weak, God did. He condemned sin in human nature by sending his own Son, who came with a nature like our sinful nature, to do away with sin. <verse number="4" style="v" />God did this so that the righteous demands of the Law might be fully satisfied in us who live according to the Spirit, and not according to human nature. <verse number="5" style="v" />Those who live as their human nature tells them to, have their minds controlled by what human nature wants. Those who live as the Spirit tells them to, have their minds controlled by what the Spirit wants. <verse number="6" style="v" />To be controlled by human nature results in death; to be controlled by the Spirit results in life and peace. <verse number="7" style="v" />And so people become enemies of God when they are controlled by their human nature; for they do not obey God's law, and in fact they cannot obey it. <verse number="8" style="v" />Those who obey their human nature cannot please God.</para>
+  <para style="p">
+    <verse number="9" style="v" />But you do not live as your human nature tells you to; instead, you live as the Spirit tells you to—if, in fact, God's Spirit lives in you. Whoever does not have the Spirit of Christ does not belong to him. <verse number="10" style="v" />But if Christ lives in you, the Spirit is life for you <note caller="+" style="f"><char style="fr" closed="false">8.10: </char><char style="fq" closed="false">the Spirit is life for you; </char><char style="ft" closed="false">or </char><char style="fq" closed="false">your spirit is alive.</char></note> because you have been put right with God, even though your bodies are going to die because of sin. <verse number="11" style="v" /><note caller="-" style="x"><char style="xo" closed="false">8.11: </char><char style="xt" closed="false">1 Co 3.16.</char></note> If the Spirit of God, who raised Jesus from death, lives in you, then he who raised Christ from death will also give life to your mortal bodies by the presence of his Spirit in you.</para>
+  <para style="p">
+    <verse number="12" style="v" />So then, my friends, we have an obligation, but it is not to live as our human nature wants us to. <verse number="13" style="v" />For if you live according to your human nature, you are going to die; but if by the Spirit you put to death your sinful actions, you will live. <verse number="14" style="v" />Those who are led by God's Spirit are God's children. <verse number="15" style="v" /><note caller="-" style="x"><char style="xo" closed="false">8.15-17: </char><char style="xt" closed="false">Ga 4.5-7.</char></note> <note caller="-" style="x"><char style="xo" closed="false">8.15: </char><char style="xt" closed="false">Mk 14.36; Ga 4.6.</char></note> For the Spirit that God has given you does not make you slaves and cause you to be afraid; instead, the Spirit makes you God's children, and by the Spirit's power we cry out to God, “Father! my Father!” <verse number="16" style="v" />God's Spirit joins himself to our spirits to declare that we are God's children. <verse number="17" style="v" />Since we are his children, we will possess the blessings he keeps for his people, and we will also possess with Christ what God has kept for him; for if we share Christ's suffering, we will also share his glory.</para>
+  <para style="s">The Future Glory</para>
+  <para style="p">
+    <verse number="18" style="v" />
+    <note caller="-" style="x">
+      <char style="xo" closed="false">8.18: </char>
+      <char style="xdc" closed="false">Ws 3.5,6.</char>
+    </note> I consider that what we suffer at this present time cannot be compared at all with the glory that is going to be revealed to us. <verse number="19" style="v" />All of creation waits with eager longing for God to reveal his children. <verse number="20" style="v" /><note caller="-" style="x"><char style="xo" closed="false">8.20: </char><char style="xt" closed="false">Gn 3.17-19.</char></note> For creation was condemned to lose its purpose, not of its own will, but because God willed it to be so. Yet there was the hope <verse number="21" style="v" />that creation itself would one day be set free from its slavery to decay and would share the glorious freedom of the children of God. <verse number="22" style="v" />For we know that up to the present time all of creation groans with pain, like the pain of childbirth. <verse number="23" style="v" /><note caller="-" style="x"><char style="xo" closed="false">8.23: </char><char style="xt" closed="false">2 Co 5.2-4.</char></note> But it is not just creation alone which groans; we who have the Spirit as the first of God's gifts also groan within ourselves as we wait for God to make us his children and <note caller="+" style="f"><char style="fr" closed="false">8.23: </char><char style="ft" closed="false">Some manuscripts do not have </char><char style="fq" closed="false">make us his children and.</char></note> set our whole being free. <verse number="24" style="v" />For it was by hope that we were saved; but if we see what we hope for, then it is not really hope. For who of us hopes for something we see? <verse number="25" style="v" />But if we hope for what we do not see, we wait for it with patience.</para>
+  <para style="p">
+    <verse number="26" style="v" />In the same way the Spirit also comes to help us, weak as we are. For we do not know how we ought to pray; the Spirit himself pleads with God for us in groans that words cannot express. <verse number="27" style="v" />And God, who sees into our hearts, knows what the thought of the Spirit is; because the Spirit pleads with God on behalf of his people and in accordance with his will.</para>
+  <para style="p">
+    <verse number="28" style="v" />We know that in all things God works for good with those who love him, <note caller="+" style="f"><char style="fr" closed="false">8.28: </char><char style="fq" closed="false">in all things God works for good with those who love him; </char><char style="ft" closed="false">some manuscripts have </char><char style="fq" closed="false">all things work for good for those who love God.</char></note> those whom he has called according to his purpose. <verse number="29" style="v" />Those whom God had already chosen he also set apart to become like his Son, so that the Son would be the first among many believers. <verse number="30" style="v" />And so those whom God set apart, he called; and those he called, he put right with himself, and he shared his glory with them.</para>
+  <para style="s">God's Love in Christ Jesus</para>
+  <para style="p">
+    <verse number="31" style="v" />In view of all this, what can we say? If God is for us, who can be against us? <verse number="32" style="v" />Certainly not God, who did not even keep back his own Son, but offered him for us all! He gave us his Son—will he not also freely give us all things? <verse number="33" style="v" />Who will accuse God's chosen people? God himself declares them not guilty! <verse number="34" style="v" />Who, then, will condemn them? Not Christ Jesus, who died, or rather, who was raised to life and is at the right side of God, pleading with him for us! <verse number="35" style="v" />Who, then, can separate us from the love of Christ? Can trouble do it, or hardship or persecution or hunger or poverty or danger or death? <verse number="36" style="v" /><note caller="-" style="x"><char style="xo" closed="false">8.36: </char><char style="xt" closed="false">Ps 44.22.</char></note> As the scripture says,</para>
+  <para style="q1">“For your sake we are in danger of death at all times;</para>
+  <para style="q2">we are treated like sheep that are going to be slaughtered.”</para>
+  <para style="b" />
+  <para style="m">
+    <verse number="37" style="v" />No, in all these things we have complete victory through him who loved us! <verse number="38" style="v" />For I am certain that nothing can separate us from his love: neither death nor life, neither angels nor other heavenly rulers or powers, neither the present nor the future, <verse number="39" style="v" />neither the world above nor the world below—there is nothing in all creation that will ever be able to separate us from the love of God which is ours through Christ Jesus our Lord.</para>
+  <chapter number="9" style="c" />
+  <para style="s">God and His People</para>
+  <para style="p">
+    <verse number="1" style="v" />I am speaking the truth; I belong to Christ and I do not lie. My conscience, ruled by the Holy Spirit, also assures me that I am not lying <verse number="2" style="v" />when I say how great is my sorrow, how endless the pain in my heart <verse number="3" style="v" />for my people, my own flesh and blood! For their sake I could wish that I myself were under God's curse and separated from Christ. <verse number="4" style="v" /><note caller="-" style="x"><char style="xo" closed="false">9.4: </char><char style="xt" closed="false">Ex 4.22.</char></note> They are God's people; he made them his children and revealed his glory to them; he made his covenants <note caller="+" style="f"><char style="fr" closed="false">9.4: </char><char style="fq" closed="false">covenants; </char><char style="ft" closed="false">some manuscripts have </char><char style="fq" closed="false">covenant.</char></note> with them and gave them the Law; they have the true worship; they have received God's promises; <verse number="5" style="v" />they are descended from the famous Hebrew ancestors; and Christ, as a human being, belongs to their race. May God, who rules over all, be praised forever! <note caller="+" style="f"><char style="fr" closed="false">9.5: </char><char style="fq" closed="false">May God, who rules over all, be praised forever!; </char><char style="ft" closed="false">or </char><char style="fq" closed="false">And may he, who is God ruling over all, be praised forever!</char></note> Amen.</para>
+  <para style="p">
+    <verse number="6" style="v" />I am not saying that the promise of God has failed; for not all the people of Israel are the people of God. <verse number="7" style="v" /><note caller="-" style="x"><char style="xo" closed="false">9.7: </char><char style="xt" closed="false">Gn 21.12.</char></note> Nor are all of Abraham's descendants the children of God. God said to Abraham, “It is through Isaac that you will have the descendants I promised you.” <verse number="8" style="v" />This means that the children born in the usual way <note caller="+" style="f"><char style="fr" closed="false">9.8: </char><char style="fk" closed="false">children born in the usual way: </char><char style="ft" closed="false">This refers to the descendants Abraham had through Ishmael, his son by Hagar (see Ga 4.22-23).</char></note> are not the children of God; instead, the children born as a result of God's promise are regarded as the true descendants. <verse number="9" style="v" /><note caller="-" style="x"><char style="xo" closed="false">9.9: </char><char style="xt" closed="false">Gn 18.10.</char></note> For God's promise was made in these words: “At the right time <note caller="+" style="f"><char style="fr" closed="false">9.9: </char><char style="fq" closed="false">At the right time; </char><char style="ft" closed="false">or </char><char style="fq" closed="false">At this time next year.</char></note> I will come back, and Sarah will have a son.”</para>
+  <para style="p">
+    <verse number="10" style="v" />And this is not all. For Rebecca's two sons had the same father, our ancestor Isaac. <verse number="11-12" style="v" /><note caller="-" style="x"><char style="xo" closed="false">9.12: </char><char style="xt" closed="false">Gn 25.23.</char></note> But in order that the choice of one son might be completely the result of God's own purpose, God said to her, “The older will serve the younger.” He said this before they were born, before they had done anything either good or bad; so God's choice was based on his call, and not on anything they had done. <verse number="13" style="v" /><note caller="-" style="x"><char style="xo" closed="false">9.13: </char><char style="xt" closed="false">Ml 1.2,3.</char></note> As the scripture says, “I loved Jacob, but I hated Esau.”</para>
+  <para style="p">
+    <verse number="14" style="v" />Shall we say, then, that God is unjust? Not at all. <verse number="15" style="v" /><note caller="-" style="x"><char style="xo" closed="false">9.15: </char><char style="xt" closed="false">Ex 33.19.</char></note> For he said to Moses, “I will have mercy on anyone I wish; I will take pity on anyone I wish.” <verse number="16" style="v" />So then, everything depends, not on what we humans want or do, but only on God's mercy. <verse number="17" style="v" /><note caller="-" style="x"><char style="xo" closed="false">9.17: </char><char style="xt" closed="false">Ex 9.16 (LXX).</char></note> For the scripture says to the king of Egypt, “I made you king in order to use you to show my power and to spread my fame over the whole world.” <verse number="18" style="v" />So then, God has mercy on anyone he wishes, and he makes stubborn anyone he wishes.</para>
+  <para style="s">God's Anger and Mercy</para>
+  <para style="p">
+    <verse number="19" style="v" />But one of you will say to me, “If this is so, how can God find fault with anyone? Who can resist God's will?” <verse number="20" style="v" /><note caller="-" style="x"><char style="xo" closed="false">9.20: </char><char style="xt" closed="false">Is 29.16; 45.9 </char><char style="xdc">; Ws 12.12</char>.</note> But who are you, my friend, to talk back to God? A clay pot does not ask the man who made it, “Why did you make me like this?” <verse number="21" style="v" /><note caller="-" style="x"><char style="xo" closed="false">9.21: </char><char style="xdc" closed="false">Ws 15.7; Si 33.13.</char></note> After all, the man who makes the pots has the right to use the clay as he wishes, and to make two pots from the same lump of clay, one for special occasions and the other for ordinary use.</para>
+  <para style="p">
+    <verse number="22" style="v" />
+    <note caller="-" style="x">
+      <char style="xo" closed="false">9.22: </char>
+      <char style="xdc" closed="false">Ws 12.20,21.</char>
+    </note> And the same is true of what God has done. He wanted to show his anger and to make his power known. But he was very patient in enduring those who were the objects of his anger, who were doomed to destruction. <verse number="23" style="v" />And he also wanted to reveal his abundant glory, which was poured out on us who are the objects of his mercy, those of us whom he has prepared to receive his glory. <verse number="24" style="v" />For we are the people he called, not only from among the Jews but also from among the Gentiles. <verse number="25" style="v" /><note caller="-" style="x"><char style="xo" closed="false">9.25: </char><char style="xt" closed="false">Ho 2.23.</char></note> This is what he says in the book of Hosea:</para>
+  <para style="q1">“The people who were not mine</para>
+  <para style="q2">I will call ‘My People.’</para>
+  <para style="q1">The nation that I did not love</para>
+  <para style="q2">I will call ‘My Beloved.’</para>
+  <para style="q1">
+    <verse number="26" style="v" />
+    <note caller="-" style="x">
+      <char style="xo" closed="false">9.26: </char>
+      <char style="xt" closed="false">Ho 1.10.</char>
+    </note> And in the very place where they were told, ‘You are not my people,’</para>
+  <para style="q2">there they will be called the children of the living God.”</para>
+  <para style="b" />
+  <para style="m">
+    <verse number="27" style="v" />
+    <note caller="-" style="x">
+      <char style="xo" closed="false">9.27,28: </char>
+      <char style="xt" closed="false">Is 10.22,23 (LXX).</char>
+    </note> And Isaiah exclaims about Israel: “Even if the people of Israel are as many as the grains of sand by the sea, yet only a few of them will be saved; <verse number="28" style="v" />for the Lord will quickly settle his full account with the world.” <verse number="29" style="v" /><note caller="-" style="x"><char style="xo" closed="false">9.29: </char><char style="xt" closed="false">Is 1.9 (LXX).</char></note> It is as Isaiah had said before, “If the Lord Almighty had not left us some descendants, we would have become like Sodom, we would have been like Gomorrah.”</para>
+  <para style="s">Israel and the Gospel</para>
+  <para style="p">
+    <verse number="30" style="v" />So we say that the Gentiles, who were not trying to put themselves right with God, were put right with him through faith; <verse number="31" style="v" />while God's people, who were seeking a law that would put them right with God, did not find it. <verse number="32" style="v" />And why not? Because they did not depend on faith but on what they did. And so they stumbled over the “stumbling stone” <verse number="33" style="v" /><note caller="-" style="x"><char style="xo" closed="false">9.33: </char><char style="xt" closed="false">Is 28.16 (LXX).</char></note> that the scripture speaks of:</para>
+  <para style="q1">“Look, I place in Zion a stone</para>
+  <para style="q2">that will make people stumble,</para>
+  <para style="q2">a rock that will make them fall.</para>
+  <para style="q1">But whoever believes in him will not be disappointed.”</para>
+  <chapter number="10" style="c" />
+  <para style="p">
+    <verse number="1" style="v" />My friends, how I wish with all my heart that my own people might be saved! How I pray to God for them! <verse number="2" style="v" />I can assure you that they are deeply devoted to God; but their devotion is not based on true knowledge. <verse number="3" style="v" />They have not known the way in which God puts people right with himself, and instead, they have tried to set up their own way; and so they did not submit themselves to God's way of putting people right. <verse number="4" style="v" />For Christ has brought the Law to an end, so that everyone who believes is put right with God.</para>
+  <para style="s">Salvation Is for All</para>
+  <para style="p">
+    <verse number="5" style="v" />
+    <note caller="-" style="x">
+      <char style="xo" closed="false">10.5: </char>
+      <char style="xt" closed="false">Lv 18.5.</char>
+    </note> Moses wrote this about being put right with God by obeying the Law: “Whoever obeys the commands of the Law will live.” <verse number="6" style="v" /><note caller="-" style="x"><char style="xo" closed="false">10.6-8: </char><char style="xt" closed="false">Dt 30.12-14.</char></note> But what the scripture says about being put right with God through faith is this: “You are not to ask yourself, Who will go up into heaven?” (that is, to bring Christ down). <verse number="7" style="v" />“Nor are you to ask, Who will go down into the world below?” (that is, to bring Christ up from death). <verse number="8" style="v" />What it says is this: “God's message is near you, on your lips and in your heart”—that is, the message of faith that we preach. <verse number="9" style="v" />If you confess that Jesus is Lord and believe that God raised him from death, you will be saved. <verse number="10" style="v" />For it is by our faith that we are put right with God; it is by our confession that we are saved. <verse number="11" style="v" /><note caller="-" style="x"><char style="xo" closed="false">10.11: </char><char style="xt" closed="false">Is 28.16 (LXX).</char></note> The scripture says, “Whoever believes in him will not be disappointed.” <verse number="12" style="v" />This includes everyone, because there is no difference between Jews and Gentiles; God is the same Lord of all and richly blesses all who call to him. <verse number="13" style="v" /><note caller="-" style="x"><char style="xo" closed="false">10.13: </char><char style="xt" closed="false">Jl 2.32.</char></note> As the scripture says, “Everyone who calls out to the Lord for help will be saved.”</para>
+  <para style="p">
+    <verse number="14" style="v" />But how can they call to him for help if they have not believed? And how can they believe if they have not heard the message? And how can they hear if the message is not proclaimed? <verse number="15" style="v" /><note caller="-" style="x"><char style="xo" closed="false">10.15: </char><char style="xt" closed="false">Is 52.7.</char></note> And how can the message be proclaimed if the messengers are not sent out? As the scripture says, “How wonderful is the coming of messengers who bring good news!” <verse number="16" style="v" /><note caller="-" style="x"><char style="xo" closed="false">10.16: </char><char style="xt" closed="false">Is 53.1 (LXX).</char></note> But not all have accepted the Good News. Isaiah himself said, “Lord, who believed our message?” <verse number="17" style="v" />So then, faith comes from hearing the message, and the message comes through preaching Christ.</para>
+  <para style="p">
+    <verse number="18" style="v" />
+    <note caller="-" style="x">
+      <char style="xo" closed="false">10.18: </char>
+      <char style="xt" closed="false">Ps 19.4 (LXX).</char>
+    </note> But I ask: Is it true that they did not hear the message? Of course they did—for as the scripture says:</para>
+  <para style="q1">“The sound of their voice went out to all the world;</para>
+  <para style="q2">their words reached the ends of the earth.”</para>
+  <para style="b" />
+  <para style="m">
+    <verse number="19" style="v" />
+    <note caller="-" style="x">
+      <char style="xo" closed="false">10.19: </char>
+      <char style="xt" closed="false">Dt 32.21.</char>
+    </note> Again I ask: Did the people of Israel not understand? Moses himself is the first one to answer:</para>
+  <para style="q1">“I will use a so-called nation</para>
+  <para style="q2">to make my people jealous;</para>
+  <para style="q1">and by means of a nation of fools</para>
+  <para style="q2">I will make my people angry.”</para>
+  <para style="b" />
+  <para style="m">
+    <verse number="20" style="v" />
+    <note caller="-" style="x">
+      <char style="xo" closed="false">10.20: </char>
+      <char style="xt" closed="false">Is 65.1 (LXX).</char>
+    </note> And Isaiah is even bolder when he says,</para>
+  <para style="q1">“I was found by those who were not looking for me;</para>
+  <para style="q2">I appeared to those who were not asking for me.”</para>
+  <para style="b" />
+  <para style="m">
+    <verse number="21" style="v" />
+    <note caller="-" style="x">
+      <char style="xo" closed="false">10.21: </char>
+      <char style="xt" closed="false">Is 65.2 (LXX).</char>
+    </note> But concerning Israel he says, “All day long I held out my hands to welcome a disobedient and rebellious people.”</para>
+  <chapter number="11" style="c" />
+  <para style="s">God's Mercy on Israel</para>
+  <para style="p">
+    <verse number="1" style="v" />
+    <note caller="-" style="x">
+      <char style="xo" closed="false">11.1: </char>
+      <char style="xt" closed="false">Phil 3.5.</char>
+    </note> I ask, then: Did God reject his own people? Certainly not! I myself am an Israelite, a descendant of Abraham, a member of the tribe of Benjamin. <verse number="2" style="v" />God has not rejected his people, whom he chose from the beginning. You know what the scripture says in the passage where Elijah pleads with God against Israel: <verse number="3" style="v" /><note caller="-" style="x"><char style="xo" closed="false">11.3: </char><char style="xt" closed="false">1 K 19.10,14.</char></note> “Lord, they have killed your prophets and torn down your altars; I am the only one left, and they are trying to kill me.” <verse number="4" style="v" /><note caller="-" style="x"><char style="xo" closed="false">11.4: </char><char style="xt" closed="false">1 K 19.18.</char></note> What answer did God give him? “I have kept for myself seven thousand men who have not worshiped the false god Baal.” <verse number="5" style="v" />It is the same way now: there is a small number left of those whom God has chosen because of his grace. <verse number="6" style="v" />His choice is based on his grace, not on what they have done. For if God's choice were based on what people do, then his grace would not be real grace.</para>
+  <para style="p">
+    <verse number="7" style="v" />What then? The people of Israel did not find what they were looking for. It was only the small group that God chose who found it; the rest grew deaf to God's call. <verse number="8" style="v" /><note caller="-" style="x"><char style="xo" closed="false">11.8: </char><char style="xt" closed="false">Dt 29.4; Is 29.10.</char></note> As the scripture says, “God made their minds and hearts dull; to this very day they cannot see or hear.” <verse number="9" style="v" /><note caller="-" style="x"><char style="xo" closed="false">11.9,10: </char><char style="xt" closed="false">Ps 69.22,23 (LXX).</char></note> And David says,</para>
+  <para style="q1">“May they be caught and trapped at their feasts;</para>
+  <para style="q2">may they fall, may they be punished!</para>
+  <para style="q1">
+    <verse number="10" style="v" />May their eyes be blinded so that they cannot see;</para>
+  <para style="q2">and make them bend under their troubles at all times.”</para>
+  <para style="p">
+    <verse number="11" style="v" />I ask, then: When the Jews stumbled, did they fall to their ruin? By no means! Because they sinned, salvation has come to the Gentiles, to make the Jews jealous of them. <verse number="12" style="v" />The sin of the Jews brought rich blessings to the world, and their spiritual poverty brought rich blessings to the Gentiles. Then, how much greater the blessings will be when the complete number of Jews is included!</para>
+  <para style="s">The Salvation of the Gentiles</para>
+  <para style="p">
+    <verse number="13" style="v" />I am speaking now to you Gentiles: As long as I am an apostle to the Gentiles, I will take pride in my work. <verse number="14" style="v" />Perhaps I can make the people of my own race jealous, and so be able to save some of them. <verse number="15" style="v" />For when they were rejected, all other people were changed from God's enemies into his friends. What will it be, then, when they are accepted? It will be life for the dead!</para>
+  <para style="p">
+    <verse number="16" style="v" />If the first piece of bread is given to God, then the whole loaf is his also; and if the roots of a tree are offered to God, the branches are his also. <verse number="17" style="v" />Some of the branches of the cultivated olive tree have been broken off, and a branch of a wild olive tree has been joined to it. You Gentiles are like that wild olive tree, and now you share the strong spiritual life of the Jews. <verse number="18" style="v" />So then, you must not despise those who were broken off like branches. How can you be proud? You are just a branch; you don't support the roots—the roots support you.</para>
+  <para style="p">
+    <verse number="19" style="v" />But you will say, “Yes, but the branches were broken off to make room for me.” <verse number="20" style="v" />That is true. They were broken off because they did not believe, while you remain in place because you do believe. But do not be proud of it; instead, be afraid. <verse number="21" style="v" />God did not spare the Jews, who are like natural branches; do you think he will spare you? <verse number="22" style="v" />Here we see how kind and how severe God is. He is severe toward those who have fallen, but kind to you—if you continue in his kindness. But if you do not, you too will be broken off. <verse number="23" style="v" />And if the Jews abandon their unbelief, they will be put back in the place where they were; for God is able to do that. <verse number="24" style="v" />You Gentiles are like the branch of a wild olive tree that is broken off and then, contrary to nature, is joined to a cultivated olive tree. The Jews are like this cultivated tree; and it will be much easier for God to join these broken-off branches to their own tree again.</para>
+  <para style="s">God's Mercy on All</para>
+  <para style="p">
+    <verse number="25" style="v" />There is a secret truth, my friends, which I want you to know, for it will keep you from thinking how wise you are. It is that the stubbornness of the people of Israel is not permanent, but will last only until the complete number of Gentiles comes to God. <verse number="26" style="v" /><note caller="-" style="x"><char style="xo" closed="false">11.26: </char><char style="xt" closed="false">Is 59.20,21 (LXX).</char></note> And this is how all Israel will be saved. As the scripture says,</para>
+  <para style="q1">“The Savior will come from Zion</para>
+  <para style="q2">and remove all wickedness from the descendants of Jacob.</para>
+  <para style="q1">
+    <verse number="27" style="v" />
+    <note caller="-" style="x">
+      <char style="xo" closed="false">11.27: </char>
+      <char style="xt" closed="false">Is 27.9 (LXX).</char>
+    </note> I will make this covenant with them</para>
+  <para style="q2">when I take away their sins.”</para>
+  <para style="b" />
+  <para style="m">
+    <verse number="28" style="v" />Because they reject the Good News, the Jews are God's enemies for the sake of you Gentiles. But because of God's choice, they are his friends because of their ancestors. <verse number="29" style="v" />For God does not change his mind about whom he chooses and blesses. <verse number="30" style="v" />As for you Gentiles, you disobeyed God in the past; but now you have received God's mercy because the Jews were disobedient. <verse number="31" style="v" />In the same way, because of the mercy that you have received, the Jews now disobey God, in order that they also may now <note caller="+" style="f"><char style="fr" closed="false">11.31: </char><char style="ft" closed="false">Some manuscripts do not have </char><char style="fq" closed="false">now.</char></note> receive God's mercy. <verse number="32" style="v" />For God has made all people prisoners of disobedience, so that he might show mercy to them all.</para>
+  <para style="s">Praise to God</para>
+  <para style="p">
+    <verse number="33" style="v" />
+    <note caller="-" style="x">
+      <char style="xo" closed="false">11.33: </char>
+      <char style="xt" closed="false">Is 55.8 </char>
+      <char style="xdc">; Ws 17.1</char>.</note> How great are God's riches! How deep are his wisdom and knowledge! Who can explain his decisions? Who can understand his ways? <verse number="34" style="v" /><note caller="-" style="x"><char style="xo" closed="false">11.34: </char><char style="xt" closed="false">Is 40.13 (LXX).</char></note> As the scripture says,</para>
+  <para style="q1">“Who knows the mind of the Lord?</para>
+  <para style="q2">Who is able to give him advice?</para>
+  <para style="q1">
+    <verse number="35" style="v" />
+    <note caller="-" style="x">
+      <char style="xo" closed="false">11.35: </char>
+      <char style="xt" closed="false">Job 41.11.</char>
+    </note> Who has ever given him anything,</para>
+  <para style="q2">so that he had to pay it back?”</para>
+  <para style="b" />
+  <para style="m">
+    <verse number="36" style="v" />
+    <note caller="-" style="x">
+      <char style="xo" closed="false">11.36: </char>
+      <char style="xt" closed="false">1 Co 8.6.</char>
+    </note> For all things were created by him, and all things exist through him and for him. To God be the glory forever! Amen.</para>
+  <chapter number="12" style="c" />
+  <para style="s">Life in God's Service</para>
+  <para style="p">
+    <verse number="1" style="v" />So then, my friends, because of God's great mercy to us I appeal to you: Offer yourselves as a living sacrifice to God, dedicated to his service and pleasing to him. This is the true worship that you should offer. <verse number="2" style="v" />Do not conform yourselves to the standards of this world, but let God transform you inwardly by a complete change of your mind. Then you will be able to know the will of God—what is good and is pleasing to him and is perfect.</para>
+  <para style="p">
+    <verse number="3" style="v" />And because of God's gracious gift to me I say to every one of you: Do not think of yourself more highly than you should. Instead, be modest in your thinking, and judge yourself according to the amount of faith that God has given you. <verse number="4" style="v" /><note caller="-" style="x"><char style="xo" closed="false">12.4,5: </char><char style="xt" closed="false">1 Co 12.12.</char></note> We have many parts in the one body, and all these parts have different functions. <verse number="5" style="v" />In the same way, though we are many, we are one body in union with Christ, and we are all joined to each other as different parts of one body. <verse number="6" style="v" /><note caller="-" style="x"><char style="xo" closed="false">12.6-8: </char><char style="xt" closed="false">1 Co 12.4-11.</char></note> So we are to use our different gifts in accordance with the grace that God has given us. If our gift is to speak God's message, we should do it according to the faith that we have; <verse number="7" style="v" />if it is to serve, we should serve; if it is to teach, we should teach; <verse number="8" style="v" />if it is to encourage others, we should do so. Whoever shares with others should do it generously; whoever has authority should work hard; whoever shows kindness to others should do it cheerfully.</para>
+  <para style="p">
+    <verse number="9" style="v" />Love must be completely sincere. Hate what is evil, hold on to what is good. <verse number="10" style="v" />Love one another warmly as Christians, and be eager to show respect for one another. <verse number="11" style="v" />Work hard and do not be lazy. Serve the Lord with a heart full of devotion. <verse number="12" style="v" />Let your hope keep you joyful, be patient in your troubles, and pray at all times. <verse number="13" style="v" />Share your belongings with your needy fellow Christians, and open your homes to strangers.</para>
+  <para style="p">
+    <verse number="14" style="v" />
+    <note caller="-" style="x">
+      <char style="xo" closed="false">12.14: </char>
+      <char style="xt" closed="false">Mt 5.44; Lk 6.28.</char>
+    </note> Ask God to bless those who persecute you—yes, ask him to bless, not to curse. <verse number="15" style="v" /><note caller="-" style="x"><char style="xo" closed="false">12.15: </char><char style="xdc" closed="false">Si 7.34.</char></note> Be happy with those who are happy, weep with those who weep. <verse number="16" style="v" /><note caller="-" style="x"><char style="xo" closed="false">12.16: </char><char style="xt" closed="false">Pr 3.7.</char></note> Have the same concern for everyone. Do not be proud, but accept humble duties. <note caller="+" style="f"><char style="fr" closed="false">12.16: </char><char style="fq" closed="false">accept humble duties; </char><char style="ft" closed="false">or </char><char style="fq" closed="false">make friends with humble people.</char></note> Do not think of yourselves as wise.</para>
+  <para style="p">
+    <verse number="17" style="v" />If someone has done you wrong, do not repay him with a wrong. Try to do what everyone considers to be good. <verse number="18" style="v" />Do everything possible on your part to live in peace with everybody. <verse number="19" style="v" /><note caller="-" style="x"><char style="xo" closed="false">12.19: </char><char style="xt" closed="false">Dt 32.35.</char></note> Never take revenge, my friends, but instead let God's anger do it. For the scripture says, “I will take revenge, I will pay back, says the Lord.” <verse number="20" style="v" /><note caller="-" style="x"><char style="xo" closed="false">12.20: </char><char style="xt" closed="false">Pr 25.21,22 (LXX).</char></note> Instead, as the scripture says: “If your enemies are hungry, feed them; if they are thirsty, give them a drink; for by doing this you will make them burn with shame.” <verse number="21" style="v" />Do not let evil defeat you; instead, conquer evil with good.</para>
+  <chapter number="13" style="c" />
+  <para style="s">Duties toward State Authorities</para>
+  <para style="p">
+    <verse number="1" style="v" />
+    <note caller="-" style="x">
+      <char style="xo" closed="false">13.1: </char>
+      <char style="xdc" closed="false">Ws 6.3.</char>
+    </note> Everyone must obey state authorities, because no authority exists without God's permission, and the existing authorities have been put there by God. <verse number="2" style="v" />Whoever opposes the existing authority opposes what God has ordered; and anyone who does so will bring judgment on himself. <verse number="3" style="v" />For rulers are not to be feared by those who do good, but by those who do evil. Would you like to be unafraid of those in authority? Then do what is good, and they will praise you, <verse number="4" style="v" />because they are God's servants working for your own good. But if you do evil, then be afraid of them, because their power to punish is real. They are God's servants and carry out God's punishment on those who do evil. <verse number="5" style="v" />For this reason you must obey the authorities—not just because of God's punishment, but also as a matter of conscience.</para>
+  <para style="p">
+    <verse number="6" style="v" />
+    <note caller="-" style="x">
+      <char style="xo" closed="false">13.6,7: </char>
+      <char style="xt" closed="false">Mt 22.21; Mk 12.17; Lk 20.25.</char>
+    </note> That is also why you pay taxes, because the authorities are working for God when they fulfill their duties. <verse number="7" style="v" />Pay, then, what you owe them; pay them your personal and property taxes, and show respect and honor for them all.</para>
+  <para style="s">Duties toward One Another</para>
+  <para style="p">
+    <verse number="8" style="v" />Be under obligation to no one—the only obligation you have is to love one another. Whoever does this has obeyed the Law. <verse number="9" style="v" /><note caller="-" style="x"><char style="xo" closed="false">13.9: a </char><char style="xt" closed="false">Ex 20.14; Dt 5.18; </char><char style="xo" closed="false">b </char><char style="xt" closed="false">Ex 20.13; Dt 5.17; </char><char style="xo" closed="false">c </char><char style="xt" closed="false">Ex 20.15; Dt 5.19; </char><char style="xo" closed="false">d </char><char style="xt" closed="false">Ex 20.17; Dt 5.21; </char><char style="xo" closed="false">e </char><char style="xt" closed="false">Lv 19.18.</char></note> The commandments, “Do not commit adultery; do not commit murder; do not steal; do not desire what belongs to someone else”—all these, and any others besides, are summed up in the one command, “Love your neighbor as you love yourself.” <verse number="10" style="v" />If you love others, you will never do them wrong; to love, then, is to obey the whole Law.</para>
+  <para style="p">
+    <verse number="11" style="v" />You must do this, because you know that the time has come for you to wake up from your sleep. For the moment when we will be saved is closer now than it was when we first believed. <verse number="12" style="v" />The night is nearly over, day is almost here. Let us stop doing the things that belong to the dark, and let us take up weapons for fighting in the light. <verse number="13" style="v" />Let us conduct ourselves properly, as people who live in the light of day—no orgies or drunkenness, no immorality or indecency, no fighting or jealousy. <verse number="14" style="v" />But take up the weapons of the Lord Jesus Christ, and stop paying attention to your sinful nature and satisfying its desires.</para>
+  <chapter number="14" style="c" />
+  <para style="s">Do Not Judge Others</para>
+  <para style="p">
+    <verse number="1" style="v" />
+    <note caller="-" style="x">
+      <char style="xo" closed="false">14.1-6: </char>
+      <char style="xt" closed="false">Col 2.16.</char>
+    </note> Welcome those who are weak in faith, but do not argue with them about their personal opinions. <verse number="2" style="v" />Some people's faith allows them to eat anything, but the person who is weak in the faith eats only vegetables. <verse number="3" style="v" />The person who will eat anything is not to despise the one who doesn't; while the one who eats only vegetables is not to pass judgment on the one who will eat anything; for God has accepted that person. <verse number="4" style="v" />Who are you to judge the servants of someone else? It is their own Master who will decide whether they succeed or fail. And they will succeed, because the Lord is able to make them succeed.</para>
+  <para style="p">
+    <verse number="5" style="v" />Some people think that a certain day is more important than other days, while others think that all days are the same. We each should firmly make up our own minds. <verse number="6" style="v" />Those who think highly of a certain day do so in honor of the Lord; those who will eat anything do so in honor of the Lord, because they give thanks to God for the food. Those who refuse to eat certain things do so in honor of the Lord, and they give thanks to God. <verse number="7" style="v" />We do not live for ourselves only, and we do not die for ourselves only. <verse number="8" style="v" />If we live, it is for the Lord that we live, and if we die, it is for the Lord that we die. So whether we live or die, we belong to the Lord. <verse number="9" style="v" />For Christ died and rose to life in order to be the Lord of the living and of the dead. <verse number="10" style="v" /><note caller="-" style="x"><char style="xo" closed="false">14.10: </char><char style="xt" closed="false">2 Co 5.10.</char></note> You then, who eat only vegetables—why do you pass judgment on others? And you who eat anything—why do you despise other believers? All of us will stand before God to be judged by him. <verse number="11" style="v" /><note caller="-" style="x"><char style="xo" closed="false">14.11: </char><char style="xt" closed="false">Is 45.23 (LXX).</char></note> For the scripture says,</para>
+  <para style="q1">“As surely as I am the living God, says the Lord,</para>
+  <para style="q2">everyone will kneel before me,</para>
+  <para style="q2">and everyone will confess that I am God.”</para>
+  <para style="b" />
+  <para style="m">
+    <verse number="12" style="v" />Every one of us, then, will have to give an account to God.</para>
+  <para style="s">Do Not Make Others Fall</para>
+  <para style="p">
+    <verse number="13" style="v" />So then, let us stop judging one another. Instead, you should decide never to do anything that would make others stumble or fall into sin. <verse number="14" style="v" />My union with the Lord Jesus makes me certain that no food is of itself ritually unclean; but if you believe that some food is unclean, then it becomes unclean for you. <verse number="15" style="v" />If you hurt others because of something you eat, then you are no longer acting from love. Do not let the food that you eat ruin the person for whom Christ died! <verse number="16" style="v" />Do not let what you regard as good get a bad name. <verse number="17" style="v" />For God's Kingdom is not a matter of eating and drinking, but of the righteousness, peace, and joy which the Holy Spirit gives. <verse number="18" style="v" />And when you serve Christ in this way, you please God and are approved by others.</para>
+  <para style="p">
+    <verse number="19" style="v" />So then, we must always aim <note caller="+" style="f"><char style="fr" closed="false">14.19: </char><char style="fq" closed="false">we must always aim; </char><char style="ft" closed="false">some manuscripts have </char><char style="fq" closed="false">we always aim.</char></note> at those things that bring peace and that help strengthen one another. <verse number="20" style="v" />Do not, because of food, destroy what God has done. All foods may be eaten, but it is wrong to eat anything that will cause someone else to fall into sin. <verse number="21" style="v" />The right thing to do is to keep from eating meat, drinking wine, or doing anything else that will make other believers fall. <verse number="22" style="v" />Keep what you believe about this matter, then, between yourself and God. Happy are those who do not feel guilty when they do something they judge is right! <verse number="23" style="v" />But if they have doubts about what they eat, God condemns them when they eat it, because their action is not based on faith. And anything that is not based on faith is sin.</para>
+  <chapter number="15" style="c" />
+  <para style="s">Please Others, Not Yourselves</para>
+  <para style="p">
+    <verse number="1" style="v" />We who are strong in the faith ought to help the weak to carry their burdens. We should not please ourselves. <verse number="2" style="v" />Instead, we should all please other believers for their own good, in order to build them up in the faith. <verse number="3" style="v" /><note caller="-" style="x"><char style="xo" closed="false">15.3: </char><char style="xt" closed="false">Ps 69.9.</char></note> For Christ did not please himself. Instead, as the scripture says, “The insults which are hurled at you have fallen on me.” <verse number="4" style="v" /><note caller="-" style="x"><char style="xo" closed="false">15.4: </char><char style="xdc" closed="false">1 Macc 12.9; 2 Macc 15.9.</char></note> Everything written in the Scriptures was written to teach us, in order that we might have hope through the patience and encouragement which the Scriptures give us. <verse number="5" style="v" />And may God, the source of patience and encouragement, enable you to have the same point of view among yourselves by following the example of Christ Jesus, <verse number="6" style="v" />so that all of you together may praise with one voice the God and Father of our Lord Jesus Christ.</para>
+  <para style="s">The Gospel to the Gentiles</para>
+  <para style="p">
+    <verse number="7" style="v" />Accept one another, then, for the glory of God, as Christ has accepted you. <verse number="8" style="v" />For I tell you that Christ's life of service was on behalf of the Jews, to show that God is faithful, to make his promises to their ancestors come true, <verse number="9" style="v" /><note caller="-" style="x"><char style="xo" closed="false">15.9: </char><char style="xt" closed="false">2 S 22.50; Ps 18.49.</char></note> and to enable even the Gentiles to praise God for his mercy. As the scripture says,</para>
+  <para style="q1">“And so I will praise you among the Gentiles;</para>
+  <para style="q2">I will sing praises to you.”</para>
+  <para style="b" />
+  <para style="m">
+    <verse number="10" style="v" />
+    <note caller="-" style="x">
+      <char style="xo" closed="false">15.10: </char>
+      <char style="xt" closed="false">Dt 32.43.</char>
+    </note> Again it says,</para>
+  <para style="q1">“Rejoice, Gentiles, with God's people!”</para>
+  <para style="b" />
+  <para style="m">
+    <verse number="11" style="v" />
+    <note caller="-" style="x">
+      <char style="xo" closed="false">15.11: </char>
+      <char style="xt" closed="false">Ps 117.1.</char>
+    </note> And again,</para>
+  <para style="q1">“Praise the Lord, all Gentiles;</para>
+  <para style="q2">praise him, all peoples!”</para>
+  <para style="b" />
+  <para style="m">
+    <verse number="12" style="v" />
+    <note caller="-" style="x">
+      <char style="xo" closed="false">15.12: </char>
+      <char style="xt" closed="false">Is 11.10 (LXX).</char>
+    </note> And again, Isaiah says,</para>
+  <para style="q1">“A descendant of Jesse will appear;</para>
+  <para style="q2">he will come to rule the Gentiles,</para>
+  <para style="q2">and they will put their hope in him.”</para>
+  <para style="p">
+    <verse number="13" style="v" />May God, the source of hope, fill you with all joy and peace by means of your faith in him, so that your hope will continue to grow by the power of the Holy Spirit.</para>
+  <para style="s">Paul's Reason for Writing So Boldly</para>
+  <para style="p">
+    <verse number="14" style="v" />My friends: I myself feel sure that you are full of goodness, that you have all knowledge, and that you are able to teach one another. <verse number="15" style="v" />But in this letter I have been quite bold about certain subjects of which I have reminded you. I have been bold because of the privilege God has given me <verse number="16" style="v" />of being a servant of Christ Jesus to work for the Gentiles. I serve like a priest in preaching the Good News from God, in order that the Gentiles may be an offering acceptable to God, dedicated to him by the Holy Spirit. <verse number="17" style="v" />In union with Christ Jesus, then, I can be proud of my service for God. <verse number="18" style="v" />I will be bold and speak only about what Christ has done through me to lead the Gentiles to obey God. He has done this by means of words and deeds, <verse number="19" style="v" />by the power of miracles and wonders, and by the power of the Spirit of God. And so, in traveling all the way from Jerusalem to Illyricum, I have proclaimed fully the Good News about Christ. <verse number="20" style="v" />My ambition has always been to proclaim the Good News in places where Christ has not been heard of, so as not to build on a foundation laid by someone else. <verse number="21" style="v" /><note caller="-" style="x"><char style="xo" closed="false">15.21: </char><char style="xt" closed="false">Is 52.15 (LXX).</char></note> As the scripture says,</para>
+  <para style="q1">“Those who were not told about him will see,</para>
+  <para style="q2">and those who have not heard will understand.”</para>
+  <para style="s">Paul's Plan to Visit Rome</para>
+  <para style="p">
+    <verse number="22" style="v" />
+    <note caller="-" style="x">
+      <char style="xo" closed="false">15.22: </char>
+      <char style="xt" closed="false">Ro 1.13.</char>
+    </note> And so I have been prevented many times from coming to you. <verse number="23" style="v" />But now that I have finished my work in these regions and since I have been wanting for so many years to come to see you, <verse number="24" style="v" />I hope to do so now. I would like to see you on my way to Spain, and be helped by you to go there, after I have enjoyed visiting you for a while. <verse number="25" style="v" /><note caller="-" style="x"><char style="xo" closed="false">15.25,26: </char><char style="xt" closed="false">1 Co 16.1-4.</char></note> Right now, however, I am going to Jerusalem in the service of God's people there. <verse number="26" style="v" />For the churches in Macedonia and Achaia have freely decided to give an offering to help the poor among God's people in Jerusalem. <verse number="27" style="v" /><note caller="-" style="x"><char style="xo" closed="false">15.27: </char><char style="xt" closed="false">1 Co 9.11.</char></note> That decision was their own; but, as a matter of fact, they have an obligation to help them. Since the Jews shared their spiritual blessings with the Gentiles, the Gentiles ought to use their material blessings to help the Jews. <verse number="28" style="v" />When I have finished this task and have turned over to them all the money that has been raised for them, I shall leave for Spain and visit you on my way there. <verse number="29" style="v" />When I come to you, I know that I shall come with a full measure of the blessing of Christ.</para>
+  <para style="p">
+    <verse number="30" style="v" />I urge you, friends, by our Lord Jesus Christ and by the love that the Spirit gives: join me in praying fervently to God for me. <verse number="31" style="v" />Pray that I may be kept safe from the unbelievers in Judea and that my service in Jerusalem may be acceptable to God's people there. <verse number="32" style="v" />And so I will come to you full of joy, if it is God's will, and enjoy a refreshing visit with you. <verse number="33" style="v" />May God, our source of peace, be with all of you. Amen.</para>
+  <chapter number="16" style="c" />
+  <para style="s">Personal Greetings</para>
+  <para style="p">
+    <verse number="1" style="v" />I recommend to you our sister Phoebe, who serves the church at Cenchreae. <verse number="2" style="v" />Receive her in the Lord's name, as God's people should, and give her any help she may need from you; for she herself has been a good friend to many people and also to me.</para>
+  <para style="p">
+    <verse number="3" style="v" />
+    <note caller="-" style="x">
+      <char style="xo" closed="false">16.3: </char>
+      <char style="xt" closed="false">Ac 18.2.</char>
+    </note> I send greetings to Priscilla and Aquila, my fellow workers in the service of Christ Jesus; <verse number="4" style="v" />they risked their lives for me. I am grateful to them—not only I, but all the Gentile churches as well. <verse number="5" style="v" />Greetings also to the church that meets in their house.</para>
+  <para style="p">Greetings to my dear friend Epaenetus, who was the first in the province of Asia to believe in Christ. <verse number="6" style="v" />Greetings to Mary, who has worked so hard for you. <verse number="7" style="v" />Greetings also to Andronicus and Junia, <note caller="+" style="f"><char style="fr" closed="false">16.7: </char><char style="fq" closed="false">Junia; </char><char style="ft" closed="false">or </char><char style="fq" closed="false">Junias; </char><char style="ft" closed="false">some manuscripts have </char><char style="fq" closed="false">Julia.</char></note> fellow Jews who were in prison with me; they are well known among the apostles, and they became Christians before I did.</para>
+  <para style="p">
+    <verse number="8" style="v" />My greetings to Ampliatus, my dear friend in the fellowship of the Lord. <verse number="9" style="v" />Greetings also to Urbanus, our fellow worker in Christ's service, and to Stachys, my dear friend. <verse number="10" style="v" />Greetings to Apelles, whose loyalty to Christ has been proved. Greetings to those who belong to the family of Aristobulus. <verse number="11" style="v" />Greetings to Herodion, a fellow Jew, and to the Christians in the family of Narcissus.</para>
+  <para style="p">
+    <verse number="12" style="v" />My greetings to Tryphaena and Tryphosa, who work in the Lord's service, and to my dear friend Persis, who has done so much work for the Lord. <verse number="13" style="v" /><note caller="-" style="x"><char style="xo" closed="false">16.13: </char><char style="xt" closed="false">Mk 15.21.</char></note> I send greetings to Rufus, that outstanding worker in the Lord's service, and to his mother, who has always treated me like a son. <verse number="14" style="v" />My greetings to Asyncritus, Phlegon, Hermes, Patrobas, Hermas, and all the other Christians with them. <verse number="15" style="v" />Greetings to Philologus and Julia, to Nereus and his sister, to Olympas and to all of God's people who are with them.</para>
+  <para style="p">
+    <verse number="16" style="v" />Greet one another with the kiss of peace. All the churches of Christ send you their greetings.</para>
+  <para style="s">Final Instructions</para>
+  <para style="p">
+    <verse number="17" style="v" />I urge you, my friends: watch out for those who cause divisions and upset people's faith and go against the teaching which you have received. Keep away from them! <verse number="18" style="v" />For those who do such things are not serving Christ our Lord, but their own appetites. By their fine words and flattering speech they deceive innocent people. <verse number="19" style="v" />Everyone has heard of your loyalty to the gospel, and for this reason I am happy about you. I want you to be wise about what is good, but innocent in what is evil. <verse number="20" style="v" />And God, our source of peace, will soon crush Satan under your feet.</para>
+  <para style="p">The grace of our Lord Jesus be with you. <note caller="+" style="f"><char style="fr" closed="false">16.20: </char><char style="ft" closed="false">Some manuscripts omit this sentence.</char></note></para>
+  <para style="p">
+    <verse number="21" style="v" />
+    <note caller="-" style="x">
+      <char style="xo" closed="false">16.21: </char>
+      <char style="xt" closed="false">Ac 16.1.</char>
+    </note> Timothy, my fellow worker, sends you his greetings; and so do Lucius, Jason, and Sosipater, fellow Jews.</para>
+  <para style="p">
+    <verse number="22" style="v" />I, Tertius, the writer of this letter, send you Christian greetings.</para>
+  <para style="p">
+    <verse number="23" style="v" />
+    <note caller="-" style="x">
+      <char style="xo" closed="false">16.23: a </char>
+      <char style="xt" closed="false">Ac 19.29; 1 Co 1.14; </char>
+      <char style="xo" closed="false">b </char>
+      <char style="xt" closed="false">2 Ti 4.20.</char>
+    </note> My host Gaius, in whose house the church meets, sends you his greetings; Erastus, the city treasurer, and our brother Quartus send you their greetings. <note caller="+" style="f"><char style="fr" closed="false">16.23: </char><char style="ft" closed="false">Some manuscripts add verse 24: </char><char style="fq" closed="false">The grace of our Lord Jesus Christ be with you all. Amen; </char><char style="ft" closed="false">others add this after verse 27.</char></note></para>
+  <para style="s">Concluding Prayer of Praise</para>
+  <para style="p">
+    <verse number="25" style="v" />Let us give glory to God! He is able to make you stand firm in your faith, according to the Good News I preach about Jesus Christ and according to the revelation of the secret truth which was hidden for long ages in the past. <verse number="26" style="v" />Now, however, that truth has been brought out into the open through the writings of the prophets; and by the command of the eternal God it is made known to all nations, so that all may believe and obey.</para>
+  <para style="p">
+    <verse number="27" style="v" />To the only God, who alone is all-wise, be glory through Jesus Christ forever! Amen. <note caller="+" style="f"><char style="fr" closed="false">16.27: </char><char style="ft" closed="false">Some manuscripts have verses 25-27 here and after 14.23; others have them only after 14.23; one has them after 15.33.</char></note></para>
+</usx>

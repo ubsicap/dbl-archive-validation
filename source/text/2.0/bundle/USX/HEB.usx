@@ -1,0 +1,579 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<usx version="2.5">
+  <book code="HEB" style="id">English: Good News Translation 2nd Ed. 1992</book>
+  <para style="ide">Unicode (UTF8)</para>
+  <para style="rem">For any non-Paratext use of this text, permission must be obtained from the copyright holder.</para>
+  <para style="rem">CAP Information: checked/corrected 2008</para>
+  <para style="h">Hebrews</para>
+  <para style="toc1">The Letter to the HEBREWS</para>
+  <para style="toc2">Hebrews</para>
+  <para style="toc3">He</para>
+  <para style="mt2">The Letter to the</para>
+  <para style="mt1">HEBREWS</para>
+  <para style="imt">Introduction</para>
+  <para style="ip">
+    <char style="bk">The Letter to the Hebrews</char> was written to a group of Christians who, faced with increasing opposition, were in danger of abandoning the Christian faith. The writer encourages them in their faith primarily by showing that Jesus Christ is the true and final revelation of God. In doing this he emphasizes three truths: (1) Jesus is the eternal Son of God, who learned true obedience to the Father through the suffering that he endured. As the Son of God,Jesus is superior to the prophets of the Old Testament, to the angels, and to Moses himself. (2) Jesus has been declared by God to be an eternal priest, superior to the priests of the Old Testament. (3) Through Jesus the believer is saved from sin, fear, and death; and Jesus, as High Priest, provides the true salvation, which was only foreshadowed by the rituals and animal sacrifices of the Hebrew religion.</para>
+  <para style="ip">By citing the example of the faith of some famous persons in Israel's history (chapter 11), the writer appeals to his readers to remain faithful, and in chapter 12 he urges his readers to continue faithful to the end, with eyes fixed on Jesus, and to endure whatever suffering and persecution may come to them. The book closes with words of advice and warning.</para>
+  <para style="iot">Outline of Contents</para>
+  <para style="io1">Introduction: Christ the complete revelation of God <char style="ior">(1.1-3)</char></para>
+  <para style="io1">Christ's superiority over the angels <char style="ior">(1.4–2.18)</char></para>
+  <para style="io1">Christ's superiority over Moses and Joshua <char style="ior">(3.1–4.13)</char></para>
+  <para style="io1">The superiority of Christ's priesthood <char style="ior">(4.14–7.28)</char></para>
+  <para style="io1">The superiority of Christ's covenant <char style="ior">(8.1–9.22)</char></para>
+  <para style="io1">The superiority of Christ's sacrifice <char style="ior">(9.23–10.39)</char></para>
+  <para style="io1">The primacy of faith <char style="ior">(11.1–12.29)</char></para>
+  <para style="io1">Pleasing God <char style="ior">(13.1-19)</char></para>
+  <para style="io1">Closing prayer <char style="ior">(13.20-21)</char></para>
+  <para style="io1">Final words <char style="ior">(13.22-25)</char></para>
+  <chapter number="1" style="c" />
+  <para style="s">God's Word through His Son</para>
+  <para style="p">
+    <verse number="1" style="v" />In the past God spoke to our ancestors many times and in many ways through the prophets, <verse number="2" style="v" /><note caller="-" style="x"><char style="xo" closed="false">1.2: </char><char style="xdc" closed="false">Ws 7.22.</char></note> but in these last days he has spoken to us through his Son. He is the one through whom God created the universe,the one whom God has chosen to possess all things at the end. <verse number="3" style="v" /><note caller="-" style="x"><char style="xo" closed="false">1.3: </char><char style="xdc" closed="false">Ws 7.25,26; 8.1.</char></note> He reflects the brightness of God's glory and is the exact likeness of God's own being, sustaining the universe with his powerful word. After achieving forgiveness for the sins of all human beings, he sat down in heaven at the right side of God, the Supreme Power.</para>
+  <para style="s">The Greatness of God's Son</para>
+  <para style="p">
+    <verse number="4" style="v" />The Son was made greater than the angels, just as the name that God gave him is greater than theirs. <verse number="5" style="v" /><note caller="-" style="x"><char style="xo" closed="false">1.5: a </char><char style="xt" closed="false">Ps 2.7; </char><char style="xo" closed="false">b </char><char style="xt" closed="false">2 S 7.14; 1 Ch 17.13.</char></note> For God never said to any of his angels,</para>
+  <para style="q1">“You are my Son;</para>
+  <para style="q2">today I have become your Father.” <char style="rq">Psalms 2.7</char></para>
+  <para style="b" />
+  <para style="m">Nor did God say about any angel,</para>
+  <para style="q1">“I will be his Father,</para>
+  <para style="q2">and he will be my Son.”</para>
+  <para style="b" />
+  <para style="m">
+    <verse number="6" style="v" />
+    <note caller="-" style="x">
+      <char style="xo" closed="false">1.6: </char>
+      <char style="xt" closed="false">Dt 32.43 (LXX).</char>
+    </note> But when God was about to send his first-born Son into the world, he said,</para>
+  <para style="q1">“All of God's angels must worship him.”</para>
+  <para style="p">
+    <verse number="7" style="v" />
+    <note caller="-" style="x">
+      <char style="xo" closed="false">1.7: </char>
+      <char style="xt" closed="false">Ps 104.4 (LXX).</char>
+    </note> But about the angels God said,</para>
+  <para style="q1">“God makes his angels winds,</para>
+  <para style="q2">and his servants flames of fire.”</para>
+  <para style="b" />
+  <para style="m">
+    <verse number="8" style="v" />
+    <note caller="-" style="x">
+      <char style="xo" closed="false">1.8,9: </char>
+      <char style="xt" closed="false">Ps 45.6,7.</char>
+    </note> About the Son, however, God said:</para>
+  <para style="q1">“Your kingdom, O God, will last<note caller="+" style="f"><char style="fr" closed="false">1.8: </char><char style="fq" closed="false">Your kingdom, O God, will last; </char><char style="ft" closed="false">or </char><char style="fq" closed="false">God is your kingdom.</char></note> forever and ever!</para>
+  <para style="q2">You rule over your<note caller="+" style="f"><char style="fr" closed="false">1.8: </char><char style="fq" closed="false">your; </char><char style="ft" closed="false">some manuscripts have </char><char style="fq" closed="false">his.</char></note> people with justice.</para>
+  <para style="q1">
+    <verse number="9" style="v" />You love what is right and hate what is wrong.</para>
+  <para style="q1">That is why God, your God, has chosen you</para>
+  <para style="q2">and has given you the joy of an honor far greater</para>
+  <para style="q2">than he gave to your companions.”</para>
+  <para style="b" />
+  <para style="m">
+    <verse number="10" style="v" />
+    <note caller="-" style="x">
+      <char style="xo" closed="false">1.10-12: </char>
+      <char style="xt" closed="false">Ps 102.25-27 (LXX).</char>
+    </note> He also said,</para>
+  <para style="q1">“You, Lord, in the beginning created the earth,</para>
+  <para style="q2">and with your own hands you made the heavens.</para>
+  <para style="q1">
+    <verse number="11" style="v" />They will disappear, but you will remain;</para>
+  <para style="q2">they will all wear out like clothes.</para>
+  <para style="q1">
+    <verse number="12" style="v" />You will fold them up like a coat,</para>
+  <para style="q2">and they will be changed like clothes.</para>
+  <para style="q1">But you are always the same,</para>
+  <para style="q2">and your life never ends.”</para>
+  <para style="b" />
+  <para style="m">
+    <verse number="13" style="v" />
+    <note caller="-" style="x">
+      <char style="xo" closed="false">1.13: </char>
+      <char style="xt" closed="false">Ps 110.1.</char>
+    </note> God never said to any of his angels:</para>
+  <para style="q1">“Sit here at my right side</para>
+  <para style="q2">until I put your enemies</para>
+  <para style="q2">as a footstool under your feet.”</para>
+  <para style="p">
+    <verse number="14" style="v" />
+    <note caller="-" style="x">
+      <char style="xo" closed="false">1.14: </char>
+      <char style="xdc" closed="false">Tb 12.14,15.</char>
+    </note> What are the angels, then? They are spirits who serve God and are sent by him to help those who are to receive salvation.</para>
+  <chapter number="2" style="c" />
+  <para style="s">The Great Salvation</para>
+  <para style="p">
+    <verse number="1" style="v" />That is why we must hold on all the more firmly to the truths we have heard, so that we will not be carried away. <verse number="2" style="v" />The message given to our ancestors by the angels was shown to be true, and those who did not follow it or obey it received the punishment they deserved. <verse number="3" style="v" />How, then, shall we escape if we pay no attention to such a great salvation? The Lord himself first announced this salvation, and those who heard him proved to us that it is true. <verse number="4" style="v" />At the same time God added his witness to theirs by performing all kinds of miracles and wonders and by distributing the gifts of the Holy Spirit according to his will.</para>
+  <para style="s">The One Who Leads Us to Salvation</para>
+  <para style="p">
+    <verse number="5" style="v" />God has not placed the angels as rulers over the new world to come—the world of which we speak. <verse number="6" style="v" /><note caller="-" style="x"><char style="xo" closed="false">2.6-8: </char><char style="xt" closed="false">Ps 8.4-6.</char></note> Instead, as it is said somewhere in the Scriptures:</para>
+  <para style="q1">“What are human beings, O God, that you should think of them;</para>
+  <para style="q2">mere human beings, that you should care for them?</para>
+  <para style="q1">
+    <verse number="7" style="v" />You made them for a little while lower than the angels;</para>
+  <para style="q2">you crowned them with glory and honor, <note caller="+" style="f"><char style="fr" closed="false">2.7: </char><char style="ft" closed="false">Many manuscripts add: </char><char style="fq" closed="false">You made them rulers over everything you made </char><char style="ft" closed="false">(see <char style="xt">Ps 8.6</char>).</char></note></para>
+  <para style="q2">
+    <verse number="8" style="v" />and made them rulers over all things.”</para>
+  <para style="b" />
+  <para style="m">It says that God made them “rulers over all things”; this clearly includes everything. We do not, however, see human beings ruling over all things now. <verse number="9" style="v" />But we do see Jesus, who for a little while was made lower than the angels, so that through God's grace he should die for everyone. We see him now crowned with glory and honor because of the death he suffered. <verse number="10" style="v" />It was only right that God, who creates and preserves all things, should make Jesus perfect through suffering, in order to bring many children to share his glory. For Jesus is the one who leads them to salvation.</para>
+  <para style="p">
+    <verse number="11" style="v" />He purifies people from their sins, and both he and those who are made pure all have the same Father. That is why Jesus is not ashamed to call them his family. <verse number="12" style="v" /><note caller="-" style="x"><char style="xo" closed="false">2.12: </char><char style="xt" closed="false">Ps 22.22.</char></note> He says to God,</para>
+  <para style="q1">“I will tell my people what you have done;</para>
+  <para style="q2">I will praise you in their meeting.”</para>
+  <para style="b" />
+  <para style="m">
+    <verse number="13" style="v" />
+    <note caller="-" style="x">
+      <char style="xo" closed="false">2.13: a </char>
+      <char style="xt" closed="false">Is 8.17 (LXX); </char>
+      <char style="xo" closed="false">b </char>
+      <char style="xt" closed="false">Is 8.18.</char>
+    </note> He also says, “I will put my trust in God.” And he also says, “Here I am with the children that God has given me.”</para>
+  <para style="p">
+    <verse number="14" style="v" />Since the children, as he calls them, are people of flesh and blood, Jesus himself became like them and shared their human nature. He did this so that through his death he might destroy the Devil, who has the power over death, <verse number="15" style="v" />and in this way set free those who were slaves all their lives because of their fear of death. <verse number="16" style="v" /><note caller="-" style="x"><char style="xo" closed="false">2.16: </char><char style="xt" closed="false">Is 41.8,9.</char></note> For it is clear that it is not the angels that he helps. Instead, he helps the descendants of Abraham. <verse number="17" style="v" />This means that he had to become like his people in every way, in order to be their faithful and merciful High Priest in his service to God, so that the people's sins would be forgiven. <verse number="18" style="v" />And now he can help those who are tempted, because he himself was tempted and suffered.</para>
+  <chapter number="3" style="c" />
+  <para style="s">Jesus Is Greater than Moses</para>
+  <para style="p">
+    <verse number="1" style="v" />My Christian friends, who also have been called by God! Think of Jesus, whom God sent to be the High Priest of the faith we profess. <verse number="2" style="v" /><note caller="-" style="x"><char style="xo" closed="false">3.2: </char><char style="xt" closed="false">Nu 12.7.</char></note> He was faithful to God, who chose him to do this work, just as Moses was faithful in his work in God's house. <verse number="3" style="v" />A man who builds a house receives more honor than the house itself. In the same way Jesus is worthy of much greater honor than Moses. <verse number="4" style="v" />Every house, of course, is built by someone—and God is the one who has built all things. <verse number="5" style="v" />Moses was faithful in God's house as a servant, and he spoke of the things that God would say in the future. <verse number="6" style="v" />But Christ is faithful as the Son in charge of God's house. We are his house if we keep up our courage and our confidence in what we hope for.</para>
+  <para style="s">A Rest for God's People</para>
+  <para style="p">
+    <verse number="7" style="v" />
+    <note caller="-" style="x">
+      <char style="xo" closed="false">3.7-11: </char>
+      <char style="xt" closed="false">Ps 95.7-11 (LXX).</char>
+    </note> So then, as the Holy Spirit says,</para>
+  <para style="q1">“If you hear God's voice today,</para>
+  <para style="q2">
+    <verse number="8" style="v" />do not be stubborn, as your ancestors were when they rebelled against God,</para>
+  <para style="q2">as they were that day in the desert when they put him to the test.</para>
+  <para style="q1">
+    <verse number="9" style="v" />There they put me to the test and tried me, says God,</para>
+  <para style="q2">although they had seen what I did for forty years.</para>
+  <para style="q1">
+    <verse number="10" style="v" />And so I was angry with those people and said,</para>
+  <para style="q2">‘They are always disloyal</para>
+  <para style="q2">and refuse to obey my commands.’</para>
+  <para style="q1">
+    <verse number="11" style="v" />I was angry and made a solemn promise:</para>
+  <para style="q2">‘They will never enter the land where I would have given them rest!’”</para>
+  <para style="p">
+    <verse number="12" style="v" />My friends, be careful that none of you have a heart so evil and unbelieving that you will turn away from the living God. <verse number="13" style="v" />Instead, in order that none of you be deceived by sin and become stubborn, you must help one another every day, as long as the word “Today” in the scripture applies to us. <verse number="14" style="v" />For we are all partners with Christ if we hold firmly to the end the confidence we had at the beginning.</para>
+  <para style="p">
+    <verse number="15" style="v" />
+    <note caller="-" style="x">
+      <char style="xo" closed="false">3.15: </char>
+      <char style="xt" closed="false">Ps 95.7,8 (LXX).</char>
+    </note> This is what the scripture says:</para>
+  <para style="q1">“If you hear God's voice today,</para>
+  <para style="q2">do not be stubborn, as your ancestors were</para>
+  <para style="q2">when they rebelled against God.”</para>
+  <para style="p">
+    <verse number="16" style="v" />
+    <note caller="-" style="x">
+      <char style="xo" closed="false">3.16-18: </char>
+      <char style="xt" closed="false">Nu 14.1-35.</char>
+    </note> Who were the people who heard God's voice and rebelled against him? All those who were led out of Egypt by Moses. <verse number="17" style="v" />With whom was God angry for forty years? With the people who sinned, who fell down dead in the desert. <verse number="18" style="v" />When God made his solemn promise, “They will never enter the land where I would have given them rest”—of whom was he speaking? Of those who rebelled. <verse number="19" style="v" />We see, then, that they were not able to enter the land, because they did not believe.</para>
+  <chapter number="4" style="c" />
+  <para style="p">
+    <verse number="1" style="v" />Now, God has offered us the promise that we may receive that rest he spoke about. Let us take care, then, that none of you will be found to have failed to receive that promised rest. <verse number="2" style="v" />For we have heard the Good News, just as they did. They heard the message, but it did them no good, because when they heard it, they did not accept it with faith. <verse number="3" style="v" /><note caller="-" style="x"><char style="xo" closed="false">4.3: </char><char style="xt" closed="false">Ps 95.11.</char></note> We who believe, then, do receive that rest which God promised. It is just as he said,</para>
+  <para style="q1">“I was angry and made a solemn promise:</para>
+  <para style="q2">‘They will never enter the land where I would have given them rest!’”</para>
+  <para style="b" />
+  <para style="m">He said this even though his work had been finished from the time he created the world. <verse number="4" style="v" /><note caller="-" style="x"><char style="xo" closed="false">4.4: </char><char style="xt" closed="false">Gn 2.2.</char></note> For somewhere in the Scriptures this is said about the seventh day: “God rested on the seventh day from all his work.” <verse number="5" style="v" /><note caller="-" style="x"><char style="xo" closed="false">4.5: </char><char style="xt" closed="false">Ps 95.11.</char></note> This same matter is spoken of again: “They will never enter that land where I would have given them rest.” <verse number="6" style="v" />Those who first heard the Good News did not receive that rest, because they did not believe. There are, then, others who are allowed to receive it. <verse number="7" style="v" /><note caller="-" style="x"><char style="xo" closed="false">4.7: </char><char style="xt" closed="false">Ps 95.7,8 (LXX).</char></note> This is shown by the fact that God sets another day, which is called “Today.” Many years later he spoke of it through David in the scripture already quoted:</para>
+  <para style="q1">“If you hear God's voice today,</para>
+  <para style="q2">do not be stubborn.”</para>
+  <para style="p">
+    <verse number="8" style="v" />
+    <note caller="-" style="x">
+      <char style="xo" closed="false">4.8: </char>
+      <char style="xt" closed="false">Dt 31.7; Js 22.4.</char>
+    </note> If Joshua had given the people the rest that God had promised, God would not have spoken later about another day. <verse number="9" style="v" />As it is, however, there still remains for God's people a rest like God's resting on the seventh day. <verse number="10" style="v" /><note caller="-" style="x"><char style="xo" closed="false">4.10: </char><char style="xt" closed="false">Gn 2.2.</char></note> For those who receive that rest which God promised will rest from their own work, just as God rested from his. <verse number="11" style="v" />Let us, then, do our best to receive that rest, so that no one of us will fail as they did because of their lack of faith.</para>
+  <para style="p">
+    <verse number="12" style="v" />The word of God is alive and active, sharper than any double-edged sword. It cuts all the way through, to where soul and spirit meet, to where joints and marrow come together. It judges the desires and thoughts of the heart. <verse number="13" style="v" /><note caller="-" style="x"><char style="xo" closed="false">4.13: </char><char style="xdc" closed="false">Ws 1.6.</char></note> There is nothing that can be hid from God; everything in all creation is exposed and lies open before his eyes. And it is to him that we must all give an account of ourselves.</para>
+  <para style="s">Jesus the Great High Priest</para>
+  <para style="p">
+    <verse number="14" style="v" />Let us, then, hold firmly to the faith we profess. For we have a great High Priest who has gone into the very presence of God—Jesus, the Son of God. <verse number="15" style="v" />Our High Priest is not one who cannot feel sympathy for our weaknesses. On the contrary, we have a High Priest who was tempted in every way that we are, but did not sin. <verse number="16" style="v" />Let us have confidence, then, and approach God's throne, where there is grace. There we will receive mercy and find grace to help us just when we need it.</para>
+  <chapter number="5" style="c" />
+  <para style="p">
+    <verse number="1" style="v" />Every high priest is chosen from his fellow-men and appointed to serve God on their behalf, to offer sacrifices and offerings for sins. <verse number="2" style="v" />Since he himself is weak in many ways, he is able to be gentle with those who are ignorant and make mistakes. <verse number="3" style="v" /><note caller="-" style="x"><char style="xo" closed="false">5.3: </char><char style="xt" closed="false">Lv 9.7.</char></note> And because he is himself weak, he must offer sacrifices not only for the sins of the people but also for his own sins. <verse number="4" style="v" /><note caller="-" style="x"><char style="xo" closed="false">5.4: </char><char style="xt" closed="false">Ex 28.1.</char></note> No one chooses for himself the honor of being a high priest. It is only by God's call that a man is made a high priest—just as Aaron was.</para>
+  <para style="p">
+    <verse number="5" style="v" />
+    <note caller="-" style="x">
+      <char style="xo" closed="false">5.5: </char>
+      <char style="xt" closed="false">Ps 2.7.</char>
+    </note> In the same way, Christ did not take upon himself the honor of being a high priest. Instead, God said to him,</para>
+  <para style="q1">“You are my Son;</para>
+  <para style="q2">today I have become your Father.”</para>
+  <para style="b" />
+  <para style="m">
+    <verse number="6" style="v" />
+    <note caller="-" style="x">
+      <char style="xo" closed="false">5.6: </char>
+      <char style="xt" closed="false">Ps 110.4.</char>
+    </note> He also said in another place,</para>
+  <para style="q1">“You will be a priest forever,</para>
+  <para style="q2">in the priestly order of Melchizedek.” <note caller="+" style="f"><char style="fr" closed="false">5.6: </char><char style="fq" closed="false">in the priestly order of Melchizedek; </char><char style="ft" closed="false">or </char><char style="fq" closed="false">like Melchizedek; </char><char style="ft" closed="false">or </char><char style="fq" closed="false">in the line of succession to Melchizedek.</char></note></para>
+  <para style="p">
+    <verse number="7" style="v" />
+    <note caller="-" style="x">
+      <char style="xo" closed="false">5.7: </char>
+      <char style="xt" closed="false">Mt 26.36-46; Mk 14.32-42; Lk 22.39-46.</char>
+    </note> In his life on earth Jesus made his prayers and requests with loud cries and tears to God, who could save him from death. Because he was humble and devoted, God heard him. <verse number="8" style="v" />But even though he was God's Son, he learned through his sufferings to be obedient. <verse number="9" style="v" />When he was made perfect, he became the source of eternal salvation for all those who obey him, <verse number="10" style="v" />and God declared him to be high priest, in the priestly order of Melchizedek. <note caller="+" style="f"><char style="fr" closed="false">5.10: </char><char style="fq" closed="false">in the priestly order of Melchizedek; </char><char style="ft" closed="false">or </char><char style="fq" closed="false">like Melchizedek; </char><char style="ft" closed="false">or </char><char style="fq" closed="false">in the line of succession to Melchizedek.</char></note></para>
+  <para style="s">Warning against Abandoning the Faith</para>
+  <para style="p">
+    <verse number="11" style="v" />There is much we have to say about this matter, but it is hard to explain to you, because you are so slow to understand. <verse number="12" style="v" /><note caller="-" style="x"><char style="xo" closed="false">5.12,13: </char><char style="xt" closed="false">1 Co 3.2.</char></note> There has been enough time for you to be teachers—yet you still need someone to teach you the first lessons of God's message. Instead of eating solid food, you still have to drink milk. <verse number="13" style="v" />Anyone who has to drink milk is still a child, without any experience in the matter of right and wrong. <verse number="14" style="v" />Solid food, on the other hand, is for adults, who through practice are able to distinguish between good and evil.</para>
+  <chapter number="6" style="c" />
+  <para style="p">
+    <verse number="1" style="v" />Let us go forward, then, to mature teaching and leave behind us the first lessons of the Christian message. We should not lay again the foundation of turning away from useless works and believing in God; <verse number="2" style="v" />of the teaching about baptisms <note caller="+" style="f"><char style="fr" closed="false">6.2: </char><char style="fq" closed="false">baptisms; </char><char style="ft" closed="false">or </char><char style="fq" closed="false">purification ceremonies.</char></note> and the laying on of hands; of the resurrection of the dead and the eternal judgment. <verse number="3" style="v" />Let us go forward! And this is what we will do, if God allows.</para>
+  <para style="p">
+    <verse number="4" style="v" />For how can those who abandon their faith be brought back to repent again? They were once in God's light; they tasted heaven's gift and received their share of the Holy Spirit; <verse number="5" style="v" />they knew from experience that God's word is good, and they had felt the powers of the coming age. <verse number="6" style="v" />And then they abandoned their faith! It is impossible to bring them back to repent again, because they are again crucifying the Son of God and exposing him to public shame.</para>
+  <para style="p">
+    <verse number="7" style="v" />God blesses the soil which drinks in the rain that often falls on it and which grows plants that are useful to those for whom it is cultivated. <verse number="8" style="v" /><note caller="-" style="x"><char style="xo" closed="false">6.8: </char><char style="xt" closed="false">Gn 3.17,18.</char></note> But if it grows thorns and weeds, it is worth nothing; it is in danger of being cursed by God and will be destroyed by fire.</para>
+  <para style="p">
+    <verse number="9" style="v" />But even if we speak like this, dear friends, we feel sure about you. We know that you have the better blessings that belong to your salvation. <verse number="10" style="v" />God is not unfair. He will not forget the work you did or the love you showed for him in the help you gave and are still giving to other Christians. <verse number="11" style="v" />Our great desire is that each of you keep up your eagerness to the end, so that the things you hope for will come true. <verse number="12" style="v" />We do not want you to become lazy, but to be like those who believe and are patient, and so receive what God has promised.</para>
+  <para style="s">God's Sure Promise</para>
+  <para style="p">
+    <verse number="13" style="v" />When God made his promise to Abraham, he made a vow to do what he had promised. Since there was no one greater than himself, he used his own name when he made his vow. <verse number="14" style="v" /><note caller="-" style="x"><char style="xo" closed="false">6.14: </char><char style="xt" closed="false">Gn 22.16,17.</char></note> He said, “I promise you that I will bless you and give you many descendants.” <verse number="15" style="v" />Abraham was patient, and so he received what God had promised. <verse number="16" style="v" />When we make a vow, we use the name of someone greater than ourselves, and the vow settles all arguments. <verse number="17" style="v" />To those who were to receive what he promised, God wanted to make it very clear that he would never change his purpose; so he added his vow to the promise. <verse number="18" style="v" />There are these two things, then, that cannot change and about which God cannot lie. So we who have found safety with him are greatly encouraged to hold firmly to the hope placed before us. <verse number="19" style="v" /><note caller="-" style="x"><char style="xo" closed="false">6.19: </char><char style="xt" closed="false">Lv 16.2.</char></note> We have this hope as an anchor for our lives. It is safe and sure, and goes through the curtain of the heavenly temple into the inner sanctuary. <verse number="20" style="v" /><note caller="-" style="x"><char style="xo" closed="false">6.20: </char><char style="xt" closed="false">Ps 110.4.</char></note> On our behalf Jesus has gone in there before us and has become a high priest forever, in the priestly order of Melchizedek. <note caller="+" style="f"><char style="fr" closed="false">6.20: </char><char style="fq" closed="false">in the priestly order of Melchizedek </char><char style="ft" closed="false">(see 5.6).</char></note></para>
+  <chapter number="7" style="c" />
+  <para style="s">The Priest Melchizedek</para>
+  <para style="p">
+    <verse number="1" style="v" />
+    <note caller="-" style="x">
+      <char style="xo" closed="false">7.1,2: </char>
+      <char style="xt" closed="false">Gn 14.17-20.</char>
+    </note> This Melchizedek was king of Salem and a priest of the Most High God. As Abraham was coming back from the battle in which he defeated the four kings, Melchizedek met him and blessed him, <verse number="2" style="v" />and Abraham gave him one tenth of all he had taken. (The first meaning of Melchizedek's name is “King of Righteousness”; and because he was king of Salem, his name also means “King of Peace.”) <verse number="3" style="v" />There is no record of Melchizedek's father or mother or of any of his ancestors; no record of his birth or of his death. He is like the Son of God; he remains a priest forever.</para>
+  <para style="p">
+    <verse number="4" style="v" />You see, then, how great he was. Abraham, our famous ancestor, gave him one tenth of all he got in the battle. <verse number="5" style="v" /><note caller="-" style="x"><char style="xo" closed="false">7.5: </char><char style="xt" closed="false">Nu 18.21.</char></note> And those descendants of Levi who are priests are commanded by the Law to collect one tenth from the people of Israel, that is, from their own people, even though they are also descendants of Abraham. <verse number="6" style="v" />Melchizedek was not descended from Levi, but he collected one tenth from Abraham and blessed him, the man who received God's promises. <verse number="7" style="v" />There is no doubt that the one who blesses is greater than the one who is blessed. <verse number="8" style="v" />In the case of the priests the tenth is collected by men who die; but as for Melchizedek the tenth was collected by one who lives, as the scripture says. <verse number="9" style="v" />And, so to speak, when Abraham paid the tenth, Levi (whose descendants collect the tenth) also paid it. <verse number="10" style="v" />For Levi had not yet been born, but was, so to speak, in the body of his ancestor Abraham when Melchizedek met him.</para>
+  <para style="p">
+    <verse number="11" style="v" />It was on the basis of the levitical priesthood that the Law was given to the people of Israel. Now, if the work of the levitical priests had been perfect, there would have been no need for a different kind of priest to appear, one who is in the priestly order of Melchizedek, <note caller="+" style="f"><char style="fr" closed="false">6.11: </char><char style="fq" closed="false">in the priestly order of Melchizedek </char><char style="ft" closed="false">(see 5.6).</char></note> not of Aaron. <verse number="12" style="v" />For when the priesthood is changed, there also has to be a change in the law. <verse number="13" style="v" />And our Lord, of whom these things are said, belonged to a different tribe, and no member of his tribe ever served as a priest. <verse number="14" style="v" />It is well known that he was born a member of the tribe of Judah; and Moses did not mention this tribe when he spoke of priests.</para>
+  <para style="s">Another Priest, like Melchizedek</para>
+  <para style="p">
+    <verse number="15" style="v" />The matter becomes even plainer; a different priest has appeared, who is like Melchizedek. <verse number="16" style="v" />He was made a priest, not by human rules and regulations, but through the power of a life which has no end. <verse number="17" style="v" /><note caller="-" style="x"><char style="xo" closed="false">7.17: </char><char style="xt" closed="false">Ps 110.4.</char></note> For the scripture says, “You will be a priest forever, in the priestly order of Melchizedek.” <note caller="+" style="f"><char style="fr" closed="false">6.17: </char><char style="fq" closed="false">in the priestly order of Melchizedek </char><char style="ft" closed="false">(see 5.6).</char></note> <verse number="18" style="v" />The old rule, then, is set aside, because it was weak and useless. <verse number="19" style="v" />For the Law of Moses could not make anything perfect. And now a better hope has been provided through which we come near to God.</para>
+  <para style="p">
+    <verse number="20" style="v" />In addition, there is also God's vow. There was no such vow when the others were made priests. <verse number="21" style="v" /><note caller="-" style="x"><char style="xo" closed="false">7.21: </char><char style="xt" closed="false">Ps 110.4.</char></note> But Jesus became a priest by means of a vow when God said to him,</para>
+  <para style="q1">“The Lord has made a solemn promise</para>
+  <para style="q2">and will not take it back:</para>
+  <para style="q1">‘You will be a priest forever.’”</para>
+  <para style="b" />
+  <para style="m">
+    <verse number="22" style="v" />This difference, then, also makes Jesus the guarantee of a better covenant.</para>
+  <para style="p">
+    <verse number="23" style="v" />There is another difference: there were many of those other priests, because they died and could not continue their work. <verse number="24" style="v" />But Jesus lives on forever, and his work as priest does not pass on to someone else. <verse number="25" style="v" />And so he is able, now and always, to save those who come to God through him, because he lives forever to plead with God for them.</para>
+  <para style="p">
+    <verse number="26" style="v" />Jesus, then, is the High Priest that meets our needs. He is holy; he has no fault or sin in him; he has been set apart from sinners and raised above the heavens. <verse number="27" style="v" /><note caller="-" style="x"><char style="xo" closed="false">7.27: </char><char style="xt" closed="false">Lv 9.7.</char></note> He is not like other high priests; he does not need to offer sacrifices every day for his own sins first and then for the sins of the people. He offered one sacrifice, once and for all, when he offered himself. <verse number="28" style="v" />The Law of Moses appoints men who are imperfect to be high priests; but God's promise made with the vow, which came later than the Law, appoints the Son, who has been made perfect forever.</para>
+  <chapter number="8" style="c" />
+  <para style="s">Jesus Our High Priest</para>
+  <para style="p">
+    <verse number="1" style="v" />
+    <note caller="-" style="x">
+      <char style="xo" closed="false">8.1: </char>
+      <char style="xt" closed="false">Ps 110.1.</char>
+    </note> The whole point of what we are saying is that we have such a High Priest, who sits at the right of the throne of the Divine Majesty in heaven. <verse number="2" style="v" />He serves as high priest in the Most Holy Place, that is, in the real tent which was put up by the Lord, not by human hands.</para>
+  <para style="p">
+    <verse number="3" style="v" />Every high priest is appointed to present offerings and animal sacrifices to God, and so our High Priest must also have something to offer. <verse number="4" style="v" />If he were on earth, he would not be a priest at all, since there are priests who offer the gifts required by the Jewish Law. <verse number="5" style="v" /><note caller="-" style="x"><char style="xo" closed="false">8.5: </char><char style="xt" closed="false">Ex 25.40.</char></note> The work they do as priests is really only a copy and a shadow of what is in heaven. It is the same as it was with Moses. When he was about to build the Sacred Tent, God told him, “Be sure to make everything according to the pattern you were shown on the mountain.” <verse number="6" style="v" />But now, Jesus has been given priestly work which is superior to theirs, just as the covenant which he arranged between God and his people is a better one, because it is based on promises of better things.</para>
+  <para style="p">
+    <verse number="7" style="v" />If there had been nothing wrong with the first covenant, there would have been no need for a second one. <verse number="8" style="v" /><note caller="-" style="x"><char style="xo" closed="false">8.8-12: </char><char style="xt" closed="false">Jr 31.31-34 (LXX).</char></note> But God finds fault with his people when he says,</para>
+  <para style="q1">“The days are coming, says the Lord,</para>
+  <para style="q2">when I will draw up a new covenant with the people of Israel and with the people of Judah.</para>
+  <para style="q1">
+    <verse number="9" style="v" />It will not be like the covenant that I made with their ancestors</para>
+  <para style="q2">on the day I took them by the hand and led them out of Egypt.</para>
+  <para style="q1">They were not faithful to the covenant I made with them,</para>
+  <para style="q2">and so I paid no attention to them.</para>
+  <para style="q1">
+    <verse number="10" style="v" />Now, this is the covenant that I will make with the people of Israel</para>
+  <para style="q2">in the days to come, says the Lord:</para>
+  <para style="q1">I will put my laws in their minds</para>
+  <para style="q2">and write them on their hearts.</para>
+  <para style="q1">I will be their God,</para>
+  <para style="q2">and they will be my people.</para>
+  <para style="q1">
+    <verse number="11" style="v" />None of them will have to teach their friends</para>
+  <para style="q2">or tell their neighbors,</para>
+  <para style="q2">‘Know the Lord.’</para>
+  <para style="q1">For they will all know me,</para>
+  <para style="q2">from the least to the greatest.</para>
+  <para style="q1">
+    <verse number="12" style="v" />I will forgive their sins</para>
+  <para style="q2">and will no longer remember their wrongs.”</para>
+  <para style="b" />
+  <para style="m">
+    <verse number="13" style="v" />By speaking of a new covenant, God has made the first one old; and anything that becomes old and worn out will soon disappear.</para>
+  <chapter number="9" style="c" />
+  <para style="s">Earthly and Heavenly Worship</para>
+  <para style="p">
+    <verse number="1" style="v" />The first covenant had rules for worship and a place made for worship as well. <verse number="2" style="v" /><note caller="-" style="x"><char style="xo" closed="false">9.2: a </char><char style="xt" closed="false">Ex 26.1-30; </char><char style="xo" closed="false">b </char><char style="xt" closed="false">Ex 25.31-40; </char><char style="xo" closed="false">c </char><char style="xt" closed="false">Ex 25.23-30.</char></note> A tent was put up, the outer one, which was called the Holy Place. In it were the lampstand and the table with the bread offered to God. <verse number="3" style="v" /><note caller="-" style="x"><char style="xo" closed="false">9.3: </char><char style="xt" closed="false">Ex 26.31-33.</char></note> Behind the second curtain was the tent called the Most Holy Place. <verse number="4" style="v" /><note caller="-" style="x"><char style="xo" closed="false">9.4: a </char><char style="xt" closed="false">Ex 30.1-6; </char><char style="xo" closed="false">b </char><char style="xt" closed="false">Ex 25.10-16; </char><char style="xo" closed="false">c </char><char style="xt" closed="false">Ex 16.33; </char><char style="xo" closed="false">d </char><char style="xt" closed="false">Nu 17.8-10; </char><char style="xo" closed="false">e </char><char style="xt" closed="false">Ex 25.16; Dt 10.3-5.</char></note> In it were the gold altar for the burning of incense and the Covenant Box all covered with gold and containing the gold jar with the manna in it, Aaron's stick that had sprouted leaves, and the two stone tablets with the commandments written on them. <verse number="5" style="v" /><note caller="-" style="x"><char style="xo" closed="false">9.5: </char><char style="xt" closed="false">Ex 25.18-22.</char></note> Above the Box were the winged creatures representing God's presence, with their wings spread over the place where sins were forgiven. But now is not the time to explain everything in detail.</para>
+  <para style="p">
+    <verse number="6" style="v" />
+    <note caller="-" style="x">
+      <char style="xo" closed="false">9.6: </char>
+      <char style="xt" closed="false">Nu 18.2-6.</char>
+    </note> This is how those things have been arranged. The priests go into the outer tent every day to perform their duties, <verse number="7" style="v" /><note caller="-" style="x"><char style="xo" closed="false">9.7: </char><char style="xt" closed="false">Lv 16.2-34.</char></note> but only the high priest goes into the inner tent, and he does so only once a year. He takes with him blood which he offers to God on behalf of himself and for the sins which the people have committed without knowing they were sinning. <verse number="8" style="v" />The Holy Spirit clearly teaches from all these arrangements that the way into the Most Holy Place has not yet been opened as long as the outer tent still stands. <verse number="9" style="v" />This is a symbol which points to the present time. It means that the offerings and animal sacrifices presented to God cannot make the worshiper's heart perfect, <verse number="10" style="v" />since they have to do only with food, drink, and various purification ceremonies. These are all outward rules, which apply only until the time when God will establish the new order.</para>
+  <para style="p">
+    <verse number="11" style="v" />But Christ has already come as the High Priest of the good things that are already here. <note caller="+" style="f"><char style="fr" closed="false">9.11: </char><char style="fq" closed="false">already here; </char><char style="ft" closed="false">some manuscripts have </char><char style="fq" closed="false">coming.</char></note> The tent in which he serves is greater and more perfect; it is not a tent made by human hands, that is, it is not a part of this created world. <verse number="12" style="v" />When Christ went through the tent and entered once and for all into the Most Holy Place, he did not take the blood of goats and bulls to offer as a sacrifice; rather, he took his own blood and obtained eternal salvation for us. <verse number="13" style="v" /><note caller="-" style="x"><char style="xo" closed="false">9.13: a </char><char style="xt" closed="false">Lv 16.15,16; </char><char style="xo" closed="false">b </char><char style="xt" closed="false">Nu 19.9,17-19.</char></note> The blood of goats and bulls and the ashes of a burnt calf are sprinkled on the people who are ritually unclean, and this purifies them by taking away their ritual impurity. <verse number="14" style="v" />Since this is true, how much more is accomplished by the blood of Christ! Through the eternal Spirit he offered himself as a perfect sacrifice to God. His blood will purify our consciences from useless rituals, so that we may serve the living God.</para>
+  <para style="p">
+    <verse number="15" style="v" />For this reason Christ is the one who arranges a new covenant, so that those who have been called by God may receive the eternal blessings that God has promised. This can be done because there has been a death which sets people free from the wrongs they did while the first covenant was in effect.</para>
+  <para style="p">
+    <verse number="16" style="v" />In the case of a will it is necessary to prove that the person who made it has died, <verse number="17" style="v" />for a will means nothing while the person who made it is alive; it goes into effect only after his death. <verse number="18" style="v" />That is why even the first covenant <note caller="+" style="f"><char style="fr" closed="false">9.18: </char><char style="fk" closed="false">covenant: </char><char style="ft" closed="false">In Greek the same word means “will” and “covenant.”</char></note> went into effect only with the use of blood. <verse number="19" style="v" /><note caller="-" style="x"><char style="xo" closed="false">9.19,20: </char><char style="xt" closed="false">Ex 24.6-8.</char></note> First, Moses proclaimed to the people all the commandments as set forth in the Law. Then he took the blood of bulls and goats, mixed it with water, and sprinkled it on the book of the Law and all the people, using a sprig of hyssop and some red wool. <verse number="20" style="v" />He said, “This is the blood which seals the covenant that God has commanded you to obey.” <verse number="21" style="v" /><note caller="-" style="x"><char style="xo" closed="false">9.21: </char><char style="xt" closed="false">Lv 8.15.</char></note> In the same way Moses also sprinkled the blood on the Sacred Tent and over all the things used in worship. <verse number="22" style="v" /><note caller="-" style="x"><char style="xo" closed="false">9.22: </char><char style="xt" closed="false">Lv 17.11.</char></note> Indeed, according to the Law almost everything is purified by blood, and sins are forgiven only if blood is poured out.</para>
+  <para style="s">Christ's Sacrifice Takes Away Sins</para>
+  <para style="p">
+    <verse number="23" style="v" />Those things, which are copies of the heavenly originals, had to be purified in that way. But the heavenly things themselves require much better sacrifices. <verse number="24" style="v" />For Christ did not go into a Holy Place made by human hands, which was a copy of the real one. He went into heaven itself, where he now appears on our behalf in the presence of God. <verse number="25" style="v" />The Jewish high priest goes into the Most Holy Place every year with the blood of an animal. But Christ did not go in to offer himself many times, <verse number="26" style="v" />for then he would have had to suffer many times ever since the creation of the world. Instead, now when all ages of time are nearing the end, he has appeared once and for all, to remove sin through the sacrifice of himself. <verse number="27" style="v" />Everyone must die once, and after that be judged by God. <verse number="28" style="v" /><note caller="-" style="x"><char style="xo" closed="false">9.28: </char><char style="xt" closed="false">Is 53.12.</char></note> In the same manner Christ also was offered in sacrifice once to take away the sins of many. He will appear a second time, not to deal with sin, but to save those who are waiting for him.</para>
+  <chapter number="10" style="c" />
+  <para style="p">
+    <verse number="1" style="v" />The Jewish Law is not a full and faithful model of the real things; it is only a faint outline of the good things to come. The same sacrifices are offered forever, year after year. How can the Law, then, by means of these sacrifices make perfect the people who come to God? <verse number="2" style="v" />If the people worshiping God had really been purified from their sins, they would not feel guilty of sin any more, and all sacrifices would stop. <verse number="3" style="v" />As it is, however, the sacrifices serve year after year to remind people of their sins. <verse number="4" style="v" />For the blood of bulls and goats can never take away sins.</para>
+  <para style="p">
+    <verse number="5" style="v" />
+    <note caller="-" style="x">
+      <char style="xo" closed="false">10.5-7: </char>
+      <char style="xt" closed="false">Ps 40.6-8 (LXX).</char>
+    </note> For this reason, when Christ was about to come into the world, he said to God:</para>
+  <para style="q1">“You do not want sacrifices and offerings,</para>
+  <para style="q2">but you have prepared a body for me.</para>
+  <para style="q1">
+    <verse number="6" style="v" />You are not pleased with animals burned whole on the altar</para>
+  <para style="q2">or with sacrifices to take away sins.</para>
+  <para style="q1">
+    <verse number="7" style="v" />Then I said, ‘Here I am,</para>
+  <para style="q2">to do your will, O God,</para>
+  <para style="q2">just as it is written of me in the book of the Law.’”</para>
+  <para style="b" />
+  <para style="m">
+    <verse number="8" style="v" />First he said, “You neither want nor are you pleased with sacrifices and offerings or with animals burned on the altar and the sacrifices to take away sins.” He said this even though all these sacrifices are offered according to the Law. <verse number="9" style="v" />Then he said, “Here I am, O God, to do your will.” So God does away with all the old sacrifices and puts the sacrifice of Christ in their place. <verse number="10" style="v" />Because Jesus Christ did what God wanted him to do, we are all purified from sin by the offering that he made of his own body once and for all.</para>
+  <para style="p">
+    <verse number="11" style="v" />
+    <note caller="-" style="x">
+      <char style="xo" closed="false">10.11: </char>
+      <char style="xt" closed="false">Ex 29.38.</char>
+    </note> Every Jewish priest performs his services every day and offers the same sacrifices many times; but these sacrifices can never take away sins. <verse number="12" style="v" /><note caller="-" style="x"><char style="xo" closed="false">10.12,13: </char><char style="xt" closed="false">Ps 110.1.</char></note> Christ, however, offered one sacrifice for sins, an offering that is effective forever, and then he sat down at the right side of God. <verse number="13" style="v" />There he now waits until God puts his enemies as a footstool under his feet. <verse number="14" style="v" />With one sacrifice, then, he has made perfect forever those who are purified from sin.</para>
+  <para style="p">
+    <verse number="15" style="v" />And the Holy Spirit also gives us his witness. First he says,</para>
+  <para style="q1">
+    <verse number="16" style="v" />
+    <note caller="-" style="x">
+      <char style="xo" closed="false">10.16: </char>
+      <char style="xt" closed="false">Jr 31.33.</char>
+    </note> “This is the covenant that I will make with them</para>
+  <para style="q2">in the days to come, says the Lord:</para>
+  <para style="q1">I will put my laws in their hearts</para>
+  <para style="q2">and write them on their minds.”</para>
+  <para style="b" />
+  <para style="m">
+    <verse number="17" style="v" />
+    <note caller="-" style="x">
+      <char style="xo" closed="false">10.17: </char>
+      <char style="xt" closed="false">Jr 31.34.</char>
+    </note> And then he says, “I will not remember their sins and evil deeds any longer.” <verse number="18" style="v" />So when these have been forgiven, an offering to take away sins is no longer needed.</para>
+  <para style="s">Let Us Come Near to God</para>
+  <para style="p">
+    <verse number="19" style="v" />We have, then, my friends, complete freedom to go into the Most Holy Place by means of the death of Jesus. <verse number="20" style="v" />He opened for us a new way, a living way, through the curtain—that is, through his own body. <verse number="21" style="v" />We have a great priest in charge of the house of God. <verse number="22" style="v" /><note caller="-" style="x"><char style="xo" closed="false">10.22: </char><char style="xt" closed="false">Lv 8.30; Ez 36.25.</char></note> So let us come near to God with a sincere heart and a sure faith, with hearts that have been purified from a guilty conscience and with bodies washed with clean water. <verse number="23" style="v" />Let us hold on firmly to the hope we profess, because we can trust God to keep his promise. <verse number="24" style="v" />Let us be concerned for one another, to help one another to show love and to do good. <verse number="25" style="v" />Let us not give up the habit of meeting together, as some are doing. Instead, let us encourage one another all the more, since you see that the Day of the Lord is coming nearer.</para>
+  <para style="p">
+    <verse number="26" style="v" />For there is no longer any sacrifice that will take away sins if we purposely go on sinning after the truth has been made known to us. <verse number="27" style="v" /><note caller="-" style="x"><char style="xo" closed="false">10.27: </char><char style="xt" closed="false">Is 26.11 (LXX).</char></note> Instead, all that is left is to wait in fear for the coming Judgment and the fierce fire which will destroy those who oppose God! <verse number="28" style="v" /><note caller="-" style="x"><char style="xo" closed="false">10.28: </char><char style="xt" closed="false">Dt 17.6; 19.15.</char></note> Anyone who disobeys the Law of Moses is put to death without any mercy when judged guilty from the evidence of two or more witnesses. <verse number="29" style="v" /><note caller="-" style="x"><char style="xo" closed="false">10.29: </char><char style="xt" closed="false">Ex 24.8.</char></note> What, then, of those who despise the Son of God? who treat as a cheap thing the blood of God's covenant which purified them from sin? who insult the Spirit of grace? Just think how much worse is the punishment they will deserve! <verse number="30" style="v" /><note caller="-" style="x"><char style="xo" closed="false">10.30: a </char><char style="xt" closed="false">Dt 32.35; </char><char style="xo" closed="false">b </char><char style="xt" closed="false">Dt 32.36.</char></note> For we know who said, “I will take revenge, I will repay”; and who also said, “The Lord will judge his people.” <verse number="31" style="v" />It is a terrifying thing to fall into the hands of the living God!</para>
+  <para style="p">
+    <verse number="32" style="v" />Remember how it was with you in the past. In those days, after God's light had shone on you, you suffered many things, yet were not defeated by the struggle. <verse number="33" style="v" />You were at times publicly insulted and mistreated, and at other times you were ready to join those who were being treated in this way. <verse number="34" style="v" />You shared the sufferings of prisoners, and when all your belongings were seized, you endured your loss gladly, because you knew that you still possessed something much better, which would last forever. <verse number="35" style="v" />Do not lose your courage, then, because it brings with it a great reward. <verse number="36" style="v" />You need to be patient, in order to do the will of God and receive what he promises. <verse number="37" style="v" /><note caller="-" style="x"><char style="xo" closed="false">10.37,38: </char><char style="xt" closed="false">Hb 2.3,4 (LXX).</char></note> For, as the scripture says,</para>
+  <para style="q1">“Just a little while longer,</para>
+  <para style="q2">and he who is coming will come;</para>
+  <para style="q2">he will not delay.</para>
+  <para style="q1">
+    <verse number="38" style="v" />My righteous people, however, will believe and live;</para>
+  <para style="q2">but if any of them turns back,</para>
+  <para style="q2">I will not be pleased with them.”</para>
+  <para style="b" />
+  <para style="m">
+    <verse number="39" style="v" />We are not people who turn back and are lost. Instead, we have faith and are saved.</para>
+  <chapter number="11" style="c" />
+  <para style="s">Faith</para>
+  <para style="p">
+    <verse number="1" style="v" />To have faith is to be sure of the things we hope for, to be certain of the things we cannot see. <verse number="2" style="v" /><note caller="-" style="x"><char style="xo" closed="false">11.2: </char><char style="xdc">Si 44.10—50.21; 1 Macc 2.51-64.</char></note> It was by their faith that people of ancient times won God's approval.</para>
+  <para style="p">
+    <verse number="3" style="v" />
+    <note caller="-" style="x">
+      <char style="xo" closed="false">11.3: </char>
+      <char style="xt" closed="false">Gn 1.1; Ps 33.6,9; Jn 1.3.</char>
+    </note> It is by faith that we understand that the universe was created by God's word, so that what can be seen was made out of what cannot be seen.</para>
+  <para style="p">
+    <verse number="4" style="v" />
+    <note caller="-" style="x">
+      <char style="xo" closed="false">11.4: </char>
+      <char style="xt" closed="false">Gn 4.3-10.</char>
+    </note> It was faith that made Abel offer to God a better sacrifice than Cain's. Through his faith he won God's approval as a righteous man, because God himself approved of his gifts. By means of his faith Abel still speaks, even though he is dead.</para>
+  <para style="p">
+    <verse number="5" style="v" />
+    <note caller="-" style="x">
+      <char style="xo" closed="false">11.5: </char>
+      <char style="xt" closed="false">Gn 5.21-24 (LXX)</char>
+      <char style="xdc">; Si 44.16</char>.</note> It was faith that kept Enoch from dying. Instead, he was taken up to God, and nobody could find him, because God had taken him up. The scripture says that before Enoch was taken up, he had pleased God. <verse number="6" style="v" />No one can please God without faith, for whoever comes to God must have faith that God exists and rewards those who seek him.</para>
+  <para style="p">
+    <verse number="7" style="v" />
+    <note caller="-" style="x">
+      <char style="xo" closed="false">11.7: </char>
+      <char style="xt" closed="false">Gn 6.13-22.</char>
+    </note> It was faith that made Noah hear God's warnings about things in the future that he could not see. He obeyed God and built a boat in which he and his family were saved. As a result, the world was condemned, and Noah received from God the righteousness that comes by faith.</para>
+  <para style="p">
+    <verse number="8" style="v" />
+    <note caller="-" style="x">
+      <char style="xo" closed="false">11.8: </char>
+      <char style="xt" closed="false">Gn 12.1-5.</char>
+    </note> It was faith that made Abraham obey when God called him to go out to a country which God had promised to give him. He left his own country without knowing where he was going. <verse number="9" style="v" /><note caller="-" style="x"><char style="xo" closed="false">11.9: </char><char style="xt" closed="false">Gn 35.27.</char></note> By faith he lived as a foreigner in the country that God had promised him. He lived in tents, as did Isaac and Jacob, who received the same promise from God. <verse number="10" style="v" />For Abraham was waiting for the city which God has designed and built, the city with permanent foundations.</para>
+  <para style="p">
+    <verse number="11" style="v" />
+    <note caller="-" style="x">
+      <char style="xo" closed="false">11.11: </char>
+      <char style="xt" closed="false">Gn 18.11-14; 21.2.</char>
+    </note> It was faith that made Abraham able to become a father, even though he was too old and Sarah herself could not have children. He <note caller="+" style="f"><char style="fr" closed="false">11.11: </char><char style="fq" closed="false">It was faith…children. He; </char><char style="ft" closed="false">some manuscripts have </char><char style="fq" closed="false">It was faith that made Sarah herself able to conceive, even though she was too old to have children. She.</char></note> trusted God to keep his promise. <verse number="12" style="v" /><note caller="-" style="x"><char style="xo" closed="false">11.12: </char><char style="xt" closed="false">Gn 15.5; 22.17; 32.12.</char></note> Though Abraham was practically dead, from this one man came as many descendants as there are stars in the sky, as many as the numberless grains of sand on the seashore.</para>
+  <para style="p">
+    <verse number="13" style="v" />
+    <note caller="-" style="x">
+      <char style="xo" closed="false">11.13: </char>
+      <char style="xt" closed="false">Gn 23.4; 1 Ch 29.15; Ps 39.12.</char>
+    </note> It was in faith that all these persons died. They did not receive the things God had promised, but from a long way off they saw them and welcomed them, and admitted openly that they were foreigners and refugees on earth. <verse number="14" style="v" />Those who say such things make it clear that they are looking for a country of their own. <verse number="15" style="v" />They did not keep thinking about the country they had left; if they had, they would have had the chance to return. <verse number="16" style="v" />Instead, it was a better country they longed for, the heavenly country. And so God is not ashamed for them to call him their God, because he has prepared a city for them.</para>
+  <para style="p">
+    <verse number="17" style="v" />
+    <note caller="-" style="x">
+      <char style="xo" closed="false">11.17: </char>
+      <char style="xt" closed="false">Gn 22.1-14.</char>
+    </note> It was faith that made Abraham offer his son Isaac as a sacrifice when God put Abraham to the test. Abraham was the one to whom God had made the promise, yet he was ready to offer his only son as a sacrifice. <verse number="18" style="v" /><note caller="-" style="x"><char style="xo" closed="false">11.18: </char><char style="xt" closed="false">Gn 21.12.</char></note> God had said to him, “It is through Isaac that you will have the descendants I promised.” <verse number="19" style="v" />Abraham reckoned that God was able to raise Isaac from death—and, so to speak, Abraham did receive Isaac back from death.</para>
+  <para style="p">
+    <verse number="20" style="v" />
+    <note caller="-" style="x">
+      <char style="xo" closed="false">11.20: </char>
+      <char style="xt" closed="false">Gn 27.27-29,39,40.</char>
+    </note> It was faith that made Isaac promise blessings for the future to Jacob and Esau.</para>
+  <para style="p">
+    <verse number="21" style="v" />
+    <note caller="-" style="x">
+      <char style="xo" closed="false">11.21: a </char>
+      <char style="xt" closed="false">Gn 48.1-20; </char>
+      <char style="xo" closed="false">b </char>
+      <char style="xt" closed="false">Gn 47.31 (LXX).</char>
+    </note> It was faith that made Jacob bless each of the sons of Joseph just before he died. He leaned on the top of his walking stick and worshiped God.</para>
+  <para style="p">
+    <verse number="22" style="v" />
+    <note caller="-" style="x">
+      <char style="xo" closed="false">11.22: </char>
+      <char style="xt" closed="false">Gn 50.24,25; Ex 13.19.</char>
+    </note> It was faith that made Joseph, when he was about to die, speak of the departure of the Israelites from Egypt, and leave instructions about what should be done with his body.</para>
+  <para style="p">
+    <verse number="23" style="v" />
+    <note caller="-" style="x">
+      <char style="xo" closed="false">11.23: a </char>
+      <char style="xt" closed="false">Ex 2.2; </char>
+      <char style="xo" closed="false">b </char>
+      <char style="xt" closed="false">Ex 1.22.</char>
+    </note> It was faith that made the parents of Moses hide him for three months after he was born. They saw that he was a beautiful child, and they were not afraid to disobey the king's order.</para>
+  <para style="p">
+    <verse number="24" style="v" />
+    <note caller="-" style="x">
+      <char style="xo" closed="false">11.24: </char>
+      <char style="xt" closed="false">Ex 2.10-12.</char>
+    </note> It was faith that made Moses, when he had grown up, refuse to be called the son of the king's daughter. <verse number="25" style="v" />He preferred to suffer with God's people rather than to enjoy sin for a little while. <verse number="26" style="v" />He reckoned that to suffer scorn for the Messiah was worth far more than all the treasures of Egypt, for he kept his eyes on the future reward.</para>
+  <para style="p">
+    <verse number="27" style="v" />It was faith that made Moses leave Egypt without being afraid of the king's anger. As though he saw the invisible God, he refused to turn back. <verse number="28" style="v" /><note caller="-" style="x"><char style="xo" closed="false">11.28: </char><char style="xt" closed="false">Ex 12.21-30.</char></note> It was faith that made him establish the Passover and order the blood to be sprinkled on the doors, so that the Angel of Death would not kill the first-born sons of the Israelites.</para>
+  <para style="p">
+    <verse number="29" style="v" />
+    <note caller="-" style="x">
+      <char style="xo" closed="false">11.29: </char>
+      <char style="xt" closed="false">Ex 14.21-31.</char>
+    </note> It was faith that made the Israelites able to cross the Red Sea as if on dry land; when the Egyptians tried to do it, the water swallowed them up.</para>
+  <para style="p">
+    <verse number="30" style="v" />
+    <note caller="-" style="x">
+      <char style="xo" closed="false">11.30: </char>
+      <char style="xt" closed="false">Js 6.12-21.</char>
+    </note> It was faith that made the walls of Jericho fall down after the Israelites had marched around them for seven days. <verse number="31" style="v" /><note caller="-" style="x"><char style="xo" closed="false">11.31: a </char><char style="xt" closed="false">Js 6.22-25; </char><char style="xo" closed="false">b </char><char style="xt" closed="false">Js 2.1-21.</char></note> It was faith that kept the prostitute Rahab from being killed with those who disobeyed God, for she gave the Israelite spies a friendly welcome.</para>
+  <para style="p">
+    <verse number="32" style="v" />
+    <note caller="-" style="x">
+      <char style="xo" closed="false">11.32: a </char>
+      <char style="xt" closed="false">Jg 6.11—8.32; </char>
+      <char style="xo" closed="false">b </char>
+      <char style="xt" closed="false">Jg 4.6—5.31; </char>
+      <char style="xo" closed="false">c </char>
+      <char style="xt" closed="false">Jg 13.2—16.31; </char>
+      <char style="xo" closed="false">d </char>
+      <char style="xt" closed="false">Jg 11.1—12.7; </char>
+      <char style="xo" closed="false">e </char>
+      <char style="xt" closed="false">1 S 16.1—1 K 2.11; </char>
+      <char style="xo" closed="false">f </char>
+      <char style="xt" closed="false">1 S 1.1—25.1.</char>
+    </note> Should I go on? There isn't enough time for me to speak of Gideon, Barak, Samson, Jephthah, David, Samuel, and the prophets. <verse number="33" style="v" /><note caller="-" style="x"><char style="xo" closed="false">11.33: </char><char style="xt" closed="false">Dn 6.1-27.</char></note> Through faith they fought whole countries and won. They did what was right and received what God had promised. They shut the mouths of lions, <verse number="34" style="v" /><note caller="-" style="x"><char style="xo" closed="false">11.34: </char><char style="xt" closed="false">Dn 3.1-30.</char></note> put out fierce fires, escaped being killed by the sword. They were weak, but became strong; they were mighty in battle and defeated the armies of foreigners. <verse number="35" style="v" /><note caller="-" style="x"><char style="xo" closed="false">11.35: </char><char style="xt" closed="false">1 K 17.17-24; 2 K 4.25-37 </char><char style="xdc">; 2 Macc 6.18—7.42</char>.</note> Through faith women received their dead relatives raised back to life.</para>
+  <para style="p">Others, refusing to accept freedom, died under torture in order to be raised to a better life. <verse number="36" style="v" /><note caller="-" style="x"><char style="xo" closed="false">11.36: </char><char style="xt" closed="false">1 K 22.26,27; 2 Ch 18.25,26; Jr 20.2; 37.15; 38.6.</char></note> Some were mocked and whipped, and others were put in chains and taken off to prison. <verse number="37" style="v" /><note caller="-" style="x"><char style="xo" closed="false">11.37: </char><char style="xt" closed="false">2 Ch 24.21.</char></note> They were stoned, they were sawed in two, they were killed by the sword. They went around clothed in skins of sheep or goats—poor, persecuted, and mistreated. <verse number="38" style="v" />The world was not good enough for them! They wandered like refugees in the deserts and hills, living in caves and holes in the ground.</para>
+  <para style="p">
+    <verse number="39" style="v" />What a record all of these have won by their faith! Yet they did not receive what God had promised, <verse number="40" style="v" />because God had decided on an even better plan for us. His purpose was that only in company with us would they be made perfect.</para>
+  <chapter number="12" style="c" />
+  <para style="s">God Our Father</para>
+  <para style="p">
+    <verse number="1" style="v" />As for us, we have this large crowd of witnesses around us. So then, let us rid ourselves of everything that gets in the way, and of the sin which holds on to us so tightly, and let us run with determination the race that lies before us. <verse number="2" style="v" />Let us keep our eyes fixed on Jesus, on whom our faith depends from beginning to end. He did not give up because of the cross! On the contrary, because of the joy that was waiting for him, he thought nothing of the disgrace of dying on the cross, and he is now seated at the right side of God's throne.</para>
+  <para style="p">
+    <verse number="3" style="v" />Think of what he went through; how he put up with so much hatred from sinners! So do not let yourselves become discouraged and give up. <verse number="4" style="v" />For in your struggle against sin you have not yet had to resist to the point of being killed. <verse number="5" style="v" /><note caller="-" style="x"><char style="xo" closed="false">12.5,6: </char><char style="xt" closed="false">Job 5.17; Pr 3.11,12 (LXX).</char></note> Have you forgotten the encouraging words which God speaks to you as his children?</para>
+  <para style="q1">“My child, pay attention when the Lord corrects you,</para>
+  <para style="q2">and do not be discouraged when he rebukes you.</para>
+  <para style="q1">
+    <verse number="6" style="v" />Because the Lord corrects everyone he loves,</para>
+  <para style="q2">and punishes everyone he accepts as a child.”</para>
+  <para style="b" />
+  <para style="m">
+    <verse number="7" style="v" />Endure what you suffer as being a father's punishment; your suffering shows that God is treating you as his children. Was there ever a child who was not punished by his father? <verse number="8" style="v" />If you are not punished, as all his children are, it means you are not real children, but bastards. <verse number="9" style="v" />In the case of our human fathers, they punished us and we respected them. How much more, then, should we submit to our spiritual Father and live! <verse number="10" style="v" />Our human fathers punished us for a short time, as it seemed right to them; but God does it for our own good, so that we may share his holiness. <verse number="11" style="v" />When we are punished, it seems to us at the time something to make us sad, not glad. Later, however, those who have been disciplined by such punishment reap the peaceful reward of a righteous life.</para>
+  <para style="s">Instructions and Warnings</para>
+  <para style="p">
+    <verse number="12" style="v" />
+    <note caller="-" style="x">
+      <char style="xo" closed="false">12.12: </char>
+      <char style="xt" closed="false">Is 35.3 (LXX).</char>
+    </note> Lift up your tired hands, then, and strengthen your trembling knees! <verse number="13" style="v" /><note caller="-" style="x"><char style="xo" closed="false">12.13: </char><char style="xt" closed="false">Pr 4.26 (LXX).</char></note> Keep walking on straight paths, so that the lame foot may not be disabled, but instead be healed.</para>
+  <para style="p">
+    <verse number="14" style="v" />Try to be at peace with everyone, and try to live a holy life, because no one will see the Lord without it. <verse number="15" style="v" /><note caller="-" style="x"><char style="xo" closed="false">12.15: </char><char style="xt" closed="false">Dt 29.18 (LXX).</char></note> Guard against turning back from the grace of God. Let no one become like a bitter plant that grows up and causes many troubles with its poison. <verse number="16" style="v" /><note caller="-" style="x"><char style="xo" closed="false">12.16: </char><char style="xt" closed="false">Gn 25.29-34.</char></note> Let no one become immoral or unspiritual like Esau, who for a single meal sold his rights as the older son. <verse number="17" style="v" /><note caller="-" style="x"><char style="xo" closed="false">12.17: </char><char style="xt" closed="false">Gn 27.30-40.</char></note> Afterward, you know, he wanted to receive his father's blessing; but he was turned back, because he could not find any way to change what he had done, even though in tears he looked for it. <note caller="+" style="f"><char style="fr" closed="false">12.17: </char><char style="fq" closed="false">he looked for it; </char><char style="ft" closed="false">or </char><char style="fq" closed="false">he tried to get the blessing.</char></note></para>
+  <para style="p">
+    <verse number="18" style="v" />
+    <note caller="-" style="x">
+      <char style="xo" closed="false">12.18,19: </char>
+      <char style="xt" closed="false">Ex 19.16-22; 20.18-21; Dt 4.11,12; 5.22-27.</char>
+    </note> You have not come, as the people of Israel came, to what you can feel, to Mount Sinai with its blazing fire, the darkness and the gloom, the storm, <verse number="19" style="v" />the blast of a trumpet, and the sound of a voice. When the people heard the voice, they begged not to hear another word, <verse number="20" style="v" /><note caller="-" style="x"><char style="xo" closed="false">12.20: </char><char style="xt" closed="false">Ex 19.12,13.</char></note> because they could not bear the order which said, “If even an animal touches the mountain, it must be stoned to death.” <verse number="21" style="v" /><note caller="-" style="x"><char style="xo" closed="false">12.21: </char><char style="xt" closed="false">Dt 9.19.</char></note> The sight was so terrifying that Moses said, “I am trembling and afraid!”</para>
+  <para style="p">
+    <verse number="22" style="v" />Instead, you have come to Mount Zion and to the city of the living God, the heavenly Jerusalem, with its thousands of angels. <verse number="23" style="v" />You have come to the joyful gathering of God's first-born, whose names are written in heaven. You have come to God, who is the judge of all people, and to the spirits of good people made perfect. <verse number="24" style="v" /><note caller="-" style="x"><char style="xo" closed="false">12.24: </char><char style="xt" closed="false">Gn 4.10.</char></note> You have come to Jesus, who arranged the new covenant, and to the sprinkled blood that promises much better things than does the blood of Abel.</para>
+  <para style="p">
+    <verse number="25" style="v" />
+    <note caller="-" style="x">
+      <char style="xo" closed="false">12.25: </char>
+      <char style="xt" closed="false">Ex 20.22.</char>
+    </note> Be careful, then, and do not refuse to hear him who speaks. Those who refused to hear the one who gave the divine message on earth did not escape. How much less shall we escape, then, if we turn away from the one who speaks from heaven! <verse number="26" style="v" /><note caller="-" style="x"><char style="xo" closed="false">12.26: </char><char style="xt" closed="false">Hg 2.6 (LXX).</char></note> His voice shook the earth at that time, but now he has promised, “I will once more shake not only the earth but heaven as well.” <verse number="27" style="v" />The words “once more” plainly show that the created things will be shaken and removed, so that the things that cannot be shaken will remain.</para>
+  <para style="p">
+    <verse number="28" style="v" />Let us be thankful, then, because we receive a kingdom that cannot be shaken. Let us be grateful and worship God in a way that will please him, with reverence and awe; <verse number="29" style="v" /><note caller="-" style="x"><char style="xo" closed="false">12.29: </char><char style="xt" closed="false">Dt 4.24.</char></note> because our God is indeed a destroying fire.</para>
+  <chapter number="13" style="c" />
+  <para style="s">How to Please God</para>
+  <para style="p">
+    <verse number="1" style="v" />Keep on loving one another as Christians. <verse number="2" style="v" /><note caller="-" style="x"><char style="xo" closed="false">13.2: </char><char style="xt" closed="false">Gn 18.1-8; 19.1-3 </char><char style="xdc">; Tb 5.4,5</char>.</note> Remember to welcome strangers in your homes. There were some who did that and welcomed angels without knowing it. <verse number="3" style="v" />Remember those who are in prison, as though you were in prison with them. Remember those who are suffering, as though you were suffering as they are.</para>
+  <para style="p">
+    <verse number="4" style="v" />
+    <note caller="-" style="x">
+      <char style="xo" closed="false">13.4: </char>
+      <char style="xdc" closed="false">Ws 3.13.</char>
+    </note> Marriage is to be honored by all, and husbands and wives must be faithful to each other. God will judge those who are immoral and those who commit adultery.</para>
+  <para style="p">
+    <verse number="5" style="v" />
+    <note caller="-" style="x">
+      <char style="xo" closed="false">13.5: </char>
+      <char style="xt" closed="false">Dt 31.6,8; Js 1.5.</char>
+    </note> Keep your lives free from the love of money, and be satisfied with what you have. For God has said, “I will never leave you; I will never abandon you.” <verse number="6" style="v" /><note caller="-" style="x"><char style="xo" closed="false">13.6: </char><char style="xt" closed="false">Ps 118.6 (LXX).</char></note> Let us be bold, then, and say,</para>
+  <para style="q1">“The Lord is my helper,</para>
+  <para style="q2">I will not be afraid.</para>
+  <para style="q1">What can anyone do to me?”</para>
+  <para style="p">
+    <verse number="7" style="v" />Remember your former leaders, who spoke God's message to you. Think back on how they lived and died, and imitate their faith. <verse number="8" style="v" />Jesus Christ is the same yesterday, today, and forever. <verse number="9" style="v" />Do not let all kinds of strange teachings lead you from the right way. It is good to receive inner strength from God's grace, and not by obeying rules about foods; those who obey these rules have not been helped by them.</para>
+  <para style="p">
+    <verse number="10" style="v" />The priests who serve in the Jewish place of worship have no right to eat any of the sacrifice on our altar. <verse number="11" style="v" /><note caller="-" style="x"><char style="xo" closed="false">13.11: </char><char style="xt" closed="false">Lv 16.27.</char></note> The Jewish high priest brings the blood of the animals into the Most Holy Place to offer it as a sacrifice for sins; but the bodies of the animals are burned outside the camp. <verse number="12" style="v" />For this reason Jesus also died outside the city, in order to purify the people from sin with his own blood. <verse number="13" style="v" />Let us, then, go to him outside the camp and share his shame. <verse number="14" style="v" />For there is no permanent city for us here on earth; we are looking for the city which is to come. <verse number="15" style="v" />Let us, then, always offer praise to God as our sacrifice through Jesus, which is the offering presented by lips that confess him as Lord. <verse number="16" style="v" />Do not forget to do good and to help one another, because these are the sacrifices that please God.</para>
+  <para style="p">
+    <verse number="17" style="v" />Obey your leaders and follow their orders. They watch over your souls without resting, since they must give to God an account of their service. If you obey them, they will do their work gladly; if not, they will do it with sadness, and that would be of no help to you.</para>
+  <para style="p">
+    <verse number="18" style="v" />Keep on praying for us. We are sure we have a clear conscience, because we want to do the right thing at all times. <verse number="19" style="v" />And I beg you even more earnestly to pray that God will send me back to you soon.</para>
+  <para style="s">Closing Prayer</para>
+  <para style="p">
+    <verse number="20-21" style="v" />God has raised from death our Lord Jesus, who is the Great Shepherd of the sheep as the result of his blood, <note caller="+" style="f"><char style="fr" closed="false">13.20-21: </char><char style="fq" closed="false">his blood; </char><char style="ft" closed="false">or </char><char style="fq" closed="false">his sacrificial death.</char></note> by which the eternal covenant is sealed. May the God of peace provide you with every good thing you need in order to do his will, and may he, through Jesus Christ, do in us what pleases him. And to Christ be the glory forever and ever! Amen.</para>
+  <para style="s">Final Words</para>
+  <para style="p">
+    <verse number="22" style="v" />I beg you, my friends, to listen patiently to this message of encouragement; for this letter I have written you is not very long. <verse number="23" style="v" />I want you to know that our brother Timothy has been let out of prison. If he comes soon enough, I will have him with me when I see you.</para>
+  <para style="p">
+    <verse number="24" style="v" />Give our greetings to all your leaders and to all God's people. The believers from Italy send you their greetings.</para>
+  <para style="p">
+    <verse number="25" style="v" />May God's grace be with you all.</para>
+</usx>

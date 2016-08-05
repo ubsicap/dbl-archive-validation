@@ -1,0 +1,94 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<usx version="2.5">
+  <book code="MAN" style="id">English: Good News Translation 2nd Ed. 1992</book>
+  <para style="ide">Unicode (UTF8)</para>
+  <para style="rem">For any non-Paratext use of this text, permission must be obtained from the copyright holder.</para>
+  <para style="rem">CAP Information: checked/corrected 2008</para>
+  <para style="h">The Prayer of Manasseh</para>
+  <para style="toc1">THE PRAYER OF MANASSEH</para>
+  <para style="toc2">The Prayer of Manasseh</para>
+  <para style="toc3">Man</para>
+  <para style="mt1">THE PRAYER OF MANASSEH</para>
+  <para style="imt">Introduction</para>
+  <para style="ip">
+    <char style="bk">The Prayer of Manasseh</char> is a beautiful short prayer of repentance. It is presented as a prayer by Manasseh, the wicked king of Judah, referred to in 2 Chronicles 33.12,18,19.</para>
+  <chapter number="1" style="c" />
+  <para style="q1">
+    <verse number="1" style="v" />
+    <note caller="-" style="x">
+      <char style="xo" closed="false">1: </char>
+      <char style="xt" closed="false">2 Ch 33.11-13,18,19.</char>
+    </note> Lord Almighty, God of our ancestors,</para>
+  <para style="q2">God of Abraham, Isaac, and Jacob,</para>
+  <para style="q2">God of their righteous descendants,</para>
+  <para style="q1">
+    <verse number="2" style="v" />you created the universe</para>
+  <para style="q2">and all the splendor that fills it.</para>
+  <para style="q1">
+    <verse number="3" style="v" />The sea obeys your command</para>
+  <para style="q2">and never overflows its bounds.</para>
+  <para style="q1">The power of your wonderful, glorious name</para>
+  <para style="q2">keeps the ocean depths in their place.</para>
+  <para style="q1">
+    <verse number="4" style="v" />When you show your power,</para>
+  <para style="q2">all creation trembles.</para>
+  <para style="q1">
+    <verse number="5" style="v" />Your glorious splendor is overwhelming,</para>
+  <para style="q2">and your anger is more than sinners can endure.</para>
+  <para style="q1">
+    <verse number="6" style="v" />But the mercy you promise is also greater</para>
+  <para style="q2">than we can understand or measure.</para>
+  <para style="q1">
+    <verse number="7" style="v" />For you are the Lord Most High;</para>
+  <para style="q2">you are patient and show mercy and compassion.</para>
+  <para style="q1">You make our punishment easier to bear</para>
+  <para style="q2">when we suffer for our sins.</para>
+  <para style="q1">O Lord, in your great goodness and mercy</para>
+  <para style="q2">you promise forgiveness and salvation</para>
+  <para style="q2">to those who repent of their sin against you. <note caller="+" style="f"><char style="fr" closed="false">1.7: </char><char style="fk" closed="false">O Lord…against you; </char><char style="ft" closed="false">some manuscripts do not have these words.</char></note></para>
+  <para style="q1">
+    <verse number="8" style="v" />You, Lord, are the God of righteous people.</para>
+  <para style="q2">Repentance was not necessary</para>
+  <para style="q2">for Abraham, Isaac, and Jacob,</para>
+  <para style="q2">for they did not sin against you.</para>
+  <para style="q1">But for sinners like me</para>
+  <para style="q2">you have made repentance possible.</para>
+  <para style="q1">
+    <verse number="9" style="v" />
+    <note caller="-" style="x">
+      <char style="xo" closed="false">9: </char>
+      <char style="xt" closed="false">2 K 21.1-18.</char>
+    </note> I have committed more sins</para>
+  <para style="q2">than there are grains of sand along the seashore.</para>
+  <para style="q1">They are so many, Lord, they are so many.</para>
+  <para style="q1">I have done so much that is wrong</para>
+  <para style="q2">that I am not worthy to turn my face toward heaven.</para>
+  <para style="q1">
+    <verse number="10" style="v" />I am crushed beneath the weight of my sin; <note caller="+" style="f"><char style="fr" closed="false">1.10: </char><char style="fq" closed="false">crushed…my sin; </char><char style="ft" closed="false">Greek unclear.</char></note></para>
+  <para style="q2">I am bowed down by its heavy iron chain.</para>
+  <para style="q2">I can find no relief,</para>
+  <para style="q2">for I have made you angry.</para>
+  <para style="q2">I have set up idols everywhere;</para>
+  <para style="q2">I have done what you hate.</para>
+  <para style="q1">
+    <verse number="11" style="v" />But now I bow in deep humility,</para>
+  <para style="q2">praying for your mercy.</para>
+  <para style="q1">
+    <verse number="12" style="v" />I have sinned, Lord, I have sinned;</para>
+  <para style="q2">I confess the wicked things I have done.</para>
+  <para style="q1">
+    <verse number="13" style="v" />I beg you, Lord, I earnestly pray:</para>
+  <para style="q2">forgive me, forgive me.</para>
+  <para style="q1">Do not destroy me because of my sins;</para>
+  <para style="q2">do not stay angry with me forever</para>
+  <para style="q2">or store up punishment for me.</para>
+  <para style="q1">Do not condemn me to the world of the dead,</para>
+  <para style="q2">for you, O Lord, forgive those who repent.</para>
+  <para style="q1">
+    <verse number="14" style="v" />Show me all your mercy and kindness and save me,</para>
+  <para style="q2">even though I do not deserve it.</para>
+  <para style="q1">
+    <verse number="15" style="v" />Then I will go on praising you as long as I live.</para>
+  <para style="q1">All the heavenly powers sing your praises,</para>
+  <para style="q2">and your glory endures forever. Amen.</para>
+</usx>

@@ -1,0 +1,583 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<usx version="2.5">
+  <book code="SNG" style="id">English: Good News Translation 2nd Ed. 1992</book>
+  <para style="ide">Unicode (UTF8)</para>
+  <para style="rem">For any non-Paratext use of this text, permission must be obtained from the copyright holder.</para>
+  <para style="rem">CAP Information: checked/corrected 2008</para>
+  <para style="h">Song of Songs</para>
+  <para style="toc1">SONG OF SONGS</para>
+  <para style="toc2">Song of Songs</para>
+  <para style="toc3">Sgs</para>
+  <para style="mt1">SONG OF SONGS</para>
+  <para style="imt">Introduction</para>
+  <para style="ip">The <char style="bk">Song of Songs</char> is a series of love poems, for the most part in the form of songs addressed by a man to a woman, and by the woman to the man. In some translations, the book is called <char style="bk">The Song of Solomon</char> because it is attributed to Solomon in the Hebrew title.</para>
+  <para style="ip">These songs have often been interpreted by Jews as a picture of the relationship between God and his people, and by Christians as a picture of the relationship between Christ and the Church.</para>
+  <para style="iot">Outline of Contents</para>
+  <para style="io1">First Song <char style="ior">(1.1–2.7)</char></para>
+  <para style="io1">Second Song <char style="ior">(2.8–3.5)</char></para>
+  <para style="io1">Third Song <char style="ior">(3.6–5.1)</char></para>
+  <para style="io1">Fourth Song <char style="ior">(5.2–6.3)</char></para>
+  <para style="io1">Fifth Song <char style="ior">(6.4–8.4)</char></para>
+  <para style="io1">Sixth Song <char style="ior">(8.5-14)</char></para>
+  <chapter number="1" style="c" />
+  <para style="p">
+    <verse number="1" style="v" />
+    <note caller="-" style="x">
+      <char style="xo" closed="false">1.1: </char>
+      <char style="xt" closed="false">1 K 4.32.</char>
+    </note> The most beautiful of songs, by Solomon. <note caller="+" style="f"><char style="fr" closed="false">1.1: </char><char style="fq" closed="false">by Solomon; </char><char style="ft" closed="false">or </char><char style="fq" closed="false">dedicated to Solomon, </char><char style="ft" closed="false">or </char><char style="fq" closed="false">about Solomon.</char></note></para>
+  <para style="s">The First Song</para>
+  <para style="sp">The Woman</para>
+  <para style="q1">
+    <verse number="2" style="v" />Your lips cover me with kisses;</para>
+  <para style="q2">your love is better than wine.</para>
+  <para style="q1">
+    <verse number="3" style="v" />There is a fragrance about you;</para>
+  <para style="q2">the sound of your name recalls it.</para>
+  <para style="q2">No woman could keep from loving you.</para>
+  <para style="q1">
+    <verse number="4" style="v" />Take me with you, and we'll run away;</para>
+  <para style="q2">be my king and take me to your room.</para>
+  <para style="q1">We will be happy together,</para>
+  <para style="q2">drink deep, and lose ourselves in love.</para>
+  <para style="q2">No wonder all women love you!</para>
+  <para style="q1">
+    <verse number="5" style="v" />Women of Jerusalem, I am dark but <note caller="+" style="f"><char style="fr" closed="false">1.5: </char><char style="fq" closed="false">but; </char><char style="ft" closed="false">or </char><char style="fq" closed="false">and.</char></note> beautiful,</para>
+  <para style="q2">dark as the desert tents of Kedar,</para>
+  <para style="q2">but beautiful as the draperies in Solomon's palace.</para>
+  <para style="q1">
+    <verse number="6" style="v" />Don't look down on me because of my color,</para>
+  <para style="q2">because the sun has tanned me.</para>
+  <para style="q1">My brothers were angry with me</para>
+  <para style="q2">and made me work in the vineyard.</para>
+  <para style="q2">I had no time to care for myself.</para>
+  <para style="q1">
+    <verse number="7" style="v" />Tell me, my love,</para>
+  <para style="q2">Where will you lead your flock to graze?</para>
+  <para style="q2">Where will they rest from the noonday sun?</para>
+  <para style="q1">Why should I need to look for you</para>
+  <para style="q2">among the flocks of the other shepherds? <note caller="+" style="f"><char style="fr" closed="false">1.7: </char><char style="ft" closed="false">Probable text </char><char style="fq" closed="false">Why should I…shepherds; </char><char style="ft" closed="false">Hebrew unclear.</char></note></para>
+  <para style="sp">The Man</para>
+  <para style="q1">
+    <verse number="8" style="v" />Don't you know the place, loveliest of women?</para>
+  <para style="q1">Go and follow the flock;</para>
+  <para style="q2">find pasture for your goats</para>
+  <para style="q2">near the tents of the shepherds.</para>
+  <para style="b" />
+  <para style="q1">
+    <verse number="9" style="v" />You, my love, excite men</para>
+  <para style="q2">as a mare excites the stallions of Pharaoh's chariots.</para>
+  <para style="q1">
+    <verse number="10" style="v" />Your hair is beautiful upon your cheeks</para>
+  <para style="q2">and falls along your neck like jewels.</para>
+  <para style="q1">
+    <verse number="11" style="v" />But we will make for you a chain of gold</para>
+  <para style="q2">with ornaments of silver.</para>
+  <para style="sp">The Woman</para>
+  <para style="q1">
+    <verse number="12" style="v" />My king was lying on his couch,</para>
+  <para style="q2">and my perfume filled the air with fragrance.</para>
+  <para style="q1">
+    <verse number="13" style="v" />My lover has the scent of myrrh</para>
+  <para style="q2">as he lies upon my breasts.</para>
+  <para style="q1">
+    <verse number="14" style="v" />My lover is like the wild flowers</para>
+  <para style="q2">that bloom in the vineyards at Engedi.</para>
+  <para style="sp">The Man</para>
+  <para style="q1">
+    <verse number="15" style="v" />How beautiful you are, my love;</para>
+  <para style="q2">how your eyes shine with love!</para>
+  <para style="sp">The Woman</para>
+  <para style="q1">
+    <verse number="16" style="v" />How handsome you are, my dearest;</para>
+  <para style="q2">how you delight me!</para>
+  <para style="q1">The green grass will be our bed;</para>
+  <para style="q2">
+    <verse number="17" style="v" />the cedars will be the beams of our house,</para>
+  <para style="q2">and the cypress trees the ceiling.</para>
+  <chapter number="2" style="c" />
+  <para style="q1">
+    <verse number="1" style="v" />I am only a wild flower in Sharon,</para>
+  <para style="q2">a lily in a mountain valley.</para>
+  <para style="sp">The Man</para>
+  <para style="q1">
+    <verse number="2" style="v" />Like a lily among thorns</para>
+  <para style="q2">is my darling among women.</para>
+  <para style="sp">The Woman</para>
+  <para style="q1">
+    <verse number="3" style="v" />Like an apple tree among the trees of the forest,</para>
+  <para style="q2">so is my dearest compared to other men.</para>
+  <para style="q1">I love to sit in its shadow,</para>
+  <para style="q2">and its fruit is sweet to my taste.</para>
+  <para style="q1">
+    <verse number="4" style="v" />He brought me to his banquet hall</para>
+  <para style="q2">and raised the banner of love over me.</para>
+  <para style="q1">
+    <verse number="5" style="v" />Restore my strength with raisins</para>
+  <para style="q2">and refresh me with apples!</para>
+  <para style="q2">I am weak from passion.</para>
+  <para style="q1">
+    <verse number="6" style="v" />His left hand is under my head,</para>
+  <para style="q2">and his right hand caresses me.</para>
+  <para style="q1">
+    <verse number="7" style="v" />Promise me, women of Jerusalem;</para>
+  <para style="q2">swear by the swift deer and the gazelles</para>
+  <para style="q2">that you will not interrupt our love.</para>
+  <para style="s">The Second Song</para>
+  <para style="sp">The Woman</para>
+  <para style="q1">
+    <verse number="8" style="v" />I hear my lover's voice.</para>
+  <para style="q1">He comes running over the mountains,</para>
+  <para style="q2">racing across the hills to me.</para>
+  <para style="q1">
+    <verse number="9" style="v" />My lover is like a gazelle,</para>
+  <para style="q2">like a young stag.</para>
+  <para style="q1">There he stands beside the wall.</para>
+  <para style="q1">He looks in through the window</para>
+  <para style="q2">and glances through the lattice.</para>
+  <para style="q1">
+    <verse number="10" style="v" />My lover speaks to me.</para>
+  <para style="sp">The Man</para>
+  <para style="q1">Come then, my love;</para>
+  <para style="q2">my darling, come with me.</para>
+  <para style="q1">
+    <verse number="11" style="v" />The winter is over; the rains have stopped;</para>
+  <para style="q2">
+    <verse number="12" style="v" />in the countryside the flowers are in bloom.</para>
+  <para style="q1">This is the time for singing;</para>
+  <para style="q2">the song of doves is heard in the fields.</para>
+  <para style="q1">
+    <verse number="13" style="v" />Figs are beginning to ripen;</para>
+  <para style="q2">the air is fragrant with blossoming vines.</para>
+  <para style="q1">Come then, my love;</para>
+  <para style="q2">my darling, come with me.</para>
+  <para style="q1">
+    <verse number="14" style="v" />You are like a dove that hides</para>
+  <para style="q2">in the crevice of a rock.</para>
+  <para style="q1">Let me see your lovely face</para>
+  <para style="q2">and hear your enchanting voice.</para>
+  <para style="b" />
+  <para style="q1">
+    <verse number="15" style="v" />Catch the foxes, the little foxes,</para>
+  <para style="q2">before they ruin our vineyard in bloom.</para>
+  <para style="sp">The Woman</para>
+  <para style="q1">
+    <verse number="16" style="v" />My lover is mine, and I am his.</para>
+  <para style="q1">He feeds his flock among the lilies</para>
+  <para style="q2">
+    <verse number="17" style="v" />until the morning breezes blow</para>
+  <para style="q2">and the darkness disappears.</para>
+  <para style="q1">Return, my darling, like a gazelle,</para>
+  <para style="q2">like a stag on the mountains of Bether. <note caller="+" style="f"><char style="fr" closed="false">2.17: </char><char style="fq" closed="false">mountains of Bether; </char><char style="ft" closed="false">or </char><char style="fq" closed="false">rugged mountains.</char></note></para>
+  <chapter number="3" style="c" />
+  <para style="q1">
+    <verse number="1" style="v" />Asleep on my bed, night after night</para>
+  <para style="q2">I dreamed of the one I love;</para>
+  <para style="q2">I was looking for him, but couldn't find him.</para>
+  <para style="q1">
+    <verse number="2" style="v" />I went wandering through the city,</para>
+  <para style="q2">through its streets and alleys.</para>
+  <para style="q1">I looked for the one I love.</para>
+  <para style="q2">I looked, but couldn't find him.</para>
+  <para style="q1">
+    <verse number="3" style="v" />The sentries patrolling the city saw me.</para>
+  <para style="q2">I asked them, “Have you found my lover?”</para>
+  <para style="q1">
+    <verse number="4" style="v" />As soon as I left them, I found him.</para>
+  <para style="q1">I held him and wouldn't let him go</para>
+  <para style="q2">until I took him to my mother's house,</para>
+  <para style="q2">to the room where I was born.</para>
+  <para style="b" />
+  <para style="q1">
+    <verse number="5" style="v" />Promise me, women of Jerusalem;</para>
+  <para style="q2">swear by the swift deer and the gazelles</para>
+  <para style="q2">that you will not interrupt our love.</para>
+  <para style="s">The Third Song</para>
+  <para style="sp">The Woman</para>
+  <para style="q1">
+    <verse number="6" style="v" />What is this coming from the desert like a column of smoke,</para>
+  <para style="q2">fragrant with incense and myrrh,</para>
+  <para style="q2">the incense sold by the traders?</para>
+  <para style="q1">
+    <verse number="7" style="v" />Solomon is coming, carried on his throne;</para>
+  <para style="q2">sixty soldiers form the bodyguard,</para>
+  <para style="q2">the finest soldiers in Israel.</para>
+  <para style="q1">
+    <verse number="8" style="v" />All of them are skillful with the sword;</para>
+  <para style="q2">they are battle-hardened veterans.</para>
+  <para style="q1">Each of them is armed with a sword,</para>
+  <para style="q2">on guard against a night attack.</para>
+  <para style="q1">
+    <verse number="9" style="v" />King Solomon is carried on a throne</para>
+  <para style="q2">made of the finest wood.</para>
+  <para style="q1">
+    <verse number="10" style="v" />Its posts are covered with silver;</para>
+  <para style="q2">over it is cloth embroidered with gold.</para>
+  <para style="q1">Its cushions are covered with purple cloth,</para>
+  <para style="q2">lovingly woven by the women of Jerusalem.</para>
+  <para style="q1">
+    <verse number="11" style="v" />Women of Zion, come and see King Solomon.</para>
+  <para style="q1">He is wearing the crown that his mother placed on his head</para>
+  <para style="q2">on his wedding day,</para>
+  <para style="q2">on the day of his gladness and joy.</para>
+  <chapter number="4" style="c" />
+  <para style="sp">The Man</para>
+  <para style="q1">
+    <verse number="1" style="v" />How beautiful you are, my love!</para>
+  <para style="q1">How your eyes shine with love behind your veil.</para>
+  <para style="q1">Your hair dances like a flock of goats</para>
+  <para style="q2">bounding down the hills of Gilead.</para>
+  <para style="q1">
+    <verse number="2" style="v" />Your teeth are as white as sheep</para>
+  <para style="q2">that have just been shorn and washed.</para>
+  <para style="q1">Not one of them is missing;</para>
+  <para style="q2">they are all perfectly matched.</para>
+  <para style="q1">
+    <verse number="3" style="v" />Your lips are like a scarlet ribbon;</para>
+  <para style="q2">how lovely they are when you speak.</para>
+  <para style="q1">Your cheeks glow behind your veil.</para>
+  <para style="q1">
+    <verse number="4" style="v" />Your neck is like the tower of David,</para>
+  <para style="q2">round and smooth, <note caller="+" style="f"><char style="fr" closed="false">4.4: </char><char style="fq" closed="false">round and smooth; </char><char style="ft" closed="false">Hebrew unclear.</char></note></para>
+  <para style="q2">with a necklace like a thousand shields hung around it.</para>
+  <para style="q1">
+    <verse number="5" style="v" />Your breasts are like gazelles,</para>
+  <para style="q2">twin deer feeding among lilies.</para>
+  <para style="q1">
+    <verse number="6" style="v" />I will stay on the hill of myrrh,</para>
+  <para style="q2">the hill of incense,</para>
+  <para style="q2">until the morning breezes blow</para>
+  <para style="q2">and the darkness disappears.</para>
+  <para style="q1">
+    <verse number="7" style="v" />How beautiful you are, my love;</para>
+  <para style="q2">how perfect you are!</para>
+  <para style="b" />
+  <para style="q1">
+    <verse number="8" style="v" />Come with me from the Lebanon Mountains, my bride;</para>
+  <para style="q2">come with me from Lebanon.</para>
+  <para style="q1">Come down from the top of Mount Amana,</para>
+  <para style="q2">from Mount Senir and Mount Hermon,</para>
+  <para style="q2">where the lions and leopards live.</para>
+  <para style="q1">
+    <verse number="9" style="v" />The look in your eyes, my sweetheart and bride,</para>
+  <para style="q2">and the necklace you are wearing</para>
+  <para style="q2">have stolen my heart.</para>
+  <para style="q1">
+    <verse number="10" style="v" />Your love delights me,</para>
+  <para style="q2">my sweetheart and bride.</para>
+  <para style="q1">Your love is better than wine;</para>
+  <para style="q2">your perfume more fragrant than any spice.</para>
+  <para style="q1">
+    <verse number="11" style="v" />The taste of honey is on your lips, my darling;</para>
+  <para style="q2">your tongue is milk and honey for me.</para>
+  <para style="q1">Your clothing has all the fragrance of Lebanon.</para>
+  <para style="b" />
+  <para style="q1">
+    <verse number="12" style="v" />My sweetheart, my bride, is a secret garden,</para>
+  <para style="q2">a walled garden, a private spring;</para>
+  <para style="q2">
+    <verse number="13" style="v" />there the plants flourish.</para>
+  <para style="q1">They grow like an orchard of pomegranate trees</para>
+  <para style="q2">and bear the finest fruits.</para>
+  <para style="q1">There is no lack of henna and nard,</para>
+  <para style="q2">
+    <verse number="14" style="v" />of saffron, calamus, and cinnamon,</para>
+  <para style="q2">or incense of every kind.</para>
+  <para style="q1">Myrrh and aloes grow there</para>
+  <para style="q2">with all the most fragrant perfumes.</para>
+  <para style="q1">
+    <verse number="15" style="v" />Fountains water the garden,</para>
+  <para style="q2">streams of flowing water,</para>
+  <para style="q2">brooks gushing down from the Lebanon Mountains.</para>
+  <para style="sp">The Woman</para>
+  <para style="q1">
+    <verse number="16" style="v" />Wake up, North Wind.</para>
+  <para style="q1">South Wind, blow on my garden;</para>
+  <para style="q2">fill the air with fragrance.</para>
+  <para style="q1">Let my lover come to his garden</para>
+  <para style="q2">and eat the best of its fruits.</para>
+  <chapter number="5" style="c" />
+  <para style="sp">The Man</para>
+  <para style="q1">
+    <verse number="1" style="v" />I have entered my garden,</para>
+  <para style="q2">my sweetheart, my bride.</para>
+  <para style="q1">I am gathering my spices and myrrh;</para>
+  <para style="q2">I am eating my honey and honeycomb;</para>
+  <para style="q2">I am drinking my wine and milk.</para>
+  <para style="sp">The Women</para>
+  <para style="q1">Eat, lovers, and drink</para>
+  <para style="q2">until you are drunk with love!</para>
+  <para style="s">The Fourth Song</para>
+  <para style="sp">The Woman</para>
+  <para style="q1">
+    <verse number="2" style="v" />While I slept, my heart was awake.</para>
+  <para style="q1">I dreamed my lover knocked at the door.</para>
+  <para style="sp">The Man</para>
+  <para style="q1">Let me come in, my darling,</para>
+  <para style="q2">my sweetheart, my dove.</para>
+  <para style="q1">My head is wet with dew,</para>
+  <para style="q2">and my hair is damp from the mist.</para>
+  <para style="sp">The Woman</para>
+  <para style="q1">
+    <verse number="3" style="v" />I have already undressed;</para>
+  <para style="q2">why should I get dressed again?</para>
+  <para style="q1">I have washed my feet;</para>
+  <para style="q2">why should I get them dirty again?</para>
+  <para style="b" />
+  <para style="q1">
+    <verse number="4" style="v" />My lover put his hand to the door,</para>
+  <para style="q2">and I was thrilled that he was near.</para>
+  <para style="q2">
+    <verse number="5" style="v" />I was ready to let him come in.</para>
+  <para style="q1">My hands were covered with myrrh,</para>
+  <para style="q2">my fingers with liquid myrrh,</para>
+  <para style="q2">as I grasped the handle of the door.</para>
+  <para style="q1">
+    <verse number="6" style="v" />I opened the door for my lover,</para>
+  <para style="q2">but he had already gone.</para>
+  <para style="q1">How I wanted to hear his voice!</para>
+  <para style="q1">I looked for him, but couldn't find him;</para>
+  <para style="q2">I called to him, but heard no answer.</para>
+  <para style="b" />
+  <para style="q1">
+    <verse number="7" style="v" />The sentries patrolling the city found me;</para>
+  <para style="q2">they struck me and bruised me;</para>
+  <para style="q2">the guards at the city wall tore off my cape.</para>
+  <para style="q1">
+    <verse number="8" style="v" />Promise me, women of Jerusalem,</para>
+  <para style="q2">that if you find my lover,</para>
+  <para style="q2">you will tell him I am weak from passion.</para>
+  <para style="sp">The Women</para>
+  <para style="q1">
+    <verse number="9" style="v" />Most beautiful of women,</para>
+  <para style="q2">is your lover different from everyone else?</para>
+  <para style="q1">What is there so wonderful about him</para>
+  <para style="q2">that we should give you our promise?</para>
+  <para style="sp">The Woman</para>
+  <para style="q1">
+    <verse number="10" style="v" />My lover is handsome and strong;</para>
+  <para style="q2">he is one in ten thousand.</para>
+  <para style="q1">
+    <verse number="11" style="v" />His face is bronzed and smooth;</para>
+  <para style="q2">his hair is wavy,</para>
+  <para style="q2">black as a raven.</para>
+  <para style="q1">
+    <verse number="12" style="v" />His eyes are as beautiful as doves by a flowing brook,</para>
+  <para style="q2">doves washed in milk and standing by the stream. <note caller="+" style="f"><char style="fr" closed="false">5.12: </char><char style="fq" closed="false">and standing by the stream; </char><char style="ft" closed="false">Hebrew unclear.</char></note></para>
+  <para style="q1">
+    <verse number="13" style="v" />His cheeks are as lovely as a garden</para>
+  <para style="q2">that is full of herbs and spices.</para>
+  <para style="q1">His lips are like lilies,</para>
+  <para style="q2">wet with liquid myrrh.</para>
+  <para style="q1">
+    <verse number="14" style="v" />His hands are well-formed,</para>
+  <para style="q2">and he wears rings set with gems.</para>
+  <para style="q1">His body is like smooth ivory, <note caller="+" style="f"><char style="fr" closed="false">5.14: </char><char style="fq" closed="false">like smooth ivory; </char><char style="ft" closed="false">Hebrew unclear.</char></note></para>
+  <para style="q2">with sapphires set in it.</para>
+  <para style="q1">
+    <verse number="15" style="v" />His thighs are columns of alabaster</para>
+  <para style="q2">set in sockets of gold.</para>
+  <para style="q1">He is majestic, like the Lebanon Mountains</para>
+  <para style="q2">with their towering cedars.</para>
+  <para style="q1">
+    <verse number="16" style="v" />His mouth is sweet to kiss;</para>
+  <para style="q2">everything about him enchants me.</para>
+  <para style="q1">This is what my lover is like,</para>
+  <para style="q2">women of Jerusalem.</para>
+  <chapter number="6" style="c" />
+  <para style="sp">The Women</para>
+  <para style="q1">
+    <verse number="1" style="v" />Most beautiful of women,</para>
+  <para style="q2">where has your lover gone?</para>
+  <para style="q1">Tell us which way your lover went,</para>
+  <para style="q2">so that we can help you find him.</para>
+  <para style="sp">The Woman</para>
+  <para style="q1">
+    <verse number="2" style="v" />My lover has gone to his garden,</para>
+  <para style="q2">where the balsam trees grow.</para>
+  <para style="q1">He is feeding his flock in the garden</para>
+  <para style="q2">and gathering lilies.</para>
+  <para style="q1">
+    <verse number="3" style="v" />My lover is mine, and I am his;</para>
+  <para style="q2">he feeds his flock among the lilies.</para>
+  <para style="s">The Fifth Song</para>
+  <para style="sp">The Man</para>
+  <para style="q1">
+    <verse number="4" style="v" />My love, you are as beautiful as Jerusalem,</para>
+  <para style="q2">as lovely as the city of Tirzah,</para>
+  <para style="q2">as breathtaking as these great cities. <note caller="+" style="f"><char style="fr" closed="false">6.4: </char><char style="fq" closed="false">as breathtaking as…cities; </char><char style="ft" closed="false">Hebrew unclear.</char></note></para>
+  <para style="q1">
+    <verse number="5" style="v" />Turn your eyes away from me;</para>
+  <para style="q2">they are holding me captive.</para>
+  <para style="q1">Your hair dances like a flock of goats</para>
+  <para style="q2">bounding down the hills of Gilead.</para>
+  <para style="q1">
+    <verse number="6" style="v" />Your teeth are as white as a flock of sheep</para>
+  <para style="q2">that have just been washed.</para>
+  <para style="q1">Not one of them is missing;</para>
+  <para style="q2">they are all perfectly matched.</para>
+  <para style="q1">
+    <verse number="7" style="v" />Your cheeks glow behind your veil.</para>
+  <para style="q1">
+    <verse number="8" style="v" />Let the king have sixty queens, eighty concubines,</para>
+  <para style="q2">young women without number!</para>
+  <para style="q1">
+    <verse number="9" style="v" />But I love only one,</para>
+  <para style="q2">and she is as lovely as a dove.</para>
+  <para style="q1">She is her mother's only daughter,</para>
+  <para style="q2">her mother's favorite child.</para>
+  <para style="q1">All women look at her and praise her;</para>
+  <para style="q2">queens and concubines sing her praises.</para>
+  <para style="b" />
+  <para style="q1">
+    <verse number="10" style="v" />Who is this whose glance is like the dawn?</para>
+  <para style="q1">She is beautiful and bright,</para>
+  <para style="q2">as dazzling as the sun or the moon. <note caller="+" style="f"><char style="fr" closed="false">6.10: </char><char style="fq" closed="false">as dazzling as…moon; </char><char style="ft" closed="false">Hebrew unclear.</char></note></para>
+  <para style="q1">
+    <verse number="11" style="v" />I have come down among the almond trees</para>
+  <para style="q2">to see the young plants in the valley,</para>
+  <para style="q2">to see the new leaves on the vines</para>
+  <para style="q2">and the blossoms on the pomegranate trees.</para>
+  <para style="q1">
+    <verse number="12" style="v" />I am trembling; you have made me as eager for love</para>
+  <para style="q2">as a chariot driver is for battle. <note caller="+" style="f"><char style="fr" closed="false">6.12: </char><char style="ft" closed="false">Verse 12 in Hebrew is unclear.</char></note></para>
+  <para style="sp">The Women</para>
+  <para style="q1">
+    <verse number="13" style="v" />Dance, dance, <note caller="+" style="f"><char style="fr" closed="false">6.13: </char><char style="fq" closed="false">Dance, dance; </char><char style="ft" closed="false">or </char><char style="fq" closed="false">Come back, come back.</char></note> girl of Shulam.</para>
+  <para style="q1">Let us watch you as you dance.</para>
+  <para style="sp">The Woman</para>
+  <para style="q1">Why do you want to watch me</para>
+  <para style="q2">as I dance between the rows of onlookers?</para>
+  <chapter number="7" style="c" />
+  <para style="sp">The Man</para>
+  <para style="q1">
+    <verse number="1" style="v" />What a magnificent young woman you are!</para>
+  <para style="q2">How beautiful are your feet in sandals.</para>
+  <para style="q1">The curve of your thighs</para>
+  <para style="q2">is like the work of an artist.</para>
+  <para style="q1">
+    <verse number="2" style="v" />A bowl is there,</para>
+  <para style="q2">that never runs out of spiced wine.</para>
+  <para style="q1">A sheaf of wheat is there,</para>
+  <para style="q2">surrounded by lilies.</para>
+  <para style="q1">
+    <verse number="3" style="v" />Your breasts are like twin deer,</para>
+  <para style="q2">like two gazelles.</para>
+  <para style="q1">
+    <verse number="4" style="v" />Your neck is like a tower of ivory.</para>
+  <para style="q1">Your eyes are like the pools in the city of Heshbon,</para>
+  <para style="q2">near the gate of that great city.</para>
+  <para style="q1">Your nose is as lovely as the tower of Lebanon</para>
+  <para style="q2">that stands guard at Damascus.</para>
+  <para style="q1">
+    <verse number="5" style="v" />Your head is held high like Mount Carmel.</para>
+  <para style="q1">Your braided hair shines like the finest satin;</para>
+  <para style="q2">its beauty <note caller="+" style="f"><char style="fr" closed="false">7.5: </char><char style="fq" closed="false">beauty; </char><char style="ft" closed="false">Hebrew unclear.</char></note> could hold a king captive.</para>
+  <para style="b" />
+  <para style="q1">
+    <verse number="6" style="v" />How pretty you are, how beautiful;</para>
+  <para style="q2">how complete the delights of your love.</para>
+  <para style="q1">
+    <verse number="7" style="v" />You are as graceful as a palm tree,</para>
+  <para style="q2">and your breasts are clusters of dates.</para>
+  <para style="q1">
+    <verse number="8" style="v" />I will climb the palm tree</para>
+  <para style="q2">and pick its fruit.</para>
+  <para style="q1">To me your breasts are like bunches of grapes,</para>
+  <para style="q2">your breath like the fragrance of apples,</para>
+  <para style="q2">
+    <verse number="9" style="v" />and your mouth like the finest wine.</para>
+  <para style="sp">The Woman</para>
+  <para style="q1">Then let the wine flow straight to my lover,</para>
+  <para style="q2">flowing over his lips and teeth. <note caller="+" style="f"><char style="fr" closed="false">7.9: </char><char style="ft" closed="false">Some ancient translations </char><char style="fq" closed="false">lips and teeth; </char><char style="ft" closed="false">Hebrew </char><char style="fq" closed="false">lips of those who sleep.</char></note></para>
+  <para style="q1">
+    <verse number="10" style="v" />I belong to my lover, and he desires me.</para>
+  <para style="q1">
+    <verse number="11" style="v" />Come, darling, let's go out to the countryside</para>
+  <para style="q2">and spend the night in the villages. <note caller="+" style="f"><char style="fr" closed="false">7.11: </char><char style="fq" closed="false">villages; </char><char style="ft" closed="false">or </char><char style="fq" closed="false">fields.</char></note></para>
+  <para style="q1">
+    <verse number="12" style="v" />We will get up early and look at the vines</para>
+  <para style="q2">to see whether they've started to grow,</para>
+  <para style="q2">whether the blossoms are opening</para>
+  <para style="q2">and the pomegranate trees are in bloom.</para>
+  <para style="q1">There I will give you my love.</para>
+  <para style="q1">
+    <verse number="13" style="v" />You can smell the scent of mandrakes,</para>
+  <para style="q2">and all the pleasant fruits are near our door.</para>
+  <para style="q1">Darling, I have kept for you</para>
+  <para style="q2">the old delights and the new.</para>
+  <chapter number="8" style="c" />
+  <para style="q1">
+    <verse number="1" style="v" />I wish that you were my brother,</para>
+  <para style="q2">that my mother had nursed you at her breast.</para>
+  <para style="q1">Then, if I met you in the street,</para>
+  <para style="q2">I could kiss you and no one would mind.</para>
+  <para style="q1">
+    <verse number="2" style="v" />I would take you to my mother's house,</para>
+  <para style="q2">where you could teach me love.</para>
+  <para style="q1">I would give you spiced wine,</para>
+  <para style="q2">my pomegranate wine to drink.</para>
+  <para style="b" />
+  <para style="q1">
+    <verse number="3" style="v" />Your left hand is under my head,</para>
+  <para style="q2">and your right hand caresses me.</para>
+  <para style="b" />
+  <para style="q1">
+    <verse number="4" style="v" />Promise me, women of Jerusalem,</para>
+  <para style="q2">that you will not interrupt our love.</para>
+  <para style="s">The Sixth Song</para>
+  <para style="sp">The Women</para>
+  <para style="q1">
+    <verse number="5" style="v" />Who is this coming from the desert,</para>
+  <para style="q2">arm in arm with her lover?</para>
+  <para style="sp">The Woman</para>
+  <para style="q1">Under the apple tree I woke you,</para>
+  <para style="q2">in the place where you were born.</para>
+  <para style="q1">
+    <verse number="6" style="v" />Close your heart to every love but mine;</para>
+  <para style="q2">hold no one in your arms but me.</para>
+  <para style="q1">Love is as powerful as death;</para>
+  <para style="q2">passion is as strong as death itself.</para>
+  <para style="q1">It bursts into flame</para>
+  <para style="q2">and burns like a raging fire.</para>
+  <para style="q1">
+    <verse number="7" style="v" />Water cannot put it out;</para>
+  <para style="q2">no flood can drown it.</para>
+  <para style="q1">But if any tried to buy love with their wealth,</para>
+  <para style="q2">contempt is all they would get.</para>
+  <para style="sp">The Woman's Brothers</para>
+  <para style="q1">
+    <verse number="8" style="v" />We have a young sister,</para>
+  <para style="q2">and her breasts are still small.</para>
+  <para style="q1">What will we do for her</para>
+  <para style="q2">when a young man comes courting?</para>
+  <para style="q1">
+    <verse number="9" style="v" />If she is a wall,</para>
+  <para style="q2">we will build her a silver tower.</para>
+  <para style="q1">But if she is a gate,</para>
+  <para style="q2">we will protect her with panels of cedar.</para>
+  <para style="sp">The Woman</para>
+  <para style="q1">
+    <verse number="10" style="v" />I am a wall,</para>
+  <para style="q2">and my breasts are its towers.</para>
+  <para style="q1">My lover knows that with him</para>
+  <para style="q2">I find contentment and peace.</para>
+  <para style="sp">The Man</para>
+  <para style="q1">
+    <verse number="11" style="v" />Solomon has a vineyard</para>
+  <para style="q2">in a place called Baal Hamon.</para>
+  <para style="q1">There are farmers who rent it from him;</para>
+  <para style="q2">each one pays a thousand silver coins.</para>
+  <para style="q1">
+    <verse number="12" style="v" />Solomon is welcome to his thousand coins,</para>
+  <para style="q2">and the farmers to two hundred as their share;</para>
+  <para style="q1">I have a vineyard of my own!</para>
+  <para style="b" />
+  <para style="q1">
+    <verse number="13" style="v" />Let me hear your voice from the garden, my love;</para>
+  <para style="q2">my companions are waiting to hear you speak.</para>
+  <para style="sp">The Woman</para>
+  <para style="q1">
+    <verse number="14" style="v" />Come to me, my lover, like a gazelle,</para>
+  <para style="q2">like a young stag on the mountains where spices grow.</para>
+</usx>

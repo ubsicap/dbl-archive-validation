@@ -1,0 +1,172 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<usx version="2.5">
+  <book code="1PE" style="id">English: Good News Translation 2nd Ed. 1992</book>
+  <para style="ide">Unicode (UTF8)</para>
+  <para style="rem">For any non-Paratext use of this text, permission must be obtained from the copyright holder.</para>
+  <para style="rem">CAP Information: checked/corrected 2008</para>
+  <para style="h">1 Peter</para>
+  <para style="toc1">The First Letter from PETER</para>
+  <para style="toc2">1 Peter</para>
+  <para style="toc3">1 P</para>
+  <para style="mt2">The First Letter from</para>
+  <para style="mt1">PETER</para>
+  <para style="imt">Introduction</para>
+  <para style="ip">
+    <char style="bk">The First Letter from Peter</char> was addressed to Christians, here called “God's chosen people,” who were scattered throughout the northern part of Asia Minor. The main purpose of the letter is to encourage the readers, who were facing persecution and suffering for their faith. The writer does this by reminding his readers of the Good News about Jesus Christ, whose death, resurrection, and promised coming gave them hope. In the light of this they are to accept and endure their suffering, confident that it is a test of the genuineness of their faith and that they will be rewarded on “the Day when Jesus Christ is revealed.”</para>
+  <para style="ip">Along with his encouragement in time of trouble, the writer also urges his readers to live as people who belong to Christ.</para>
+  <para style="iot">Outline of Contents</para>
+  <para style="io1">Introduction <char style="ior">(1.1-2)</char></para>
+  <para style="io1">Reminder of God's salvation <char style="ior">(1.3-12)</char></para>
+  <para style="io1">Exhortation to holy living <char style="ior">(1.13–2.10)</char></para>
+  <para style="io1">The Christian's responsibilities in time of suffering <char style="ior">(2.11–4.19)</char></para>
+  <para style="io1">Christian humility and service <char style="ior">(5.1-11)</char></para>
+  <para style="io1">Conclusion <char style="ior">(5.12-14)</char></para>
+  <chapter number="1" style="c" />
+  <para style="p">
+    <verse number="1" style="v" />From Peter, apostle of Jesus Christ—</para>
+  <para style="p">To God's chosen people who live as refugees scattered throughout the provinces of Pontus, Galatia, Cappadocia, Asia, and Bithynia. <verse number="2" style="v" />You were chosen according to the purpose of God the Father and were made a holy people by his Spirit, to obey Jesus Christ and be purified by his blood.</para>
+  <para style="p">May grace and peace be yours in full measure.</para>
+  <para style="s">A Living Hope</para>
+  <para style="p">
+    <verse number="3" style="v" />Let us give thanks to the God and Father of our Lord Jesus Christ! Because of his great mercy he gave us new life by raising Jesus Christ from death. This fills us with a living hope, <verse number="4" style="v" /><note caller="-" style="x"><char style="xo" closed="false">1.4: </char><char style="xdc" closed="false">2 Esd 8.52.</char></note> and so we look forward to possessing the rich blessings that God keeps for his people. He keeps them for you in heaven, where they cannot decay or spoil or fade away. <verse number="5" style="v" />They are for you, who through faith are kept safe by God's power for the salvation which is ready to be revealed at the end of time.</para>
+  <para style="p">
+    <verse number="6" style="v" />Be glad about this, even though it may now be necessary for you to be sad for a while because of the many kinds of trials you suffer. <verse number="7" style="v" /><note caller="-" style="x"><char style="xo" closed="false">1.7: </char><char style="xdc" closed="false">2 Esd 16.73.</char></note> Their purpose is to prove that your faith is genuine. Even gold, which can be destroyed, is tested by fire; and so your faith, which is much more precious than gold, must also be tested, so that it may endure. Then you will receive praise and glory and honor on the Day when Jesus Christ is revealed. <verse number="8" style="v" />You love him, although you have not seen him, and you believe in him, although you do not now see him. So you rejoice with a great and glorious joy which words cannot express, <verse number="9" style="v" />because you are receiving the salvation of your souls, which is the purpose of your faith in him.</para>
+  <para style="p">
+    <verse number="10" style="v" />It was concerning this salvation that the prophets made careful search and investigation, and they prophesied about this gift which God would give you. <verse number="11" style="v" />They tried to find out when the time would be and how it would come. <note caller="+" style="f"><char style="fr" closed="false">1.11: </char><char style="fq" closed="false">when the time would be and how it would come; </char><char style="ft" closed="false">or </char><char style="fq" closed="false">who the person would be and when he would come.</char></note> This was the time to which Christ's Spirit in them was pointing, in predicting the sufferings that Christ would have to endure and the glory that would follow. <verse number="12" style="v" />God revealed to these prophets that their work was not for their own benefit, but for yours, as they spoke about those things which you have now heard from the messengers who announced the Good News by the power of the Holy Spirit sent from heaven. These are things which even the angels would like to understand.</para>
+  <para style="s">A Call to Holy Living</para>
+  <para style="p">
+    <verse number="13" style="v" />So then, have your minds ready for action. Keep alert and set your hope completely on the blessing which will be given you when Jesus Christ is revealed. <verse number="14" style="v" />Be obedient to God, and do not allow your lives to be shaped by those desires you had when you were still ignorant. <verse number="15" style="v" />Instead, be holy in all that you do, just as God who called you is holy. <verse number="16" style="v" /><note caller="-" style="x"><char style="xo" closed="false">1.16: </char><char style="xt" closed="false">Lv 11.44,45; 19.2.</char></note> The scripture says, “Be holy because I am holy.”</para>
+  <para style="p">
+    <verse number="17" style="v" />You call him Father, when you pray to God, who judges all people by the same standard, according to what each one has done; so then, spend the rest of your lives here on earth in reverence for him. <verse number="18" style="v" />For you know what was paid to set you free from the worthless manner of life handed down by your ancestors. It was not something that can be destroyed, such as silver or gold; <verse number="19" style="v" />it was the costly sacrifice of Christ, who was like a lamb without defect or flaw. <verse number="20" style="v" />He had been chosen by God before the creation of the world and was revealed in these last days for your sake. <verse number="21" style="v" />Through him you believe in God, who raised him from death and gave him glory; and so your faith and hope are fixed on God.</para>
+  <para style="p">
+    <verse number="22" style="v" />Now that by your obedience to the truth you have purified yourselves and have come to have a sincere love for other believers, love one another earnestly with all your heart. <note caller="+" style="f"><char style="fr" closed="false">1.22: </char><char style="fq" closed="false">with all your heart; </char><char style="ft" closed="false">some manuscripts have </char><char style="fq" closed="false">with a pure heart.</char></note> <verse number="23" style="v" />For through the living and eternal word of God you have been born again as the children of a parent who is immortal, not mortal. <verse number="24" style="v" /><note caller="-" style="x"><char style="xo" closed="false">1.24,25: </char><char style="xt" closed="false">Is 40.6-8 (LXX).</char></note> As the scripture says,</para>
+  <para style="q1">“All human beings are like grass,</para>
+  <para style="q2">and all their glory is like wild flowers.</para>
+  <para style="q1">The grass withers, and the flowers fall,</para>
+  <para style="q2">
+    <verse number="25" style="v" />but the word of the Lord remains forever.”</para>
+  <para style="b" />
+  <para style="m">This word is the Good News that was proclaimed to you.</para>
+  <chapter number="2" style="c" />
+  <para style="s">The Living Stone and the Holy Nation</para>
+  <para style="p">
+    <verse number="1" style="v" />Rid yourselves, then, of all evil; no more lying or hypocrisy or jealousy or insulting language. <verse number="2" style="v" />Be like newborn babies, always thirsty for the pure spiritual milk, so that by drinking it you may grow up and be saved. <verse number="3" style="v" /><note caller="-" style="x"><char style="xo" closed="false">2.3: </char><char style="xt" closed="false">Ps 34.8.</char></note> As the scripture says, “You have found out for yourselves how kind the Lord is.”</para>
+  <para style="p">
+    <verse number="4" style="v" />Come to the Lord, the living stone rejected by people as worthless but chosen by God as valuable. <verse number="5" style="v" />Come as living stones, and let yourselves be used in building the spiritual temple, where you will serve as holy priests to offer spiritual and acceptable sacrifices to God through Jesus Christ. <verse number="6" style="v" /><note caller="-" style="x"><char style="xo" closed="false">2.6: </char><char style="xt" closed="false">Is 28.16 (LXX).</char></note> For the scripture says,</para>
+  <para style="q1">“I chose a valuable stone,</para>
+  <para style="q2">which I am placing as the cornerstone in Zion;</para>
+  <para style="q2">and whoever believes in him will never be disappointed.”</para>
+  <para style="b" />
+  <para style="m">
+    <verse number="7" style="v" />
+    <note caller="-" style="x">
+      <char style="xo" closed="false">2.7: </char>
+      <char style="xt" closed="false">Ps 118.22.</char>
+    </note> This stone is of great value for you that believe; but for those who do not believe:</para>
+  <para style="q1">“The stone which the builders rejected as worthless</para>
+  <para style="q2">turned out to be the most important of all.”</para>
+  <para style="b" />
+  <para style="m">
+    <verse number="8" style="v" />
+    <note caller="-" style="x">
+      <char style="xo" closed="false">2.8: </char>
+      <char style="xt" closed="false">Is 8.14,15.</char>
+    </note> And another scripture says,</para>
+  <para style="q1">“This is the stone that will make people stumble,</para>
+  <para style="q2">the rock that will make them fall.”</para>
+  <para style="b" />
+  <para style="m">They stumbled because they did not believe in the word; such was God's will for them.</para>
+  <para style="p">
+    <verse number="9" style="v" />
+    <note caller="-" style="x">
+      <char style="xo" closed="false">2.9: a </char>
+      <char style="xt" closed="false">Ex 19.5,6; Is 43.20 (LXX); </char>
+      <char style="xo" closed="false">b </char>
+      <char style="xt" closed="false">Ex 19.5; Dt 4.20; 7.6; 14.2; Titus 2.14; </char>
+      <char style="xo" closed="false">c </char>
+      <char style="xt" closed="false">Is 43.21; </char>
+      <char style="xo" closed="false">d </char>
+      <char style="xt" closed="false">Is 9.2.</char>
+    </note> But you are the chosen race, the King's priests, the holy nation, God's own people, chosen to proclaim the wonderful acts of God, who called you out of darkness into his own marvelous light. <verse number="10" style="v" /><note caller="-" style="x"><char style="xo" closed="false">2.10: </char><char style="xt" closed="false">Ho 2.23.</char></note> At one time you were not God's people, but now you are his people; at one time you did not know God's mercy, but now you have received his mercy.</para>
+  <para style="s">Slaves of God</para>
+  <para style="p">
+    <verse number="11" style="v" />I appeal to you, my friends, as strangers and refugees in this world! Do not give in to bodily passions, which are always at war against the soul. <verse number="12" style="v" />Your conduct among the heathen should be so good that when they accuse you of being evildoers, they will have to recognize your good deeds and so praise God on the Day of his coming.</para>
+  <para style="p">
+    <verse number="13" style="v" />For the sake of the Lord submit yourselves to every human authority: to the Emperor, who is the supreme authority, <verse number="14" style="v" />and to the governors, who have been appointed by him to punish the evildoers and to praise those who do good. <verse number="15" style="v" />For God wants you to silence the ignorant talk of foolish people by the good things you do. <verse number="16" style="v" />Live as free people; do not, however, use your freedom to cover up any evil, but live as God's slaves. <verse number="17" style="v" />Respect everyone, love other believers, honor God, and respect the Emperor.</para>
+  <para style="s">The Example of Christ's Suffering</para>
+  <para style="p">
+    <verse number="18" style="v" />You servants must submit yourselves to your masters and show them complete respect, not only to those who are kind and considerate, but also to those who are harsh. <verse number="19" style="v" />God will bless you for this, if you endure the pain of undeserved suffering because you are conscious of his will. <verse number="20" style="v" />For what credit is there if you endure the beatings you deserve for having done wrong? But if you endure suffering even when you have done right, God will bless you for it. <verse number="21" style="v" />It was to this that God called you, for Christ himself suffered for you and left you an example, so that you would follow in his steps. <verse number="22" style="v" /><note caller="-" style="x"><char style="xo" closed="false">2.22: </char><char style="xt" closed="false">Is 53.9.</char></note> He committed no sin, and no one ever heard a lie come from his lips. <verse number="23" style="v" /><note caller="-" style="x"><char style="xo" closed="false">2.23: </char><char style="xt" closed="false">Is 53.7.</char></note> When he was insulted, he did not answer back with an insult; when he suffered, he did not threaten, but placed his hopes in God, the righteous Judge. <verse number="24" style="v" /><note caller="-" style="x"><char style="xo" closed="false">2.24,25: </char><char style="xt" closed="false">Is 53.5,6 (LXX).</char></note> Christ himself carried our sins in his body to the cross, so that we might die to sin and live for righteousness. It is by his wounds that you have been healed. <verse number="25" style="v" />You were like sheep that had lost their way, but now you have been brought back to follow the Shepherd and Keeper of your souls.</para>
+  <chapter number="3" style="c" />
+  <para style="s">Wives and Husbands</para>
+  <para style="p">
+    <verse number="1" style="v" />
+    <note caller="-" style="x">
+      <char style="xo" closed="false">3.1: </char>
+      <char style="xt" closed="false">Eph 5.22; Col 3.18.</char>
+    </note> In the same way you wives must submit yourselves to your husbands, so that if any of them do not believe God's word, your conduct will win them over to believe. It will not be necessary for you to say a word, <verse number="2" style="v" />because they will see how pure and reverent your conduct is. <verse number="3" style="v" /><note caller="-" style="x"><char style="xo" closed="false">3.3: </char><char style="xt" closed="false">1 Ti 2.9.</char></note> You should not use outward aids to make yourselves beautiful, such as the way you fix your hair, or the jewelry you put on, or the dresses you wear. <verse number="4" style="v" />Instead, your beauty should consist of your true inner self, the ageless beauty of a gentle and quiet spirit, which is of the greatest value in God's sight. <verse number="5" style="v" />For the devout women of the past who placed their hope in God used to make themselves beautiful by submitting themselves to their husbands. <verse number="6" style="v" /><note caller="-" style="x"><char style="xo" closed="false">3.6: </char><char style="xt" closed="false">Gn 18.12.</char></note> Sarah was like that; she obeyed Abraham and called him her master. You are now her daughters if you do good and are not afraid of anything.</para>
+  <para style="p">
+    <verse number="7" style="v" />
+    <note caller="-" style="x">
+      <char style="xo" closed="false">3.7: </char>
+      <char style="xt" closed="false">Eph 5.25; Col 3.19.</char>
+    </note> In the same way you husbands must live with your wives with the proper understanding that they are more delicate than you. Treat them with respect, because they also will receive, together with you, God's gift of life. Do this so that nothing will interfere with your prayers.</para>
+  <para style="s">Suffering for Doing Right</para>
+  <para style="p">
+    <verse number="8" style="v" />To conclude: you must all have the same attitude and the same feelings; love one another, and be kind and humble with one another. <verse number="9" style="v" />Do not pay back evil with evil or cursing with cursing; instead, pay back with a blessing, because a blessing is what God promised to give you when he called you. <verse number="10" style="v" /><note caller="-" style="x"><char style="xo" closed="false">3.10-12: </char><char style="xt" closed="false">Ps 34.12-16 (LXX).</char></note> As the scripture says,</para>
+  <para style="q1">“If you want to enjoy life</para>
+  <para style="q2">and wish to see good times,</para>
+  <para style="q2">you must keep from speaking evil</para>
+  <para style="q2">and stop telling lies.</para>
+  <para style="q1">
+    <verse number="11" style="v" />You must turn away from evil and do good;</para>
+  <para style="q2">you must strive for peace with all your heart.</para>
+  <para style="q1">
+    <verse number="12" style="v" />For the Lord watches over the righteous</para>
+  <para style="q2">and listens to their prayers;</para>
+  <para style="q2">but he opposes those who do evil.”</para>
+  <para style="p">
+    <verse number="13" style="v" />Who will harm you if you are eager to do what is good? <verse number="14" style="v" /><note caller="-" style="x"><char style="xo" closed="false">3.14: </char><char style="xt" closed="false">Mt 5.10.</char></note> <note caller="-" style="x"><char style="xo" closed="false">3.14,15: </char><char style="xt" closed="false">Is 8.12,13.</char></note> But even if you should suffer for doing what is right, how happy you are! Do not be afraid of anyone, and do not worry. <verse number="15" style="v" />But have reverence for Christ in your hearts, and honor him as Lord. Be ready at all times to answer anyone who asks you to explain the hope you have in you, <verse number="16" style="v" />but do it with gentleness and respect. Keep your conscience clear, so that when you are insulted, those who speak evil of your good conduct as followers of Christ will become ashamed of what they say. <verse number="17" style="v" />For it is better to suffer for doing good, if this should be God's will, than for doing evil. <verse number="18" style="v" />For Christ died <note caller="+" style="f"><char style="fr" closed="false">3.18: </char><char style="fq" closed="false">died; </char><char style="ft" closed="false">many manuscripts have </char><char style="fq" closed="false">suffered.</char></note> for sins once and for all, a good man on behalf of sinners, in order to lead you to God. He was put to death physically, but made alive spiritually, <verse number="19" style="v" />and in his spiritual existence he went and preached to the imprisoned spirits. <verse number="20" style="v" /><note caller="-" style="x"><char style="xo" closed="false">3.20: </char><char style="xt" closed="false">Gn 6.1—7.24.</char></note> These were the spirits of those who had not obeyed God when he waited patiently during the days that Noah was building his boat. The few people in the boat—eight in all—were saved by the water, <verse number="21" style="v" />which was a symbol pointing to baptism, which now saves you. It is not the washing off of bodily dirt, but the promise made to God from a good conscience. It saves you through the resurrection of Jesus Christ, <verse number="22" style="v" />who has gone to heaven and is at the right side of God, ruling over all angels and heavenly authorities and powers.</para>
+  <chapter number="4" style="c" />
+  <para style="s">Changed Lives</para>
+  <para style="p">
+    <verse number="1" style="v" />Since Christ suffered physically, you too must strengthen yourselves with the same way of thinking that he had; because whoever suffers physically is no longer involved with sin. <verse number="2" style="v" />From now on, then, you must live the rest of your earthly lives controlled by God's will and not by human desires. <verse number="3" style="v" />You have spent enough time in the past doing what the heathen like to do. Your lives were spent in indecency, lust, drunkenness, orgies, drinking parties, and the disgusting worship of idols. <verse number="4" style="v" />And now the heathen are surprised when you do not join them in the same wild and reckless living, and so they insult you. <verse number="5" style="v" />But they will have to give an account of themselves to God, who is ready to judge the living and the dead. <verse number="6" style="v" />That is why the Good News was preached also to the dead, to those who had been judged in their physical existence as everyone is judged; it was preached to them so that in their spiritual existence they may live as God lives.</para>
+  <para style="s">Good Managers of God's Gifts</para>
+  <para style="p">
+    <verse number="7" style="v" />The end of all things is near. You must be self-controlled and alert, to be able to pray. <verse number="8" style="v" /><note caller="-" style="x"><char style="xo" closed="false">4.8: </char><char style="xt" closed="false">Pr 10.12 </char><char style="xdc">; Tb 12.9</char>.</note> Above everything, love one another earnestly, because love covers over many sins. <verse number="9" style="v" />Open your homes to each other without complaining. <verse number="10" style="v" />Each one, as a good manager of God's different gifts, must use for the good of others the special gift he has received from God. <verse number="11" style="v" />Those who preach must preach God's messages; those who serve must serve with the strength that God gives them, so that in all things praise may be given to God through Jesus Christ, to whom belong glory and power forever and ever. Amen.</para>
+  <para style="s">Suffering as a Christian</para>
+  <para style="p">
+    <verse number="12" style="v" />My dear friends, do not be surprised at the painful test you are suffering, as though something unusual were happening to you. <verse number="13" style="v" />Rather be glad that you are sharing Christ's sufferings, so that you may be full of joy when his glory is revealed. <verse number="14" style="v" />Happy are you if you are insulted because you are Christ's followers; this means that the glorious Spirit, the Spirit of God, is resting on you. <verse number="15" style="v" />If you suffer, it must not be because you are a murderer or a thief or a criminal or a meddler in other people's affairs. <verse number="16" style="v" />However, if you suffer because you are a Christian, don't be ashamed of it, but thank God that you bear Christ's name.</para>
+  <para style="p">
+    <verse number="17" style="v" />The time has come for judgment to begin, and God's own people are the first to be judged. If it starts with us, how will it end with those who do not believe the Good News from God? <verse number="18" style="v" /><note caller="-" style="x"><char style="xo" closed="false">4.18: </char><char style="xt" closed="false">Pr 11.31 (LXX).</char></note> As the scripture says,</para>
+  <para style="q1">“It is difficult for good people to be saved;</para>
+  <para style="q2">what, then, will become of godless sinners?”</para>
+  <para style="b" />
+  <para style="m">
+    <verse number="19" style="v" />So then, those who suffer because it is God's will for them, should by their good actions trust themselves completely to their Creator, who always keeps his promise.</para>
+  <chapter number="5" style="c" />
+  <para style="s">The Flock of God</para>
+  <para style="p">
+    <verse number="1" style="v" />I, who am an elder myself, appeal to the church elders among you. I am a witness of Christ's sufferings, and I will share in the glory that will be revealed. I appeal to you <verse number="2" style="v" /><note caller="-" style="x"><char style="xo" closed="false">5.2: </char><char style="xt" closed="false">Jn 21.15-17.</char></note> to be shepherds of the flock that God gave you and to take care of it willingly, as God wants you to, and not unwillingly. Do your work, not for mere pay, but from a real desire to serve. <verse number="3" style="v" />Do not try to rule over those who have been put in your care, but be examples to the flock. <verse number="4" style="v" />And when the Chief Shepherd appears, you will receive the glorious crown which will never lose its brightness.</para>
+  <para style="p">
+    <verse number="5" style="v" />
+    <note caller="-" style="x">
+      <char style="xo" closed="false">5.5: </char>
+      <char style="xt" closed="false">Pr 3.34 (LXX).</char>
+    </note> In the same way you younger people must submit yourselves to your elders. And all of you must put on the apron of humility, to serve one another; for the scripture says, “God resists the proud, but shows favor to the humble.” <verse number="6" style="v" /><note caller="-" style="x"><char style="xo" closed="false">5.6: </char><char style="xt" closed="false">Mt 23.12; Lk 14.11; 18.14.</char></note> Humble yourselves, then, under God's mighty hand, so that he will lift you up in his own good time. <verse number="7" style="v" /><note caller="-" style="x"><char style="xo" closed="false">5.7: </char><char style="xdc" closed="false">Si 2.1-18.</char></note> Leave all your worries with him, because he cares for you.</para>
+  <para style="p">
+    <verse number="8" style="v" />Be alert, be on watch! Your enemy, the Devil, roams around like a roaring lion, looking for someone to devour. <verse number="9" style="v" />Be firm in your faith and resist him, because you know that other believers in all the world are going through the same kind of sufferings. <verse number="10" style="v" />But after you have suffered for a little while, the God of all grace, who calls you to share his eternal glory in union with Christ, will himself perfect you and give you firmness, strength, and a sure foundation. <verse number="11" style="v" />To him be the power forever! Amen.</para>
+  <para style="s">Final Greetings</para>
+  <para style="p">
+    <verse number="12" style="v" />
+    <note caller="-" style="x">
+      <char style="xo" closed="false">5.12: </char>
+      <char style="xt" closed="false">Ac 15.22,40.</char>
+    </note> I write you this brief letter with the help of Silas, whom I regard as a faithful Christian. I want to encourage you and give my testimony that this is the true grace of God. Stand firm in it.</para>
+  <para style="p">
+    <verse number="13" style="v" />
+    <note caller="-" style="x">
+      <char style="xo" closed="false">5.13: </char>
+      <char style="xt" closed="false">Ac 12.12,25; 13.13; 15.37-39; Col 4.10; Phm 24.</char>
+    </note> Your sister church in Babylon, <note caller="+" style="f"><char style="fr" closed="false">5.13: </char><char style="fk" closed="false">Babylon: </char><char style="ft" closed="false">As in the book of Revelation, this probably refers to Rome.</char></note> also chosen by God, sends you greetings, and so does my son Mark. <verse number="14" style="v" />Greet one another with the kiss of Christian love.</para>
+  <para style="p">May peace be with all of you who belong to Christ.</para>
+</usx>

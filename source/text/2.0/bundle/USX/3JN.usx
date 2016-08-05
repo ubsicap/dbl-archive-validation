@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<usx version="2.5">
+  <book code="3JN" style="id">English: Good News Translation 2nd Ed. 1992</book>
+  <para style="ide">Unicode (UTF8)</para>
+  <para style="rem">For any non-Paratext use of this text, permission must be obtained from the copyright holder.</para>
+  <para style="rem">CAP Information: checked/corrected 2008</para>
+  <para style="h">3 John</para>
+  <para style="toc1">The Third Letter of JOHN</para>
+  <para style="toc2">3 John</para>
+  <para style="toc3">3 Jn</para>
+  <para style="mt2">The Third Letter of</para>
+  <para style="mt1">JOHN</para>
+  <para style="imt">Introduction</para>
+  <para style="ip">
+    <char style="bk">The Third Letter of John</char> was written by “the Elder” to a church leader named Gaius. The writer praises Gaius because of his help to other Christians, and warns against a man named Diotrephes.</para>
+  <para style="iot">Outline of Contents</para>
+  <para style="io1">Introduction (1-4)</para>
+  <para style="io1">Gaius is praised (5-8)</para>
+  <para style="io1">Diotrephes is condemned (9-10)</para>
+  <para style="io1">Demetrius is commended (11-12)</para>
+  <para style="io1">Conclusion (13-15)</para>
+  <chapter number="1" style="c" />
+  <para style="p">
+    <verse number="1" style="v" />
+    <note caller="-" style="x">
+      <char style="xo" closed="false">1: </char>
+      <char style="xt" closed="false">Ac 19.29; Ro 16.23; 1 Co 1.14.</char>
+    </note> From the Elder—</para>
+  <para style="p">To my dear Gaius, whom I truly love.</para>
+  <para style="p">
+    <verse number="2" style="v" />My dear friend, I pray that everything may go well with you and that you may be in good health—as I know you are well in spirit. <verse number="3" style="v" />I was so happy when some Christians arrived and told me how faithful you are to the truth—just as you always live in the truth. <verse number="4" style="v" />Nothing makes me happier than to hear that my children live in the truth.</para>
+  <para style="s">Gaius Is Praised</para>
+  <para style="p">
+    <verse number="5" style="v" />My dear friend, you are so faithful in the work you do for other Christians, even when they are strangers. <verse number="6" style="v" />They have spoken to the church here about your love. Please help them to continue their trip in a way that will please God. <verse number="7" style="v" />For they set out on their trip in the service of Christ without accepting any help from unbelievers. <verse number="8" style="v" />We Christians, then, must help these people, so that we may share in their work for the truth.</para>
+  <para style="s">Diotrephes and Demetrius</para>
+  <para style="p">
+    <verse number="9" style="v" />I wrote a short letter to the church; but Diotrephes, who likes to be their leader, will not pay any attention to what I say. <verse number="10" style="v" />When I come, then, I will bring up everything he has done: the terrible things he says about us and the lies he tells! But that is not enough for him; he will not receive the Christians when they come, and even stops those who want to receive them and tries to drive them out of the church!</para>
+  <para style="p">
+    <verse number="11" style="v" />My dear friend, do not imitate what is bad, but imitate what is good. Whoever does good belongs to God; whoever does what is bad has not seen God.</para>
+  <para style="p">
+    <verse number="12" style="v" />Everyone speaks well of Demetrius; truth itself speaks well of him. And we add our testimony, and you know that what we say is true.</para>
+  <para style="s">Final Greetings</para>
+  <para style="p">
+    <verse number="13" style="v" />I have so much to tell you, but I do not want to do it with pen and ink. <verse number="14" style="v" />I hope to see you soon, and then we will talk personally.</para>
+  <para style="p">
+    <verse number="15" style="v" />Peace be with you.</para>
+  <para style="p">All your friends send greetings. Greet all our friends personally.</para>
+</usx>

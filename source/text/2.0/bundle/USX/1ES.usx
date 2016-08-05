@@ -1,0 +1,685 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<usx version="2.5">
+  <book code="1ES" style="id">English: Good News Translation 2nd Ed. 1992</book>
+  <para style="ide">Unicode (UTF8)</para>
+  <para style="rem">For any non-Paratext use of this text, permission must be obtained from the copyright holder.</para>
+  <para style="rem">CAP Information: checked/corrected 2008</para>
+  <para style="h">1 Esdras</para>
+  <para style="toc1">The First Book of ESDRAS</para>
+  <para style="toc2">1 Esdras</para>
+  <para style="toc3">1 Esd</para>
+  <para style="mt2">The First Book of</para>
+  <para style="mt1">ESDRAS</para>
+  <para style="imt">Introduction</para>
+  <para style="ip">
+    <char style="bk">The First Book of Esdras</char> parallels the account given in 2 Chronicles 35—36, Ezra and Nehemiah 6—8 although there are omissions, additions, and variations in both order and detail. The most distinctive new material is the debate before the emperor in chapters 3 and 4.</para>
+  <para style="iot">Outline of Contents</para>
+  <para style="io1">Josiah and the fall of Jerusalem <char style="ior">(1.1-58)</char></para>
+  <para style="io1">The return from exile <char style="ior">(2.1-30)</char></para>
+  <para style="io1">The debate of the bodyguards before the emperor <char style="ior">(3.1–4.63)</char></para>
+  <para style="io1">The Temple rebuilt and dedicated <char style="ior">(5.1–7.15) </char></para>
+  <para style="io1">Ezra returns with other exiles <char style="ior">(8.1–9.55)</char></para>
+  <chapter number="1" style="c" />
+  <para style="s">Josiah Celebrates the Passover</para>
+  <para style="r">(2 Kings 23.21-23; 2 Chronicles 35.1-9)</para>
+  <para style="p">
+    <verse number="1" style="v" />King Josiah celebrated the Passover at Jerusalem in honor of the Lord; on the fourteenth day of the first month they killed the animals for the festival. <verse number="2" style="v" />Josiah assigned the priests, dressed in their priestly robes, to serve in the Temple according to the daily order. <verse number="3" style="v" />He also instructed the Levites, the Temple servants, to purify themselves for the Lord's service, so that they could put the sacred Covenant Box of the Lord in the Temple that King Solomon, the son of David, had built. <verse number="4" style="v" />Josiah said to them, “You must no longer carry it from place to place, but you are to serve the Lord your God and minister to his people Israel. Get ready by family and clan to carry out your duties <verse number="5" style="v" /><note caller="-" style="x"><char style="xo" closed="false">1.5: </char><char style="xt" closed="false">2 Ch 8.14.</char></note> according to the directions given by King David and the splendid way that they were carried out by his son King Solomon. Take your places in the Temple in proper order according to your family divisions as Levites serving the Lord for the people of Israel. <verse number="6" style="v" />Kill the Passover lambs and goats and prepare the sacrifices for your people. Then celebrate the Passover according to the instructions that the Lord gave to Moses.”</para>
+  <para style="p">
+    <verse number="7" style="v" />Josiah gave to the people who were present 30,000 young sheep and goats and 3,000 calves. These were a gift from the royal estates to carry out the promise he had made to the people, the priests, and the Levites. <verse number="8" style="v" />The officials in charge of the Temple—Hilkiah, Zechariah, and Jehiel—also gave the priests 2,600 sheep and 300 calves for the sacrifices during the festival. <verse number="9" style="v" />And the army commanders—Conaniah, Shemaiah and his brother Nethanel, Hashabiah, Ochiel, and Joram—contributed 5,000 sheep and 700 calves for the Levites to offer as sacrifices.</para>
+  <para style="p">
+    <verse number="10-11" style="v" />Here is what happened. The priests and the Levites, dressed in the proper manner and carrying the unleavened bread, came that morning to present the offerings to the Lord according to the instructions in the Law of Moses. They took their positions in front of the people in the order of tribal and family divisions. <verse number="12" style="v" /><note caller="-" style="x"><char style="xo" closed="false">1.12: </char><char style="xt" closed="false">Ex 12.8,9.</char></note> The Levites roasted the Passover sacrifices and then boiled them in pots and kettles, making a pleasant smell. <verse number="13" style="v" />Then they distributed the meat to all the people. After that was done, they took meat for themselves and for the priests, the descendants of Aaron, <verse number="14" style="v" />because the priests were kept busy until night burning the fat of the sacrifices. <verse number="15-16" style="v" />The guards at the Temple gates and the Temple singers of the Levite clan of Asaph (with Asaph, Zechariah, and Eddinus, who were representatives of the king) remained at the places assigned to them by King David's instructions. They did not need to leave their posts, because the other Levites prepared the Passover for them.</para>
+  <para style="p">
+    <verse number="17-18" style="v" />So, as King Josiah had commanded, everything that related to the sacrifices offered to the Lord was done that day; the Passover Festival was celebrated, and the sacrifices were offered on the altar. <verse number="19" style="v" /><note caller="-" style="x"><char style="xo" closed="false">1.19: </char><char style="xt" closed="false">Ex 12.1-20.</char></note> All the people of Israel who were present at that time kept the Passover and observed the Festival of Unleavened Bread for seven days. <verse number="20" style="v" />Since the days of the prophet Samuel, the Passover had never been celebrated so well. <verse number="21-22" style="v" />None of the former kings of Israel had ever celebrated a Passover like this one celebrated by King Josiah in Jerusalem in the eighteenth year of his reign; it was celebrated by the priests, the Levites, and all the people of Judah and Israel.</para>
+  <para style="s">The End of Josiah's Reign</para>
+  <para style="r">(2 Kings 23.28-30; 2 Chronicles 35.20-27)</para>
+  <para style="p">
+    <verse number="23" style="v" />The Lord was pleased with everything Josiah did, for he was a very religious man. <verse number="24" style="v" />But the ancient records also tell the story of those who sinned and rebelled against the Lord during Josiah's reign. They sinned more than any other nation or kingdom and did things that offended the Lord so much that his judgment fell on the people of Israel.</para>
+  <para style="p">
+    <verse number="25" style="v" />After Josiah had done all these things, the king of Egypt led an army to fight at Carchemish on the Euphrates River. Josiah tried to stop him, <verse number="26" style="v" />but the king of Egypt sent Josiah this message: “The war I am fighting does not concern you, King of Judah. <verse number="27" style="v" />The Lord God did not send me to fight you; my battle is on the Euphrates River. The Lord is with me, and he is urging me on; so withdraw your troops and don't oppose the Lord.” <verse number="28" style="v" />But Josiah did not go back to his chariot and withdraw. He refused to listen to what the Lord had said through the prophet Jeremiah and decided to fight. <verse number="29" style="v" />He went into battle on the plain of Megiddo, and the Egyptian commanders attacked him.</para>
+  <para style="p">
+    <verse number="30" style="v" />King Josiah ordered his servants, “Take me off the battlefield; I'm badly hurt.” So they took him out of the line of battle immediately, <verse number="31" style="v" />and he got into a second chariot and was taken back to Jerusalem. There he died and was buried in the royal tomb. <verse number="32" style="v" />All the people of Judah mourned his death.</para>
+  <para style="p">The prophet Jeremiah composed a lament for King Josiah. It has become a custom in Israel for the leaders and their wives to sing this song when they mourn for him. <verse number="33" style="v" />These things are recorded in <char style="bk">The History of the Kings of Judah</char> Everything that Josiah did, how he gained his fame and his understanding of the Law, what he did earlier and what is told here, is all recorded in <char style="bk">The History of the Kings of Israel and Judah</char></para>
+  <para style="s">King Joahaz of Judah</para>
+  <para style="r">(2 Kings 23.30-35; 2 Chronicles 36.1-4)</para>
+  <para style="p">
+    <verse number="34" style="v" />The people of Judah chose Josiah's son Joahaz <note caller="+" style="f"><char style="fr" closed="false">1.34: </char><char style="fq" closed="false">Joahaz; </char><char style="ft" closed="false">some manuscripts have </char><char style="fq" closed="false">Jeconiah.</char></note> and made him king. Joahaz was twenty-three years old, <verse number="35" style="v" />and he ruled Judah and Jerusalem for three months. Then the king of Egypt deposed him <verse number="36" style="v" />and made the nation pay 7,500 pounds of silver and 75 pounds of gold as tribute. <verse number="37" style="v" /><note caller="-" style="x"><char style="xo" closed="false">1.37: </char><char style="xt" closed="false">Jr 22.11,12.</char></note> The king of Egypt appointed Joahaz's brother Jehoiakim king of Judah and Jerusalem. <verse number="38" style="v" />Jehoiakim put the leading men of the nation in prison, then had his brother Zarius arrested and brought back from Egypt.</para>
+  <para style="s">King Jehoiakim of Judah</para>
+  <para style="r">(2 Kings 23.36—24.7; 2 Chronicles 36.5-8)</para>
+  <para style="p">
+    <verse number="39" style="v" />
+    <note caller="-" style="x">
+      <char style="xo" closed="false">1.39: </char>
+      <char style="xt" closed="false">Jr 22.18,19; 26.1.</char>
+    </note> Jehoiakim was twenty-five years old when he became king of Judah and Jerusalem. He sinned against the Lord. <verse number="40" style="v" /><note caller="-" style="x"><char style="xo" closed="false">1.40: </char><char style="xt" closed="false">Dn 1.1,2.</char></note> King Nebuchadnezzar of Babylonia invaded Judah, captured Jehoiakim, and took him to Babylonia in bronze chains. <verse number="41" style="v" />Nebuchadnezzar also carried off some of the sacred utensils from the Temple and put them in his own temple in Babylon. <verse number="42" style="v" />The stories about Jehoiakim, his depravity, and the godless way he lived are recorded in <char style="bk">The Chronicles of the Kings</char></para>
+  <para style="s">King Jehoiachin of Judah</para>
+  <para style="r">(2 Kings 24.8-17; 2 Chronicles 36.9,10)</para>
+  <para style="p">
+    <verse number="43" style="v" />Jehoiachin was eighteen years old when he succeeded his father Jehoiakim as king, <verse number="44" style="v" />and he ruled in Jerusalem for three months and ten days. He too sinned against the Lord. <verse number="45" style="v" /><note caller="-" style="x"><char style="xo" closed="false">1.45: </char><char style="xt" closed="false">Jr 22.24-30; 24.1; 29.1,2; Ez 17.12.</char></note> A year later King Nebuchadnezzar had Jehoiachin taken to Babylonia as a prisoner; Nebuchadnezzar also carried off sacred utensils from the Temple. <verse number="46" style="v" />Then he made Zedekiah king of Judah and Jerusalem.</para>
+  <para style="s">King Zedekiah of Judah</para>
+  <para style="r">(2 Kings 24.18-20; 2 Chronicles 36.11,12; Jeremiah 52.1-3a)</para>
+  <para style="p">Zedekiah was then twenty-one years old, and he ruled for eleven years. <verse number="47" style="v" />He sinned against the Lord and refused to listen to the prophet Jeremiah, who spoke the word of the Lord.</para>
+  <para style="s">The Fall of Jerusalem</para>
+  <para style="r">(2 Kings 25.1-21; 2 Chronicles 36.13-21; Jeremiah 52.3b-11)</para>
+  <para style="p">
+    <verse number="48" style="v" />
+    <note caller="-" style="x">
+      <char style="xo" closed="false">1.48: </char>
+      <char style="xt" closed="false">Ez 17.15.</char>
+    </note> Although King Nebuchadnezzar had forced Zedekiah to swear in the Lord's name that he would be loyal to him, Zedekiah broke his oath and rebelled against him. He stubbornly refused to obey the commands of the Lord, the God of Israel. <verse number="49" style="v" />In addition, the leaders of the people and even the chief priests did more godless and lawless things than all the corrupt heathen; they defiled the Temple of the Lord, which he had made holy. <verse number="50" style="v" />The God of their ancestors had continued to send prophets to call them back from their sins, because he wanted to spare them and the Temple. <verse number="51" style="v" />But when the Lord spoke through his prophets, the people made fun of them and laughed. <verse number="52" style="v" />At last the Lord became so angry with his people and their depraved ways that he ordered the kings of Babylonia to attack them. <verse number="53" style="v" />The Babylonians killed the young men of Judah all around the Temple and did not spare anyone, young or old, man or woman. The Lord handed them all over to their enemies. <verse number="54" style="v" />The Babylonians carried off all the sacred utensils from the Temple, the treasure chests, <note caller="+" style="f"><char style="fr" closed="false">1.54: </char><char style="fq" closed="false">treasure chests; </char><char style="ft" closed="false">some manuscripts have </char><char style="fq" closed="false">the equipment of the Covenant Box.</char></note> and the wealth of the king; they took everything away to Babylon, leaving nothing behind. <verse number="55" style="v" />They burned down the Temple, broke down the city wall, set fire to its towers, <verse number="56" style="v" />and completely destroyed all its beauty. Nebuchadnezzar forced all the survivors to be led away to Babylon, <verse number="57" style="v" />where they served him and his descendants as slaves until the rise of the Persian Empire. And so what the Lord had foretold through the prophet Jeremiah was fulfilled: <verse number="58" style="v" /><note caller="-" style="x"><char style="xo" closed="false">1.58: </char><char style="xt" closed="false">Jr 25.11; 29.10.</char></note> “The land will lie desolate for seventy years to make up for the Sabbath rest <note caller="+" style="f"><char style="fr" closed="false">1.58: </char><char style="fk" closed="false">Sabbath Rest: </char><char style="ft" closed="false">A reference to the requirement of the Law that every seventh year the land was not to be farmed (see Lv 25.1-7).</char></note> that has not been observed.”</para>
+  <chapter number="2" style="c" />
+  <para style="s">Cyrus Commands the Jews to Return</para>
+  <para style="r">(2 Chronicles 36.22,23; Ezra 1.1-11)</para>
+  <para style="p">
+    <verse number="1" style="v" />In the first year that Cyrus of Persia was emperor, <note caller="+" style="f"><char style="fr" closed="false">2.1: </char><char style="fk" closed="false">emperor: </char><char style="ft" closed="false">King Cyrus of Persia occupied the city of Babylon in 539 </char><char style="sc">b.c.</char> and began to reign as the emperor of Babylonia.</note> the Lord made come true what he had said through the prophet Jeremiah. <verse number="2" style="v" />He prompted Cyrus to issue the following command and send it out in writing to be read aloud everywhere in his empire:</para>
+  <para style="pi">
+    <verse number="3" style="v" />
+    <note caller="-" style="x">
+      <char style="xo" closed="false">2.3: </char>
+      <char style="xt" closed="false">Is 44.28.</char>
+    </note> “This is the command of Cyrus, emperor of Persia. The Lord of Israel, the Lord Most High, has appointed me ruler over the whole world <verse number="4" style="v" />and has given me the responsibility of building a Temple for him in Jerusalem in Judah. <verse number="5" style="v" />May the Lord be with those of you who are his people. You are to go to Jerusalem and rebuild the Temple of the Lord of Israel, the Lord who lives in Jerusalem. <verse number="6" style="v" />If any of his people in exile need help to return, their neighbors must give them this help, providing them with silver and gold <verse number="7" style="v" />and other gifts, with horses and pack animals, as well as anything else offered for the Temple of the Lord in Jerusalem in fulfillment of a vow.”</para>
+  <para style="p">
+    <verse number="8" style="v" />Then the heads of the clans of the tribes of Judah and Benjamin, the priests and the Levites, and everyone else whose heart the Lord had moved, got ready to go and rebuild the Lord's Temple in Jerusalem. <verse number="9" style="v" />Their neighbors helped them with everything, giving them silver, gold, horses, and pack animals. Many of their neighbors were also led to give a large number of other things, in fulfillment of vows.</para>
+  <para style="p">
+    <verse number="10" style="v" />Emperor Cyrus gave them back the sacred utensils that King Nebuchadnezzar had taken from Jerusalem and had put in the temple of his idols. <verse number="11" style="v" />He brought them out and handed them over to Mithredath, chief of the royal treasury, <verse number="12" style="v" />who delivered them to Sheshbazzar, the governor of Judah. <verse number="13" style="v" />Here is the inventory of the utensils:</para>
+  <para style="b" />
+  <table>
+    <row style="tr">
+      <cell style="tc1" align="start">gold bowls for offerings </cell>
+      <cell style="tcr2" align="end">1,000</cell>
+    </row>
+    <row style="tr">
+      <cell style="tc1" align="start">silver bowls for offerings </cell>
+      <cell style="tcr2" align="end">1,000</cell>
+    </row>
+    <row style="tr">
+      <cell style="tc1" align="start">silver fire pans </cell>
+      <cell style="tcr2" align="end">29</cell>
+    </row>
+    <row style="tr">
+      <cell style="tc1" align="start">small gold bowls </cell>
+      <cell style="tcr2" align="end">30</cell>
+    </row>
+    <row style="tr">
+      <cell style="tc1" align="start">small silver bowls </cell>
+      <cell style="tcr2" align="end">2,410</cell>
+    </row>
+    <row style="tr">
+      <cell style="tc1" align="start">other utensils </cell>
+      <cell style="tcr2" align="end">1,000</cell>
+    </row>
+  </table>
+  <para style="b" />
+  <para style="p">
+    <verse number="14" style="v" />In all there were 5,469 gold and silver bowls and other utensils, <verse number="15" style="v" />and Sheshbazzar took these with him when he and the other exiles went from Babylon to Jerusalem.</para>
+  <para style="s">Opposition to Rebuilding Jerusalem</para>
+  <para style="r">(Ezra 4.7-24)</para>
+  <para style="p">
+    <verse number="16" style="v" />In the reign of Emperor Artaxerxes of Persia, Bishlam, Mithredath, Tabeel, Rehum, Beltethmus, Shimshai the secretary of the province, and their associates who lived in Samaria and elsewhere wrote the following letter in protest against the Jews who were living in Judah and Jerusalem:</para>
+  <para style="pi">
+    <verse number="17" style="v" />“To Your Majesty Emperor Artaxerxes from your servants, the official correspondent Rehum, the secretary Shimshai, the other members of the council, and the judges of Greater Syria and Phoenicia. <verse number="18" style="v" />“We want Your Majesty to know that the Jews who came here from your other territories have settled in Jerusalem and are rebuilding that evil and rebellious city. They are restoring the marketplaces, repairing the walls, and laying the foundations for a Temple. <verse number="19" style="v" />If this city is rebuilt and its walls are completed, the people will stop paying taxes and will even rebel against royal authority. <verse number="20" style="v" />Since work on the Temple has already begun, we consider it appropriate not to overlook such an important matter <verse number="21" style="v" />but to bring it to the attention of Your Majesty. Then, if it seems proper to you, a search may be made in the records your ancestors kept. <verse number="22" style="v" />You will find information about these matters in the historical records, and you will discover that this city has always been rebellious and given trouble to other cities and kings. <verse number="23" style="v" />The Jews have used it from ancient times as a base for rebellions and wars. That is why the city was destroyed. <verse number="24" style="v" />We therefore declare to you that if this city is rebuilt and its walls are restored, Your Majesty will no longer be able to enter Greater Syria and Phoenicia.”</para>
+  <para style="p">
+    <verse number="25" style="v" />The emperor sent the following answer to the official correspondent Rehum, Beltethmus, the secretary Shimshai, and their associates who lived in Samaria, Syria, and Phoenicia:</para>
+  <para style="pi">
+    <verse number="26" style="v" />“After reading the letter which you sent me, I gave orders for an investigation to be made, and it has indeed been found that from ancient times Jerusalem has revolted against royal authority, <verse number="27" style="v" />and its people have been involved in insurrections and wars. Powerful and cruel kings have reigned there and have ruled over Greater Syria and Phoenicia, from which they collected taxes. <verse number="28" style="v" />Therefore I am now issuing orders that those men be prevented from rebuilding the city and that necessary steps be taken to insure that these orders will not be disobeyed, <verse number="29" style="v" />so that this trouble spot will no longer be a threat to the royal interests.”</para>
+  <para style="p">
+    <verse number="30" style="v" />As soon as this letter from Emperor Artaxerxes was read, Rehum, Shimshai the secretary, and their associates hurried to Jerusalem with a force of cavalry and a large number of armed troops and began interfering with the rebuilding of the Temple. The work had to stop, and no more was done until the second year of the reign of Emperor Darius of Persia.</para>
+  <chapter number="3" style="c" />
+  <para style="s">The Debate of the Bodyguards before the Emperor</para>
+  <para style="p">
+    <verse number="1" style="v" />The Emperor Darius gave a great banquet for all those under him, all the members of his family and staff, all the leading officials of Persia and Media, <verse number="2" style="v" />all his chief officers, administrators, and the governors of the 127 provinces stretching from India to Ethiopia. <note caller="+" style="f"><char style="fr" closed="false">3.2: </char><char style="ft" closed="false">Greek </char><char style="fq" closed="false">Ethiopia: </char><char style="ft" closed="false">Ethiopia is the name given in Graeco-Roman times to the extensive territory south of the First Cataract of the Nile River. Cush was the ancient (Hebrew) name of this region which included within its borders most of modern Sudan and some of present-day Ethiopia (Abyssinia).</char></note> <verse number="3" style="v" />When everyone had enough to eat and drink, they left, and Darius went to bed. He fell asleep but soon awoke.</para>
+  <para style="s2">A Contest Is Proposed</para>
+  <para style="p">
+    <verse number="4" style="v" />Then the three young men who served Emperor Darius as his personal bodyguard said to one another, <verse number="5" style="v" />“Let each one of us name the one thing that he considers the strongest thing in the world. The emperor will decide who has given the wisest answer to this question and will give magnificent gifts and prizes to the winner. <verse number="6" style="v" />He will wear royal robes, drink from a gold cup, and sleep in a gold bed. He will have a chariot with gold-studded bridles, wear a fine linen turban, and have a gold necklace. <verse number="7" style="v" />Because of his wisdom he will be an adviser to the emperor and will be given the title ‘Relative of the Emperor.’”</para>
+  <para style="p">
+    <verse number="8" style="v" />Then each of them wrote down the best answer he could think of, sealed it, and put it under the emperor's pillow. They said to one another, <verse number="9" style="v" />“When the emperor wakes up, the statements will be given to him. He and the three leading officials of Persia will decide who gave the wisest answer. The winner will be given the prize on the basis of what he has written.” <verse number="10" style="v" />The first wrote, “There is nothing stronger than wine.” <verse number="11" style="v" />The second wrote, “There is nothing stronger than the emperor.” <verse number="12" style="v" />And the third wrote, “There is nothing stronger than a woman, but truth can conquer anything.”</para>
+  <para style="p">
+    <verse number="13" style="v" />When the emperor woke up, the written statements were given to him, and he read them. <verse number="14" style="v" />Then he sent messengers and called together all the leading officials of Persia and Media, including the chief officers, administrators, governors, and commissioners. <verse number="15" style="v" />He took his seat in the council chamber and had the three statements read aloud. <verse number="16" style="v" />“Bring in the three young men,” he said, “and let them explain their answers.” So when they were brought in, <verse number="17" style="v" />they were asked to explain what they had written.</para>
+  <para style="s2">The Speech about Wine</para>
+  <para style="p">The bodyguard who had written about the strength of wine spoke first: <verse number="18" style="v" />“Gentlemen,” he began, “wine is clearly the strongest thing in the world. It confuses the mind of everyone who drinks it. <verse number="19" style="v" />It has exactly the same effect on everyone: king or orphan, slave or free, rich or poor. <verse number="20" style="v" />It makes every thought happy and carefree, and makes one forget every sorrow and responsibility. <verse number="21" style="v" />It makes everyone feel rich, ignore the power of kings and officials, and talk as if he owned the whole world. <verse number="22" style="v" />When men drink wine, they forget who their friends and neighbors are, and then they are soon drawing their swords to fight them. <verse number="23" style="v" />Then, when they sober up, they don't remember what they have done. <verse number="24" style="v" />Gentlemen,” he concluded, “if wine makes men act in this way, it certainly must be the strongest thing in the world.”</para>
+  <chapter number="4" style="c" />
+  <para style="s2">The Speech about the Emperor</para>
+  <para style="p">
+    <verse number="1" style="v" />The bodyguard who had written about the strength of the emperor spoke next. <verse number="2" style="v" />“Gentlemen,” he began, “nothing in the world is stronger than men, since they rule over land and sea and, in fact, over everything in the world. <verse number="3" style="v" />But the emperor is the strongest of them all; he is their lord and master, and men obey him, no matter what he commands. <verse number="4" style="v" />If he tells them to make war on one another, they do it. If he sends them out against his enemies, they go, even if they have to break down mountains, walls, or towers. <verse number="5" style="v" />They may kill or be killed, but they never disobey the emperor's orders. If they are victorious, they bring him all their loot and everything else they have taken in battle. <verse number="6" style="v" />Farmers do not go out to war, but even they bring to the emperor a part of everything that they harvest, and they compel one another to pay taxes to the emperor. <verse number="7" style="v" />Although the emperor is only one man, if he orders people to kill, they kill; if he orders them to set prisoners free, they do it; <verse number="8" style="v" />if he orders them to attack, they do; if he orders destruction, they destroy; if he orders them to build, they build; <verse number="9" style="v" />if he orders crops to be destroyed or fields to be planted, it is done. <verse number="10" style="v" />Everybody, soldier or civilian, obeys the emperor. And when he sits down to eat or drink and then falls asleep, <verse number="11" style="v" />his servants stand guard around him, without being able to go and take care of their own affairs, for they never disobey him. <verse number="12" style="v" />Gentlemen,” he concluded, “since people obey the emperor like this, certainly nothing in the world is stronger than he is.”</para>
+  <para style="s2">The Speech about Women</para>
+  <para style="p">
+    <verse number="13" style="v" />The bodyguard who had written about women and the truth—it was Zerubbabel—spoke last. <verse number="14" style="v" />“Gentlemen,” he began, “the emperor is certainly powerful, men are numerous, and wine is strong, but who rules and controls them all? It is women! <verse number="15" style="v" />Women gave birth to the emperor and all the men who rule over land and sea. <verse number="16" style="v" />Women brought them into the world. Women brought up the men who planted the vineyards from which wine comes. <verse number="17" style="v" />Women make the clothes that men wear; women bring honor to men; in fact, without women, men couldn't live.</para>
+  <para style="p">
+    <verse number="18" style="v" />“Men may accumulate silver or gold or other beautiful things, but if they see a woman with a pretty face or a good figure, <verse number="19" style="v" />they will leave it all to gape and stare, and they will desire her more than their wealth. <verse number="20" style="v" />A man will leave his own father, who brought him up, and leave his own country to get married. <verse number="21" style="v" />He will forget his father, his mother, and his country to spend the rest of his life with his wife. <verse number="22" style="v" />So you must recognize that women are your masters. Don't you work and sweat and then take all that you have earned and give it to your wives? <verse number="23" style="v" />A man will take his sword and go out to attack, rob and steal, and sail the seas and rivers. <verse number="24" style="v" />He may have to face lions or travel in the dark, but when he has robbed, stolen, and plundered, he will bring the loot home to the woman he loves.</para>
+  <para style="p">
+    <verse number="25" style="v" />“A man loves his wife more than his parents. <verse number="26" style="v" />Some men are driven out of their minds on account of a woman, and others become slaves for the sake of a woman. <verse number="27" style="v" />Others have been put to death, have ruined their lives, or have committed crimes because of a woman. <verse number="28" style="v" />So now do you believe me?</para>
+  <para style="p">“The emperor's power is certainly great—no nation has the courage to attack him. <verse number="29" style="v" />But once I saw him with Apame, his concubine, the daughter of the famous Bartacus. While sitting at the emperor's right, <verse number="30" style="v" />she took his crown off his head, put it on her own, and then slapped his face with her left hand. <verse number="31" style="v" />All the emperor did was look at her with his mouth open. Whenever she smiles at him, he smiles back; and when she gets angry with him, he flatters her and teases her until she is in a good mood again. <verse number="32" style="v" />Gentlemen, if women can do all that, surely there can be nothing stronger in the world.” <verse number="33" style="v" />The emperor and his officials just looked at one another.</para>
+  <para style="s2">The Speech about Truth</para>
+  <para style="p">Then Zerubbabel began to speak about truth. <verse number="34" style="v" />“Yes, gentlemen,” he said, “women are very strong. But think of how big the earth is, how high the sky is; think how fast the sun moves, as it rapidly circles the whole sky in a single day. <verse number="35" style="v" />If the sun can do this, it is certainly great. But truth is greater and stronger than all of these things. <verse number="36" style="v" />Everyone on earth honors truth; heaven praises it; all creation trembles in awe before it.</para>
+  <para style="p">“There is not the slightest injustice in truth. <note caller="+" style="f"><char style="fr" closed="false">4.36: </char><char style="fq" closed="false">in truth; </char><char style="ft" closed="false">some manuscripts have </char><char style="fq" closed="false">with God.</char></note> <verse number="37" style="v" />You will find injustice in wine, the emperor, women, all human beings, in all they do, and in everything else. There is no truth in them; they are unjust and they will perish. <verse number="38" style="v" />But truth endures and is always strong; it will continue to live and reign forever. <verse number="39" style="v" />Truth shows no partiality or favoritism; it does what is right, rather than what is unjust or evil. Everyone approves what truth does; <verse number="40" style="v" />its decisions are always fair. Truth is strong, royal, powerful, and majestic forever. Let all things praise the God of truth!”</para>
+  <para style="s2">The Response</para>
+  <para style="p">
+    <verse number="41" style="v" />When Zerubbabel had finished speaking, all the people shouted, “Truth is great—there is nothing stronger!”</para>
+  <para style="p">
+    <verse number="42" style="v" />Then the emperor said to him, “You may ask anything you want, even more than what was agreed, and I will give it to you. You will be my adviser, and you will be granted the title ‘Relative of the Emperor.’”</para>
+  <para style="p">
+    <verse number="43" style="v" />Zerubbabel replied, “Your Majesty, permit me to remind you of the solemn vow you took on the day you became emperor. You promised to rebuild Jerusalem <verse number="44" style="v" />and to send back all the treasures that had been taken from the city. Remember that when Cyrus made a vow to destroy Babylon, he set these things aside and solemnly promised to send them back to Jerusalem. <verse number="45" style="v" /><note caller="-" style="x"><char style="xo" closed="false">4.45: </char><char style="xt" closed="false">Ob 10-14.</char></note> You also promised to rebuild the Temple, which the Edomites burned down when the Babylonians devastated the land of Judah. <verse number="46" style="v" />So, Your Majesty, because you are a man of generosity, I beg you to fulfill the solemn promise you made to the King of heaven.”</para>
+  <para style="p">
+    <verse number="47" style="v" />Then Emperor Darius stood up, kissed Zerubbabel, and wrote letters for him to all the treasurers, governors, and administrators in the provinces, ordering them to provide safe conduct for him and all those going with him to rebuild Jerusalem. <verse number="48" style="v" />He also wrote letters to all the governors in Greater Syria and Phoenicia, with special instructions to those in Lebanon, to transport cedar logs to Jerusalem and help Zerubbabel rebuild the city.</para>
+  <para style="p">
+    <verse number="49" style="v" />The emperor also provided letters for all the Jews who wished to return to Jerusalem. These letters guaranteed their freedom and ordered all governors, treasurers, and other administrators not to interfere with them in any way. <verse number="50" style="v" />All the land that they acquired was to be exempt from taxation, and the Edomites were to surrender the villages they had taken from the Jews. <verse number="51" style="v" />Each year 1,500 pounds of silver would be given for the construction of the Temple until it was finished. <verse number="52" style="v" />In addition, 750 pounds of silver would be given each year to provide for the seventeen burnt offerings to be offered in the Temple each day. <verse number="53" style="v" />All the Jews who left Babylonia to build the city of Jerusalem would be granted their freedom, together with their children and the priests.</para>
+  <para style="p">
+    <verse number="54" style="v" />The emperor's orders gave specific instructions, as follows: the priests must be supported, their robes for the Temple service must be provided, <verse number="55" style="v" />the Levites must be supported until the Temple and Jerusalem are completely rebuilt, <verse number="56" style="v" />and land and wages must be provided for all the guards of the city. <verse number="57" style="v" />He also reaffirmed Cyrus' instructions that all the small utensils and Temple treasures that Cyrus had set aside should be returned to Jerusalem.</para>
+  <para style="p">
+    <verse number="58" style="v" />Then the young man Zerubbabel left the council chamber, turned toward Jerusalem, looked up to heaven, and praised the King of heaven: <verse number="59" style="v" />“Lord, all praise belongs to you; you are the source of all victory and wisdom, <verse number="60" style="v" />and I thank you, O Lord of our ancestors, for giving wisdom to me, your servant.”</para>
+  <para style="p">
+    <verse number="61" style="v" />Zerubbabel took the emperor's letters and went to Babylon, where he told the other Jews everything that had happened. <verse number="62" style="v" />They praised the God of their ancestors because he had made it possible for them <verse number="63" style="v" />to go and rebuild Jerusalem and the Temple which bears his name. For seven days they held a joyful celebration, accompanied by music.</para>
+  <chapter number="5" style="c" />
+  <para style="s">The List of Those Who Returned from Exile</para>
+  <para style="r">(Ezra 2.1-70; Nehemiah 7.4-73)</para>
+  <para style="p">
+    <verse number="1" style="v" />After this, the heads of clans were chosen, tribe by tribe, to go to Jerusalem with their wives, children, slaves, and animals. <verse number="2" style="v" />Emperor Darius sent a thousand cavalry troops to escort them safely back to Jerusalem. <verse number="3" style="v" />He sent them off to the music of drums and flutes, while all the rest of the Jewish people danced for joy.</para>
+  <para style="p">
+    <verse number="4" style="v" />These are the names, by tribes, clans, and families, of the men who returned: <verse number="5" style="v" />Among the priests, descendants of Phinehas son of Aaron, was Joshua, son of Jozadak and grandson of Seraiah. He was accompanied by Zerubbabel, <note caller="+" style="f"><char style="fr" closed="false">5.5: </char><char style="ft" closed="false">Probable text </char><char style="fq" closed="false">He was accompanied by Zerubbabel; </char><char style="ft" closed="false">Greek </char><char style="fq" closed="false">and Joakim son of Zerubbabel.</char></note> who was the son of Shealtiel of the family of David, of the line of Perez, of the tribe of Judah. <verse number="6" style="v" />He was the one who had spoken the wise words before Emperor Darius of Persia. They left Babylon in the second year of his reign in Nisan, the first month.</para>
+  <para style="p">
+    <verse number="7" style="v" />These are the Jewish men who returned from exile. Their families had been living in Babylonia since King Nebuchadnezzar had taken them there as prisoners. <verse number="8" style="v" />They returned to Jerusalem and the rest of Judah, each to his own hometown. Their leaders were Zerubbabel, Joshua, Nehemiah, Seraiah, Resaiah, Eneneus, Mordecai, Beelsarus, Aspharasus, Reeliah, Rehum, and Baanah.</para>
+  <para style="p">
+    <verse number="9-17a" style="v" />The following is a list of the clans of Israel, with the number of those from each clan who returned with their leaders from exile:</para>
+  <para style="b" />
+  <table>
+    <row style="tr">
+      <cell style="tc1" align="start">Parosh </cell>
+      <cell style="tcr2" align="end">2,172</cell>
+    </row>
+    <row style="tr">
+      <cell style="tc1" align="start">Shephatiah </cell>
+      <cell style="tcr2" align="end">472</cell>
+    </row>
+    <row style="tr">
+      <cell style="tc1" align="start">Arah </cell>
+      <cell style="tcr2" align="end">756</cell>
+    </row>
+    <row style="tr">
+      <cell style="tc1" align="start">Pahath Moab (descendants of Jeshua and Joab) </cell>
+      <cell style="tcr2" align="end">2,812</cell>
+    </row>
+    <row style="tr">
+      <cell style="tc1" align="start">Elam </cell>
+      <cell style="tcr2" align="end">1,254</cell>
+    </row>
+    <row style="tr">
+      <cell style="tc1" align="start">Zattu </cell>
+      <cell style="tcr2" align="end">945</cell>
+    </row>
+    <row style="tr">
+      <cell style="tc1" align="start">Chorbe </cell>
+      <cell style="tcr2" align="end">705</cell>
+    </row>
+    <row style="tr">
+      <cell style="tc1" align="start">Bani </cell>
+      <cell style="tcr2" align="end">648</cell>
+    </row>
+    <row style="tr">
+      <cell style="tc1" align="start">Bebai </cell>
+      <cell style="tcr2" align="end">623</cell>
+    </row>
+    <row style="tr">
+      <cell style="tc1" align="start">Azgad </cell>
+      <cell style="tcr2" align="end">1,322</cell>
+    </row>
+    <row style="tr">
+      <cell style="tc1" align="start">Adonikam </cell>
+      <cell style="tcr2" align="end">667</cell>
+    </row>
+    <row style="tr">
+      <cell style="tc1" align="start">Bigvai </cell>
+      <cell style="tcr2" align="end">2,066</cell>
+    </row>
+    <row style="tr">
+      <cell style="tc1" align="start">Adin </cell>
+      <cell style="tcr2" align="end">454</cell>
+    </row>
+    <row style="tr">
+      <cell style="tc1" align="start">Ater (also called Hezekiah) </cell>
+      <cell style="tcr2" align="end">92</cell>
+    </row>
+    <row style="tr">
+      <cell style="tc1" align="start">Kilan and Azetas </cell>
+      <cell style="tcr2" align="end">67</cell>
+    </row>
+    <row style="tr">
+      <cell style="tc1" align="start">Azaru </cell>
+      <cell style="tcr2" align="end">432</cell>
+    </row>
+    <row style="tr">
+      <cell style="tc1" align="start">Annias </cell>
+      <cell style="tcr2" align="end">101</cell>
+    </row>
+    <row style="tr">
+      <cell style="tc1" align="start">Arom </cell>
+      <cell style="tcr2" align="end">—</cell>
+    </row>
+    <row style="tr">
+      <cell style="tc1" align="start">Bezai </cell>
+      <cell style="tcr2" align="end">323</cell>
+    </row>
+    <row style="tr">
+      <cell style="tc1" align="start">Arsiphurith </cell>
+      <cell style="tcr2" align="end">112</cell>
+    </row>
+    <row style="tr">
+      <cell style="tc1" align="start">Baiterus </cell>
+      <cell style="tcr2" align="end">3,005</cell>
+    </row>
+  </table>
+  <para style="b" />
+  <para style="p">
+    <verse number="17b-23" style="v" />People whose ancestors had lived in the following towns also returned:</para>
+  <para style="b" />
+  <table>
+    <row style="tr">
+      <cell style="tc1" align="start">Bethlehem </cell>
+      <cell style="tcr2" align="end">123</cell>
+    </row>
+    <row style="tr">
+      <cell style="tc1" align="start">Netophah </cell>
+      <cell style="tcr2" align="end">55</cell>
+    </row>
+    <row style="tr">
+      <cell style="tc1" align="start">Anathoth </cell>
+      <cell style="tcr2" align="end">158</cell>
+    </row>
+    <row style="tr">
+      <cell style="tc1" align="start">Beth Azmaveth </cell>
+      <cell style="tcr2" align="end">42</cell>
+    </row>
+    <row style="tr">
+      <cell style="tc1" align="start">Kiriath Jearim </cell>
+      <cell style="tcr2" align="end">25</cell>
+    </row>
+    <row style="tr">
+      <cell style="tc1" align="start">Chephirah and Beeroth </cell>
+      <cell style="tcr2" align="end">743</cell>
+    </row>
+    <row style="tr">
+      <cell style="tc1" align="start">the towns of the Chadiasans and the Ammidians </cell>
+      <cell style="tcr2" align="end">422</cell>
+    </row>
+    <row style="tr">
+      <cell style="tc1" align="start">Ramah and Geba </cell>
+      <cell style="tcr2" align="end">621</cell>
+    </row>
+    <row style="tr">
+      <cell style="tc1" align="start">Michmash </cell>
+      <cell style="tcr2" align="end">122</cell>
+    </row>
+    <row style="tr">
+      <cell style="tc1" align="start">Bethel </cell>
+      <cell style="tcr2" align="end">52</cell>
+    </row>
+    <row style="tr">
+      <cell style="tc1" align="start">Magbish </cell>
+      <cell style="tcr2" align="end">156</cell>
+    </row>
+    <row style="tr">
+      <cell style="tc1" align="start">The other Elam and Ono </cell>
+      <cell style="tcr2" align="end">725</cell>
+    </row>
+    <row style="tr">
+      <cell style="tc1" align="start">Jericho </cell>
+      <cell style="tcr2" align="end">345</cell>
+    </row>
+    <row style="tr">
+      <cell style="tc1" align="start">Senaah </cell>
+      <cell style="tcr2" align="end">3,330</cell>
+    </row>
+  </table>
+  <para style="b" />
+  <para style="p">
+    <verse number="24-25" style="v" />The following is the list of the priestly clans that returned from exile:</para>
+  <para style="b" />
+  <table>
+    <row style="tr">
+      <cell style="tc1" align="start">Jedaiah (descendants of Jeshua and Anasib) </cell>
+      <cell style="tcr2" align="end">972</cell>
+    </row>
+    <row style="tr">
+      <cell style="tc1" align="start">Immer </cell>
+      <cell style="tcr2" align="end">1,052</cell>
+    </row>
+    <row style="tr">
+      <cell style="tc1" align="start">Pashhur </cell>
+      <cell style="tcr2" align="end">1,247</cell>
+    </row>
+    <row style="tr">
+      <cell style="tc1" align="start">Harim </cell>
+      <cell style="tcr2" align="end">1,017</cell>
+    </row>
+  </table>
+  <para style="b" />
+  <para style="p">
+    <verse number="26-28" style="v" />Clans of Levites who returned from exile:</para>
+  <para style="b" />
+  <table>
+    <row style="tr">
+      <cell style="tc1" align="start">Jeshua, Kadmiel, Bannas, and Sudias </cell>
+      <cell style="tcr2" align="end">74</cell>
+    </row>
+    <row style="tr">
+      <cell style="tc1" align="start">Temple musicians (descendants of Asaph) </cell>
+      <cell style="tcr2" align="end">128</cell>
+    </row>
+    <row style="tr">
+      <cell style="tc1" align="start">Temple guards (descendants of Shallum, Ater, Talmon, Akkub, Hatita, and Shobai) </cell>
+      <cell style="tcr2" align="end">139</cell>
+    </row>
+  </table>
+  <para style="p">
+    <verse number="29-32" style="v" />Clans of Temple workmen who returned from exile:</para>
+  <para style="li">Esau, Hasupha, Tabbaoth,</para>
+  <para style="li">Keros, Siaha, Padon,</para>
+  <para style="li">Lebanah, Hagabah, Akkub,</para>
+  <para style="li">Uthai, Ketab, Hagab,</para>
+  <para style="li">Shamlai, Hanan, Cathua,</para>
+  <para style="li">Geddur, Jairus, Daisan,</para>
+  <para style="li">Noeba, Chaseba, Gazera,</para>
+  <para style="li">Uzza, Phinoe, Asara,</para>
+  <para style="li">Besai, Asnah, Meunim,</para>
+  <para style="li">Nephisim, Akub, Hakupha,</para>
+  <para style="li">Asur, Pharakim, Bazluth,</para>
+  <para style="li">Mehida, Cutha, Charea,</para>
+  <para style="li">Barkos, Sisera, Temah,</para>
+  <para style="li">Neziah, Hatipha</para>
+  <para style="p">
+    <verse number="33-34" style="v" />Clans of Solomon's servants who returned from exile:</para>
+  <para style="li">Hassophereth, Peruda, Jaalah,</para>
+  <para style="li">Lozon, Giddel, Shephatiah,</para>
+  <para style="li">Agia, Phochereth Hazzebaim,</para>
+  <para style="li">Sarothie, Masiah, Gas,</para>
+  <para style="li">Addus, Subas, Apherra,</para>
+  <para style="li">Barodis, Shaphat, Adlon</para>
+  <para style="p">
+    <verse number="35" style="v" />The total number of descendants of the Temple workmen and of Solomon's servants who returned from exile was 372.</para>
+  <para style="p">
+    <verse number="36-37" style="v" />There were 652 belonging to the clans of Delaiah (descendants of Tobiah) and Nekoda who returned from the towns of Tel Melah and Tel Harsha, with their leaders Cherub, Addan, and Immer; but these could not prove that they were descendants of Israelites.</para>
+  <para style="p">
+    <verse number="38-39" style="v" />The following clans, who claimed to be priestly clans, could find no record to prove their ancestry: Habaiah, Hakkoz, Jaddus (the ancestor of the clan of Jaddus had married Agia, one of the daughters of Barzillai, and had taken the name of his father-in-law's clan). Since they were unable to prove who their ancestors were, they were not allowed to function as priests. <verse number="40" style="v" /><note caller="-" style="x"><char style="xo" closed="false">5.40: </char><char style="xt" closed="false">Nu 27.21.</char></note> Nehemiah the governor <note caller="+" style="f"><char style="fr" closed="false">5.40: </char><char style="ft" closed="false">Probable meaning </char><char style="fq" closed="false">the governor; </char><char style="ft" closed="false">Greek </char><char style="fq" closed="false">and Attharias.</char></note> told them that they could not eat the food offered to God until there was a High Priest who could use the Revelation and Truth. <note caller="+" style="f"><char style="fr" closed="false">5.40: </char><char style="fk" closed="false">Revelation and Truth: </char><char style="ft" closed="false">This is the Greek translation of Urim and Thummim, two objects used by the priest to determine God's will; it is not known precisely how they were used.</char></note></para>
+  <para style="b" />
+  <table>
+    <row style="tr">
+      <cell style="tc1" align="start">
+        <verse number="41-43" style="v" />The total number of Israelites (twelve years old or older, not counting servants)</cell>
+      <cell style="tcr2" align="end">42,360</cell>
+    </row>
+    <row style="tr">
+      <cell style="tc1" align="start">Male and female servants </cell>
+      <cell style="tcr2" align="end">7,337</cell>
+    </row>
+    <row style="tr">
+      <cell style="tc1" align="start">Male and female musicians </cell>
+      <cell style="tcr2" align="end">245</cell>
+    </row>
+    <row style="tr">
+      <cell style="tc1" align="start">Camels </cell>
+      <cell style="tcr2" align="end">435</cell>
+    </row>
+    <row style="tr">
+      <cell style="tc1" align="start">Horses </cell>
+      <cell style="tcr2" align="end">7,036</cell>
+    </row>
+    <row style="tr">
+      <cell style="tc1" align="start">Mules </cell>
+      <cell style="tcr2" align="end">245</cell>
+    </row>
+    <row style="tr">
+      <cell style="tc1" align="start">Donkeys </cell>
+      <cell style="tcr2" align="end">5,525</cell>
+    </row>
+  </table>
+  <para style="b" />
+  <para style="p">
+    <verse number="44" style="v" />When the exiles arrived at the place of God's Temple in Jerusalem, some of the leaders of the clans took a vow to rebuild the Temple on its old site, to the best of their ability. <verse number="45" style="v" />They promised to contribute for the rebuilding and the service of the Temple 1,000 pounds of gold, 5,000 pounds of silver, and 100 robes for priests.</para>
+  <para style="p">
+    <verse number="46" style="v" />
+    <note caller="-" style="x">
+      <char style="xo" closed="false">5.46: </char>
+      <char style="xt" closed="false">1 Ch 9.2; Ne 11.3.</char>
+    </note> The priests, the Levites, and some of the people settled in or near Jerusalem; the musicians and the Temple guards settled in nearby towns; and the rest of the Israelites settled in the towns where their ancestors had lived.</para>
+  <para style="s">Worship Begins Again</para>
+  <para style="r">(Ezra 3.1-6)</para>
+  <para style="p">
+    <verse number="47" style="v" />By the seventh month the people of Israel were all settled in their towns. Then they all assembled in the open square in front of the first gate on the east side of the Temple area. <verse number="48" style="v" />Joshua son of Jehozadak, his fellow priests, and Zerubbabel son of Shealtiel, together with his relatives, prepared the altar of the God of Israel, <verse number="49" style="v" />so that they could burn sacrifices on it according to the instructions written in the Law of Moses, the man of God. <verse number="50" style="v" />Some of the local people, even though they were stronger than the Jews and opposed to them, joined them <note caller="+" style="f"><char style="fr" closed="false">5.50: </char><char style="fq" closed="false">Some of…joined them; </char><char style="ft" closed="false">Greek unclear.</char></note> in rebuilding the altar where it had stood before. Then the Jews began once again to burn the regular morning and evening sacrifices on the altar. <verse number="51" style="v" />They celebrated the Festival of Shelters, according to the regulations, each day offering the sacrifices required for that day. <verse number="52" style="v" /><note caller="-" style="x"><char style="xo" closed="false">5.52: </char><char style="xt" closed="false">Nu 28.11—29.39.</char></note> They also offered the normal daily sacrifices, as well as those required for the Sabbath, the New Moon Festival, and the other regular assemblies for worship. <verse number="53" style="v" />Although the people had not yet rebuilt God's Temple, everyone who had made a vow to God began to offer sacrifices on the first day of the seventh month.</para>
+  <para style="s">The Rebuilding of the Temple Begins</para>
+  <para style="r">(Ezra 3.7-13)</para>
+  <para style="p">
+    <verse number="54" style="v" />The people gave money to pay the stonemasons and the carpenters; they gave food, drink, <verse number="55" style="v" />and carts to be sent to the cities of Tyre and Sidon in exchange for cedar logs from Lebanon, which were to be floated to the harbor at Joppa. All of this was done according to the orders given by Emperor Cyrus of Persia.</para>
+  <para style="p">
+    <verse number="56-57" style="v" />So in the second month of the year after they came back to the site of the Temple in Jerusalem, they started the work and began laying the foundation. Zerubbabel, Joshua, and the rest of the Jewish people, the priests, and the Levites—in fact, all the exiles who had come back to Jerusalem, joined in the work. <verse number="58" style="v" />The Levites twenty years of age or older were put in charge of rebuilding the Temple for the Lord. The Levite Jeshua and his sons and relatives, his brother Kadmiel, the sons of Jeshua Emadabun, the sons of Joda son of Iliadun, and all their sons and relatives—in fact, all the Levites joined together to take charge of the rebuilding of the Temple.</para>
+  <para style="p">While the workers were building the Temple of the Lord, <verse number="59" style="v" /><note caller="-" style="x"><char style="xo" closed="false">5.59,60: </char><char style="xt" closed="false">1 Ch 25.1.</char></note> the priests in their robes took their places with trumpets and other musical instruments in their hands, and the Levites of the clan of Asaph stood there with cymbals. <verse number="60" style="v" />They praised the Lord and gave thanks to him according to the instructions handed down from the time of King David. <verse number="61" style="v" /><note caller="-" style="x"><char style="xo" closed="false">5.61: </char><char style="xt" closed="false">1 Ch 16.34; 2 Ch 5.11-14; Ps 100.5; 106.1; 118.1; 136.1; Jr 33.11.</char></note> They sang psalms praising the Lord, repeating the refrain: “The goodness of the Lord and his glorious presence are with all Israel forever.” <verse number="62" style="v" />All the people blew trumpets and shouted with all their might, praising the Lord because the Temple was being rebuilt. <verse number="63" style="v" />Some of the older priests, Levites, and heads of clans had seen the first Temple, and when they came and saw the building of this Temple, they cried and wailed. <verse number="64" style="v" />Others who were there blew trumpets and shouted for joy. <verse number="65" style="v" />The crowd blew the trumpets so loud that the blast could be heard far away, but no one nearby could hear the blast of the trumpets because the sound made by those who were crying and wailing was so loud.</para>
+  <para style="s">Opposition to the Rebuilding of the Temple</para>
+  <para style="r">(Ezra 4.1-5)</para>
+  <para style="p">
+    <verse number="66" style="v" />The enemies of the tribes of Judah and Benjamin heard the sound of the trumpets and came to see what it meant. <verse number="67" style="v" /><note caller="-" style="x"><char style="xo" closed="false">5.67,68: </char><char style="xt" closed="false">2 K 17.24-41.</char></note> When they learned that those who had returned from exile were rebuilding the Temple of the Lord, the God of Israel, <verse number="68" style="v" />they went to Zerubbabel, Joshua, and the heads of the clans and said, “Let us join you in building the Temple. <verse number="69" style="v" />We worship the same Lord you worship and we have been offering sacrifices to him ever since Emperor Esarhaddon <note caller="+" style="f"><char style="fr" closed="false">5.69: </char><char style="ft" closed="false">ESARHADDON: Greek </char><char style="fq" closed="false">Asbasareth.</char></note> of Assyria sent us here to live.”</para>
+  <para style="p">
+    <verse number="70" style="v" />Zerubbabel, Joshua, and the heads of the clans told them, “We don't need your help in building the Temple for the Lord our God. <verse number="71" style="v" />We will build it ourselves, just as Emperor Cyrus of Persia commanded us.”</para>
+  <para style="p">
+    <verse number="72" style="v" />Then the people who had been living in the land began to harass <note caller="+" style="f"><char style="fr" closed="false">5.72: </char><char style="ft" closed="false">Probable text </char><char style="fq" closed="false">harass; </char><char style="ft" closed="false">Greek unclear.</char></note> the Jews; they cut off their supplies and kept them from building. <verse number="73" style="v" />These people plotted, agitated, and rioted so much that they prevented the Temple from being completed during the reign of Emperor Cyrus. The work was halted until Darius became emperor, two years later.</para>
+  <chapter number="6" style="c" />
+  <para style="s">Work on the Temple Begins Again</para>
+  <para style="r">(Ezra 5.1-17)</para>
+  <para style="p">
+    <verse number="1" style="v" />
+    <note caller="-" style="x">
+      <char style="xo" closed="false">6.1: </char>
+      <char style="xt" closed="false">Zec 1.1.</char>
+    </note> In the second year of the reign of Emperor Darius, the two prophets, Haggai and Zechariah son of Iddo, began to speak in the name of the Lord God of Israel to the Jews who lived in Judah and Jerusalem. <verse number="2" style="v" /><note caller="-" style="x"><char style="xo" closed="false">6.2: </char><char style="xt" closed="false">Hg 1.12; Zec 4.6-9.</char></note> When Zerubbabel son of Shealtiel and Joshua son of Jehozadak heard their messages, they began to rebuild the Temple in Jerusalem, and the two prophets helped them.</para>
+  <para style="p">
+    <verse number="3" style="v" />Almost at once Governor Sisinnes of Greater Syria and Phoenicia, with Shethar Bozenai and the other officials, came to Jerusalem and demanded: <verse number="4" style="v" />“Who gave you orders to build this Temple and complete this roof and everything else? Who is doing this work?” <verse number="5" style="v" />But the Lord was with the people who had returned from exile and was watching over the Jewish leaders, <verse number="6" style="v" />and they were allowed to continue building until Emperor Darius could be informed and his reply received. <verse number="7" style="v" />Here is the report that the Persian officials sent to the emperor:</para>
+  <para style="pi">
+    <verse number="8" style="v" />“To Emperor Darius, greetings.</para>
+  <para style="pi">“Your Majesty should know that we went to Judah and to Jerusalem and there we found the leaders of the Jews who have returned from exile <verse number="9" style="v" />building a large new Temple for the Lord with expensive, shaped stone blocks and with wooden beams set in the walls. <verse number="10" style="v" />The work is being done rapidly and is moving ahead steadily; yet they are taking great care and doing their work beautifully.</para>
+  <para style="pi">
+    <verse number="11" style="v" />“We then asked the leaders of the people to tell us who had given them orders to rebuild the Temple and lay the foundations for the buildings. <verse number="12" style="v" />We also asked them who their leaders were and demanded a list of their names, so that we could inform you.</para>
+  <para style="pi">
+    <verse number="13" style="v" />“They answered, ‘We are servants of the Lord who created heaven and earth. <verse number="14" style="v" />This Temple was built and equipped many years ago by a very powerful king of Israel. <verse number="15" style="v" /><note caller="-" style="x"><char style="xo" closed="false">6.15,16: </char><char style="xt" closed="false">2 K 25.8-12; 2 Ch 36.17-20; Jr 52.12-15.</char></note> But because our ancestors sinned against Israel's Lord in heaven and made him angry, he let them be conquered by King Nebuchadnezzar of Babylonia, a king of the Chaldean dynasty. <verse number="16" style="v" />The Temple was demolished and burned, and the people were taken into exile in Babylonia. <verse number="17" style="v" /><note caller="-" style="x"><char style="xo" closed="false">6.17: </char><char style="xt" closed="false">Ezra 1.2-11; 1 Esd 2.3-15.</char></note> Then, in the first year of his reign as emperor of Babylonia, Cyrus issued orders for the Temple to be rebuilt. <verse number="18" style="v" />He gave back the sacred gold and silver utensils which Nebuchadnezzar had taken from the Temple in Jerusalem and had placed in his own temple in Babylon. Emperor Cyrus turned these utensils over to Zerubbabel and the governor, Sheshbazzar. <verse number="19" style="v" />The Emperor told Sheshbazzar to take them and return them to the Temple in Jerusalem, and to rebuild the Temple where it had stood before. <verse number="20" style="v" />So Sheshbazzar came and laid its foundation, and construction has continued from then until the present, but the Temple is still not finished.’</para>
+  <para style="pi">
+    <verse number="21" style="v" />“Now, if it please Your Majesty, have a search made in the royal records in Babylon <verse number="22" style="v" />to find whether or not the building of this Temple in Jerusalem had the approval of Emperor Cyrus, and then, if it please Your Majesty, inform us what your will is in this matter.”</para>
+  <para style="s">Emperor Cyrus' Order Is Rediscovered</para>
+  <para style="r">(Ezra 6.1-5)</para>
+  <para style="p">
+    <verse number="23" style="v" />So Emperor Darius ordered a search to be made in the royal records that were kept in Babylon. It was, however, in the fortress of Ecbatana in the province of Media that a scroll was found, containing the following record:</para>
+  <para style="pi">
+    <verse number="24" style="v" />“In the first year of his reign Emperor Cyrus ordered the rebuilding of the Temple in Jerusalem, where sacrifices are continually offered. <verse number="25" style="v" />The Temple is to be 90 feet high and 90 feet wide. The walls must be built with one layer of new local wood on top of each three layers of shaped stone. All expenses are to be paid by the royal treasury. <verse number="26" style="v" />Also the gold and silver utensils which King Nebuchadnezzar brought to Babylon from the Temple in Jerusalem are to be returned to their proper place in the Jerusalem Temple.”</para>
+  <para style="s">Emperor Darius Orders the Work to Continue</para>
+  <para style="r">(Ezra 6.6-12)</para>
+  <para style="p">
+    <verse number="27" style="v" />Then Emperor Darius gave strict orders to Sisinnes, governor of Greater Syria and Phoenicia, Shethar Bozenai, the other officials, and the local officials to stay away from Jerusalem and let Zerubbabel, the servant of the Lord and governor of Judah, and the other Jewish leaders rebuild the Temple of the Lord where it stood before. <verse number="28" style="v" />“And I also command,” he continued, “that it be completely rebuilt and that, until it is finished, every effort be made to help the Jews who have returned from exile. <verse number="29" style="v" />From the taxes received in Greater Syria and Phoenicia a contribution shall be made on a regular basis to these men, payable to Governor Zerubbabel, for bulls, sheep, and lambs to be used in their sacrifices to the Lord. <verse number="30" style="v" />In the same way, each year and without further question, wheat, salt, wine, and olive oil are to be supplied, according to the daily needs indicated by the priests. <verse number="31" style="v" />This must be done so that they can make wine offerings to God Most High for me and my children and pray for his blessing on our lives.” <verse number="32" style="v" />He also gave these orders: “If anyone disobeys the commands as written above or fails to carry them out, he is to be hanged on a wooden beam taken from his own house, and his property is to be turned over to the emperor. <verse number="33" style="v" />May the Lord who is worshiped at Jerusalem destroy any king or nation that tries to stop the work or damage the Temple there. <verse number="34" style="v" />I, Emperor Darius, issue the command that these orders be carried out in every detail.”</para>
+  <chapter number="7" style="c" />
+  <para style="s">The Temple Is Dedicated</para>
+  <para style="r">(Ezra 6.13-18)</para>
+  <para style="p">
+    <verse number="1" style="v" />Then Governor Sisinnes, Shethar Bozenai, and the other officials did exactly as the emperor had commanded <verse number="2" style="v" />and gave careful supervision to the work on the Temple, helping the Jewish leaders and Temple officials. <verse number="3" style="v" /><note caller="-" style="x"><char style="xo" closed="false">7.3: </char><char style="xt" closed="false">Hg 1.1.</char></note> The workers made good progress with the building of the Temple, encouraged by the prophets Haggai and Zechariah. <verse number="4" style="v" />The Jews completed the building according to the command of the Lord, the God of Israel, and with the permission of Cyrus, Darius, and Artaxerxes, emperors of Persia. <verse number="5" style="v" />The Temple was completed on the twenty-third day of the month of Adar in the sixth year of the reign of Emperor Darius. <verse number="6" style="v" />Then the people of Israel—the priests, the Levites, and all the others who had returned from exile and joined them—carried out all the commands in the Law of Moses. <verse number="7" style="v" />For the dedication they offered 100 bulls, 200 sheep, and 400 lambs as sacrifices, <verse number="8" style="v" />and 12 goats as offerings for sin, one goat for the leader of each tribe of Israel. <verse number="9" style="v" />The priests in their robes and the Levites took their positions, family by family, for the Temple services of the Lord, the God of Israel, according to the instructions contained in the book of Moses. The Temple guards stood at each gate.</para>
+  <para style="s">The Passover</para>
+  <para style="r">(Ezra 6.19-22)</para>
+  <para style="p">
+    <verse number="10" style="v" />
+    <note caller="-" style="x">
+      <char style="xo" closed="false">7.10: </char>
+      <char style="xt" closed="false">Ex 12.1-20.</char>
+    </note> The people of Israel who had returned from exile celebrated the Passover on the fourteenth day of the first month of the following year. The priests and Levites had purified themselves at the same time. <verse number="11" style="v" />Not all the Jews who had returned purified themselves at that time, but the Levites did. <note caller="+" style="f"><char style="fr" closed="false">7.11: </char><char style="ft" closed="false">Verse 11 in Greek is unclear.</char></note> <verse number="12" style="v" />The Levites killed the animals for the Passover sacrifices for all the people who had returned, for the priests, and for themselves. <verse number="13" style="v" />The sacrifices were eaten by all the Israelites who had returned from exile; they worshiped the Lord and rejected the pagan ways of the other people who were living in the land. <verse number="14" style="v" />For seven days they celebrated the Festival of Unleavened Bread. They rejoiced in the presence of the Lord, <verse number="15" style="v" />the God of Israel, because he had made the plans of the emperor of Assyria <note caller="+" style="f"><char style="fr" closed="false">7.15: </char><char style="fk" closed="false">emperor of Assyria: </char><char style="ft" closed="false">Apparently a reference to the Persian emperor who then also ruled the territory once occupied by Assyria, Israel's ancient enemy.</char></note> favorable to them and had supported them in their work.</para>
+  <chapter number="8" style="c" />
+  <para style="s">Ezra Arrives in Jerusalem</para>
+  <para style="r">(Ezra 7.1-10)</para>
+  <para style="p">
+    <verse number="1" style="v" />Many years later, when Artaxerxes was emperor of Persia, a man named Ezra came from Babylon. He traced his ancestry back to Aaron, the High Priest, as follows: Ezra was the son of Seraiah, son of Azariah, son of Hilkiah, son of Shallum, <verse number="2" style="v" />son of Zadok, son of Ahitub, son of Amariah, son of Azariah, son of Bukki, son of Abishua, son of Phinehas, son of Eleazar, son of Aaron.</para>
+  <para style="p">
+    <verse number="3-4" style="v" />Ezra was a scholar with a thorough knowledge of the Law, which the God of Israel had given to Moses. The emperor had a high regard for him and approved all the requests he made. Ezra set out from Babylonia <verse number="5" style="v" />for Jerusalem with a group of Israelites which included priests, Levites, Temple musicians, Temple guards, and workmen. <verse number="6" style="v" />They left Babylonia on the first day of the first month in the seventh year of the reign of Artaxerxes. God gave them a safe journey, and they arrived in Jerusalem on the first day of the fifth month. <verse number="7" style="v" />Ezra had a thorough knowledge of the Law of the Lord and neglected none of its details. As a result he could teach all its laws and regulations to all the people of Israel.</para>
+  <para style="s">The Document That Emperor Artaxerxes Gave to Ezra</para>
+  <para style="r">(Ezra 7.11-26)</para>
+  <para style="p">
+    <verse number="8" style="v" />The following is a copy of the decree that Emperor Artaxerxes gave to Ezra, the priest and scholar of the Law of the Lord:</para>
+  <para style="pi">
+    <verse number="9" style="v" />“From Emperor Artaxerxes to the priest Ezra, scholar of the Law of the Lord, greetings.</para>
+  <para style="pi">
+    <verse number="10" style="v" />“In my generosity I have decided to decree that throughout my empire any of the Jews who so desire, including priests and Levites, may go with you to Jerusalem. <verse number="11" style="v" />I and the seven counselors who have the title ‘Friends of the Emperor’ have decided that all who wish to do so may go with you. <verse number="12" style="v" />Let them investigate the conditions in Jerusalem and Judah to see how well the Law of the Lord is being obeyed. <verse number="13" style="v" />Let them also take with them to Jerusalem the gifts which I and my counselors have vowed to give to the Lord of Israel, including all the silver and gold belonging to the Lord which may be found in Babylonia, <verse number="14" style="v" />and all that is given by the people of Israel for the Temple of their Lord. The silver and gold are to be collected to buy bulls, rams, lambs, and everything else that is necessary, <verse number="15" style="v" />so that sacrifices may be offered on the altar of the Lord in Jerusalem.</para>
+  <para style="pi">
+    <verse number="16" style="v" />“You may use the silver and gold for whatever you and the rest of your people desire, in accordance with the will of your God. <verse number="17-18" style="v" />You may obtain from the royal treasury the sacred vessels of the Lord that are being entrusted to you for use in the Temple of your God in Jerusalem, as well as anything else you may need for the Temple service.</para>
+  <para style="pi">
+    <verse number="19" style="v" />“I command all the treasury officials in Greater Syria and Phoenicia to provide promptly for Ezra, the priest and scholar of the Law of God Most High, everything he asks for, <verse number="20" style="v" />up to a limit of 7,500 pounds of silver, 500 bushels of wheat, 550 gallons of wine, and as much salt as may be needed. <verse number="21" style="v" />You must be careful to do everything that the Law requires in order to honor God Most High and so make sure that he is never angry with me or with those who reign after me. <verse number="22" style="v" />You are forbidden to collect any taxes from the priests, Levites, musicians, guards, workmen, or anyone else connected with this Temple. No one has the right to impose any burden on them.</para>
+  <para style="pi">
+    <verse number="23" style="v" />“You, Ezra, using the wisdom that comes from God, shall appoint administrators and judges to govern all the people in Greater Syria and Phoenicia who live by the Law of your God. You must teach that Law to anyone who does not know it. <verse number="24" style="v" />If anyone disobeys the laws of your God or the laws of the empire, he is to be punished promptly: by death, by fine, by exile, or by some other punishment.”</para>
+  <para style="s">Ezra Praises God</para>
+  <para style="r">(Ezra 7.27,28)</para>
+  <para style="p">
+    <verse number="25" style="v" />Ezra said, “Praise the Lord, the Lord alone! He has made the emperor willing to restore the glory of the Temple of the Lord in Jerusalem. <verse number="26" style="v" />By God's grace, I have won the respect of the emperor, his counselors, all his Friends, and all his powerful officials. <verse number="27" style="v" />The Lord my God has given me courage, and I have been able to persuade many men to return with me.”</para>
+  <para style="s">The People Who Returned from Exile</para>
+  <para style="r">(Ezra 8.1-14)</para>
+  <para style="p">
+    <verse number="28" style="v" />This is the list of the leaders of the clans and families who had been in exile in Babylonia and returned with Ezra to Jerusalem when Artaxerxes was emperor:</para>
+  <para style="li">
+    <verse number="29-40" style="v" />Gershom, of the clan of Phinehas</para>
+  <para style="li">Gamael, of the clan of Ithamar</para>
+  <para style="li">Hattush son of Shecaniah, of the clan of David</para>
+  <para style="li">Zechariah, of the clan of Parosh, with 150 men of his clan (there were records of their family line)</para>
+  <para style="li">Eliehoenai son of Zechariah, of the clan of Pahath Moab, with 200 men</para>
+  <para style="li">Shecaniah son of Jehaziel, of the clan of Zattu, with 300 men</para>
+  <para style="li">Ebed son of Jonathan, of the clan of Adin, with 250 men</para>
+  <para style="li">Jeshaiah son of Gotholiah, of the clan of Elam, with 70 men</para>
+  <para style="li">Zeraiah son of Michael, of the clan of Shephatiah, with 70 men</para>
+  <para style="li">Obadiah son of Jehiel, of the clan of Joab, with 212 men</para>
+  <para style="li">Shelomith son of Josiphiah, of the clan of Bani, with 160 men</para>
+  <para style="li">Zechariah son of Bebai, of the clan of Bebai, with 28 men</para>
+  <para style="li">Johanan son of Hakkatan, of the clan of Azgad, with 110 men</para>
+  <para style="li">Eliphelet, Jeuel, and Shemaiah, of the clan of Adonikam, with 70 men (they returned at a later date)</para>
+  <para style="li">Uthai son of Istalcurus, of the clan of Bigvai, with 70 men</para>
+  <para style="s">Ezra Finds Priests and Levites for the Temple</para>
+  <para style="r">(Ezra 8.15-20)</para>
+  <para style="p">
+    <verse number="41" style="v" />I assembled the entire group at Theras River, and we camped there for three days. I inspected them <verse number="42" style="v" />and found that there were no priests or Levites in the group, <verse number="43-44" style="v" />so I sent a message to ten of the leaders who were competent men: Eliezer, Iduel, Maasmas, Elnathan, Shemaiah, Jarib, Nathan, Elnathan, Zechariah, and Meshullam. <verse number="45" style="v" />I told them to go to Iddo, the chief official at the treasury, <verse number="46" style="v" />and ask him, his associates, and the treasury officials to send us priests to serve in the Temple of our Lord. <verse number="47" style="v" />With God's help, they sent us some able men: Sherebiah, a Levite from the clan of Mahli, with eighteen of his sons and relatives, <verse number="48" style="v" />and Hashabiah, Annunus, and his brother Jeshaiah of the clan of Hananiah, with twenty of their sons. <verse number="49" style="v" />There were also 220 Temple workmen whose ancestors had been designated by King David and his officials to assist the Levites. They were all listed in the register by name.</para>
+  <para style="s">Ezra Leads the People in Fasting and Prayer</para>
+  <para style="r">(Ezra 8.21-23)</para>
+  <para style="p">
+    <verse number="50" style="v" />There by Theras River I made a vow that the young men should fast in the presence of our Lord and ask him for a safe journey for us, our children, and our animals. <verse number="51" style="v" />I would have been ashamed to ask the emperor for infantry and cavalry to accompany us and protect us from our enemies, <verse number="52" style="v" />because I had told him that our Lord by his strength blesses and protects those who trust him. <verse number="53" style="v" />So once again we prayed for our Lord to protect us, and he answered our prayers.</para>
+  <para style="s">The Gifts for the Temple</para>
+  <para style="r">(Ezra 8.24-30)</para>
+  <para style="p">
+    <verse number="54" style="v" />From among the leading priests I chose Sherebiah, Hashabiah, and ten others. <verse number="55" style="v" />Then I weighed out the silver, the gold, and the sacred utensils which the emperor, his advisers and officials, and the people of Israel had given to be used in the Temple, and I gave it to the priests. <verse number="56-57" style="v" />This is what I gave them:</para>
+  <para style="b" />
+  <table>
+    <row style="tr">
+      <cell style="tc1" align="start">silver </cell>
+      <cell style="tc2" align="start">25 tons</cell>
+    </row>
+    <row style="tr">
+      <cell style="tc1" align="start">silver utensils </cell>
+      <cell style="tc2" align="start">7,500 pounds</cell>
+    </row>
+    <row style="tr">
+      <cell style="tc1" align="start">gold </cell>
+      <cell style="tc2" align="start">7,500 pounds</cell>
+    </row>
+    <row style="tr">
+      <cell style="tc1" align="start">gold bowls </cell>
+      <cell style="tc2" align="start">20</cell>
+    </row>
+    <row style="tr">
+      <cell style="tc1" align="start">fine bronze bowls that looked like gold </cell>
+      <cell style="tc2" align="start">12</cell>
+    </row>
+  </table>
+  <para style="b" />
+  <para style="p">
+    <verse number="58" style="v" />I said to the priests, “You are sacred to the Lord, the Lord of our ancestors, and so are the utensils and the silver and gold brought to him in fulfillment of a vow. <verse number="59" style="v" />Guard them carefully until you reach the Temple. There in the priests' rooms, turn them over to the leaders of the priests and the Levites and to the leaders of the people of Israel in Jerusalem.” <verse number="60" style="v" />So the priests and the Levites took charge of the silver, the gold, and the utensils for Jerusalem and brought them to the Temple.</para>
+  <para style="s">The Return to Jerusalem</para>
+  <para style="r">(Ezra 8.31-36)</para>
+  <para style="p">
+    <verse number="61" style="v" />It was on the twelfth day of the first month that we left Theras River, and with the Lord's presence and protection we reached Jerusalem. He protected us from all our enemies on our journey, and we arrived safely. <verse number="62" style="v" />After we had been there three days, we went to the Temple, weighed the silver and gold and turned it all over to Meremoth the priest, son of Uriah. <verse number="63" style="v" />With him were Eleazar son of Phinehas and two Levites, Jozabad son of Jeshua and Moeth son of Sabannus. <verse number="64" style="v" />Everything was counted and weighed, and a complete record was made at the same time.</para>
+  <para style="p">
+    <verse number="65" style="v" />All those who had returned from exile then offered sacrifices to the Lord, the God of Israel. They offered 12 bulls for all Israel, 96 rams, <verse number="66" style="v" />and 72 lambs; they also offered 12 goats as a fellowship offering. They sacrificed all these animals to the Lord. <verse number="67" style="v" />Then they took the decree the emperor had given them and gave it to the governors and officials of Greater Syria and Phoenicia, who then honored the Jewish people and the Temple of the Lord.</para>
+  <para style="s">Ezra Learns of Intermarriages with Non-Jews</para>
+  <para style="r">(Ezra 9.1-15)</para>
+  <para style="p">
+    <verse number="68" style="v" />After all this had been done, some of the leaders of the people of Israel came and told me that <verse number="69" style="v" />the people, the leaders, the priests, and the Levites had not kept themselves separate from the people in the neighboring countries of Edom, Moab, and Egypt, or from the Canaanites, Hittites, Perizzites, and Jebusites. They were doing the same disgusting things which those people did. <verse number="70" style="v" />God's holy people had become contaminated because Jewish men were marrying foreign women. Even the leaders and the officials had taken part in this breaking of the Law from the very beginning. <verse number="71" style="v" />As soon as I heard this, I tore my clothes and my sacred robe in despair. I also tore my hair and my beard, and sat down crushed with anxiety and grief. <verse number="72" style="v" />I sat there grieving about this sin until it was time for the evening sacrifice to be offered, when people began to gather around me—all those who were disturbed by what the Lord of Israel had said.</para>
+  <para style="p">
+    <verse number="73" style="v" />Then I got up from where I had been fasting, and still wearing my torn clothes, I knelt in prayer and stretched out my hands to the Lord. <verse number="74" style="v" />I said, “O Lord, I am ashamed and confused in your presence. <verse number="75" style="v" />Our sins tower over our heads; they reach as high as the heavens. <verse number="76" style="v" />This has been true from the days of our ancestors until now; we, your people, have sinned greatly. <verse number="77" style="v" />Because of our sins and the sins of our ancestors, we and our relatives, our kings, and our priests have fallen into the hands of foreign kings, and we have been slaughtered, robbed, and carried away as prisoners. We have been totally disgraced, as we still are today. <verse number="78" style="v" />Now, Lord, for a short time you have shown us great mercy. You have allowed just a few of us to survive in order to carry on the name Israel here in your holy Temple. <verse number="79" style="v" />You have let the light of our nation shine again, after feeding us and taking care of us during the time of our slavery. <verse number="80" style="v" />Even when we were slaves you did not abandon us; you made the emperors of Persia favor us, so that they gave us food, <verse number="81" style="v" />restored the glory of your Temple, rebuilt the city of Jerusalem out of its ruins, and gave us a place of security here in Judah and Jerusalem.</para>
+  <para style="p">
+    <verse number="82" style="v" />“But now, Lord, what can we say, after you have done all this for us? We have again disobeyed the commands that you gave us through your servants, the prophets. They told us that <verse number="83" style="v" />the land we were to occupy was an impure land because the heathen people who lived in it filled it with their disgusting deeds. <verse number="84" style="v" /><note caller="-" style="x"><char style="xo" closed="false">8.84,85: </char><char style="xt" closed="false">Ex 34.11-16; Dt 7.1-5.</char></note> They told us that we should never intermarry with those people <verse number="85" style="v" />and never seek peaceful relations with them if we wanted to be strong and enjoy the land and pass it on to our descendants forever. <verse number="86" style="v" />Even after everything that has happened to us in punishment for our sins, we know that you, Lord, have punished us less than we deserve <verse number="87" style="v" />and have allowed us to survive. But we have rebelled again, broken your Law, and intermarried with these wicked people. <verse number="88" style="v" />Yet you were not angry enough to destroy us completely and leave none of us alive, with no descendants and without our name. <verse number="89" style="v" />Lord of Israel, you are faithful; you have allowed us to survive. <verse number="90" style="v" />We confess our guilt to you; we have no right to come into your presence.”</para>
+  <para style="s">The Plan for Ending Mixed Marriages</para>
+  <para style="r">(Ezra 10.1-17)</para>
+  <para style="p">
+    <verse number="91" style="v" />While Ezra was bowing in prayer in front of the Temple, weeping and confessing these sins, a large group of people from Jerusalem—men, women, and children—gathered around him, all of them weeping bitterly. <verse number="92" style="v" />Then Shecaniah son of Jehiel, one of the Israelites, said to Ezra, “We have sinned against the Lord by marrying foreign women, but even so, there is still hope for Israel. <verse number="93" style="v" />Now we must make a solemn promise to the Lord that we will send all these foreign women and their children away. <verse number="94" style="v" />We will do what you and the others who obey the Law of the Lord advise us to do. <verse number="95" style="v" />It is your responsibility to act. We are behind you, so go ahead and get it done.”</para>
+  <para style="p">
+    <verse number="96" style="v" />So Ezra began by making the leaders of the priests, of the Levites, and of the rest of the people take an oath that they would divorce their foreign wives.</para>
+  <chapter number="9" style="c" />
+  <para style="p">
+    <verse number="1" style="v" />Then Ezra went from the court of the Temple into the living quarters of Jehohanan son of Eliashib <verse number="2" style="v" />and spent the night there grieving over the people's terrible violation of the Law. He did not eat or drink anything.</para>
+  <para style="p">
+    <verse number="3" style="v" />A message was sent throughout Jerusalem and Judah, calling all those who had returned from exile to meet in Jerusalem, <verse number="4" style="v" />by order of the leaders of the people. If anyone failed to come within two or three days, his cattle would be confiscated, and he would lose his right to be a member of the community.</para>
+  <para style="p">
+    <verse number="5" style="v" />Within the three days, on the twentieth day of the ninth month, all the men of the tribes of Judah and Benjamin came to Jerusalem <verse number="6" style="v" />and assembled in the Temple square. Everyone was shivering from the cold because it was wintertime.</para>
+  <para style="p">
+    <verse number="7" style="v" />Then Ezra stood up and spoke to them, “You have broken the Law and brought guilt on Israel by marrying foreign women. <verse number="8" style="v" />Now then, tell the truth and confess your sins to the Lord, the God of our ancestors, <verse number="9" style="v" />and do what he requires. Separate yourselves from the foreigners living in our land and get rid of your foreign wives.”</para>
+  <para style="p">
+    <verse number="10" style="v" />The people shouted in reply, “We will do whatever you say.” <verse number="11" style="v" />But they added, “The crowd is too big, and it's wintertime. We can't stand here in the open like this. This isn't something that can be settled in one or two days, since so many of us are involved in this sin. <verse number="12" style="v" />Let our officials stay in Jerusalem and take charge of the matter. Then let anyone who has a foreign wife come at an appointed time, <verse number="13" style="v" />together with the leaders and the judges of his city. In this way God's anger over this situation will be turned away.” <verse number="14" style="v" />Jonathan son of Asahel and Jahzeiah son of Tikvah assumed responsibility for the plan; and Meshullam, Levi, and Shabbethai served with them as judges.</para>
+  <para style="p">
+    <verse number="15" style="v" />The returned exiles carried out the investigation in full. <verse number="16" style="v" />Ezra the priest appointed men from among the heads of the clans and recorded their names. On the first day of the tenth month they began their investigation. <verse number="17" style="v" />And within the next three months they investigated all the cases of men with foreign wives.</para>
+  <para style="s">The Men Who Had Foreign Wives</para>
+  <para style="r">(Ezra 10.18-44)</para>
+  <para style="p">
+    <verse number="18" style="v" />The following is a list of the men who had foreign wives:</para>
+  <para style="s3">Priests, <char style="no">listed by clans:</char></para>
+  <para style="p">
+    <verse number="19" style="v" />Clan of Joshua and his brothers, sons of Jozadak: Maaseiah, Eliezar, Jarib, and Jodan. <verse number="20" style="v" />They promised to divorce their wives, and they offered rams as a sacrifice for their sins.</para>
+  <para style="p">
+    <verse number="21" style="v" />Clan of Immer: Hanani, Zebadiah, Manes, Shemaiah, Jehiel, and Azariah</para>
+  <para style="p">
+    <verse number="22" style="v" />Clan of Pashhur: Elioenai, Maaseiah, Ishmael, Nathanael, Okidelus, and Elasah</para>
+  <para style="s3">
+    <verse number="23" style="v" />Levites</para>
+  <para style="p">Jozabad, Shimei, Kelaiah (also called Kelita), Pethahiah, Judah, and Jonah</para>
+  <para style="s3">
+    <verse number="24" style="v" />Musicians</para>
+  <para style="p">Eliashib and Bacchurus</para>
+  <para style="s3">
+    <verse number="25" style="v" />Temple guards</para>
+  <para style="p">Shallum and Telem</para>
+  <para style="s3">
+    <verse number="26" style="v" />Others</para>
+  <para style="p">Clan of Parosh: Ramiah, Izziah, Malchijah, Milelos, Eleazar, Asebiah, Benaiah</para>
+  <para style="p">
+    <verse number="27" style="v" />Clan of Elam: Mattaniah, Zechariah, Jezriel, Abdi, Jeremoth, and Elijah</para>
+  <para style="p">
+    <verse number="28" style="v" />Clan of Zattu: Elioenai, Eliashib, Othoniah, Jeremoth, Zabad, and Zerdaiah</para>
+  <para style="p">
+    <verse number="29" style="v" />Clan of Bebai: Jehohanan, Hananiah, Zabbai, and Emathis</para>
+  <para style="p">
+    <verse number="30" style="v" />Clan of Bani: Meshullam, Malluch, Adaiah, Jashub, Sheal, and Jeremoth</para>
+  <para style="p">
+    <verse number="31" style="v" />Clan of Addi: Naathus, Moossias, Laccunus, Naidus, Bescaspasmys, Sesthel, Belnuus, and Manasseas</para>
+  <para style="p">
+    <verse number="32" style="v" />Clan of Annan: Elionas, Asiah, Melchiah, Sabbaiah, and Simon Chosamaeus</para>
+  <para style="p">
+    <verse number="33" style="v" />Clan of Hashum: Mattenai, Mattattah, Zabad, Eliphelet, Manasseh, and Shimei</para>
+  <para style="p">
+    <verse number="34" style="v" />Clan of Bani: Jeremai, Maadai, Amram, Joel, Mamdai, Bedeiah, Vaniah, Carabasion, Eliashib, Machnadebai, Eliasis, Binnui, Elialis, Shimei, Shelemiah, and Nathaniah</para>
+  <para style="p">Clan of Ezora: Shashai, Azarel, Azael, Shemaiah, Amariah, and Joseph</para>
+  <para style="p">
+    <verse number="35" style="v" />Clan of Nebo: Mattithiah, Zabad, Iddo, Joel, and Benaiah</para>
+  <para style="p">
+    <verse number="36" style="v" />All these men had foreign wives. They divorced them and sent them and their children away.</para>
+  <para style="s">Ezra Reads the Law to the People</para>
+  <para style="r">(Nehemiah 7.73—8.12)</para>
+  <para style="p">
+    <verse number="37" style="v" />
+    <note caller="-" style="x">
+      <char style="xo" closed="false">9.37: </char>
+      <char style="xt" closed="false">1 Ch 9.2; Ne 11.3.</char>
+    </note> The priests, the Levites, and many of the ordinary people of Israel settled in Jerusalem and its vicinity. By the seventh month the other Israelites were all settled in their towns. On the first day of that month <verse number="38" style="v" />they all assembled in Jerusalem in the square just inside the east gate of the Temple. <verse number="39" style="v" />They asked Ezra, the High Priest and scholar of the Law which the Lord had given Israel through Moses, to bring the book of the Law. <verse number="40" style="v" />So Ezra brought it to the place where all the people—men, women, and all the priests—had gathered to hear it. <verse number="41" style="v" />There in the square by the gate he read the Law to them from dawn until noon, and they all listened attentively.</para>
+  <para style="p">
+    <verse number="42" style="v" />Ezra was standing on a wooden platform that had been built for the occasion. <verse number="43" style="v" />The following men stood at his right: Mattathiah, Shema, Ananiah, Azariah, Uriah, Hezekiah, and Baalsamos; <verse number="44" style="v" />and the following stood at his left: Pedaiah, Mishael, Malchijah, Lothasubus, Nabariah, and Zechariah.</para>
+  <para style="p">
+    <verse number="45" style="v" />Ezra took his seat on the platform in a prominent place where everyone could see him. As soon as he took the book of the Law <verse number="46" style="v" />and opened it, all the people stood up. Ezra said, “Praise the Lord, God Most High, God Almighty, Ruler of all.”</para>
+  <para style="p">
+    <verse number="47" style="v" />All the people raised their arms in the air and answered, “Amen!” They knelt down in worship, with their faces to the ground.</para>
+  <para style="p">
+    <verse number="48" style="v" />The following Levites taught the Law of the Lord to the people: Jeshua, Anniuth, Sherebiah, Jamin, Akkub, Shabbethai, Hodiah, Maiannas, Kelita, Azariah, Jozabad, Hanan, and Peliah. They read the Law to the people and explained what was read.</para>
+  <para style="p">
+    <verse number="49-50" style="v" />When the people heard what the Law required, they were so moved that they began to weep. The governor <note caller="+" style="f"><char style="fr" closed="false">9.49-50: </char><char style="ft" closed="false">Probable meaning </char><char style="fq" closed="false">The governor; </char><char style="ft" closed="false">Greek </char><char style="fq" closed="false">Attharates.</char></note> said to Ezra, the priest and scholar of the Law, and to all the Levites who were teaching the people, “This day is holy to the Lord; <verse number="51" style="v" />go home and have a feast. Share your food and wine with those who don't have any. <verse number="52" style="v" />Today is holy to the Lord, so don't be sad. He will restore your former glory.”</para>
+  <para style="p">
+    <verse number="53" style="v" />The Levites gave the command to all the people: “This day is holy; do not be sad.” <verse number="54" style="v" />So all the people went home and joyfully ate and drank and shared what they had with those who had nothing. They celebrated <verse number="55" style="v" />because they understood what had been read to them.</para>
+  <para style="p">Then they assembled…. <note caller="+" style="f"><char style="fr" closed="false">9.55: </char><char style="ft" closed="false">Originally the Greek text must have continued (see Ne 8.13).</char></note></para>
+</usx>

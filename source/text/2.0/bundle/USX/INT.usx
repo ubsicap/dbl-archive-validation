@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<usx version="3.0">
+  <book code="INT" style="id">English: Good News Translation 2nd Ed. 1992</book>
+  <periph alt="Old Testament Title Page" id="x-intot-titlePage">
+    <para style="mt1">The Holy Bible - Old Testament</para>
+  </periph>
+  <periph alt="Introduction to Old Testament" id="intot">
+    <para style="mt1">Old Testament</para>
+    <para style="s">About the Old Testament</para>
+    <para style="p">The following books ...</para>
+  </periph>
+  <periph alt="New Testament Title Page" id="x-intnt-titlePage">
+    <para style="mt1">The Holy Bible - New Testament</para>
+  </periph>
+  <periph alt="Introduction to New Testament" id="intnt">
+    <para style="mt1">Old Testament</para>
+    <para style="s">About the New Testament</para>
+    <para style="p">The following books ...</para>
+  </periph>
+  <periph alt="Deuterocanon Title Page" id="x-intdc-titlePage">
+    <para style="mt1">The Holy Bible - Deuterocanon / Apocrypha</para>
+  </periph>
+  <periph alt="Introduction to the Deuterocanon" id="intdc">
+    <para style="mt1">Deuterocanonicals / Apocrypha</para>
+    <para style="p">The following books: Tobit, Judith, Esther (the Greek text),Wisdom of Solomon, Sirach, Baruch, Letter of Jeremiah, Song of the Three Young Men, Susanna, Bel and the Dragon, 1 Maccabees, and 2 Maccabees, formed part of the Septuagint Greek text and were interspersed among other books of the Old Testament.</para>
+    <para style="p">This Greek text was not only widely used by Jews but was known as well by numerous “God-fearing” Gentiles who were attracted to the high moral teachings of the Old Testament, even though they had not themselves become converts to Judaism. One can thus readily understand how and why early Christianity, as it spread among Greek-speaking Jews and Gentiles, employed this Greek text. In fact, the majority of Old Testament quotations in the New Testament are based on this translation.</para>
+    <para style="p">Precisely when Jewish leadership officially adopted the traditional 39 books of the so-called “Hebrew Canon” is not known; nor is there agreement as to exactly what criteria were used in determining the canon. According to tradition the determination of the books of the Hebrew canon was made about <char style="sc">a.d.</char> 90, but there is evidence to believe that official and widespread agreement on this issue came somewhat later.</para>
+    <para style="p">Among Christians it was apparently only in the fourth century that the issue of the canonicity of these books arose, a situation which is reflected in Jerome’s placing these books in a separated section in his Vulgate translation of the Old Testament.</para>
+    <para style="p">In 1546 at the Council of Trent the Roman Catholic Church officially declared these books to be sacred and canonical and to be accepted “with equal devotion and reverence.”</para>
+    <para style="p">At the time of the Reformation Martin Luther did not regard these books as Scripture but as “useful and good for reading.” In his German translation of the Bible he followed the practice of Jerome in placing them at the end of the Old Testament with the superscription “Apocrypha.” Protestants generally continued this practice in their translations of the Bible into such languages as Swedish, Norwegian, Danish, Slovenian, French, Spanish, and English (King James Version).</para>
+    <para style="p">Among Christians who do not accept these books as Scripture there is, however, widespread agreement as to their importance in providing much valuable information on Jewish history, life, thought, worship, and religious practice during the centuries immediately prior to the time of Christ. Accordingly, they make possible a clearer understanding of the historical and cultural situation in which Jesus lived and taught.</para>
+    <para style="p">Catholics speak of these books as “deuterocanonical” to indicate that their canonical status as Scripture was settled later than that of the protocanonical books. Protestants usually refer to these books as Apocrypha.</para>
+  </periph>
+</usx>

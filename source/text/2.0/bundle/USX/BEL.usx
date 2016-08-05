@@ -1,0 +1,84 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<usx version="2.5">
+  <book code="BEL" style="id">English: Good News Translation 2nd Ed. 1992</book>
+  <para style="ide">Unicode (UTF8)</para>
+  <para style="rem">For any non-Paratext use of this text, permission must be obtained from the copyright holder.</para>
+  <para style="rem">CAP Information: checked/corrected 2008</para>
+  <para style="rem">The versification markup of this file is currently in the process of standardization. Please do not use as a model.</para>
+  <para style="h">Bel and the Dragon</para>
+  <para style="toc1">BEL AND THE DRAGON</para>
+  <para style="toc2">Bel and the Dragon</para>
+  <para style="toc3">Bel</para>
+  <para style="mt1">BEL AND THE DRAGON</para>
+  <para style="imt">Introduction</para>
+  <para style="ip">
+    <char style="bk">Bel and the Dragon</char> consists of two stories which were added to the Greek translation of <char style="bk">The Book of Daniel</char> The first tells of Daniel's wisdom and courage in revealing the falseness of the idol Bel, and the second describes how he destroyed a dragon which was worshiped by the Babylonians.</para>
+  <para style="iot">Outline of Contents</para>
+  <para style="io1">Daniel's wisdom defeats the priests of Bel <char style="ior">(1-22)</char></para>
+  <para style="io1">Daniel kills the dragon <char style="ior">(23-32)</char></para>
+  <para style="io1">Daniel is rescued from the pit of lions <char style="ior">(33-42)</char></para>
+  <chapter number="1" style="c" pubnumber="14" />
+  <para style="s">Daniel and the Priests of Bel</para>
+  <para style="p">
+    <verse number="1" style="v" />After the death of King Astyages, Cyrus of Persia took over his kingdom. <verse number="2" style="v" />Daniel was one of King Cyrus' closest companions, and the king thought more highly of Daniel than of any other of his advisers.</para>
+  <para style="p">
+    <verse number="3" style="v" />
+    <note caller="-" style="x">
+      <char style="xo" closed="false">3: </char>
+      <char style="xt" closed="false">Is 46.1; Jr 51.44.</char>
+    </note> The Babylonians had an idol named Bel. Each day the people had to provide Bel with an offering of twelve bushels of fine flour, forty sheep, and fifty gallons of wine. <verse number="4" style="v" />King Cyrus believed that Bel was a god, and each day he used to go and worship it. But Daniel worshiped his own God.</para>
+  <para style="p">
+    <verse number="5" style="v" />One day the king asked Daniel, “Why don't you worship Bel?”</para>
+  <para style="p">Daniel answered, “I do not worship idols made with human hands. I worship only the living God, who created heaven and earth and is the Lord of all human beings.”</para>
+  <para style="p">
+    <verse number="6" style="v" />“And don't you believe that our god Bel is really alive?” asked the king. “Haven't you seen how much he eats and drinks every day?”</para>
+  <para style="p">
+    <verse number="7" style="v" />Daniel laughed and said, “Don't be fooled, Your Majesty. This god you call Bel is nothing more than clay covered with bronze; it has never eaten or drunk anything.”</para>
+  <para style="p">
+    <verse number="8-10" style="v" />At this the king became angry and called in all seventy of the priests of Bel. He said to them, “I warn you that you will be put to death, unless you can show me that it is Bel who is eating these offerings. If you prove to me that it is Bel, then I will have Daniel put to death for claiming that Bel is not a god.”</para>
+  <para style="p">Daniel agreed to this proposal.</para>
+  <para style="p">
+    <verse number="11" style="v" />Then they all went with the king into Bel's temple, where the priests said to the king, “Your Majesty, we will go out and let you place the food on the table and prepare the wine. When you leave, you may lock the door behind you and seal it with the royal seal. <verse number="12" style="v" />In the morning when you return, if you find that Bel has not eaten everything, you can put us to death. But if he has, Daniel will die for making false accusations against us.”</para>
+  <para style="p">
+    <verse number="13" style="v" />But the priests were not worried, because they had made a secret entrance underneath a table in the temple, so that they could go in every night and eat the offerings.</para>
+  <para style="p">
+    <verse number="14" style="v" />When the priests had left, the king set out the food for Bel. Then Daniel ordered his servants to bring some ashes and scatter them all over the floor of the temple. No one except the king saw them do this. After that they all went out, locked the door, sealed it with the royal seal, and left.</para>
+  <para style="p">
+    <verse number="15" style="v" />That night, as usual, the priests with their wives and children came into the temple by the secret entrance and ate all the food and drank all the wine.</para>
+  <para style="p">
+    <verse number="16" style="v" />Early the next morning, the king and Daniel went to the temple. <verse number="17" style="v" />The king asked, “Have the seals been broken, Daniel?”</para>
+  <para style="p">“No, Your Majesty, they have not been broken,” he replied.</para>
+  <para style="p">
+    <verse number="18" style="v" />As soon as the door was opened, the king saw the empty table and shouted, “You are great, O Bel! You really are a god.”</para>
+  <para style="p">
+    <verse number="19" style="v" />But Daniel began to laugh and said to the king, “Before you enter the temple, look at the floor and tell me whose footprints you see there.”</para>
+  <para style="p">
+    <verse number="20" style="v" />“I see the footprints of men, women, and children,” said the king, <verse number="21" style="v" />and he became so angry that he had the priests and their families arrested and brought to him. They showed him the secret doors through which they had come in each night to eat the food placed on the table. <verse number="22" style="v" />So the king had the priests put to death, and he gave Bel to Daniel, who destroyed the idol and tore down its temple.</para>
+  <para style="s">Daniel Kills the Dragon</para>
+  <para style="p">
+    <verse number="23" style="v" />There was also a huge dragon which the Babylonians worshiped. <verse number="24" style="v" />One day the king said to Daniel, “You can't tell me that this god is not alive. So worship him!”</para>
+  <para style="p">
+    <verse number="25" style="v" />“I worship the Lord,” replied Daniel. “He is the only living God. <verse number="26" style="v" />And if Your Majesty will give me permission, I will kill this dragon of yours without using a sword or a club.”</para>
+  <para style="p">“You have my permission,” answered the king.</para>
+  <para style="p">
+    <verse number="27" style="v" />So Daniel took some tar, some fat, and some hair and boiled them all together. He made cakes out of the mixture and fed them to the dragon. When the dragon ate them, it swelled up and burst open. “That's the kind of thing you Babylonians worship,” said Daniel.</para>
+  <para style="p">
+    <verse number="28" style="v" />When the people of Babylon heard what had happened, they staged an angry demonstration against the king. “The king has become a Jew,” they shouted. “First he destroyed Bel and slaughtered the priests, and now he has killed our dragon.” <verse number="29" style="v" />They went to the king and demanded that Daniel be handed over to them. “If you refuse,” they warned the king, “we will put you and your family to death.”</para>
+  <para style="p">
+    <verse number="30" style="v" />When the king saw that they meant what they said, he was forced to hand Daniel over to them. <verse number="31" style="v" /><note caller="-" style="x"><char style="xo" closed="false">31,32: </char><char style="xt" closed="false">Dn 6.16-24.</char></note> They threw him into a pit of lions, where they left him for six days. <verse number="32" style="v" />There were seven lions in the pit, and normally they were fed two human bodies and two sheep each day. But they were given nothing to eat during these six days, in order to make sure that Daniel would be eaten.</para>
+  <para style="s">Daniel Is Rescued from the Pit of Lions</para>
+  <para style="p">
+    <verse number="33" style="v" />At that time the prophet Habakkuk was in the land of Judah. He had cooked a stew and crumbled bread into it. He was carrying a bowl of it to the workers who were out in the fields harvesting grain, <verse number="34" style="v" />when an angel of the Lord spoke to him, “Take the food you are carrying and give it to Daniel, who is in Babylon in a pit of lions.”</para>
+  <para style="p">
+    <verse number="35" style="v" />Habakkuk answered, “Sir, I have never been to Babylon, and I don't know where the pit of lions is.”</para>
+  <para style="p">
+    <verse number="36" style="v" />
+    <note caller="-" style="x">
+      <char style="xo" closed="false">36: </char>
+      <char style="xt" closed="false">Ez 8.3.</char>
+    </note> So the angel grabbed the prophet by the hair and took him to Babylon with the speed of the wind. <note caller="+" style="f"><char style="fr" closed="false">1.36: </char><char style="fq" closed="false">with the speed of the wind; </char><char style="ft" closed="false">or </char><char style="fq" closed="false">by the power of his spirit.</char></note> He set him down near the pit of lions. <verse number="37" style="v" />Habakkuk called out, “Daniel! Daniel! God has sent you some food. Here, take it.”</para>
+  <para style="p">
+    <verse number="38" style="v" />When Daniel heard Habakkuk, he prayed, “God, you did remember me; you never abandon those who love you.” <verse number="39" style="v" />Then he got up and ate the meal, and God's angel immediately took Habakkuk home.</para>
+  <para style="p">
+    <verse number="40" style="v" />Seven days after Daniel had been thrown to the lions, the king went to the pit to mourn for him. When he got there and looked in, there sat Daniel. <verse number="41" style="v" />The king shouted, “O Lord, the God of Daniel, how great you are. You alone are God.” <verse number="42" style="v" />So he pulled Daniel out of the pit and had those who had tried to kill Daniel thrown into it. And the lions ate them immediately, while the king watched.</para>
+</usx>

@@ -1,0 +1,126 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<usx version="2.5">
+  <book code="RUT" style="id">English: Good News Translation 2nd Ed. 1992</book>
+  <para style="ide">Unicode (UTF8)</para>
+  <para style="rem">For any non-Paratext use of this text, permission must be obtained from the copyright holder.</para>
+  <para style="rem">CAP Information: checked/corrected 2008</para>
+  <para style="h">Ruth</para>
+  <para style="toc1">The Book of RUTH</para>
+  <para style="toc2">Ruth</para>
+  <para style="toc3">Ru</para>
+  <para style="mt2">The Book of</para>
+  <para style="mt1">RUTH</para>
+  <para style="imt">Introduction</para>
+  <para style="ip">The peaceful story of <char style="bk">Ruth</char> is set in the violent times of <char style="bk">The book of Judges</char>. Ruth, a Moabite woman, is married to an Israelite. When he dies, Ruth shows uncommon loyalty to her Israelite mother-in-law and deep devotion to the God of Israel. In the end she finds a new husband among her former husband's relatives, and through this marriage becomes the great-grandmother of David, Israel's greatest king.</para>
+  <para style="ip">The stories of <char style="bk">Judges</char> show the disaster that came when God's people turned away from him. <char style="bk">Ruth</char> shows the blessing that came to a foreigner who turned to Israel's God and so became part of his faithful people.</para>
+  <para style="iot">Outline of Contents</para>
+  <para style="io1">Naomi returns to Bethlehem with Ruth <char style="ior">(1.1-22)</char></para>
+  <para style="io1">Ruth meets Boaz <char style="ior">(2.1–3.18)</char></para>
+  <para style="io1">Boaz marries Ruth <char style="ior">(4.1-22)</char></para>
+  <chapter number="1" style="c" />
+  <para style="s">Elimelech and His Family Move to Moab</para>
+  <para style="p">
+    <verse number="1,2" style="v" />Long ago, in the days before Israel had a king, there was a famine in the land. So a man named Elimelech, who belonged to the clan of Ephrath and who lived in Bethlehem in Judah, went with his wife Naomi and their two sons Mahlon and Chilion to live for a while in the country of Moab. While they were living there, <verse number="3" style="v" />Elimelech died, and Naomi was left alone with her two sons, <verse number="4" style="v" />who married Moabite women, Orpah and Ruth. About ten years later <verse number="5" style="v" />Mahlon and Chilion also died, and Naomi was left all alone, without husband or sons.</para>
+  <para style="s">Naomi and Ruth Return to Bethlehem</para>
+  <para style="p">
+    <verse number="6" style="v" />Some time later Naomi heard that the <char style="nd">Lord</char> had blessed his people by giving them good crops; so she got ready to leave Moab with her daughters-in-law. <verse number="7" style="v" />They started out together to go back to Judah, but on the way <verse number="8" style="v" />she said to them, “Go back home and stay with your mothers. May the <char style="nd">Lord</char> be as good to you as you have been to me and to those who have died. <verse number="9" style="v" />And may the <char style="nd">Lord</char> make it possible for each of you to marry again and have a home.”</para>
+  <para style="p">So Naomi kissed them good-bye. But they started crying <verse number="10" style="v" />and said to her, “No! We will go with you to your people.”</para>
+  <para style="p">
+    <verse number="11" style="v" />“You must go back, my daughters,” Naomi answered. “Why do you want to come with me? Do you think I could have sons again for you to marry? <verse number="12" style="v" />Go back home, for I am too old to get married again. Even if I thought there was still hope, and so got married tonight and had sons, <verse number="13" style="v" />would you wait until they had grown up? Would this keep you from marrying someone else? No, my daughters, you know that's impossible. The <char style="nd">Lord</char> has turned against me, and I feel very sorry for you.” <note caller="+" style="f"><char style="fr" closed="false">1.13: </char><char style="fq" closed="false">sorry for you; </char><char style="ft" closed="false">or </char><char style="fq" closed="false">bitter about what has happened to you.</char></note></para>
+  <para style="p">
+    <verse number="14" style="v" />Again they started crying. Then Orpah kissed her mother-in-law good-bye and went back home, <note caller="+" style="f"><char style="fr" closed="false">1.14: </char><char style="ft" closed="false">One ancient translation </char><char style="fq" closed="false">and went back home; </char><char style="ft" closed="false">Hebrew does not have these words.</char></note> but Ruth held on to her. <verse number="15" style="v" />So Naomi said to her, “Ruth, your sister-in-law has gone back to her people and to her god. <note caller="+" style="f"><char style="fr" closed="false">1.15: </char><char style="fq" closed="false">god; </char><char style="ft" closed="false">or </char><char style="fq" closed="false">gods.</char></note> Go back home with her.”</para>
+  <para style="p">
+    <verse number="16" style="v" />But Ruth answered, “Don't ask me to leave you! Let me go with you. Wherever you go, I will go; wherever you live, I will live. Your people will be my people, and your God will be my God. <verse number="17" style="v" />Wherever you die, I will die, and that is where I will be buried. May the <char style="nd">Lord</char>'s worst punishment come upon me if I let anything but death <note caller="+" style="f"><char style="fr" closed="false">1.17: </char><char style="fq" closed="false">anything but death; </char><char style="ft" closed="false">or </char><char style="fq" closed="false">even death.</char></note> separate me from you!”</para>
+  <para style="p">
+    <verse number="18" style="v" />When Naomi saw that Ruth was determined to go with her, she said nothing more.</para>
+  <para style="p">
+    <verse number="19" style="v" />They went on until they came to Bethlehem. When they arrived, the whole town became excited, and the women there exclaimed, “Is this really Naomi?”</para>
+  <para style="p">
+    <verse number="20" style="v" />“Don't call me Naomi,” she answered; “call me Marah, <note caller="+" style="f"><char style="fr" closed="false">1.20: </char><char style="fk" closed="false">Naomi…Marah: </char><char style="ft" closed="false">In Hebrew Naomi means “pleasant” and Marah means “bitter.”</char></note> because Almighty God has made my life bitter. <verse number="21" style="v" />When I left here, I had plenty, but the <char style="nd">Lord</char> has brought me back without a thing. Why call me Naomi when the <char style="nd">Lord</char> Almighty has condemned me and sent me trouble?”</para>
+  <para style="p">
+    <verse number="22" style="v" />This, then, was how Naomi came back from Moab with Ruth, her Moabite daughter-in-law. When they arrived in Bethlehem, the barley harvest was just beginning.</para>
+  <chapter number="2" style="c" />
+  <para style="s">Ruth Works in the Field of Boaz</para>
+  <para style="p">
+    <verse number="1" style="v" />Naomi had a relative named Boaz, a rich and influential man who belonged to the family of her husband Elimelech. <verse number="2" style="v" /><note caller="-" style="x"><char style="xo" closed="false">2.2: </char><char style="xt" closed="false">Lv 19.9,10; Dt 24.19.</char></note> One day Ruth said to Naomi, “Let me go to the fields to gather the grain that the harvest workers leave. I am sure to find someone who will let me work with him.”</para>
+  <para style="p">Naomi answered, “Go ahead, daughter.”</para>
+  <para style="p">
+    <verse number="3" style="v" />So Ruth went out to the fields and walked behind the workers, picking up the heads of grain which they left. It so happened that she was in a field that belonged to Boaz.</para>
+  <para style="p">
+    <verse number="4" style="v" />Some time later Boaz himself arrived from Bethlehem and greeted the workers. “The <char style="nd">Lord</char> be with you!” he said.</para>
+  <para style="p">“The <char style="nd">Lord</char> bless you!” they answered.</para>
+  <para style="p">
+    <verse number="5" style="v" />Boaz asked the man in charge, “Who is that young woman?”</para>
+  <para style="p">
+    <verse number="6" style="v" />The man answered, “She is the foreigner who came back from Moab with Naomi. <verse number="7" style="v" />She asked me to let her follow the workers and gather grain. She has been working since early morning and has just now stopped to rest for a while under the shelter.”</para>
+  <para style="p">
+    <verse number="8" style="v" />Then Boaz said to Ruth, “Let me give you some advice. Don't gather grain anywhere except in this field. Work with the women here; <verse number="9" style="v" />watch them to see where they are reaping and stay with them. I have ordered my men not to molest you. And whenever you are thirsty, go and drink from the water jars that they have filled.”</para>
+  <para style="p">
+    <verse number="10" style="v" />Ruth bowed down with her face touching the ground, and said to Boaz, “Why should you be so concerned about me? Why should you be so kind to a foreigner?”</para>
+  <para style="p">
+    <verse number="11" style="v" />Boaz answered, “I have heard about everything that you have done for your mother-in-law since your husband died. I know how you left your father and mother and your own country and how you came to live among a people you had never known before. <verse number="12" style="v" />May the <char style="nd">Lord</char> reward you for what you have done. May you have a full reward from the <char style="nd">Lord</char> God of Israel, to whom you have come for protection!”</para>
+  <para style="p">
+    <verse number="13" style="v" />Ruth answered, “You are very kind <note caller="+" style="f"><char style="fr" closed="false">2.13: </char><char style="fq" closed="false">You are very kind; </char><char style="ft" closed="false">or </char><char style="fq" closed="false">Please be kind.</char></note> to me, sir. You have made me feel better by speaking gently to me, even though I am not the equal of one of your servants.”</para>
+  <para style="p">
+    <verse number="14" style="v" />At mealtime Boaz said to Ruth, “Come and have a piece of bread, and dip it in the sauce.” So she sat with the workers, and Boaz passed some roasted grain to her. She ate until she was satisfied, and she still had some food left over. <verse number="15-16" style="v" />After she had left to go and gather grain, Boaz ordered the workers, “Let her gather grain even where the bundles are lying, and don't say anything to stop her. Besides that, pull out some heads of grain from the bundles and leave them for her to pick up.”</para>
+  <para style="p">
+    <verse number="17" style="v" />So Ruth gathered grain in the field until evening, and when she had beaten it out, she found she had nearly twenty-five pounds. <verse number="18" style="v" />She took the grain back into town and showed her mother-in-law how much she had gathered. She also gave her the food left over from the meal. <verse number="19" style="v" />Naomi asked her, “Where did you gather all this grain today? Whose field have you been working in? May God bless the man who took an interest in you!”</para>
+  <para style="p">So Ruth told Naomi that she had been working in a field belonging to a man named Boaz.</para>
+  <para style="p">
+    <verse number="20" style="v" />
+    <note caller="-" style="x">
+      <char style="xo" closed="false">2.20: </char>
+      <char style="xt" closed="false">Lv 25.25.</char>
+    </note> “May the <char style="nd">Lord</char> bless Boaz!” Naomi exclaimed. “The <char style="nd">Lord</char> always keeps his promises to the living and the dead.” And she went on, “That man is a close relative of ours, one of those responsible for taking care of us.”</para>
+  <para style="p">
+    <verse number="21" style="v" />Then Ruth said, “Best of all, he told me to keep gathering grain with his workers until they finish the harvest.”</para>
+  <para style="p">
+    <verse number="22" style="v" />Naomi said to Ruth, “Yes, daughter, it will be better for you to work with the women in Boaz' field. You might be molested if you went to someone else's field.” <verse number="23" style="v" />So Ruth worked with them and gathered grain until all the barley and wheat had been harvested. And she continued to live with her mother-in-law.</para>
+  <chapter number="3" style="c" />
+  <para style="s">Ruth Finds a Husband</para>
+  <para style="p">
+    <verse number="1" style="v" />Some time later Naomi said to Ruth, “I must find a husband for you, so that you will have a home of your own. <verse number="2" style="v" />Remember that this man Boaz, whose women you have been working with, is our relative. Now listen. This evening he will be threshing the barley. <verse number="3" style="v" />So wash yourself, put on some perfume, and get dressed in your best clothes. Then go where he is threshing, but don't let him know you are there until he has finished eating and drinking. <verse number="4" style="v" />Be sure to notice where he lies down, and after he falls asleep, go and lift the covers and lie down at his feet. He will tell you what to do.”</para>
+  <para style="p">
+    <verse number="5" style="v" />Ruth answered, “I will do everything you say.”</para>
+  <para style="p">
+    <verse number="6" style="v" />So Ruth went to the threshing place and did just what her mother-in-law had told her. <verse number="7" style="v" />When Boaz had finished eating and drinking, he was in a good mood. He went to the pile of barley and lay down to sleep. Ruth slipped over quietly, lifted the covers and lay down at his feet. <verse number="8" style="v" />During the night he woke up suddenly, turned over, and was surprised to find a woman lying at his feet. <verse number="9" style="v" />“Who are you?” he asked.</para>
+  <para style="p">“It's Ruth, sir,” she answered. “Because you are a close relative, you are responsible for taking care of me. So please marry me.”</para>
+  <para style="p">
+    <verse number="10" style="v" />“The <char style="nd">Lord</char> bless you,” he said. “You are showing even greater family loyalty in what you are doing now than in what you did for your mother-in-law. You might have gone looking for a young man, either rich or poor, but you haven't. <verse number="11" style="v" />Now don't worry, Ruth. I will do everything you ask; as everyone in town knows, you are a fine woman. <verse number="12" style="v" /><note caller="-" style="x"><char style="xo" closed="false">3.12: </char><char style="xt" closed="false">Ru 2.20.</char></note> It is true that I am a close relative and am responsible for you, but there is a man who is a closer relative than I am. <verse number="13" style="v" />Stay here the rest of the night, and in the morning we will find out whether or not he will take responsibility for you. If so, well and good; if not, then I swear by the living <char style="nd">Lord</char> that I will take the responsibility. Now lie down and stay here till morning.”</para>
+  <para style="p">
+    <verse number="14" style="v" />So she lay there at his feet, but she got up before it was light enough for her to be seen, because Boaz did not want anyone to know that she had been there. <verse number="15" style="v" />Boaz said to her, “Take off your cloak and spread it out here.” She did, and he poured out almost fifty pounds of barley and helped her lift it to her shoulder. Then she returned to town with it. <verse number="16" style="v" />When she arrived home, her mother-in-law asked her, “How did you get along, daughter?”</para>
+  <para style="p">Ruth told her everything that Boaz had done for her. <verse number="17" style="v" />She added, “He told me I must not come back to you empty-handed, so he gave me all this barley.”</para>
+  <para style="p">
+    <verse number="18" style="v" />Naomi said to her, “Now be patient, Ruth, until you see how this all turns out. Boaz will not rest today until he settles the matter.”</para>
+  <chapter number="4" style="c" />
+  <para style="s">Boaz Marries Ruth</para>
+  <para style="p">
+    <verse number="1" style="v" />Boaz went to the meeting place at the town gate and sat down there. Then Elimelech's nearest relative, the man whom Boaz had mentioned, came by, and Boaz called to him, “Come over here, my friend, and sit down.” So he went over and sat down. <verse number="2" style="v" />Then Boaz got ten of the leaders of the town and asked them to sit down there too. When they were seated, <verse number="3" style="v" />he said to his relative, “Now that Naomi has come back from Moab, she wants to sell the field that belonged to our relative Elimelech, <verse number="4" style="v" />and I think you ought to know about it. Now then, if you want it, buy it in the presence of these men sitting here. But if you don't want it, say so, because the right to buy it belongs first to you and then to me.”</para>
+  <para style="p">The man said, “I will buy it.”</para>
+  <para style="p">
+    <verse number="5" style="v" />Boaz said, “Very well, if you buy the field from Naomi, then you are also buying Ruth, <note caller="+" style="f"><char style="fr" closed="false">4.5: </char><char style="ft" closed="false">Some ancient translations </char><char style="fq" closed="false">Naomi…Ruth; </char><char style="ft" closed="false">Hebrew </char><char style="fq" closed="false">Naomi and from Ruth.</char></note> the Moabite widow, so that the field will stay in the dead man's family.”</para>
+  <para style="p">
+    <verse number="6" style="v" />The man answered, “In that case I will give up my right to buy the field, because it would mean that my own children would not inherit it. You buy it; I would rather not.”</para>
+  <para style="p">
+    <verse number="7" style="v" />
+    <note caller="-" style="x">
+      <char style="xo" closed="false">4.7,8: </char>
+      <char style="xt" closed="false">Dt 25.9.</char>
+    </note> Now in those days, to settle a sale or an exchange of property, it was the custom for the seller to take off his sandal and give it to the buyer. In this way the Israelites showed that the matter was settled.</para>
+  <para style="p">
+    <verse number="8" style="v" />So when the man said to Boaz, “You buy it,” he took off his sandal and gave it to Boaz. <note caller="+" style="f"><char style="fr" closed="false">4.8: </char><char style="ft" closed="false">One ancient translation </char><char style="fq" closed="false">and gave it to Boaz; </char><char style="ft" closed="false">Hebrew does not have these words.</char></note> <verse number="9" style="v" />Then Boaz said to the leaders and all the others there, “You are all witnesses today that I have bought from Naomi everything that belonged to Elimelech and to his sons Chilion and Mahlon. <verse number="10" style="v" /><note caller="-" style="x"><char style="xo" closed="false">4.10: </char><char style="xt" closed="false">Dt 25.5,6.</char></note> In addition, Ruth the Moabite, Mahlon's widow, becomes my wife. This will keep the property in the dead man's family, and his family line will continue among his people and in his hometown. You are witnesses to this today.”</para>
+  <para style="p">
+    <verse number="11" style="v" />
+    <note caller="-" style="x">
+      <char style="xo" closed="false">4.11: </char>
+      <char style="xt" closed="false">Gn 29.31.</char>
+    </note> The leaders and the others said, “Yes, we are witnesses. May the <char style="nd">Lord</char> make your wife become like Rachel and Leah, who bore many children to Jacob. May you become rich in the clan of Ephrath and famous in Bethlehem. <verse number="12" style="v" /><note caller="-" style="x"><char style="xo" closed="false">4.12: </char><char style="xt" closed="false">Gn 38.27-30.</char></note> May the children that the <char style="nd">Lord</char> will give you by this young woman make your family like the family of Perez, the son of Judah and Tamar.”</para>
+  <para style="s">Boaz and His Descendants</para>
+  <para style="p">
+    <verse number="13" style="v" />So Boaz took Ruth home as his wife. The <char style="nd">Lord</char> blessed her, and she became pregnant and had a son. <verse number="14" style="v" />The women said to Naomi, “Praise the <char style="nd">Lord</char>! He has given you a grandson today to take care of you. May the boy become famous in Israel! <verse number="15" style="v" />Your daughter-in-law loves you, and has done more for you than seven sons. And now she has given you a grandson, who will bring new life to you and give you security in your old age.” <verse number="16" style="v" />Naomi took the child, held him close, <note caller="+" style="f"><char style="fr" closed="false">4.16: </char><char style="fq" closed="false">held him close; </char><char style="ft" closed="false">or </char><char style="fq" closed="false">adopted him.</char></note> and took care of him.</para>
+  <para style="p">
+    <verse number="17" style="v" />The women of the neighborhood named the boy Obed. They told everyone, “A son has been born to Naomi!”</para>
+  <para style="p">Obed became the father of Jesse, who was the father of David.</para>
+  <para style="p">
+    <verse number="18-22" style="v" />This is the family line from Perez to David: Perez, Hezron, Ram, Amminadab, Nahshon, Salmon, Boaz, Obed, Jesse, David.</para>
+</usx>
