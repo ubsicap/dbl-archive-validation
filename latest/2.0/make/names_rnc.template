@@ -1,0 +1,15 @@
+namesElement =
+  element names { namesName* }
+
+namesNameAtts = attribute id { text }
+
+namesName =
+  element name {
+    namesNameAtts & nameLong & nameShort & nameAbbr
+  }
+
+nameLong = element long { text }
+
+nameShort = element short { text }
+
+nameAbbr = element abbr { text }

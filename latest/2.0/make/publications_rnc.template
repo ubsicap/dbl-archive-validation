@@ -1,0 +1,52 @@
+publicationsElement = # DCMI: tableOfContents
+  element publications { publicationElement+ }
+
+publicationElement =
+  element publication {
+    publicationAtts &
+    publicationName &
+    publicationNameLocal? &
+    publicationAbbreviation &
+    publicationAbbreviationLocal? &
+    publicationDescription &
+    publicationDescriptionLocal? &
+    publicationStructure
+  }
+
+publicationAtts = publicationId & publicationDefault?
+
+publicationId = attribute id { xsd:integer }
+
+publicationDefault = attribute default { xsd:boolean }
+
+publicationName = element name { lenGe2String }
+
+publicationNameLocal = element nameLocal { lenGe2String }
+
+publicationAbbreviation = element abbreviation { lenGe2String }
+
+publicationAbbreviationLocal = element abbreviationLocal { lenGe2String }
+
+publicationDescription = element description { lenGe2String }
+
+publicationDescriptionLocal = element descriptionLocal { lenGe2String }
+
+publicationStructure = element structure {
+  (publicationStructureDivision | publicationStructureContent)+
+  }
+
+publicationStructureDivision =
+  element division {
+    publicationStructureDivisionAtts,
+    (publicationStructureDivision | publicationStructureContent)+
+  }
+
+publicationStructureDivisionAtts =
+    attribute name {text}
+
+publicationStructureContent =
+  element content { publicationStructureContentAtts }
+
+publicationStructureContentAtts =
+  attribute name {text} &
+  attribute src {text}

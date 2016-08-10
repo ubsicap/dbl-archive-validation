@@ -1,0 +1,39 @@
+nonSourceManifestElement =
+  element manifest { (nonSourceManifestContainer | nonSourceManifestResource)+ }
+
+sourceManifestElement =
+  element manifest { (sourceManifestContainer | sourceManifestResource)+ }
+
+nonSourceManifestContainer =
+  element container {
+    manifestContainerAtts,
+    (nonSourceManifestContainer | nonSourceManifestResource)+
+  }
+
+nonSourceManifestResource =
+  element resource {
+    commonManifestResourceAtts
+  }
+
+sourceManifestContainer =
+  element container {
+    manifestContainerAtts,
+    (sourceManifestContainer | sourceManifestResource)+
+  }
+
+sourceManifestResource =
+  element resource {
+    commonManifestResourceAtts &
+    attribute progress { translationStageEnum }
+  }
+
+manifestContainerAtts =
+  attribute uri {text}
+
+commonManifestResourceAtts = (
+  attribute id {text},
+  attribute uri {text},
+  attribute size {text}?,
+  attribute checksum {text}?,
+  attribute mimeType {text}
+)

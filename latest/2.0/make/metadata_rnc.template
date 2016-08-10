@@ -1,0 +1,140 @@
+# metadata.rnc
+# Generated from templates
+
+default namespace = ""
+namespace a = "http://relaxng.org/ns/compatibility/annotations/1.0"
+
+start = dblMetadataElement
+
+dblMetadataElement = (sourceMetadata | expressionMetadata | sourceAndExpressionMetadata)
+
+sourceMetadata = textSourceMetadata | audioSourceMetadata
+
+expressionMetadata = textExpressionMetadata | audioExpressionMetadata | printExpressionMetadata
+
+sourceAndExpressionMetadata = textSourceAndExpressionMetadata | audioSourceAndExpressionMetadata
+
+textSourceMetadata = element DBLMetadata {
+  dblMetadataCommonAtts &
+  attribute type { "text" } &
+  sourceCommonElements &
+  fullLanguageElement &
+  textSourceTypeElement &
+  textFormatElement
+}
+
+audioSourceMetadata = element DBLMetadata {
+  dblMetadataCommonAtts &
+  attribute type { "audio" } &
+  sourceCommonElements &
+  shortLanguageElement &
+  audioSourceTypeElement &
+  audioFormatElement
+}
+
+textExpressionMetadata = element DBLMetadata {
+  dblMetadataCommonAtts &
+  attribute type { "text" } &
+  expressionCommonElements &
+  shortLanguageElement &
+  textExpressionTypeElement &
+  textFormatElement
+}
+
+printExpressionMetadata = element DBLMetadata {
+  dblMetadataCommonAtts &
+  attribute type { "print" } &
+  expressionCommonElements &
+  shortLanguageElement &
+  printExpressionTypeElement &
+  printFormatElement
+}
+
+audioExpressionMetadata = element DBLMetadata {
+  dblMetadataCommonAtts &
+  attribute type { "audio" } &
+  expressionCommonElements &
+  shortLanguageElement &
+  audioExpressionTypeElement &
+  audioFormatElement
+}
+
+textSourceAndExpressionMetadata = element DBLMetadata {
+  dblMetadataCommonAtts &
+  attribute type { "text" } &
+  sourceAndExpressionCommonElements &
+  fullLanguageElement &
+  textSourceAndExpressionTypeElement &
+  textFormatElement
+}
+
+audioSourceAndExpressionMetadata = element DBLMetadata {
+  dblMetadataCommonAtts &
+  attribute type { "audio" } &
+  sourceAndExpressionCommonElements &
+  shortLanguageElement &
+  audioSourceAndExpressionTypeElement &
+  audioFormatElement
+}
+
+sourceCommonElements = (
+  commonElements &
+  sourceManifestElement
+)
+
+expressionCommonElements = (
+  commonElements &
+  promotionElement &
+  nonSourceManifestElement &
+  publicationsElement
+)
+
+sourceAndExpressionCommonElements = (
+  commonElements &
+  promotionElement &
+  sourceManifestElement &
+  publicationsElement
+)
+
+commonElements = (
+  identificationElement &
+  agenciesElement &
+  confidentialElement &
+  countryElement &
+  namesElement &
+  archiveStatusElement
+)
+
+dblMetadataCommonAtts = (dblMetadataTypeVersion & dblMetadataId & dblMetadataRevision)
+
+dblMetadataTypeVersion = attribute typeVersion { "2.0" }
+
+dblMetadataId = attribute id { xsd:string { pattern = "[a-f0-9]{16}" } }
+
+dblMetadataRevision = attribute revision { xsd:integer }
+
+%%insert identification_rnc.template%%
+
+%%insert agencies_rnc.template%%
+
+%%insert confidential_rnc.template%%
+
+%%insert language_rnc.template%%
+
+%%insert country_rnc.template%%
+
+%%insert type_rnc.template%%
+
+%%insert format_rnc.template%%
+
+%%insert names_rnc.template%%
+
+%%insert manifest_rnc.template%%
+
+%%insert publications_rnc.template%%
+
+%%insert promotion_rnc.template%%
+
+%%insert archive_status_rnc.template%%
+
+%%insert datatypes_rnc.template%%

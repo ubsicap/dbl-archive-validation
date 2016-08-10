@@ -1,0 +1,85 @@
+textSourceTypeElement =
+  element type {
+  element hasCharacters { "true" } &
+    element isSource { "true" } &
+    element isExpression { "false" } &
+    commonTextSourceTypeElements
+}
+
+audioSourceTypeElement =
+  element type {
+    element hasCharacters { "false" } &
+    element isSource { "true" } &
+    element isExpression { "false" } &
+    commonAudioSourceTypeElements
+}
+
+textExpressionTypeElement =
+  element type {
+    element hasCharacters { "true" } &
+    element isSource { "false" } &
+    element isExpression { "true" } &
+    commonTextExpressionTypeElements
+}
+
+printExpressionTypeElement =
+  element type {
+    element hasCharacters { "true" } &
+    element isSource { "false" } &
+    element isExpression { "true" } &
+    commonExpressionTypeElements
+}
+
+audioExpressionTypeElement =
+  element type {
+    element hasCharacters { "false" } &
+    element isSource { "false" } &
+    element isExpression { "true" } &
+    commonAudioExpressionTypeElements
+}
+
+textSourceAndExpressionTypeElement =
+  element type {
+    element hasCharacters { "true" } &
+    element isSource { "true" } &
+    element isExpression { "true" } &
+    commonTextSourceTypeElements &
+    commonTextExpressionTypeElements
+}
+
+audioSourceAndExpressionTypeElement =
+  element type {
+    element hasCharacters { "false" } &
+    element isSource { "true" } &
+    element isExpression { "true" } &
+    commonAudioSourceTypeElements &
+    commonAudioExpressionTypeElements
+}
+
+commonTextSourceTypeElements = (
+  commonSourceTypeElements
+)
+
+commonAudioSourceTypeElements = (
+  commonSourceTypeElements
+)
+
+commonTextExpressionTypeElements = (
+  commonExpressionTypeElements
+)
+
+commonAudioExpressionTypeElements = (
+  element dramatization {
+    "Dramatized" |
+    "Non-Dramatized" |
+    "Single-Voice"
+  } &
+  commonExpressionTypeElements
+)
+
+commonSourceTypeElements = (
+  element translationType { lenGe2String } &
+  element audience { translationLevelEnum }
+)
+
+commonExpressionTypeElements = ( empty )

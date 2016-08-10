@@ -1,0 +1,24 @@
+archiveStatusElement =
+  element archiveStatus {
+    archivistNameElement & dateArchivedElement & dateUpdatedElement & commentsElement
+  }
+
+archivistNameElement = # DCMI: contributor/archivist
+  element archivistName {
+    lenGe2String
+  }
+
+dateArchivedElement = # DCMI: dateSubmitted
+  element dateArchived {
+    xsd:dateTime
+  }
+
+dateUpdatedElement =
+  element dateUpdated { # DCMI: modified
+    xsd:dateTime
+  }
+
+commentsElement = # DCMI: abstract
+  element comments {
+    lenGe2Le255String
+  }

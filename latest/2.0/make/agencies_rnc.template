@@ -1,0 +1,61 @@
+agenciesElement =
+  element agencies {
+    rightsHolderElement+ & rightsAdminElement? & contributorElement+ & etenPartnerElement?
+  }
+
+rightsHolderAbbrAtt = attribute abbr { lenGe2String }
+
+rightsHolderUrlAtt = attribute url { xsd:anyURI }
+
+rightsHolderLocalAtt = attribute local { lenGe2String }
+
+rightsHolderAtts =
+  rightsHolderAbbrAtt? & rightsHolderUrlAtt? & rightsHolderLocalAtt?
+
+rightsHolderElement = # DCMI: rightsHolder
+  element rightsHolder {
+    rightsHolderAtts,
+      attribute uid { lenGe2String },
+      lenGe2String
+  }
+
+rightsAdminUrl = attribute url { xsd:anyURI }
+
+rightsAdminAtts = rightsAdminUrl?
+
+rightsAdminElement = # DCMI: rightsHolder
+  element rightsAdmin {
+    rightsAdminAtts,
+      attribute uid { lenGe2String },
+      lenGe2String
+  }
+
+contributorContent = attribute content { xsd:boolean }
+
+contributorPublication = attribute publication { xsd:boolean }
+
+contributorManagement = attribute management { xsd:boolean }
+
+contributorFinance = attribute finance { xsd:boolean }
+
+contributorQa = attribute qa { xsd:boolean }
+
+contributorAtts =
+    (contributorContent |
+     contributorPublication |
+     contributorManagement |
+     contributorFinance |
+     contributorQa)+
+
+contributorElement = # DCMI: contributor
+    element contributor {
+      contributorAtts,
+      attribute uid { lenGe2String },
+      lenGe2String
+    }
+  
+etenPartnerElement = # Primary translation or coordination/sponsorship agency
+  element etenPartner {
+    attribute uid { lenGe2String }?,
+    lenGe2String?
+  }

@@ -1,0 +1,835 @@
+# metadata.rnc
+# Generated from templates
+
+default namespace = ""
+namespace a = "http://relaxng.org/ns/compatibility/annotations/1.0"
+
+start = dblMetadataElement
+
+dblMetadataElement = (sourceMetadata | expressionMetadata | sourceAndExpressionMetadata)
+
+sourceMetadata = textSourceMetadata | audioSourceMetadata
+
+expressionMetadata = textExpressionMetadata | audioExpressionMetadata | printExpressionMetadata
+
+sourceAndExpressionMetadata = textSourceAndExpressionMetadata | audioSourceAndExpressionMetadata
+
+textSourceMetadata = element DBLMetadata {
+  dblMetadataCommonAtts &
+  attribute type { "text" } &
+  sourceCommonElements &
+  fullLanguageElement &
+  textSourceTypeElement &
+  textFormatElement
+}
+
+audioSourceMetadata = element DBLMetadata {
+  dblMetadataCommonAtts &
+  attribute type { "audio" } &
+  sourceCommonElements &
+  shortLanguageElement &
+  audioSourceTypeElement &
+  audioFormatElement
+}
+
+textExpressionMetadata = element DBLMetadata {
+  dblMetadataCommonAtts &
+  attribute type { "text" } &
+  expressionCommonElements &
+  shortLanguageElement &
+  textExpressionTypeElement &
+  textFormatElement
+}
+
+printExpressionMetadata = element DBLMetadata {
+  dblMetadataCommonAtts &
+  attribute type { "print" } &
+  expressionCommonElements &
+  shortLanguageElement &
+  printExpressionTypeElement &
+  printFormatElement
+}
+
+audioExpressionMetadata = element DBLMetadata {
+  dblMetadataCommonAtts &
+  attribute type { "audio" } &
+  expressionCommonElements &
+  shortLanguageElement &
+  audioExpressionTypeElement &
+  audioFormatElement
+}
+
+textSourceAndExpressionMetadata = element DBLMetadata {
+  dblMetadataCommonAtts &
+  attribute type { "text" } &
+  sourceAndExpressionCommonElements &
+  fullLanguageElement &
+  textSourceAndExpressionTypeElement &
+  textFormatElement
+}
+
+audioSourceAndExpressionMetadata = element DBLMetadata {
+  dblMetadataCommonAtts &
+  attribute type { "audio" } &
+  sourceAndExpressionCommonElements &
+  shortLanguageElement &
+  audioSourceAndExpressionTypeElement &
+  audioFormatElement
+}
+
+sourceCommonElements = (
+  commonElements &
+  sourceManifestElement
+)
+
+expressionCommonElements = (
+  commonElements &
+  promotionElement &
+  nonSourceManifestElement &
+  publicationsElement
+)
+
+sourceAndExpressionCommonElements = (
+  commonElements &
+  promotionElement &
+  sourceManifestElement &
+  publicationsElement
+)
+
+commonElements = (
+  identificationElement &
+  agenciesElement &
+  confidentialElement &
+  countryElement &
+  namesElement &
+  archiveStatusElement
+)
+
+dblMetadataCommonAtts = (dblMetadataTypeVersion & dblMetadataId & dblMetadataRevision)
+
+dblMetadataTypeVersion = attribute typeVersion { "2.0" }
+
+dblMetadataId = attribute id { xsd:string { pattern = "[a-f0-9]{16}" } }
+
+dblMetadataRevision = attribute revision { xsd:integer }
+
+identificationElement =
+  element identification {
+    nameElement &
+    nameLocalElement &
+    abbreviationElement &
+    abbreviationLocalElement &
+    scopeElement &
+    descriptionElement &
+    dateCompletedElement &
+    systemIdElement* &
+    bundleProducerElement
+    }
+
+nameElement = # DCMI: title
+  element name { lenGe2String }
+
+nameLocalElement =    
+  element nameLocal { lenGe2String }
+
+abbreviationElement =
+  element abbreviation {
+    xsd:string { pattern = "[A-Za-z0-9\-]{2,12}" }
+  }
+
+abbreviationLocalElement =    
+  element abbreviationLocal {
+    xsd:string { minLength = "2" maxLength = "12" }
+  }
+
+scopeElement = # DCMI: title/scriptureScope
+  element scope { text }
+
+descriptionElement = # DCMI: description
+  element description { lenGe2String }
+
+dateCompletedElement = # DCMI: date
+  element dateCompleted {
+      (xsd:date | xsd:gYear | xsd:gYearMonth | xsd:dateTime)?
+  }
+
+systemIdTypeEnum =
+  "gbc"      | # Global Bible Catalogue entry ID
+  "tms"      | # UBS Translation Management System database ID
+  "paratext" | # Paratext Project GUID
+  "reap"     | # SIL REAP database ID
+  "biblica"    # Biblica database id
+
+systemIdType = attribute type { systemIdTypeEnum }
+
+systemIdAtts =
+    systemIdType,
+    attribute name { lenGe2String }?,
+    attribute fullname { lenGe2String }?,
+    attribute csetid { lenGe2String }?
+
+systemIdElement = # systemId[@type='paratext'] is overwritten by Paratext
+  element systemId { systemIdAtts, lenGe2String }
+
+bundleProducerElement = # bundleProducer is overwritten by Paratext
+  element bundleProducer { lenGe2String }
+
+agenciesElement =
+  element agencies {
+    rightsHolderElement+ & rightsAdminElement? & contributorElement+ & etenPartnerElement?
+  }
+
+rightsHolderAbbrAtt = attribute abbr { lenGe2String }
+
+rightsHolderUrlAtt = attribute url { xsd:anyURI }
+
+rightsHolderLocalAtt = attribute local { lenGe2String }
+
+rightsHolderAtts =
+  rightsHolderAbbrAtt? & rightsHolderUrlAtt? & rightsHolderLocalAtt?
+
+rightsHolderElement = # DCMI: rightsHolder
+  element rightsHolder {
+    rightsHolderAtts,
+      attribute uid { lenGe2String },
+      lenGe2String
+  }
+
+rightsAdminUrl = attribute url { xsd:anyURI }
+
+rightsAdminAtts = rightsAdminUrl?
+
+rightsAdminElement = # DCMI: rightsHolder
+  element rightsAdmin {
+    rightsAdminAtts,
+      attribute uid { lenGe2String },
+      lenGe2String
+  }
+
+contributorContent = attribute content { xsd:boolean }
+
+contributorPublication = attribute publication { xsd:boolean }
+
+contributorManagement = attribute management { xsd:boolean }
+
+contributorFinance = attribute finance { xsd:boolean }
+
+contributorQa = attribute qa { xsd:boolean }
+
+contributorAtts =
+    (contributorContent |
+     contributorPublication |
+     contributorManagement |
+     contributorFinance |
+     contributorQa)+
+
+contributorElement = # DCMI: contributor
+    element contributor {
+      contributorAtts,
+      attribute uid { lenGe2String },
+      lenGe2String
+    }
+  
+etenPartnerElement = # Primary translation or coordination/sponsorship agency
+  element etenPartner {
+    attribute uid { lenGe2String }?,
+    lenGe2String?
+  }
+
+confidentialElement = # DCMI: accessRights/confidential
+  element confidential { xsd:boolean }
+
+fullLanguageElement =
+  element language {
+    languageIsoElement &
+    languageNameElement &
+    languageNameLocalElement &
+    languageLdmlElement &
+    languageRodElement &
+    languageScriptElement &
+    languageScriptDirectionElement &
+    languageNumeralsElement
+    }
+
+shortLanguageElement =
+  element language {
+    languageIsoElement &
+    languageNameElement &
+    languageNameLocalElement &
+    languageScriptElement
+    }
+
+languageIsoElement = # DCMI: language/iso (ISO639-3)
+  element iso {
+    xsd:string { pattern = "[a-z][a-z][a-z]" }
+  }
+
+languageNameElement = # DCMI: subject/language (ISO639-3)
+  element name { lenGe2String }
+
+languageNameLocalElement = # DCMI: subject/language (ISO639-3)
+  element nameLocal { lenGe2String }
+
+languageLdmlElement = # DCMI: language/ldml
+  element ldml {
+    xsd:string { pattern = "[A-Za-z]{2,3}([\-_][A-Za-z0-9]+){0,3}" }?
+  }
+
+languageRodElement = # DCMI: language/rod
+  element rod {
+    xsd:string { pattern = "[0-9]{5}" }?
+  }
+
+languageScriptElement = # DCMI: language/script
+  element script { lenGe2String }
+
+
+languageScriptDirectionEnum =
+  "LTR" | # Left to Right
+  "RTL"   # RTL (Right to Left)
+
+languageScriptDirectionElement = # scriptDirection is overwritten by Paratext
+                                 # DCMI: language/scriptDirection
+  element scriptDirection { languageScriptDirectionEnum }
+
+languageNumeralsElement =
+  element numerals { # DCMI: language/numerals
+      (empty | numeralSystemEnum)
+    }
+
+
+countryElement = element country { countryIsoElement & countryNameElement }
+
+countryIsoElement = # DCMI: coverage/spatial (ISO3166)
+  element iso {
+    xsd:string { pattern = "[A-Z][A-Z][A-Z]?" }
+  }
+
+countryNameElement = # DCMI: subject/subjectCountry
+  element name { lenGe2String }
+
+
+textSourceTypeElement =
+  element type {
+  element hasCharacters { "true" } &
+    element isSource { "true" } &
+    element isExpression { "false" } &
+    commonTextSourceTypeElements
+}
+
+audioSourceTypeElement =
+  element type {
+    element hasCharacters { "false" } &
+    element isSource { "true" } &
+    element isExpression { "false" } &
+    commonAudioSourceTypeElements
+}
+
+textExpressionTypeElement =
+  element type {
+    element hasCharacters { "true" } &
+    element isSource { "false" } &
+    element isExpression { "true" } &
+    commonTextExpressionTypeElements
+}
+
+printExpressionTypeElement =
+  element type {
+    element hasCharacters { "true" } &
+    element isSource { "false" } &
+    element isExpression { "true" } &
+    commonExpressionTypeElements
+}
+
+audioExpressionTypeElement =
+  element type {
+    element hasCharacters { "false" } &
+    element isSource { "false" } &
+    element isExpression { "true" } &
+    commonAudioExpressionTypeElements
+}
+
+textSourceAndExpressionTypeElement =
+  element type {
+    element hasCharacters { "true" } &
+    element isSource { "true" } &
+    element isExpression { "true" } &
+    commonTextSourceTypeElements &
+    commonTextExpressionTypeElements
+}
+
+audioSourceAndExpressionTypeElement =
+  element type {
+    element hasCharacters { "false" } &
+    element isSource { "true" } &
+    element isExpression { "true" } &
+    commonAudioSourceTypeElements &
+    commonAudioExpressionTypeElements
+}
+
+commonTextSourceTypeElements = (
+  commonSourceTypeElements
+)
+
+commonAudioSourceTypeElements = (
+  commonSourceTypeElements
+)
+
+commonTextExpressionTypeElements = (
+  commonExpressionTypeElements
+)
+
+commonAudioExpressionTypeElements = (
+  element dramatization {
+    "Dramatized" |
+    "Non-Dramatized" |
+    "Single-Voice"
+  } &
+  commonExpressionTypeElements
+)
+
+commonSourceTypeElements = (
+  element translationType { lenGe2String } &
+  element audience { translationLevelEnum }
+)
+
+commonExpressionTypeElements = ( empty )
+
+textFormatElement =
+  element format {
+    element versedParagraphs { xsd:boolean }
+  }
+
+audioFormatElement = # DCMI: format
+  element format {
+    audioFormatCompression &
+    audioFormatTrackConfiguration &
+    audioFormatBitRate &
+    audioFormatBitDepth &
+    audioFormatSamplingRate
+  }
+
+audioFormatCompression =
+  element compression { # http://www.ebu.ch/metadata/cs/web/ebu_AudioCompressionCodeCS_p.xml.htm
+    "MP3"  |
+    "FLAC" |
+    "WAV"  |
+    empty
+  }
+
+audioFormatTrackConfiguration =
+  element trackConfiguration { # http://www.ebu.ch/metadata/cs/web/ebu_AudioFormatCodeCS_p.xml.htm
+    "1/0 (Mono)"   |
+    "Dual mono"    |
+    "2/0 (Stereo)" |
+    "5.1 Surround" |
+    empty
+  }
+
+audioFormatBitRate =
+  element bitRate {
+    xsd:integer |
+    empty
+  }
+
+audioFormatBitDepth =
+  element bitDepth {
+    xsd:integer |
+    empty
+  }
+
+audioFormatSamplingRate =
+  element samplingRate {
+    xsd:integer |
+    empty
+  }
+
+printFormatElement =
+  element format {
+    element pod { xsd:boolean } &
+    element width { xsd:string { pattern = "[1-9][0-9]*mm" } } &
+    element height { xsd:string { pattern = "[1-9][0-9]*mm" } } &
+    element scale { xsd:string { pattern = "[1-9][0-9]{1,3}%" } } &
+    element orientation { "portrait" | "landscape" } &
+    element color { "CMYK" | "RGB" | "Monochrome" } &
+    element fonts { printFormatFontElement }*
+  }
+
+printFormatFontElement =
+  element font {
+    attribute type { "OpenType" },
+    text
+  }
+
+
+namesElement =
+  element names { namesName* }
+
+namesNameAtts = attribute id { text }
+
+namesName =
+  element name {
+    namesNameAtts & nameLong & nameShort & nameAbbr
+  }
+
+nameLong = element long { text }
+
+nameShort = element short { text }
+
+nameAbbr = element abbr { text }
+
+nonSourceManifestElement =
+  element manifest { (nonSourceManifestContainer | nonSourceManifestResource)+ }
+
+sourceManifestElement =
+  element manifest { (sourceManifestContainer | sourceManifestResource)+ }
+
+nonSourceManifestContainer =
+  element container {
+    manifestContainerAtts,
+    (nonSourceManifestContainer | nonSourceManifestResource)+
+  }
+
+nonSourceManifestResource =
+  element resource {
+    commonManifestResourceAtts
+  }
+
+sourceManifestContainer =
+  element container {
+    manifestContainerAtts,
+    (sourceManifestContainer | sourceManifestResource)+
+  }
+
+sourceManifestResource =
+  element resource {
+    commonManifestResourceAtts &
+    attribute progress { translationStageEnum }
+  }
+
+manifestContainerAtts =
+  attribute uri {text}
+
+commonManifestResourceAtts = (
+  attribute id {text},
+  attribute uri {text},
+  attribute size {text}?,
+  attribute checksum {text}?,
+  attribute mimeType {text}
+)
+
+
+publicationsElement = # DCMI: tableOfContents
+  element publications { publicationElement+ }
+
+publicationElement =
+  element publication {
+    publicationAtts &
+    publicationName &
+    publicationNameLocal? &
+    publicationAbbreviation &
+    publicationAbbreviationLocal? &
+    publicationDescription &
+    publicationDescriptionLocal? &
+    publicationStructure
+  }
+
+publicationAtts = publicationId & publicationDefault?
+
+publicationId = attribute id { xsd:integer }
+
+publicationDefault = attribute default { xsd:boolean }
+
+publicationName = element name { lenGe2String }
+
+publicationNameLocal = element nameLocal { lenGe2String }
+
+publicationAbbreviation = element abbreviation { lenGe2String }
+
+publicationAbbreviationLocal = element abbreviationLocal { lenGe2String }
+
+publicationDescription = element description { lenGe2String }
+
+publicationDescriptionLocal = element descriptionLocal { lenGe2String }
+
+publicationStructure = element structure {
+  (publicationStructureDivision | publicationStructureContent)+
+  }
+
+publicationStructureDivision =
+  element division {
+    publicationStructureDivisionAtts,
+    (publicationStructureDivision | publicationStructureContent)+
+  }
+
+publicationStructureDivisionAtts =
+    attribute name {text}
+
+publicationStructureContent =
+  element content { publicationStructureContentAtts }
+
+publicationStructureContentAtts =
+  attribute name {text} &
+  attribute src {text}
+
+promotionElement = element promotion { promoVersionInfoElement }
+
+promoVersionInfoElement = # DCMI: description/pubPromoVersionInfo
+  element promoVersionInfo {
+      promoVersionInfoAttlist, simplifiedHtml+
+    }
+
+promoVersionInfoAttlist = attribute contentType { "xhtml" }
+
+archiveStatusElement =
+  element archiveStatus {
+    archivistNameElement & dateArchivedElement & dateUpdatedElement & commentsElement
+  }
+
+archivistNameElement = # DCMI: contributor/archivist
+  element archivistName {
+    lenGe2String
+  }
+
+dateArchivedElement = # DCMI: dateSubmitted
+  element dateArchived {
+    xsd:dateTime
+  }
+
+dateUpdatedElement =
+  element dateUpdated { # DCMI: modified
+    xsd:dateTime
+  }
+
+commentsElement = # DCMI: abstract
+  element comments {
+    lenGe2Le255String
+  }
+
+
+div {
+  simplifiedHtml =
+    sh.p |
+    sh.h1 |
+    sh.h2 |
+    sh.h3 |
+    sh.ul |
+    sh.ol |
+    sh.blockquote |
+    sh.htmlCharMarkup
+  sh.p = element p { (text | sh.htmlCharMarkup)+ }
+  sh.h1 = element h1 { text }
+  sh.h2 = element h2 { text }
+  sh.h3 = element h3 { text }
+  sh.ol = element ol { sh.li+ }
+  sh.ul = element ul { sh.li+ }
+  sh.li = element li { text }
+  sh.blockquote = element blockquote { text }
+}
+
+div {
+  sh.htmlCharMarkup =
+    text |
+    sh.a |
+    sh.img |
+    sh.br |
+    sh.strong |
+    sh.b |
+    sh.em |
+    sh.i
+  sh.a.href = attribute href { xsd:anyURI }
+  sh.a.attlist = sh.a.href
+  sh.a = element a { sh.a.attlist, sh.htmlCharMarkup }
+  sh.img.src = attribute src { xsd:anyURI }
+  sh.img.alt = attribute alt { text }
+  sh.img.attlist = sh.img.src, sh.img.alt?
+  sh.img = element img { sh.img.attlist, text }
+  sh.br = element br { empty }
+  sh.strong = element strong { text }
+  sh.b = element b { text }
+  sh.em = element em { text }
+  sh.i = element i { text }
+}
+
+numeralSystemEnum = (
+  "Arabic" | # (a.k.a. 'Hindu') = 0123456789
+  "Bengali" |
+  "Burmese" |
+  "Devanagari" |
+  "Ethiopic" |
+  "Farsi" |
+  "Gujarati" |
+  "Gurmukhi" |
+  "Hindi" | # (i.e. 'Arabic' as used in Egypt)
+  "Kannada" |
+  "Khmer" |
+  "Malayalam" |
+  "Oriya" |
+  "Tamil" |
+  "Telugu" |
+  "Thai" |
+  "Tibetan"
+)
+
+translationTypeEnum = (
+  "First" |
+  "New" |
+  "Revision"
+)
+
+translationLevelEnum = (
+  "Basic" |
+  "Common" |
+  "Common - Literary" |
+  "Literary" |
+  "Liturgical"
+)
+
+translationStageEnum = (
+  "1" | # Draft
+  "2" | # Internal Review
+  "3" | # External Review
+  "4"   # Final Review
+)
+
+bookIdEnum = (canonicalBookIdEnum | nonCanonicalBookIdEnum)
+
+canonicalBookIdEnum = (OTBookIdEnum | NTBookIdEnum | DCBookIdEnum)
+
+OTBookIdEnum = (
+  "GEN" | # Genesis
+  "EXO" | # Exodus
+  "LEV" | # Leviticus
+  "NUM" | # Numbers
+  "DEU" | # Deuteronomy
+  "JOS" | # Joshua
+  "JDG" | # Judges
+  "RUT" | # Ruth
+  "1SA" | # 1 Samuel
+  "2SA" | # 2 Samuel
+  "1KI" | # 1 Kings
+  "2KI" | # 2 Kings
+  "1CH" | # 1 Chronicles
+  "2CH" | # 2 Chronicles
+  "EZR" | # Ezra
+  "NEH" | # Nehemiah
+  "EST" | # Esther (Hebrew)
+  "JOB" | # Job
+  "PSA" | # Psalms
+  "PRO" | # Proverbs
+  "ECC" | # Ecclesiastes
+  "SNG" | # Song of Songs
+  "ISA" | # Isaiah
+  "JER" | # Jeremiah
+  "LAM" | # Lamentations
+  "EZK" | # Ezekiel
+  "DAN" | # Daniel (Hebrew)
+  "HOS" | # Hosea
+  "JOL" | # Joel
+  "AMO" | # Amos
+  "OBA" | # Obadiah
+  "JON" | # Jonah
+  "MIC" | # Micah
+  "NAM" | # Nahum
+  "HAB" | # Habakkuk
+  "ZEP" | # Zephaniah
+  "HAG" | # Haggai
+  "ZEC" | # Zechariah
+  "MAL"   # Malachi
+)
+
+NTBookIdEnum = (
+  "MAT" | # Matthew
+  "MRK" | # Mark
+  "LUK" | # Luke
+  "JHN" | # John
+  "ACT" | # Acts
+  "ROM" | # Romans
+  "1CO" | # 1 Corinthians
+  "2CO" | # 2 Corinthians
+  "GAL" | # Galatians
+  "EPH" | # Ephesians
+  "PHP" | # Philippians
+  "COL" | # Colossians
+  "1TH" | # 1 Thessalonians
+  "2TH" | # 2 Thessalonians
+  "1TI" | # 1 Timothy
+  "2TI" | # 2 Timothy
+  "TIT" | # Titus
+  "PHM" | # Philemon
+  "HEB" | # Hebrews
+  "JAS" | # James
+  "1PE" | # 1 Peter
+  "2PE" | # 2 Peter
+  "1JN" | # 1 John
+  "2JN" | # 2 John
+  "3JN" | # 3 John
+  "JUD" | # Jude
+  "REV"   # Revelation
+)
+
+DCBookIdEnum = (
+  "TOB" | # Tobit
+  "JDT" | # Judith
+  "ESG" | # Esther Greek
+  "WIS" | # Wisdom of Solomon
+  "SIR" | # Sirach (Ecclesiasticus)
+  "BAR" | # Baruch
+  "LJE" | # Letter of Jeremiah
+  "S3Y" | # Song of 3 Young Men
+  "SUS" | # Susanna
+  "BEL" | # Bel and the Dragon
+  "1MA" | # 1 Maccabees
+  "2MA" | # 2 Maccabees
+  "3MA" | # 3 Maccabees
+  "4MA" | # 4 Maccabees
+  "1ES" | # 1 Esdras (Greek)
+  "2ES" | # 2 Esdras (Latin)
+  "MAN" | # Prayer of Manasseh
+  "PS2" | # Psalm 151
+  "ODA" | # Odes
+  "PSS" | # Psalms of Solomon
+  "JSA" | # actual variant text for JOS, now in LXA text
+  "JDB" | # actual variant text for JDG, now in LXA text
+  "TBS" | # actual variant text for TOB, now in LXA text
+  "SST" | # actual variant text for SUS, now in LXA text
+  "DNT" | # actual variant text for DAN, now in LXA text
+  "BLT" | # actual variant text for BEL, now in LXA text
+  "EZA" | # Apocalypse of Ezra
+  "5EZ" | # 5 Ezra
+  "6EZ" | # 6 Ezra
+  "DAG" | # Daniel Greek
+  "PS3" | # Psalms 152-155
+  "2BA" | # 2 Baruch (Apocalypse)
+  "LBA" | # Letter of Baruch
+  "JUB" | # Jubilees
+  "ENO" | # Enoch
+  "1MQ" | # 1 Meqabyan
+  "2MQ" | # 2 Meqabyan
+  "3MQ" | # 3 Meqabyan
+  "REP" | # Reproof
+  "4BA" | # 4 Baruch
+  "LAO"   # Laodiceans
+)
+
+nonCanonicalBookIdEnum = (
+  "XXA" | # Extra A, e.g. a hymnal
+  "XXB" | # Extra B
+  "XXC" | # Extra C
+  "XXD" | # Extra D
+  "XXE" | # Extra E
+  "XXF" | # Extra F
+  "XXG" | # Extra G
+  "FRT" | # Front Matter
+  "BAK" | # Back Matter
+  "OTH" | # Other Matter
+  "INT" | # Introduction
+  "CNC" | # Concordance
+  "GLO" | # Glossary
+  "TDX" | # Topical Index
+  "NDX"   # Names Index
+)
+
+lenGe2String = xsd:string { minLength = "2" }
+
+lenGe2Le255String = xsd:string { minLength = "2" maxLength = "255" }

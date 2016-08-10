@@ -1,3 +1,5 @@
+*~
+.editix
 syntax: glob
 *.orig
 build

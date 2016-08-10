@@ -1,0 +1,65 @@
+textFormatElement =
+  element format {
+    element versedParagraphs { xsd:boolean }
+  }
+
+audioFormatElement = # DCMI: format
+  element format {
+    audioFormatCompression &
+    audioFormatTrackConfiguration &
+    audioFormatBitRate &
+    audioFormatBitDepth &
+    audioFormatSamplingRate
+  }
+
+audioFormatCompression =
+  element compression { # http://www.ebu.ch/metadata/cs/web/ebu_AudioCompressionCodeCS_p.xml.htm
+    "MP3"  |
+    "FLAC" |
+    "WAV"  |
+    empty
+  }
+
+audioFormatTrackConfiguration =
+  element trackConfiguration { # http://www.ebu.ch/metadata/cs/web/ebu_AudioFormatCodeCS_p.xml.htm
+    "1/0 (Mono)"   |
+    "Dual mono"    |
+    "2/0 (Stereo)" |
+    "5.1 Surround" |
+    empty
+  }
+
+audioFormatBitRate =
+  element bitRate {
+    xsd:integer |
+    empty
+  }
+
+audioFormatBitDepth =
+  element bitDepth {
+    xsd:integer |
+    empty
+  }
+
+audioFormatSamplingRate =
+  element samplingRate {
+    xsd:integer |
+    empty
+  }
+
+printFormatElement =
+  element format {
+    element pod { xsd:boolean } &
+    element width { xsd:string { pattern = "[1-9][0-9]*mm" } } &
+    element height { xsd:string { pattern = "[1-9][0-9]*mm" } } &
+    element scale { xsd:string { pattern = "[1-9][0-9]{1,3}%" } } &
+    element orientation { "portrait" | "landscape" } &
+    element color { "CMYK" | "RGB" | "Monochrome" } &
+    element fonts { printFormatFontElement }*
+  }
+
+printFormatFontElement =
+  element font {
+    attribute type { "OpenType" },
+    text
+  }

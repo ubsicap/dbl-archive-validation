@@ -1,0 +1,8 @@
+promotionElement = element promotion { promoVersionInfoElement }
+
+promoVersionInfoElement = # DCMI: description/pubPromoVersionInfo
+  element promoVersionInfo {
+      promoVersionInfoAttlist, simplifiedHtml+
+    }
+
+promoVersionInfoAttlist = attribute contentType { "xhtml" }
