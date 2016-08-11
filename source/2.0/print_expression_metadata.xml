@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DBLMetadata type="print" typeVersion="2.0" id="a4ecd655fac4de61" revision="0">
+  <identification>
+    <name>DBL Test Version with DC</name>
+    <nameLocal>DBL Test Version with DC Local</nameLocal>
+    <description>English: DBL Test Version with DC Local New Testament</description>
+    <dateCompleted></dateCompleted>
+    <bundleProducer>Publishing Assistant/5.1.0.0</bundleProducer>
+    <abbreviation>DBLTEST</abbreviation>
+    <abbreviationLocal>DBLTEST</abbreviationLocal>
+    <scope>Gospels plus Acts</scope>
+  </identification>
+  <type>
+    <hasCharacters>true</hasCharacters>
+    <isSource>false</isSource>
+    <isExpression>true</isExpression>
+  </type>
+  <confidential>false</confidential>
+  <relationships>
+    <relation type="text" id="2880c78491b2f8ce" revision="67" />
+  </relationships>
+  <agencies>
+    <rightsHolder abbr="TEST" url="http://thedigitalbiblelibrary.org" local="DBL Testing" uid="54650cfa5117ad690fb05fb6">Organization for DBL Testing</rightsHolder>
+    <contributor content="true" publication="true" management="true" qa="true" uid="54650cd05117ad67b3826e99">American Bible Society</contributor>
+  </agencies>
+  <language>
+    <iso>eng</iso>
+    <name>English</name>
+    <nameLocal>English</nameLocal>
+  </language>
+  <country>
+    <iso>USA</iso>
+    <name>United States of America</name>
+  </country>
+  <format>
+    <pod>true</pod>
+    <width>140mm</width>
+    <height>210mm</height>
+    <scale>100%</scale>
+    <orientation>portrait</orientation>
+    <color>CMYK</color>
+    <fonts>
+      <font type="OpenType">Times New Roman	Regular</font>
+      <font type="OpenType">Times New Roman	BoldBold</font>
+      <font type="OpenType">Times New Roman	ItalicItalic</font>
+      <font type="OpenType">Segoe UI Symbol	Regular</font>
+    </fonts>
+  </format>
+  <names>
+    <name id="cover">
+      <short>Cover</short>
+    </name>
+    <name id="body">
+      <short>Body</short>
+    </name>
+  </names>
+  <manifest>
+    <container uri="release">
+      <resource uri="Inside.pdf" size="21938718" checksum="b95daf7d53dbb0f390759dcb7b7dff2f" mimeType="application/pdf"/>
+      <resource uri="Cover.pdf" size="66487" checksum="0dfd80b70df9172ebc6052ece050f92e" mimeType="application/pdf"/>
+      <resource uri="metadata.xml" size="2912" checksum="adcd0978ebf336ae0c445cd624191e58" mimeType="application/xml"/>
+    </container>
+    <container uri="source">
+      <container uri="Users">
+	<container uri="Bev">
+	  <container uri="AppData">
+	    <container uri="Local">
+	      <container uri="PublishingAssistant51">
+		<resource uri="FontCatalog.xml" size="2045878" checksum="74b5f7e38197842e0f94d1be54b57048" mimeType="application/xml"/>
+		<resource uri="PublishingAssistant.ini" size="1033" checksum="7695399db8eb98699c9bbc97be3e528f" mimeType="text/plain"/>
+		<resource uri="PublishingAssistantLog.txt" size="177059" checksum="e6ea7e560f5da69db57ea0e427e9415f" mimeType="text/plain"/>
+	      </container>
+	    </container>
+	  </container>
+	</container>
+      </container>
+      <container uri="My Paratext Projects">
+	<resource uri="English.lds" size="1023" checksum="48c58caab2f25073325603f9ab38c2f0" mimeType="text/plain"/>
+	<resource uri="DBLTEST.ssf" size="6438" checksum="d0ff1cc65a7320064e8e1b0355393d5c" mimeType="text/plain"/>
+	<resource uri="eng.vrs" size="16630" checksum="d8a35b9c2cd338b5ddfcdf7b9faf8fce" mimeType="text/plain"/>
+	<resource uri="tmpDebugBackup_P7BackupMainProject.zip" size="2423681" checksum="6fe2888a9396b504ad2afaff9e6086f4" mimeType="text/plain"/>
+	<container uri="PA_DebugBackup_Restored_PythonCode">
+	  <resource uri="CreateUSFMFromInDesign.py" size="31206" checksum="82e8d28d6834860d2aa5f899da760c90" mimeType="text/plain"/>
+	  <resource uri="CreateInDesignDocument4.py" size="126773" checksum="afe3da6418b02476039393bcd23ab2be" mimeType="text/plain"/>
+	  <resource uri="Constants.py" size="468" checksum="4a009481aac9949bc5bd5f176f1fdc28" mimeType="text/plain"/>
+	  <resource uri="conc_defaultShellInDesign.txt" size="7593" checksum="81a5e183af531475210c473b50643d5e" mimeType="text/plain"/>
+	  <resource uri="checking.py" size="9032" checksum="9094dd1952a932cb15fd99d0e66ad94c" mimeType="text/plain"/>
+	  <resource uri="winpaths.py" size="4019" checksum="ea612ff55258638bd20bf07a20a1a838" mimeType="text/plain"/>
+	  <resource uri="UConfigParser.py" size="25099" checksum="f0f7ec6e4f73f51e3ee056761a79236b" mimeType="text/plain"/>
+	  <resource uri="ScriptureObjects.py" size="32351" checksum="717fc7dd169f210defe23e94c732b058" mimeType="text/plain"/>
+	  <resource uri="InDStylesheet4.py" size="63010" checksum="53b89f8cdd1536b6397c88d1259918a0" mimeType="text/plain"/>
+	  <resource uri="markerdefinitions.py" size="13396" checksum="bd852fe31fefc012f7c6fbb3b8d7bd75" mimeType="text/plain"/>
+	  <resource uri="RunPubAssist.py" size="4255" checksum="37decebe7bd4a418950bcf6832e46bbc" mimeType="text/plain"/>
+	  <resource uri="tdx_defaultShellInDesign.txt" size="9627" checksum="3e11246f106af3f5db0545506372d5f3" mimeType="text/plain"/>
+	  <resource uri="table_of_contents_defaultShellInDesign.txt" size="8497" checksum="0c6f0136f688a47a6160bbc571bb0045" mimeType="text/plain"/>
+	  <resource uri="rtlchanges.txt" size="1537" checksum="9aefba8dd55a33c58ea521e716e9eb8d" mimeType="text/plain"/>
+	  <resource uri="toc_defaultShellInDesign.txt" size="8497" checksum="0c6f0136f688a47a6160bbc571bb0045" mimeType="text/plain"/>
+	  <resource uri="PALog.py" size="1112" checksum="145db4930bc98655d4db91dc8429914a" mimeType="text/plain"/>
+	  <resource uri="defaultShellInDesign.txt" size="37928" checksum="e54240b7d02545dad2ca8dc36fefd97d" mimeType="text/plain"/>
+	  <resource uri="PAHyphenate.py" size="10172" checksum="db766699ce3020db0f923030c9c5d877" mimeType="text/plain"/>
+	  <resource uri="nidx_defaultShellInDesign.txt" size="7732" checksum="68b0e9350b31657314a404f02928b9d4" mimeType="text/plain"/>
+	  <resource uri="PAMapText.py" size="5230" checksum="3cfcfeebe3bcb2958239510de5a3e637" mimeType="text/plain"/>
+	</container>
+	<resource uri="usfm.sty" size="74281" checksum="26dc764702d49bd610b7058f005821a0" mimeType="text/plain"/>
+	<container uri="DBLTEST">
+	  <resource uri="hyphenatedWords.txt" size="204095" checksum="24f4cb0ef355b42f7ae78f305eebfcdc" mimeType="text/plain"/>
+	  <resource uri="custom.sty" size="327" checksum="99a3a0f3d644a83920e30fbb765cadba" mimeType="text/plain"/>
+	  <resource uri="frtbak.sty" size="60379" checksum="0da97119fa349adaec71747ae51d77aa" mimeType="text/plain"/>
+	  <resource uri="BookNames.xml" size="9750" checksum="1a320be46b2c9ea282a25193dd58be8e" mimeType="application/xml"/>
+	  <resource uri="41MATDBLTEST.SFM" size="162147" checksum="a42a2b5dfaabc2c734d046d8a00d3982" mimeType="text/plain"/>
+	  <container uri="InDesign">
+	    <container uri="POD 2016-6-8">
+	      <resource uri="40MAT.indd" size="4755456" checksum="3dda1c09a0373c2688fc90eb10f17cd6" mimeType="application/x-indesign"/>
+	      <resource uri="41MRK.indd" size="3584000" checksum="166200614da1b511e979e5a8ea9c4f3e" mimeType="application/x-indesign"/>
+	      <resource uri="44ACT.indd" size="4386816" checksum="3a9711b7017fdf0e266bf3299fcdbb1b" mimeType="application/x-indesign"/>
+	      <resource uri="ZZCVR.indd" size="1224704" checksum="b4ff9f003c30d20143a94382afd072fb" mimeType="application/x-indesign"/>
+	      <resource uri="POD 2016-6-8.indb" size="73728" checksum="cc7c25b3956d909da02e7000823d9c40" mimeType="text/plain"/>
+	      <resource uri="AdjustmentProps.ini" size="165" checksum="0164b27fbf3eb4d245ac5de8855fb899" mimeType="text/plain"/>
+	      <resource uri="42LUK.indd" size="4825088" checksum="28f027a6c6ed5b0f0d02631d2a0b61a3" mimeType="application/x-indesign"/>
+	      <resource uri="JobSpecs5.ini" size="5602" checksum="81087e74781439ae67ea6624fbeb183a" mimeType="text/plain"/>
+	      <resource uri="43JHN.indd" size="3878912" checksum="eb74804f48a943bf7c74f233da830d6d" mimeType="application/x-indesign"/>
+	      <container uri="Import">
+		<resource uri="DBLTEST_44ACT_debug_body_preFinalChanges.txt" size="522066" checksum="c7b46ee712ab5ed5978d022f44a09ae5" mimeType="text/plain"/>
+		<resource uri="DBLTEST_43JHN_debug_intro_preFinalChanges.txt" size="5392" checksum="b187f584d0f40bb18330f24301fd645c" mimeType="text/plain"/>
+		<resource uri="DBLTEST_44ACT_fnotes.txt" size="50418" checksum="2bf07bb376b3c6a3f86deeb65120dd29" mimeType="text/plain"/>
+		<resource uri="DBLTEST_40MAT_debug_intro_preFinalChanges.txt" size="4884" checksum="c0cfd958bedf0f8fc2ffe9599ba66621" mimeType="text/plain"/>
+		<resource uri="DBLTEST_42LUK_intro.txt" size="24966" checksum="2b05b2bf1748f562f0b7536e27a079e1" mimeType="text/plain"/>
+		<resource uri="DBLTEST_42LUK_fnotes.txt" size="43014" checksum="3f7e7dd6d7150386c7c9bd97145e0a03" mimeType="text/plain"/>
+		<resource uri="DBLTEST_40MAT.txt" size="586060" checksum="ef5f7be6dab3ef1cf8998a890c25a5c2" mimeType="text/plain"/>
+		<resource uri="DBLTEST_44ACT_debug_intro_preFinalChanges.txt" size="5916" checksum="4e084ffa654b00e0d4d2d10010f0080e" mimeType="text/plain"/>
+		<resource uri="DBLTEST_43JHN_fnotes.txt" size="47142" checksum="e475fc67e5e9797f60663957be1237d5" mimeType="text/plain"/>
+		<resource uri="DBLTEST_41MRK_styles.txt" size="20236" checksum="1d42d5459651389c8e5f170f504aae0e" mimeType="text/plain"/>
+		<resource uri="DBLTEST_41MRK_intro.txt" size="24442" checksum="aa396f3429e77e6af5c9f5f8d2cb39af" mimeType="text/plain"/>
+		<resource uri="DBLTEST_A2OTH02periph Spine_header.txt" size="9904" checksum="1d1c327dbd46a67833582e31525a2d22" mimeType="text/plain"/>
+		<resource uri="DBLTEST_41MRK_debug_body_preFinalChanges.txt" size="356820" checksum="7f80d0258e6d63a0678eaf55ace0773f" mimeType="text/plain"/>
+		<resource uri="DBLTEST_42LUK_xrefs.txt" size="96372" checksum="991f9530e962781e62ae145ba797cd25" mimeType="text/plain"/>
+		<resource uri="DBLTEST_44ACT_debug_PostChanges.txt" size="310510" checksum="6210439e28857b1d4fb22f3fd73919ad" mimeType="text/plain"/>
+		<resource uri="DBLTEST_43JHN_styles.txt" size="20236" checksum="b55dc85dbd1434076d2d3cdbce6829b8" mimeType="text/plain"/>
+		<resource uri="DBLTEST_44ACT_notes.txt" size="77040" checksum="c6de7ea4775e57f9ced002aa97334312" mimeType="text/plain"/>
+		<resource uri="DBLTEST_41MRK_debug_intro_preFinalChanges.txt" size="4208" checksum="aaaa4c874be0c4263cb3d878a938d00e" mimeType="text/plain"/>
+		<resource uri="DBLTEST_A2OTH02periph Spine_intro.txt" size="9868" checksum="2f02fbc53b801653d1de45a0a1ad72a0" mimeType="text/plain"/>
+		<resource uri="DBLTEST_42LUK_styles.txt" size="20368" checksum="2a47003adbe644de77a0e58f2242ba5d" mimeType="text/plain"/>
+		<resource uri="DBLTEST_43JHN_debug_body_preFinalChanges.txt" size="429124" checksum="60838a2b05ab23fc9f434a9b9ace455c" mimeType="text/plain"/>
+		<resource uri="DBLTEST_43JHN_debug_PostChanges.txt" size="241200" checksum="2a4909ee3e8444b9ea6868ae1cb2216f" mimeType="text/plain"/>
+		<resource uri="DBLTEST_40MAT.ini" size="14038" checksum="4c65b978507e2c486b6dfb4ae681c162" mimeType="text/plain"/>
+		<resource uri="DBLTEST_40MAT_xrefs.txt" size="130076" checksum="10630170ec6c4f305561dd8ded4d7129" mimeType="text/plain"/>
+		<resource uri="DBLTEST_A2OTH02periph Spine.txt" size="10132" checksum="2d0e337b1fdabbc7d46f854900d3f00a" mimeType="text/plain"/>
+		<resource uri="DBLTEST_A2OTH01periph Cover.txt" size="11268" checksum="859ec1680119fe7f88874a03b12efc18" mimeType="text/plain"/>
+		<resource uri="DBLTEST_A2OTH02periph Spine_styles.txt" size="9868" checksum="2f02fbc53b801653d1de45a0a1ad72a0" mimeType="text/plain"/>
+		<resource uri="DBLTEST_41MRK_header.txt" size="20274" checksum="1f9a12f3c74c378eddc1df0ab3967dc5" mimeType="text/plain"/>
+		<resource uri="DBLTEST_40MAT_fnotes.txt" size="39334" checksum="875d4268d7e238cdce4a610ecc4c4c26" mimeType="text/plain"/>
+		<resource uri="DBLTEST_42LUK_notes.txt" size="88392" checksum="b1a5ce444174ea5aa58e16ddb7fb933b" mimeType="text/plain"/>
+		<resource uri="DBLTEST_42LUK_debug_intro_preFinalChanges.txt" size="4600" checksum="27bd3d733679fa1ef6c2d452d811607a" mimeType="text/plain"/>
+		<resource uri="DBLTEST_40MAT_styles.txt" size="20524" checksum="10bdae15761a20384b21ed2100b500dd" mimeType="text/plain"/>
+		<resource uri="DBLTEST_41MRK_fnotes.txt" size="39302" checksum="2670bb35040ef93c0f181889132a9ea0" mimeType="text/plain"/>
+		<resource uri="DBLTEST_41MRK.ini" size="14226" checksum="3226a327e1e9a2e0bfa915fda492f824" mimeType="text/plain"/>
+		<resource uri="DBLTEST_ZZCVR_C.txt" size="11268" checksum="859ec1680119fe7f88874a03b12efc18" mimeType="text/plain"/>
+		<resource uri="DBLTEST_43JHN_notes.txt" size="58518" checksum="83ee5ba21b4fbef61d3db35dd6df170a" mimeType="text/plain"/>
+		<resource uri="DBLTEST_A2OTH01periph Cover_intro.txt" size="10764" checksum="5d0c588b8af46efa98b2b14723ec7165" mimeType="text/plain"/>
+		<resource uri="DBLTEST_44ACT_styles.txt" size="20936" checksum="26669219de6fb99f5d5bc674b3e650f4" mimeType="text/plain"/>
+		<resource uri="DBLTEST_A2OTH01periph Cover_styles.txt" size="10764" checksum="5d0c588b8af46efa98b2b14723ec7165" mimeType="text/plain"/>
+		<resource uri="DBLTEST_A2OTH_debug_PostChanges.txt" size="374" checksum="dd917d2a1a1dc9c133c6abb3c57d1728" mimeType="text/plain"/>
+		<resource uri="DBLTEST_41MRK_notes.txt" size="58420" checksum="1da13e44b5c09ea9fe09124ba123db7c" mimeType="text/plain"/>
+		<resource uri="DBLTEST_43JHN_intro.txt" size="25626" checksum="ad771858866c2cacf4d36e474d858a4b" mimeType="text/plain"/>
+		<resource uri="DBLTEST_44ACT.txt" size="543000" checksum="c2894e7441e998476b6e9aca6ff66073" mimeType="text/plain"/>
+		<resource uri="DBLTEST_43JHN.ini" size="14226" checksum="c33c3fbfbe631736e232ae229fe31d31" mimeType="text/plain"/>
+		<resource uri="DBLTEST_ZZCVR_styles.txt" size="10764" checksum="5d0c588b8af46efa98b2b14723ec7165" mimeType="text/plain"/>
+		<resource uri="DBLTEST_44ACT_header.txt" size="20974" checksum="f0a78bea8e2cba5c84d6628b88d61538" mimeType="text/plain"/>
+		<resource uri="DBLTEST_A2OTH02periph Spine_debug_body_preFinalChanges.txt" size="266" checksum="1eaf395c509db95014b2bd6977366be4" mimeType="text/plain"/>
+		<resource uri="DBLTEST_44ACT_xrefs.txt" size="75424" checksum="08de7af4fbe8951391275840fb508feb" mimeType="text/plain"/>
+		<resource uri="DBLTEST_ZZCVR_S.txt" size="10008" checksum="81d3de6d8a3ea3a61b77d132feb246a1" mimeType="text/plain"/>
+		<resource uri="DBLTEST_43JHN_header.txt" size="20274" checksum="6e439030ef44f881c753f2903c198c38" mimeType="text/plain"/>
+		<resource uri="DBLTEST_ZZCVR.ini" size="14150" checksum="7a516e8f57ce752522cfd7f3b4a8405c" mimeType="text/plain"/>
+		<resource uri="DBLTEST_40MAT_header.txt" size="20568" checksum="8856620342f521605547897584ba032e" mimeType="text/plain"/>
+		<resource uri="DBLTEST_41MRK_debug_PostChanges.txt" size="203132" checksum="7dc15e3a5515aa6d5f42b6b5e8a246e2" mimeType="text/plain"/>
+		<resource uri="DBLTEST_41MRK_xrefs.txt" size="65644" checksum="8268bbb073c795849c6b82071f715ce0" mimeType="text/plain"/>
+		<resource uri="DBLTEST_43JHN_xrefs.txt" size="57530" checksum="d28649eba6fcc1f4641cc36f3f50431b" mimeType="text/plain"/>
+		<resource uri="DBLTEST_42LUK.txt" size="608426" checksum="df6fc1c9fdc4a1dfb7065eab4ea8bd14" mimeType="text/plain"/>
+		<resource uri="DBLTEST_44ACT.ini" size="14218" checksum="c2e6eb6245d619efda02bab04e2525ad" mimeType="text/plain"/>
+		<resource uri="DBLTEST_A2OTH01periph Cover_header.txt" size="10800" checksum="96a7542d07925cb8f5bd84e1c45bdb2a" mimeType="text/plain"/>
+		<resource uri="DBLTEST_41MRK.txt" size="377054" checksum="6cfb8c89d12506acb3359a84b350f8b8" mimeType="text/plain"/>
+		<resource uri="DBLTEST_42LUK_debug_PostChanges.txt" size="327794" checksum="41dc0edb8b5c251df124e37c748eeca4" mimeType="text/plain"/>
+		<resource uri="DBLTEST_42LUK.ini" size="14226" checksum="b813d882e3c65e64d0e77682181d3ab2" mimeType="text/plain"/>
+		<resource uri="DBLTEST_44ACT_intro.txt" size="26850" checksum="cb22331ac303e8d25567ac6c7827f785" mimeType="text/plain"/>
+		<resource uri="DBLTEST_A2OTH01periph Cover_debug_intro_preFinalChanges.txt" size="2" checksum="f3b25701fe362ec84616a93a45ce9998" mimeType="text/plain"/>
+		<resource uri="DBLTEST_A2OTH01periph Cover_debug_body_preFinalChanges.txt" size="506" checksum="c36dd9d97f000273b9a48d5f6179a703" mimeType="text/plain"/>
+		<resource uri="DBLTEST_40MAT_notes.txt" size="115676" checksum="878fd0e0c5f22a14d4a1aae857d353ef" mimeType="text/plain"/>
+		<resource uri="DBLTEST_42LUK_debug_body_preFinalChanges.txt" size="588060" checksum="23ea03cb8c3486589c5225257bfb4962" mimeType="text/plain"/>
+		<resource uri="DBLTEST_A2OTH02periph Spine_debug_intro_preFinalChanges.txt" size="2" checksum="f3b25701fe362ec84616a93a45ce9998" mimeType="text/plain"/>
+		<resource uri="DBLTEST_40MAT_intro.txt" size="25406" checksum="6cfd219dc48a18885f681ba804193b31" mimeType="text/plain"/>
+		<resource uri="DBLTEST_43JHN.txt" size="449358" checksum="54c5e114e99745ecc37524f64cdea763" mimeType="text/plain"/>
+		<resource uri="DBLTEST_40MAT_debug_PostChanges.txt" size="317572" checksum="461cd7eebaf4e9c21adc5d8cc69697cc" mimeType="text/plain"/>
+		<resource uri="DBLTEST_40MAT_debug_body_preFinalChanges.txt" size="565538" checksum="87aa260beab3234f90288aaa0dda6690" mimeType="text/plain"/>
+		<resource uri="DBLTEST_42LUK_header.txt" size="20406" checksum="5e727d5bc2d071e302a5f24198b46044" mimeType="text/plain"/>
+	      </container>
+	    </container>
+	  </container>
+	  <resource uri="CheckingStatus.xml" size="162208" checksum="070d7587fddea969812964d5deabcb24" mimeType="application/xml"/>
+	  <resource uri="44JHNDBLTEST.SFM" size="123487" checksum="a0bb55e2a077c73ce16c1fcf8dbdf0b6" mimeType="text/plain"/>
+	  <resource uri="43LUKDBLTEST.SFM" size="167289" checksum="d14db0952998ca19576a56602a58f7f7" mimeType="text/plain"/>
+	  <resource uri="42MRKDBLTEST.SFM" size="103729" checksum="494803d7b8d7f091cc32daa4d5271559" mimeType="text/plain"/>
+	  <resource uri="A2OTHDBLTEST.SFM" size="186" checksum="fd09140ba6fcad31a22699dabb5d54f2" mimeType="text/plain"/>
+	  <resource uri="custom.vrs" size="678" checksum="64ae7bc76d52862f8309a542d2e53df0" mimeType="text/plain"/>
+	  <container uri="figures">
+	    <resource uri="avnt016.jpg" size="12345" checksum="f4b3ae8bdbe08a570901af2295ba064f" mimeType="image/jpeg"/>
+	  </container>
+	  <resource uri="45ACTDBLTEST.SFM" size="157593" checksum="113ee39f2e084f6e44014e42055e0914" mimeType="text/plain"/>
+	</container>
+      </container>
+      <container uri="Windows">
+	<container uri="Fonts">
+	  <resource uri="times.ttf" size="1006088" checksum="f5943da14f15269a4d0ed5277e56466b" mimeType="application/x-font-ttf"/>
+	  <resource uri="seguisym.ttf" size="2244484" checksum="302864f2ece7eef0b299f0be0f280082" mimeType="application/x-font-ttf"/>
+	  <resource uri="timesbd.ttf" size="991536" checksum="81857c374432a58e8c1325e3a9c347e7" mimeType="application/x-font-ttf"/>
+	  <resource uri="timesi.ttf" size="811348" checksum="81b3c3603e3abb8f22c5d02a00adde44" mimeType="application/x-font-ttf"/>
+	</container>
+      </container>
+    </container>
+    <resource uri="metadata.xml" size="2913" checksum="4aa1cb8673bea7847dfe8a773cd2ffbf" mimeType="application/xml"/>
+  </manifest>
+  <publications>
+    <publication id="1" default="true">
+      <name>DBL Gospels and Acts</name>
+      <nameLocal>DBL Gospels and Acts</nameLocal>
+      <abbreviation>DBL5</abbreviation>
+      <abbreviationLocal>DBL5</abbreviationLocal>
+      <description>The first 5 books of DBLTEST NT</description>
+      <descriptionLocal>The first 5 books of DBLTEST NT</descriptionLocal>
+      <canonicalContent>
+	<book code="MAT" />
+	<book code="MRK" />
+	<book code="LUK" />
+	<book code="JHN" />
+	<book code="ACT" />
+      </canonicalContent>
+      <structure>
+	<content name="cover" src="release/Cover.pdf"/>
+	<content name="body" src="release/Inside.pdf"/>
+      </structure>
+    </publication>
+  </publications>
+  <copyright>
+    <!-- Allow XHTML: <h1> <h2> <h3> <p> <blockquote> <ul> <ol> <li> <br> <strong> <em> <a> -->
+    <statement contentType="xhtml">
+      <p>Good News Translation (Today’s English Version, Second Edition) © 1992 American Bible Society. All rights reserved.</p>
+    </statement>
+  </copyright>
+  <promotion>
+    <!-- optionally empty -->
+    <!-- Allow XHTML: <h1> <h2> <h3> <p> <blockquote> <ul> <ol> <li> <br> <strong> <em> <a> -->
+    <promoVersionInfo contentType="xhtml">
+      <p>Good News Translation with Deuterocanonicals/Apocrypha. Scripture taken from the Good News Translation (r) (Today's English Version, Second Edition). Copyright (c) 1992 American Bible Society. Used by permission.</p>
+      <p>This is a Digital Bible Library demonstration bundle. It should NOT BE USED for any publication purposes</p>
+    </promoVersionInfo>
+    <!-- Allow XHTML: <h1> <h2> <h3> <p> <blockquote> <ul> <ol> <li> <br> <strong> <em> <a> -->
+  </promotion>
+  <archiveStatus>
+    <archivistName>Bev Cope</archivistName>
+    <dateArchived>1970-10-14T01:04:30</dateArchived>
+    <dateUpdated>1970-10-30T00:00:00</dateUpdated>
+    <comments>tt</comments>
+  </archiveStatus>
+</DBLMetadata>

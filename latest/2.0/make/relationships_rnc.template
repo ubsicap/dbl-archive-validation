@@ -1,0 +1,12 @@
+relationshipsElement =
+  element relationships {
+    relationElement*
+  }
+
+relationElement =
+  element relation {
+    attribute type { "text" | "audio" | "print" },
+    attribute id { xsd:string { pattern = "[a-f0-9]{16}" } },
+    attribute revision { xsd:integer }
+  }
+

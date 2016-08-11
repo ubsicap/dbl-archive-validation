@@ -5,7 +5,7 @@ namesNameAtts = attribute id { text }
 
 namesName =
   element name {
-    namesNameAtts & nameLong & nameShort & nameAbbr
+    namesNameAtts & nameLong? & nameShort & nameAbbr?
   }
 
 nameLong = element long { text }

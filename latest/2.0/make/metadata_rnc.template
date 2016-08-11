@@ -98,10 +98,12 @@ sourceAndExpressionCommonElements = (
 
 commonElements = (
   identificationElement &
+  relationshipsElement &
   agenciesElement &
   confidentialElement &
   countryElement &
   namesElement &
+  copyrightElement &
   archiveStatusElement
 )
 
@@ -114,6 +116,8 @@ dblMetadataId = attribute id { xsd:string { pattern = "[a-f0-9]{16}" } }
 dblMetadataRevision = attribute revision { xsd:integer }
 
 %%insert identification_rnc.template%%
+
+%%insert relationships_rnc.template%%
 
 %%insert agencies_rnc.template%%
 
@@ -132,6 +136,8 @@ dblMetadataRevision = attribute revision { xsd:integer }
 %%insert manifest_rnc.template%%
 
 %%insert publications_rnc.template%%
+
+%%insert copyright_rnc.template%%
 
 %%insert promotion_rnc.template%%
 

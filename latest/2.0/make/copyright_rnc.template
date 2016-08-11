@@ -1,0 +1,10 @@
+copyrightElement =
+  element copyright {
+    copyrightStatementElement
+  }
+
+copyrightStatementElement =
+  element statement {
+    attribute contentType { "xhtml" },
+    simplifiedHtml+
+  }

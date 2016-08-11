@@ -98,10 +98,12 @@ sourceAndExpressionCommonElements = (
 
 commonElements = (
   identificationElement &
+  relationshipsElement &
   agenciesElement &
   confidentialElement &
   countryElement &
   namesElement &
+  copyrightElement &
   archiveStatusElement
 )
 
@@ -173,6 +175,20 @@ systemIdElement = # systemId[@type='paratext'] is overwritten by Paratext
 
 bundleProducerElement = # bundleProducer is overwritten by Paratext
   element bundleProducer { lenGe2String }
+
+relationshipsElement =
+  element relationships {
+    relationElement*
+  }
+
+relationElement =
+  element relation {
+    attribute type { "text" | "audio" | "print" },
+    attribute id { xsd:string { pattern = "[a-f0-9]{16}" } },
+    attribute revision { xsd:integer }
+  }
+
+
 
 agenciesElement =
   element agencies {
@@ -256,7 +272,11 @@ shortLanguageElement =
     languageIsoElement &
     languageNameElement &
     languageNameLocalElement &
-    languageScriptElement
+    languageLdmlElement? &
+    languageRodElement? &
+    languageScriptElement? &
+    languageScriptDirectionElement? &
+    languageNumeralsElement?
     }
 
 languageIsoElement = # DCMI: language/iso (ISO639-3)
@@ -452,7 +472,7 @@ printFormatElement =
     element scale { xsd:string { pattern = "[1-9][0-9]{1,3}%" } } &
     element orientation { "portrait" | "landscape" } &
     element color { "CMYK" | "RGB" | "Monochrome" } &
-    element fonts { printFormatFontElement }*
+    element fonts { printFormatFontElement* }
   }
 
 printFormatFontElement =
@@ -469,7 +489,7 @@ namesNameAtts = attribute id { text }
 
 namesName =
   element name {
-    namesNameAtts & nameLong & nameShort & nameAbbr
+    namesNameAtts & nameLong? & nameShort & nameAbbr?
   }
 
 nameLong = element long { text }
@@ -511,7 +531,6 @@ manifestContainerAtts =
   attribute uri {text}
 
 commonManifestResourceAtts = (
-  attribute id {text},
   attribute uri {text},
   attribute size {text}?,
   attribute checksum {text}?,
@@ -531,6 +550,7 @@ publicationElement =
     publicationAbbreviationLocal? &
     publicationDescription &
     publicationDescriptionLocal? &
+    publicationCanonicalContent? &
     publicationStructure
   }
 
@@ -552,6 +572,16 @@ publicationDescription = element description { lenGe2String }
 
 publicationDescriptionLocal = element descriptionLocal { lenGe2String }
 
+publicationCanonicalContent =
+  element canonicalContent {
+    publicationCanonicalContentBook+
+  }
+
+publicationCanonicalContentBook =
+  element book {
+    attribute code { canonicalBookIdEnum}
+  }
+
 publicationStructure = element structure {
   (publicationStructureDivision | publicationStructureContent)+
   }
@@ -571,6 +601,17 @@ publicationStructureContent =
 publicationStructureContentAtts =
   attribute name {text} &
   attribute src {text}
+
+copyrightElement =
+  element copyright {
+    copyrightStatementElement
+  }
+
+copyrightStatementElement =
+  element statement {
+    attribute contentType { "xhtml" },
+    simplifiedHtml+
+  }
 
 promotionElement = element promotion { promoVersionInfoElement }
 

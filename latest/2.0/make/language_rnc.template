@@ -15,7 +15,11 @@ shortLanguageElement =
     languageIsoElement &
     languageNameElement &
     languageNameLocalElement &
-    languageScriptElement
+    languageLdmlElement? &
+    languageRodElement? &
+    languageScriptElement? &
+    languageScriptDirectionElement? &
+    languageNumeralsElement?
     }
 
 languageIsoElement = # DCMI: language/iso (ISO639-3)

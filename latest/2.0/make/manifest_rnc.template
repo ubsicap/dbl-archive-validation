@@ -31,7 +31,6 @@ manifestContainerAtts =
   attribute uri {text}
 
 commonManifestResourceAtts = (
-  attribute id {text},
   attribute uri {text},
   attribute size {text}?,
   attribute checksum {text}?,

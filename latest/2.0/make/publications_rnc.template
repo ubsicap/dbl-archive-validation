@@ -10,6 +10,7 @@ publicationElement =
     publicationAbbreviationLocal? &
     publicationDescription &
     publicationDescriptionLocal? &
+    publicationCanonicalContent? &
     publicationStructure
   }
 
@@ -30,6 +31,16 @@ publicationAbbreviationLocal = element abbreviationLocal { lenGe2String }
 publicationDescription = element description { lenGe2String }
 
 publicationDescriptionLocal = element descriptionLocal { lenGe2String }
+
+publicationCanonicalContent =
+  element canonicalContent {
+    publicationCanonicalContentBook+
+  }
+
+publicationCanonicalContentBook =
+  element book {
+    attribute code { canonicalBookIdEnum}
+  }
 
 publicationStructure = element structure {
   (publicationStructureDivision | publicationStructureContent)+
