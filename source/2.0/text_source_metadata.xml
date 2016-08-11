@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DBLMetadata type="text" typeVersion="2.0" id="a4ecd655fac4de61" revision="0">
+  <identification>
+    <name>DBL Test Version with DC</name>
+    <nameLocal>DBL Test Version with DC Local</nameLocal>
+    <description>English: DBL Test Version with DC Local New Testament</description>
+    <dateCompleted></dateCompleted>
+    <bundleProducer>Paratext</bundleProducer>
+    <abbreviation>DBLTEST</abbreviation>
+    <abbreviationLocal>DBLTEST</abbreviationLocal>
+    <scope>Gospels plus Acts</scope>
+  </identification>
+  <type>
+    <hasCharacters>true</hasCharacters>
+    <isSource>true</isSource>
+    <isExpression>false</isExpression>
+    <translationType>Revision</translationType>
+    <audience>Common</audience>
+  </type>
+  <confidential>false</confidential>
+  <relationships/>
+  <agencies>
+    <rightsHolder abbr="TEST" url="http://thedigitalbiblelibrary.org" local="DBL Testing" uid="54650cfa5117ad690fb05fb6">Organization for DBL Testing</rightsHolder>
+    <contributor content="true" publication="true" management="true" qa="true" uid="54650cd05117ad67b3826e99">American Bible Society</contributor>
+  </agencies>
+  <language>
+    <iso>eng</iso>
+    <name>English</name>
+    <nameLocal>English</nameLocal>
+    <ldml>en</ldml>
+    <rod></rod>
+    <script>Roman</script>
+    <scriptDirection>LTR</scriptDirection>
+    <numerals>Arabic</numerals>
+  </language>
+  <country>
+    <iso>USA</iso>
+    <name>United States of America</name>
+  </country>
+  <format>
+    <versedParagraphs>false</versedParagraphs>
+  </format>
+  <names/>
+  <manifest>
+    <resource uri="MAT.usx" size="32957" checksum="b95daf7d53dbb0f390759dcb7b7dff2f" mimeType="application/xml" progress="4"/>
+    <resource uri="MRK.usx" size="32957" checksum="b95daf7d53dbb0f390759dcb7b7dff2f" mimeType="application/xml" progress="4"/>
+    <resource uri="LUK.usx" size="32957" checksum="b95daf7d53dbb0f390759dcb7b7dff2f" mimeType="application/xml" progress="4"/>
+    <resource uri="JHN.usx" size="32957" checksum="b95daf7d53dbb0f390759dcb7b7dff2f" mimeType="application/xml" progress="4"/>
+    <resource uri="ACT.usx" size="32957" checksum="b95daf7d53dbb0f390759dcb7b7dff2f" mimeType="application/xml" progress="4"/>
+  </manifest>
+  <copyright>
+    <!-- Allow XHTML: <h1> <h2> <h3> <p> <blockquote> <ul> <ol> <li> <br> <strong> <em> <a> -->
+    <statement contentType="xhtml">
+      <p>Good News Translation (Today’s English Version, Second Edition) © 1992 American Bible Society. All rights reserved.</p>
+    </statement>
+  </copyright>
+  <archiveStatus>
+    <archivistName>Bev Cope</archivistName>
+    <dateArchived>1970-10-14T01:04:30</dateArchived>
+    <dateUpdated>1970-10-30T00:00:00</dateUpdated>
+    <comments>tt</comments>
+  </archiveStatus>
+</DBLMetadata>
