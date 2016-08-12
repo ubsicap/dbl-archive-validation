@@ -141,10 +141,36 @@ Nothing new here.
 
 ## names
 
+* In a source-only bundle there is no publication to link the names to
+  the manifest resources. But I think this is ok since, in practice,
+  we don't have any source-only bundles right now and, if we did, they
+  would presumably be something like an archive for partial
+  translation components.
+
+* If we are going to provide a list of "well-known" ids for names we
+  should include this in the schema for documentation purposes. (If
+  undocumented ids started with, say, "x-" we could then validate
+  those ids.)
+
 ## publications
+
+* See comments above re nameLocal etc.
+
+* It is expected that print bundles only ever contain one publication,
+  but I'm not sure we need to enforce this at schema level.
+
+* I added an optional `canonicalContent` section so that consumers can
+  find out which Bible books are covered by the publication. I suggest
+  that this list is treated as unordered.
 
 ## copyright
 
+Nothing new here.
+
 ## promotion
 
+Nothing new here.
+
 ## archiveStatus
+
+Nothing new here.
