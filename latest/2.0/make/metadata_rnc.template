@@ -72,7 +72,7 @@ audioSourceAndExpressionMetadata = element DBLMetadata {
   dblMetadataCommonAtts &
   attribute type { "audio" } &
   sourceAndExpressionCommonElements &
-  shortLanguageElement &
+  fullLanguageElement &
   audioSourceAndExpressionTypeElement &
   audioFormatElement
 }

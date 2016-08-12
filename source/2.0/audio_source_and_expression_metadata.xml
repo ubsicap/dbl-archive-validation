@@ -28,6 +28,11 @@
     <iso>eng</iso>
     <name>English</name>
     <nameLocal>English</nameLocal>
+    <ldml>en</ldml>
+    <rod></rod>
+    <script>Roman</script>
+    <scriptDirection>LTR</scriptDirection>
+    <numerals>Arabic</numerals>
   </language>
   <country>
     <iso>USA</iso>
