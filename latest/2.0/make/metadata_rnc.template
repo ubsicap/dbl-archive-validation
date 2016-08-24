@@ -16,7 +16,6 @@ sourceAndExpressionMetadata = textSourceAndExpressionMetadata | audioSourceAndEx
 
 textSourceMetadata = element DBLMetadata {
   dblMetadataCommonAtts &
-  attribute type { "text" } &
   sourceCommonElements &
   fullLanguageElement &
   textSourceTypeElement &
@@ -25,7 +24,6 @@ textSourceMetadata = element DBLMetadata {
 
 audioSourceMetadata = element DBLMetadata {
   dblMetadataCommonAtts &
-  attribute type { "audio" } &
   sourceCommonElements &
   shortLanguageElement &
   audioSourceTypeElement &
@@ -34,7 +32,6 @@ audioSourceMetadata = element DBLMetadata {
 
 textExpressionMetadata = element DBLMetadata {
   dblMetadataCommonAtts &
-  attribute type { "text" } &
   expressionCommonElements &
   shortLanguageElement &
   textExpressionTypeElement &
@@ -43,7 +40,6 @@ textExpressionMetadata = element DBLMetadata {
 
 printExpressionMetadata = element DBLMetadata {
   dblMetadataCommonAtts &
-  attribute type { "print" } &
   expressionCommonElements &
   shortLanguageElement &
   printExpressionTypeElement &
@@ -52,7 +48,6 @@ printExpressionMetadata = element DBLMetadata {
 
 audioExpressionMetadata = element DBLMetadata {
   dblMetadataCommonAtts &
-  attribute type { "audio" } &
   expressionCommonElements &
   shortLanguageElement &
   audioExpressionTypeElement &
@@ -61,7 +56,6 @@ audioExpressionMetadata = element DBLMetadata {
 
 textSourceAndExpressionMetadata = element DBLMetadata {
   dblMetadataCommonAtts &
-  attribute type { "text" } &
   sourceAndExpressionCommonElements &
   fullLanguageElement &
   textSourceAndExpressionTypeElement &
@@ -70,7 +64,6 @@ textSourceAndExpressionMetadata = element DBLMetadata {
 
 audioSourceAndExpressionMetadata = element DBLMetadata {
   dblMetadataCommonAtts &
-  attribute type { "audio" } &
   sourceAndExpressionCommonElements &
   fullLanguageElement &
   audioSourceAndExpressionTypeElement &
@@ -100,16 +93,15 @@ commonElements = (
   identificationElement &
   relationshipsElement &
   agenciesElement &
-  confidentialElement &
   countryElement &
   namesElement &
   copyrightElement &
   archiveStatusElement
 )
 
-dblMetadataCommonAtts = (dblMetadataTypeVersion & dblMetadataId & dblMetadataRevision)
+dblMetadataCommonAtts = (dblMetadataVersion & dblMetadataId & dblMetadataRevision)
 
-dblMetadataTypeVersion = attribute typeVersion { "2.0" }
+dblMetadataVersion = attribute version { "2.0" }
 
 dblMetadataId = attribute id { xsd:string { pattern = "[a-f0-9]{16}" } }
 
@@ -120,8 +112,6 @@ dblMetadataRevision = attribute revision { xsd:integer }
 %%insert relationships_rnc.template%%
 
 %%insert agencies_rnc.template%%
-
-%%insert confidential_rnc.template%%
 
 %%insert language_rnc.template%%
 

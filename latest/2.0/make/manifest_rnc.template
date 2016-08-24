@@ -32,7 +32,7 @@ manifestContainerAtts =
 
 commonManifestResourceAtts = (
   attribute uri {text},
-  attribute size {text}?,
+  attribute size {text},
   attribute checksum {text}?,
   attribute mimeType {text}
 )

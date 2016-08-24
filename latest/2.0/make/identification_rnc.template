@@ -1,11 +1,12 @@
 identificationElement =
   element identification {
     nameElement &
-    nameLocalElement &
+    nameLocalElement? &
     abbreviationElement &
-    abbreviationLocalElement &
-    scopeElement &
+    abbreviationLocalElement? &
     descriptionElement &
+    descriptionLocalElement? &
+    scopeElement &
     dateCompletedElement &
     systemIdElement* &
     bundleProducerElement
@@ -32,6 +33,9 @@ scopeElement = # DCMI: title/scriptureScope
 
 descriptionElement = # DCMI: description
   element description { lenGe2String }
+
+descriptionLocalElement =
+  element descriptionLocal { lenGe2String }
 
 dateCompletedElement = # DCMI: date
   element dateCompleted {

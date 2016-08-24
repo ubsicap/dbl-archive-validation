@@ -1,10 +1,6 @@
 fullLanguageElement =
   element language {
-    languageIsoElement &
-    languageNameElement &
-    languageNameLocalElement &
-    languageLdmlElement &
-    languageRodElement &
+    commonLanguageElements &
     languageScriptElement &
     languageScriptDirectionElement &
     languageNumeralsElement
@@ -12,15 +8,19 @@ fullLanguageElement =
 
 shortLanguageElement =
   element language {
-    languageIsoElement &
-    languageNameElement &
-    languageNameLocalElement &
-    languageLdmlElement? &
-    languageRodElement? &
+    commonLanguageElements &
     languageScriptElement? &
     languageScriptDirectionElement? &
     languageNumeralsElement?
     }
+
+commonLanguageElements = (
+    languageIsoElement &
+    languageNameElement &
+    languageNameLocalElement? &
+    languageLdmlElement? &
+    languageRodElement?
+)
 
 languageIsoElement = # DCMI: language/iso (ISO639-3)
   element iso {

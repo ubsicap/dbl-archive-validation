@@ -16,7 +16,6 @@ sourceAndExpressionMetadata = textSourceAndExpressionMetadata | audioSourceAndEx
 
 textSourceMetadata = element DBLMetadata {
   dblMetadataCommonAtts &
-  attribute type { "text" } &
   sourceCommonElements &
   fullLanguageElement &
   textSourceTypeElement &
@@ -25,7 +24,6 @@ textSourceMetadata = element DBLMetadata {
 
 audioSourceMetadata = element DBLMetadata {
   dblMetadataCommonAtts &
-  attribute type { "audio" } &
   sourceCommonElements &
   shortLanguageElement &
   audioSourceTypeElement &
@@ -34,7 +32,6 @@ audioSourceMetadata = element DBLMetadata {
 
 textExpressionMetadata = element DBLMetadata {
   dblMetadataCommonAtts &
-  attribute type { "text" } &
   expressionCommonElements &
   shortLanguageElement &
   textExpressionTypeElement &
@@ -43,7 +40,6 @@ textExpressionMetadata = element DBLMetadata {
 
 printExpressionMetadata = element DBLMetadata {
   dblMetadataCommonAtts &
-  attribute type { "print" } &
   expressionCommonElements &
   shortLanguageElement &
   printExpressionTypeElement &
@@ -52,7 +48,6 @@ printExpressionMetadata = element DBLMetadata {
 
 audioExpressionMetadata = element DBLMetadata {
   dblMetadataCommonAtts &
-  attribute type { "audio" } &
   expressionCommonElements &
   shortLanguageElement &
   audioExpressionTypeElement &
@@ -61,7 +56,6 @@ audioExpressionMetadata = element DBLMetadata {
 
 textSourceAndExpressionMetadata = element DBLMetadata {
   dblMetadataCommonAtts &
-  attribute type { "text" } &
   sourceAndExpressionCommonElements &
   fullLanguageElement &
   textSourceAndExpressionTypeElement &
@@ -70,7 +64,6 @@ textSourceAndExpressionMetadata = element DBLMetadata {
 
 audioSourceAndExpressionMetadata = element DBLMetadata {
   dblMetadataCommonAtts &
-  attribute type { "audio" } &
   sourceAndExpressionCommonElements &
   fullLanguageElement &
   audioSourceAndExpressionTypeElement &
@@ -100,16 +93,15 @@ commonElements = (
   identificationElement &
   relationshipsElement &
   agenciesElement &
-  confidentialElement &
   countryElement &
   namesElement &
   copyrightElement &
   archiveStatusElement
 )
 
-dblMetadataCommonAtts = (dblMetadataTypeVersion & dblMetadataId & dblMetadataRevision)
+dblMetadataCommonAtts = (dblMetadataVersion & dblMetadataId & dblMetadataRevision)
 
-dblMetadataTypeVersion = attribute typeVersion { "2.0" }
+dblMetadataVersion = attribute version { "2.0" }
 
 dblMetadataId = attribute id { xsd:string { pattern = "[a-f0-9]{16}" } }
 
@@ -118,11 +110,12 @@ dblMetadataRevision = attribute revision { xsd:integer }
 identificationElement =
   element identification {
     nameElement &
-    nameLocalElement &
+    nameLocalElement? &
     abbreviationElement &
-    abbreviationLocalElement &
-    scopeElement &
+    abbreviationLocalElement? &
     descriptionElement &
+    descriptionLocalElement? &
+    scopeElement &
     dateCompletedElement &
     systemIdElement* &
     bundleProducerElement
@@ -149,6 +142,9 @@ scopeElement = # DCMI: title/scriptureScope
 
 descriptionElement = # DCMI: description
   element description { lenGe2String }
+
+descriptionLocalElement =
+  element descriptionLocal { lenGe2String }
 
 dateCompletedElement = # DCMI: date
   element dateCompleted {
@@ -178,12 +174,21 @@ bundleProducerElement = # bundleProducer is overwritten by Paratext
 
 relationshipsElement =
   element relationships {
-    relationElement*
+    (sourceRelationElement | expressionRelationElement)*
   }
 
-relationElement =
+sourceRelationElement =
   element relation {
-    attribute type { "text" | "audio" | "print" },
+    attribute relationType { "source" },
+    attribute type { "text" | "audio" },
+    attribute id { xsd:string { pattern = "[a-f0-9]{16}" } },
+    attribute revision { xsd:integer }
+  }
+
+expressionRelationElement =
+  element relation {
+    attribute relationType { "expression" },
+    attribute type { "audio" | "print" },
     attribute id { xsd:string { pattern = "[a-f0-9]{16}" } },
     attribute revision { xsd:integer }
   }
@@ -252,16 +257,9 @@ etenPartnerElement = # Primary translation or coordination/sponsorship agency
     lenGe2String?
   }
 
-confidentialElement = # DCMI: accessRights/confidential
-  element confidential { xsd:boolean }
-
 fullLanguageElement =
   element language {
-    languageIsoElement &
-    languageNameElement &
-    languageNameLocalElement &
-    languageLdmlElement &
-    languageRodElement &
+    commonLanguageElements &
     languageScriptElement &
     languageScriptDirectionElement &
     languageNumeralsElement
@@ -269,15 +267,19 @@ fullLanguageElement =
 
 shortLanguageElement =
   element language {
-    languageIsoElement &
-    languageNameElement &
-    languageNameLocalElement &
-    languageLdmlElement? &
-    languageRodElement? &
+    commonLanguageElements &
     languageScriptElement? &
     languageScriptDirectionElement? &
     languageNumeralsElement?
     }
+
+commonLanguageElements = (
+    languageIsoElement &
+    languageNameElement &
+    languageNameLocalElement? &
+    languageLdmlElement? &
+    languageRodElement?
+)
 
 languageIsoElement = # DCMI: language/iso (ISO639-3)
   element iso {
@@ -318,7 +320,11 @@ languageNumeralsElement =
     }
 
 
-countryElement = element country { countryIsoElement & countryNameElement }
+countryElement = element country {
+  countryIsoElement &
+  countryNameElement &
+  countryNameLocalElement?
+  }
 
 countryIsoElement = # DCMI: coverage/spatial (ISO3166)
   element iso {
@@ -328,63 +334,80 @@ countryIsoElement = # DCMI: coverage/spatial (ISO3166)
 countryNameElement = # DCMI: subject/subjectCountry
   element name { lenGe2String }
 
+countryNameLocalElement = 
+  element nameLocal { lenGe2String }
+
 
 textSourceTypeElement =
   element type {
-  element hasCharacters { "true" } &
+    element medium { "text" } &
+    element hasCharacters { "true" } &
     element isSource { "true" } &
     element isExpression { "false" } &
+    element isConfidential { xsd:boolean } &
     commonTextSourceTypeElements
 }
 
 audioSourceTypeElement =
   element type {
+    element medium { "audio" } &
     element hasCharacters { "false" } &
     element isSource { "true" } &
     element isExpression { "false" } &
+    element isConfidential { xsd:boolean } &
     commonAudioSourceTypeElements
 }
 
 textExpressionTypeElement =
   element type {
+    element medium { "text" } &
     element hasCharacters { "true" } &
     element isSource { "false" } &
     element isExpression { "true" } &
-    commonTextExpressionTypeElements
+    commonTextExpressionTypeElements &
+    element isConfidential { xsd:boolean }
 }
 
 printExpressionTypeElement =
   element type {
+    element medium { "print" } &
     element hasCharacters { "true" } &
     element isSource { "false" } &
     element isExpression { "true" } &
-    commonExpressionTypeElements
+    commonExpressionTypeElements &
+    element isConfidential { xsd:boolean }
 }
 
 audioExpressionTypeElement =
   element type {
+    element medium { "audio" } &
     element hasCharacters { "false" } &
     element isSource { "false" } &
     element isExpression { "true" } &
-    commonAudioExpressionTypeElements
+    commonAudioExpressionTypeElements &
+    element isConfidential { xsd:boolean }
 }
 
 textSourceAndExpressionTypeElement =
   element type {
+    element medium { "text" } &
     element hasCharacters { "true" } &
     element isSource { "true" } &
     element isExpression { "true" } &
     commonTextSourceTypeElements &
-    commonTextExpressionTypeElements
+    commonTextExpressionTypeElements &
+    element isConfidential { xsd:boolean }
 }
 
 audioSourceAndExpressionTypeElement =
   element type {
+    element medium { "audio" } &
     element hasCharacters { "false" } &
     element isSource { "true" } &
     element isExpression { "true" } &
     commonAudioSourceTypeElements &
-    commonAudioExpressionTypeElements
+    commonAudioExpressionTypeElements &
+    element isConfidential { xsd:boolean }
 }
 
 commonTextSourceTypeElements = (
@@ -409,11 +432,18 @@ commonAudioExpressionTypeElements = (
 )
 
 commonSourceTypeElements = (
+  commonTypeElements &
   element translationType { lenGe2String } &
   element audience { translationLevelEnum }
 )
 
-commonExpressionTypeElements = ( empty )
+commonExpressionTypeElements = (
+  commonTypeElements
+)
+
+commonTypeElements = (
+  empty
+)
 
 textFormatElement =
   element format {
@@ -422,19 +452,18 @@ textFormatElement =
 
 audioFormatElement = # DCMI: format
   element format {
-    audioFormatCompression &
-    audioFormatTrackConfiguration &
-    audioFormatBitRate &
-    audioFormatBitDepth &
-    audioFormatSamplingRate
+    audioFormatCompression? &
+    audioFormatTrackConfiguration? &
+    audioFormatBitRate? &
+    audioFormatBitDepth? &
+    audioFormatSamplingRate?
   }
 
 audioFormatCompression =
   element compression { # http://www.ebu.ch/metadata/cs/web/ebu_AudioCompressionCodeCS_p.xml.htm
     "MP3"  |
     "FLAC" |
-    "WAV"  |
-    empty
+    "WAV"
   }
 
 audioFormatTrackConfiguration =
@@ -442,42 +471,43 @@ audioFormatTrackConfiguration =
     "1/0 (Mono)"   |
     "Dual mono"    |
     "2/0 (Stereo)" |
-    "5.1 Surround" |
-    empty
+    "5.1 Surround"
   }
 
 audioFormatBitRate =
   element bitRate {
-    xsd:integer |
-    empty
+    xsd:integer
   }
 
 audioFormatBitDepth =
   element bitDepth {
-    xsd:integer |
-    empty
+    xsd:integer
   }
 
 audioFormatSamplingRate =
   element samplingRate {
-    xsd:integer |
-    empty
+    xsd:integer
   }
 
 printFormatElement =
   element format {
     element pod { xsd:boolean } &
-    element width { xsd:string { pattern = "[1-9][0-9]*mm" } } &
-    element height { xsd:string { pattern = "[1-9][0-9]*mm" } } &
+    element width { xsd:string { pattern = "[1-9][0-9]{1,4}mm" } } &
+    element height { xsd:string { pattern = "[1-9][0-9]{1,4}mm" } } &
     element scale { xsd:string { pattern = "[1-9][0-9]{1,3}%" } } &
     element orientation { "portrait" | "landscape" } &
-    element color { "CMYK" | "RGB" | "Monochrome" } &
+    element color { "CMYK" | "RGB" } &
     element fonts { printFormatFontElement* }
   }
 
 printFormatFontElement =
   element font {
-    attribute type { "OpenType" },
+    attribute type {
+      "OpenType" | 
+      "Other" |
+      "Bitmap" |
+      "TrueType" |
+      "Type1" },
     text
   }
 
@@ -532,33 +562,47 @@ manifestContainerAtts =
 
 commonManifestResourceAtts = (
   attribute uri {text},
-  attribute size {text}?,
+  attribute size {text},
   attribute checksum {text}?,
   attribute mimeType {text}
 )
 
 
 publicationsElement = # DCMI: tableOfContents
-  element publications { publicationElement+ }
+  element publications { solePublicationElement | (defaultPublicationElement & nonDefaultPublicationElement+) }
 
-publicationElement =
+solePublicationElement =
   element publication {
-    publicationAtts &
-    publicationName &
-    publicationNameLocal? &
-    publicationAbbreviation &
-    publicationAbbreviationLocal? &
-    publicationDescription &
-    publicationDescriptionLocal? &
-    publicationCanonicalContent? &
-    publicationStructure
+  attribute id { xsd:integer },
+  attribute default { "true" }?,
+  publicationChildElements
   }
 
-publicationAtts = publicationId & publicationDefault?
+defaultPublicationElement =
+  element publication {
+  attribute id { xsd:integer },
+  attribute default { "true" },
+  publicationChildElements
+  }
 
-publicationId = attribute id { xsd:integer }
+nonDefaultPublicationElement =
+  element publication {
+  attribute id { xsd:integer },
+  attribute default { "false" }?,
+  publicationChildElements
+  }
 
-publicationDefault = attribute default { xsd:boolean }
+publicationChildElements = (
+  publicationName? &
+  publicationNameLocal? &
+  publicationAbbreviation? &
+  publicationAbbreviationLocal? &
+  publicationDescription? &
+  publicationDescriptionLocal? &
+  publicationCountryElement? &
+  publicationCanonicalContent? &
+  publicationStructure
+)
 
 publicationName = element name { lenGe2String }
 
@@ -571,6 +615,12 @@ publicationAbbreviationLocal = element abbreviationLocal { lenGe2String }
 publicationDescription = element description { lenGe2String }
 
 publicationDescriptionLocal = element descriptionLocal { lenGe2String }
+
+publicationCountryElement = element country {
+  element iso { xsd:string { pattern = "[A-Z][A-Z][A-Z]?" } } &
+  element name { lenGe2String } &
+  element nameLocal { lenGe2String }?
+}
 
 publicationCanonicalContent =
   element canonicalContent {

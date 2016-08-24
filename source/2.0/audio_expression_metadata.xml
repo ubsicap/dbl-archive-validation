@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<DBLMetadata type="audio" typeVersion="2.0" id="a4ecd655fac4de61" revision="0">
+<DBLMetadata version="2.0" id="a4ecd655fac4de61" revision="0">
   <identification>
     <name>DBL Test Version with DC</name>
     <nameLocal>DBL Test Version with DC Local</nameLocal>
@@ -11,14 +11,15 @@
     <scope>Gospels plus Acts</scope>
   </identification>
   <type>
+    <medium>audio</medium>
     <hasCharacters>false</hasCharacters>
     <isSource>false</isSource>
     <isExpression>true</isExpression>
     <dramatization>Single-Voice</dramatization>
+    <isConfidential>false</isConfidential>
   </type>
-  <confidential>false</confidential>
   <relationships>
-    <relation type="text" id="2880c78491b2f8ce" revision="67"/>
+    <relation type="text" id="2880c78491b2f8ce" revision="67" relationType="source"/>
   </relationships>
   <agencies>
     <rightsHolder abbr="TEST" url="http://thedigitalbiblelibrary.org" local="DBL Testing" uid="54650cfa5117ad690fb05fb6">Organization for DBL Testing</rightsHolder>
@@ -75,7 +76,7 @@
     <resource uri="ACT.mp3" size="32957" checksum="b95daf7d53dbb0f390759dcb7b7dff2f" mimeType="audio/mp3"/>
   </manifest>
   <publications>
-    <publication id="1" default="true">
+    <publication id="1">
       <name>DBL Gospels and Acts</name>
       <nameLocal>DBL Gospels and Acts</nameLocal>
       <abbreviation>DBL5</abbreviation>

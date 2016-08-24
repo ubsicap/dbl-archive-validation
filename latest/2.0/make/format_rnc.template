@@ -5,19 +5,18 @@ textFormatElement =
 
 audioFormatElement = # DCMI: format
   element format {
-    audioFormatCompression &
-    audioFormatTrackConfiguration &
-    audioFormatBitRate &
-    audioFormatBitDepth &
-    audioFormatSamplingRate
+    audioFormatCompression? &
+    audioFormatTrackConfiguration? &
+    audioFormatBitRate? &
+    audioFormatBitDepth? &
+    audioFormatSamplingRate?
   }
 
 audioFormatCompression =
   element compression { # http://www.ebu.ch/metadata/cs/web/ebu_AudioCompressionCodeCS_p.xml.htm
     "MP3"  |
     "FLAC" |
-    "WAV"  |
-    empty
+    "WAV"
   }
 
 audioFormatTrackConfiguration =
@@ -25,41 +24,42 @@ audioFormatTrackConfiguration =
     "1/0 (Mono)"   |
     "Dual mono"    |
     "2/0 (Stereo)" |
-    "5.1 Surround" |
-    empty
+    "5.1 Surround"
   }
 
 audioFormatBitRate =
   element bitRate {
-    xsd:integer |
-    empty
+    xsd:integer
   }
 
 audioFormatBitDepth =
   element bitDepth {
-    xsd:integer |
-    empty
+    xsd:integer
   }
 
 audioFormatSamplingRate =
   element samplingRate {
-    xsd:integer |
-    empty
+    xsd:integer
   }
 
 printFormatElement =
   element format {
     element pod { xsd:boolean } &
-    element width { xsd:string { pattern = "[1-9][0-9]*mm" } } &
-    element height { xsd:string { pattern = "[1-9][0-9]*mm" } } &
+    element width { xsd:string { pattern = "[1-9][0-9]{1,4}mm" } } &
+    element height { xsd:string { pattern = "[1-9][0-9]{1,4}mm" } } &
     element scale { xsd:string { pattern = "[1-9][0-9]{1,3}%" } } &
     element orientation { "portrait" | "landscape" } &
-    element color { "CMYK" | "RGB" | "Monochrome" } &
+    element color { "CMYK" | "RGB" } &
     element fonts { printFormatFontElement* }
   }
 
 printFormatFontElement =
   element font {
-    attribute type { "OpenType" },
+    attribute type {
+      "OpenType" | 
+      "Other" |
+      "Bitmap" |
+      "TrueType" |
+      "Type1" },
     text
   }

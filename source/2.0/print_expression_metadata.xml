@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<DBLMetadata type="print" typeVersion="2.0" id="a4ecd655fac4de61" revision="0">
+<DBLMetadata version="2.0" id="a4ecd655fac4de61" revision="0">
   <identification>
     <name>DBL Test Version with DC</name>
     <nameLocal>DBL Test Version with DC Local</nameLocal>
@@ -11,13 +11,14 @@
     <scope>Gospels plus Acts</scope>
   </identification>
   <type>
+    <medium>print</medium>
+    <isConfidential>false</isConfidential>
     <hasCharacters>true</hasCharacters>
     <isSource>false</isSource>
     <isExpression>true</isExpression>
   </type>
-  <confidential>false</confidential>
   <relationships>
-    <relation type="text" id="2880c78491b2f8ce" revision="67" />
+    <relation type="text" id="2880c78491b2f8ce" revision="67" relationType="source"/>
   </relationships>
   <agencies>
     <rightsHolder abbr="TEST" url="http://thedigitalbiblelibrary.org" local="DBL Testing" uid="54650cfa5117ad690fb05fb6">Organization for DBL Testing</rightsHolder>
@@ -59,7 +60,7 @@
       <resource uri="Cover.pdf" size="66487" checksum="0dfd80b70df9172ebc6052ece050f92e" mimeType="application/pdf"/>
   </manifest>
   <publications>
-    <publication id="1" default="true">
+    <publication id="1">
       <name>DBL Gospels and Acts</name>
       <nameLocal>DBL Gospels and Acts</nameLocal>
       <abbreviation>DBL5</abbreviation>

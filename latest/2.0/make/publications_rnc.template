@@ -1,24 +1,38 @@
 publicationsElement = # DCMI: tableOfContents
-  element publications { publicationElement+ }
+  element publications { solePublicationElement | (defaultPublicationElement & nonDefaultPublicationElement+) }
 
-publicationElement =
+solePublicationElement =
   element publication {
-    publicationAtts &
-    publicationName &
-    publicationNameLocal? &
-    publicationAbbreviation &
-    publicationAbbreviationLocal? &
-    publicationDescription &
-    publicationDescriptionLocal? &
-    publicationCanonicalContent? &
-    publicationStructure
+  attribute id { xsd:integer },
+  attribute default { "true" }?,
+  publicationChildElements
   }
 
-publicationAtts = publicationId & publicationDefault?
+defaultPublicationElement =
+  element publication {
+  attribute id { xsd:integer },
+  attribute default { "true" },
+  publicationChildElements
+  }
 
-publicationId = attribute id { xsd:integer }
+nonDefaultPublicationElement =
+  element publication {
+  attribute id { xsd:integer },
+  attribute default { "false" }?,
+  publicationChildElements
+  }
 
-publicationDefault = attribute default { xsd:boolean }
+publicationChildElements = (
+  publicationName? &
+  publicationNameLocal? &
+  publicationAbbreviation? &
+  publicationAbbreviationLocal? &
+  publicationDescription? &
+  publicationDescriptionLocal? &
+  publicationCountryElement? &
+  publicationCanonicalContent? &
+  publicationStructure
+)
 
 publicationName = element name { lenGe2String }
 
@@ -31,6 +45,12 @@ publicationAbbreviationLocal = element abbreviationLocal { lenGe2String }
 publicationDescription = element description { lenGe2String }
 
 publicationDescriptionLocal = element descriptionLocal { lenGe2String }
+
+publicationCountryElement = element country {
+  element iso { xsd:string { pattern = "[A-Z][A-Z][A-Z]?" } } &
+  element name { lenGe2String } &
+  element nameLocal { lenGe2String }?
+}
 
 publicationCanonicalContent =
   element canonicalContent {

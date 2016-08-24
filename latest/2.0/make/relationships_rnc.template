@@ -1,11 +1,20 @@
 relationshipsElement =
   element relationships {
-    relationElement*
+    (sourceRelationElement | expressionRelationElement)*
   }
 
-relationElement =
+sourceRelationElement =
   element relation {
-    attribute type { "text" | "audio" | "print" },
+    attribute relationType { "source" },
+    attribute type { "text" | "audio" },
+    attribute id { xsd:string { pattern = "[a-f0-9]{16}" } },
+    attribute revision { xsd:integer }
+  }
+
+expressionRelationElement =
+  element relation {
+    attribute relationType { "expression" },
+    attribute type { "audio" | "print" },
     attribute id { xsd:string { pattern = "[a-f0-9]{16}" } },
     attribute revision { xsd:integer }
   }

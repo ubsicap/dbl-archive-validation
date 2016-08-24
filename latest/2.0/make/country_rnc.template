@@ -1,4 +1,8 @@
-countryElement = element country { countryIsoElement & countryNameElement }
+countryElement = element country {
+  countryIsoElement &
+  countryNameElement &
+  countryNameLocalElement?
+  }
 
 countryIsoElement = # DCMI: coverage/spatial (ISO3166)
   element iso {
@@ -7,3 +11,6 @@ countryIsoElement = # DCMI: coverage/spatial (ISO3166)
 
 countryNameElement = # DCMI: subject/subjectCountry
   element name { lenGe2String }
+
+countryNameLocalElement = 
+  element nameLocal { lenGe2String }

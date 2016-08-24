@@ -1,2 +1,0 @@
-confidentialElement = # DCMI: accessRights/confidential
-  element confidential { xsd:boolean }

@@ -1,59 +1,73 @@
 textSourceTypeElement =
   element type {
-  element hasCharacters { "true" } &
+    element medium { "text" } &
+    element hasCharacters { "true" } &
     element isSource { "true" } &
     element isExpression { "false" } &
+    element isConfidential { xsd:boolean } &
     commonTextSourceTypeElements
 }
 
 audioSourceTypeElement =
   element type {
+    element medium { "audio" } &
     element hasCharacters { "false" } &
     element isSource { "true" } &
     element isExpression { "false" } &
+    element isConfidential { xsd:boolean } &
     commonAudioSourceTypeElements
 }
 
 textExpressionTypeElement =
   element type {
+    element medium { "text" } &
     element hasCharacters { "true" } &
     element isSource { "false" } &
     element isExpression { "true" } &
-    commonTextExpressionTypeElements
+    commonTextExpressionTypeElements &
+    element isConfidential { xsd:boolean }
 }
 
 printExpressionTypeElement =
   element type {
+    element medium { "print" } &
     element hasCharacters { "true" } &
     element isSource { "false" } &
     element isExpression { "true" } &
-    commonExpressionTypeElements
+    commonExpressionTypeElements &
+    element isConfidential { xsd:boolean }
 }
 
 audioExpressionTypeElement =
   element type {
+    element medium { "audio" } &
     element hasCharacters { "false" } &
     element isSource { "false" } &
     element isExpression { "true" } &
-    commonAudioExpressionTypeElements
+    commonAudioExpressionTypeElements &
+    element isConfidential { xsd:boolean }
 }
 
 textSourceAndExpressionTypeElement =
   element type {
+    element medium { "text" } &
     element hasCharacters { "true" } &
     element isSource { "true" } &
     element isExpression { "true" } &
     commonTextSourceTypeElements &
-    commonTextExpressionTypeElements
+    commonTextExpressionTypeElements &
+    element isConfidential { xsd:boolean }
 }
 
 audioSourceAndExpressionTypeElement =
   element type {
+    element medium { "audio" } &
     element hasCharacters { "false" } &
     element isSource { "true" } &
     element isExpression { "true" } &
     commonAudioSourceTypeElements &
-    commonAudioExpressionTypeElements
+    commonAudioExpressionTypeElements &
+    element isConfidential { xsd:boolean }
 }
 
 commonTextSourceTypeElements = (
@@ -78,8 +92,15 @@ commonAudioExpressionTypeElements = (
 )
 
 commonSourceTypeElements = (
+  commonTypeElements &
   element translationType { lenGe2String } &
   element audience { translationLevelEnum }
 )
 
-commonExpressionTypeElements = ( empty )
+commonExpressionTypeElements = (
+  commonTypeElements
+)
+
+commonTypeElements = (
+  empty
+)
