@@ -1,46 +1,30 @@
 identificationElement =
   element identification {
-    nameElement &
-    nameLocalElement? &
-    abbreviationElement &
-    abbreviationLocalElement? &
-    descriptionElement &
-    descriptionLocalElement? &
-    scopeElement &
-    dateCompletedElement &
-    systemIdElement* &
-    bundleProducerElement
+    element name { lenGe2String } &
+    element nameLocal { lenGe2String } &
+    element abbreviation { abbreviationString }? &
+    element abbreviationLocal { localAbbreviationString }? &
+    element description { lenGe2String } &
+    element descriptionLocal { lenGe2String }? &
+    element scope { lenGe2String } &
+    element dateCompleted {
+      xsd:date |
+      xsd:gYear |
+      xsd:gYearMonth |
+      xsd:dateTime
+    }? &
+    element systemId {
+      systemIdAtts,
+      lenGe2String
+    }* &
+    element bundleProducer { lenGe2String }
     }
 
-nameElement = # DCMI: title
-  element name { lenGe2String }
-
-nameLocalElement =    
-  element nameLocal { lenGe2String }
-
-abbreviationElement =
-  element abbreviation {
-    xsd:string { pattern = "[A-Za-z0-9\-]{2,12}" }
-  }
-
-abbreviationLocalElement =    
-  element abbreviationLocal {
-    xsd:string { minLength = "2" maxLength = "12" }
-  }
-
-scopeElement = # DCMI: title/scriptureScope
-  element scope { text }
-
-descriptionElement = # DCMI: description
-  element description { lenGe2String }
-
-descriptionLocalElement =
-  element descriptionLocal { lenGe2String }
-
-dateCompletedElement = # DCMI: date
-  element dateCompleted {
-      (xsd:date | xsd:gYear | xsd:gYearMonth | xsd:dateTime)?
-  }
+systemIdAtts =
+    attribute type { systemIdTypeEnum },
+    attribute name { lenGe2String }?,
+    attribute fullname { lenGe2String }?,
+    attribute csetid { lenGe2String }?
 
 systemIdTypeEnum =
   "gbc"      | # Global Bible Catalogue entry ID
@@ -48,17 +32,3 @@ systemIdTypeEnum =
   "paratext" | # Paratext Project GUID
   "reap"     | # SIL REAP database ID
   "biblica"    # Biblica database id
-
-systemIdType = attribute type { systemIdTypeEnum }
-
-systemIdAtts =
-    systemIdType,
-    attribute name { lenGe2String }?,
-    attribute fullname { lenGe2String }?,
-    attribute csetid { lenGe2String }?
-
-systemIdElement = # systemId[@type='paratext'] is overwritten by Paratext
-  element systemId { systemIdAtts, lenGe2String }
-
-bundleProducerElement = # bundleProducer is overwritten by Paratext
-  element bundleProducer { lenGe2String }

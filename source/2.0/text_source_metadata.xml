@@ -4,7 +4,7 @@
     <name>DBL Test Version with DC</name>
     <nameLocal>DBL Test Version with DC Local</nameLocal>
     <description>English: DBL Test Version with DC Local New Testament</description>
-    <dateCompleted></dateCompleted>
+    <dateCompleted>1990-03-11</dateCompleted>
     <bundleProducer>Paratext</bundleProducer>
     <abbreviation>DBLTEST</abbreviation>
     <abbreviationLocal>DBLTEST</abbreviationLocal>
@@ -29,7 +29,6 @@
     <name>English</name>
     <nameLocal>English</nameLocal>
     <ldml>en</ldml>
-    <rod></rod>
     <script>Roman</script>
     <scriptDirection>LTR</scriptDirection>
     <numerals>Arabic</numerals>

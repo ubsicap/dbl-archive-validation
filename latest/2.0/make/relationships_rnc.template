@@ -7,7 +7,7 @@ sourceRelationElement =
   element relation {
     attribute relationType { "source" },
     attribute type { "text" | "audio" },
-    attribute id { xsd:string { pattern = "[a-f0-9]{16}" } },
+    attribute id { bundleIdString },
     attribute revision { xsd:integer }
   }
 
@@ -15,7 +15,7 @@ expressionRelationElement =
   element relation {
     attribute relationType { "expression" },
     attribute type { "audio" | "print" },
-    attribute id { xsd:string { pattern = "[a-f0-9]{16}" } },
+    attribute id { bundleIdString },
     attribute revision { xsd:integer }
   }
 

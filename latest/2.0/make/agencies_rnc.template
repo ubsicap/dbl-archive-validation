@@ -1,60 +1,43 @@
 agenciesElement =
   element agencies {
-    rightsHolderElement+ & rightsAdminElement? & contributorElement+ & etenPartnerElement?
+    rightsHolderElement+ &
+    rightsAdminElement? &
+    contributorElement+ &
+    etenPartnerElement?
   }
 
-rightsHolderAbbrAtt = attribute abbr { lenGe2String }
-
-rightsHolderUrlAtt = attribute url { xsd:anyURI }
-
-rightsHolderLocalAtt = attribute local { lenGe2String }
-
-rightsHolderAtts =
-  rightsHolderAbbrAtt? & rightsHolderUrlAtt? & rightsHolderLocalAtt?
-
-rightsHolderElement = # DCMI: rightsHolder
+rightsHolderElement =
   element rightsHolder {
-    rightsHolderAtts,
-      attribute uid { lenGe2String },
-      lenGe2String
+    attribute abbr { lenGe2String } &
+    attribute url { xsd:anyURI } &
+    attribute local { lenGe2String } &
+    attribute uid { lenGe2String } &
+    lenGe2String
   }
 
-rightsAdminUrl = attribute url { xsd:anyURI }
-
-rightsAdminAtts = rightsAdminUrl?
-
-rightsAdminElement = # DCMI: rightsHolder
+rightsAdminElement =
   element rightsAdmin {
-    rightsAdminAtts,
-      attribute uid { lenGe2String },
-      lenGe2String
+    attribute url { xsd:anyURI }?,
+    attribute uid { lenGe2String },
+    lenGe2String
   }
 
-contributorContent = attribute content { xsd:boolean }
-
-contributorPublication = attribute publication { xsd:boolean }
-
-contributorManagement = attribute management { xsd:boolean }
-
-contributorFinance = attribute finance { xsd:boolean }
-
-contributorQa = attribute qa { xsd:boolean }
-
-contributorAtts =
-    (contributorContent |
-     contributorPublication |
-     contributorManagement |
-     contributorFinance |
-     contributorQa)+
-
-contributorElement = # DCMI: contributor
+contributorElement =
     element contributor {
-      contributorAtts,
+      contributorAtt+,
       attribute uid { lenGe2String },
       lenGe2String
     }
   
-etenPartnerElement = # Primary translation or coordination/sponsorship agency
+contributorAtt = (
+  attribute content { xsd:boolean } |
+  attribute publication { xsd:boolean } |
+  attribute management { xsd:boolean } |
+  attribute finance { xsd:boolean } |
+  attribute qa { xsd:boolean }
+  )
+
+etenPartnerElement =
   element etenPartner {
     attribute uid { lenGe2String }?,
     lenGe2String?

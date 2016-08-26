@@ -99,13 +99,11 @@ commonElements = (
   archiveStatusElement
 )
 
-dblMetadataCommonAtts = (dblMetadataVersion & dblMetadataId & dblMetadataRevision)
-
-dblMetadataVersion = attribute version { "2.0" }
-
-dblMetadataId = attribute id { xsd:string { pattern = "[a-f0-9]{16}" } }
-
-dblMetadataRevision = attribute revision { xsd:integer }
+dblMetadataCommonAtts = (
+  attribute version { "2.0" } &
+  attribute id { bundleIdString } &
+  attribute revision { xsd:integer }
+)
 
 %%insert identification_rnc.template%%
 

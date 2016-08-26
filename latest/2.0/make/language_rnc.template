@@ -1,61 +1,48 @@
 fullLanguageElement =
   element language {
     commonLanguageElements &
-    languageScriptElement &
-    languageScriptDirectionElement &
-    languageNumeralsElement
-    }
+    element script { lenGe2String } &
+    element scriptDirection { languageScriptDirectionEnum } &
+    element numerals { numeralSystemEnum }?
+  }
 
 shortLanguageElement =
   element language {
     commonLanguageElements &
-    languageScriptElement? &
-    languageScriptDirectionElement? &
-    languageNumeralsElement?
+    element script { lenGe2String }? &
+    element scriptDirection { languageScriptDirectionEnum }? &
+    element numerals { numeralSystemEnum }?
     }
 
 commonLanguageElements = (
-    languageIsoElement &
-    languageNameElement &
-    languageNameLocalElement? &
-    languageLdmlElement? &
-    languageRodElement?
+    element iso { languageIsoString } &
+    element name { lenGe2String } &
+    element nameLocal { lenGe2String }? &
+    element ldml { ldmlString }? &
+    element rod { rodString }?
 )
 
-languageIsoElement = # DCMI: language/iso (ISO639-3)
-  element iso {
-    xsd:string { pattern = "[a-z][a-z][a-z]" }
-  }
-
-languageNameElement = # DCMI: subject/language (ISO639-3)
-  element name { lenGe2String }
-
-languageNameLocalElement = # DCMI: subject/language (ISO639-3)
-  element nameLocal { lenGe2String }
-
-languageLdmlElement = # DCMI: language/ldml
-  element ldml {
-    xsd:string { pattern = "[A-Za-z]{2,3}([\-_][A-Za-z0-9]+){0,3}" }?
-  }
-
-languageRodElement = # DCMI: language/rod
-  element rod {
-    xsd:string { pattern = "[0-9]{5}" }?
-  }
-
-languageScriptElement = # DCMI: language/script
-  element script { lenGe2String }
-
-
-languageScriptDirectionEnum =
+languageScriptDirectionEnum = (
   "LTR" | # Left to Right
   "RTL"   # RTL (Right to Left)
-
-languageScriptDirectionElement = # scriptDirection is overwritten by Paratext
-                                 # DCMI: language/scriptDirection
-  element scriptDirection { languageScriptDirectionEnum }
-
-languageNumeralsElement =
-  element numerals { # DCMI: language/numerals
-      (empty | numeralSystemEnum)
-    }
+)
+  
+numeralSystemEnum = (
+  "Arabic" | # (a.k.a. 'Hindu') = 0123456789
+  "Bengali" |
+  "Burmese" |
+  "Devanagari" |
+  "Ethiopic" |
+  "Farsi" |
+  "Gujarati" |
+  "Gurmukhi" |
+  "Hindi" | # (i.e. 'Arabic' as used in Egypt)
+  "Kannada" |
+  "Khmer" |
+  "Malayalam" |
+  "Oriya" |
+  "Tamil" |
+  "Telugu" |
+  "Thai" |
+  "Tibetan"
+)

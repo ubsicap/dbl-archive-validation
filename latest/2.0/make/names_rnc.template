@@ -1,15 +1,10 @@
 namesElement =
   element names { namesName* }
 
-namesNameAtts = attribute id { text }
-
 namesName =
   element name {
-    namesNameAtts & nameLong? & nameShort & nameAbbr?
+    attribute id { nameIdString } &
+    element long { lenGe2Le255String }? &
+    element short { lenGe2Le255String } &
+    element abbr { lenGe2Le255String }?
   }
-
-nameLong = element long { text }
-
-nameShort = element short { text }
-
-nameAbbr = element abbr { text }

@@ -93,7 +93,7 @@ commonAudioExpressionTypeElements = (
 
 commonSourceTypeElements = (
   commonTypeElements &
-  element translationType { lenGe2String } &
+  element translationType { translationTypeEnum } &
   element audience { translationLevelEnum }
 )
 
@@ -103,4 +103,18 @@ commonExpressionTypeElements = (
 
 commonTypeElements = (
   empty
+)
+
+translationTypeEnum = (
+  "First" |
+  "New" |
+  "Revision"
+)
+
+translationLevelEnum = (
+  "Basic" |
+  "Common" |
+  "Common - Literary" |
+  "Literary" |
+  "Liturgical"
 )

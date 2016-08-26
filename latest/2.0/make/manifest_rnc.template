@@ -6,7 +6,7 @@ sourceManifestElement =
 
 nonSourceManifestContainer =
   element container {
-    manifestContainerAtts,
+    attribute uri { xsd:anyURI },
     (nonSourceManifestContainer | nonSourceManifestResource)+
   }
 
@@ -17,7 +17,7 @@ nonSourceManifestResource =
 
 sourceManifestContainer =
   element container {
-    manifestContainerAtts,
+    attribute uri { xsd:anyURI },
     (sourceManifestContainer | sourceManifestResource)+
   }
 
@@ -27,12 +27,16 @@ sourceManifestResource =
     attribute progress { translationStageEnum }
   }
 
-manifestContainerAtts =
-  attribute uri {text}
-
 commonManifestResourceAtts = (
-  attribute uri {text},
-  attribute size {text},
-  attribute checksum {text}?,
-  attribute mimeType {text}
+  attribute uri { xsd:anyURI},
+  attribute size { xsd:integer },
+  attribute checksum { md5String }?,
+  attribute mimeType { mimeTypeString }
+)
+
+translationStageEnum = (
+  "1" | # Draft
+  "2" | # Internal Review
+  "3" | # External Review
+  "4"   # Final Review
 )

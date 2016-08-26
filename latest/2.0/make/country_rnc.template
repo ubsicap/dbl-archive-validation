@@ -1,16 +1,5 @@
 countryElement = element country {
-  countryIsoElement &
-  countryNameElement &
-  countryNameLocalElement?
-  }
-
-countryIsoElement = # DCMI: coverage/spatial (ISO3166)
-  element iso {
-    xsd:string { pattern = "[A-Z][A-Z][A-Z]?" }
-  }
-
-countryNameElement = # DCMI: subject/subjectCountry
-  element name { lenGe2String }
-
-countryNameLocalElement = 
-  element nameLocal { lenGe2String }
+  element iso { countryIsoString } &
+  element name { lenGe2String } &
+  element nameLocal { lenGe2String }?
+}
