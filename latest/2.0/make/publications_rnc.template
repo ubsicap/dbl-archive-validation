@@ -1,24 +1,10 @@
 publicationsElement = # DCMI: tableOfContents
-  element publications { solePublicationElement | (defaultPublicationElement & nonDefaultPublicationElement+) }
+  element publications { publicationElement* }
 
-solePublicationElement =
+publicationElement =
   element publication {
   attribute id { xsd:integer },
-  attribute default { "true" }?,
-  publicationChildElements
-  }
-
-defaultPublicationElement =
-  element publication {
-  attribute id { xsd:integer },
-  attribute default { "true" },
-  publicationChildElements
-  }
-
-nonDefaultPublicationElement =
-  element publication {
-  attribute id { xsd:integer },
-  attribute default { "false" }?,
+  attribute default { xsd:boolean }?,
   publicationChildElements
   }
 
@@ -49,7 +35,7 @@ publicationStructureDivision =
   element division {
     attribute name {text},
     (publicationStructureDivision | publicationStructureContent)+
-  }    
+  }
 
 publicationStructureContent =
   element content {
