@@ -8,12 +8,13 @@ agenciesElement =
 
 rightsHolderElement =
   element rightsHolder {
-    attribute abbr { lenGe2String } &
+    (attribute abbr { lenGe2String } &
     attribute url { xsd:anyURI } &
     attribute local { lenGe2String } &
-    attribute uid { lenGe2String } &
+    attribute uid { lenGe2String }),
     lenGe2String
   }
+
 
 rightsAdminElement =
   element rightsAdmin {
@@ -28,7 +29,7 @@ contributorElement =
       attribute uid { lenGe2String },
       lenGe2String
     }
-  
+
 contributorAtt = (
   attribute content { xsd:boolean } |
   attribute publication { xsd:boolean } |
