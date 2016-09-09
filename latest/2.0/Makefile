@@ -3,13 +3,15 @@
 all: clean build install
 
 clean:
-	if [[ -e ./metadata.rnc ]]; then rm -f ./metadata.rnc; fi
-	if [[ -e ./metadata.rng ]]; then rm -f ./metadata.rng; fi
+	@if [ -e ./metadata.rnc ]; then rm -f ./metadata.rnc; fi
+	@if [ -e ./metadata.rng ]; then rm -f ./metadata.rng; fi
+	@echo 'clean'
 
 build:
-
-	python2 ./make/make.py ./make/metadata_rnc.template metadata.rnc;
-	java -jar ./trang.jar -I rnc -O rng ./metadata.rnc metadata.rng;
+	@python2 ./make/make.py ./make/metadata_rnc.template metadata.rnc 1>/dev/null;
+	@java -jar ./trang.jar -I rnc -O rng ./metadata.rnc metadata.rng;
+	@echo 'completed build'
 
 install:
-	for DIR in ../../build/*; do [[ -d "$${DIR}" ]] && mkdir -p "$${DIR}/2.0" && cp -f ./metadata.rng "$${DIR}/2.0/"; done
+	@for DIR in ../../build/*; do [ -d "$${DIR}" ] && mkdir -p "$${DIR}/2.0" && cp -f ./metadata.rng "$${DIR}/2.0/"; done
+	@echo 'completed install'
