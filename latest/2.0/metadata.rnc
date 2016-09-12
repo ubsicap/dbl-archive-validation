@@ -102,7 +102,7 @@ commonElements = (
 dblMetadataCommonAtts = (
   attribute version { "2.0" } &
   attribute id { bundleIdString } &
-  attribute revision { xsd:integer }
+  attribute revision { xsd:integer | "null" }
 )
 
 identificationElement =
@@ -715,9 +715,9 @@ promotionElement =
 archiveStatusElement =
   element archiveStatus {
     element archivistName { lenGe2String } &
-    element dateArchived { xsd:dateTime } &
-    element dateUpdated { xsd:dateTime } &
-    element comments { lenGe2Le255String }
+    element dateArchived { xsd:dateTime | "null" } &
+    element dateUpdated { xsd:dateTime | "null" } &
+    element comments { lenLe255String }
   }
 
 
@@ -784,6 +784,8 @@ shI = element i { text }
 lenGe2String = xsd:string { minLength = "2" }
 
 lenGe2Le255String = xsd:string { minLength = "2" maxLength = "255" }
+
+lenLe255String = xsd:string { maxLength = "255" }
 
 bundleIdString = xsd:string { pattern = "[a-f0-9]{16}" }
 

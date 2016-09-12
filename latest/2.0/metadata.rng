@@ -152,7 +152,10 @@
         <ref name="bundleIdString"/>
       </attribute>
       <attribute name="revision">
-        <data type="integer"/>
+        <choice>
+          <data type="integer"/>
+          <value>null</value>
+        </choice>
       </attribute>
     </interleave>
   </define>
@@ -1360,13 +1363,19 @@
           <ref name="lenGe2String"/>
         </element>
         <element name="dateArchived">
-          <data type="dateTime"/>
+          <choice>
+            <data type="dateTime"/>
+            <value>null</value>
+          </choice>
         </element>
         <element name="dateUpdated">
-          <data type="dateTime"/>
+          <choice>
+            <data type="dateTime"/>
+            <value>null</value>
+          </choice>
         </element>
         <element name="comments">
-          <ref name="lenGe2Le255String"/>
+          <ref name="lenLe255String"/>
         </element>
       </interleave>
     </element>
@@ -1493,6 +1502,11 @@
   <define name="lenGe2Le255String">
     <data type="string">
       <param name="minLength">2</param>
+      <param name="maxLength">255</param>
+    </data>
+  </define>
+  <define name="lenLe255String">
+    <data type="string">
       <param name="maxLength">255</param>
     </data>
   </define>
