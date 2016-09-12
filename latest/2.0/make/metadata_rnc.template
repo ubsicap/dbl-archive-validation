@@ -102,7 +102,7 @@ commonElements = (
 dblMetadataCommonAtts = (
   attribute version { "2.0" } &
   attribute id { bundleIdString } &
-  attribute revision { xsd:integer }
+  attribute revision { xsd:integer | "null" }
 )
 
 %%insert identification_rnc.template%%

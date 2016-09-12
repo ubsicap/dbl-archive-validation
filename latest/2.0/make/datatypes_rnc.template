@@ -62,6 +62,8 @@ lenGe2String = xsd:string { minLength = "2" }
 
 lenGe2Le255String = xsd:string { minLength = "2" maxLength = "255" }
 
+lenLe255String = xsd:string { maxLength = "255" }
+
 bundleIdString = xsd:string { pattern = "[a-f0-9]{16}" }
 
 abbreviationString = xsd:string { pattern = "[\-A-Za-z0-9]{2,12}" }

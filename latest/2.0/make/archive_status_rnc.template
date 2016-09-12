@@ -1,7 +1,7 @@
 archiveStatusElement =
   element archiveStatus {
     element archivistName { lenGe2String } &
-    element dateArchived { xsd:dateTime } &
-    element dateUpdated { xsd:dateTime } &
-    element comments { lenGe2Le255String }
+    element dateArchived { xsd:dateTime | "null" } &
+    element dateUpdated { xsd:dateTime | "null" } &
+    element comments { lenLe255String }
   }
