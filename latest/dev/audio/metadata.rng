@@ -74,7 +74,9 @@
           <ref name="m.DBLMetadata.attlist"/>
           <ref name="m.identification"/>
           <ref name="m.confidential"/>
-          <ref name="m.relationships"/>
+          <optional>
+            <ref name="m.relationships"/>
+          </optional>
           <ref name="m.agencies"/>
           <ref name="m.language"/>
           <ref name="m.type"/>
