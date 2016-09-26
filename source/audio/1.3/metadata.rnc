@@ -29,7 +29,7 @@ div {
    m.DBLMetadata.type =
       attribute type { "audio" }
    m.DBLMetadata.typeVersion =
-      attribute typeVersion { "1.2" }
+      attribute typeVersion { "1.3" }
    m.DBLMetadata.id =
       ## id is overwritten at submission
       attribute id { xsd:string { pattern="[a-f0-9]{16}" } }
@@ -45,9 +45,10 @@ div {
          m.DBLMetadata.attlist &
          m.identification &
          m.confidential &
-         m.relationships &
+         m.relationships? &
          m.agencies &
          m.language &
+         m.country &
          m.type &
          m.format &
          m.books &
@@ -62,6 +63,7 @@ div {
       element identification {
          m.name &
          m.nameLocal &
+         m.scope &
          m.description &
          m.dateCompleted &
          m.systemId* &
@@ -82,6 +84,14 @@ div {
       ## nameLocal should default to name
       element nameLocal {
          m._datatype.string2
+      }
+}
+
+div {
+   m.scope =
+      ## DCMI: title/scriptureScope
+      element scope {
+         text
       }
 }
 
@@ -244,8 +254,9 @@ div {
       element language {
          m.language.iso &
          m.language.name &
+         m.language.nameLocal &
          m.ldml &
-         m.rod?
+         m.rod
       }
 }
 
@@ -266,6 +277,14 @@ div {
 }
 
 div {
+   m.language.nameLocal =
+      ## DCMI: subject/language (ISO639-3)
+   element nameLocal {
+      m._datatype.string2
+   }
+}
+
+div {
    m.ldml =
       ## DCMI: language/ldml
       element ldml {
@@ -279,6 +298,30 @@ div {
       element rod {
          xsd:string { pattern = "[0-9]{5}" }?
       }
+}
+
+div {
+   m.country =
+      element country {
+         m.country.iso &
+         m.country.name
+      }
+}
+
+div {
+   m.country.iso =
+      ## DCMI: coverage/spatial (ISO3166)
+   element iso {
+      xsd:string { pattern = "[A-Z][A-Z][A-Z]?" }
+   }
+}
+
+div {
+   m.country.name =
+      ## DCMI: subject/subjectCountry
+   element name {
+      m._datatype.string2
+   }
 }
 
 div {
