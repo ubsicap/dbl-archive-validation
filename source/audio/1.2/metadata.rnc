@@ -45,7 +45,7 @@ div {
          m.DBLMetadata.attlist &
          m.identification &
          m.confidential &
-         m.relationships? &
+         m.relationships &
          m.agencies &
          m.language &
          m.type &
