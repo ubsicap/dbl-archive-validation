@@ -6,27 +6,27 @@ namespace a = "http://relaxng.org/ns/compatibility/annotations/1.0"
 
 start = dblMetadataElement
 
-dblMetadataElement = (sourceMetadata | expressionMetadata | sourceAndExpressionMetadata)
+dblMetadataElement = (translationMetadata | expressionMetadata | translationAndExpressionMetadata)
 
-sourceMetadata = textSourceMetadata | audioSourceMetadata
+translationMetadata = textTranslationMetadata | audioTranslationMetadata
 
 expressionMetadata = textExpressionMetadata | audioExpressionMetadata | printExpressionMetadata
 
-sourceAndExpressionMetadata = textSourceAndExpressionMetadata | audioSourceAndExpressionMetadata
+translationAndExpressionMetadata = textTranslationAndExpressionMetadata | audioTranslationAndExpressionMetadata
 
-textSourceMetadata = element DBLMetadata {
+textTranslationMetadata = element DBLMetadata {
   dblMetadataCommonAtts &
-  sourceCommonElements &
+  translationCommonElements &
   fullLanguageElement &
-  textSourceTypeElement &
+  textTranslationTypeElement &
   textFormatElement
 }
 
-audioSourceMetadata = element DBLMetadata {
+audioTranslationMetadata = element DBLMetadata {
   dblMetadataCommonAtts &
-  sourceCommonElements &
+  translationCommonElements &
   shortLanguageElement &
-  audioSourceTypeElement &
+  audioTranslationTypeElement &
   audioFormatElement
 }
 
@@ -54,38 +54,38 @@ audioExpressionMetadata = element DBLMetadata {
   audioFormatElement
 }
 
-textSourceAndExpressionMetadata = element DBLMetadata {
+textTranslationAndExpressionMetadata = element DBLMetadata {
   dblMetadataCommonAtts &
-  sourceAndExpressionCommonElements &
+  translationAndExpressionCommonElements &
   fullLanguageElement &
-  textSourceAndExpressionTypeElement &
+  textTranslationAndExpressionTypeElement &
   textFormatElement
 }
 
-audioSourceAndExpressionMetadata = element DBLMetadata {
+audioTranslationAndExpressionMetadata = element DBLMetadata {
   dblMetadataCommonAtts &
-  sourceAndExpressionCommonElements &
+  translationAndExpressionCommonElements &
   fullLanguageElement &
-  audioSourceAndExpressionTypeElement &
+  audioTranslationAndExpressionTypeElement &
   audioFormatElement
 }
 
-sourceCommonElements = (
+translationCommonElements = (
   commonElements &
-  sourceManifestElement
+  translationManifestElement
 )
 
 expressionCommonElements = (
   commonElements &
   promotionElement &
-  nonSourceManifestElement &
+  nonTranslationManifestElement &
   publicationsElement
 )
 
-sourceAndExpressionCommonElements = (
+translationAndExpressionCommonElements = (
   commonElements &
   promotionElement &
-  sourceManifestElement &
+  translationManifestElement &
   publicationsElement
 )
 

@@ -9,15 +9,15 @@
   </start>
   <define name="dblMetadataElement">
     <choice>
-      <ref name="sourceMetadata"/>
+      <ref name="translationMetadata"/>
       <ref name="expressionMetadata"/>
-      <ref name="sourceAndExpressionMetadata"/>
+      <ref name="translationAndExpressionMetadata"/>
     </choice>
   </define>
-  <define name="sourceMetadata">
+  <define name="translationMetadata">
     <choice>
-      <ref name="textSourceMetadata"/>
-      <ref name="audioSourceMetadata"/>
+      <ref name="textTranslationMetadata"/>
+      <ref name="audioTranslationMetadata"/>
     </choice>
   </define>
   <define name="expressionMetadata">
@@ -27,30 +27,30 @@
       <ref name="printExpressionMetadata"/>
     </choice>
   </define>
-  <define name="sourceAndExpressionMetadata">
+  <define name="translationAndExpressionMetadata">
     <choice>
-      <ref name="textSourceAndExpressionMetadata"/>
-      <ref name="audioSourceAndExpressionMetadata"/>
+      <ref name="textTranslationAndExpressionMetadata"/>
+      <ref name="audioTranslationAndExpressionMetadata"/>
     </choice>
   </define>
-  <define name="textSourceMetadata">
+  <define name="textTranslationMetadata">
     <element name="DBLMetadata">
       <interleave>
         <ref name="dblMetadataCommonAtts"/>
-        <ref name="sourceCommonElements"/>
+        <ref name="translationCommonElements"/>
         <ref name="fullLanguageElement"/>
-        <ref name="textSourceTypeElement"/>
+        <ref name="textTranslationTypeElement"/>
         <ref name="textFormatElement"/>
       </interleave>
     </element>
   </define>
-  <define name="audioSourceMetadata">
+  <define name="audioTranslationMetadata">
     <element name="DBLMetadata">
       <interleave>
         <ref name="dblMetadataCommonAtts"/>
-        <ref name="sourceCommonElements"/>
+        <ref name="translationCommonElements"/>
         <ref name="shortLanguageElement"/>
-        <ref name="audioSourceTypeElement"/>
+        <ref name="audioTranslationTypeElement"/>
         <ref name="audioFormatElement"/>
       </interleave>
     </element>
@@ -88,47 +88,47 @@
       </interleave>
     </element>
   </define>
-  <define name="textSourceAndExpressionMetadata">
+  <define name="textTranslationAndExpressionMetadata">
     <element name="DBLMetadata">
       <interleave>
         <ref name="dblMetadataCommonAtts"/>
-        <ref name="sourceAndExpressionCommonElements"/>
+        <ref name="translationAndExpressionCommonElements"/>
         <ref name="fullLanguageElement"/>
-        <ref name="textSourceAndExpressionTypeElement"/>
+        <ref name="textTranslationAndExpressionTypeElement"/>
         <ref name="textFormatElement"/>
       </interleave>
     </element>
   </define>
-  <define name="audioSourceAndExpressionMetadata">
+  <define name="audioTranslationAndExpressionMetadata">
     <element name="DBLMetadata">
       <interleave>
         <ref name="dblMetadataCommonAtts"/>
-        <ref name="sourceAndExpressionCommonElements"/>
+        <ref name="translationAndExpressionCommonElements"/>
         <ref name="fullLanguageElement"/>
-        <ref name="audioSourceAndExpressionTypeElement"/>
+        <ref name="audioTranslationAndExpressionTypeElement"/>
         <ref name="audioFormatElement"/>
       </interleave>
     </element>
   </define>
-  <define name="sourceCommonElements">
+  <define name="translationCommonElements">
     <interleave>
       <ref name="commonElements"/>
-      <ref name="sourceManifestElement"/>
+      <ref name="translationManifestElement"/>
     </interleave>
   </define>
   <define name="expressionCommonElements">
     <interleave>
       <ref name="commonElements"/>
       <ref name="promotionElement"/>
-      <ref name="nonSourceManifestElement"/>
+      <ref name="nonTranslationManifestElement"/>
       <ref name="publicationsElement"/>
     </interleave>
   </define>
-  <define name="sourceAndExpressionCommonElements">
+  <define name="translationAndExpressionCommonElements">
     <interleave>
       <ref name="commonElements"/>
       <ref name="promotionElement"/>
-      <ref name="sourceManifestElement"/>
+      <ref name="translationManifestElement"/>
       <ref name="publicationsElement"/>
     </interleave>
   </define>

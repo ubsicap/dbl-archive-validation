@@ -1,28 +1,28 @@
-textSourceTypeElement =
+textTranslationTypeElement =
   element type {
     element medium { "text" } &
     element hasCharacters { "true" } &
-    element isSource { "true" } &
+    element isTranslation { "true" } &
     element isExpression { "false" } &
     element isConfidential { xsd:boolean } &
-    commonTextSourceTypeElements
+    commonTextTranslationTypeElements
 }
 
-audioSourceTypeElement =
+audioTranslationTypeElement =
   element type {
     element medium { "audio" } &
     element hasCharacters { "false" } &
-    element isSource { "true" } &
+    element isTranslation { "true" } &
     element isExpression { "false" } &
     element isConfidential { xsd:boolean } &
-    commonAudioSourceTypeElements
+    commonAudioTranslationTypeElements
 }
 
 textExpressionTypeElement =
   element type {
     element medium { "text" } &
     element hasCharacters { "true" } &
-    element isSource { "false" } &
+    element isTranslation { "false" } &
     element isExpression { "true" } &
     commonTextExpressionTypeElements &
     element isConfidential { xsd:boolean }
@@ -32,7 +32,7 @@ printExpressionTypeElement =
   element type {
     element medium { "print" } &
     element hasCharacters { "true" } &
-    element isSource { "false" } &
+    element isTranslation { "false" } &
     element isExpression { "true" } &
     commonExpressionTypeElements &
     element isConfidential { xsd:boolean }
@@ -42,40 +42,40 @@ audioExpressionTypeElement =
   element type {
     element medium { "audio" } &
     element hasCharacters { "false" } &
-    element isSource { "false" } &
+    element isTranslation { "false" } &
     element isExpression { "true" } &
     commonAudioExpressionTypeElements &
     element isConfidential { xsd:boolean }
 }
 
-textSourceAndExpressionTypeElement =
+textTranslationAndExpressionTypeElement =
   element type {
     element medium { "text" } &
     element hasCharacters { "true" } &
-    element isSource { "true" } &
+    element isTranslation { "true" } &
     element isExpression { "true" } &
-    commonTextSourceTypeElements &
+    commonTextTranslationTypeElements &
     commonTextExpressionTypeElements &
     element isConfidential { xsd:boolean }
 }
 
-audioSourceAndExpressionTypeElement =
+audioTranslationAndExpressionTypeElement =
   element type {
     element medium { "audio" } &
     element hasCharacters { "false" } &
-    element isSource { "true" } &
+    element isTranslation { "true" } &
     element isExpression { "true" } &
-    commonAudioSourceTypeElements &
+    commonAudioTranslationTypeElements &
     commonAudioExpressionTypeElements &
     element isConfidential { xsd:boolean }
 }
 
-commonTextSourceTypeElements = (
-  commonSourceTypeElements
+commonTextTranslationTypeElements = (
+  commonTranslationTypeElements
 )
 
-commonAudioSourceTypeElements = (
-  commonSourceTypeElements
+commonAudioTranslationTypeElements = (
+  commonTranslationTypeElements
 )
 
 commonTextExpressionTypeElements = (
@@ -91,7 +91,7 @@ commonAudioExpressionTypeElements = (
   commonExpressionTypeElements
 )
 
-commonSourceTypeElements = (
+commonTranslationTypeElements = (
   commonTypeElements &
   element translationType { translationTypeEnum } &
   element audience { translationLevelEnum }

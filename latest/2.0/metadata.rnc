@@ -6,27 +6,27 @@ namespace a = "http://relaxng.org/ns/compatibility/annotations/1.0"
 
 start = dblMetadataElement
 
-dblMetadataElement = (sourceMetadata | expressionMetadata | sourceAndExpressionMetadata)
+dblMetadataElement = (translationMetadata | expressionMetadata | translationAndExpressionMetadata)
 
-sourceMetadata = textSourceMetadata | audioSourceMetadata
+translationMetadata = textTranslationMetadata | audioTranslationMetadata
 
 expressionMetadata = textExpressionMetadata | audioExpressionMetadata | printExpressionMetadata
 
-sourceAndExpressionMetadata = textSourceAndExpressionMetadata | audioSourceAndExpressionMetadata
+translationAndExpressionMetadata = textTranslationAndExpressionMetadata | audioTranslationAndExpressionMetadata
 
-textSourceMetadata = element DBLMetadata {
+textTranslationMetadata = element DBLMetadata {
   dblMetadataCommonAtts &
-  sourceCommonElements &
+  translationCommonElements &
   fullLanguageElement &
-  textSourceTypeElement &
+  textTranslationTypeElement &
   textFormatElement
 }
 
-audioSourceMetadata = element DBLMetadata {
+audioTranslationMetadata = element DBLMetadata {
   dblMetadataCommonAtts &
-  sourceCommonElements &
+  translationCommonElements &
   shortLanguageElement &
-  audioSourceTypeElement &
+  audioTranslationTypeElement &
   audioFormatElement
 }
 
@@ -54,38 +54,38 @@ audioExpressionMetadata = element DBLMetadata {
   audioFormatElement
 }
 
-textSourceAndExpressionMetadata = element DBLMetadata {
+textTranslationAndExpressionMetadata = element DBLMetadata {
   dblMetadataCommonAtts &
-  sourceAndExpressionCommonElements &
+  translationAndExpressionCommonElements &
   fullLanguageElement &
-  textSourceAndExpressionTypeElement &
+  textTranslationAndExpressionTypeElement &
   textFormatElement
 }
 
-audioSourceAndExpressionMetadata = element DBLMetadata {
+audioTranslationAndExpressionMetadata = element DBLMetadata {
   dblMetadataCommonAtts &
-  sourceAndExpressionCommonElements &
+  translationAndExpressionCommonElements &
   fullLanguageElement &
-  audioSourceAndExpressionTypeElement &
+  audioTranslationAndExpressionTypeElement &
   audioFormatElement
 }
 
-sourceCommonElements = (
+translationCommonElements = (
   commonElements &
-  sourceManifestElement
+  translationManifestElement
 )
 
 expressionCommonElements = (
   commonElements &
   promotionElement &
-  nonSourceManifestElement &
+  nonTranslationManifestElement &
   publicationsElement
 )
 
-sourceAndExpressionCommonElements = (
+translationAndExpressionCommonElements = (
   commonElements &
   promotionElement &
-  sourceManifestElement &
+  translationManifestElement &
   publicationsElement
 )
 
@@ -267,31 +267,31 @@ countryElement = element country {
 }
 
 
-textSourceTypeElement =
+textTranslationTypeElement =
   element type {
     element medium { "text" } &
     element hasCharacters { "true" } &
-    element isSource { "true" } &
+    element isTranslation { "true" } &
     element isExpression { "false" } &
     element isConfidential { xsd:boolean } &
-    commonTextSourceTypeElements
+    commonTextTranslationTypeElements
 }
 
-audioSourceTypeElement =
+audioTranslationTypeElement =
   element type {
     element medium { "audio" } &
     element hasCharacters { "false" } &
-    element isSource { "true" } &
+    element isTranslation { "true" } &
     element isExpression { "false" } &
     element isConfidential { xsd:boolean } &
-    commonAudioSourceTypeElements
+    commonAudioTranslationTypeElements
 }
 
 textExpressionTypeElement =
   element type {
     element medium { "text" } &
     element hasCharacters { "true" } &
-    element isSource { "false" } &
+    element isTranslation { "false" } &
     element isExpression { "true" } &
     commonTextExpressionTypeElements &
     element isConfidential { xsd:boolean }
@@ -301,7 +301,7 @@ printExpressionTypeElement =
   element type {
     element medium { "print" } &
     element hasCharacters { "true" } &
-    element isSource { "false" } &
+    element isTranslation { "false" } &
     element isExpression { "true" } &
     commonExpressionTypeElements &
     element isConfidential { xsd:boolean }
@@ -311,40 +311,40 @@ audioExpressionTypeElement =
   element type {
     element medium { "audio" } &
     element hasCharacters { "false" } &
-    element isSource { "false" } &
+    element isTranslation { "false" } &
     element isExpression { "true" } &
     commonAudioExpressionTypeElements &
     element isConfidential { xsd:boolean }
 }
 
-textSourceAndExpressionTypeElement =
+textTranslationAndExpressionTypeElement =
   element type {
     element medium { "text" } &
     element hasCharacters { "true" } &
-    element isSource { "true" } &
+    element isTranslation { "true" } &
     element isExpression { "true" } &
-    commonTextSourceTypeElements &
+    commonTextTranslationTypeElements &
     commonTextExpressionTypeElements &
     element isConfidential { xsd:boolean }
 }
 
-audioSourceAndExpressionTypeElement =
+audioTranslationAndExpressionTypeElement =
   element type {
     element medium { "audio" } &
     element hasCharacters { "false" } &
-    element isSource { "true" } &
+    element isTranslation { "true" } &
     element isExpression { "true" } &
-    commonAudioSourceTypeElements &
+    commonAudioTranslationTypeElements &
     commonAudioExpressionTypeElements &
     element isConfidential { xsd:boolean }
 }
 
-commonTextSourceTypeElements = (
-  commonSourceTypeElements
+commonTextTranslationTypeElements = (
+  commonTranslationTypeElements
 )
 
-commonAudioSourceTypeElements = (
-  commonSourceTypeElements
+commonAudioTranslationTypeElements = (
+  commonTranslationTypeElements
 )
 
 commonTextExpressionTypeElements = (
@@ -360,7 +360,7 @@ commonAudioExpressionTypeElements = (
   commonExpressionTypeElements
 )
 
-commonSourceTypeElements = (
+commonTranslationTypeElements = (
   commonTypeElements &
   element translationType { translationTypeEnum } &
   element audience { translationLevelEnum }
@@ -463,30 +463,30 @@ namesName =
   }
 
 
-nonSourceManifestElement =
-  element manifest { (nonSourceManifestContainer | nonSourceManifestResource)+ }
+nonTranslationManifestElement =
+  element manifest { (nonTranslationManifestContainer | nonTranslationManifestResource)+ }
 
-sourceManifestElement =
-  element manifest { (sourceManifestContainer | sourceManifestResource)+ }
+translationManifestElement =
+  element manifest { (translationManifestContainer | translationManifestResource)+ }
 
-nonSourceManifestContainer =
+nonTranslationManifestContainer =
   element container {
     attribute uri { xsd:anyURI },
-    (nonSourceManifestContainer | nonSourceManifestResource)+
+    (nonTranslationManifestContainer | nonTranslationManifestResource)+
   }
 
-nonSourceManifestResource =
+nonTranslationManifestResource =
   element resource {
     commonManifestResourceAtts
   }
 
-sourceManifestContainer =
+translationManifestContainer =
   element container {
     attribute uri { xsd:anyURI },
-    (sourceManifestContainer | sourceManifestResource)+
+    (translationManifestContainer | translationManifestResource)+
   }
 
-sourceManifestResource =
+translationManifestResource =
   element resource {
     commonManifestResourceAtts &
     attribute progress { translationStageEnum }

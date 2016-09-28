@@ -1,27 +1,27 @@
-nonSourceManifestElement =
-  element manifest { (nonSourceManifestContainer | nonSourceManifestResource)+ }
+nonTranslationManifestElement =
+  element manifest { (nonTranslationManifestContainer | nonTranslationManifestResource)+ }
 
-sourceManifestElement =
-  element manifest { (sourceManifestContainer | sourceManifestResource)+ }
+translationManifestElement =
+  element manifest { (translationManifestContainer | translationManifestResource)+ }
 
-nonSourceManifestContainer =
+nonTranslationManifestContainer =
   element container {
     attribute uri { xsd:anyURI },
-    (nonSourceManifestContainer | nonSourceManifestResource)+
+    (nonTranslationManifestContainer | nonTranslationManifestResource)+
   }
 
-nonSourceManifestResource =
+nonTranslationManifestResource =
   element resource {
     commonManifestResourceAtts
   }
 
-sourceManifestContainer =
+translationManifestContainer =
   element container {
     attribute uri { xsd:anyURI },
-    (sourceManifestContainer | sourceManifestResource)+
+    (translationManifestContainer | translationManifestResource)+
   }
 
-sourceManifestResource =
+translationManifestResource =
   element resource {
     commonManifestResourceAtts &
     attribute progress { translationStageEnum }

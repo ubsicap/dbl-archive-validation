@@ -13,7 +13,7 @@
   <type>
     <medium>audio</medium>
     <hasCharacters>false</hasCharacters>
-    <isSource>true</isSource>
+    <isTranslation>true</isTranslation>
     <isExpression>true</isExpression>
     <translationType>Revision</translationType>
     <isConfidential>false</isConfidential>

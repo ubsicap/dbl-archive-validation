@@ -14,7 +14,7 @@
     <medium>print</medium>
     <isConfidential>false</isConfidential>
     <hasCharacters>true</hasCharacters>
-    <isSource>false</isSource>
+    <isTranslation>false</isTranslation>
     <isExpression>true</isExpression>
   </type>
   <relationships>
