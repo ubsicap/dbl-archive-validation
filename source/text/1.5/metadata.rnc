@@ -106,10 +106,22 @@ div {
 }
 
 div {
+   m.scope.enum =
+      "Bible" |
+      "Bible with Deuterocanon" |
+      "Deuterocanon" |
+      "New Testament" |
+      "New Testament+" |
+      "Old Testament" |
+      "Old Testament + Deuterocanon" |
+      "Old Testament+" |
+      "Portions" |
+      "Selections" |
+      "Shorter Bible"
    m.scope =
       ## DCMI: title/scriptureScope
       element scope {
-         text
+         m.scope.enum
       }
 }
 

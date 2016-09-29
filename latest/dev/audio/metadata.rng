@@ -126,10 +126,25 @@
     </define>
   </div>
   <div>
+    <define name="m.scope.enum">
+      <choice>
+        <value>Bible</value>
+        <value>Bible with Deuterocanon</value>
+        <value>Deuterocanon</value>
+        <value>New Testament</value>
+        <value>New Testament+</value>
+        <value>Old Testament</value>
+        <value>Old Testament + Deuterocanon</value>
+        <value>Old Testament+</value>
+        <value>Portions</value>
+        <value>Selections</value>
+        <value>Shorter Bible</value>
+      </choice>
+    </define>
     <define name="m.scope">
       <element name="scope">
         <a:documentation>DCMI: title/scriptureScope</a:documentation>
-        <text/>
+        <ref name="m.scope.enum"/>
       </element>
     </define>
   </div>
