@@ -165,9 +165,11 @@
         <element name="name">
           <ref name="lenGe2String"/>
         </element>
-        <element name="nameLocal">
-          <ref name="lenGe2String"/>
-        </element>
+        <optional>
+          <element name="nameLocal">
+            <ref name="lenGe2String"/>
+          </element>
+        </optional>
         <optional>
           <element name="abbreviation">
             <ref name="abbreviationString"/>
@@ -498,7 +500,7 @@
       </interleave>
     </element>
   </define>
-  <define name="textSourceTypeElement">
+  <define name="textTranslationTypeElement">
     <element name="type">
       <interleave>
         <element name="medium">
@@ -507,20 +509,23 @@
         <element name="hasCharacters">
           <value>true</value>
         </element>
-        <element name="isSource">
+        <element name="isTranslation">
           <value>true</value>
         </element>
         <element name="isExpression">
           <value>false</value>
         </element>
+        <element name="hasArchive">
+          <data type="boolean"/>
+        </element>
         <element name="isConfidential">
           <data type="boolean"/>
         </element>
-        <ref name="commonTextSourceTypeElements"/>
+        <ref name="commonTextTranslationTypeElements"/>
       </interleave>
     </element>
   </define>
-  <define name="audioSourceTypeElement">
+  <define name="audioTranslationTypeElement">
     <element name="type">
       <interleave>
         <element name="medium">
@@ -529,16 +534,19 @@
         <element name="hasCharacters">
           <value>false</value>
         </element>
-        <element name="isSource">
+        <element name="isTranslation">
           <value>true</value>
         </element>
         <element name="isExpression">
           <value>false</value>
         </element>
+        <element name="hasArchive">
+          <value>false</value>
+        </element>
         <element name="isConfidential">
           <data type="boolean"/>
         </element>
-        <ref name="commonAudioSourceTypeElements"/>
+        <ref name="commonAudioTranslationTypeElements"/>
       </interleave>
     </element>
   </define>
@@ -551,11 +559,14 @@
         <element name="hasCharacters">
           <value>true</value>
         </element>
-        <element name="isSource">
+        <element name="isTranslation">
           <value>false</value>
         </element>
         <element name="isExpression">
           <value>true</value>
+        </element>
+        <element name="hasArchive">
+          <value>false</value>
         </element>
         <ref name="commonTextExpressionTypeElements"/>
         <element name="isConfidential">
@@ -573,11 +584,14 @@
         <element name="hasCharacters">
           <value>true</value>
         </element>
-        <element name="isSource">
+        <element name="isTranslation">
           <value>false</value>
         </element>
         <element name="isExpression">
           <value>true</value>
+        </element>
+        <element name="hasArchive">
+          <value>false</value>
         </element>
         <ref name="commonExpressionTypeElements"/>
         <element name="isConfidential">
@@ -595,11 +609,14 @@
         <element name="hasCharacters">
           <value>false</value>
         </element>
-        <element name="isSource">
+        <element name="isTranslation">
           <value>false</value>
         </element>
         <element name="isExpression">
           <value>true</value>
+        </element>
+        <element name="hasArchive">
+          <value>false</value>
         </element>
         <ref name="commonAudioExpressionTypeElements"/>
         <element name="isConfidential">
@@ -608,7 +625,7 @@
       </interleave>
     </element>
   </define>
-  <define name="textSourceAndExpressionTypeElement">
+  <define name="textTranslationAndExpressionTypeElement">
     <element name="type">
       <interleave>
         <element name="medium">
@@ -617,13 +634,16 @@
         <element name="hasCharacters">
           <value>true</value>
         </element>
-        <element name="isSource">
+        <element name="isTranslation">
           <value>true</value>
         </element>
         <element name="isExpression">
           <value>true</value>
         </element>
-        <ref name="commonTextSourceTypeElements"/>
+        <element name="hasArchive">
+          <data type="boolean"/>
+        </element>
+        <ref name="commonTextTranslationTypeElements"/>
         <ref name="commonTextExpressionTypeElements"/>
         <element name="isConfidential">
           <data type="boolean"/>
@@ -631,7 +651,7 @@
       </interleave>
     </element>
   </define>
-  <define name="audioSourceAndExpressionTypeElement">
+  <define name="audioTranslationAndExpressionTypeElement">
     <element name="type">
       <interleave>
         <element name="medium">
@@ -640,13 +660,16 @@
         <element name="hasCharacters">
           <value>false</value>
         </element>
-        <element name="isSource">
+        <element name="isTranslation">
           <value>true</value>
         </element>
         <element name="isExpression">
           <value>true</value>
         </element>
-        <ref name="commonAudioSourceTypeElements"/>
+        <element name="hasArchive">
+          <value>false</value>
+        </element>
+        <ref name="commonAudioTranslationTypeElements"/>
         <ref name="commonAudioExpressionTypeElements"/>
         <element name="isConfidential">
           <data type="boolean"/>
@@ -654,11 +677,11 @@
       </interleave>
     </element>
   </define>
-  <define name="commonTextSourceTypeElements">
-    <ref name="commonSourceTypeElements"/>
+  <define name="commonTextTranslationTypeElements">
+    <ref name="commonTranslationTypeElements"/>
   </define>
-  <define name="commonAudioSourceTypeElements">
-    <ref name="commonSourceTypeElements"/>
+  <define name="commonAudioTranslationTypeElements">
+    <ref name="commonTranslationTypeElements"/>
   </define>
   <define name="commonTextExpressionTypeElements">
     <ref name="commonExpressionTypeElements"/>
@@ -675,7 +698,7 @@
       <ref name="commonExpressionTypeElements"/>
     </interleave>
   </define>
-  <define name="commonSourceTypeElements">
+  <define name="commonTranslationTypeElements">
     <interleave>
       <ref name="commonTypeElements"/>
       <element name="translationType">
@@ -851,58 +874,58 @@
       </interleave>
     </element>
   </define>
-  <define name="nonSourceManifestElement">
+  <define name="nonTranslationManifestElement">
     <element name="manifest">
       <oneOrMore>
         <choice>
-          <ref name="nonSourceManifestContainer"/>
-          <ref name="nonSourceManifestResource"/>
+          <ref name="nonTranslationManifestContainer"/>
+          <ref name="nonTranslationManifestResource"/>
         </choice>
       </oneOrMore>
     </element>
   </define>
-  <define name="sourceManifestElement">
+  <define name="translationManifestElement">
     <element name="manifest">
       <oneOrMore>
         <choice>
-          <ref name="sourceManifestContainer"/>
-          <ref name="sourceManifestResource"/>
+          <ref name="translationManifestContainer"/>
+          <ref name="translationManifestResource"/>
         </choice>
       </oneOrMore>
     </element>
   </define>
-  <define name="nonSourceManifestContainer">
+  <define name="nonTranslationManifestContainer">
     <element name="container">
       <attribute name="uri">
         <data type="anyURI"/>
       </attribute>
       <oneOrMore>
         <choice>
-          <ref name="nonSourceManifestContainer"/>
-          <ref name="nonSourceManifestResource"/>
+          <ref name="nonTranslationManifestContainer"/>
+          <ref name="nonTranslationManifestResource"/>
         </choice>
       </oneOrMore>
     </element>
   </define>
-  <define name="nonSourceManifestResource">
+  <define name="nonTranslationManifestResource">
     <element name="resource">
       <ref name="commonManifestResourceAtts"/>
     </element>
   </define>
-  <define name="sourceManifestContainer">
+  <define name="translationManifestContainer">
     <element name="container">
       <attribute name="uri">
         <data type="anyURI"/>
       </attribute>
       <oneOrMore>
         <choice>
-          <ref name="sourceManifestContainer"/>
-          <ref name="sourceManifestResource"/>
+          <ref name="translationManifestContainer"/>
+          <ref name="translationManifestResource"/>
         </choice>
       </oneOrMore>
     </element>
   </define>
-  <define name="sourceManifestResource">
+  <define name="translationManifestResource">
     <element name="resource">
       <interleave>
         <ref name="commonManifestResourceAtts"/>

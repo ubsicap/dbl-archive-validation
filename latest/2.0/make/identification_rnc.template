@@ -1,7 +1,7 @@
 identificationElement =
   element identification {
     element name { lenGe2String } &
-    element nameLocal { lenGe2String } &
+    element nameLocal { lenGe2String }? &
     element abbreviation { abbreviationString }? &
     element abbreviationLocal { localAbbreviationString }? &
     element description { lenGe2String } &
