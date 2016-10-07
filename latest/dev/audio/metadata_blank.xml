@@ -41,14 +41,15 @@
     <samplingRate>44100</samplingRate><!-- bits/s -->
   </format>
   <books>
+    <book code=""></book>
   </books>
   <copyright>
     <!-- Allow XHTML: <h1> <h2> <h3> <p> <blockquote> <ul> <ol> <li> <br> <strong> <em> <a> -->
-    <statement contentType="xhtml"></statement>
+    <statement contentType="xhtml"><p></p></statement>
   </copyright>
   <promotion><!-- optionally empty -->
     <!-- Allow XHTML: <h1> <h2> <h3> <p> <blockquote> <ul> <ol> <li> <br> <strong> <em> <a> -->
-    <promoVersionInfo contentType="xhtml"></promoVersionInfo>
+    <promoVersionInfo contentType="xhtml"><p></p></promoVersionInfo>
     <!-- Allow XHTML: <h1> <h2> <h3> <p> <blockquote> <ul> <ol> <li> <br> <strong> <em> <a> -->
   </promotion>
   <archiveStatus>
