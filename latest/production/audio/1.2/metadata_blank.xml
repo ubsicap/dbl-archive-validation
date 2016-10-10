@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<DBLMetadata type="audio" typeVersion="1.3" id="0000000000000000" revision="0">
+<DBLMetadata type="audio" typeVersion="1.2" id="0000000000000000" revision="0">
   <identification>
     <name></name>
     <nameLocal></nameLocal>
-    <scope></scope>
     <description></description>
     <dateCompleted></dateCompleted>
     <bundleProducer></bundleProducer>
@@ -20,14 +19,8 @@
   <language>
     <iso></iso>
     <name></name>
-    <nameLocal></nameLocal>
     <ldml></ldml>
-    <rod></rod>
   </language>
-  <country>
-    <iso></iso>
-    <name></name>
-  </country>
   <type>
     <audioType>Dramatized</audioType>
   </type>
@@ -41,15 +34,14 @@
     <samplingRate>44100</samplingRate><!-- bits/s -->
   </format>
   <books>
-    <book code=""></book>
   </books>
   <copyright>
     <!-- Allow XHTML: <h1> <h2> <h3> <p> <blockquote> <ul> <ol> <li> <br> <strong> <em> <a> -->
-    <statement contentType="xhtml"><p></p></statement>
+    <statement contentType="xhtml"></statement>
   </copyright>
   <promotion><!-- optionally empty -->
     <!-- Allow XHTML: <h1> <h2> <h3> <p> <blockquote> <ul> <ol> <li> <br> <strong> <em> <a> -->
-    <promoVersionInfo contentType="xhtml"><p></p></promoVersionInfo>
+    <promoVersionInfo contentType="xhtml"></promoVersionInfo>
     <!-- Allow XHTML: <h1> <h2> <h3> <p> <blockquote> <ul> <ol> <li> <br> <strong> <em> <a> -->
   </promotion>
   <archiveStatus>
