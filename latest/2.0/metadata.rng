@@ -114,6 +114,7 @@
     <interleave>
       <ref name="commonElements"/>
       <ref name="translationManifestElement"/>
+      <ref name="translationSourceElement"/>
     </interleave>
   </define>
   <define name="expressionCommonElements">
@@ -122,6 +123,9 @@
       <ref name="promotionElement"/>
       <ref name="nonTranslationManifestElement"/>
       <ref name="publicationsElement"/>
+      <optional>
+        <ref name="translationSourceElement"/>
+      </optional>
     </interleave>
   </define>
   <define name="translationAndExpressionCommonElements">
@@ -130,6 +134,9 @@
       <ref name="promotionElement"/>
       <ref name="translationManifestElement"/>
       <ref name="publicationsElement"/>
+      <optional>
+        <ref name="translationSourceElement"/>
+      </optional>
     </interleave>
   </define>
   <define name="commonElements">
@@ -929,9 +936,11 @@
     <element name="resource">
       <interleave>
         <ref name="commonManifestResourceAtts"/>
-        <attribute name="progress">
-          <ref name="translationStageEnum"/>
-        </attribute>
+        <optional>
+          <attribute name="progress">
+            <ref name="translationStageEnum"/>
+          </attribute>
+        </optional>
       </interleave>
     </element>
   </define>
@@ -962,6 +971,35 @@
       <value>4</value>
     </choice>
     <!-- Final Review -->
+  </define>
+  <define name="translationSourceElement">
+    <element name="source">
+      <oneOrMore>
+        <choice>
+          <ref name="sourceStructureDivision"/>
+          <ref name="sourceStructureContent"/>
+        </choice>
+      </oneOrMore>
+    </element>
+  </define>
+  <define name="sourceStructureDivision">
+    <element name="division">
+      <attribute name="name"/>
+      <oneOrMore>
+        <choice>
+          <ref name="sourceStructureDivision"/>
+          <ref name="sourceStructureContent"/>
+        </choice>
+      </oneOrMore>
+    </element>
+  </define>
+  <define name="sourceStructureContent">
+    <element name="content">
+      <interleave>
+        <attribute name="name"/>
+        <attribute name="src"/>
+      </interleave>
+    </element>
   </define>
   <define name="publicationsElement">
     <!-- DCMI: tableOfContents -->

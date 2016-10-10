@@ -1,0 +1,14 @@
+translationSourceElement =
+  element source { (sourceStructureDivision | sourceStructureContent)+ }
+
+sourceStructureDivision =
+  element division {
+    attribute name {text},
+    (sourceStructureDivision | sourceStructureContent)+
+  }
+
+sourceStructureContent =
+  element content {
+    attribute name {text} &
+    attribute src {text}
+  }

@@ -2,11 +2,15 @@
 <DBLMetadata version="2.0" id="a4ecd655fac4de61" revision="0">
   <identification>
     <name>DBL Test Version with DC</name>
+    <nameLocal>DBL Test Version with DC (localized)</nameLocal>
     <description>English: DBL Test Version with DC Local New Testament</description>
+    <descriptionLocal>Localized English: DBL Test Version with DC Local New Testament</descriptionLocal>
     <systemId type="paratext" name="dbltest" fullname="DBL Test" csetid="abcdef">Foo</systemId>
+    <systemId type="reap" name="dbltest" fullname="DBL Test">Baa</systemId>
     <dateCompleted>1990-03-11</dateCompleted>
     <bundleProducer>Paratext</bundleProducer>
     <abbreviation>DBLTEST</abbreviation>
+    <abbreviationLocal>DBLTESTLOCAL</abbreviationLocal>
     <scope>Gospels plus Acts</scope>
   </identification>
   <type>
@@ -27,27 +31,35 @@
   <language>
     <iso>eng</iso>
     <name>English</name>
+    <nameLocal>A North American English-like dialect</nameLocal>
+    <ldml>ENG_US</ldml>
+    <rod>12345</rod>
     <script>Roman</script>
     <scriptDirection>LTR</scriptDirection>
+    <numerals>Arabic</numerals>
   </language>
   <country>
     <iso>USA</iso>
     <name>United States of America</name>
+    <nameLocal>The United States of America</nameLocal>
   </country>
   <format>
     <versedParagraphs>false</versedParagraphs>
   </format>
   <manifest>
-    <resource uri="aSourceArchive.zip" size="1748921" checksum="b95daf7d53dbb0f390759dcb7b7dff2f" mimeType="application/zip"/>
-    <!-- No metadata file since that is part of the 2.0 upload XML document -->
+    <container uri="sources">
+      <resource uri="aSourceArchive.zip" size="1748921" checksum="b95daf7d53dbb0f390759dcb7b7dff2f" mimeType="application/zip"/>
+    </container
   </manifest>
   <names>
     <name id="sourceZip">
-      <short>PT source zip (with arbitrary name because DBL doesn't care)</short>
+      <abbr>Source</abbr>
+      <short>PT source zip</short>
+      <long>PT source zip (with arbitrary name because DBL doesn't care)</long>
     </name>
   </names>
   <source>
-    <content name="sourceZip" src="aSourceArchive.zip"/>
+    <content name="sourceZip" src="sources/aSourceArchive.zip"/>
   </source>
   <copyright>
     <!-- Allow XHTML: <h1> <h2> <h3> <p> <blockquote> <ul> <ol> <li> <br> <strong> <em> <a> -->

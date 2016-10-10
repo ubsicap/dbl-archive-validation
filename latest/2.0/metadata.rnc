@@ -72,21 +72,24 @@ audioTranslationAndExpressionMetadata = element DBLMetadata {
 
 translationCommonElements = (
   commonElements &
-  translationManifestElement
+  translationManifestElement &
+  translationSourceElement
 )
 
 expressionCommonElements = (
   commonElements &
   promotionElement &
   nonTranslationManifestElement &
-  publicationsElement
+  publicationsElement &
+  translationSourceElement?
 )
 
 translationAndExpressionCommonElements = (
   commonElements &
   promotionElement &
   translationManifestElement &
-  publicationsElement
+  publicationsElement &
+  translationSourceElement?
 )
 
 commonElements = (
@@ -496,7 +499,7 @@ translationManifestContainer =
 translationManifestResource =
   element resource {
     commonManifestResourceAtts &
-    attribute progress { translationStageEnum }
+    attribute progress { translationStageEnum }?
   }
 
 commonManifestResourceAtts = (
@@ -512,6 +515,22 @@ translationStageEnum = (
   "3" | # External Review
   "4"   # Final Review
 )
+
+
+translationSourceElement =
+  element source { (sourceStructureDivision | sourceStructureContent)+ }
+
+sourceStructureDivision =
+  element division {
+    attribute name {text},
+    (sourceStructureDivision | sourceStructureContent)+
+  }
+
+sourceStructureContent =
+  element content {
+    attribute name {text} &
+    attribute src {text}
+  }
 
 
 publicationsElement = # DCMI: tableOfContents

@@ -72,21 +72,24 @@ audioTranslationAndExpressionMetadata = element DBLMetadata {
 
 translationCommonElements = (
   commonElements &
-  translationManifestElement
+  translationManifestElement &
+  translationSourceElement
 )
 
 expressionCommonElements = (
   commonElements &
   promotionElement &
   nonTranslationManifestElement &
-  publicationsElement
+  publicationsElement &
+  translationSourceElement?
 )
 
 translationAndExpressionCommonElements = (
   commonElements &
   promotionElement &
   translationManifestElement &
-  publicationsElement
+  publicationsElement &
+  translationSourceElement?
 )
 
 commonElements = (
@@ -122,6 +125,8 @@ dblMetadataCommonAtts = (
 %%insert names_rnc.template%%
 
 %%insert manifest_rnc.template%%
+
+%%insert source_rnc.template%%
 
 %%insert publications_rnc.template%%
 
