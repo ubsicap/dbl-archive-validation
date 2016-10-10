@@ -12,4 +12,5 @@ source/text/usxtest/
 source/dblSourceBundles.layout
 metadata.xsd
 schemas.xml
+/.idea/
 .DS_Store
