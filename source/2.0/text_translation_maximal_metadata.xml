@@ -19,7 +19,6 @@
     <hasCharacters>true</hasCharacters>
     <isTranslation>true</isTranslation>
     <isExpression>false</isExpression>
-    <hasArchive>true</hasArchive>
     <translationType>Revision</translationType>
     <audience>Common</audience>
   </type>
@@ -49,7 +48,7 @@
   <manifest>
     <container uri="sources">
       <resource uri="aSourceArchive.zip" size="1748921" checksum="b95daf7d53dbb0f390759dcb7b7dff2f" mimeType="application/zip"/>
-    </container
+    </container>
   </manifest>
   <names>
     <name id="sourceZip">
@@ -57,8 +56,34 @@
       <short>PT source zip</short>
       <long>PT source zip (with arbitrary name because DBL doesn't care)</long>
     </name>
+    <name id="MAT">
+      <short>Matthew</short>
+    </name>
+    <name id="MRK">
+      <short>Mark</short>
+      <long>Gospel of Mark</long>
+    </name>
+    <name id="LUK">
+      <abbr>Mk</abbr>
+      <short>Luke</short>
+    </name>
+    <name id="JHN">
+      <abbr>Jn</abbr>
+      <short>John</short>
+      <long>Gospel of John</long>
+    </name>
+    <name id="ACT">
+      <short>Acts</short>
+    </name>
   </names>
   <source>
+    <canonicalContent>
+      <book code="MAT" />
+      <book code="MRK" />
+      <book code="LUK" />
+      <book code="JHN" />
+      <book code="ACT" />
+    </canonicalContent>
     <content name="sourceZip" src="sources/aSourceArchive.zip"/>
   </source>
   <copyright>

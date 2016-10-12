@@ -89,7 +89,7 @@ translationAndExpressionCommonElements = (
   promotionElement &
   translationManifestElement &
   publicationsElement &
-  translationSourceElement?
+  translationSourceElement
 )
 
 commonElements = (
@@ -276,7 +276,6 @@ textTranslationTypeElement =
     element hasCharacters { "true" } &
     element isTranslation { "true" } &
     element isExpression { "false" } &
-    element hasArchive { xsd:boolean } &
     element isConfidential { xsd:boolean } &
     commonTextTranslationTypeElements
 }
@@ -287,7 +286,6 @@ audioTranslationTypeElement =
     element hasCharacters { "false" } &
     element isTranslation { "true" } &
     element isExpression { "false" } &
-    element hasArchive { "false" } &
     element isConfidential { xsd:boolean } &
     commonAudioTranslationTypeElements
 }
@@ -298,7 +296,6 @@ textExpressionTypeElement =
     element hasCharacters { "true" } &
     element isTranslation { "false" } &
     element isExpression { "true" } &
-    element hasArchive { "false" } &
     commonTextExpressionTypeElements &
     element isConfidential { xsd:boolean }
 }
@@ -309,7 +306,6 @@ printExpressionTypeElement =
     element hasCharacters { "true" } &
     element isTranslation { "false" } &
     element isExpression { "true" } &
-    element hasArchive { "false" } &
     commonExpressionTypeElements &
     element isConfidential { xsd:boolean }
 }
@@ -320,7 +316,6 @@ audioExpressionTypeElement =
     element hasCharacters { "false" } &
     element isTranslation { "false" } &
     element isExpression { "true" } &
-    element hasArchive { "false" } &
     commonAudioExpressionTypeElements &
     element isConfidential { xsd:boolean }
 }
@@ -331,7 +326,6 @@ textTranslationAndExpressionTypeElement =
     element hasCharacters { "true" } &
     element isTranslation { "true" } &
     element isExpression { "true" } &
-    element hasArchive { xsd:boolean } &
     commonTextTranslationTypeElements &
     commonTextExpressionTypeElements &
     element isConfidential { xsd:boolean }
@@ -343,7 +337,6 @@ audioTranslationAndExpressionTypeElement =
     element hasCharacters { "false" } &
     element isTranslation { "true" } &
     element isExpression { "true" } &
-    element hasArchive { "false" } &
     commonAudioTranslationTypeElements &
     commonAudioExpressionTypeElements &
     element isConfidential { xsd:boolean }
@@ -518,7 +511,10 @@ translationStageEnum = (
 
 
 translationSourceElement =
-  element source { (sourceStructureDivision | sourceStructureContent)+ }
+  element source {
+    empty |
+    ( element canonicalContent { canonicalContentBook+}? & (sourceStructureDivision | sourceStructureContent)+ )
+  }
 
 sourceStructureDivision =
   element division {

@@ -15,7 +15,6 @@
     <hasCharacters>true</hasCharacters>
     <isTranslation>true</isTranslation>
     <isExpression>false</isExpression>
-    <hasArchive>true</hasArchive>
     <translationType>Revision</translationType>
     <audience>Common</audience>
   </type>

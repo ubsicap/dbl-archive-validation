@@ -134,9 +134,7 @@
       <ref name="promotionElement"/>
       <ref name="translationManifestElement"/>
       <ref name="publicationsElement"/>
-      <optional>
-        <ref name="translationSourceElement"/>
-      </optional>
+      <ref name="translationSourceElement"/>
     </interleave>
   </define>
   <define name="commonElements">
@@ -522,9 +520,6 @@
         <element name="isExpression">
           <value>false</value>
         </element>
-        <element name="hasArchive">
-          <data type="boolean"/>
-        </element>
         <element name="isConfidential">
           <data type="boolean"/>
         </element>
@@ -545,9 +540,6 @@
           <value>true</value>
         </element>
         <element name="isExpression">
-          <value>false</value>
-        </element>
-        <element name="hasArchive">
           <value>false</value>
         </element>
         <element name="isConfidential">
@@ -572,9 +564,6 @@
         <element name="isExpression">
           <value>true</value>
         </element>
-        <element name="hasArchive">
-          <value>false</value>
-        </element>
         <ref name="commonTextExpressionTypeElements"/>
         <element name="isConfidential">
           <data type="boolean"/>
@@ -596,9 +585,6 @@
         </element>
         <element name="isExpression">
           <value>true</value>
-        </element>
-        <element name="hasArchive">
-          <value>false</value>
         </element>
         <ref name="commonExpressionTypeElements"/>
         <element name="isConfidential">
@@ -622,9 +608,6 @@
         <element name="isExpression">
           <value>true</value>
         </element>
-        <element name="hasArchive">
-          <value>false</value>
-        </element>
         <ref name="commonAudioExpressionTypeElements"/>
         <element name="isConfidential">
           <data type="boolean"/>
@@ -646,9 +629,6 @@
         </element>
         <element name="isExpression">
           <value>true</value>
-        </element>
-        <element name="hasArchive">
-          <data type="boolean"/>
         </element>
         <ref name="commonTextTranslationTypeElements"/>
         <ref name="commonTextExpressionTypeElements"/>
@@ -672,9 +652,6 @@
         </element>
         <element name="isExpression">
           <value>true</value>
-        </element>
-        <element name="hasArchive">
-          <value>false</value>
         </element>
         <ref name="commonAudioTranslationTypeElements"/>
         <ref name="commonAudioExpressionTypeElements"/>
@@ -974,12 +951,24 @@
   </define>
   <define name="translationSourceElement">
     <element name="source">
-      <oneOrMore>
-        <choice>
-          <ref name="sourceStructureDivision"/>
-          <ref name="sourceStructureContent"/>
-        </choice>
-      </oneOrMore>
+      <choice>
+        <empty/>
+        <interleave>
+          <optional>
+            <element name="canonicalContent">
+              <oneOrMore>
+                <ref name="canonicalContentBook"/>
+              </oneOrMore>
+            </element>
+          </optional>
+          <oneOrMore>
+            <choice>
+              <ref name="sourceStructureDivision"/>
+              <ref name="sourceStructureContent"/>
+            </choice>
+          </oneOrMore>
+        </interleave>
+      </choice>
     </element>
   </define>
   <define name="sourceStructureDivision">

@@ -89,7 +89,7 @@ translationAndExpressionCommonElements = (
   promotionElement &
   translationManifestElement &
   publicationsElement &
-  translationSourceElement?
+  translationSourceElement
 )
 
 commonElements = (
