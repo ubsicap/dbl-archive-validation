@@ -206,52 +206,136 @@
             </choice>
           </element>
         </optional>
-        <zeroOrMore>
-          <element name="systemId">
-            <ref name="systemIdAtts"/>
-            <ref name="lenGe2String"/>
-          </element>
-        </zeroOrMore>
+        <oneOrMore>
+          <choice>
+            <ref name="gbcSystemId"/>
+            <ref name="ptSystemId"/>
+            <ref name="reapSystemId"/>
+            <ref name="biblicaSystemId"/>
+            <ref name="tmsSystemId"/>
+          </choice>
+        </oneOrMore>
         <element name="bundleProducer">
           <ref name="lenGe2String"/>
         </element>
       </interleave>
     </element>
   </define>
-  <define name="systemIdAtts">
-    <attribute name="type">
-      <ref name="systemIdTypeEnum"/>
-    </attribute>
-    <optional>
-      <attribute name="name">
-        <ref name="lenGe2String"/>
+  <define name="gbcSystemId">
+    <element name="systemId">
+      <attribute name="type">
+        <value>gbc</value>
       </attribute>
-    </optional>
-    <optional>
-      <attribute name="fullname">
-        <ref name="lenGe2String"/>
-      </attribute>
-    </optional>
-    <optional>
-      <attribute name="csetid">
-        <ref name="lenGe2String"/>
-      </attribute>
-    </optional>
+      <optional>
+        <attribute name="name">
+          <ref name="lenGe2String"/>
+        </attribute>
+      </optional>
+      <optional>
+        <attribute name="fullname">
+          <ref name="lenGe2String"/>
+        </attribute>
+      </optional>
+      <optional>
+        <attribute name="csetid">
+          <ref name="lenGe2String"/>
+        </attribute>
+      </optional>
+      <ref name="lenGe2String"/>
+    </element>
   </define>
-  <define name="systemIdTypeEnum">
-    <choice>
-      <value>gbc</value>
-      <!-- Global Bible Catalogue entry ID -->
-      <value>tms</value>
-      <!-- UBS Translation Management System database ID -->
-      <value>paratext</value>
-      <!-- Paratext Project GUID -->
-      <value>reap</value>
-      <!-- SIL REAP database ID -->
-      <value>biblica</value>
-    </choice>
+  <define name="tmsSystemId">
+    <element name="systemId">
+      <attribute name="type">
+        <value>tms</value>
+      </attribute>
+      <optional>
+        <attribute name="name">
+          <ref name="lenGe2String"/>
+        </attribute>
+      </optional>
+      <optional>
+        <attribute name="fullname">
+          <ref name="lenGe2String"/>
+        </attribute>
+      </optional>
+      <optional>
+        <attribute name="csetid">
+          <ref name="lenGe2String"/>
+        </attribute>
+      </optional>
+      <ref name="lenGe2String"/>
+    </element>
   </define>
-  <!-- Biblica database id -->
+  <define name="ptSystemId">
+    <element name="systemId">
+      <attribute name="type">
+        <value>paratext</value>
+      </attribute>
+      <optional>
+        <attribute name="name">
+          <ref name="lenGe2String"/>
+        </attribute>
+      </optional>
+      <optional>
+        <attribute name="fullname">
+          <ref name="lenGe2String"/>
+        </attribute>
+      </optional>
+      <optional>
+        <attribute name="csetid">
+          <ref name="lenGe2String"/>
+        </attribute>
+      </optional>
+      <ref name="lenGe2String"/>
+    </element>
+  </define>
+  <define name="reapSystemId">
+    <element name="systemId">
+      <attribute name="type">
+        <value>reap</value>
+      </attribute>
+      <optional>
+        <attribute name="name">
+          <ref name="lenGe2String"/>
+        </attribute>
+      </optional>
+      <optional>
+        <attribute name="fullname">
+          <ref name="lenGe2String"/>
+        </attribute>
+      </optional>
+      <optional>
+        <attribute name="csetid">
+          <ref name="lenGe2String"/>
+        </attribute>
+      </optional>
+      <ref name="lenGe2String"/>
+    </element>
+  </define>
+  <define name="biblicaSystemId">
+    <element name="systemId">
+      <attribute name="type">
+        <value>biblica</value>
+      </attribute>
+      <optional>
+        <attribute name="name">
+          <ref name="lenGe2String"/>
+        </attribute>
+      </optional>
+      <optional>
+        <attribute name="fullname">
+          <ref name="lenGe2String"/>
+        </attribute>
+      </optional>
+      <optional>
+        <attribute name="csetid">
+          <ref name="lenGe2String"/>
+        </attribute>
+      </optional>
+      <ref name="lenGe2String"/>
+    </element>
+  </define>
   <define name="relationshipsElement">
     <element name="relationships">
       <zeroOrMore>

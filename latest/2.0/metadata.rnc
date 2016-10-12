@@ -123,25 +123,54 @@ identificationElement =
       xsd:gYearMonth |
       xsd:dateTime
     }? &
-    element systemId {
-      systemIdAtts,
-      lenGe2String
-    }* &
+    (gbcSystemId | ptSystemId | reapSystemId | biblicaSystemId | tmsSystemId)+ &
     element bundleProducer { lenGe2String }
     }
 
-systemIdAtts =
-    attribute type { systemIdTypeEnum },
+gbcSystemId =
+  element systemId {
+    attribute type { "gbc" },
     attribute name { lenGe2String }?,
     attribute fullname { lenGe2String }?,
-    attribute csetid { lenGe2String }?
+    attribute csetid { lenGe2String }?,
+    lenGe2String
+  }
 
-systemIdTypeEnum =
-  "gbc"      | # Global Bible Catalogue entry ID
-  "tms"      | # UBS Translation Management System database ID
-  "paratext" | # Paratext Project GUID
-  "reap"     | # SIL REAP database ID
-  "biblica"    # Biblica database id
+tmsSystemId =
+  element systemId {
+    attribute type { "tms" },
+    attribute name { lenGe2String }?,
+    attribute fullname { lenGe2String }?,
+    attribute csetid { lenGe2String }?,
+    lenGe2String
+  }
+
+ptSystemId =
+  element systemId {
+    attribute type { "paratext" },
+    attribute name { lenGe2String }?,
+    attribute fullname { lenGe2String }?,
+    attribute csetid { lenGe2String }?,
+    lenGe2String
+  }
+
+reapSystemId =
+  element systemId {
+    attribute type { "reap" },
+    attribute name { lenGe2String }?,
+    attribute fullname { lenGe2String }?,
+    attribute csetid { lenGe2String }?,
+    lenGe2String
+  }
+
+biblicaSystemId =
+  element systemId {
+    attribute type { "biblica" },
+    attribute name { lenGe2String }?,
+    attribute fullname { lenGe2String }?,
+    attribute csetid { lenGe2String }?,
+    lenGe2String
+  }
 
 
 relationshipsElement =
