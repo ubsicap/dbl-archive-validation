@@ -16,7 +16,7 @@ publicationChildElements = (
   element description { lenGe2String }? &
   element descriptionLocal { lenGe2String }? &
   publicationCountryElement? &
-  element canonicalContent { canonicalContentBook+}? &
+  element canonicalContent { canonicalContentBook+} &
   element structure { (publicationStructureDivision | publicationStructureContent)+ }
 )
 

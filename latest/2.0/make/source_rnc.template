@@ -1,7 +1,7 @@
 translationSourceElement =
   element source {
     empty |
-    ( element canonicalContent { canonicalContentBook+}? & (sourceStructureDivision | sourceStructureContent)+ )
+    ( element canonicalContent { canonicalContentBook+} & (sourceStructureDivision | sourceStructureContent)+ )
   }
 
 sourceStructureDivision =

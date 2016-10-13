@@ -130,46 +130,34 @@ identificationElement =
 gbcSystemId =
   element systemId {
     attribute type { "gbc" },
-    attribute name { lenGe2String }?,
-    attribute fullname { lenGe2String }?,
-    attribute csetid { lenGe2String }?,
-    lenGe2String
+    gbcId
   }
 
 tmsSystemId =
   element systemId {
     attribute type { "tms" },
-    attribute name { lenGe2String }?,
-    attribute fullname { lenGe2String }?,
-    attribute csetid { lenGe2String }?,
-    lenGe2String
+    tmsId
   }
 
 ptSystemId =
   element systemId {
     attribute type { "paratext" },
-    attribute name { lenGe2String }?,
-    attribute fullname { lenGe2String }?,
-    attribute csetid { lenGe2String }?,
-    lenGe2String
+    attribute name { lenGe2String },
+    attribute fullname { lenGe2String },
+    attribute csetid { lenGe2String },
+    ptId
   }
 
 reapSystemId =
   element systemId {
     attribute type { "reap" },
-    attribute name { lenGe2String }?,
-    attribute fullname { lenGe2String }?,
-    attribute csetid { lenGe2String }?,
-    lenGe2String
+    reapId
   }
 
 biblicaSystemId =
   element systemId {
     attribute type { "biblica" },
-    attribute name { lenGe2String }?,
-    attribute fullname { lenGe2String }?,
-    attribute csetid { lenGe2String }?,
-    lenGe2String
+    biblicaId
   }
 
 
@@ -542,7 +530,7 @@ translationStageEnum = (
 translationSourceElement =
   element source {
     empty |
-    ( element canonicalContent { canonicalContentBook+}? & (sourceStructureDivision | sourceStructureContent)+ )
+    ( element canonicalContent { canonicalContentBook+} & (sourceStructureDivision | sourceStructureContent)+ )
   }
 
 sourceStructureDivision =
@@ -576,7 +564,7 @@ publicationChildElements = (
   element description { lenGe2String }? &
   element descriptionLocal { lenGe2String }? &
   publicationCountryElement? &
-  element canonicalContent { canonicalContentBook+}? &
+  element canonicalContent { canonicalContentBook+} &
   element structure { (publicationStructureDivision | publicationStructureContent)+ }
 )
 
@@ -861,3 +849,13 @@ md5String = xsd:string { pattern = "[a-f0-9]{32}" }
 mimeTypeString = xsd:string { pattern = "[\-a-z0-9]+/[\-a-z0-9+]+" }
 
 percentageString = xsd:string { pattern = "[1-9][0-9]{1,3}%" }
+
+biblicaId = xsd:string { pattern = "[1-9][0-9]{0,4}" }
+
+gbcId = xsd:string { pattern = "[0-9a-f]{24}" }
+
+tmsId = xsd:string { pattern = "[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}" }
+
+ptId = xsd:string { pattern = "[0-9a-f]{40}" }
+
+reapId = xsd:anyURI

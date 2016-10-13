@@ -226,22 +226,7 @@
       <attribute name="type">
         <value>gbc</value>
       </attribute>
-      <optional>
-        <attribute name="name">
-          <ref name="lenGe2String"/>
-        </attribute>
-      </optional>
-      <optional>
-        <attribute name="fullname">
-          <ref name="lenGe2String"/>
-        </attribute>
-      </optional>
-      <optional>
-        <attribute name="csetid">
-          <ref name="lenGe2String"/>
-        </attribute>
-      </optional>
-      <ref name="lenGe2String"/>
+      <ref name="gbcId"/>
     </element>
   </define>
   <define name="tmsSystemId">
@@ -249,22 +234,7 @@
       <attribute name="type">
         <value>tms</value>
       </attribute>
-      <optional>
-        <attribute name="name">
-          <ref name="lenGe2String"/>
-        </attribute>
-      </optional>
-      <optional>
-        <attribute name="fullname">
-          <ref name="lenGe2String"/>
-        </attribute>
-      </optional>
-      <optional>
-        <attribute name="csetid">
-          <ref name="lenGe2String"/>
-        </attribute>
-      </optional>
-      <ref name="lenGe2String"/>
+      <ref name="tmsId"/>
     </element>
   </define>
   <define name="ptSystemId">
@@ -272,22 +242,16 @@
       <attribute name="type">
         <value>paratext</value>
       </attribute>
-      <optional>
-        <attribute name="name">
-          <ref name="lenGe2String"/>
-        </attribute>
-      </optional>
-      <optional>
-        <attribute name="fullname">
-          <ref name="lenGe2String"/>
-        </attribute>
-      </optional>
-      <optional>
-        <attribute name="csetid">
-          <ref name="lenGe2String"/>
-        </attribute>
-      </optional>
-      <ref name="lenGe2String"/>
+      <attribute name="name">
+        <ref name="lenGe2String"/>
+      </attribute>
+      <attribute name="fullname">
+        <ref name="lenGe2String"/>
+      </attribute>
+      <attribute name="csetid">
+        <ref name="lenGe2String"/>
+      </attribute>
+      <ref name="ptId"/>
     </element>
   </define>
   <define name="reapSystemId">
@@ -295,22 +259,7 @@
       <attribute name="type">
         <value>reap</value>
       </attribute>
-      <optional>
-        <attribute name="name">
-          <ref name="lenGe2String"/>
-        </attribute>
-      </optional>
-      <optional>
-        <attribute name="fullname">
-          <ref name="lenGe2String"/>
-        </attribute>
-      </optional>
-      <optional>
-        <attribute name="csetid">
-          <ref name="lenGe2String"/>
-        </attribute>
-      </optional>
-      <ref name="lenGe2String"/>
+      <ref name="reapId"/>
     </element>
   </define>
   <define name="biblicaSystemId">
@@ -318,22 +267,7 @@
       <attribute name="type">
         <value>biblica</value>
       </attribute>
-      <optional>
-        <attribute name="name">
-          <ref name="lenGe2String"/>
-        </attribute>
-      </optional>
-      <optional>
-        <attribute name="fullname">
-          <ref name="lenGe2String"/>
-        </attribute>
-      </optional>
-      <optional>
-        <attribute name="csetid">
-          <ref name="lenGe2String"/>
-        </attribute>
-      </optional>
-      <ref name="lenGe2String"/>
+      <ref name="biblicaId"/>
     </element>
   </define>
   <define name="relationshipsElement">
@@ -1038,13 +972,11 @@
       <choice>
         <empty/>
         <interleave>
-          <optional>
-            <element name="canonicalContent">
-              <oneOrMore>
-                <ref name="canonicalContentBook"/>
-              </oneOrMore>
-            </element>
-          </optional>
+          <element name="canonicalContent">
+            <oneOrMore>
+              <ref name="canonicalContentBook"/>
+            </oneOrMore>
+          </element>
           <oneOrMore>
             <choice>
               <ref name="sourceStructureDivision"/>
@@ -1130,13 +1062,11 @@
       <optional>
         <ref name="publicationCountryElement"/>
       </optional>
-      <optional>
-        <element name="canonicalContent">
-          <oneOrMore>
-            <ref name="canonicalContentBook"/>
-          </oneOrMore>
-        </element>
-      </optional>
+      <element name="canonicalContent">
+        <oneOrMore>
+          <ref name="canonicalContentBook"/>
+        </oneOrMore>
+      </element>
       <element name="structure">
         <oneOrMore>
           <choice>
@@ -1704,5 +1634,28 @@
     <data type="string">
       <param name="pattern">[1-9][0-9]{1,3}%</param>
     </data>
+  </define>
+  <define name="biblicaId">
+    <data type="string">
+      <param name="pattern">[1-9][0-9]{0,4}</param>
+    </data>
+  </define>
+  <define name="gbcId">
+    <data type="string">
+      <param name="pattern">[0-9a-f]{24}</param>
+    </data>
+  </define>
+  <define name="tmsId">
+    <data type="string">
+      <param name="pattern">[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}</param>
+    </data>
+  </define>
+  <define name="ptId">
+    <data type="string">
+      <param name="pattern">[0-9a-f]{40}</param>
+    </data>
+  </define>
+  <define name="reapId">
+    <data type="anyURI"/>
   </define>
 </grammar>
