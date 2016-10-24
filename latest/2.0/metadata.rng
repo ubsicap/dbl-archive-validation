@@ -1637,22 +1637,22 @@
   </define>
   <define name="biblicaId">
     <data type="string">
-      <param name="pattern">[1-9][0-9]{0,4}</param>
+      <param name="pattern">\s*[1-9][0-9]{0,4}\s*</param>
     </data>
   </define>
   <define name="gbcId">
     <data type="string">
-      <param name="pattern">[0-9a-f]{24}</param>
+      <param name="pattern">\s*[0-9a-f]{24}\s*</param>
     </data>
   </define>
   <define name="tmsId">
     <data type="string">
-      <param name="pattern">[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}</param>
+      <param name="pattern">\s*[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}\s*</param>
     </data>
   </define>
   <define name="ptId">
     <data type="string">
-      <param name="pattern">[0-9a-f]{40}</param>
+      <param name="pattern">\s*[0-9a-f]{40}\s*</param>
     </data>
   </define>
   <define name="reapId">

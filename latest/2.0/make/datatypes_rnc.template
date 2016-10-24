@@ -88,12 +88,12 @@ mimeTypeString = xsd:string { pattern = "[\-a-z0-9]+/[\-a-z0-9+]+" }
 
 percentageString = xsd:string { pattern = "[1-9][0-9]{1,3}%" }
 
-biblicaId = xsd:string { pattern = "[1-9][0-9]{0,4}" }
+biblicaId = xsd:string { pattern = "\s*[1-9][0-9]{0,4}\s*" }
 
-gbcId = xsd:string { pattern = "[0-9a-f]{24}" }
+gbcId = xsd:string { pattern = "\s*[0-9a-f]{24}\s*" }
 
-tmsId = xsd:string { pattern = "[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}" }
+tmsId = xsd:string { pattern = "\s*[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}\s*" }
 
-ptId = xsd:string { pattern = "[0-9a-f]{40}" }
+ptId = xsd:string { pattern = "\s*[0-9a-f]{40}\s*" }
 
 reapId = xsd:anyURI
