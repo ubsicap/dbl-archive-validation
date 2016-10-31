@@ -864,7 +864,7 @@ nonCanonicalBookIdEnum = (
   "NDX"   # Names Index
 )
 
-ptReference = xsd:string { pattern = "[A-Z1-6]{3}(\.[1-9][0-9]*(-[1-9][0-9]*)?)?" } # Eventually use PT regex
+ptReference = xsd:string { pattern = "[A-Z1-6]{3}|[A-Z1-6]{3} [1-9][0-9]*(-[1-9][0-9]*)?|[A-Z1-6]{3} [1-9][0-9]*:[1-9][0-9]*(-[1-9][0-9]*)?|[A-Z1-6]{3} [1-9][0-9]*:[1-9][0-9]*-[1-9][0-9]*:[1-9][0-9]*" }
 
 knownRole = "sourceZip" | "sourceFile"
 

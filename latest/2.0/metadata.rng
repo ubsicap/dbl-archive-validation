@@ -1678,10 +1678,9 @@
   </define>
   <define name="ptReference">
     <data type="string">
-      <param name="pattern">[A-Z1-6]{3}(\.[1-9][0-9]*(-[1-9][0-9]*)?)?</param>
+      <param name="pattern">[A-Z1-6]{3}|[A-Z1-6]{3} [1-9][0-9]*(-[1-9][0-9]*)?|[A-Z1-6]{3} [1-9][0-9]*:[1-9][0-9]*(-[1-9][0-9]*)?|[A-Z1-6]{3} [1-9][0-9]*:[1-9][0-9]*-[1-9][0-9]*:[1-9][0-9]*</param>
     </data>
   </define>
-  <!-- Eventually use PT regex -->
   <define name="knownRole">
     <choice>
       <value>sourceZip</value>
