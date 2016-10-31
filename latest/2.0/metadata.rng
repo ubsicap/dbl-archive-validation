@@ -1003,6 +1003,11 @@
       <interleave>
         <attribute name="name"/>
         <attribute name="src"/>
+        <optional>
+          <attribute name="role">
+            <ref name="roleId"/>
+          </attribute>
+        </optional>
       </interleave>
     </element>
   </define>
@@ -1117,8 +1122,286 @@
       <interleave>
         <attribute name="name"/>
         <attribute name="src"/>
+        <optional>
+          <attribute name="role">
+            <ref name="roleId"/>
+          </attribute>
+        </optional>
       </interleave>
     </element>
+  </define>
+  <define name="copyrightElement">
+    <element name="copyright">
+      <ref name="copyrightStatementElement"/>
+    </element>
+  </define>
+  <define name="copyrightStatementElement">
+    <element name="statement">
+      <attribute name="contentType">
+        <value>xhtml</value>
+      </attribute>
+      <oneOrMore>
+        <ref name="simplifiedHtml"/>
+      </oneOrMore>
+    </element>
+  </define>
+  <define name="promotionElement">
+    <element name="promotion">
+      <element name="promoVersionInfo">
+        <attribute name="contentType">
+          <value>xhtml</value>
+        </attribute>
+        <oneOrMore>
+          <ref name="simplifiedHtml"/>
+        </oneOrMore>
+      </element>
+    </element>
+  </define>
+  <define name="archiveStatusElement">
+    <element name="archiveStatus">
+      <interleave>
+        <element name="archivistName">
+          <ref name="lenGe2String"/>
+        </element>
+        <element name="dateArchived">
+          <choice>
+            <data type="dateTime"/>
+            <value>null</value>
+          </choice>
+        </element>
+        <element name="dateUpdated">
+          <choice>
+            <data type="dateTime"/>
+            <value>null</value>
+          </choice>
+        </element>
+        <element name="comments">
+          <ref name="lenLe255String"/>
+        </element>
+      </interleave>
+    </element>
+  </define>
+  <define name="simplifiedHtml">
+    <choice>
+      <ref name="shP"/>
+      <ref name="shH1"/>
+      <ref name="shH2"/>
+      <ref name="shH3"/>
+      <ref name="shUl"/>
+      <ref name="shOl"/>
+      <ref name="shBlockquote"/>
+      <ref name="shHtmlCharMarkup"/>
+    </choice>
+  </define>
+  <define name="shP">
+    <element name="p">
+      <oneOrMore>
+        <choice>
+          <text/>
+          <ref name="shHtmlCharMarkup"/>
+        </choice>
+      </oneOrMore>
+    </element>
+  </define>
+  <define name="shH1">
+    <element name="h1">
+      <text/>
+    </element>
+  </define>
+  <define name="shH2">
+    <element name="h2">
+      <text/>
+    </element>
+  </define>
+  <define name="shH3">
+    <element name="h3">
+      <text/>
+    </element>
+  </define>
+  <define name="shOl">
+    <element name="ol">
+      <oneOrMore>
+        <ref name="shLi"/>
+      </oneOrMore>
+    </element>
+  </define>
+  <define name="shUl">
+    <element name="ul">
+      <oneOrMore>
+        <ref name="shLi"/>
+      </oneOrMore>
+    </element>
+  </define>
+  <define name="shLi">
+    <element name="li">
+      <text/>
+    </element>
+  </define>
+  <define name="shBlockquote">
+    <element name="blockquote">
+      <text/>
+    </element>
+  </define>
+  <define name="shHtmlCharMarkup">
+    <choice>
+      <text/>
+      <ref name="shA"/>
+      <ref name="shImg"/>
+      <ref name="shBr"/>
+      <ref name="shStrong"/>
+      <ref name="shB"/>
+      <ref name="shEm"/>
+      <ref name="shI"/>
+    </choice>
+  </define>
+  <define name="shA">
+    <element name="a">
+      <attribute name="href">
+        <data type="anyURI"/>
+      </attribute>
+      <ref name="shHtmlCharMarkup"/>
+    </element>
+  </define>
+  <define name="shImg">
+    <element name="img">
+      <attribute name="src">
+        <data type="anyURI"/>
+      </attribute>
+      <attribute name="alt"/>
+    </element>
+  </define>
+  <define name="shBr">
+    <element name="br">
+      <empty/>
+    </element>
+  </define>
+  <define name="shStrong">
+    <element name="strong">
+      <text/>
+    </element>
+  </define>
+  <define name="shB">
+    <element name="b">
+      <text/>
+    </element>
+  </define>
+  <define name="shEm">
+    <element name="em">
+      <text/>
+    </element>
+  </define>
+  <define name="shI">
+    <element name="i">
+      <text/>
+    </element>
+  </define>
+  <define name="lenGe2String">
+    <data type="string">
+      <param name="minLength">2</param>
+    </data>
+  </define>
+  <define name="lenGe2Le255String">
+    <data type="string">
+      <param name="minLength">2</param>
+      <param name="maxLength">255</param>
+    </data>
+  </define>
+  <define name="lenLe255String">
+    <data type="string">
+      <param name="maxLength">255</param>
+    </data>
+  </define>
+  <define name="bundleIdString">
+    <data type="string">
+      <param name="pattern">[a-f0-9]{16}</param>
+    </data>
+  </define>
+  <define name="abbreviationString">
+    <data type="string">
+      <param name="pattern">[\-A-Za-z0-9]{2,12}</param>
+    </data>
+  </define>
+  <define name="localAbbreviationString">
+    <data type="string">
+      <param name="minLength">2</param>
+      <param name="maxLength">12</param>
+    </data>
+  </define>
+  <define name="languageIsoString">
+    <data type="string">
+      <param name="pattern">[a-z][a-z][a-z]</param>
+    </data>
+  </define>
+  <define name="ldmlString">
+    <data type="string">
+      <param name="pattern">[A-Za-z]{2,3}([\-_][A-Za-z0-9]+){0,3}</param>
+    </data>
+  </define>
+  <define name="rodString">
+    <data type="string">
+      <param name="pattern">[0-9]{5}</param>
+    </data>
+  </define>
+  <define name="countryIsoString">
+    <data type="string">
+      <param name="pattern">[A-Z][A-Z][A-Z]</param>
+    </data>
+  </define>
+  <define name="measurementString">
+    <data type="string">
+      <param name="pattern">[1-9][0-9]{1,4}mm</param>
+    </data>
+  </define>
+  <define name="nameIdString">
+    <data type="string">
+      <param name="pattern">[A-Za-z][\-A-Za-z0-9_]+</param>
+    </data>
+  </define>
+  <define name="md5String">
+    <data type="string">
+      <param name="pattern">[a-f0-9]{32}</param>
+    </data>
+  </define>
+  <define name="mimeTypeString">
+    <data type="string">
+      <param name="pattern">[\-a-z0-9]+/[\-a-z0-9+]+</param>
+    </data>
+  </define>
+  <define name="percentageString">
+    <data type="string">
+      <param name="pattern">[1-9][0-9]{1,3}%</param>
+    </data>
+  </define>
+  <define name="biblicaId">
+    <data type="string">
+      <param name="pattern">[1-9][0-9]{0,4}</param>
+    </data>
+  </define>
+  <define name="gbcId">
+    <data type="string">
+      <param name="pattern">[0-9a-f]{24}</param>
+    </data>
+  </define>
+  <define name="tmsId">
+    <data type="string">
+      <param name="pattern">[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}</param>
+    </data>
+  </define>
+  <define name="ptId">
+    <data type="string">
+      <param name="pattern">[0-9a-f]{40}</param>
+    </data>
+  </define>
+  <define name="reapId">
+    <data type="anyURI"/>
+  </define>
+  <define name="roleId">
+    <choice>
+      <ref name="bookIdEnum"/>
+      <ref name="ptReference"/>
+      <ref name="knownRole"/>
+      <ref name="extensionRole"/>
+    </choice>
   </define>
   <define name="bookIdEnum">
     <choice>
@@ -1393,269 +1676,21 @@
     </choice>
     <!-- Names Index -->
   </define>
-  <define name="copyrightElement">
-    <element name="copyright">
-      <ref name="copyrightStatementElement"/>
-    </element>
+  <define name="ptReference">
+    <data type="string">
+      <param name="pattern">[A-Z1-6]{3}(\.[1-9][0-9]*(-[1-9][0-9]*)?)?</param>
+    </data>
   </define>
-  <define name="copyrightStatementElement">
-    <element name="statement">
-      <attribute name="contentType">
-        <value>xhtml</value>
-      </attribute>
-      <oneOrMore>
-        <ref name="simplifiedHtml"/>
-      </oneOrMore>
-    </element>
-  </define>
-  <define name="promotionElement">
-    <element name="promotion">
-      <element name="promoVersionInfo">
-        <attribute name="contentType">
-          <value>xhtml</value>
-        </attribute>
-        <oneOrMore>
-          <ref name="simplifiedHtml"/>
-        </oneOrMore>
-      </element>
-    </element>
-  </define>
-  <define name="archiveStatusElement">
-    <element name="archiveStatus">
-      <interleave>
-        <element name="archivistName">
-          <ref name="lenGe2String"/>
-        </element>
-        <element name="dateArchived">
-          <choice>
-            <data type="dateTime"/>
-            <value>null</value>
-          </choice>
-        </element>
-        <element name="dateUpdated">
-          <choice>
-            <data type="dateTime"/>
-            <value>null</value>
-          </choice>
-        </element>
-        <element name="comments">
-          <ref name="lenLe255String"/>
-        </element>
-      </interleave>
-    </element>
-  </define>
-  <define name="simplifiedHtml">
+  <!-- Eventually use PT regex -->
+  <define name="knownRole">
     <choice>
-      <ref name="shP"/>
-      <ref name="shH1"/>
-      <ref name="shH2"/>
-      <ref name="shH3"/>
-      <ref name="shUl"/>
-      <ref name="shOl"/>
-      <ref name="shBlockquote"/>
-      <ref name="shHtmlCharMarkup"/>
+      <value>sourceZip</value>
+      <value>sourceFile</value>
     </choice>
   </define>
-  <define name="shP">
-    <element name="p">
-      <oneOrMore>
-        <choice>
-          <text/>
-          <ref name="shHtmlCharMarkup"/>
-        </choice>
-      </oneOrMore>
-    </element>
-  </define>
-  <define name="shH1">
-    <element name="h1">
-      <text/>
-    </element>
-  </define>
-  <define name="shH2">
-    <element name="h2">
-      <text/>
-    </element>
-  </define>
-  <define name="shH3">
-    <element name="h3">
-      <text/>
-    </element>
-  </define>
-  <define name="shOl">
-    <element name="ol">
-      <oneOrMore>
-        <ref name="shLi"/>
-      </oneOrMore>
-    </element>
-  </define>
-  <define name="shUl">
-    <element name="ul">
-      <oneOrMore>
-        <ref name="shLi"/>
-      </oneOrMore>
-    </element>
-  </define>
-  <define name="shLi">
-    <element name="li">
-      <text/>
-    </element>
-  </define>
-  <define name="shBlockquote">
-    <element name="blockquote">
-      <text/>
-    </element>
-  </define>
-  <define name="shHtmlCharMarkup">
-    <choice>
-      <text/>
-      <ref name="shA"/>
-      <ref name="shImg"/>
-      <ref name="shBr"/>
-      <ref name="shStrong"/>
-      <ref name="shB"/>
-      <ref name="shEm"/>
-      <ref name="shI"/>
-    </choice>
-  </define>
-  <define name="shA">
-    <element name="a">
-      <attribute name="href">
-        <data type="anyURI"/>
-      </attribute>
-      <ref name="shHtmlCharMarkup"/>
-    </element>
-  </define>
-  <define name="shImg">
-    <element name="img">
-      <attribute name="src">
-        <data type="anyURI"/>
-      </attribute>
-      <attribute name="alt"/>
-    </element>
-  </define>
-  <define name="shBr">
-    <element name="br">
-      <empty/>
-    </element>
-  </define>
-  <define name="shStrong">
-    <element name="strong">
-      <text/>
-    </element>
-  </define>
-  <define name="shB">
-    <element name="b">
-      <text/>
-    </element>
-  </define>
-  <define name="shEm">
-    <element name="em">
-      <text/>
-    </element>
-  </define>
-  <define name="shI">
-    <element name="i">
-      <text/>
-    </element>
-  </define>
-  <define name="lenGe2String">
+  <define name="extensionRole">
     <data type="string">
-      <param name="minLength">2</param>
+      <param name="pattern">X-[A-Za-z0-9][A-Za-z0-9\-]*</param>
     </data>
-  </define>
-  <define name="lenGe2Le255String">
-    <data type="string">
-      <param name="minLength">2</param>
-      <param name="maxLength">255</param>
-    </data>
-  </define>
-  <define name="lenLe255String">
-    <data type="string">
-      <param name="maxLength">255</param>
-    </data>
-  </define>
-  <define name="bundleIdString">
-    <data type="string">
-      <param name="pattern">[a-f0-9]{16}</param>
-    </data>
-  </define>
-  <define name="abbreviationString">
-    <data type="string">
-      <param name="pattern">[\-A-Za-z0-9]{2,12}</param>
-    </data>
-  </define>
-  <define name="localAbbreviationString">
-    <data type="string">
-      <param name="minLength">2</param>
-      <param name="maxLength">12</param>
-    </data>
-  </define>
-  <define name="languageIsoString">
-    <data type="string">
-      <param name="pattern">[a-z][a-z][a-z]</param>
-    </data>
-  </define>
-  <define name="ldmlString">
-    <data type="string">
-      <param name="pattern">[A-Za-z]{2,3}([\-_][A-Za-z0-9]+){0,3}</param>
-    </data>
-  </define>
-  <define name="rodString">
-    <data type="string">
-      <param name="pattern">[0-9]{5}</param>
-    </data>
-  </define>
-  <define name="countryIsoString">
-    <data type="string">
-      <param name="pattern">[A-Z][A-Z][A-Z]</param>
-    </data>
-  </define>
-  <define name="measurementString">
-    <data type="string">
-      <param name="pattern">[1-9][0-9]{1,4}mm</param>
-    </data>
-  </define>
-  <define name="nameIdString">
-    <data type="string">
-      <param name="pattern">[A-Za-z][\-A-Za-z0-9_]+</param>
-    </data>
-  </define>
-  <define name="md5String">
-    <data type="string">
-      <param name="pattern">[a-f0-9]{32}</param>
-    </data>
-  </define>
-  <define name="mimeTypeString">
-    <data type="string">
-      <param name="pattern">[\-a-z0-9]+/[\-a-z0-9+]+</param>
-    </data>
-  </define>
-  <define name="percentageString">
-    <data type="string">
-      <param name="pattern">[1-9][0-9]{1,3}%</param>
-    </data>
-  </define>
-  <define name="biblicaId">
-    <data type="string">
-      <param name="pattern">[1-9][0-9]{0,4}</param>
-    </data>
-  </define>
-  <define name="gbcId">
-    <data type="string">
-      <param name="pattern">[0-9a-f]{24}</param>
-    </data>
-  </define>
-  <define name="tmsId">
-    <data type="string">
-      <param name="pattern">[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}</param>
-    </data>
-  </define>
-  <define name="ptId">
-    <data type="string">
-      <param name="pattern">[0-9a-f]{40}</param>
-    </data>
-  </define>
-  <define name="reapId">
-    <data type="anyURI"/>
   </define>
 </grammar>

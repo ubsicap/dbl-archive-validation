@@ -9,6 +9,7 @@
     <abbreviation>DBLTEST</abbreviation>
     <abbreviationLocal>DBLTEST</abbreviationLocal>
     <scope>Gospels plus Acts</scope>
+    <systemId type="gbc">542abd435117ad138f57440d</systemId>
   </identification>
   <type>
     <medium>text</medium>
@@ -42,22 +43,27 @@
     <versedParagraphs>false</versedParagraphs>
   </format>
   <names>
-    <name id="MAT">
+    <name id="zippy">
+      <abbr>Source</abbr>
+      <short>PT source zip</short>
+      <long>PT source zip (with arbitrary name because DBL doesn't care)</long>
+    </name>
+    <name id="Matthew">
       <abbr>Mt</abbr>
       <short>Matthew</short>
       <long>Gospel of Matthew</long>
     </name>
-    <name id="MRK">
+    <name id="Mark">
       <abbr>Mk</abbr>
       <short>Mark</short>
       <long>Gospel of Mark</long>
     </name>
-    <name id="LUK">
+    <name id="gospel-of-luke">
       <abbr>Mk</abbr>
       <short>Luke</short>
       <long>Gospel of Luke</long>
     </name>
-    <name id="JHN">
+    <name id="non-synoptic-gospel">
       <abbr>Jn</abbr>
       <short>John</short>
       <long>Gospel of John</long>
@@ -75,6 +81,16 @@
     <resource uri="JHN.usx" size="32957" checksum="b95daf7d53dbb0f390759dcb7b7dff2f" mimeType="application/xml" progress="4"/>
     <resource uri="ACT.usx" size="32957" checksum="b95daf7d53dbb0f390759dcb7b7dff2f" mimeType="application/xml" progress="4"/>
   </manifest>
+  <source>
+    <canonicalContent>
+      <book code="MAT" />
+      <book code="MRK" />
+      <book code="LUK" />
+      <book code="JHN" />
+      <book code="ACT" />
+    </canonicalContent>
+    <content name="zippy" src="sources/aSourceArchive.zip" role="sourceZip"/>
+  </source>
   <publications>
     <publication id="1">
       <name>DBL Gospels and Acts</name>
@@ -91,11 +107,11 @@
 	<book code="ACT" />
       </canonicalContent>
       <structure>
-	<content name="MAT" src="MAT.usx"/>
-	<content name="MRK" src="MRK.usx"/>
-	<content name="LUK" src="LUK.usx"/>
-	<content name="JHN" src="JHN.usx"/>
-	<content name="ACT" src="ACT.usx"/>
+	<content name="Matthew" src="MAT.usx" role="MAT"/>
+	<content name="Mark" src="MRK.usx" role="MRK"/>
+	<content name="gospel-of-luke" src="LUK.usx" role="LUK"/>
+	<content name="non-synoptic-gospel" src="JHN.usx" role="JHN"/>
+	<content name="ACT" src="ACT.usx" role="ACT"/>
       </structure>
     </publication>
   </publications>

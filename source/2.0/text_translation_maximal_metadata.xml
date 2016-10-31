@@ -55,7 +55,7 @@
     </container>
   </manifest>
   <names>
-    <name id="sourceZip">
+    <name id="zippy">
       <abbr>Source</abbr>
       <short>PT source zip</short>
       <long>PT source zip (with arbitrary name because DBL doesn't care)</long>
@@ -88,7 +88,7 @@
       <book code="JHN" />
       <book code="ACT" />
     </canonicalContent>
-    <content name="sourceZip" src="sources/aSourceArchive.zip"/>
+    <content name="zippy" src="sources/aSourceArchive.zip" role="sourceZip"/>
   </source>
   <copyright>
     <!-- Allow XHTML: <h1> <h2> <h3> <p> <blockquote> <ul> <ol> <li> <br> <strong> <em> <a> -->

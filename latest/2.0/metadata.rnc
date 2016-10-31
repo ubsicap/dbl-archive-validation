@@ -542,7 +542,8 @@ sourceStructureDivision =
 sourceStructureContent =
   element content {
     attribute name {text} &
-    attribute src {text}
+    attribute src {text} &
+    attribute role {roleId}?
   }
 
 
@@ -588,8 +589,142 @@ publicationStructureDivision =
 publicationStructureContent =
   element content {
     attribute name {text} &
-    attribute src {text}
+    attribute src {text} &
+    attribute role {roleId}?
   }
+
+
+copyrightElement =
+  element copyright {
+    copyrightStatementElement
+  }
+
+copyrightStatementElement =
+  element statement {
+    attribute contentType { "xhtml" },
+    simplifiedHtml+
+  }
+
+promotionElement =
+  element promotion {
+    element promoVersionInfo {
+      attribute contentType { "xhtml" },
+      simplifiedHtml+
+    }
+  }
+
+
+
+archiveStatusElement =
+  element archiveStatus {
+    element archivistName { lenGe2String } &
+    element dateArchived { xsd:dateTime | "null" } &
+    element dateUpdated { xsd:dateTime | "null" } &
+    element comments { lenLe255String }
+  }
+
+
+  simplifiedHtml = (
+    shP |
+    shH1 |
+    shH2 |
+    shH3 |
+    shUl |
+    shOl |
+    shBlockquote |
+    shHtmlCharMarkup
+)
+
+shP = element p { (text | shHtmlCharMarkup)+ }
+
+shH1 = element h1 { text }
+
+shH2 = element h2 { text }
+
+shH3 = element h3 { text }
+
+shOl = element ol { shLi+ }
+
+shUl = element ul { shLi+ }
+
+shLi = element li { text }
+
+shBlockquote = element blockquote { text }
+
+shHtmlCharMarkup = (
+  text |
+  shA |
+  shImg |
+  shBr |
+  shStrong |
+  shB |
+  shEm |
+  shI
+)
+
+shA =
+  element a {
+    attribute href { xsd:anyURI },
+    shHtmlCharMarkup
+  }
+
+shImg =
+  element img {
+    attribute src { xsd:anyURI },
+    attribute alt { text }
+  }
+
+shBr = element br { empty }
+
+shStrong = element strong { text }
+
+shB = element b { text }
+
+shEm = element em { text }
+
+shI = element i { text }
+
+lenGe2String = xsd:string { minLength = "2" }
+
+lenGe2Le255String = xsd:string { minLength = "2" maxLength = "255" }
+
+lenLe255String = xsd:string { maxLength = "255" }
+
+bundleIdString = xsd:string { pattern = "[a-f0-9]{16}" }
+
+abbreviationString = xsd:string { pattern = "[\-A-Za-z0-9]{2,12}" }
+
+localAbbreviationString = xsd:string { minLength = "2" maxLength = "12" }
+
+languageIsoString = xsd:string { pattern = "[a-z][a-z][a-z]" }
+
+ldmlString = xsd:string { pattern = "[A-Za-z]{2,3}([\-_][A-Za-z0-9]+){0,3}" }
+
+rodString = xsd:string { pattern = "[0-9]{5}" }
+
+countryIsoString = xsd:string { pattern = "[A-Z][A-Z][A-Z]" }
+
+measurementString = xsd:string { pattern = "[1-9][0-9]{1,4}mm" }
+
+nameIdString = xsd:string { pattern = "[A-Za-z][\-A-Za-z0-9_]+" }
+
+md5String = xsd:string { pattern = "[a-f0-9]{32}" }
+
+mimeTypeString = xsd:string { pattern = "[\-a-z0-9]+/[\-a-z0-9+]+" }
+
+percentageString = xsd:string { pattern = "[1-9][0-9]{1,3}%" }
+
+biblicaId = xsd:string { pattern = "[1-9][0-9]{0,4}" }
+
+gbcId = xsd:string { pattern = "[0-9a-f]{24}" }
+
+tmsId = xsd:string { pattern = "[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}" }
+
+ptId = xsd:string { pattern = "[0-9a-f]{40}" }
+
+reapId = xsd:anyURI
+
+roleId = bookIdEnum | ptReference | knownRole | extensionRole
 
 bookIdEnum = (canonicalBookIdEnum | nonCanonicalBookIdEnum)
 
@@ -729,133 +864,8 @@ nonCanonicalBookIdEnum = (
   "NDX"   # Names Index
 )
 
+ptReference = xsd:string { pattern = "[A-Z1-6]{3}(\.[1-9][0-9]*(-[1-9][0-9]*)?)?" } # Eventually use PT regex
 
-copyrightElement =
-  element copyright {
-    copyrightStatementElement
-  }
+knownRole = "sourceZip" | "sourceFile"
 
-copyrightStatementElement =
-  element statement {
-    attribute contentType { "xhtml" },
-    simplifiedHtml+
-  }
-
-promotionElement =
-  element promotion {
-    element promoVersionInfo {
-      attribute contentType { "xhtml" },
-      simplifiedHtml+
-    }
-  }
-
-
-
-archiveStatusElement =
-  element archiveStatus {
-    element archivistName { lenGe2String } &
-    element dateArchived { xsd:dateTime | "null" } &
-    element dateUpdated { xsd:dateTime | "null" } &
-    element comments { lenLe255String }
-  }
-
-
-  simplifiedHtml = (
-    shP |
-    shH1 |
-    shH2 |
-    shH3 |
-    shUl |
-    shOl |
-    shBlockquote |
-    shHtmlCharMarkup
-)
-
-shP = element p { (text | shHtmlCharMarkup)+ }
-
-shH1 = element h1 { text }
-
-shH2 = element h2 { text }
-
-shH3 = element h3 { text }
-
-shOl = element ol { shLi+ }
-
-shUl = element ul { shLi+ }
-
-shLi = element li { text }
-
-shBlockquote = element blockquote { text }
-
-shHtmlCharMarkup = (
-  text |
-  shA |
-  shImg |
-  shBr |
-  shStrong |
-  shB |
-  shEm |
-  shI
-)
-
-shA =
-  element a {
-    attribute href { xsd:anyURI },
-    shHtmlCharMarkup
-  }
-
-shImg =
-  element img {
-    attribute src { xsd:anyURI },
-    attribute alt { text }
-  }
-
-shBr = element br { empty }
-
-shStrong = element strong { text }
-
-shB = element b { text }
-
-shEm = element em { text }
-
-shI = element i { text }
-
-lenGe2String = xsd:string { minLength = "2" }
-
-lenGe2Le255String = xsd:string { minLength = "2" maxLength = "255" }
-
-lenLe255String = xsd:string { maxLength = "255" }
-
-bundleIdString = xsd:string { pattern = "[a-f0-9]{16}" }
-
-abbreviationString = xsd:string { pattern = "[\-A-Za-z0-9]{2,12}" }
-
-localAbbreviationString = xsd:string { minLength = "2" maxLength = "12" }
-
-languageIsoString = xsd:string { pattern = "[a-z][a-z][a-z]" }
-
-ldmlString = xsd:string { pattern = "[A-Za-z]{2,3}([\-_][A-Za-z0-9]+){0,3}" }
-
-rodString = xsd:string { pattern = "[0-9]{5}" }
-
-countryIsoString = xsd:string { pattern = "[A-Z][A-Z][A-Z]" }
-
-measurementString = xsd:string { pattern = "[1-9][0-9]{1,4}mm" }
-
-nameIdString = xsd:string { pattern = "[A-Za-z][\-A-Za-z0-9_]+" }
-
-md5String = xsd:string { pattern = "[a-f0-9]{32}" }
-
-mimeTypeString = xsd:string { pattern = "[\-a-z0-9]+/[\-a-z0-9+]+" }
-
-percentageString = xsd:string { pattern = "[1-9][0-9]{1,3}%" }
-
-biblicaId = xsd:string { pattern = "[1-9][0-9]{0,4}" }
-
-gbcId = xsd:string { pattern = "[0-9a-f]{24}" }
-
-tmsId = xsd:string { pattern = "[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}" }
-
-ptId = xsd:string { pattern = "[0-9a-f]{40}" }
-
-reapId = xsd:anyURI
+extensionRole = xsd:string { pattern = "X-[A-Za-z0-9][A-Za-z0-9\-]*" }
