@@ -44,7 +44,7 @@
     </define>
     <define name="m.DBLMetadata.typeVersion">
       <attribute name="typeVersion">
-        <value>1.3</value>
+        <value>1.2</value>
       </attribute>
     </define>
     <define name="m.DBLMetadata.id">
@@ -74,12 +74,9 @@
           <ref name="m.DBLMetadata.attlist"/>
           <ref name="m.identification"/>
           <ref name="m.confidential"/>
-          <optional>
-            <ref name="m.relationships"/>
-          </optional>
+          <ref name="m.relationships"/>
           <ref name="m.agencies"/>
           <ref name="m.language"/>
-          <ref name="m.country"/>
           <ref name="m.type"/>
           <ref name="m.format"/>
           <ref name="m.books"/>
@@ -98,7 +95,6 @@
         <interleave>
           <ref name="m.name"/>
           <ref name="m.nameLocal"/>
-          <ref name="m.scope"/>
           <ref name="m.description"/>
           <ref name="m.dateCompleted"/>
           <zeroOrMore>
@@ -122,29 +118,6 @@
       <element name="nameLocal">
         <a:documentation>nameLocal should default to name</a:documentation>
         <ref name="m._datatype.string2"/>
-      </element>
-    </define>
-  </div>
-  <div>
-    <define name="m.scope.enum">
-      <choice>
-        <value>Bible</value>
-        <value>Bible with Deuterocanon</value>
-        <value>Deuterocanon</value>
-        <value>New Testament</value>
-        <value>New Testament+</value>
-        <value>Old Testament</value>
-        <value>Old Testament + Deuterocanon</value>
-        <value>Old Testament+</value>
-        <value>Portions</value>
-        <value>Selections</value>
-        <value>Shorter Bible</value>
-      </choice>
-    </define>
-    <define name="m.scope">
-      <element name="scope">
-        <a:documentation>DCMI: title/scriptureScope</a:documentation>
-        <ref name="m.scope.enum"/>
       </element>
     </define>
   </div>
@@ -400,9 +373,10 @@
         <interleave>
           <ref name="m.language.iso"/>
           <ref name="m.language.name"/>
-          <ref name="m.language.nameLocal"/>
           <ref name="m.ldml"/>
-          <ref name="m.rod"/>
+          <optional>
+            <ref name="m.rod"/>
+          </optional>
         </interleave>
       </element>
     </define>
@@ -420,14 +394,6 @@
   <div>
     <define name="m.language.name">
       <element name="name">
-        <a:documentation>DCMI: subject/language (ISO639-3)</a:documentation>
-        <ref name="m._datatype.string2"/>
-      </element>
-    </define>
-  </div>
-  <div>
-    <define name="m.language.nameLocal">
-      <element name="nameLocal">
         <a:documentation>DCMI: subject/language (ISO639-3)</a:documentation>
         <ref name="m._datatype.string2"/>
       </element>
@@ -454,34 +420,6 @@
             <param name="pattern">[0-9]{5}</param>
           </data>
         </optional>
-      </element>
-    </define>
-  </div>
-  <div>
-    <define name="m.country">
-      <element name="country">
-        <interleave>
-          <ref name="m.country.iso"/>
-          <ref name="m.country.name"/>
-        </interleave>
-      </element>
-    </define>
-  </div>
-  <div>
-    <define name="m.country.iso">
-      <element name="iso">
-        <a:documentation>DCMI: coverage/spatial (ISO3166)</a:documentation>
-        <data type="string">
-          <param name="pattern">[A-Z][A-Z][A-Z]?</param>
-        </data>
-      </element>
-    </define>
-  </div>
-  <div>
-    <define name="m.country.name">
-      <element name="name">
-        <a:documentation>DCMI: subject/subjectCountry</a:documentation>
-        <ref name="m._datatype.string2"/>
       </element>
     </define>
   </div>
