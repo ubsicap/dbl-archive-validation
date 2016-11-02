@@ -724,7 +724,7 @@ ptId = xsd:string { pattern = "\s*[0-9a-f]{40}\s*" }
 
 reapId = xsd:anyURI
 
-roleId = bookIdEnum | ptReference | knownRole | extensionRole
+roleId = ptReference | knownRole | extensionRole
 
 bookIdEnum = (canonicalBookIdEnum | nonCanonicalBookIdEnum)
 
@@ -866,6 +866,6 @@ nonCanonicalBookIdEnum = (
 
 ptReference = xsd:string { pattern = "[A-Z1-6]{3}|[A-Z1-6]{3} [1-9][0-9]*(-[1-9][0-9]*)?|[A-Z1-6]{3} [1-9][0-9]*:[1-9][0-9]*(-[1-9][0-9]*)?|[A-Z1-6]{3} [1-9][0-9]*:[1-9][0-9]*-[1-9][0-9]*:[1-9][0-9]*" }
 
-knownRole = "sourceZip" | "sourceFile"
+knownRole = "sourceZip" | "sourceFile" | "lds" | "ldml" | "styles" | "vrs"
 
 extensionRole = xsd:string { pattern = "X-[A-Za-z0-9][A-Za-z0-9\-]*" }
