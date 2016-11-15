@@ -12,6 +12,7 @@
     <systemId type="tms"></systemId>
     <systemId type="reap"></systemId>
     <systemId type="paratext" name="" fullname="" csetid=""></systemId>
+    <systemId type="ptreg"></systemId>
     <systemId type="biblica"></systemId>
     <bundleProducer></bundleProducer>
   </identification>

@@ -1,7 +1,7 @@
 # metadata.rnc
 # -----------------------------------------------------------------------------
-# A compact syntax Relax NG Schema for the DBL @type="text" metadata file.
-# DBL text bundle version = 1.5
+# A compact syntax Relax NG Schema for the DBL @type="audio" metadata file.
+# DBL audio bundle version = 1.2
 
 # - Suggested Dublin Core Metadata (DCMI) element/refinement relationships are 
 #   added as documentation strings "## DCMI: "
@@ -27,9 +27,9 @@ div {
 
 div {
    m.DBLMetadata.type =
-      attribute type { "text" }
+      attribute type { "audio" }
    m.DBLMetadata.typeVersion =
-      attribute typeVersion { "1.5" }
+      attribute typeVersion { "1.2" }
    m.DBLMetadata.id =
       ## id is overwritten at submission
       attribute id { xsd:string { pattern="[a-f0-9]{16}" } }
@@ -45,33 +45,28 @@ div {
          m.DBLMetadata.attlist &
          m.identification &
          m.confidential &
+         m.relationships &
          m.agencies &
          m.language &
-         m.country &
          m.type &
-         m.bookNames &
-         m.contents &
-         m.progress? &
+         m.format &
+         m.books &
          m.copyright &
          m.promotion? &
-         m.archiveStatus &
-         m.format
+         m.archiveStatus
       }
 }
 
 div {
    m.identification =
       element identification {
-      m.name &
-      m.nameLocal &
-      m.abbreviation &
-      m.abbreviationLocal &
-      m.scope &
-      m.description &
-      m.dateCompleted &
-      m.systemId* &
-      m.bundleProducer
-    }
+         m.name &
+         m.nameLocal &
+         m.description &
+         m.dateCompleted &
+         m.systemId* &
+         m.bundleProducer
+      }
 }
 
 div {
@@ -87,41 +82,6 @@ div {
       ## nameLocal should default to name
       element nameLocal {
          m._datatype.string2
-      }
-}
-
-div {
-   m.abbreviation =
-      element abbreviation {
-         xsd:string { pattern="[A-Za-z0-9\-]{2,12}" }
-      }
-}
-
-div {
-   m.abbreviationLocal =
-      ## abbreviationLocal should default to abbreviation
-      element abbreviationLocal {
-         xsd:string { minLength="2" maxLength="12" }
-      }
-}
-
-div {
-   m.scope.enum =
-      "Bible" |
-      "Bible with Deuterocanon" |
-      "Deuterocanon" |
-      "New Testament" |
-      "New Testament+" |
-      "Old Testament" |
-      "Old Testament + Deuterocanon" |
-      "Old Testament+" |
-      "Portions" |
-      "Selections" |
-      "Shorter Bible"
-   m.scope =
-      ## DCMI: title/scriptureScope
-      element scope {
-         m.scope.enum
       }
 }
 
@@ -147,26 +107,18 @@ div {
       "gbc" |
       ## UBS Translation Management System database ID
       "tms" |
-      ## Paratext Project GUID
-      "paratext" |
-      ## Paratext Registry ID
-      "ptreg" |
       ## SIL REAP database ID
       "reap" |
-      ## Biblica database id
-      "biblica"
+      ## FCBH Digital Bible Platform DAM ID
+      "dbp"
    m.systemId.type =
       attribute type { m.systemId.type.enum }
    m.systemId.attlist =
-      m.systemId.type,
-      attribute name { m._datatype.string2 }?,
-      attribute fullname { m._datatype.string2 }?,
-      attribute csetid { m._datatype.string2 }?
+      m.systemId.type
    m.systemId =
-      ## systemId[@type='paratext'] is overwritten by Paratext
       element systemId {
-         m.systemId.attlist,
-         m._datatype.string2
+        m.systemId.attlist,
+        m._datatype.string2
    }
 }
 
@@ -183,6 +135,37 @@ div {
       ## DCMI: accessRights/confidential
       element confidential {
          xsd:boolean
+      }
+}
+
+div {
+   m.relationships =
+      element relationships {
+         m.relation+
+      }
+}
+
+div {
+   m.relation.type.enum =
+      "text" | 
+      "print" | 
+      "audio" | 
+      "video" | 
+      "ebook"
+   m.relation.type =
+      attribute type { m.relation.type.enum }
+   m.relation.id =
+      attribute id { xsd:string { pattern="[a-f0-9]{16}" } }
+   m.relation.revision =
+      attribute revision { xsd:integer }
+   m.relation.attlist =
+      m.relation.type &
+      m.relation.id &
+      m.relation.revision
+   m.relation =
+      ## DCMI: relation
+      element relation {
+         m.relation.attlist
       }
 }
 
@@ -259,15 +242,11 @@ div {
 div {
    m.language =
       element language {
-       m.language.iso &
-       m.language.name &
-       m.language.nameLocal &
-       m.ldml &
-       m.rod &
-       m.script &
-       m.scriptDirection &
-       m.numerals
-    }
+         m.language.iso &
+         m.language.name &
+         m.ldml &
+         m.rod?
+      }
 }
 
 div {
@@ -287,176 +266,112 @@ div {
 }
 
 div {
-   m.language.nameLocal =
-      ## DCMI: subject/language (ISO639-3)
-   element nameLocal {
-      m._datatype.string2
-   }
-}
-
-div {
    m.ldml =
       ## DCMI: language/ldml
-   element ldml {
-      xsd:string { pattern = "[A-Za-z]{2,3}([\-_][A-Za-z0-9]+){0,3}" }?
-   }
+      element ldml {
+         xsd:string { pattern = "[A-Za-z]{2,3}([\-_][A-Za-z0-9]+){0,3}" }?
+      }
 }
 
 div {
    m.rod =
       ## DCMI: language/rod
-   element rod {
-      xsd:string { pattern = "[0-9]{5}" }?
-   }
-
-}
-
-div {
-   m.script =
-      ## DCMI: language/script
-   element script {
-      m._datatype.string2
-   }
-}
-
-div {
-   m.scriptDirection.enum =
-      ## LTR (Left to Right)
-      "LTR" |
-      ## RTL (Right to Left)
-      "RTL"
-   m.scriptDirection =
-      ## scriptDirection is overwritten by Paratext
-   ## DCMI: language/scriptDirection
-   element scriptDirection {
-      ( m.scriptDirection.enum )
-   }
-}
-
-div {
-   m.numerals =
-      element numerals {
-         ## DCMI: language/numerals
-         ( empty | numeralSystem.enum )
+      element rod {
+         xsd:string { pattern = "[0-9]{5}" }?
       }
-}
-
-div {
-   m.country =
-      element country {
-         m.country.iso &
-         m.country.name
-      }
-}
-
-div {
-   m.country.iso =
-      ## DCMI: coverage/spatial (ISO3166)
-   element iso {
-      xsd:string { pattern = "[A-Z][A-Z][A-Z]?" }
-   }
-}
-
-div {
-   m.country.name =
-      ## DCMI: subject/subjectCountry
-   element name {
-      m._datatype.string2
-   }
 }
 
 div {
    m.type =
       element type {
-         m.translationType &
-         element audience {
-            ## DCMI: audience
-            translationLevel.enum ?
-         }
+         m.audioType
+   }
+}
+
+div {
+   m.audioType.enum = 
+      "Dramatized" |
+      "Non-Dramatized" |
+      "Single-Voice"
+   m.audioType =
+      ## DCMI: type/audioType
+      element audioType {
+         m.audioType.enum ?
       }
 }
 
 div {
-   m.translationType =
-      ## DCMI: type/translationType
-      element translationType {
-         translationType.enum ?
+   m.format =
+      ## DCMI: format
+      element format {
+         m.mimeType &
+         m.compression &
+         m.trackConfiguration &
+         m.bitRate &
+         m.bitDepth &
+         m.samplingRate
       }
 }
 
 div {
-   m.bookNames =
-      ## bookNames/book is overwritten by Paratext
-   element bookNames {
-      m.bookNames.book*
-    }
-}
-
-div {
-   m.bookNames.book.attlist =
-      m._.code
-   m.bookNames.book =
-      element book {
-         m.bookNames.book.attlist &
-         m.long &
-         m.short &
-         m.abbr
+   m.mimeType.enum =
+      "audio/mpeg" |
+      "audio/wav"
+   m.mimeType =
+      element mimeType {
+         m.mimeType.enum
       }
 }
 
 div {
-   m.long =
-      element long { text }
-}
-
-div {
-   m.short =
-      element short { text }
-}
-
-div {
-   m.abbr =
-      element abbr { text }
-}
-
-div {
-   m.contents =
-      ## DCMI: tableOfContents
-      element contents {
-         m.bookList+
-    }
-}
-
-div {
-   m.bookList.id =
-      attribute id { xsd:integer }
-   m.bookList.default =
-      attribute default { xsd:boolean }
-   m.bookList.attlist =
-      m.bookList.id &
-      m.bookList.default?
-   m.bookList =
-      element bookList {
-        m.bookList.attlist &
-        m.name &
-        m.nameLocal &
-        m.abbreviation &
-        m.abbreviationLocal &
-        m.booklist.description &
-        m.booklist.descriptionLocal &
-        m.books
+   m.compression.enum =
+      "MP3" |
+      "FLAC" |
+      "WAV" |
+      empty
+      ## http://www.ebu.ch/metadata/cs/web/ebu_AudioCompressionCodeCS_p.xml.htm
+   m.compression =
+      element compression {
+         m.compression.enum
       }
 }
 
-
 div {
-   m.booklist.description =
-       element description { m._datatype.string2 }
+   m.trackConfiguration.enum =
+      "1/0 (Mono)" |
+      "Dual mono" |
+      "2/0 (Stereo)" |
+      "5.1 Surround" |
+      empty
+      ## http://www.ebu.ch/metadata/cs/web/ebu_AudioFormatCodeCS_p.xml.htm
+   m.trackConfiguration =
+      element trackConfiguration {
+         m.trackConfiguration.enum
+      }
 }
 
 div {
-   m.booklist.descriptionLocal =
-       element descriptionLocal { m._datatype.string2 }
+   m.bitRate =
+      element bitRate {
+         xsd:integer |
+         empty
+      }
+}
+
+div {
+   m.bitDepth =
+      element bitDepth {
+         xsd:integer |
+         empty
+      }
+}
+
+div {
+   m.samplingRate =
+      element samplingRate {
+         xsd:integer |
+         empty
+      }
 }
 
 div {
@@ -476,25 +391,6 @@ div {
 }
 
 div {
-   m.progress =
-      ## progress is overwritten by Paratext
-   element progress { m.progress.book* }
-}
-
-div {
-   m.book.stage =
-      attribute stage { xsd:integer }
-   m.progress.book.attlist =
-      (m.book.stage,
-       m._.code)
-   m.progress.book =
-      ## DCMI description/stage
-   element book {
-      m.progress.book.attlist
-   }
-}
-
-div {
    m.copyright =
       element copyright {
          m.statement
@@ -506,10 +402,10 @@ div {
       m._.contentType
    m.statement =
       ## For example: (C)2002, 2012 United Bible Societies
-   element statement {
-      m.statement.attlist,
-        ## DCMI: rights
-        m.htmlMarkup+
+      ## DCMI: rights
+      element statement {
+         m.statement.attlist,
+         m.htmlMarkup+
       }
 }
 
@@ -533,39 +429,39 @@ div {
 
 div {
    m.archiveStatus =
-    element archiveStatus {
-      m.archivistName &
-      m.dateArchived &
-      m.dateUpdated &
-      m.comments
-    }
+      element archiveStatus {
+         m.archivistName &
+         m.dateArchived &
+         m.dateUpdated &
+         m.comments
+      }
 }
 
 div {
    m.archivistName =
       ## archivistName is overwritten by Paratext
-   ## DCMI: contributor/archivist
-   element archivistName {
-      m._datatype.string2
-   }
+      ## DCMI: contributor/archivist
+      element archivistName {
+         m._datatype.string2
+      }
 }
 
 div {
    m.dateArchived =
       ## dateArchived is overwritten by Paratext
       ## DCMI: dateSubmitted (xsd:dateTime)
-   element dateArchived {
-      xsd:dateTime
-   }
+      element dateArchived {
+         xsd:dateTime
+      }
 }
 
 div {
    m.dateUpdated =
       ## dateUpdated is overwritten by Paratext
-   element dateUpdated {
       ## DCMI: modified (xsd:dateTime)
-      xsd:dateTime
-   }
+      element dateUpdated {
+         xsd:dateTime
+      }
 }
 
 div {
@@ -574,17 +470,6 @@ div {
       element comments {
          xsd:string { minLength = "2" maxLength = "255" }
       }
-}
-
-div {
-   m.format.enum =
-      "text/xml"
-   m.format =
-    ## format is overwritten by Paratext
-   ## DCMI: format
-    element format {
-       m.format.enum
-    }
 }
 
 div {
@@ -659,37 +544,6 @@ div {
    m.i =
       element i { text }
 }
-
-numeralSystem.enum = (
-           "Arabic" # (a.k.a. 'Hindu') = 0123456789
-         | "Bengali"
-         | "Burmese"
-         | "Devanagari"
-         | "Ethiopic"
-         | "Farsi"
-         | "Gujarati"
-         | "Gurmukhi"
-         | "Hindi" # (i.e. 'Arabic' as used in Egypt)
-         | "Kannada"
-         | "Khmer"
-         | "Malayalam"
-         | "Oriya"
-         | "Tamil"
-         | "Telugu"
-         | "Thai"
-         | "Tibetan")
-
-translationType.enum = (
-           "First"
-         | "New"
-         | "Revision")
-
-translationLevel.enum = (
-           "Basic"
-         | "Common"
-         | "Common - Literary"
-         | "Literary"
-         | "Liturgical")
 
 bookCode.enum = (
            "GEN"   # Genesis

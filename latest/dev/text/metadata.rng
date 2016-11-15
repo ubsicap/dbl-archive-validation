@@ -149,10 +149,25 @@
     </define>
   </div>
   <div>
+    <define name="m.scope.enum">
+      <choice>
+        <value>Bible</value>
+        <value>Bible with Deuterocanon</value>
+        <value>Deuterocanon</value>
+        <value>New Testament</value>
+        <value>New Testament+</value>
+        <value>Old Testament</value>
+        <value>Old Testament + Deuterocanon</value>
+        <value>Old Testament+</value>
+        <value>Portions</value>
+        <value>Selections</value>
+        <value>Shorter Bible</value>
+      </choice>
+    </define>
     <define name="m.scope">
       <element name="scope">
         <a:documentation>DCMI: title/scriptureScope</a:documentation>
-        <text/>
+        <ref name="m.scope.enum"/>
       </element>
     </define>
   </div>
@@ -188,6 +203,8 @@
         <a:documentation>UBS Translation Management System database ID</a:documentation>
         <value>paratext</value>
         <a:documentation>Paratext Project GUID</a:documentation>
+        <value>ptreg</value>
+        <a:documentation>Paratext Registry ID</a:documentation>
         <value>reap</value>
         <a:documentation>SIL REAP database ID</a:documentation>
         <value>biblica</value>
@@ -662,7 +679,7 @@ DCMI: language/scriptDirection</a:documentation>
   <div>
     <define name="m.book.stage">
       <attribute name="stage">
-        <ref name="translationStage.enum"/>
+        <data type="integer"/>
       </attribute>
     </define>
     <define name="m.progress.book.attlist">
@@ -956,19 +973,6 @@ DCMI: format</a:documentation>
       <value>Common - Literary</value>
       <value>Literary</value>
       <value>Liturgical</value>
-    </choice>
-  </define>
-  <!-- 1 = draft, 2 = internalReview, 3 = extenalReview, 4 = finalReview -->
-  <define name="translationStage.enum">
-    <choice>
-      <value>1</value>
-      <a:documentation>draft</a:documentation>
-      <value>2</value>
-      <a:documentation>internalReview</a:documentation>
-      <value>3</value>
-      <a:documentation>externalReview</a:documentation>
-      <value>4</value>
-      <a:documentation>finalReview</a:documentation>
     </choice>
   </define>
   <define name="bookCode.enum">
