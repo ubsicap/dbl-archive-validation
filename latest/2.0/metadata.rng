@@ -990,6 +990,11 @@
   <define name="sourceStructureDivision">
     <element name="division">
       <attribute name="name"/>
+      <optional>
+        <attribute name="role">
+          <ref name="roleId"/>
+        </attribute>
+      </optional>
       <oneOrMore>
         <choice>
           <ref name="sourceStructureDivision"/>
@@ -1109,6 +1114,11 @@
   <define name="publicationStructureDivision">
     <element name="division">
       <attribute name="name"/>
+      <optional>
+        <attribute name="role">
+          <ref name="roleId"/>
+        </attribute>
+      </optional>
       <oneOrMore>
         <choice>
           <ref name="publicationStructureDivision"/>
