@@ -9,6 +9,9 @@
     <abbreviation>DBLTEST</abbreviation>
     <abbreviationLocal>DBLTEST</abbreviationLocal>
     <scope>Gospels plus Acts</scope>
+    <systemId type="gbc">
+      <id>542abd435117ad138f57440d</id>
+    </systemId>
   </identification>
   <type>
     <medium>audio</medium>
@@ -21,8 +24,21 @@
   </type>
   <relationships/>
   <agencies>
-    <rightsHolder abbr="TEST" url="http://thedigitalbiblelibrary.org" local="DBL Testing" uid="54650cfa5117ad690fb05fb6">Organization for DBL Testing</rightsHolder>
-    <contributor content="true" publication="true" management="true" qa="true" uid="54650cd05117ad67b3826e99">American Bible Society</contributor>
+    <rightsHolder>
+      <abbr>TEST</abbr>
+      <url>http://thedigitalbiblelibrary.org</url>
+      <local>DBL Testing</local>
+      <uid>54650cfa5117ad690fb05fb6</uid>
+      <name>Organization for DBL Testing</name>
+    </rightsHolder>
+    <contributor>
+      <content>true</content>
+      <publication>true</publication>
+      <management>true</management>
+      <qa>true</qa>
+      <uid>54650cd05117ad67b3826e99</uid>
+      <name>American Bible Society</name>
+    </contributor>
   </agencies>
   <language>
     <iso>eng</iso>
@@ -41,6 +57,7 @@
     <samplingRate>44100</samplingRate><!-- bits/s -->
   </format>
   <names/>
+  <source/>
   <manifest>
     <resource uri="MAT.mp3" size="32957" checksum="b95daf7d53dbb0f390759dcb7b7dff2f" mimeType="audio/mp3" progress="4"/>
     <resource uri="MRK.mp3" size="32957" checksum="b95daf7d53dbb0f390759dcb7b7dff2f" mimeType="audio/mp3" progress="4"/>

@@ -5,12 +5,24 @@
     <nameLocal>DBL Test Version with DC (localized)</nameLocal>
     <description>English: DBL Test Version with DC Local New Testament</description>
     <descriptionLocal>Localized English: DBL Test Version with DC Local New Testament</descriptionLocal>
-    <systemId type="biblica">7001</systemId>
-    <systemId type="gbc">542abd435117ad138f57440d</systemId>
-    <systemId type="tms">800ffc90-61c7-4eee-9d2e-3b846d211d34</systemId>
-    <systemId csetid="3078f7f2788978ff000285727c11cee4ab6c7047" fullname="Digital Bible Library Test Project (GNT)" name="DBLTEST" type="paratext">2880c78491b2f8ce8b3a4e0b2c2ef4610f4ffabe</systemId>
-
-<systemId type="reap">http://www.reap.insitehome.org/handle/9284745/20421</systemId>
+    <systemId type="biblica">
+      <id>7001</id>
+    </systemId>
+    <systemId type="gbc">
+      <id>542abd435117ad138f57440d</id>
+    </systemId>
+    <systemId type="tms">
+      <id>800ffc90-61c7-4eee-9d2e-3b846d211d34</id>
+    </systemId>
+    <systemId type="paratext">
+      <csetid>3078f7f2788978ff000285727c11cee4ab6c7047</csetid>
+      <fullName>Digital Bible Library Test Project (GNT)</fullName>
+      <name>DBLTEST</name>
+      <id>2880c78491b2f8ce8b3a4e0b2c2ef4610f4ffabe</id>
+    </systemId>
+    <systemId type="reap">
+      <id>http://www.reap.insitehome.org/handle/9284745/20421</id>
+    </systemId>
     <dateCompleted>1990-03-11</dateCompleted>
     <bundleProducer>Paratext</bundleProducer>
     <abbreviation>DBLTEST</abbreviation>
@@ -28,8 +40,21 @@
   </type>
   <relationships/>
   <agencies>
-    <rightsHolder abbr="TEST" url="http://thedigitalbiblelibrary.org" local="DBL Testing" uid="54650cfa5117ad690fb05fb6">Organization for DBL Testing</rightsHolder>
-    <contributor content="true" publication="true" management="true" qa="true" uid="54650cd05117ad67b3826e99">American Bible Society</contributor>
+    <rightsHolder>
+      <abbr>TEST</abbr>
+      <url>http://thedigitalbiblelibrary.org</url>
+      <local>DBL Testing</local>
+      <uid>54650cfa5117ad690fb05fb6</uid>
+      <name>Organization for DBL Testing</name>
+    </rightsHolder>
+    <contributor>
+      <content>true</content>
+      <publication>true</publication>
+      <management>true</management>
+      <qa>true</qa>
+      <uid>54650cd05117ad67b3826e99</uid>
+      <name>American Bible Society</name>
+    </contributor>
   </agencies>
   <language>
     <iso>eng</iso>

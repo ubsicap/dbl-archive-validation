@@ -20,32 +20,51 @@ identificationElement =
 gbcSystemId =
   element systemId {
     attribute type { "gbc" },
+    gbcElements
+  }
+
+gbcElements =
+  element id {
     gbcId
   }
 
 tmsSystemId =
   element systemId {
     attribute type { "tms" },
+    tmsElements
+  }
+
+tmsElements =
+  element id {
     tmsId
   }
 
 ptSystemId =
   element systemId {
     attribute type { "paratext" },
-    attribute name { lenGe2String },
-    attribute fullname { lenGe2String },
-    attribute csetid { lenGe2String },
-    ptId
+    ptElements
   }
+
+ptElements =
+  element name { lenGe2String } &
+  element fullName { lenGe2String } &
+  element csetid { lenGe2String } &
+  element id { ptId }
 
 reapSystemId =
   element systemId {
     attribute type { "reap" },
-    reapId
+    reapElements
   }
+
+reapElements =
+  element id { reapId }
 
 biblicaSystemId =
   element systemId {
     attribute type { "biblica" },
-    biblicaId
+    biblicaElements
   }
+
+biblicaElements =
+  element id { biblicaId }

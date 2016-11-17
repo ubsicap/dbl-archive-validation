@@ -8,38 +8,34 @@ agenciesElement =
 
 rightsHolderElement =
   element rightsHolder {
-    (attribute abbr { lenGe2String } &
-    attribute url { xsd:anyURI } &
-    attribute local { lenGe2String } &
-    attribute uid { lenGe2String }),
-    lenGe2String
+    element abbr { lenGe2String } &
+    element url { xsd:anyURI } &
+    element local { lenGe2String } &
+    element uid { lenGe2String } &
+    element name { lenGe2String }
   }
 
 
 rightsAdminElement =
   element rightsAdmin {
-    attribute url { xsd:anyURI }?,
-    attribute uid { lenGe2String },
-    lenGe2String
+    element url { xsd:anyURI }? &
+    element uid { lenGe2String } &
+    element name { lenGe2String }
   }
 
 contributorElement =
-    element contributor {
-      contributorAtt+,
-      attribute uid { lenGe2String },
-      lenGe2String
+  element contributor {
+    element content { xsd:boolean } &
+    element publication { xsd:boolean }? &
+    element management { xsd:boolean }? &
+    element finance { xsd:boolean }? &
+    element qa { xsd:boolean }? &
+    element uid { lenGe2String } &
+    element name { lenGe2String }
     }
-
-contributorAtt = (
-  attribute content { xsd:boolean } |
-  attribute publication { xsd:boolean } |
-  attribute management { xsd:boolean } |
-  attribute finance { xsd:boolean } |
-  attribute qa { xsd:boolean }
-  )
 
 etenPartnerElement =
   element etenPartner {
-    attribute uid { lenGe2String }?,
-    lenGe2String?
+    element uid { lenGe2String }? &
+    element name { lenGe2String }?
   }

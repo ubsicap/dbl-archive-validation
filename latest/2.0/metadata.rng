@@ -226,6 +226,11 @@
       <attribute name="type">
         <value>gbc</value>
       </attribute>
+      <ref name="gbcElements"/>
+    </element>
+  </define>
+  <define name="gbcElements">
+    <element name="id">
       <ref name="gbcId"/>
     </element>
   </define>
@@ -234,6 +239,11 @@
       <attribute name="type">
         <value>tms</value>
       </attribute>
+      <ref name="tmsElements"/>
+    </element>
+  </define>
+  <define name="tmsElements">
+    <element name="id">
       <ref name="tmsId"/>
     </element>
   </define>
@@ -242,23 +252,35 @@
       <attribute name="type">
         <value>paratext</value>
       </attribute>
-      <attribute name="name">
-        <ref name="lenGe2String"/>
-      </attribute>
-      <attribute name="fullname">
-        <ref name="lenGe2String"/>
-      </attribute>
-      <attribute name="csetid">
-        <ref name="lenGe2String"/>
-      </attribute>
-      <ref name="ptId"/>
+      <ref name="ptElements"/>
     </element>
+  </define>
+  <define name="ptElements">
+    <interleave>
+      <element name="name">
+        <ref name="lenGe2String"/>
+      </element>
+      <element name="fullName">
+        <ref name="lenGe2String"/>
+      </element>
+      <element name="csetid">
+        <ref name="lenGe2String"/>
+      </element>
+      <element name="id">
+        <ref name="ptId"/>
+      </element>
+    </interleave>
   </define>
   <define name="reapSystemId">
     <element name="systemId">
       <attribute name="type">
         <value>reap</value>
       </attribute>
+      <ref name="reapElements"/>
+    </element>
+  </define>
+  <define name="reapElements">
+    <element name="id">
       <ref name="reapId"/>
     </element>
   </define>
@@ -267,6 +289,11 @@
       <attribute name="type">
         <value>biblica</value>
       </attribute>
+      <ref name="biblicaElements"/>
+    </element>
+  </define>
+  <define name="biblicaElements">
+    <element name="id">
       <ref name="biblicaId"/>
     </element>
   </define>
@@ -339,75 +366,90 @@
   <define name="rightsHolderElement">
     <element name="rightsHolder">
       <interleave>
-        <attribute name="abbr">
+        <element name="abbr">
           <ref name="lenGe2String"/>
-        </attribute>
-        <attribute name="url">
+        </element>
+        <element name="url">
           <data type="anyURI"/>
-        </attribute>
-        <attribute name="local">
+        </element>
+        <element name="local">
           <ref name="lenGe2String"/>
-        </attribute>
-        <attribute name="uid">
+        </element>
+        <element name="uid">
           <ref name="lenGe2String"/>
-        </attribute>
+        </element>
+        <element name="name">
+          <ref name="lenGe2String"/>
+        </element>
       </interleave>
-      <ref name="lenGe2String"/>
     </element>
   </define>
   <define name="rightsAdminElement">
     <element name="rightsAdmin">
-      <optional>
-        <attribute name="url">
-          <data type="anyURI"/>
-        </attribute>
-      </optional>
-      <attribute name="uid">
-        <ref name="lenGe2String"/>
-      </attribute>
-      <ref name="lenGe2String"/>
+      <interleave>
+        <optional>
+          <element name="url">
+            <data type="anyURI"/>
+          </element>
+        </optional>
+        <element name="uid">
+          <ref name="lenGe2String"/>
+        </element>
+        <element name="name">
+          <ref name="lenGe2String"/>
+        </element>
+      </interleave>
     </element>
   </define>
   <define name="contributorElement">
     <element name="contributor">
-      <oneOrMore>
-        <ref name="contributorAtt"/>
-      </oneOrMore>
-      <attribute name="uid">
-        <ref name="lenGe2String"/>
-      </attribute>
-      <ref name="lenGe2String"/>
+      <interleave>
+        <element name="content">
+          <data type="boolean"/>
+        </element>
+        <optional>
+          <element name="publication">
+            <data type="boolean"/>
+          </element>
+        </optional>
+        <optional>
+          <element name="management">
+            <data type="boolean"/>
+          </element>
+        </optional>
+        <optional>
+          <element name="finance">
+            <data type="boolean"/>
+          </element>
+        </optional>
+        <optional>
+          <element name="qa">
+            <data type="boolean"/>
+          </element>
+        </optional>
+        <element name="uid">
+          <ref name="lenGe2String"/>
+        </element>
+        <element name="name">
+          <ref name="lenGe2String"/>
+        </element>
+      </interleave>
     </element>
-  </define>
-  <define name="contributorAtt">
-    <choice>
-      <attribute name="content">
-        <data type="boolean"/>
-      </attribute>
-      <attribute name="publication">
-        <data type="boolean"/>
-      </attribute>
-      <attribute name="management">
-        <data type="boolean"/>
-      </attribute>
-      <attribute name="finance">
-        <data type="boolean"/>
-      </attribute>
-      <attribute name="qa">
-        <data type="boolean"/>
-      </attribute>
-    </choice>
   </define>
   <define name="etenPartnerElement">
     <element name="etenPartner">
-      <optional>
-        <attribute name="uid">
-          <ref name="lenGe2String"/>
-        </attribute>
-      </optional>
-      <optional>
-        <ref name="lenGe2String"/>
-      </optional>
+      <interleave>
+        <optional>
+          <element name="uid">
+            <ref name="lenGe2String"/>
+          </element>
+        </optional>
+        <optional>
+          <element name="name">
+            <ref name="lenGe2String"/>
+          </element>
+        </optional>
+      </interleave>
     </element>
   </define>
   <define name="fullLanguageElement">
@@ -1384,22 +1426,22 @@
   </define>
   <define name="biblicaId">
     <data type="string">
-      <param name="pattern">\s*[1-9][0-9]{0,4}\s*</param>
+      <param name="pattern">[1-9][0-9]{0,4}</param>
     </data>
   </define>
   <define name="gbcId">
     <data type="string">
-      <param name="pattern">\s*[0-9a-f]{24}\s*</param>
+      <param name="pattern">[0-9a-f]{24}</param>
     </data>
   </define>
   <define name="tmsId">
     <data type="string">
-      <param name="pattern">\s*[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}\s*</param>
+      <param name="pattern">[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}</param>
     </data>
   </define>
   <define name="ptId">
     <data type="string">
-      <param name="pattern">\s*[0-9a-f]{40}\s*</param>
+      <param name="pattern">[0-9a-f]{40}</param>
     </data>
   </define>
   <define name="reapId">
