@@ -17,7 +17,7 @@ shortLanguageElement =
 commonLanguageElements = (
     element iso { languageIsoString } &
     element name { lenGe2String } &
-    element nameLocal { lenGe2String }? &
+    element nameLocal { lenGe2String } &
     element ldml { ldmlString }? &
     element rod { rodString }?
 )

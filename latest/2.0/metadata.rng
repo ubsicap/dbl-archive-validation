@@ -194,7 +194,7 @@
           </element>
         </optional>
         <element name="scope">
-          <ref name="lenGe2String"/>
+          <ref name="scopeEnum"/>
         </element>
         <optional>
           <element name="dateCompleted">
@@ -213,6 +213,7 @@
             <ref name="reapSystemId"/>
             <ref name="biblicaSystemId"/>
             <ref name="tmsSystemId"/>
+            <ref name="ptregSystemId"/>
           </choice>
         </oneOrMore>
         <element name="bundleProducer">
@@ -220,6 +221,21 @@
         </element>
       </interleave>
     </element>
+  </define>
+  <define name="scopeEnum">
+    <choice>
+      <value>Bible</value>
+      <value>Bible with Deuterocanon</value>
+      <value>Deuterocanon</value>
+      <value>New Testament</value>
+      <value>New Testament+</value>
+      <value>Old Testament</value>
+      <value>Old Testament + Deuterocanon</value>
+      <value>Old Testament+</value>
+      <value>Portions</value>
+      <value>Selections</value>
+      <value>Shorter Bible</value>
+    </choice>
   </define>
   <define name="gbcSystemId">
     <element name="systemId">
@@ -232,6 +248,14 @@
   <define name="gbcElements">
     <element name="id">
       <ref name="gbcId"/>
+    </element>
+  </define>
+  <define name="ptregSystemId">
+    <element name="systemId">
+      <attribute name="type">
+        <value>ptreg</value>
+      </attribute>
+      <ref name="ptregId"/>
     </element>
   </define>
   <define name="tmsSystemId">
@@ -500,11 +524,9 @@
       <element name="name">
         <ref name="lenGe2String"/>
       </element>
-      <optional>
-        <element name="nameLocal">
-          <ref name="lenGe2String"/>
-        </element>
-      </optional>
+      <element name="nameLocal">
+        <ref name="lenGe2String"/>
+      </element>
       <optional>
         <element name="ldml">
           <ref name="ldmlString"/>
@@ -975,7 +997,7 @@
         <ref name="commonManifestResourceAtts"/>
         <optional>
           <attribute name="progress">
-            <ref name="translationStageEnum"/>
+            <data type="integer"/>
           </attribute>
         </optional>
       </interleave>

@@ -24,7 +24,7 @@ translationManifestContainer =
 translationManifestResource =
   element resource {
     commonManifestResourceAtts &
-    attribute progress { translationStageEnum }?
+    attribute progress { xsd:integer }?
   }
 
 commonManifestResourceAtts = (
