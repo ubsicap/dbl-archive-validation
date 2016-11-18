@@ -9,24 +9,23 @@
     shHtmlCharMarkup
 )
 
-shP = element p { shHtmlCharMarkup+ }
+shP = element p { mixed { nonEmptyString* & shHtmlCharMarkup* } }
 
-shH1 = element h1 { shHtmlCharMarkup+ }
+shH1 = element h1 { mixed { nonEmptyString* & shHtmlCharMarkup* } }
 
-shH2 = element h2 { shHtmlCharMarkup+ }
+shH2 = element h2 { mixed { nonEmptyString* & shHtmlCharMarkup* } }
 
-shH3 = element h3 { shHtmlCharMarkup+ }
+shH3 = element h3 { mixed { nonEmptyString* & shHtmlCharMarkup* } }
 
 shOl = element ol { shLi+ }
 
 shUl = element ul { shLi+ }
 
-shLi = element li { shHtmlCharMarkup+ }
+shLi = element li { mixed { nonEmptyString* & shHtmlCharMarkup* } }
 
-shBlockquote = element blockquote { shHtmlCharMarkup+ }
+shBlockquote = element blockquote { mixed { nonEmptyString* & shHtmlCharMarkup* } }
 
 shHtmlCharMarkup = (
-  nonEmptyString |
   shA |
   shImg |
   shBr |
@@ -39,7 +38,7 @@ shHtmlCharMarkup = (
 shA =
   element a {
     attribute href { xsd:anyURI },
-    shHtmlCharMarkup
+    mixed { nonEmptyString* & shHtmlCharMarkup* }
   }
 
 shImg =
@@ -50,13 +49,13 @@ shImg =
 
 shBr = element br { empty }
 
-shStrong = element strong { shHtmlCharMarkup+ }
+shStrong = element strong { mixed { nonEmptyString* & shHtmlCharMarkup* } }
 
-shB = element b { shHtmlCharMarkup+ }
+shB = element b { mixed { nonEmptyString* & shHtmlCharMarkup* } }
 
-shEm = element em { shHtmlCharMarkup+ }
+shEm = element em { mixed { nonEmptyString* & shHtmlCharMarkup* } }
 
-shI = element i { shHtmlCharMarkup+ }
+shI = element i { mixed { nonEmptyString* & shHtmlCharMarkup* } }
 
 nonEmptyString = xsd:string { minLength = "1" }
 

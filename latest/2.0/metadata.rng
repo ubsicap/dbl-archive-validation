@@ -1274,30 +1274,58 @@
   </define>
   <define name="shP">
     <element name="p">
-      <oneOrMore>
-        <ref name="shHtmlCharMarkup"/>
-      </oneOrMore>
+      <mixed>
+        <interleave>
+          <zeroOrMore>
+            <ref name="nonEmptyString"/>
+          </zeroOrMore>
+          <zeroOrMore>
+            <ref name="shHtmlCharMarkup"/>
+          </zeroOrMore>
+        </interleave>
+      </mixed>
     </element>
   </define>
   <define name="shH1">
     <element name="h1">
-      <oneOrMore>
-        <ref name="shHtmlCharMarkup"/>
-      </oneOrMore>
+      <mixed>
+        <interleave>
+          <zeroOrMore>
+            <ref name="nonEmptyString"/>
+          </zeroOrMore>
+          <zeroOrMore>
+            <ref name="shHtmlCharMarkup"/>
+          </zeroOrMore>
+        </interleave>
+      </mixed>
     </element>
   </define>
   <define name="shH2">
     <element name="h2">
-      <oneOrMore>
-        <ref name="shHtmlCharMarkup"/>
-      </oneOrMore>
+      <mixed>
+        <interleave>
+          <zeroOrMore>
+            <ref name="nonEmptyString"/>
+          </zeroOrMore>
+          <zeroOrMore>
+            <ref name="shHtmlCharMarkup"/>
+          </zeroOrMore>
+        </interleave>
+      </mixed>
     </element>
   </define>
   <define name="shH3">
     <element name="h3">
-      <oneOrMore>
-        <ref name="shHtmlCharMarkup"/>
-      </oneOrMore>
+      <mixed>
+        <interleave>
+          <zeroOrMore>
+            <ref name="nonEmptyString"/>
+          </zeroOrMore>
+          <zeroOrMore>
+            <ref name="shHtmlCharMarkup"/>
+          </zeroOrMore>
+        </interleave>
+      </mixed>
     </element>
   </define>
   <define name="shOl">
@@ -1316,21 +1344,34 @@
   </define>
   <define name="shLi">
     <element name="li">
-      <oneOrMore>
-        <ref name="shHtmlCharMarkup"/>
-      </oneOrMore>
+      <mixed>
+        <interleave>
+          <zeroOrMore>
+            <ref name="nonEmptyString"/>
+          </zeroOrMore>
+          <zeroOrMore>
+            <ref name="shHtmlCharMarkup"/>
+          </zeroOrMore>
+        </interleave>
+      </mixed>
     </element>
   </define>
   <define name="shBlockquote">
     <element name="blockquote">
-      <oneOrMore>
-        <ref name="shHtmlCharMarkup"/>
-      </oneOrMore>
+      <mixed>
+        <interleave>
+          <zeroOrMore>
+            <ref name="nonEmptyString"/>
+          </zeroOrMore>
+          <zeroOrMore>
+            <ref name="shHtmlCharMarkup"/>
+          </zeroOrMore>
+        </interleave>
+      </mixed>
     </element>
   </define>
   <define name="shHtmlCharMarkup">
     <choice>
-      <ref name="nonEmptyString"/>
       <ref name="shA"/>
       <ref name="shImg"/>
       <ref name="shBr"/>
@@ -1345,7 +1386,16 @@
       <attribute name="href">
         <data type="anyURI"/>
       </attribute>
-      <ref name="shHtmlCharMarkup"/>
+      <mixed>
+        <interleave>
+          <zeroOrMore>
+            <ref name="nonEmptyString"/>
+          </zeroOrMore>
+          <zeroOrMore>
+            <ref name="shHtmlCharMarkup"/>
+          </zeroOrMore>
+        </interleave>
+      </mixed>
     </element>
   </define>
   <define name="shImg">
@@ -1365,30 +1415,58 @@
   </define>
   <define name="shStrong">
     <element name="strong">
-      <oneOrMore>
-        <ref name="shHtmlCharMarkup"/>
-      </oneOrMore>
+      <mixed>
+        <interleave>
+          <zeroOrMore>
+            <ref name="nonEmptyString"/>
+          </zeroOrMore>
+          <zeroOrMore>
+            <ref name="shHtmlCharMarkup"/>
+          </zeroOrMore>
+        </interleave>
+      </mixed>
     </element>
   </define>
   <define name="shB">
     <element name="b">
-      <oneOrMore>
-        <ref name="shHtmlCharMarkup"/>
-      </oneOrMore>
+      <mixed>
+        <interleave>
+          <zeroOrMore>
+            <ref name="nonEmptyString"/>
+          </zeroOrMore>
+          <zeroOrMore>
+            <ref name="shHtmlCharMarkup"/>
+          </zeroOrMore>
+        </interleave>
+      </mixed>
     </element>
   </define>
   <define name="shEm">
     <element name="em">
-      <oneOrMore>
-        <ref name="shHtmlCharMarkup"/>
-      </oneOrMore>
+      <mixed>
+        <interleave>
+          <zeroOrMore>
+            <ref name="nonEmptyString"/>
+          </zeroOrMore>
+          <zeroOrMore>
+            <ref name="shHtmlCharMarkup"/>
+          </zeroOrMore>
+        </interleave>
+      </mixed>
     </element>
   </define>
   <define name="shI">
     <element name="i">
-      <oneOrMore>
-        <ref name="shHtmlCharMarkup"/>
-      </oneOrMore>
+      <mixed>
+        <interleave>
+          <zeroOrMore>
+            <ref name="nonEmptyString"/>
+          </zeroOrMore>
+          <zeroOrMore>
+            <ref name="shHtmlCharMarkup"/>
+          </zeroOrMore>
+        </interleave>
+      </mixed>
     </element>
   </define>
   <define name="nonEmptyString">

@@ -6,9 +6,9 @@
     <dateCompleted>1990-03-11</dateCompleted>
     <bundleProducer>Paratext</bundleProducer>
     <abbreviation>DBLTEST</abbreviation>
-    <scope>Gospels plus Acts</scope>
+    <scope>Portions</scope>
     <systemId type="paratext">
-      <csetid>3078f7f2788978ff000285727c11cee4ab6c7047</csetid>
+      <csetId>3078f7f2788978ff000285727c11cee4ab6c7047</csetId>
       <fullName>Digital Bible Library Test Project (GNT)</fullName>
       <name>DBLTEST</name>
       <id>2880c78491b2f8ce8b3a4e0b2c2ef4610f4ffabe</id>
