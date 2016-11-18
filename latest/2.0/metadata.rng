@@ -194,7 +194,7 @@
           </element>
         </optional>
         <element name="scope">
-          <ref name="lenGe2String"/>
+          <ref name="scopeValue"/>
         </element>
         <optional>
           <element name="dateCompleted">
@@ -220,6 +220,21 @@
         </element>
       </interleave>
     </element>
+  </define>
+  <define name="scopeValue">
+    <choice>
+      <value>Bible</value>
+      <value>Bible with Deuterocanon</value>
+      <value>Deuterocanon</value>
+      <value>New Testament</value>
+      <value>New Testament+</value>
+      <value>Old Testament</value>
+      <value>Old Testament+</value>
+      <value>Old Testament + Deuterocanon</value>
+      <value>Portions</value>
+      <value>Selections</value>
+      <value>Shorter Bible</value>
+    </choice>
   </define>
   <define name="gbcSystemId">
     <element name="systemId">
@@ -263,7 +278,7 @@
       <element name="fullName">
         <ref name="lenGe2String"/>
       </element>
-      <element name="csetid">
+      <element name="csetId">
         <ref name="lenGe2String"/>
       </element>
       <element name="id">
@@ -376,7 +391,7 @@
           <ref name="lenGe2String"/>
         </element>
         <element name="uid">
-          <ref name="lenGe2String"/>
+          <ref name="agenciesUID"/>
         </element>
         <element name="name">
           <ref name="lenGe2String"/>
@@ -393,7 +408,7 @@
           </element>
         </optional>
         <element name="uid">
-          <ref name="lenGe2String"/>
+          <ref name="agenciesUID"/>
         </element>
         <element name="name">
           <ref name="lenGe2String"/>
@@ -428,7 +443,7 @@
           </element>
         </optional>
         <element name="uid">
-          <ref name="lenGe2String"/>
+          <ref name="agenciesUID"/>
         </element>
         <element name="name">
           <ref name="lenGe2String"/>
@@ -1031,7 +1046,9 @@
   </define>
   <define name="sourceStructureDivision">
     <element name="division">
-      <attribute name="name"/>
+      <attribute name="name">
+        <ref name="nameIdString"/>
+      </attribute>
       <optional>
         <attribute name="role">
           <ref name="roleId"/>
@@ -1048,8 +1065,12 @@
   <define name="sourceStructureContent">
     <element name="content">
       <interleave>
-        <attribute name="name"/>
-        <attribute name="src"/>
+        <attribute name="name">
+          <ref name="nameIdString"/>
+        </attribute>
+        <attribute name="src">
+          <ref name="srcPathString"/>
+        </attribute>
         <optional>
           <attribute name="role">
             <ref name="roleId"/>
@@ -1155,7 +1176,9 @@
   </define>
   <define name="publicationStructureDivision">
     <element name="division">
-      <attribute name="name"/>
+      <attribute name="name">
+        <ref name="nameIdString"/>
+      </attribute>
       <optional>
         <attribute name="role">
           <ref name="roleId"/>
@@ -1172,8 +1195,12 @@
   <define name="publicationStructureContent">
     <element name="content">
       <interleave>
-        <attribute name="name"/>
-        <attribute name="src"/>
+        <attribute name="name">
+          <ref name="nameIdString"/>
+        </attribute>
+        <attribute name="src">
+          <ref name="srcPathString"/>
+        </attribute>
         <optional>
           <attribute name="role">
             <ref name="roleId"/>
@@ -1248,26 +1275,29 @@
   <define name="shP">
     <element name="p">
       <oneOrMore>
-        <choice>
-          <text/>
-          <ref name="shHtmlCharMarkup"/>
-        </choice>
+        <ref name="shHtmlCharMarkup"/>
       </oneOrMore>
     </element>
   </define>
   <define name="shH1">
     <element name="h1">
-      <text/>
+      <oneOrMore>
+        <ref name="shHtmlCharMarkup"/>
+      </oneOrMore>
     </element>
   </define>
   <define name="shH2">
     <element name="h2">
-      <text/>
+      <oneOrMore>
+        <ref name="shHtmlCharMarkup"/>
+      </oneOrMore>
     </element>
   </define>
   <define name="shH3">
     <element name="h3">
-      <text/>
+      <oneOrMore>
+        <ref name="shHtmlCharMarkup"/>
+      </oneOrMore>
     </element>
   </define>
   <define name="shOl">
@@ -1286,17 +1316,21 @@
   </define>
   <define name="shLi">
     <element name="li">
-      <text/>
+      <oneOrMore>
+        <ref name="shHtmlCharMarkup"/>
+      </oneOrMore>
     </element>
   </define>
   <define name="shBlockquote">
     <element name="blockquote">
-      <text/>
+      <oneOrMore>
+        <ref name="shHtmlCharMarkup"/>
+      </oneOrMore>
     </element>
   </define>
   <define name="shHtmlCharMarkup">
     <choice>
-      <text/>
+      <ref name="nonEmptyString"/>
       <ref name="shA"/>
       <ref name="shImg"/>
       <ref name="shBr"/>
@@ -1319,7 +1353,9 @@
       <attribute name="src">
         <data type="anyURI"/>
       </attribute>
-      <attribute name="alt"/>
+      <attribute name="alt">
+        <ref name="lenGe1String"/>
+      </attribute>
     </element>
   </define>
   <define name="shBr">
@@ -1329,43 +1365,70 @@
   </define>
   <define name="shStrong">
     <element name="strong">
-      <text/>
+      <oneOrMore>
+        <ref name="shHtmlCharMarkup"/>
+      </oneOrMore>
     </element>
   </define>
   <define name="shB">
     <element name="b">
-      <text/>
+      <oneOrMore>
+        <ref name="shHtmlCharMarkup"/>
+      </oneOrMore>
     </element>
   </define>
   <define name="shEm">
     <element name="em">
-      <text/>
+      <oneOrMore>
+        <ref name="shHtmlCharMarkup"/>
+      </oneOrMore>
     </element>
   </define>
   <define name="shI">
     <element name="i">
-      <text/>
+      <oneOrMore>
+        <ref name="shHtmlCharMarkup"/>
+      </oneOrMore>
     </element>
+  </define>
+  <define name="nonEmptyString">
+    <data type="string">
+      <param name="minLength">1</param>
+    </data>
+  </define>
+  <define name="lenGe1String">
+    <data type="string">
+      <param name="minLength">1</param>
+      <param name="pattern">\S(.*\S)?</param>
+    </data>
   </define>
   <define name="lenGe2String">
     <data type="string">
       <param name="minLength">2</param>
+      <param name="pattern">\S.*\S</param>
     </data>
   </define>
   <define name="lenGe2Le255String">
     <data type="string">
       <param name="minLength">2</param>
       <param name="maxLength">255</param>
+      <param name="pattern">\S.*\S</param>
     </data>
   </define>
   <define name="lenLe255String">
     <data type="string">
       <param name="maxLength">255</param>
+      <param name="pattern">\S.*\S</param>
     </data>
   </define>
   <define name="bundleIdString">
     <data type="string">
       <param name="pattern">[a-f0-9]{16}</param>
+    </data>
+  </define>
+  <define name="agenciesUID">
+    <data type="string">
+      <param name="pattern">[a-f0-9]{24}</param>
     </data>
   </define>
   <define name="abbreviationString">
@@ -1377,6 +1440,7 @@
     <data type="string">
       <param name="minLength">2</param>
       <param name="maxLength">12</param>
+      <param name="pattern">\S.*\S</param>
     </data>
   </define>
   <define name="languageIsoString">
@@ -1407,6 +1471,11 @@
   <define name="nameIdString">
     <data type="string">
       <param name="pattern">[A-Za-z][\-A-Za-z0-9_]+</param>
+    </data>
+  </define>
+  <define name="srcPathString">
+    <data type="string">
+      <param name="pattern">[A-Za-z0-9][\-A-Za-z0-9_\.]+(/[A-Za-z0-9][\-A-Za-z0-9_\.]+)*</param>
     </data>
   </define>
   <define name="md5String">

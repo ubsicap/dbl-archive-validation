@@ -9,24 +9,24 @@
     shHtmlCharMarkup
 )
 
-shP = element p { (text | shHtmlCharMarkup)+ }
+shP = element p { shHtmlCharMarkup+ }
 
-shH1 = element h1 { text }
+shH1 = element h1 { shHtmlCharMarkup+ }
 
-shH2 = element h2 { text }
+shH2 = element h2 { shHtmlCharMarkup+ }
 
-shH3 = element h3 { text }
+shH3 = element h3 { shHtmlCharMarkup+ }
 
 shOl = element ol { shLi+ }
 
 shUl = element ul { shLi+ }
 
-shLi = element li { text }
+shLi = element li { shHtmlCharMarkup+ }
 
-shBlockquote = element blockquote { text }
+shBlockquote = element blockquote { shHtmlCharMarkup+ }
 
 shHtmlCharMarkup = (
-  text |
+  nonEmptyString |
   shA |
   shImg |
   shBr |
@@ -45,30 +45,36 @@ shA =
 shImg =
   element img {
     attribute src { xsd:anyURI },
-    attribute alt { text }
+    attribute alt { lenGe1String }
   }
 
 shBr = element br { empty }
 
-shStrong = element strong { text }
+shStrong = element strong { shHtmlCharMarkup+ }
 
-shB = element b { text }
+shB = element b { shHtmlCharMarkup+ }
 
-shEm = element em { text }
+shEm = element em { shHtmlCharMarkup+ }
 
-shI = element i { text }
+shI = element i { shHtmlCharMarkup+ }
 
-lenGe2String = xsd:string { minLength = "2" }
+nonEmptyString = xsd:string { minLength = "1" }
 
-lenGe2Le255String = xsd:string { minLength = "2" maxLength = "255" }
+lenGe1String = xsd:string { minLength = "1" pattern="\S(.*\S)?" }
 
-lenLe255String = xsd:string { maxLength = "255" }
+lenGe2String = xsd:string { minLength = "2" pattern="\S.*\S" }
+
+lenGe2Le255String = xsd:string { minLength = "2" maxLength = "255" pattern="\S.*\S" }
+
+lenLe255String = xsd:string { maxLength = "255" pattern="\S.*\S" }
 
 bundleIdString = xsd:string { pattern = "[a-f0-9]{16}" }
 
+agenciesUID = xsd:string { pattern = "[a-f0-9]{24}" }
+
 abbreviationString = xsd:string { pattern = "[\-A-Za-z0-9]{2,12}" }
 
-localAbbreviationString = xsd:string { minLength = "2" maxLength = "12" }
+localAbbreviationString = xsd:string { minLength = "2" maxLength = "12" pattern="\S.*\S" }
 
 languageIsoString = xsd:string { pattern = "[a-z][a-z][a-z]" }
 
@@ -81,6 +87,8 @@ countryIsoString = xsd:string { pattern = "[A-Z][A-Z][A-Z]" }
 measurementString = xsd:string { pattern = "[1-9][0-9]{1,4}mm" }
 
 nameIdString = xsd:string { pattern = "[A-Za-z][\-A-Za-z0-9_]+" }
+
+srcPathString = xsd:string { pattern = "[A-Za-z0-9][\-A-Za-z0-9_\.]+(/[A-Za-z0-9][\-A-Za-z0-9_\.]+)*" }
 
 md5String = xsd:string { pattern = "[a-f0-9]{32}" }
 

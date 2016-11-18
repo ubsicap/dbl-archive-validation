@@ -11,7 +11,7 @@ rightsHolderElement =
     element abbr { lenGe2String } &
     element url { xsd:anyURI } &
     element local { lenGe2String } &
-    element uid { lenGe2String } &
+    element uid { agenciesUID } &
     element name { lenGe2String }
   }
 
@@ -19,7 +19,7 @@ rightsHolderElement =
 rightsAdminElement =
   element rightsAdmin {
     element url { xsd:anyURI }? &
-    element uid { lenGe2String } &
+    element uid { agenciesUID } &
     element name { lenGe2String }
   }
 
@@ -30,7 +30,7 @@ contributorElement =
     element management { xsd:boolean }? &
     element finance { xsd:boolean }? &
     element qa { xsd:boolean }? &
-    element uid { lenGe2String } &
+    element uid { agenciesUID } &
     element name { lenGe2String }
     }
 

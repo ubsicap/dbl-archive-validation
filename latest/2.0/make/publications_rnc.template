@@ -33,14 +33,14 @@ canonicalContentBook =
 
 publicationStructureDivision =
   element division {
-    attribute name {text},
+    attribute name {nameIdString},
     attribute role {roleId}?,
     (publicationStructureDivision | publicationStructureContent)+
   }
 
 publicationStructureContent =
   element content {
-    attribute name {text} &
-    attribute src {text} &
+    attribute name {nameIdString} &
+    attribute src {srcPathString} &
     attribute role {roleId}?
   }

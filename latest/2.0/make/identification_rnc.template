@@ -6,7 +6,7 @@ identificationElement =
     element abbreviationLocal { localAbbreviationString }? &
     element description { lenGe2String } &
     element descriptionLocal { lenGe2String }? &
-    element scope { lenGe2String } &
+    element scope { scopeValue } &
     element dateCompleted {
       xsd:date |
       xsd:gYear |
@@ -16,6 +16,19 @@ identificationElement =
     (gbcSystemId | ptSystemId | reapSystemId | biblicaSystemId | tmsSystemId)+ &
     element bundleProducer { lenGe2String }
     }
+
+scopeValue =
+  "Bible" |
+  "Bible with Deuterocanon" |
+  "Deuterocanon" |
+  "New Testament" |
+  "New Testament+" |
+  "Old Testament" |
+  "Old Testament+" |
+  "Old Testament + Deuterocanon" |
+  "Portions" |
+  "Selections" |
+  "Shorter Bible"
 
 gbcSystemId =
   element systemId {
@@ -48,7 +61,7 @@ ptSystemId =
 ptElements =
   element name { lenGe2String } &
   element fullName { lenGe2String } &
-  element csetid { lenGe2String } &
+  element csetId { lenGe2String } &
   element id { ptId }
 
 reapSystemId =

@@ -6,14 +6,14 @@ translationSourceElement =
 
 sourceStructureDivision =
   element division {
-    attribute name {text},
+    attribute name {nameIdString},
     attribute role {roleId}?,
     (sourceStructureDivision | sourceStructureContent)+
   }
 
 sourceStructureContent =
   element content {
-    attribute name {text} &
-    attribute src {text} &
+    attribute name {nameIdString} &
+    attribute src {srcPathString} &
     attribute role {roleId}?
   }
