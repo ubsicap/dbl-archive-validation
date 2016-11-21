@@ -8,7 +8,7 @@
     <bundleProducer>Paratext</bundleProducer>
     <abbreviation>DBLTEST</abbreviation>
     <abbreviationLocal>DBLTEST</abbreviationLocal>
-    <scope>Gospels plus Acts</scope>
+    <scope>Portions</scope>
     <systemId type="gbc">
       <id>542abd435117ad138f57440d</id>
     </systemId>
@@ -46,7 +46,7 @@
     <nameLocal>English</nameLocal>
     <ldml>en</ldml>
     <rod>12345</rod>
-    <script>Roman</script>
+    <script>Latn</script>
     <scriptDirection>LTR</scriptDirection>
     <numerals>Arabic</numerals>
   </language>

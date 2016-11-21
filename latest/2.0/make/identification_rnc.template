@@ -6,29 +6,31 @@ identificationElement =
     element abbreviationLocal { localAbbreviationString }? &
     element description { lenGe2String } &
     element descriptionLocal { lenGe2String }? &
-    element scope { scopeValue } &
+    element scope { scopeEnum } &
+
     element dateCompleted {
       xsd:date |
       xsd:gYear |
       xsd:gYearMonth |
       xsd:dateTime
     }? &
-    (gbcSystemId | ptSystemId | reapSystemId | biblicaSystemId | tmsSystemId)+ &
+    (gbcSystemId | ptSystemId | reapSystemId | biblicaSystemId | tmsSystemId | ptregSystemId)+ &
     element bundleProducer { lenGe2String }
     }
 
-scopeValue =
-  "Bible" |
-  "Bible with Deuterocanon" |
-  "Deuterocanon" |
-  "New Testament" |
-  "New Testament+" |
-  "Old Testament" |
-  "Old Testament+" |
-  "Old Testament + Deuterocanon" |
-  "Portions" |
-  "Selections" |
-  "Shorter Bible"
+scopeEnum = (
+    "Bible" |
+    "Bible with Deuterocanon" |
+    "Deuterocanon" |
+    "New Testament" |
+    "New Testament+" |
+    "Old Testament" |
+    "Old Testament + Deuterocanon" |
+    "Old Testament+" |
+    "Portions" |
+    "Selections" |
+    "Shorter Bible"
+)
 
 gbcSystemId =
   element systemId {
@@ -40,6 +42,12 @@ gbcElements =
   element id {
     gbcId
   }
+
+ptregSystemId =
+  element systemId {
+    attribute type { "ptreg" },
+    ptregElements
+ }
 
 tmsSystemId =
   element systemId {
@@ -63,6 +71,9 @@ ptElements =
   element fullName { lenGe2String } &
   element csetId { lenGe2String } &
   element id { ptId }
+
+ptregElements =
+  element id { ptregId }
 
 reapSystemId =
   element systemId {

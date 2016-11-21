@@ -24,7 +24,7 @@ translationManifestContainer =
 translationManifestResource =
   element resource {
     commonManifestResourceAtts &
-    attribute progress { translationStageEnum }?
+    attribute progress { xsd:positiveInteger { maxInclusive = "999" } }?
   }
 
 commonManifestResourceAtts = (
@@ -32,11 +32,4 @@ commonManifestResourceAtts = (
   attribute size { xsd:integer },
   attribute checksum { md5String }?,
   attribute mimeType { mimeTypeString }
-)
-
-translationStageEnum = (
-  "1" | # Draft
-  "2" | # Internal Review
-  "3" | # External Review
-  "4"   # Final Review
 )

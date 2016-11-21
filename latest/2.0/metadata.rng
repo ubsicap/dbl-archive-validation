@@ -194,7 +194,7 @@
           </element>
         </optional>
         <element name="scope">
-          <ref name="scopeValue"/>
+          <ref name="scopeEnum"/>
         </element>
         <optional>
           <element name="dateCompleted">
@@ -213,6 +213,7 @@
             <ref name="reapSystemId"/>
             <ref name="biblicaSystemId"/>
             <ref name="tmsSystemId"/>
+            <ref name="ptregSystemId"/>
           </choice>
         </oneOrMore>
         <element name="bundleProducer">
@@ -221,7 +222,7 @@
       </interleave>
     </element>
   </define>
-  <define name="scopeValue">
+  <define name="scopeEnum">
     <choice>
       <value>Bible</value>
       <value>Bible with Deuterocanon</value>
@@ -229,8 +230,8 @@
       <value>New Testament</value>
       <value>New Testament+</value>
       <value>Old Testament</value>
-      <value>Old Testament+</value>
       <value>Old Testament + Deuterocanon</value>
+      <value>Old Testament+</value>
       <value>Portions</value>
       <value>Selections</value>
       <value>Shorter Bible</value>
@@ -247,6 +248,14 @@
   <define name="gbcElements">
     <element name="id">
       <ref name="gbcId"/>
+    </element>
+  </define>
+  <define name="ptregSystemId">
+    <element name="systemId">
+      <attribute name="type">
+        <value>ptreg</value>
+      </attribute>
+      <ref name="ptregElements"/>
     </element>
   </define>
   <define name="tmsSystemId">
@@ -285,6 +294,11 @@
         <ref name="ptId"/>
       </element>
     </interleave>
+  </define>
+  <define name="ptregElements">
+    <element name="id">
+      <ref name="ptregId"/>
+    </element>
   </define>
   <define name="reapSystemId">
     <element name="systemId">
@@ -472,16 +486,11 @@
       <interleave>
         <ref name="commonLanguageElements"/>
         <element name="script">
-          <ref name="lenGe2String"/>
+          <ref name="iso15924String"/>
         </element>
         <element name="scriptDirection">
           <ref name="languageScriptDirectionEnum"/>
         </element>
-        <optional>
-          <element name="numerals">
-            <ref name="numeralSystemEnum"/>
-          </element>
-        </optional>
       </interleave>
     </element>
   </define>
@@ -491,17 +500,12 @@
         <ref name="commonLanguageElements"/>
         <optional>
           <element name="script">
-            <ref name="lenGe2String"/>
+            <ref name="iso15924String"/>
           </element>
         </optional>
         <optional>
           <element name="scriptDirection">
             <ref name="languageScriptDirectionEnum"/>
-          </element>
-        </optional>
-        <optional>
-          <element name="numerals">
-            <ref name="numeralSystemEnum"/>
           </element>
         </optional>
       </interleave>
@@ -528,6 +532,11 @@
       <optional>
         <element name="rod">
           <ref name="rodString"/>
+        </element>
+      </optional>
+      <optional>
+        <element name="numerals">
+          <ref name="numeralSystemEnum"/>
         </element>
       </optional>
     </interleave>
@@ -990,7 +999,9 @@
         <ref name="commonManifestResourceAtts"/>
         <optional>
           <attribute name="progress">
-            <ref name="translationStageEnum"/>
+            <data type="positiveInteger">
+              <param name="maxInclusive">999</param>
+            </data>
           </attribute>
         </optional>
       </interleave>
@@ -1011,18 +1022,6 @@
     <attribute name="mimeType">
       <ref name="mimeTypeString"/>
     </attribute>
-  </define>
-  <define name="translationStageEnum">
-    <choice>
-      <value>1</value>
-      <!-- Draft -->
-      <value>2</value>
-      <!-- Internal Review -->
-      <value>3</value>
-      <!-- External Review -->
-      <value>4</value>
-    </choice>
-    <!-- Final Review -->
   </define>
   <define name="translationSourceElement">
     <element name="source">
@@ -1531,6 +1530,184 @@
       <param name="pattern">[A-Za-z]{2,3}([\-_][A-Za-z0-9]+){0,3}</param>
     </data>
   </define>
+  <define name="iso15924String">
+    <choice>
+      <!-- ISO 15924 -->
+      <value>Adlm</value>
+      <value>Afak</value>
+      <value>Aghb</value>
+      <value>Ahom</value>
+      <value>Arab</value>
+      <value>Aran</value>
+      <value>Armi</value>
+      <value>Armn</value>
+      <value>Avst</value>
+      <value>Bali</value>
+      <value>Bamu</value>
+      <value>Bass</value>
+      <value>Batk</value>
+      <value>Beng</value>
+      <value>Blis</value>
+      <value>Bopo</value>
+      <value>Brah</value>
+      <value>Brai</value>
+      <value>Bugi</value>
+      <value>Buhd</value>
+      <value>Cakm</value>
+      <value>Cans</value>
+      <value>Cari</value>
+      <value>Cham</value>
+      <value>Cher</value>
+      <value>Cirt</value>
+      <value>Copt</value>
+      <value>Cprt</value>
+      <value>Cyrl</value>
+      <value>Cyrs</value>
+      <value>Deva</value>
+      <value>Dsrt</value>
+      <value>Dupl</value>
+      <value>Egyd</value>
+      <value>Egyh</value>
+      <value>Egyp</value>
+      <value>Elba</value>
+      <value>Ethi</value>
+      <value>Geok</value>
+      <value>Geor</value>
+      <value>Glag</value>
+      <value>Goth</value>
+      <value>Gran</value>
+      <value>Grek</value>
+      <value>Gujr</value>
+      <value>Guru</value>
+      <value>Hang</value>
+      <value>Hani</value>
+      <value>Hano</value>
+      <value>Hans</value>
+      <value>Hant</value>
+      <value>Hatr</value>
+      <value>Hebr</value>
+      <value>Hira</value>
+      <value>Hluw</value>
+      <value>Hmng</value>
+      <value>Hrkt</value>
+      <value>Hung</value>
+      <value>Inds</value>
+      <value>Ital</value>
+      <value>Java</value>
+      <value>Jpan</value>
+      <value>Jurc</value>
+      <value>Kali</value>
+      <value>Kana</value>
+      <value>Khar</value>
+      <value>Khmr</value>
+      <value>Khoj</value>
+      <value>Kitl</value>
+      <value>Kits</value>
+      <value>Knda</value>
+      <value>Kore</value>
+      <value>Kpel</value>
+      <value>Kthi</value>
+      <value>Lana</value>
+      <value>Laoo</value>
+      <value>Latn</value>
+      <value>Latf</value>
+      <value>Latg</value>
+      <value>Lepc</value>
+      <value>Limb</value>
+      <value>Lina</value>
+      <value>Linb</value>
+      <value>Lisu</value>
+      <value>Loma</value>
+      <value>Lyci</value>
+      <value>Lydi</value>
+      <value>Mahj</value>
+      <value>Mand</value>
+      <value>Mani</value>
+      <value>Marc</value>
+      <value>Maya</value>
+      <value>Mend</value>
+      <value>Merc</value>
+      <value>Mero</value>
+      <value>Mlym</value>
+      <value>Modi</value>
+      <value>Mong</value>
+      <value>Moon</value>
+      <value>Mroo</value>
+      <value>Mtei</value>
+      <value>Mult</value>
+      <value>Mymr</value>
+      <value>Narb</value>
+      <value>Nbat</value>
+      <value>Nkgb</value>
+      <value>Nkoo</value>
+      <value>Nshu</value>
+      <value>Ogam</value>
+      <value>Olck</value>
+      <value>Orkh</value>
+      <value>Orya</value>
+      <value>Osge</value>
+      <value>Osma</value>
+      <value>Palm</value>
+      <value>Pauc</value>
+      <value>Perm</value>
+      <value>Phag</value>
+      <value>Phli</value>
+      <value>Phlp</value>
+      <value>Phlv</value>
+      <value>Phnx</value>
+      <value>Plrd</value>
+      <value>Prti</value>
+      <value>Rjng</value>
+      <value>Roro</value>
+      <value>Runr</value>
+      <value>Samr</value>
+      <value>Sara</value>
+      <value>Sarb</value>
+      <value>Saur</value>
+      <value>Sgnw</value>
+      <value>Shaw</value>
+      <value>Shrd</value>
+      <value>Sidd</value>
+      <value>Sind</value>
+      <value>Sinh</value>
+      <value>Sora</value>
+      <value>Sund</value>
+      <value>Sylo</value>
+      <value>Syrc</value>
+      <value>Syre</value>
+      <value>Syrj</value>
+      <value>Syrn</value>
+      <value>Tagb</value>
+      <value>Takr</value>
+      <value>Tale</value>
+      <value>Talu</value>
+      <value>Taml</value>
+      <value>Tang</value>
+      <value>Tavt</value>
+      <value>Telu</value>
+      <value>Teng</value>
+      <value>Tfng</value>
+      <value>Tglg</value>
+      <value>Thaa</value>
+      <value>Thai</value>
+      <value>Tibt</value>
+      <value>Tirh</value>
+      <value>Ugar</value>
+      <value>Vaii</value>
+      <value>Visp</value>
+      <value>Wara</value>
+      <value>Wole</value>
+      <value>Xpeo</value>
+      <value>Xsux</value>
+      <value>Yiii</value>
+      <value>Zinh</value>
+      <value>Zmth</value>
+      <value>Zsym</value>
+      <value>Zxxx</value>
+      <value>Zyyy</value>
+      <value>Zzzz</value>
+    </choice>
+  </define>
   <define name="rodString">
     <data type="string">
       <param name="pattern">[0-9]{5}</param>
@@ -1589,6 +1766,11 @@
   <define name="ptId">
     <data type="string">
       <param name="pattern">[0-9a-f]{40}</param>
+    </data>
+  </define>
+  <define name="ptregId">
+    <data type="string">
+      <param name="pattern">[0-9a-zA-Z]{17}</param>
     </data>
   </define>
   <define name="reapId">

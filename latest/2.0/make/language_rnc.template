@@ -1,17 +1,15 @@
 fullLanguageElement =
   element language {
     commonLanguageElements &
-    element script { lenGe2String } &
-    element scriptDirection { languageScriptDirectionEnum } &
-    element numerals { numeralSystemEnum }?
+    element script { iso15924String } &
+    element scriptDirection { languageScriptDirectionEnum }
   }
 
 shortLanguageElement =
   element language {
     commonLanguageElements &
-    element script { lenGe2String }? &
-    element scriptDirection { languageScriptDirectionEnum }? &
-    element numerals { numeralSystemEnum }?
+    element script { iso15924String }? &
+    element scriptDirection { languageScriptDirectionEnum }?
     }
 
 commonLanguageElements = (
@@ -19,7 +17,8 @@ commonLanguageElements = (
     element name { lenGe2String } &
     element nameLocal { lenGe2String }? &
     element ldml { ldmlString }? &
-    element rod { rodString }?
+    element rod { rodString }? &
+    element numerals { numeralSystemEnum }?
 )
 
 languageScriptDirectionEnum = (

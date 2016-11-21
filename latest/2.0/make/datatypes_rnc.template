@@ -79,6 +79,182 @@ languageIsoString = xsd:string { pattern = "[a-z][a-z][a-z]" }
 
 ldmlString = xsd:string { pattern = "[A-Za-z]{2,3}([\-_][A-Za-z0-9]+){0,3}" }
 
+iso15924String = ( # ISO 15924
+  "Adlm" |
+  "Afak" |
+  "Aghb" |
+  "Ahom" |
+  "Arab" |
+  "Aran" |
+  "Armi" |
+  "Armn" |
+  "Avst" |
+  "Bali" |
+  "Bamu" |
+  "Bass" |
+  "Batk" |
+  "Beng" |
+  "Blis" |
+  "Bopo" |
+  "Brah" |
+  "Brai" |
+  "Bugi" |
+  "Buhd" |
+  "Cakm" |
+  "Cans" |
+  "Cari" |
+  "Cham" |
+  "Cher" |
+  "Cirt" |
+  "Copt" |
+  "Cprt" |
+  "Cyrl" |
+  "Cyrs" |
+  "Deva" |
+  "Dsrt" |
+  "Dupl" |
+  "Egyd" |
+  "Egyh" |
+  "Egyp" |
+  "Elba" |
+  "Ethi" |
+  "Geok" |
+  "Geor" |
+  "Glag" |
+  "Goth" |
+  "Gran" |
+  "Grek" |
+  "Gujr" |
+  "Guru" |
+  "Hang" |
+  "Hani" |
+  "Hano" |
+  "Hans" |
+  "Hant" |
+  "Hatr" |
+  "Hebr" |
+  "Hira" |
+  "Hluw" |
+  "Hmng" |
+  "Hrkt" |
+  "Hung" |
+  "Inds" |
+  "Ital" |
+  "Java" |
+  "Jpan" |
+  "Jurc" |
+  "Kali" |
+  "Kana" |
+  "Khar" |
+  "Khmr" |
+  "Khoj" |
+  "Kitl" |
+  "Kits" |
+  "Knda" |
+  "Kore" |
+  "Kpel" |
+  "Kthi" |
+  "Lana" |
+  "Laoo" |
+  "Latn" |
+  "Latf" |
+  "Latg" |
+  "Lepc" |
+  "Limb" |
+  "Lina" |
+  "Linb" |
+  "Lisu" |
+  "Loma" |
+  "Lyci" |
+  "Lydi" |
+  "Mahj" |
+  "Mand" |
+  "Mani" |
+  "Marc" |
+  "Maya" |
+  "Mend" |
+  "Merc" |
+  "Mero" |
+  "Mlym" |
+  "Modi" |
+  "Mong" |
+  "Moon" |
+  "Mroo" |
+  "Mtei" |
+  "Mult" |
+  "Mymr" |
+  "Narb" |
+  "Nbat" |
+  "Nkgb" |
+  "Nkoo" |
+  "Nshu" |
+  "Ogam" |
+  "Olck" |
+  "Orkh" |
+  "Orya" |
+  "Osge" |
+  "Osma" |
+  "Palm" |
+  "Pauc" |
+  "Perm" |
+  "Phag" |
+  "Phli" |
+  "Phlp" |
+  "Phlv" |
+  "Phnx" |
+  "Plrd" |
+  "Prti" |
+  "Rjng" |
+  "Roro" |
+  "Runr" |
+  "Samr" |
+  "Sara" |
+  "Sarb" |
+  "Saur" |
+  "Sgnw" |
+  "Shaw" |
+  "Shrd" |
+  "Sidd" |
+  "Sind" |
+  "Sinh" |
+  "Sora" |
+  "Sund" |
+  "Sylo" |
+  "Syrc" |
+  "Syre" |
+  "Syrj" |
+  "Syrn" |
+  "Tagb" |
+  "Takr" |
+  "Tale" |
+  "Talu" |
+  "Taml" |
+  "Tang" |
+  "Tavt" |
+  "Telu" |
+  "Teng" |
+  "Tfng" |
+  "Tglg" |
+  "Thaa" |
+  "Thai" |
+  "Tibt" |
+  "Tirh" |
+  "Ugar" |
+  "Vaii" |
+  "Visp" |
+  "Wara" |
+  "Wole" |
+  "Xpeo" |
+  "Xsux" |
+  "Yiii" |
+  "Zinh" |
+  "Zmth" |
+  "Zsym" |
+  "Zxxx" |
+  "Zyyy" |
+  "Zzzz"
+  )
+
 rodString = xsd:string { pattern = "[0-9]{5}" }
 
 countryIsoString = xsd:string { pattern = "[A-Z][A-Z][A-Z]" }
@@ -102,6 +278,8 @@ gbcId = xsd:string { pattern = "[0-9a-f]{24}" }
 tmsId = xsd:string { pattern = "[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}" }
 
 ptId = xsd:string { pattern = "[0-9a-f]{40}" }
+
+ptregId = xsd:string { pattern = "[0-9a-zA-Z]{17}" }
 
 reapId = xsd:anyURI
 

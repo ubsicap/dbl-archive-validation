@@ -15,7 +15,7 @@
       <id>800ffc90-61c7-4eee-9d2e-3b846d211d34</id>
     </systemId>
     <systemId type="paratext">
-      <csetid>3078f7f2788978ff000285727c11cee4ab6c7047</csetid>
+      <csetId>3078f7f2788978ff000285727c11cee4ab6c7047</csetId>
       <fullName>Digital Bible Library Test Project (GNT)</fullName>
       <name>DBLTEST</name>
       <id>2880c78491b2f8ce8b3a4e0b2c2ef4610f4ffabe</id>
@@ -27,7 +27,7 @@
     <bundleProducer>Paratext</bundleProducer>
     <abbreviation>DBLTEST</abbreviation>
     <abbreviationLocal>DBLTESTLOCAL</abbreviationLocal>
-    <scope>Gospels plus Acts</scope>
+    <scope>Portions</scope>
   </identification>
   <type>
     <medium>text</medium>
@@ -62,7 +62,7 @@
     <nameLocal>A North American English-like dialect</nameLocal>
     <ldml>ENG_US</ldml>
     <rod>12345</rod>
-    <script>Roman</script>
+    <script>Latn</script>
     <scriptDirection>LTR</scriptDirection>
     <numerals>Arabic</numerals>
   </language>
