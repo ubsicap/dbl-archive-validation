@@ -8,11 +8,11 @@ start = dblMetadataElement
 
 dblMetadataElement = (translationMetadata | expressionMetadata | translationAndExpressionMetadata)
 
-translationMetadata = textTranslationMetadata | audioTranslationMetadata
+translationMetadata = textTranslationMetadata | audioTranslationMetadata | videoTranslationMetadata
 
-expressionMetadata = textExpressionMetadata | audioExpressionMetadata | printExpressionMetadata
+expressionMetadata = textExpressionMetadata | audioExpressionMetadata | printExpressionMetadata | videoExpressionMetadata
 
-translationAndExpressionMetadata = textTranslationAndExpressionMetadata | audioTranslationAndExpressionMetadata
+translationAndExpressionMetadata = textTranslationAndExpressionMetadata | audioTranslationAndExpressionMetadata | videoTranslationAndExpressionMetadata
 
 textTranslationMetadata = element DBLMetadata {
   dblMetadataCommonAtts &
@@ -54,6 +54,14 @@ audioExpressionMetadata = element DBLMetadata {
   audioFormatElement
 }
 
+videoExpressionMetadata = element DBLMetadata {
+  dblMetadataCommonAtts &
+  expressionCommonElements &
+  shortLanguageElement &
+  videoExpressionTypeElement &
+  videoFormatElement
+}
+
 textTranslationAndExpressionMetadata = element DBLMetadata {
   dblMetadataCommonAtts &
   translationAndExpressionCommonElements &
@@ -68,6 +76,14 @@ audioTranslationAndExpressionMetadata = element DBLMetadata {
   fullLanguageElement &
   audioTranslationAndExpressionTypeElement &
   audioFormatElement
+}
+
+videoTranslationAndExpressionMetadata = element DBLMetadata {
+  dblMetadataCommonAtts &
+  translationAndExpressionCommonElements &
+  fullLanguageElement &
+  videoTranslationAndExpressionTypeElement &
+  videoFormatElement
 }
 
 translationCommonElements = (

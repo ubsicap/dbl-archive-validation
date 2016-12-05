@@ -15,7 +15,8 @@ audioFormatElement = # DCMI: format
 audioCompressionEnum = (
   "MP3"  |
   "FLAC" |
-  "WAV"
+  "WAV" |
+  "AAC"
 )
 
 audioTrackEnum = (
@@ -53,9 +54,40 @@ printFormatFontElement =
   }
 
 printFontEnum = (
-  "OpenType" | 
+  "OpenType" |
   "Other" |
   "Bitmap" |
   "TrueType" |
   "Type1"
 )
+
+videoFormatElement =
+  element format {
+    element container {( "MP4" | "MKV" | "AVI" )} &
+    element streams {
+      videoFormatVideoStream &
+      videoFormatAudioStream
+    }
+  }
+
+videoFormatVideoStream =
+  element stream {
+    attribute type { "video" },
+    (element codec { text } &
+    element resolution { text } &
+    element screenResolution { text } &
+    element frameRate { text } )
+  }
+
+videoFormatVideoStreamElements = (element codec { text } &
+    element resolution { text } &
+    element screenResolution { text } &
+    element frameRate { text } )
+
+videoFormatAudioStream =
+ element stream {
+  attribute type { "video" },
+  (element codec {("MP3" | "AAC" | "FLAC" | "WAV" )} &
+  element sampleRate { text } &
+  element language { text })
+ }

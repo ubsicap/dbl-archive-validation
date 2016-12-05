@@ -18,6 +18,16 @@ audioTranslationTypeElement =
     commonAudioTranslationTypeElements
 }
 
+videoTranslationTypeElement =
+  element type {
+    element medium { "video" } &
+    element hasCharacters { "false" } &
+    element isTranslation { "true" } &
+    element isExpression { "false" } &
+    element isConfidential { xsd:boolean } &
+    commonVideoTranslationTypeElements
+}
+
 textExpressionTypeElement =
   element type {
     element medium { "text" } &
@@ -48,6 +58,16 @@ audioExpressionTypeElement =
     element isConfidential { xsd:boolean }
 }
 
+videoExpressionTypeElement =
+  element type {
+    element medium { "video" } &
+    element hasCharacters { "false" } &
+    element isTranslation { "false" } &
+    element isExpression { "true" } &
+    commonVideoExpressionTypeElements &
+    element isConfidential { xsd:boolean }
+}
+
 textTranslationAndExpressionTypeElement =
   element type {
     element medium { "text" } &
@@ -70,11 +90,26 @@ audioTranslationAndExpressionTypeElement =
     element isConfidential { xsd:boolean }
 }
 
+videoTranslationAndExpressionTypeElement =
+  element type {
+    element medium { "audio" } &
+    element hasCharacters { "false" } &
+    element isTranslation { "true" } &
+    element isExpression { "true" } &
+    commonVideoTranslationTypeElements &
+    commonVideoExpressionTypeElements &
+    element isConfidential { xsd:boolean }
+}
+
 commonTextTranslationTypeElements = (
   commonTranslationTypeElements
 )
 
 commonAudioTranslationTypeElements = (
+  commonTranslationTypeElements
+)
+
+commonVideoTranslationTypeElements = (
   commonTranslationTypeElements
 )
 
@@ -88,6 +123,10 @@ commonAudioExpressionTypeElements = (
     "Non-Dramatized" |
     "Single-Voice"
   } &
+  commonExpressionTypeElements
+)
+
+commonVideoExpressionTypeElements = (
   commonExpressionTypeElements
 )
 
