@@ -1134,6 +1134,11 @@
       <optional>
         <ref name="publicationCountryElement"/>
       </optional>
+      <optional>
+        <element name="scope">
+          <ref name="scopeEnum"/>
+        </element>
+      </optional>
       <element name="canonicalContent">
         <oneOrMore>
           <ref name="canonicalContentBook"/>
