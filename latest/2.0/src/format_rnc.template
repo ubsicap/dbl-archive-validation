@@ -63,7 +63,7 @@ printFontEnum = (
 
 videoFormatElement =
   element format {
-    element container {( "MP4" | "MKV" | "AVI" )} &
+    element container-format {( "MP4" | "MKV" | "AVI" )} &
     element streams {
       videoFormatVideoStream &
       videoFormatAudioStream
