@@ -597,6 +597,7 @@ publicationChildElements = (
   element description { lenGe2String }? &
   element descriptionLocal { lenGe2String }? &
   publicationCountryElement? &
+  element scope { scopeEnum }? &
   element canonicalContent { canonicalContentBook+} &
   element structure { (publicationStructureDivision | publicationStructureContent)+ }
 )
