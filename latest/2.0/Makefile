@@ -10,6 +10,7 @@ clean:
 build:
 	@python ./make/make.py ./make/metadata_rnc.template metadata.rnc 1>/dev/null;
 	@java -jar ./trang.jar -I rnc -O rng ./metadata.rnc metadata.rng;
+	@rm ./metadata.rnc
 	@echo 'completed build'
 
 install:
@@ -21,4 +22,5 @@ install:
 	@for DIR in ../../build/*; do \
 		[ -d "$${DIR}" ] && mkdir -p "$${DIR}/2.0" && cp -f ./metadata.rng "$${DIR}/2.0/"; \
 	done
+	@rm ./metadata.rng
 	@echo 'completed install'
