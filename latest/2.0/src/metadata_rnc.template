@@ -30,6 +30,14 @@ audioTranslationMetadata = element DBLMetadata {
   audioFormatElement
 }
 
+videoTranslationMetadata = element DBLMetadata {
+  dblMetadataCommonAtts &
+  translationCommonElements &
+  shortLanguageElement &
+  videoTranslationTypeElement &
+  videoFormatElement
+}
+
 textExpressionMetadata = element DBLMetadata {
   dblMetadataCommonAtts &
   expressionCommonElements &

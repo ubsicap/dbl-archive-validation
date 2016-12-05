@@ -71,23 +71,16 @@ videoFormatElement =
   }
 
 videoFormatVideoStream =
-  element stream {
-    attribute type { "video" },
-    (element codec { text } &
-    element resolution { text } &
-    element screenResolution { text } &
-    element frameRate { text } )
+  element video-stream {
+      element codec { text } &
+      element resolution { text } &
+      element screenResolution { text } &
+      element frameRate { text }
   }
 
-videoFormatVideoStreamElements = (element codec { text } &
-    element resolution { text } &
-    element screenResolution { text } &
-    element frameRate { text } )
-
 videoFormatAudioStream =
- element stream {
-  attribute type { "video" },
-  (element codec {("MP3" | "AAC" | "FLAC" | "WAV" )} &
-  element sampleRate { text } &
-  element language { text })
+  element audio-stream {
+    element codec {("MP3" | "AAC" | "FLAC" | "WAV" )} &
+    element sampleRate { text } &
+    element language { text }
  }

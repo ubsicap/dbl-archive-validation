@@ -92,7 +92,7 @@ audioTranslationAndExpressionTypeElement =
 
 videoTranslationAndExpressionTypeElement =
   element type {
-    element medium { "audio" } &
+    element medium { "video" } &
     element hasCharacters { "false" } &
     element isTranslation { "true" } &
     element isExpression { "true" } &
