@@ -14,10 +14,11 @@ build:
 
 install:
 	@for type in text audio video print ebook; do \
-		echo $${type}; \
 		if [ ! -d ../../build/$${type} ]; then \
 			mkdir -p ../../build/$${type}; \
 		fi; \
 	done
-	@for DIR in ../../build/*; do [ -d "$${DIR}" ] && mkdir -p "$${DIR}/2.0" && cp -f ./metadata.rng "$${DIR}/2.0/"; done
+	@for DIR in ../../build/*; do \
+		[ -d "$${DIR}" ] && mkdir -p "$${DIR}/2.0" && cp -f ./metadata.rng "$${DIR}/2.0/"; \
+	done
 	@echo 'completed install'
