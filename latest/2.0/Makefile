@@ -8,7 +8,7 @@ clean:
 	@echo 'clean'
 
 build:
-	@python ./make/make.py ./make/metadata_rnc.template metadata.rnc 1>/dev/null;
+	@python ./src/make.py ./src/metadata_rnc.template metadata.rnc 1>/dev/null;
 	@java -jar ./trang.jar -I rnc -O rng ./metadata.rnc metadata.rng;
 	@rm ./metadata.rnc
 	@echo 'completed build'
