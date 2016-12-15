@@ -1,19 +1,22 @@
 .DEFAULT_GOAL := all
 
-all: clean build install
+all: clean rnc rng install
 
 clean:
 	@if [ -e ./metadata.rnc ]; then rm -f ./metadata.rnc; fi
 	@if [ -e ./metadata.rng ]; then rm -f ./metadata.rng; fi
 	@echo 'clean'
 
-build:
+rnc:
 	@python ./src/make.py ./src/metadata_rnc.template metadata.rnc 1>/dev/null;
+	@echo 'completed rnc'
+
+rng: rnc
 	@java -jar ./trang.jar -I rnc -O rng ./metadata.rnc metadata.rng;
 	@rm ./metadata.rnc
-	@echo 'completed build'
+	@echo 'completed rng'
 
-install:
+install: rng
 	@for type in text audio video print ebook; do \
 		if [ ! -d ../../build/$${type} ]; then \
 			mkdir -p ../../build/$${type}; \
