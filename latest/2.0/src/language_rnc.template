@@ -30,15 +30,19 @@ numeralSystemEnum = (
   "Arabic" | # (a.k.a. 'Hindu') = 0123456789
   "Bengali" |
   "Burmese" |
+  "Chinese" |
+  "Cyrillic" |
   "Devanagari" |
   "Ethiopic" |
   "Farsi" |
   "Gujarati" |
   "Gurmukhi" |
+  "Hebrew" |
   "Hindi" | # (i.e. 'Arabic' as used in Egypt)
   "Kannada" |
   "Khmer" |
   "Malayalam" |
+  "Roman" |
   "Oriya" |
   "Tamil" |
   "Telugu" |

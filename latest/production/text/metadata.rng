@@ -3,7 +3,7 @@
   metadata.rnc
   - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
   A compact syntax Relax NG Schema for the DBL @type="text" metadata file.
-  DBL text bundle version = 1.4
+  DBL text bundle version = 1.5
 -->
 <!--
   - Suggested Dublin Core Metadata (DCMI) element/refinement relationships are 
@@ -44,7 +44,7 @@
     </define>
     <define name="m.DBLMetadata.typeVersion">
       <attribute name="typeVersion">
-        <value>1.4</value>
+        <value>1.5</value>
       </attribute>
     </define>
     <define name="m.DBLMetadata.id">
@@ -149,10 +149,25 @@
     </define>
   </div>
   <div>
+    <define name="m.scope.enum">
+      <choice>
+        <value>Bible</value>
+        <value>Bible with Deuterocanon</value>
+        <value>Deuterocanon</value>
+        <value>New Testament</value>
+        <value>New Testament+</value>
+        <value>Old Testament</value>
+        <value>Old Testament + Deuterocanon</value>
+        <value>Old Testament+</value>
+        <value>Portions</value>
+        <value>Selections</value>
+        <value>Shorter Bible</value>
+      </choice>
+    </define>
     <define name="m.scope">
       <element name="scope">
         <a:documentation>DCMI: title/scriptureScope</a:documentation>
-        <text/>
+        <ref name="m.scope.enum"/>
       </element>
     </define>
   </div>
@@ -188,6 +203,8 @@
         <a:documentation>UBS Translation Management System database ID</a:documentation>
         <value>paratext</value>
         <a:documentation>Paratext Project GUID</a:documentation>
+        <value>ptreg</value>
+        <a:documentation>Paratext Registry ID</a:documentation>
         <value>reap</value>
         <a:documentation>SIL REAP database ID</a:documentation>
         <value>biblica</value>
@@ -254,9 +271,6 @@
           <oneOrMore>
             <ref name="m.contributor"/>
           </oneOrMore>
-          <optional>
-            <ref name="m.etenPartner"/>
-          </optional>
         </interleave>
       </element>
     </define>
@@ -374,31 +388,12 @@
     </define>
   </div>
   <div>
-    <!--
-      m.etenPartner.enum =
-        "UBS" | "WBT" | "Biblica" | "PBT" | "SIM"
-    -->
-    <define name="m.etenPartner">
-      <a:documentation>Primary translation or coordination/sponsorship agency</a:documentation>
-      <element name="etenPartner">
-        <optional>
-          <!-- m.etenPartner.enum -->
-          <attribute name="uid">
-            <ref name="m._datatype.string2"/>
-          </attribute>
-        </optional>
-        <optional>
-          <ref name="m._datatype.string2"/>
-        </optional>
-      </element>
-    </define>
-  </div>
-  <div>
     <define name="m.language">
       <element name="language">
         <interleave>
           <ref name="m.language.iso"/>
           <ref name="m.language.name"/>
+          <ref name="m.language.nameLocal"/>
           <ref name="m.ldml"/>
           <ref name="m.rod"/>
           <ref name="m.script"/>
@@ -421,6 +416,14 @@
   <div>
     <define name="m.language.name">
       <element name="name">
+        <a:documentation>DCMI: subject/language (ISO639-3)</a:documentation>
+        <ref name="m._datatype.string2"/>
+      </element>
+    </define>
+  </div>
+  <div>
+    <define name="m.language.nameLocal">
+      <element name="nameLocal">
         <a:documentation>DCMI: subject/language (ISO639-3)</a:documentation>
         <ref name="m._datatype.string2"/>
       </element>
@@ -676,7 +679,7 @@ DCMI: language/scriptDirection</a:documentation>
   <div>
     <define name="m.book.stage">
       <attribute name="stage">
-        <ref name="translationStage.enum"/>
+        <data type="integer"/>
       </attribute>
     </define>
     <define name="m.progress.book.attlist">
@@ -939,17 +942,21 @@ DCMI: format</a:documentation>
       <!-- (a.k.a. 'Hindu') = 0123456789 -->
       <value>Bengali</value>
       <value>Burmese</value>
+      <value>Chinese</value>
+      <value>Cyrillic</value>
       <value>Devanagari</value>
       <value>Ethiopic</value>
       <value>Farsi</value>
       <value>Gujarati</value>
       <value>Gurmukhi</value>
+      <value>Hebrew</value>
       <value>Hindi</value>
       <!-- (i.e. 'Arabic' as used in Egypt) -->
       <value>Kannada</value>
       <value>Khmer</value>
       <value>Malayalam</value>
       <value>Oriya</value>
+      <value>Roman</value>
       <value>Tamil</value>
       <value>Telugu</value>
       <value>Thai</value>
@@ -970,19 +977,6 @@ DCMI: format</a:documentation>
       <value>Common - Literary</value>
       <value>Literary</value>
       <value>Liturgical</value>
-    </choice>
-  </define>
-  <!-- 1 = draft, 2 = internalReview, 3 = extenalReview, 4 = finalReview -->
-  <define name="translationStage.enum">
-    <choice>
-      <value>1</value>
-      <a:documentation>draft</a:documentation>
-      <value>2</value>
-      <a:documentation>internalReview</a:documentation>
-      <value>3</value>
-      <a:documentation>externalReview</a:documentation>
-      <value>4</value>
-      <a:documentation>finalReview</a:documentation>
     </choice>
   </define>
   <define name="bookCode.enum">
