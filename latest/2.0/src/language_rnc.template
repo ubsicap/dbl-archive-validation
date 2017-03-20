@@ -25,21 +25,25 @@ languageScriptDirectionEnum = (
   "LTR" | # Left to Right
   "RTL"   # RTL (Right to Left)
 )
-  
+
 numeralSystemEnum = (
   "Arabic" | # (a.k.a. 'Hindu') = 0123456789
   "Bengali" |
   "Burmese" |
+  "Chinese" |
+  "Cyrillic" |
   "Devanagari" |
   "Ethiopic" |
   "Farsi" |
   "Gujarati" |
   "Gurmukhi" |
+  "Hebrew" |
   "Hindi" | # (i.e. 'Arabic' as used in Egypt)
   "Kannada" |
   "Khmer" |
   "Malayalam" |
   "Oriya" |
+  "Roman" |
   "Tamil" |
   "Telugu" |
   "Thai" |

@@ -3,9 +3,9 @@
 # A compact syntax Relax NG Schema for the DBL @type="text" metadata file.
 # DBL text bundle version = 1.5
 
-# - Suggested Dublin Core Metadata (DCMI) element/refinement relationships are 
+# - Suggested Dublin Core Metadata (DCMI) element/refinement relationships are
 #   added as documentation strings "## DCMI: "
-# - A syntax encoding scheme may be mentioned after the DCMI documentation in 
+# - A syntax encoding scheme may be mentioned after the DCMI documentation in
 #   parentheses; e.g. language/iso (ISO639-3)
 # -----------------------------------------------------------------------------
 
@@ -232,7 +232,7 @@ div {
 div {
    m.contributor.content =
       attribute content { xsd:boolean }
-   m.contributor.publication = 
+   m.contributor.publication =
       attribute publication { xsd:boolean }
    m.contributor.management =
       attribute management { xsd:boolean }
@@ -661,23 +661,28 @@ div {
 }
 
 numeralSystem.enum = (
-           "Arabic" # (a.k.a. 'Hindu') = 0123456789
-         | "Bengali"
-         | "Burmese"
-         | "Devanagari"
-         | "Ethiopic"
-         | "Farsi"
-         | "Gujarati"
-         | "Gurmukhi"
-         | "Hindi" # (i.e. 'Arabic' as used in Egypt)
-         | "Kannada"
-         | "Khmer"
-         | "Malayalam"
-         | "Oriya"
-         | "Tamil"
-         | "Telugu"
-         | "Thai"
-         | "Tibetan")
+  "Arabic" | # (a.k.a. 'Hindu') = 0123456789
+  "Bengali" |
+  "Burmese" |
+  "Chinese" |
+  "Cyrillic" |
+  "Devanagari" |
+  "Ethiopic" |
+  "Farsi" |
+  "Gujarati" |
+  "Gurmukhi" |
+  "Hebrew" |
+  "Hindi" | # (i.e. 'Arabic' as used in Egypt)
+  "Kannada" |
+  "Khmer" |
+  "Malayalam" |
+  "Oriya" |
+  "Roman" |
+  "Tamil" |
+  "Telugu" |
+  "Thai" |
+  "Tibetan"
+)
 
 translationType.enum = (
            "First"
