@@ -661,6 +661,7 @@ div {
 }
 
 numeralSystem.enum = (
+<<<<<<< HEAD
   "Arabic" | # (a.k.a. 'Hindu') = 0123456789
   "Bengali" |
   "Burmese" |
@@ -683,6 +684,29 @@ numeralSystem.enum = (
   "Thai" |
   "Tibetan"
 )
+=======
+           "Arabic" # (a.k.a. 'Hindu') = 0123456789
+         | "Bengali"
+         | "Burmese"
+         | "Chinese"
+         | "Cyrillic"
+         | "Devanagari"
+         | "Ethiopic"
+         | "Farsi"
+         | "Gujarati"
+         | "Gurmukhi"
+         | "Hebrew"
+         | "Hindi" # (i.e. 'Arabic' as used in Egypt)
+         | "Kannada"
+         | "Khmer"
+         | "Malayalam"
+         | "Oriya"
+         | "Roman"
+         | "Tamil"
+         | "Telugu"
+         | "Thai"
+         | "Tibetan")
+>>>>>>> 1cb5a9e30e14efaf6f843c62323aaab43b84e0c3
 
 translationType.enum = (
            "First"

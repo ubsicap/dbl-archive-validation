@@ -942,17 +942,21 @@ DCMI: format</a:documentation>
       <!-- (a.k.a. 'Hindu') = 0123456789 -->
       <value>Bengali</value>
       <value>Burmese</value>
+      <value>Chinese</value>
+      <value>Cyrillic</value>
       <value>Devanagari</value>
       <value>Ethiopic</value>
       <value>Farsi</value>
       <value>Gujarati</value>
       <value>Gurmukhi</value>
+      <value>Hebrew</value>
       <value>Hindi</value>
       <!-- (i.e. 'Arabic' as used in Egypt) -->
       <value>Kannada</value>
       <value>Khmer</value>
       <value>Malayalam</value>
       <value>Oriya</value>
+      <value>Roman</value>
       <value>Tamil</value>
       <value>Telugu</value>
       <value>Thai</value>

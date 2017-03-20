@@ -42,6 +42,7 @@ numeralSystemEnum = (
   "Kannada" |
   "Khmer" |
   "Malayalam" |
+  "Roman" |
   "Oriya" |
   "Roman" |
   "Tamil" |
