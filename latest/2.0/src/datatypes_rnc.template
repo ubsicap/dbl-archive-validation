@@ -261,7 +261,7 @@ countryIsoString = xsd:string { pattern = "[A-Z][A-Z][A-Z]" }
 
 measurementString = xsd:string { pattern = "[1-9][0-9]{1,4}mm" }
 
-nameIdString = xsd:string { pattern = "[A-Za-z][\-A-Za-z0-9_]+" }
+nameIdString = xsd:string { pattern = "[A-Za-z0-9][\-A-Za-z0-9_]+" }
 
 srcPathString = xsd:string { pattern = "[A-Za-z0-9][\-A-Za-z0-9_\.]+(/[A-Za-z0-9][\-A-Za-z0-9_\.]+)*" }
 
