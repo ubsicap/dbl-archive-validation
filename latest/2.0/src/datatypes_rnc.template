@@ -9,21 +9,21 @@
     shHtmlCharMarkup
 )
 
-shP = element p { mixed { nonEmptyString* & shHtmlCharMarkup* } }
+shP = element p { nonEmptyString* & shHtmlCharMarkup* }
 
-shH1 = element h1 { mixed { nonEmptyString* & shHtmlCharMarkup* } }
+shH1 = element h1 { nonEmptyString* & shHtmlCharMarkup* }
 
-shH2 = element h2 { mixed { nonEmptyString* & shHtmlCharMarkup* } }
+shH2 = element h2 { nonEmptyString* & shHtmlCharMarkup* }
 
-shH3 = element h3 { mixed { nonEmptyString* & shHtmlCharMarkup* } }
+shH3 = element h3 { nonEmptyString* & shHtmlCharMarkup* }
 
 shOl = element ol { shLi+ }
 
 shUl = element ul { shLi+ }
 
-shLi = element li { mixed { nonEmptyString* & shHtmlCharMarkup* } }
+shLi = element li { nonEmptyString* & shHtmlCharMarkup* }
 
-shBlockquote = element blockquote { mixed { nonEmptyString* & shHtmlCharMarkup* } }
+shBlockquote = element blockquote { nonEmptyString* & shHtmlCharMarkup* }
 
 shHtmlCharMarkup = (
   shA |
@@ -38,7 +38,7 @@ shHtmlCharMarkup = (
 shA =
   element a {
     attribute href { xsd:anyURI },
-    mixed { nonEmptyString* & shHtmlCharMarkup* }
+    (nonEmptyString* & shHtmlCharMarkup* )
   }
 
 shImg =
@@ -49,15 +49,15 @@ shImg =
 
 shBr = element br { empty }
 
-shStrong = element strong { mixed { nonEmptyString* & shHtmlCharMarkup* } }
+shStrong = element strong { nonEmptyString* & shHtmlCharMarkup* }
 
-shB = element b { mixed { nonEmptyString* & shHtmlCharMarkup* } }
+shB = element b { nonEmptyString* & shHtmlCharMarkup* }
 
-shEm = element em { mixed { nonEmptyString* & shHtmlCharMarkup* } }
+shEm = element em { nonEmptyString* & shHtmlCharMarkup* }
 
-shI = element i { mixed { nonEmptyString* & shHtmlCharMarkup* } }
+shI = element i { nonEmptyString* & shHtmlCharMarkup* }
 
-nonEmptyString = xsd:string { minLength = "1" }
+nonEmptyString = text
 
 lenGe1String = xsd:string { minLength = "1" pattern="\S(.*\S)?" }
 
@@ -261,7 +261,7 @@ countryIsoString = xsd:string { pattern = "[A-Z][A-Z][A-Z]" }
 
 measurementString = xsd:string { pattern = "[1-9][0-9]{1,4}mm" }
 
-nameIdString = xsd:string { pattern = "[A-Za-z0-9][\-A-Za-z0-9_]+" }
+nameIdString = xsd:string { pattern = "[A-Za-z][\-A-Za-z0-9_]+" }
 
 srcPathString = xsd:string { pattern = "[A-Za-z0-9][\-A-Za-z0-9_\.]+(/[A-Za-z0-9][\-A-Za-z0-9_\.]+)*" }
 

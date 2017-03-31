@@ -8,12 +8,12 @@ clean:
 	@echo 'clean'
 
 rnc:
-	@python ./src/make.py ./src/metadata_rnc.template metadata.rnc 1>/dev/null;
+	@python ./src/make.py ./src/metadata_rnc.template metadata.rnc;
 	@echo 'completed rnc'
 
 rng: rnc
 	@java -jar ./trang.jar -I rnc -O rng ./metadata.rnc metadata.rng;
-	@rm ./metadata.rnc
+	#@rm ./metadata.rnc
 	@echo 'completed rng'
 
 install: rng
