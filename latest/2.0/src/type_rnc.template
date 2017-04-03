@@ -68,6 +68,15 @@ videoExpressionTypeElement =
     element isConfidential { xsd:boolean }
 }
 
+brailleExpressionTypeElement =
+  element type {
+    element medium { "braille" } &
+    element hasCharacters { "true" } &
+    element isTranslation { "false" } &
+    element isExpression { "true" } &
+    element isConfidential { xsd:boolean }
+}
+
 textTranslationAndExpressionTypeElement =
   element type {
     element medium { "text" } &

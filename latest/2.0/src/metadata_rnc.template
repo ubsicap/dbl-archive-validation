@@ -10,7 +10,7 @@ dblMetadataElement = (translationMetadata | expressionMetadata | translationAndE
 
 translationMetadata = textTranslationMetadata | audioTranslationMetadata | videoTranslationMetadata
 
-expressionMetadata = textExpressionMetadata | audioExpressionMetadata | printExpressionMetadata | videoExpressionMetadata
+expressionMetadata = textExpressionMetadata | audioExpressionMetadata | printExpressionMetadata | videoExpressionMetadata | brailleExpressionMetadata
 
 translationAndExpressionMetadata = textTranslationAndExpressionMetadata | audioTranslationAndExpressionMetadata | videoTranslationAndExpressionMetadata
 
@@ -68,6 +68,14 @@ videoExpressionMetadata = element DBLMetadata {
   shortLanguageElement &
   videoExpressionTypeElement &
   videoFormatElement
+}
+
+brailleExpressionMetadata = element DBLMetadata {
+  dblMetadataCommonAtts &
+  expressionCommonElements &
+  shortLanguageElement &
+  brailleExpressionTypeElement &
+  brailleFormatElement
 }
 
 textTranslationAndExpressionMetadata = element DBLMetadata {

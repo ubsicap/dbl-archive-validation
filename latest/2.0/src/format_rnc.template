@@ -82,3 +82,10 @@ videoFormatAudioStream =
   element audioStream { audioSubelements }
  
 videoFormatSubtitleStream = element subtitleStream { empty }
+
+brailleFormatElement =
+  element format {
+    element contracted { xsd:boolean } &
+    element libLouisConfig { xsd:string }
+  }
+
