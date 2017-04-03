@@ -4,13 +4,14 @@ textFormatElement =
   }
 
 audioFormatElement = # DCMI: format
-  element format {
+  element format { audioSubelements}
+  
+audioSubelements = 
     element compression { audioCompressionEnum }? &
     element trackConfiguration { audioTrackEnum }? &
     element bitRate { xsd:integer }? &
     element bitDepth { xsd:integer }? &
     element samplingRate { xsd:integer }?
-  }
 
 audioCompressionEnum = (
   "MP3"  |
@@ -63,24 +64,21 @@ printFontEnum = (
 
 videoFormatElement =
   element format {
-    element container-format {( "MP4" | "MKV" | "AVI" )} &
-    element streams {
+    element container {"MP4"} &
       videoFormatVideoStream &
-      videoFormatAudioStream
+      videoFormatAudioStream? &
+      videoFormatSubtitleStream?
     }
-  }
 
 videoFormatVideoStream =
-  element video-stream {
-      element codec { text } &
-      element resolution { text } &
-      element screenResolution { text } &
-      element frameRate { text }
+  element videoStream {
+      element codec { xsd:string } &
+      element bitRate { xsd:positiveInteger } &
+      element frameRate { xsd:decimal } &
+      element screenResolution { xsd:string {pattern="[1-9][0-9]{0,3}x[1-9][0-9]{0,3}"} }
   }
 
 videoFormatAudioStream =
-  element audio-stream {
-    element codec {("MP3" | "AAC" | "FLAC" | "WAV" )} &
-    element sampleRate { text } &
-    element language { text }
- }
+  element audioStream { audioSubelements }
+ 
+videoFormatSubtitleStream = element subtitleStream { empty }
