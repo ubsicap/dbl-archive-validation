@@ -265,7 +265,7 @@ nameIdString = xsd:string { pattern = "[A-Za-z][\-A-Za-z0-9_]+" }
 
 srcPathString = xsd:string { pattern = "[A-Za-z0-9][\-A-Za-z0-9_\.]+(/[A-Za-z0-9][\-A-Za-z0-9_\.]+)*" }
 
-md5String = xsd:string { pattern = "[a-f0-9]{32}" }
+s3Checksum = xsd:string { pattern = "[a-f0-9]{32}(\-\d+)?" }
 
 mimeTypeString = xsd:string { pattern = "[\-a-z0-9]+/[\-a-z0-9+]+" }
 
