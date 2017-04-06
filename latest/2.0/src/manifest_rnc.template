@@ -30,6 +30,6 @@ translationManifestResource =
 commonManifestResourceAtts = (
   attribute uri { xsd:anyURI},
   attribute size { xsd:integer },
-  attribute checksum { md5String }?,
+  attribute checksum { s3Checksum }?,
   attribute mimeType { mimeTypeString }
 )
