@@ -11,6 +11,9 @@ source/*/*/*.rng
 source/text/usxtest/
 source/dblSourceBundles.layout
 metadata.xsd
+metadata.rnc
+metadata.rng
 schemas.xml
 /.idea/
 .DS_Store
+*.sublime-*
