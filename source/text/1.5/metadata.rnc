@@ -261,7 +261,7 @@ div {
       element language {
        m.language.iso &
        m.language.name &
-       m.language.nameLocal &
+       m.language.nameLocal? &
        m.ldml &
        m.rod &
        m.script &
