@@ -162,6 +162,8 @@ dblMetadataCommonAtts = (
 
 %%insert publications_rnc.template%%
 
+%%insert canon_rnc.template%%
+
 %%insert copyright_rnc.template%%
 
 %%insert promotion_rnc.template%%

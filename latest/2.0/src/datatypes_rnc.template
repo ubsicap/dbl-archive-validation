@@ -257,7 +257,7 @@ iso15924String = ( # ISO 15924
 
 rodString = xsd:string { pattern = "[0-9]{5}" }
 
-countryIsoString = xsd:string { pattern = "[A-Z][A-Z][A-Z]" }
+countryIsoString = xsd:string { pattern = "[A-Z][A-Z]" }
 
 measurementString = xsd:string { pattern = "[1-9][0-9]{1,4}mm" }
 

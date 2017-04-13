@@ -1,10 +1,25 @@
 copyrightElement =
   element copyright {
-    copyrightStatementElement
+    copyrightFullStatementElement &
+    copyrightShortStatementElement?
   }
 
-copyrightStatementElement =
-  element statement {
+copyrightFullStatementElement =
+  element fullStatement { statementContent+ }
+
+copyrightShortStatementElement =
+  element shortStatement { statementContent+ }
+  
+statementContent = htmlStatementContent | plainStatementContent
+
+htmlStatementContent =
+  element statementContent {
     attribute contentType { "xhtml" },
     simplifiedHtml+
   }
+  
+plainStatementContent =
+  element statementContent {
+    attribute contentType { "plain" },
+    text
+  }  

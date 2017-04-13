@@ -7,6 +7,7 @@ identificationElement =
     element description { lenGe2String } &
     element descriptionLocal { lenGe2String }? &
     element scope { scopeEnum } &
+    canonSpecElement? &
 
     element dateCompleted {
       xsd:date |

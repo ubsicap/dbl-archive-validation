@@ -3,7 +3,7 @@ publicationsElement = # DCMI: tableOfContents
 
 publicationElement =
   element publication {
-  attribute id { xsd:integer },
+  attribute id { xsd:string { pattern = "[A-Za-z][A-Za-z0-9_\-]{0,31}" } },
   attribute default { xsd:boolean }?,
   publicationChildElements
   }
@@ -15,17 +15,14 @@ publicationChildElements = (
   element abbreviationLocal { lenGe2String }? &
   element description { lenGe2String }? &
   element descriptionLocal { lenGe2String }? &
-  publicationCountryElement? &
+  publicationCountriesElement? &
   element scope { scopeEnum }? &
+  canonSpecElement? &
   element canonicalContent { canonicalContentBook+} &
   element structure { (publicationStructureDivision | publicationStructureContent)+ }
 )
 
-publicationCountryElement = element country {
-  element iso { countryIsoString } &
-  element name { lenGe2String } &
-  element nameLocal { lenGe2String }?
-}
+publicationCountriesElement = element countries { countryElement+ }
 
 canonicalContentBook =
   element book {

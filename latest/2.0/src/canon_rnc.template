@@ -1,0 +1,59 @@
+canonSpecElement =
+    element canonSpec {
+        attribute type { canonTypes },
+        canonComponent+
+    }
+    
+canonTypes = "DC" | "NT" | "OT, DC, NT" | "OT, NT, DC" | "OT, NT" | "OT+, NT" | "OT" | "OT+"
+
+canonComponent =
+    element component { canonComponentEnum }
+    
+canonComponentEnum =
+    "armenianApostolicDC" |
+    "armenianApostolicOT" |
+    "armenianApostolicOT2" |
+    "armenianClassicalOT" |
+    "armenianNT" |
+    "catholicAndAnglicanDC" |
+    "catholicLxxDC" |
+    "catholicLxxOT" |
+    "catholicLxxSeparatedDC" |
+    "catholicPlusLutheranDC" |
+    "catholicVulgateDC" |
+    "catholicVulgateOT" |
+    "catholicVulgateSeparatedDC" |
+    "czechKralickaDC" |
+    "danishLutheranDC" |
+    "ethiopianOrthodoxDC" |
+    "ethiopianOrthodoxNT" |
+    "ethiopianOrthodoxOT" |
+    "ethiopianProtestantNT" |
+    "ethiopianProtestantOT" |
+    "georgianOrthodoxDC" |
+    "georgianOrthodoxOT" |
+    "georgianOrthodoxOT2" |
+    "georgianSynodalDC" |
+    "germanLutheranDC" |
+    "greekOrthodoxDC" |
+    "greekOrthodoxOT" |
+    "kjvDC" |
+    "kjvNonDC" |
+    "lutheranNT" |
+    "romanianOrthodoxDC" |
+    "romanianOrthodoxOT" |
+    "russianNT" |
+    "russianOrthodoxDC" |
+    "russianOrthodoxOT" |
+    "russianProtestantOT" |
+    "russianSynodalDC" |
+    "syriacNT" |
+    "syriacOT" |
+    "tanakhOT" |
+    "turkishInterconfessionalDC" |
+    "vulgateCatholicBible" |
+    "westernInterconfessionalDC" |
+    "westernInterconfessionalDC2" |
+    "westernNT" |
+    "westernOT" |
+    xsd:string { pattern = "X-[A-Za-z0-9][A-Za-z0-9\-]*" }
