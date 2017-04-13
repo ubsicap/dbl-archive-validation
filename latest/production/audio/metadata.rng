@@ -400,7 +400,9 @@
         <interleave>
           <ref name="m.language.iso"/>
           <ref name="m.language.name"/>
-          <ref name="m.language.nameLocal"/>
+          <optional>
+            <ref name="m.language.nameLocal"/>
+          </optional>
           <ref name="m.ldml"/>
           <ref name="m.rod"/>
         </interleave>

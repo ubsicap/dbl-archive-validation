@@ -6,9 +6,9 @@
   DBL text bundle version = 1.5
 -->
 <!--
-  - Suggested Dublin Core Metadata (DCMI) element/refinement relationships are 
+  - Suggested Dublin Core Metadata (DCMI) element/refinement relationships are
     added as documentation strings "## DCMI: "
-  - A syntax encoding scheme may be mentioned after the DCMI documentation in 
+  - A syntax encoding scheme may be mentioned after the DCMI documentation in
     parentheses; e.g. language/iso (ISO639-3)
   - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
 -->
@@ -393,7 +393,9 @@
         <interleave>
           <ref name="m.language.iso"/>
           <ref name="m.language.name"/>
-          <ref name="m.language.nameLocal"/>
+          <optional>
+            <ref name="m.language.nameLocal"/>
+          </optional>
           <ref name="m.ldml"/>
           <ref name="m.rod"/>
           <ref name="m.script"/>
