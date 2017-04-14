@@ -5,3 +5,5 @@ roleId = text
 canonicalBookIdEnum = text
 
 nonCanonicalBookIdEnum = text
+
+publicationId = text

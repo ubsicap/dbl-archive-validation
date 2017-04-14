@@ -10,3 +10,4 @@ lenGe2Le255String = text
 
 lenLe255String = text
 
+anyURI = text

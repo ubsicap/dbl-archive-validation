@@ -10,3 +10,5 @@ lenGe2Le255String = xsd:string { minLength = "2" maxLength = "255" pattern="\S.*
 
 lenLe255String = xsd:string { maxLength = "255" pattern="\S.*\S" }
 
+anyURI = xsd:anyURI
+

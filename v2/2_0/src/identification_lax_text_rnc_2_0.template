@@ -16,4 +16,8 @@ ptregId = text
 
 reapId = text
 
+dateCompletedValue = text
+
+scopeEnum = text
+
 %%insert generic_text_rnc_2_0.template%%

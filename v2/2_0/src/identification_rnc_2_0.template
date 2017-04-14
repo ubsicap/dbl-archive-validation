@@ -1,4 +1,4 @@
-# identifaction
+# identification
 
 identificationElement =
   element identification {
@@ -11,29 +11,10 @@ identificationElement =
     element scope { scopeEnum } &
     canonSpecElement? &
 
-    element dateCompleted {
-      xsd:date |
-      xsd:gYear |
-      xsd:gYearMonth |
-      xsd:dateTime
-    }? &
-    (gbcSystemId | ptSystemId | reapSystemId | biblicaSystemId | tmsSystemId | ptregSystemId)+ &
+    element dateCompleted { dateCompletedValue }? &
+    (gbcSystemId | ptSystemId | reapSystemId | biblicaSystemId | tmsSystemId | ptregSystemId)* &
     element bundleProducer { lenGe2String }
     }
-
-scopeEnum = (
-    "Bible" |
-    "Bible with Deuterocanon" |
-    "Deuterocanon" |
-    "New Testament" |
-    "New Testament+" |
-    "Old Testament" |
-    "Old Testament + Deuterocanon" |
-    "Old Testament+" |
-    "Portions" |
-    "Selections" |
-    "Shorter Bible"
-)
 
 gbcSystemId =
   element systemId {

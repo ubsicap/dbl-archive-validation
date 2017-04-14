@@ -137,12 +137,15 @@ commonElements = (
 dblMetadataCommonAtts = (
   attribute version { "2.0" } &
   attribute id { bundleIdString } &
-  attribute revision { xsd:integer | "null" }
+  attribute revision { revisionValue } &
+  attribute lax { xsd:boolean }?
 )
 
 # metadata text (lax)
 
 bundleIdString = text
+
+revisionValue = text
 
 # generic text (lax)
 
@@ -156,7 +159,9 @@ lenGe2Le255String = text
 
 lenLe255String = text
 
-# identifaction
+anyURI = text
+
+# identification
 
 identificationElement =
   element identification {
@@ -169,29 +174,10 @@ identificationElement =
     element scope { scopeEnum } &
     canonSpecElement? &
 
-    element dateCompleted {
-      xsd:date |
-      xsd:gYear |
-      xsd:gYearMonth |
-      xsd:dateTime
-    }? &
-    (gbcSystemId | ptSystemId | reapSystemId | biblicaSystemId | tmsSystemId | ptregSystemId)+ &
+    element dateCompleted { dateCompletedValue }? &
+    (gbcSystemId | ptSystemId | reapSystemId | biblicaSystemId | tmsSystemId | ptregSystemId)* &
     element bundleProducer { lenGe2String }
     }
-
-scopeEnum = (
-    "Bible" |
-    "Bible with Deuterocanon" |
-    "Deuterocanon" |
-    "New Testament" |
-    "New Testament+" |
-    "Old Testament" |
-    "Old Testament + Deuterocanon" |
-    "Old Testament+" |
-    "Portions" |
-    "Selections" |
-    "Shorter Bible"
-)
 
 gbcSystemId =
   element systemId {
@@ -262,59 +248,14 @@ canonSpecElement =
         canonComponent+
     }
 
-canonTypes = "DC" | "NT" | "OT, DC, NT" | "OT, NT, DC" | "OT, NT" | "OT+, NT" | "OT" | "OT+"
-
 canonComponent =
     element component { canonComponentEnum }
 
-canonComponentEnum =
-    "armenianApostolicDC" |
-    "armenianApostolicOT" |
-    "armenianApostolicOT2" |
-    "armenianClassicalOT" |
-    "armenianNT" |
-    "catholicAndAnglicanDC" |
-    "catholicLxxDC" |
-    "catholicLxxOT" |
-    "catholicLxxSeparatedDC" |
-    "catholicPlusLutheranDC" |
-    "catholicVulgateDC" |
-    "catholicVulgateOT" |
-    "catholicVulgateSeparatedDC" |
-    "czechKralickaDC" |
-    "danishLutheranDC" |
-    "ethiopianOrthodoxDC" |
-    "ethiopianOrthodoxNT" |
-    "ethiopianOrthodoxOT" |
-    "ethiopianProtestantNT" |
-    "ethiopianProtestantOT" |
-    "georgianOrthodoxDC" |
-    "georgianOrthodoxOT" |
-    "georgianOrthodoxOT2" |
-    "georgianSynodalDC" |
-    "germanLutheranDC" |
-    "greekOrthodoxDC" |
-    "greekOrthodoxOT" |
-    "kjvDC" |
-    "kjvNonDC" |
-    "lutheranNT" |
-    "romanianOrthodoxDC" |
-    "romanianOrthodoxOT" |
-    "russianNT" |
-    "russianOrthodoxDC" |
-    "russianOrthodoxOT" |
-    "russianProtestantOT" |
-    "russianSynodalDC" |
-    "syriacNT" |
-    "syriacOT" |
-    "tanakhOT" |
-    "turkishInterconfessionalDC" |
-    "vulgateCatholicBible" |
-    "westernInterconfessionalDC" |
-    "westernInterconfessionalDC2" |
-    "westernNT" |
-    "westernOT" |
-    xsd:string { pattern = "X-[A-Za-z0-9][A-Za-z0-9\-]*" }
+# canon (lax)
+
+canonTypes = text
+
+canonComponentEnum = text
 
 # identification text (lax)
 
@@ -333,6 +274,10 @@ ptId = text
 ptregId = text
 
 reapId = text
+
+dateCompletedValue = text
+
+scopeEnum = text
 
 # relationships
 
@@ -370,7 +315,7 @@ agenciesElement =
 rightsHolderElement =
   element rightsHolder {
     element abbr { lenGe2String } &
-    element url { xsd:anyURI } &
+    element url { anyURI } &
     element local { lenGe2String } &
     element uid { agenciesUID } &
     element name { lenGe2String }
@@ -378,7 +323,7 @@ rightsHolderElement =
 
 rightsAdminElement =
   element rightsAdmin {
-    element url { xsd:anyURI }? &
+    element url { anyURI }? &
     element uid { agenciesUID } &
     element name { lenGe2String }
   }
@@ -588,11 +533,7 @@ commonTextExpressionTypeElements = (
 )
 
 commonAudioExpressionTypeElements = (
-  element dramatization {
-    "Dramatized" |
-    "Non-Dramatized" |
-    "Single-Voice"
-  } &
+  element dramatization { audioTypeDramatizationEnum } &
   commonExpressionTypeElements
 )
 
@@ -614,19 +555,13 @@ commonTypeElements = (
   empty
 )
 
-translationTypeEnum = (
-  "First" |
-  "New" |
-  "Revision"
-)
+# type text (lax)
 
-translationLevelEnum = (
-  "Basic" |
-  "Common" |
-  "Common - Literary" |
-  "Literary" |
-  "Liturgical"
-)
+audioTypeDramatizationEnum = text
+
+translationTypeEnum = text
+
+translationLevelEnum = text
 
 # format
 
@@ -645,54 +580,22 @@ audioSubelements =
     element bitDepth { xsd:integer }? &
     element samplingRate { xsd:integer }?
 
-audioCompressionEnum = (
-  "MP3"  |
-  "FLAC" |
-  "WAV" |
-  "AAC"
-)
-
-audioTrackEnum = (
-    "1/0 (Mono)"   |
-    "Dual mono"    |
-    "2/0 (Stereo)" |
-    "5.1 Surround"
-)
-
 printFormatElement =
   element format {
     element pod { xsd:boolean } &
     element width { measurementString } &
     element height { measurementString } &
-    element scale { xsd:string { pattern = "[1-9][0-9]{1,3}%" } } &
+    element scale { percentageString } &
     element orientation { printOrientationEnum } &
     element color { printColorEnum } &
     element fonts { printFormatFontElement* }
   }
-
-printOrientationEnum = (
-  "portrait" |
-  "landscape"
-)
-
-printColorEnum = (
-  "CMYK" |
-  "RGB"
-)
 
 printFormatFontElement =
   element font {
     attribute type { printFontEnum },
     text
   }
-
-printFontEnum = (
-  "OpenType" |
-  "Other" |
-  "Bitmap" |
-  "TrueType" |
-  "Type1"
-)
 
 videoFormatElement =
   element format {
@@ -707,7 +610,7 @@ videoFormatVideoStream =
       element codec { xsd:string } &
       element bitRate { xsd:positiveInteger } &
       element frameRate { xsd:decimal } &
-      element screenResolution { xsd:string {pattern="[1-9][0-9]{0,3}x[1-9][0-9]{0,3}"} }
+      element screenResolution { screenResolution }
   }
 
 videoFormatAudioStream =
@@ -726,6 +629,18 @@ brailleFormatElement =
 measurementString = text
 
 percentageString = text
+
+screenResolution = text
+
+audioCompressionEnum = text
+
+audioTrackEnum = text
+
+printOrientationEnum = text
+
+printColorEnum = text
+
+printFontEnum = text
 
 # names
 
@@ -754,7 +669,7 @@ translationManifestElement =
 
 nonTranslationManifestContainer =
   element container {
-    attribute uri { xsd:anyURI },
+    attribute uri { anyURI },
     (nonTranslationManifestContainer | nonTranslationManifestResource)+
   }
 
@@ -765,7 +680,7 @@ nonTranslationManifestResource =
 
 translationManifestContainer =
   element container {
-    attribute uri { xsd:anyURI },
+    attribute uri { anyURI },
     (translationManifestContainer | translationManifestResource)+
   }
 
@@ -776,7 +691,7 @@ translationManifestResource =
   }
 
 commonManifestResourceAtts = (
-  attribute uri { xsd:anyURI},
+  attribute uri { anyURI},
   attribute size { xsd:integer },
   attribute checksum { s3Checksum }?,
   attribute mimeType { mimeTypeString }
@@ -821,7 +736,7 @@ publicationsElement = # DCMI: tableOfContents
 
 publicationElement =
   element publication {
-  attribute id { xsd:string { pattern = "[A-Za-z][A-Za-z0-9_\-]{0,31}" } },
+  attribute id { publicationId },
   attribute default { xsd:boolean }?,
   publicationChildElements
   }
@@ -869,6 +784,8 @@ canonicalBookIdEnum = text
 
 nonCanonicalBookIdEnum = text
 
+publicationId = text
+
 # copyright
 
 copyrightElement =
@@ -899,34 +816,35 @@ plainStatementContent =
 
 # html
 
-simplifiedHtml = (
+simplifiedHtml = shBlockElement+
+
+shBlockElement = (
     shP |
     shH1 |
     shH2 |
     shH3 |
     shUl |
     shOl |
-    shBlockquote |
-    shHtmlCharMarkup
+    shBlockquote
 )
 
-shP = element p { nonEmptyString* & shHtmlCharMarkup* }
+shP = element p { nonEmptyString* & shCharMarkup* }
 
-shH1 = element h1 { nonEmptyString* & shHtmlCharMarkup* }
+shH1 = element h1 { nonEmptyString* & shCharMarkup* }
 
-shH2 = element h2 { nonEmptyString* & shHtmlCharMarkup* }
+shH2 = element h2 { nonEmptyString* & shCharMarkup* }
 
-shH3 = element h3 { nonEmptyString* & shHtmlCharMarkup* }
+shH3 = element h3 { nonEmptyString* & shCharMarkup* }
 
 shOl = element ol { shLi+ }
 
 shUl = element ul { shLi+ }
 
-shLi = element li { nonEmptyString* & shHtmlCharMarkup* }
+shLi = element li { nonEmptyString* & shCharMarkup* }
 
-shBlockquote = element blockquote { nonEmptyString* & shHtmlCharMarkup* }
+shBlockquote = element blockquote { shBlockElement+ }
 
-shHtmlCharMarkup = (
+shCharMarkup = (
   shA |
   shImg |
   shBr |
@@ -938,25 +856,25 @@ shHtmlCharMarkup = (
 
 shA =
   element a {
-    attribute href { xsd:anyURI },
-    (nonEmptyString* & shHtmlCharMarkup* )
+    attribute href { anyURI },
+    (nonEmptyString* & shCharMarkup* )
   }
 
 shImg =
   element img {
-    attribute src { xsd:anyURI },
+    attribute src { anyURI },
     attribute alt { lenGe1String }
   }
 
 shBr = element br { empty }
 
-shStrong = element strong { nonEmptyString* & shHtmlCharMarkup* }
+shStrong = element strong { nonEmptyString* & shCharMarkup* }
 
-shB = element b { nonEmptyString* & shHtmlCharMarkup* }
+shB = element b { nonEmptyString* & shCharMarkup* }
 
-shEm = element em { nonEmptyString* & shHtmlCharMarkup* }
+shEm = element em { nonEmptyString* & shCharMarkup* }
 
-shI = element i { nonEmptyString* & shHtmlCharMarkup* }
+shI = element i { nonEmptyString* & shCharMarkup* }
 
 # promotion
 

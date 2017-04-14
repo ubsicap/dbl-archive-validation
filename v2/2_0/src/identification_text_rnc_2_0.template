@@ -14,6 +14,22 @@ ptId = xsd:string { pattern = "[0-9a-f]{40}" }
 
 ptregId = xsd:string { pattern = "[0-9a-zA-Z]{17}" }
 
-reapId = xsd:anyURI
+reapId = anyURI
+
+dateCompletedValue = xsd:date | xsd:gYear | xsd:gYearMonth | xsd:dateTime
+
+scopeEnum = (
+    "Bible" |
+    "Bible with Deuterocanon" |
+    "Deuterocanon" |
+    "New Testament" |
+    "New Testament+" |
+    "Old Testament" |
+    "Old Testament + Deuterocanon" |
+    "Old Testament+" |
+    "Portions" |
+    "Selections" |
+    "Shorter Bible"
+)
 
 %%insert generic_text_rnc_2_0.template%%

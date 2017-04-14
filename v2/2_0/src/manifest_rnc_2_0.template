@@ -8,7 +8,7 @@ translationManifestElement =
 
 nonTranslationManifestContainer =
   element container {
-    attribute uri { xsd:anyURI },
+    attribute uri { anyURI },
     (nonTranslationManifestContainer | nonTranslationManifestResource)+
   }
 
@@ -19,7 +19,7 @@ nonTranslationManifestResource =
 
 translationManifestContainer =
   element container {
-    attribute uri { xsd:anyURI },
+    attribute uri { anyURI },
     (translationManifestContainer | translationManifestResource)+
   }
 
@@ -30,7 +30,7 @@ translationManifestResource =
   }
 
 commonManifestResourceAtts = (
-  attribute uri { xsd:anyURI},
+  attribute uri { anyURI},
   attribute size { xsd:integer },
   attribute checksum { s3Checksum }?,
   attribute mimeType { mimeTypeString }

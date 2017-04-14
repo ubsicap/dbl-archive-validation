@@ -143,3 +143,5 @@ nonCanonicalBookIdEnum = (
   "TDX" | # Topical Index
   "NDX"   # Names Index
 )
+
+publicationId = xsd:string { pattern = "[A-Za-z][A-Za-z0-9_\-]{0,31}" }

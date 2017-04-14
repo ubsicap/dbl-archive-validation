@@ -137,7 +137,8 @@ commonElements = (
 dblMetadataCommonAtts = (
   attribute version { "2.0" } &
   attribute id { bundleIdString } &
-  attribute revision { xsd:integer | "null" }
+  attribute revision { revisionValue } &
+  attribute lax { xsd:boolean }?
 )
 
 %%insert metadata_text_rnc_2_0.template%%

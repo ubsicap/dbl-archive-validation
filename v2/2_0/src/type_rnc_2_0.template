@@ -129,11 +129,7 @@ commonTextExpressionTypeElements = (
 )
 
 commonAudioExpressionTypeElements = (
-  element dramatization {
-    "Dramatized" |
-    "Non-Dramatized" |
-    "Single-Voice"
-  } &
+  element dramatization { audioTypeDramatizationEnum } &
   commonExpressionTypeElements
 )
 
@@ -155,16 +151,4 @@ commonTypeElements = (
   empty
 )
 
-translationTypeEnum = (
-  "First" |
-  "New" |
-  "Revision"
-)
-
-translationLevelEnum = (
-  "Basic" |
-  "Common" |
-  "Common - Literary" |
-  "Literary" |
-  "Liturgical"
-)
+%%insert type_text_rnc_2_0.template%%

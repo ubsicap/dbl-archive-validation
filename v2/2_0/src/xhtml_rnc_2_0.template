@@ -1,33 +1,34 @@
 # html
 
-simplifiedHtml = (
+simplifiedHtml = shBlockElement+
+
+shBlockElement = (
     shP |
     shH1 |
     shH2 |
     shH3 |
     shUl |
     shOl |
-    shBlockquote |
-    shHtmlCharMarkup
+    shBlockquote
 )
 
-shP = element p { nonEmptyString* & shHtmlCharMarkup* }
+shP = element p { nonEmptyString* & shCharMarkup* }
 
-shH1 = element h1 { nonEmptyString* & shHtmlCharMarkup* }
+shH1 = element h1 { nonEmptyString* & shCharMarkup* }
 
-shH2 = element h2 { nonEmptyString* & shHtmlCharMarkup* }
+shH2 = element h2 { nonEmptyString* & shCharMarkup* }
 
-shH3 = element h3 { nonEmptyString* & shHtmlCharMarkup* }
+shH3 = element h3 { nonEmptyString* & shCharMarkup* }
 
 shOl = element ol { shLi+ }
 
 shUl = element ul { shLi+ }
 
-shLi = element li { nonEmptyString* & shHtmlCharMarkup* }
+shLi = element li { nonEmptyString* & shCharMarkup* }
 
-shBlockquote = element blockquote { nonEmptyString* & shHtmlCharMarkup* }
+shBlockquote = element blockquote { shBlockElement+ }
 
-shHtmlCharMarkup = (
+shCharMarkup = (
   shA |
   shImg |
   shBr |
@@ -39,24 +40,24 @@ shHtmlCharMarkup = (
 
 shA =
   element a {
-    attribute href { xsd:anyURI },
-    (nonEmptyString* & shHtmlCharMarkup* )
+    attribute href { anyURI },
+    (nonEmptyString* & shCharMarkup* )
   }
 
 shImg =
   element img {
-    attribute src { xsd:anyURI },
+    attribute src { anyURI },
     attribute alt { lenGe1String }
   }
 
 shBr = element br { empty }
 
-shStrong = element strong { nonEmptyString* & shHtmlCharMarkup* }
+shStrong = element strong { nonEmptyString* & shCharMarkup* }
 
-shB = element b { nonEmptyString* & shHtmlCharMarkup* }
+shB = element b { nonEmptyString* & shCharMarkup* }
 
-shEm = element em { nonEmptyString* & shHtmlCharMarkup* }
+shEm = element em { nonEmptyString* & shCharMarkup* }
 
-shI = element i { nonEmptyString* & shHtmlCharMarkup* }
+shI = element i { nonEmptyString* & shCharMarkup* }
 
 %%insert generic_text_rnc_2_0.template%%
