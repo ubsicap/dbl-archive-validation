@@ -12,12 +12,15 @@ parser.add_argument("input", type=str, help="input file")
 parser.add_argument("output", type=str, help="output file")
 parser.add_argument("--lax", dest="lax", help="lax text", action="store_true")
 parser.add_argument("--strict", dest="lax", help="strict text", action="store_false")
-parser.set_defaults(lax=False)
+parser.add_argument("--verbose", dest="verbose", help="verbose", action="store_true")
+parser.add_argument("--quiet", dest="verbose", help="quiet", action="store_false")
+parser.set_defaults(lax=False, verbose=True)
 args = parser.parse_args()
 
 inputFilename = args.input
 outputFilename = args.output
 lax = args.lax
+verbose = args.verbose
 fileContents = ""
 directory = os.path.dirname(os.path.realpath(__file__))
 
@@ -30,7 +33,8 @@ with open(inputFilename, 'r') as inputFileHandle:
    while match:
       insertFilename = match.group(1)
       if insertFilename in inserted:
-         print "   " + "skipping " + insertFilename + " (already inserted)"
+         if verbose:
+            print "   " + "skipping " + insertFilename + " (already inserted)"
          fileContents = re.sub(match.group(0), "", fileContents, count=1)
       else:
          inserted[insertFilename] = True
@@ -38,8 +42,9 @@ with open(inputFilename, 'r') as inputFileHandle:
             insertFilename = re.sub("_text_", "_lax_text_", insertFilename)
          if not(os.path.exists(os.path.join(directory, insertFilename))):
             print("ERROR: could not find file '{0}' during insert".format(insertFilename))
-            sys.exit(1) 
-         print "   " + "inserting " + insertFilename
+            sys.exit(1)
+         if verbose:   
+            print "   " + "inserting " + insertFilename
          fileContents = re.sub(match.group(0), open(os.path.join(directory, insertFilename), "r").read(), fileContents, count=1)
       match = re.search(subRE, fileContents)
 
