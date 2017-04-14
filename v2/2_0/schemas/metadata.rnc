@@ -156,9 +156,6 @@ lenGe2Le255String = xsd:string { minLength = "2" maxLength = "255" pattern="\S.*
 
 lenLe255String = xsd:string { maxLength = "255" pattern="\S.*\S" }
 
-
-
-
 # identifaction
 
 identificationElement =
@@ -264,12 +261,12 @@ canonSpecElement =
         attribute type { canonTypes },
         canonComponent+
     }
-    
+
 canonTypes = "DC" | "NT" | "OT, DC, NT" | "OT, NT, DC" | "OT, NT" | "OT+, NT" | "OT" | "OT+"
 
 canonComponent =
     element component { canonComponentEnum }
-    
+
 canonComponentEnum =
     "armenianApostolicDC" |
     "armenianApostolicOT" |
@@ -337,10 +334,6 @@ ptregId = xsd:string { pattern = "[0-9a-zA-Z]{17}" }
 
 reapId = xsd:anyURI
 
-
-
-
-
 # relationships
 
 relationshipsElement =
@@ -364,8 +357,6 @@ expressionRelationElement =
     attribute revision { xsd:integer }
   }
 
-
-
 # agencies
 
 agenciesElement =
@@ -384,7 +375,6 @@ rightsHolderElement =
     element uid { agenciesUID } &
     element name { lenGe2String }
   }
-
 
 rightsAdminElement =
   element rightsAdmin {
@@ -413,10 +403,6 @@ etenPartnerElement =
 # agencies text
 
 agenciesUID = xsd:string { pattern = "[a-f0-9]{24}" }
-
-
-
-
 
 # language
 
@@ -657,10 +643,6 @@ numeralSystemEnum = (
   "Tibetan"
 )
 
-
-
-
-
 # country
 
 countriesElement = element countries { countryElement+ }
@@ -674,7 +656,6 @@ countryElement = element country {
 # country text
 
 countryIsoString = xsd:string { pattern = "[A-Z][A-Z]" }
-
 
 # type
 
@@ -847,7 +828,6 @@ translationLevelEnum = (
   "Liturgical"
 )
 
-
 # format
 
 textFormatElement =
@@ -857,8 +837,8 @@ textFormatElement =
 
 audioFormatElement = # DCMI: format
   element format { audioSubelements}
-  
-audioSubelements = 
+
+audioSubelements =
     element compression { audioCompressionEnum }? &
     element trackConfiguration { audioTrackEnum }? &
     element bitRate { xsd:integer }? &
@@ -932,7 +912,7 @@ videoFormatVideoStream =
 
 videoFormatAudioStream =
   element audioStream { audioSubelements }
- 
+
 videoFormatSubtitleStream = element subtitleStream { empty }
 
 brailleFormatElement =
@@ -946,8 +926,6 @@ brailleFormatElement =
 measurementString = xsd:string { pattern = "[1-9][0-9]{1,4}mm" }
 
 percentageString = xsd:string { pattern = "[1-9][0-9]{1,3}%" }
-
-
 
 # names
 
@@ -965,8 +943,6 @@ namesName =
 # name text
 
 nameIdString = xsd:string { pattern = "[A-Za-z][\-A-Za-z0-9_]+" }
-
-
 
 # manifest
 
@@ -1012,9 +988,6 @@ s3Checksum = xsd:string { pattern = "[a-f0-9]{32}(\-\d+)?" }
 
 mimeTypeString = xsd:string { pattern = "[\-a-z0-9]+/[\-a-z0-9+]+" }
 
-
-
-
 # source
 
 translationSourceElement =
@@ -1040,8 +1013,6 @@ sourceStructureContent =
 # source text
 
 srcPathString = xsd:string { pattern = "[A-Za-z0-9][\-A-Za-z0-9_\.]+(/[A-Za-z0-9][\-A-Za-z0-9_\.]+)*" }
-
-
 
 # publications
 
@@ -1089,7 +1060,6 @@ publicationStructureContent =
     attribute src {srcPathString} &
     attribute role {roleId}?
   }
-
 
 # publications text
 
@@ -1237,7 +1207,6 @@ nonCanonicalBookIdEnum = (
   "NDX"   # Names Index
 )
 
-
 # copyright
 
 copyrightElement =
@@ -1251,7 +1220,7 @@ copyrightFullStatementElement =
 
 copyrightShortStatementElement =
   element shortStatement { statementContent+ }
-  
+
 statementContent = htmlStatementContent | plainStatementContent
 
 htmlStatementContent =
@@ -1259,7 +1228,7 @@ htmlStatementContent =
     attribute contentType { "xhtml" },
     simplifiedHtml+
   }
-  
+
 plainStatementContent =
   element statementContent {
     attribute contentType { "plain" },
@@ -1327,10 +1296,6 @@ shEm = element em { nonEmptyString* & shHtmlCharMarkup* }
 
 shI = element i { nonEmptyString* & shHtmlCharMarkup* }
 
-
-
-
-
 # promotion
 
 promotionElement =
@@ -1340,9 +1305,6 @@ promotionElement =
       simplifiedHtml+
     }
   }
-
-
-
 
 # archive_status
 

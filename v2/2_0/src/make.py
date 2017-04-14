@@ -13,6 +13,7 @@ outputFilename = sys.argv[2]
 fileContents = ""
 directory = os.path.dirname(os.path.realpath(__file__))
 
+# Do repeated substitution, avoiding duplicates
 inserted = {}
 subRE = re.compile(r"%%insert ([A-Za-z0-9_.-]+)%%")
 with open(inputFilename, 'r') as inputFileHandle:
@@ -29,5 +30,10 @@ with open(inputFilename, 'r') as inputFileHandle:
          fileContents = re.sub(match.group(0), open(os.path.join(directory, insertFilename), "r").read(), fileContents, count=1)
       match = re.search(subRE, fileContents)
 
+# Tidy whitespace
+fileContents = re.sub(" +\n", "\n", fileContents)
+fileContents = re.sub("\n( *\n)+", "\n\n", fileContents)
+
+# Write out completed schema
 with open(outputFilename, 'w') as outputFileHandle:
    outputFileHandle.write(fileContents)
