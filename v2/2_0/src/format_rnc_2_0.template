@@ -91,3 +91,4 @@ brailleFormatElement =
     element libLouisConfig { xsd:string }
   }
 
+%%insert format_text_rnc_2_0.template%%

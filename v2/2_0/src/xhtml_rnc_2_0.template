@@ -1,0 +1,62 @@
+# html
+
+simplifiedHtml = (
+    shP |
+    shH1 |
+    shH2 |
+    shH3 |
+    shUl |
+    shOl |
+    shBlockquote |
+    shHtmlCharMarkup
+)
+
+shP = element p { nonEmptyString* & shHtmlCharMarkup* }
+
+shH1 = element h1 { nonEmptyString* & shHtmlCharMarkup* }
+
+shH2 = element h2 { nonEmptyString* & shHtmlCharMarkup* }
+
+shH3 = element h3 { nonEmptyString* & shHtmlCharMarkup* }
+
+shOl = element ol { shLi+ }
+
+shUl = element ul { shLi+ }
+
+shLi = element li { nonEmptyString* & shHtmlCharMarkup* }
+
+shBlockquote = element blockquote { nonEmptyString* & shHtmlCharMarkup* }
+
+shHtmlCharMarkup = (
+  shA |
+  shImg |
+  shBr |
+  shStrong |
+  shB |
+  shEm |
+  shI
+)
+
+shA =
+  element a {
+    attribute href { xsd:anyURI },
+    (nonEmptyString* & shHtmlCharMarkup* )
+  }
+
+shImg =
+  element img {
+    attribute src { xsd:anyURI },
+    attribute alt { lenGe1String }
+  }
+
+shBr = element br { empty }
+
+shStrong = element strong { nonEmptyString* & shHtmlCharMarkup* }
+
+shB = element b { nonEmptyString* & shHtmlCharMarkup* }
+
+shEm = element em { nonEmptyString* & shHtmlCharMarkup* }
+
+shI = element i { nonEmptyString* & shHtmlCharMarkup* }
+
+%%insert generic_text_rnc_2_0.template%%

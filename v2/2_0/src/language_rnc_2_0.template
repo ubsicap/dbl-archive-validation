@@ -23,32 +23,4 @@ commonLanguageElements = (
     element numerals { numeralSystemEnum }?
 )
 
-languageScriptDirectionEnum = (
-  "LTR" | # Left to Right
-  "RTL"   # RTL (Right to Left)
-)
-
-numeralSystemEnum = (
-  "Arabic" | # (a.k.a. 'Hindu') = 0123456789
-  "Bengali" |
-  "Burmese" |
-  "Chinese" |
-  "Cyrillic" |
-  "Devanagari" |
-  "Ethiopic" |
-  "Farsi" |
-  "Gujarati" |
-  "Gurmukhi" |
-  "Hebrew" |
-  "Hindi" | # (i.e. 'Arabic' as used in Egypt)
-  "Kannada" |
-  "Khmer" |
-  "Malayalam" |
-  "Roman" |
-  "Oriya" |
-  "Roman" |
-  "Tamil" |
-  "Telugu" |
-  "Thai" |
-  "Tibetan"
-)
+%%insert language_text_rnc_2_0.template%%

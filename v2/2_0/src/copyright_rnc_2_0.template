@@ -24,4 +24,6 @@ plainStatementContent =
   element statementContent {
     attribute contentType { "plain" },
     text
-  }  
+  }
+
+%%insert xhtml_rnc_2_0.template%%

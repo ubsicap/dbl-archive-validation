@@ -1,0 +1,19 @@
+# identification text
+
+abbreviationString = xsd:string { pattern = "[\-A-Za-z0-9]{2,12}" }
+
+localAbbreviationString = xsd:string { minLength = "2" maxLength = "12" pattern="\S.*\S" }
+
+biblicaId = xsd:string { pattern = "[1-9][0-9]{0,4}" }
+
+gbcId = xsd:string { pattern = "[0-9a-f]{24}" }
+
+tmsId = xsd:string { pattern = "[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}" }
+
+ptId = xsd:string { pattern = "[0-9a-f]{40}" }
+
+ptregId = xsd:string { pattern = "[0-9a-zA-Z]{17}" }
+
+reapId = xsd:anyURI
+
+%%insert generic_text_rnc_2_0.template%%

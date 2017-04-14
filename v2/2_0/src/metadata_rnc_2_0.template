@@ -140,6 +140,8 @@ dblMetadataCommonAtts = (
   attribute revision { xsd:integer | "null" }
 )
 
+%%insert metadata_text_rnc_2_0.template%%
+
 %%insert identification_rnc_2_0.template%%
 
 %%insert relationships_rnc_2_0.template%%
@@ -162,12 +164,8 @@ dblMetadataCommonAtts = (
 
 %%insert publications_rnc_2_0.template%%
 
-%%insert canon_rnc_2_0.template%%
-
 %%insert copyright_rnc_2_0.template%%
 
 %%insert promotion_rnc_2_0.template%%
 
 %%insert archive_status_rnc_2_0.template%%
-
-%%insert datatypes_rnc_2_0.template%%

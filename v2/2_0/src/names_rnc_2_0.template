@@ -10,3 +10,5 @@ namesName =
     element short { lenGe2Le255String } &
     element abbr { lenGe2Le255String }?
   }
+
+%%insert names_text_rnc_2_0.template%%

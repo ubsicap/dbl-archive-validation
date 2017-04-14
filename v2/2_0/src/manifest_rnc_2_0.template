@@ -35,3 +35,5 @@ commonManifestResourceAtts = (
   attribute checksum { s3Checksum }?,
   attribute mimeType { mimeTypeString }
 )
+
+%%insert manifest_text_rnc_2_0.template%%

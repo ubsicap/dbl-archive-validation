@@ -95,3 +95,7 @@ biblicaSystemId =
 
 biblicaElements =
   element id { biblicaId }
+
+%%insert canon_rnc_2_0.template%%
+
+%%insert identification_text_rnc_2_0.template%%

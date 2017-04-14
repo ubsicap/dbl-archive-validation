@@ -44,3 +44,6 @@ publicationStructureContent =
     attribute src {srcPathString} &
     attribute role {roleId}?
   }
+
+%%insert canon_rnc_2_0.template%%
+%%insert publications_text_rnc_2_0.template%%

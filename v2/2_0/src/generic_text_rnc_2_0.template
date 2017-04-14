@@ -1,0 +1,12 @@
+# generic text
+
+nonEmptyString = text
+
+lenGe1String = xsd:string { minLength = "1" pattern="\S(.*\S)?" }
+
+lenGe2String = xsd:string { minLength = "2" pattern="\S.*\S" }
+
+lenGe2Le255String = xsd:string { minLength = "2" maxLength = "255" pattern="\S.*\S" }
+
+lenLe255String = xsd:string { maxLength = "255" pattern="\S.*\S" }
+
