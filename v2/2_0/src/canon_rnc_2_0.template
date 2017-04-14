@@ -1,3 +1,5 @@
+# canon
+
 canonSpecElement =
     element canonSpec {
         attribute type { canonTypes },

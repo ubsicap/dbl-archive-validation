@@ -1,3 +1,5 @@
+# type
+
 textTranslationTypeElement =
   element type {
     element medium { "text" } &

@@ -140,6 +140,8 @@ dblMetadataCommonAtts = (
   attribute revision { xsd:integer | "null" }
 )
 
+# identifaction
+
 identificationElement =
   element identification {
     element name { lenGe2String } &
@@ -237,6 +239,8 @@ biblicaElements =
   element id { biblicaId }
 
 
+# relationships
+
 relationshipsElement =
   element relationships {
     (sourceRelationElement | expressionRelationElement)*
@@ -259,6 +263,8 @@ expressionRelationElement =
   }
 
 
+
+# agencies
 
 agenciesElement =
   element agencies {
@@ -301,6 +307,8 @@ etenPartnerElement =
     element uid { lenGe2String }? &
     element name { lenGe2String }?
   }
+
+# language
 
 fullLanguageElement =
   element language {
@@ -356,6 +364,8 @@ numeralSystemEnum = (
 )
 
 
+# country
+
 countriesElement = element countries { countryElement+ }
 
 countryElement = element country {
@@ -364,6 +374,8 @@ countryElement = element country {
   element nameLocal { lenGe2String }?
 }
 
+
+# type
 
 textTranslationTypeElement =
   element type {
@@ -535,6 +547,8 @@ translationLevelEnum = (
 )
 
 
+# format
+
 textFormatElement =
   element format {
     element versedParagraphs { xsd:boolean }
@@ -628,6 +642,8 @@ brailleFormatElement =
 
 
 
+# names
+
 namesElement =
   element names { namesName* }
 
@@ -639,6 +655,8 @@ namesName =
     element abbr { lenGe2Le255String }?
   }
 
+
+# manifest
 
 nonTranslationManifestElement =
   element manifest { (nonTranslationManifestContainer | nonTranslationManifestResource)+ }
@@ -677,6 +695,8 @@ commonManifestResourceAtts = (
 )
 
 
+ # source
+
 translationSourceElement =
   element source {
     empty |
@@ -697,6 +717,8 @@ sourceStructureContent =
     attribute role {roleId}?
   }
 
+
+# publications
 
 publicationsElement = # DCMI: tableOfContents
   element publications { publicationElement* }
@@ -743,6 +765,8 @@ publicationStructureContent =
     attribute role {roleId}?
   }
 
+
+# canon
 
 canonSpecElement =
     element canonSpec {
@@ -804,6 +828,8 @@ canonComponentEnum =
     "westernOT" |
     xsd:string { pattern = "X-[A-Za-z0-9][A-Za-z0-9\-]*" }
 
+# copyright
+
 copyrightElement =
   element copyright {
     copyrightFullStatementElement &
@@ -830,6 +856,8 @@ plainStatementContent =
     text
   }  
 
+# promotion
+
 promotionElement =
   element promotion {
     element promoVersionInfo {
@@ -839,6 +867,8 @@ promotionElement =
   }
 
 
+
+# archive_status
 
 archiveStatusElement =
   element archiveStatus {
@@ -850,7 +880,9 @@ archiveStatusElement =
   }
 
 
-  simplifiedHtml = (
+# datatypes
+
+simplifiedHtml = (
     shP |
     shH1 |
     shH2 |

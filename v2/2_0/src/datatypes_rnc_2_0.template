@@ -1,4 +1,6 @@
-  simplifiedHtml = (
+# datatypes
+
+simplifiedHtml = (
     shP |
     shH1 |
     shH2 |

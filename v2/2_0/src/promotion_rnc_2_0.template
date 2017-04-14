@@ -1,3 +1,5 @@
+# promotion
+
 promotionElement =
   element promotion {
     element promoVersionInfo {

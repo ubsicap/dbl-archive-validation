@@ -1,3 +1,5 @@
+# archive_status
+
 archiveStatusElement =
   element archiveStatus {
     element bundleCreatorName {lenGe2String}? &
