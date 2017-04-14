@@ -1,15 +1,23 @@
 #!/usr/bin/env python
 
+import argparse
 import sys
 import re
 import os
 
-if len(sys.argv) != 3:
-   print("USAGE: python " + sys.argv[0] + " <inputFilePath> <outputFilePath>")
-   sys.exit(1)
+# Check cli args
 
-inputFilename = sys.argv[1]
-outputFilename = sys.argv[2]
+parser = argparse.ArgumentParser(description="Assemble RelaxNG compact schema from components")
+parser.add_argument("input", type=str, help="input file")
+parser.add_argument("output", type=str, help="output file")
+parser.add_argument("--lax", dest="lax", help="lax text", action="store_true")
+parser.add_argument("--strict", dest="lax", help="strict text", action="store_false")
+parser.set_defaults(lax=False)
+args = parser.parse_args()
+
+inputFilename = args.input
+outputFilename = args.output
+lax = args.lax
 fileContents = ""
 directory = os.path.dirname(os.path.realpath(__file__))
 
@@ -26,6 +34,11 @@ with open(inputFilename, 'r') as inputFileHandle:
          fileContents = re.sub(match.group(0), "", fileContents, count=1)
       else:
          inserted[insertFilename] = True
+         if lax:
+            insertFilename = re.sub("_text_", "_lax_text_", insertFilename)
+         if not(os.path.exists(os.path.join(directory, insertFilename))):
+            print("ERROR: could not find file '{0}' during insert".format(insertFilename))
+            sys.exit(1) 
          print "   " + "inserting " + insertFilename
          fileContents = re.sub(match.group(0), open(os.path.join(directory, insertFilename), "r").read(), fileContents, count=1)
       match = re.search(subRE, fileContents)
