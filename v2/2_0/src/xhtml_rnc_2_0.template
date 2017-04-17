@@ -24,7 +24,7 @@ shOl = element ol { shLi+ }
 
 shUl = element ul { shLi+ }
 
-shLi = element li { nonEmptyString* & shCharMarkup* }
+shLi = element li { nonEmptyString* & shCharMarkup* & shBlockElement }
 
 shBlockquote = element blockquote { shBlockElement+ }
 

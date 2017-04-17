@@ -3,14 +3,16 @@
 fullLanguageElement =
   element language {
     commonLanguageElements &
-    element script { iso15924String } &
+    element scriptCode { iso15924String } &
+    element script { lenGe2String } &
     element scriptDirection { languageScriptDirectionEnum }
   }
 
 shortLanguageElement =
   element language {
     commonLanguageElements &
-    element script { iso15924String }? &
+    element scriptCode { iso15924String }? &
+    element script { lenGe2String }? &
     element scriptDirection { languageScriptDirectionEnum }?
     }
 

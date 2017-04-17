@@ -12,7 +12,6 @@ echo "   metadata-lax.rnc"
 ./makeRNC.py --mode lax --quiet $srcDir/src/metadata_rnc_2_0.template $srcDir/schemas/metadata-lax.rnc
 echo "   metadata-upload.rnc"
 ./makeRNC.py --mode upload --quiet $srcDir/src/metadata_rnc_2_0.template $srcDir/schemas/metadata-upload.rnc
-
 echo "   dbl-xhtml.rnc"
 ./makeRNC.py --quiet $srcDir/src/xhtml_standalone_rnc_2_0.template $srcDir/schemas/dbl-xhtml.rnc
 

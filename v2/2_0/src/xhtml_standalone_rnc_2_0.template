@@ -1,5 +1,4 @@
 # Standalone xhtml schema
-# Generated from templates
 
 start = element * { simplifiedHtml }
 

@@ -1,5 +1,4 @@
-# metadata.rnc
-# Generated from templates
+# metadata schema
 
 default namespace = ""
 namespace a = "http://relaxng.org/ns/compatibility/annotations/1.0"
