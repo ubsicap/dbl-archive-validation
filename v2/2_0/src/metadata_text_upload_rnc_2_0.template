@@ -1,6 +1,6 @@
-# metadata text
+# metadata text (upload)
 
-revisionValue = xsd:integer
+revisionValue = text
 
 bundleIdString = xsd:string { pattern = "[a-f0-9]{16}" }
 

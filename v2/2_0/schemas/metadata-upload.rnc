@@ -141,9 +141,9 @@ dblMetadataCommonAtts = (
   attribute lax { xsd:boolean }?
 )
 
-# metadata text
+# metadata text (upload)
 
-revisionValue = xsd:integer
+revisionValue = text
 
 bundleIdString = xsd:string { pattern = "[a-f0-9]{16}" }
 
@@ -1321,8 +1321,8 @@ archiveStatusElement =
   element archiveStatus {
     element bundleCreatorName {lenGe2String}? &
     element archivistName { lenGe2String } &
-    element dateArchived { xsd:dateTime } &
-    element dateUpdated { xsd:dateTime } &
+    element dateArchived { text } &
+    element dateUpdated { text } &
     element comments { lenLe255String }
   }
 

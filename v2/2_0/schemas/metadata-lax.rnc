@@ -251,7 +251,7 @@ canonSpecElement =
 canonComponent =
     element component { canonComponentEnum }
 
-# canon (lax)
+# canon text (lax)
 
 canonTypes = text
 
@@ -892,8 +892,8 @@ archiveStatusElement =
   element archiveStatus {
     element bundleCreatorName {lenGe2String}? &
     element archivistName { lenGe2String } &
-    element dateArchived { xsd:dateTime | "null" } &
-    element dateUpdated { xsd:dateTime | "null" } &
+    element dateArchived { xsd:dateTime } &
+    element dateUpdated { xsd:dateTime } &
     element comments { lenLe255String }
   }
 
