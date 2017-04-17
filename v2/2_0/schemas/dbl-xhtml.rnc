@@ -1,0 +1,81 @@
+# Standalone xhtml schema
+# Generated from templates
+
+start = element * { simplifiedHtml }
+
+# html
+
+simplifiedHtml = shBlockElement+
+
+shBlockElement = (
+    shP |
+    shH1 |
+    shH2 |
+    shH3 |
+    shUl |
+    shOl |
+    shBlockquote
+)
+
+shP = element p { nonEmptyString* & shCharMarkup* }
+
+shH1 = element h1 { nonEmptyString* & shCharMarkup* }
+
+shH2 = element h2 { nonEmptyString* & shCharMarkup* }
+
+shH3 = element h3 { nonEmptyString* & shCharMarkup* }
+
+shOl = element ol { shLi+ }
+
+shUl = element ul { shLi+ }
+
+shLi = element li { nonEmptyString* & shCharMarkup* }
+
+shBlockquote = element blockquote { shBlockElement+ }
+
+shCharMarkup = (
+  shA |
+  shImg |
+  shBr |
+  shStrong |
+  shB |
+  shEm |
+  shI
+)
+
+shA =
+  element a {
+    attribute href { anyURI },
+    (nonEmptyString* & shCharMarkup* )
+  }
+
+shImg =
+  element img {
+    attribute src { anyURI },
+    attribute alt { lenGe1String }
+  }
+
+shBr = element br { empty }
+
+shStrong = element strong { nonEmptyString* & shCharMarkup* }
+
+shB = element b { nonEmptyString* & shCharMarkup* }
+
+shEm = element em { nonEmptyString* & shCharMarkup* }
+
+shI = element i { nonEmptyString* & shCharMarkup* }
+
+# generic text
+
+nonEmptyString = text
+
+lenGe1String = xsd:string { minLength = "1" pattern="\S(.*\S)?" }
+
+lenGe2String = xsd:string { minLength = "2" pattern="\S.*\S" }
+
+lenGe2Le255String = xsd:string { minLength = "2" maxLength = "255" pattern="\S.*\S" }
+
+lenLe255String = xsd:string { maxLength = "255" pattern="\S.*\S" }
+
+anyURI = xsd:anyURI
+

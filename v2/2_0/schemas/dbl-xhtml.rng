@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<grammar xmlns="http://relaxng.org/ns/structure/1.0" datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes">
+  <!--
+    Standalone xhtml schema
+    Generated from templates
+  -->
+  <start>
+    <element>
+      <anyName/>
+      <ref name="simplifiedHtml"/>
+    </element>
+  </start>
+  <!-- html -->
+  <define name="simplifiedHtml">
+    <oneOrMore>
+      <ref name="shBlockElement"/>
+    </oneOrMore>
+  </define>
+  <define name="shBlockElement">
+    <choice>
+      <ref name="shP"/>
+      <ref name="shH1"/>
+      <ref name="shH2"/>
+      <ref name="shH3"/>
+      <ref name="shUl"/>
+      <ref name="shOl"/>
+      <ref name="shBlockquote"/>
+    </choice>
+  </define>
+  <define name="shP">
+    <element name="p">
+      <interleave>
+        <zeroOrMore>
+          <ref name="nonEmptyString"/>
+        </zeroOrMore>
+        <zeroOrMore>
+          <ref name="shCharMarkup"/>
+        </zeroOrMore>
+      </interleave>
+    </element>
+  </define>
+  <define name="shH1">
+    <element name="h1">
+      <interleave>
+        <zeroOrMore>
+          <ref name="nonEmptyString"/>
+        </zeroOrMore>
+        <zeroOrMore>
+          <ref name="shCharMarkup"/>
+        </zeroOrMore>
+      </interleave>
+    </element>
+  </define>
+  <define name="shH2">
+    <element name="h2">
+      <interleave>
+        <zeroOrMore>
+          <ref name="nonEmptyString"/>
+        </zeroOrMore>
+        <zeroOrMore>
+          <ref name="shCharMarkup"/>
+        </zeroOrMore>
+      </interleave>
+    </element>
+  </define>
+  <define name="shH3">
+    <element name="h3">
+      <interleave>
+        <zeroOrMore>
+          <ref name="nonEmptyString"/>
+        </zeroOrMore>
+        <zeroOrMore>
+          <ref name="shCharMarkup"/>
+        </zeroOrMore>
+      </interleave>
+    </element>
+  </define>
+  <define name="shOl">
+    <element name="ol">
+      <oneOrMore>
+        <ref name="shLi"/>
+      </oneOrMore>
+    </element>
+  </define>
+  <define name="shUl">
+    <element name="ul">
+      <oneOrMore>
+        <ref name="shLi"/>
+      </oneOrMore>
+    </element>
+  </define>
+  <define name="shLi">
+    <element name="li">
+      <interleave>
+        <zeroOrMore>
+          <ref name="nonEmptyString"/>
+        </zeroOrMore>
+        <zeroOrMore>
+          <ref name="shCharMarkup"/>
+        </zeroOrMore>
+      </interleave>
+    </element>
+  </define>
+  <define name="shBlockquote">
+    <element name="blockquote">
+      <oneOrMore>
+        <ref name="shBlockElement"/>
+      </oneOrMore>
+    </element>
+  </define>
+  <define name="shCharMarkup">
+    <choice>
+      <ref name="shA"/>
+      <ref name="shImg"/>
+      <ref name="shBr"/>
+      <ref name="shStrong"/>
+      <ref name="shB"/>
+      <ref name="shEm"/>
+      <ref name="shI"/>
+    </choice>
+  </define>
+  <define name="shA">
+    <element name="a">
+      <attribute name="href">
+        <ref name="anyURI"/>
+      </attribute>
+      <interleave>
+        <zeroOrMore>
+          <ref name="nonEmptyString"/>
+        </zeroOrMore>
+        <zeroOrMore>
+          <ref name="shCharMarkup"/>
+        </zeroOrMore>
+      </interleave>
+    </element>
+  </define>
+  <define name="shImg">
+    <element name="img">
+      <attribute name="src">
+        <ref name="anyURI"/>
+      </attribute>
+      <attribute name="alt">
+        <ref name="lenGe1String"/>
+      </attribute>
+    </element>
+  </define>
+  <define name="shBr">
+    <element name="br">
+      <empty/>
+    </element>
+  </define>
+  <define name="shStrong">
+    <element name="strong">
+      <interleave>
+        <zeroOrMore>
+          <ref name="nonEmptyString"/>
+        </zeroOrMore>
+        <zeroOrMore>
+          <ref name="shCharMarkup"/>
+        </zeroOrMore>
+      </interleave>
+    </element>
+  </define>
+  <define name="shB">
+    <element name="b">
+      <interleave>
+        <zeroOrMore>
+          <ref name="nonEmptyString"/>
+        </zeroOrMore>
+        <zeroOrMore>
+          <ref name="shCharMarkup"/>
+        </zeroOrMore>
+      </interleave>
+    </element>
+  </define>
+  <define name="shEm">
+    <element name="em">
+      <interleave>
+        <zeroOrMore>
+          <ref name="nonEmptyString"/>
+        </zeroOrMore>
+        <zeroOrMore>
+          <ref name="shCharMarkup"/>
+        </zeroOrMore>
+      </interleave>
+    </element>
+  </define>
+  <define name="shI">
+    <element name="i">
+      <interleave>
+        <zeroOrMore>
+          <ref name="nonEmptyString"/>
+        </zeroOrMore>
+        <zeroOrMore>
+          <ref name="shCharMarkup"/>
+        </zeroOrMore>
+      </interleave>
+    </element>
+  </define>
+  <!-- generic text -->
+  <define name="nonEmptyString">
+    <text/>
+  </define>
+  <define name="lenGe1String">
+    <data type="string">
+      <param name="minLength">1</param>
+      <param name="pattern">\S(.*\S)?</param>
+    </data>
+  </define>
+  <define name="lenGe2String">
+    <data type="string">
+      <param name="minLength">2</param>
+      <param name="pattern">\S.*\S</param>
+    </data>
+  </define>
+  <define name="lenGe2Le255String">
+    <data type="string">
+      <param name="minLength">2</param>
+      <param name="maxLength">255</param>
+      <param name="pattern">\S.*\S</param>
+    </data>
+  </define>
+  <define name="lenLe255String">
+    <data type="string">
+      <param name="maxLength">255</param>
+      <param name="pattern">\S.*\S</param>
+    </data>
+  </define>
+  <define name="anyURI">
+    <data type="anyURI"/>
+  </define>
+</grammar>
