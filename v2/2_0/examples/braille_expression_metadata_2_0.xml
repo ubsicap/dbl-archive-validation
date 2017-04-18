@@ -98,7 +98,7 @@
       <abbreviation>DBL5</abbreviation>
       <abbreviationLocal>⠠⠙⠠⠃⠠⠇⠑</abbreviationLocal>
       <description>The first 5 books of DBLTEST NT</description>
-      <descriptionLocal>The first 5 books of DBLTEST NT</descriptionLocal>
+      <descriptionLocal>⠠⠞⠓⠑ ⠋⠊⠗⠎⠞ ⠑ ⠃⠕⠕⠅⠎ ⠕⠋ ⠠⠠⠙⠃⠇⠞⠑⠎⠞ ⠠⠠⠝⠞</descriptionLocal>
       <canonicalContent>
 	<book code="MAT" />
 	<book code="MRK" />
@@ -107,8 +107,11 @@
 	<book code="ACT" />
       </canonicalContent>
       <structure>
-	<content name="cover" src="release/Cover.pdf"/>
-	<content name="body" src="release/Inside.pdf"/>
+	      <content name="matthew" src="matt.pef" role="MAT"/>
+        <content name="mark" src="mark.pef" role="MRK"/>
+        <content name="luke" src="luke.pef" role="LUK"/>
+        <content name="john" src="john.pef" role="JHN"/>
+        <content name="acts" src="acts.pef" role="ACT"/>
       </structure>
     </publication>
   </publications>
