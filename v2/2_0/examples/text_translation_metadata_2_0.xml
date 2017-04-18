@@ -44,13 +44,16 @@
   <language>
     <iso>eng</iso>
     <name>English</name>
-    <script>Latn</script>
+    <script>Latin</script>
+    <scriptCode>Latn</scriptCode>
     <scriptDirection>LTR</scriptDirection>
   </language>
-  <country>
-    <iso>USA</iso>
-    <name>United States of America</name>
+  <countries>
+    <country>
+      <iso>US</iso>
+      <name>United States of America</name>
   </country>
+  </countries>
   <format>
     <versedParagraphs>false</versedParagraphs>
   </format>
@@ -74,10 +77,11 @@
     <content name="sourceZip" src="aSourceArchive.zip"/>
   </source>
   <copyright>
-    <!-- Allow XHTML: <h1> <h2> <h3> <p> <blockquote> <ul> <ol> <li> <br> <strong> <em> <a> -->
-    <statement contentType="xhtml">
-      <p>Good News Translation (Today’s English Version, Second Edition) © 1992 American Bible Society. All rights reserved.</p>
-    </statement>
+    <fullStatement>
+      <statementContent type="xhtml">
+        <p>Good News Translation (Today’s English Version, Second Edition) © 1992 American Bible Society. All rights reserved.</p>
+      </statementContent>
+    </fullStatement>
   </copyright>
   <archiveStatus>
     <archivistName>Bev Cope</archivistName>

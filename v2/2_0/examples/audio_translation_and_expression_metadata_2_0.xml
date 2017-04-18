@@ -46,14 +46,17 @@
     <name>English</name>
     <nameLocal>English</nameLocal>
     <ldml>en</ldml>
-    <script>Latn</script>
+    <scriptCode>Latn</scriptCode>
+    <script>Latin</script>
     <scriptDirection>LTR</scriptDirection>
     <numerals>Arabic</numerals>
   </language>
-  <country>
-    <iso>USA</iso>
-    <name>United States of America</name>
-  </country>
+  <countries>
+    <country>
+      <iso>US</iso>
+      <name>United States of America</name>
+    </country>
+  </countries>
   <format>
     <compression>MP3</compression><!-- use EBU types -->
     <trackConfiguration>2/0 (Stereo)</trackConfiguration><!-- use EBU types -->
@@ -97,7 +100,7 @@
   </manifest>
   <source/>
   <publications>
-    <publication id="1">
+    <publication id="publication-1">
       <name>DBL Gospels and Acts</name>
       <nameLocal>DBL Gospels and Acts</nameLocal>
       <abbreviation>DBL5</abbreviation>
@@ -121,19 +124,17 @@
     </publication>
   </publications>
   <copyright>
-    <!-- Allow XHTML: <h1> <h2> <h3> <p> <blockquote> <ul> <ol> <li> <br> <strong> <em> <a> -->
-    <statement contentType="xhtml">
-      <p>Good News Translation (Today’s English Version, Second Edition) © 1992 American Bible Society. All rights reserved.</p>
-    </statement>
+    <fullStatement>
+      <statementContent type="xhtml">
+        <p>Good News Translation (Today’s English Version, Second Edition) © 1992 American Bible Society. All rights reserved.</p>
+      </statementContent>
+    </fullStatement>
   </copyright>
-  <promotion>
-    <!-- optionally empty -->
-    <!-- Allow XHTML: <h1> <h2> <h3> <p> <blockquote> <ul> <ol> <li> <br> <strong> <em> <a> -->
+  <promotion>    
     <promoVersionInfo contentType="xhtml">
       <p>Good News Translation with Deuterocanonicals/Apocrypha. Scripture taken from the Good News Translation (r) (Today's English Version, Second Edition). Copyright (c) 1992 American Bible Society. Used by permission.</p>
       <p>This is a Digital Bible Library demonstration bundle. It should NOT BE USED for any publication purposes</p>
     </promoVersionInfo>
-    <!-- Allow XHTML: <h1> <h2> <h3> <p> <blockquote> <ul> <ol> <li> <br> <strong> <em> <a> -->
   </promotion>
   <archiveStatus>
     <archivistName>Bev Cope</archivistName>

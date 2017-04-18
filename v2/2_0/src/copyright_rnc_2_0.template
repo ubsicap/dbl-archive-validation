@@ -16,13 +16,13 @@ statementContent = htmlStatementContent | plainStatementContent
 
 htmlStatementContent =
   element statementContent {
-    attribute contentType { "xhtml" },
+    attribute type { "xhtml" },
     simplifiedHtml+
   }
   
 plainStatementContent =
   element statementContent {
-    attribute contentType { "plain" },
+    attribute type { "plain" },
     text
   }
 

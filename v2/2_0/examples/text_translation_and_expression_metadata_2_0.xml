@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<DBLMetadata version="2.0" id="a4ecd655fac4de61" revision="0">
+<DBLMetadata version="2.0" id="a4ecd655fac4de61" revision="1">
   <identification>
     <name>DBL Test Version with DC</name>
     <nameLocal>DBL Test Version with DC Local</nameLocal>
@@ -9,9 +9,6 @@
     <abbreviation>DBLTEST</abbreviation>
     <abbreviationLocal>DBLTEST</abbreviationLocal>
     <scope>Portions</scope>
-    <systemId type="gbc">
-      <id>542abd435117ad138f57440d</id>
-    </systemId>
   </identification>
   <type>
     <medium>text</medium>
@@ -46,14 +43,17 @@
     <nameLocal>English</nameLocal>
     <ldml>en</ldml>
     <rod>12345</rod>
-    <script>Latn</script>
+    <scriptCode>Latn</scriptCode>
+    <script>Latin</script>
     <scriptDirection>LTR</scriptDirection>
     <numerals>Arabic</numerals>
   </language>
-  <country>
-    <iso>USA</iso>
-    <name>United States of America</name>
-  </country>
+  <countries>
+   <country>
+      <iso>US</iso>
+      <name>United States of America</name>
+    </country>
+  </countries>
   <format>
     <versedParagraphs>false</versedParagraphs>
   </format>
@@ -107,7 +107,7 @@
     <content name="zippy" src="sources/aSourceArchive.zip" role="sourceZip"/>
   </source>
   <publications>
-    <publication id="1">
+    <publication id="publication-1">
       <name>DBL Gospels and Acts</name>
       <nameLocal>DBL Gospels and Acts</nameLocal>
       <abbreviation>DBL5</abbreviation>
@@ -131,23 +131,21 @@
     </publication>
   </publications>
   <copyright>
-    <!-- Allow XHTML: <h1> <h2> <h3> <p> <blockquote> <ul> <ol> <li> <br> <strong> <em> <a> -->
-    <statement contentType="xhtml">
-      <p>Good News Translation (Today’s English Version, Second Edition) © 1992 American Bible Society. All rights reserved.</p>
-    </statement>
-  </copyright>
+    <fullStatement>
+      <statementContent type="xhtml">
+        <p>Good News Translation (Today’s English Version, Second Edition) © 1992 American Bible Society. All rights reserved.</p>
+      </statementContent>
+    </fullStatement>
+   </copyright>
   <promotion>
-    <!-- optionally empty -->
-    <!-- Allow XHTML: <h1> <h2> <h3> <p> <blockquote> <ul> <ol> <li> <br> <strong> <em> <a> -->
     <promoVersionInfo contentType="xhtml">
       <p>Good News Translation with Deuterocanonicals/Apocrypha. Scripture taken from the Good News Translation (r) (Today's English Version, Second Edition). Copyright (c) 1992 American Bible Society. Used by permission.</p>
       <p>This is a Digital Bible Library demonstration bundle. It should NOT BE USED for any publication purposes</p>
     </promoVersionInfo>
-    <!-- Allow XHTML: <h1> <h2> <h3> <p> <blockquote> <ul> <ol> <li> <br> <strong> <em> <a> -->
   </promotion>
   <archiveStatus>
     <archivistName>Bev Cope</archivistName>
-    <dateArchived>1970-10-14T01:04:30</dateArchived>
+    <dateArchived>1970-10-30T00:00:00</dateArchived>
     <dateUpdated>1970-10-30T00:00:00</dateUpdated>
     <comments>tt</comments>
   </archiveStatus>
