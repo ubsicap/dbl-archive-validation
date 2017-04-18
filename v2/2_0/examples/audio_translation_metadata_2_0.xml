@@ -45,10 +45,12 @@
     <name>English</name>
     <nameLocal>English</nameLocal>
   </language>
-  <country>
-    <iso>USA</iso>
-    <name>United States of America</name>
-  </country>
+  <countries>
+    <country>
+      <iso>US</iso>
+      <name>United States of America</name>
+    </country>
+  </countries>
   <format>
     <compression>MP3</compression><!-- use EBU types -->
     <trackConfiguration>2/0 (Stereo)</trackConfiguration><!-- use EBU types -->
@@ -66,10 +68,11 @@
     <resource uri="ACT.mp3" size="32957" checksum="b95daf7d53dbb0f390759dcb7b7dff2f" mimeType="audio/mp3" progress="4"/>
   </manifest>
   <copyright>
-    <!-- Allow XHTML: <h1> <h2> <h3> <p> <blockquote> <ul> <ol> <li> <br> <strong> <em> <a> -->
-    <statement contentType="xhtml">
+    <fullStatement>
+    <statementContent type="xhtml">
       <p>Good News Translation (Today’s English Version, Second Edition) © 1992 American Bible Society. All rights reserved.</p>
-    </statement>
+    </statementContent>
+    </fullStatement>
   </copyright>
   <archiveStatus>
     <archivistName>Bev Cope</archivistName>

@@ -4,8 +4,8 @@
     <name>DBL Test Version with DC</name>
     <nameLocal>DBL Test Version with DC Local</nameLocal>
     <description>English: DBL Test Version with DC Local New Testament</description>
-    <dateCompleted>1990-03-11</dateCompleted>
-    <bundleProducer>Paratext</bundleProducer>
+    <dateCompleted>1970-03-11</dateCompleted>
+    <bundleProducer>Publishing Assistant/5.1.0.0</bundleProducer>
     <abbreviation>DBLTEST</abbreviation>
     <abbreviationLocal>DBLTEST</abbreviationLocal>
     <scope>Portions</scope>
@@ -14,12 +14,11 @@
     </systemId>
   </identification>
   <type>
-    <medium>audio</medium>
-    <hasCharacters>false</hasCharacters>
+    <medium>print</medium>
+    <isConfidential>false</isConfidential>
+    <hasCharacters>true</hasCharacters>
     <isTranslation>false</isTranslation>
     <isExpression>true</isExpression>
-    <dramatization>Single-Voice</dramatization>
-    <isConfidential>false</isConfidential>
   </type>
   <relationships>
     <relation type="text" id="2880c78491b2f8ce" revision="67" relationType="source"/>
@@ -46,53 +45,40 @@
     <name>English</name>
     <nameLocal>English</nameLocal>
   </language>
-  <country>
-    <iso>USA</iso>
-    <name>United States of America</name>
-  </country>
+  <countries>
+    <country>
+      <iso>US</iso>
+      <name>United States of America</name>
+    </country>
+  </countries>
   <format>
-    <compression>MP3</compression><!-- use EBU types -->
-    <trackConfiguration>2/0 (Stereo)</trackConfiguration><!-- use EBU types -->
-    <bitRate>128000</bitRate><!-- bits/s -->
-    <bitDepth>16</bitDepth>
-    <samplingRate>44100</samplingRate><!-- bits/s -->
+    <pod>true</pod>
+    <width>140mm</width>
+    <height>210mm</height>
+    <scale>100%</scale>
+    <orientation>portrait</orientation>
+    <color>CMYK</color>
+    <fonts>
+      <font type="OpenType">Times New Roman	Regular</font>
+      <font type="OpenType">Times New Roman	BoldBold</font>
+      <font type="OpenType">Times New Roman	ItalicItalic</font>
+      <font type="OpenType">Segoe UI Symbol	Regular</font>
+    </fonts>
   </format>
   <names>
-    <name id="MAT">
-      <abbr>Mt</abbr>
-      <short>Matthew</short>
-      <long>Gospel of Matthew</long>
+    <name id="cover">
+      <short>Cover</short>
     </name>
-    <name id="MRK">
-      <abbr>Mk</abbr>
-      <short>Mark</short>
-      <long>Gospel of Mark</long>
-    </name>
-    <name id="LUK">
-      <abbr>Mk</abbr>
-      <short>Luke</short>
-      <long>Gospel of Luke</long>
-    </name>
-    <name id="JHN">
-      <abbr>Jn</abbr>
-      <short>John</short>
-      <long>Gospel of John</long>
-    </name>
-    <name id="ACT">
-      <abbr>Ac</abbr>
-      <short>Acts</short>
-      <long>The Acts of the Apostles</long>
+    <name id="body">
+      <short>Body</short>
     </name>
   </names>
   <manifest>
-    <resource uri="MAT.mp3" size="32957" checksum="b95daf7d53dbb0f390759dcb7b7dff2f" mimeType="audio/mp3"/>
-    <resource uri="MRK.mp3" size="32957" checksum="b95daf7d53dbb0f390759dcb7b7dff2f" mimeType="audio/mp3"/>
-    <resource uri="LUK.mp3" size="32957" checksum="b95daf7d53dbb0f390759dcb7b7dff2f" mimeType="audio/mp3"/>
-    <resource uri="JHN.mp3" size="32957" checksum="b95daf7d53dbb0f390759dcb7b7dff2f" mimeType="audio/mp3"/>
-    <resource uri="ACT.mp3" size="32957" checksum="b95daf7d53dbb0f390759dcb7b7dff2f" mimeType="audio/mp3"/>
+      <resource uri="Inside.pdf" size="21938718" checksum="b95daf7d53dbb0f390759dcb7b7dff2f" mimeType="application/pdf"/>
+      <resource uri="Cover.pdf" size="66487" checksum="0dfd80b70df9172ebc6052ece050f92e" mimeType="application/pdf"/>
   </manifest>
   <publications>
-    <publication id="1">
+    <publication id="publication-1">
       <name>DBL Gospels and Acts</name>
       <nameLocal>DBL Gospels and Acts</nameLocal>
       <abbreviation>DBL5</abbreviation>
@@ -107,24 +93,20 @@
 	<book code="ACT" />
       </canonicalContent>
       <structure>
-	<content name="MAT" src="MAT.mp3"/>
-	<content name="MRK" src="MRK.mp3"/>
-	<content name="LUK" src="LUK.mp3"/>
-	<content name="JHN" src="JHN.mp3"/>
-	<content name="ACT" src="ACT.mp3"/>
+	<content name="cover" src="release/Cover.pdf"/>
+	<content name="body" src="release/Inside.pdf"/>
       </structure>
     </publication>
   </publications>
   <copyright>
-    <!-- Allow XHTML: <h1> <h2> <h3> <p> <blockquote> <ul> <ol> <li> <br> <strong> <em> <a> -->
-    <statement contentType="xhtml">
+    <fullStatement>
+    <statementContent type="xhtml">
       <p>Good News Translation (Today’s English Version, Second Edition) © 1992 American Bible Society. All rights reserved.</p>
-    </statement>
+    </statementContent>
+    </fullStatement>
   </copyright>
   <promotion>
-    <!-- optionally empty -->
-    <!-- Allow XHTML: <h1> <h2> <h3> <p> <blockquote> <ul> <ol> <li> <br> <strong> <em> <a> -->
-    <promoVersionInfo contentType="xhtml">
+      <promoVersionInfo contentType="xhtml">
       <p>Good News Translation with Deuterocanonicals/Apocrypha. Scripture taken from the Good News Translation (r) (Today's English Version, Second Edition). Copyright (c) 1992 American Bible Society. Used by permission.</p>
       <p>This is a Digital Bible Library demonstration bundle. It should NOT BE USED for any publication purposes</p>
     </promoVersionInfo>
