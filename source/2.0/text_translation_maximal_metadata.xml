@@ -5,9 +5,6 @@
     <nameLocal>DBL Test Version with DC (localized)</nameLocal>
     <description>English: DBL Test Version with DC Local New Testament</description>
     <descriptionLocal>Localized English: DBL Test Version with DC Local New Testament</descriptionLocal>
-    <systemId type="biblica">
-      <id>7001</id>
-    </systemId>
     <systemId type="gbc">
       <id>542abd435117ad138f57440d</id>
     </systemId>
@@ -19,9 +16,6 @@
       <fullName>Digital Bible Library Test Project (GNT)</fullName>
       <name>DBLTEST</name>
       <id>2880c78491b2f8ce8b3a4e0b2c2ef4610f4ffabe</id>
-    </systemId>
-    <systemId type="reap">
-      <id>http://www.reap.insitehome.org/handle/9284745/20421</id>
     </systemId>
     <dateCompleted>1990-03-11</dateCompleted>
     <bundleProducer>Paratext</bundleProducer>
@@ -55,6 +49,11 @@
       <uid>54650cd05117ad67b3826e99</uid>
       <name>American Bible Society</name>
     </contributor>
+    <rightsAdmin>
+      <url>http://thedigitalbiblelibrary.org</url>
+      <uid>54650cfa5117ad690fb05fb6</uid>
+      <name>Organization for DBL Testing</name>
+    </rightsAdmin>
   </agencies>
   <language>
     <iso>eng</iso>
