@@ -22,6 +22,10 @@
     <abbreviation>DBLTEST</abbreviation>
     <abbreviationLocal>DBLTESTLOCAL</abbreviationLocal>
     <scope>Portions</scope>
+    <canonSpec type="OT, NT">
+      <component>westernOT</component>
+      <component>westernNT</component>
+    </canonSpec>
   </identification>
   <type>
     <medium>text</medium>
@@ -61,21 +65,30 @@
     <nameLocal>A North American English-like dialect</nameLocal>
     <ldml>ENG_US</ldml>
     <rod>12345</rod>
-    <script>Latn</script>
+    <scriptCode>Latn</scriptCode>
+    <script>Latin</script>
     <scriptDirection>LTR</scriptDirection>
     <numerals>Arabic</numerals>
   </language>
-  <country>
-    <iso>USA</iso>
-    <name>United States of America</name>
-    <nameLocal>The United States of America</nameLocal>
-  </country>
+  <countries>
+   <country>
+      <iso>US</iso>
+      <name>United States of America</name>
+      <nameLocal>The United States of America</nameLocal>
+    </country>
+  </countries>
   <format>
     <versedParagraphs>false</versedParagraphs>
   </format>
   <manifest>
     <container uri="sources">
       <resource uri="aSourceArchive.zip" size="1748921" checksum="b95daf7d53dbb0f390759dcb7b7dff2f" mimeType="application/zip"/>
+      <container uri="usx">
+        <resource uri="matthew.usx" size="1234" checksum = "b95daf7d53dbb0f390759dcb7b7dff2f" mimeType="text/xml"/>
+        <resource uri="mark.usx" size="1234" checksum = "b95daf7d53dbb0f390759dcb7b7dff2f" mimeType="text/xml"/>
+        <resource uri="luke.usx" size="1234" checksum = "b95daf7d53dbb0f390759dcb7b7dff2f" mimeType="text/xml"/>
+        <resource uri="john.usx" size="1234" checksum = "b95daf7d53dbb0f390759dcb7b7dff2f" mimeType="text/xml"/>
+      </container>
     </container>
   </manifest>
   <names>
@@ -115,10 +128,18 @@
     <content name="zippy" src="sources/aSourceArchive.zip" role="sourceZip"/>
   </source>
   <copyright>
-    <!-- Allow XHTML: <h1> <h2> <h3> <p> <blockquote> <ul> <ol> <li> <br> <strong> <em> <a> -->
-    <statement contentType="xhtml">
-      <p>Good News Translation (Today’s English Version, Second Edition) © 1992 American Bible Society. All rights reserved.</p>
-    </statement>
+    <fullStatement>
+      <statementContent type="xhtml">
+        <p>Good News Translation (Today’s English Version, Second Edition) © 1992 American Bible Society. All rights reserved.</p>
+      </statementContent>
+      <statementContent type="plain">Good News Translation (Today’s English Version, Second Edition) © 1992 American Bible Society. All rights reserved.</statementContent>
+    </fullStatement>
+    <shortStatement>
+      <statementContent type="xhtml">
+        <p>© 1992 American Bible Society. All rights reserved.</p>
+      </statementContent>
+      <statementContent type="plain">© 1992 American Bible Society. All rights reserved.</statementContent>
+    </shortStatement>
   </copyright>
   <promotion>
     <!-- Allow XHTML: <h1> <h2> <h3> <p> <blockquote> <ul> <ol> <li> <br> <strong> <em> <a> -->
