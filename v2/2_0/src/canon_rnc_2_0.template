@@ -1,0 +1,12 @@
+# canon
+
+canonSpecElement =
+    element canonSpec {
+        attribute type { canonTypes },
+        canonComponent+
+    }
+    
+canonComponent =
+    element component { canonComponentEnum }
+    
+%%insert canon_text_rnc_2_0.template%%

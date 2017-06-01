@@ -1,0 +1,154 @@
+# type
+
+textTranslationTypeElement =
+  element type {
+    element medium { "text" } &
+    element hasCharacters { "true" } &
+    element isTranslation { "true" } &
+    element isExpression { "false" } &
+    element isConfidential { xsd:boolean } &
+    commonTextTranslationTypeElements
+}
+
+audioTranslationTypeElement =
+  element type {
+    element medium { "audio" } &
+    element hasCharacters { "false" } &
+    element isTranslation { "true" } &
+    element isExpression { "false" } &
+    element isConfidential { xsd:boolean } &
+    commonAudioTranslationTypeElements
+}
+
+videoTranslationTypeElement =
+  element type {
+    element medium { "video" } &
+    element hasCharacters { "false" } &
+    element isTranslation { "true" } &
+    element isExpression { "false" } &
+    element isConfidential { xsd:boolean } &
+    commonVideoTranslationTypeElements
+}
+
+textExpressionTypeElement =
+  element type {
+    element medium { "text" } &
+    element hasCharacters { "true" } &
+    element isTranslation { "false" } &
+    element isExpression { "true" } &
+    commonTextExpressionTypeElements &
+    element isConfidential { xsd:boolean }
+}
+
+printExpressionTypeElement =
+  element type {
+    element medium { "print" } &
+    element hasCharacters { "true" } &
+    element isTranslation { "false" } &
+    element isExpression { "true" } &
+    commonExpressionTypeElements &
+    element isConfidential { xsd:boolean }
+}
+
+audioExpressionTypeElement =
+  element type {
+    element medium { "audio" } &
+    element hasCharacters { "false" } &
+    element isTranslation { "false" } &
+    element isExpression { "true" } &
+    commonAudioExpressionTypeElements &
+    element isConfidential { xsd:boolean }
+}
+
+videoExpressionTypeElement =
+  element type {
+    element medium { "video" } &
+    element hasCharacters { "false" } &
+    element isTranslation { "false" } &
+    element isExpression { "true" } &
+    commonVideoExpressionTypeElements &
+    element isConfidential { xsd:boolean }
+}
+
+brailleExpressionTypeElement =
+  element type {
+    element medium { "braille" } &
+    element hasCharacters { "true" } &
+    element isTranslation { "false" } &
+    element isExpression { "true" } &
+    element isConfidential { xsd:boolean }
+}
+
+textTranslationAndExpressionTypeElement =
+  element type {
+    element medium { "text" } &
+    element hasCharacters { "true" } &
+    element isTranslation { "true" } &
+    element isExpression { "true" } &
+    commonTextTranslationTypeElements &
+    commonTextExpressionTypeElements &
+    element isConfidential { xsd:boolean }
+}
+
+audioTranslationAndExpressionTypeElement =
+  element type {
+    element medium { "audio" } &
+    element hasCharacters { "false" } &
+    element isTranslation { "true" } &
+    element isExpression { "true" } &
+    commonAudioTranslationTypeElements &
+    commonAudioExpressionTypeElements &
+    element isConfidential { xsd:boolean }
+}
+
+videoTranslationAndExpressionTypeElement =
+  element type {
+    element medium { "video" } &
+    element hasCharacters { "false" } &
+    element isTranslation { "true" } &
+    element isExpression { "true" } &
+    commonVideoTranslationTypeElements &
+    commonVideoExpressionTypeElements &
+    element isConfidential { xsd:boolean }
+}
+
+commonTextTranslationTypeElements = (
+  commonTranslationTypeElements
+)
+
+commonAudioTranslationTypeElements = (
+  commonTranslationTypeElements
+)
+
+commonVideoTranslationTypeElements = (
+  commonTranslationTypeElements
+)
+
+commonTextExpressionTypeElements = (
+  commonExpressionTypeElements
+)
+
+commonAudioExpressionTypeElements = (
+  element dramatization { audioTypeDramatizationEnum } &
+  commonExpressionTypeElements
+)
+
+commonVideoExpressionTypeElements = (
+  commonExpressionTypeElements
+)
+
+commonTranslationTypeElements = (
+  commonTypeElements &
+  element translationType { translationTypeEnum } &
+  element audience { translationLevelEnum }
+)
+
+commonExpressionTypeElements = (
+  commonTypeElements
+)
+
+commonTypeElements = (
+  empty
+)
+
+%%insert type_text_rnc_2_0.template%%

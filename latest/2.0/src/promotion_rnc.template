@@ -1,8 +1,0 @@
-promotionElement =
-  element promotion {
-    element promoVersionInfo {
-      attribute contentType { "xhtml" },
-      simplifiedHtml+
-    }
-  }
-

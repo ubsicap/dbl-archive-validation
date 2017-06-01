@@ -1,0 +1,14 @@
+# names
+
+namesElement =
+  element names { namesName* }
+
+namesName =
+  element name {
+    attribute id { nameIdString } &
+    element long { lenGe2Le255String }? &
+    element short { lenGe2Le255String } &
+    element abbr { lenGe2Le255String }?
+  }
+
+%%insert names_text_rnc_2_0.template%%

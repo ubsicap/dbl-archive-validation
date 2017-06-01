@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DBLMetadata version="2.0" id="a4ecd655fac4de61" revision="1">
+  <identification>
+    <name>DBL Test Version with DC</name>
+    <nameLocal>DBL Test Version with DC Local</nameLocal>
+    <description>English: DBL Test Version with DC Local New Testament</description>
+    <dateCompleted>1970-03-11</dateCompleted>
+    <bundleProducer>Paratext</bundleProducer>
+    <abbreviation>DBLTEST</abbreviation>
+    <abbreviationLocal>DBLTEST</abbreviationLocal>
+    <scope>Portions</scope>
+  </identification>
+  <type>
+    <medium>text</medium>
+    <isConfidential>false</isConfidential>
+    <hasCharacters>true</hasCharacters>
+    <isTranslation>true</isTranslation>
+    <isExpression>true</isExpression>
+    <translationType>Revision</translationType>
+    <audience>Common</audience>
+  </type>
+  <relationships/>
+  <agencies>
+    <rightsHolder>
+      <abbr>TEST</abbr>
+      <url>http://thedigitalbiblelibrary.org</url>
+      <local>DBL Testing</local>
+      <uid>54650cfa5117ad690fb05fb6</uid>
+      <name>Organization for DBL Testing</name>
+    </rightsHolder>
+    <contributor>
+      <content>true</content>
+      <publication>true</publication>
+      <management>true</management>
+      <qa>true</qa>
+      <uid>54650cd05117ad67b3826e99</uid>
+      <name>American Bible Society</name>
+    </contributor>
+  </agencies>
+  <language>
+    <iso>eng</iso>
+    <name>English</name>
+    <nameLocal>English</nameLocal>
+    <ldml>en</ldml>
+    <rod>12345</rod>
+    <scriptCode>Latn</scriptCode>
+    <script>Latin</script>
+    <scriptDirection>LTR</scriptDirection>
+    <numerals>Arabic</numerals>
+  </language>
+  <countries>
+   <country>
+      <iso>US</iso>
+      <name>United States of America</name>
+    </country>
+  </countries>
+  <format>
+    <versedParagraphs>false</versedParagraphs>
+  </format>
+  <names>
+    <name id="zippy">
+      <abbr>Source</abbr>
+      <short>PT source zip</short>
+      <long>PT source zip (with arbitrary name because DBL doesn't care)</long>
+    </name>
+    <name id="Matthew">
+      <abbr>Mt</abbr>
+      <short>Matthew</short>
+      <long>Gospel of Matthew</long>
+    </name>
+    <name id="Mark">
+      <abbr>Mk</abbr>
+      <short>Mark</short>
+      <long>Gospel of Mark</long>
+    </name>
+    <name id="gospel-of-luke">
+      <abbr>Mk</abbr>
+      <short>Luke</short>
+      <long>Gospel of Luke</long>
+    </name>
+    <name id="non-synoptic-gospel">
+      <abbr>Jn</abbr>
+      <short>John</short>
+      <long>Gospel of John</long>
+    </name>
+    <name id="ACT">
+      <abbr>Ac</abbr>
+      <short>Acts</short>
+      <long>The Acts of the Apostles</long>
+    </name>
+  </names>
+  <manifest>
+    <resource uri="MAT.usx" size="32957" checksum="b95daf7d53dbb0f390759dcb7b7dff2f" mimeType="application/xml" progress="4"/>
+    <resource uri="MRK.usx" size="32957" checksum="b95daf7d53dbb0f390759dcb7b7dff2f" mimeType="application/xml" progress="4"/>
+    <resource uri="LUK.usx" size="32957" checksum="b95daf7d53dbb0f390759dcb7b7dff2f" mimeType="application/xml" progress="4"/>
+    <resource uri="JHN.usx" size="32957" checksum="b95daf7d53dbb0f390759dcb7b7dff2f" mimeType="application/xml" progress="4"/>
+    <resource uri="ACT.usx" size="32957" checksum="b95daf7d53dbb0f390759dcb7b7dff2f" mimeType="application/xml" progress="4"/>
+  </manifest>
+  <source>
+    <canonicalContent>
+      <book code="MAT" />
+      <book code="MRK" />
+      <book code="LUK" />
+      <book code="JHN" />
+      <book code="ACT" />
+    </canonicalContent>
+    <content name="zippy" src="sources/aSourceArchive.zip" role="sourceZip"/>
+  </source>
+  <publications>
+    <publication id="publication-1">
+      <name>DBL Gospels and Acts</name>
+      <nameLocal>DBL Gospels and Acts</nameLocal>
+      <abbreviation>DBL5</abbreviation>
+      <abbreviationLocal>DBL5</abbreviationLocal>
+      <description>The first 5 books of DBLTEST NT</description>
+      <descriptionLocal>The first 5 books of DBLTEST NT</descriptionLocal>
+      <canonicalContent>
+	<book code="MAT" />
+	<book code="MRK" />
+	<book code="LUK" />
+	<book code="JHN" />
+	<book code="ACT" />
+      </canonicalContent>
+      <structure>
+	<content name="Matthew" src="MAT.usx" role="MAT"/>
+	<content name="Mark" src="MRK.usx" role="MRK"/>
+	<content name="gospel-of-luke" src="LUK.usx" role="LUK"/>
+	<content name="non-synoptic-gospel" src="JHN.usx" role="JHN"/>
+	<content name="ACT" src="ACT.usx" role="ACT"/>
+      </structure>
+    </publication>
+  </publications>
+  <copyright>
+    <fullStatement>
+      <statementContent type="xhtml">
+        <p>Good News Translation (Today’s English Version, Second Edition) © 1992 American Bible Society. All rights reserved.</p>
+      </statementContent>
+    </fullStatement>
+   </copyright>
+  <promotion>
+    <promoVersionInfo contentType="xhtml">
+      <p>Good News Translation with Deuterocanonicals/Apocrypha. Scripture taken from the Good News Translation (r) (Today's English Version, Second Edition). Copyright (c) 1992 American Bible Society. Used by permission.</p>
+      <p>This is a Digital Bible Library demonstration bundle. It should NOT BE USED for any publication purposes</p>
+    </promoVersionInfo>
+  </promotion>
+  <archiveStatus>
+    <archivistName>Bev Cope</archivistName>
+    <dateArchived>1970-10-30T00:00:00</dateArchived>
+    <dateUpdated>1970-10-30T00:00:00</dateUpdated>
+    <comments>tt</comments>
+  </archiveStatus>
+</DBLMetadata>

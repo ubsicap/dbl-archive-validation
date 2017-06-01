@@ -1,0 +1,17 @@
+# type text
+
+audioTypeDramatizationEnum = "Dramatized" | "Non-Dramatized" | "Single-Voice"
+
+translationTypeEnum = (
+  "First" |
+  "New" |
+  "Revision"
+)
+
+translationLevelEnum = (
+  "Basic" |
+  "Common" |
+  "Common - Literary" |
+  "Literary" |
+  "Liturgical"
+)

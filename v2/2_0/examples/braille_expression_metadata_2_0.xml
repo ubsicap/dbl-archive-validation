@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DBLMetadata version="2.0" id="a4ecd655fac4de61" revision="0">
+  <identification>
+    <name>DBL Test Version with DC</name>
+    <nameLocal>⠠⠠⠙⠃⠇ ⠠⠞⠑⠎⠞ ⠠⠧⠑⠗⠎⠊⠕⠝ ⠺⠊⠞⠓ ⠠⠠⠙⠉ ⠠⠇⠕⠉⠁⠇</nameLocal>
+    <description>English: DBL Test Version with DC Local New Testament</description>
+    <dateCompleted>1970-03-11</dateCompleted>
+    <bundleProducer>Publishing Assistant/5.1.0.0</bundleProducer>
+    <abbreviation>DBLTEST</abbreviation>
+    <abbreviationLocal>⠠⠠⠙⠃⠇⠞⠑⠎⠞</abbreviationLocal>
+    <scope>Portions</scope>
+    <systemId type="gbc">
+      <id>542abd435117ad138f57440d</id>
+    </systemId>
+  </identification>
+  <type>
+    <medium>braille</medium>
+    <isConfidential>false</isConfidential>
+    <hasCharacters>true</hasCharacters>
+    <isTranslation>false</isTranslation>
+    <isExpression>true</isExpression>
+  </type>
+  <relationships>
+    <relation type="text" id="2880c78491b2f8ce" revision="67" relationType="source"/>
+  </relationships>
+  <agencies>
+    <rightsHolder>
+      <abbr>TEST</abbr>
+      <url>http://thedigitalbiblelibrary.org</url>
+      <local>DBL Testing</local>
+      <uid>54650cfa5117ad690fb05fb6</uid>
+      <name>Organization for DBL Testing</name>
+    </rightsHolder>
+    <contributor>
+      <content>true</content>
+      <publication>true</publication>
+      <management>true</management>
+      <qa>true</qa>
+      <uid>54650cd05117ad67b3826e99</uid>
+      <name>American Bible Society</name>
+    </contributor>
+  </agencies>
+  <language>
+    <iso>eng</iso>
+    <name>English</name>
+    <nameLocal>⠠⠑⠝⠛⠇⠊⠎⠓</nameLocal>
+    <scriptCode>Brai</scriptCode>
+    <script>Braille</script>
+  </language>
+  <countries>
+    <country>
+      <iso>US</iso>
+      <name>United States of America</name>
+      <nameLocal>⠠⠥⠝⠊⠞⠑⠙ ⠠⠎⠞⠁⠞⠑⠎ ⠕⠋ ⠠⠁⠍⠑⠗⠊⠉⠁</nameLocal>
+    </country>
+  </countries>
+  <format>
+    <contracted>true</contracted>
+    <libLouisConfig>en_US</libLouisConfig>
+  </format>
+  <names>
+    <name id="matthew">
+      <abbr>⠠⠍⠞</abbr>
+      <short>⠠⠍⠁⠞⠞⠓⠑⠺</short>
+      <long>⠠⠛⠕⠎⠏⠑⠇ ⠕⠋ ⠠⠍⠁⠞⠞⠓⠑⠺</long>
+    </name>
+    <name id="mark">
+      <abbr>⠠⠍⠅</abbr>
+      <short>⠠⠍⠁⠗⠅</short>
+      <long>⠠⠛⠕⠎⠏⠑⠇ ⠕⠋ ⠠⠍⠁⠗⠅</long>
+    </name>
+    <name id="luke">
+      <abbr>⠠⠇⠅</abbr>
+      <short>⠠⠇⠥⠅⠑</short>
+      <long>⠠⠛⠕⠎⠏⠑⠇ ⠕⠋ ⠠⠇⠥⠅⠑</long>
+    </name>
+    <name id="john">
+      <abbr>⠠⠚⠝</abbr>
+      <short>⠠⠚⠕⠓⠝</short>
+      <long>⠠⠛⠕⠎⠏⠑⠇ ⠕⠋ ⠠⠚⠕⠓⠝</long>
+    </name>
+    <name id="acts">
+      <abbr>⠠⠁⠉</abbr>
+      <short>⠠⠁⠉⠞⠎</short>
+      <long>⠠⠁⠉⠞⠎ ⠕⠋ ⠞⠓⠑ ⠠⠁⠏⠕⠎⠞⠇⠑⠎</long>
+    </name>
+  </names>
+  <manifest>
+      <resource uri="matt.pef" size="21938718" checksum="b95daf7d53dbb0f390759dcb7b7dff2f" mimeType="text/xml"/>
+      <resource uri="mark.pef" size="66487" checksum="0dfd80b70df9172ebc6052ece050f92e" mimeType="text/xml"/>
+      <resource uri="luke.pef" size="66487" checksum="0dfd80b70df9172ebc6052ece050f92e" mimeType="text/xml"/>
+      <resource uri="john.pef" size="66487" checksum="0dfd80b70df9172ebc6052ece050f92e" mimeType="text/xml"/>
+  </manifest>
+  <publications>
+    <publication id="publication-1">
+      <name>DBL Gospels and Acts</name>
+      <nameLocal>⠠⠠⠙⠃⠇ ⠠⠛⠕⠎⠏⠑⠇⠎ ⠁⠝⠙ ⠠⠁⠉⠞⠎</nameLocal>
+      <abbreviation>DBL5</abbreviation>
+      <abbreviationLocal>⠠⠙⠠⠃⠠⠇⠑</abbreviationLocal>
+      <description>The first 5 books of DBLTEST NT</description>
+      <descriptionLocal>⠠⠞⠓⠑ ⠋⠊⠗⠎⠞ ⠑ ⠃⠕⠕⠅⠎ ⠕⠋ ⠠⠠⠙⠃⠇⠞⠑⠎⠞ ⠠⠠⠝⠞</descriptionLocal>
+      <canonicalContent>
+	<book code="MAT" />
+	<book code="MRK" />
+	<book code="LUK" />
+	<book code="JHN" />
+	<book code="ACT" />
+      </canonicalContent>
+      <structure>
+	      <content name="matthew" src="matt.pef" role="MAT"/>
+        <content name="mark" src="mark.pef" role="MRK"/>
+        <content name="luke" src="luke.pef" role="LUK"/>
+        <content name="john" src="john.pef" role="JHN"/>
+        <content name="acts" src="acts.pef" role="ACT"/>
+      </structure>
+    </publication>
+  </publications>
+  <copyright>
+    <fullStatement>
+    <statementContent type="xhtml">
+      <p>Good News Translation (Today’s English Version, Second Edition) © 1992 American Bible Society. All rights reserved.</p>
+    </statementContent>
+    </fullStatement>
+  </copyright>
+  <promotion>
+      <promoVersionInfo contentType="xhtml">
+      <p>Good News Translation with Deuterocanonicals/Apocrypha. Scripture taken from the Good News Translation (r) (Today's English Version, Second Edition). Copyright (c) 1992 American Bible Society. Used by permission.</p>
+      <p>This is a Digital Bible Library demonstration bundle. It should NOT BE USED for any publication purposes</p>
+    </promoVersionInfo>
+    <!-- Allow XHTML: <h1> <h2> <h3> <p> <blockquote> <ul> <ol> <li> <br> <strong> <em> <a> -->
+  </promotion>
+  <archiveStatus>
+    <archivistName>Bev Cope</archivistName>
+    <dateArchived>1970-10-14T01:04:30</dateArchived>
+    <dateUpdated>1970-10-30T00:00:00</dateUpdated>
+    <comments>tt</comments>
+  </archiveStatus>
+</DBLMetadata>

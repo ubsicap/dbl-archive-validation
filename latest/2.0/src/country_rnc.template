@@ -1,7 +1,0 @@
-countriesElement = element countries { countryElement+ }
-
-countryElement = element country {
-  element iso { countryIsoString } &
-  element name { lenGe2String } &
-  element nameLocal { lenGe2String }?
-}

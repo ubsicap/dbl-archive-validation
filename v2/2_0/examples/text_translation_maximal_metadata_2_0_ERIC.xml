@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DBLMetadata version="2.0" id="a4ecd655fac4de61" revision="0">
+  <identification>
+    <name>DBL Test Version with DC</name>
+    <nameLocal>DBL Test Version with DC (localized)</nameLocal>
+    <description>English: DBL Test Version with DC Local New Testament</description>
+    <descriptionLocal>Localized English: DBL Test Version with DC Local New Testament</descriptionLocal>
+    <systemId type="gbc">
+      <id>542abd435117ad138f57440d</id>
+    </systemId>
+    <systemId type="tms">
+      <id>800ffc90-61c7-4eee-9d2e-3b846d211d34</id>
+    </systemId>
+    <systemId type="paratext">
+      <csetId>3078f7f2788978ff000285727c11cee4ab6c7047</csetId>
+      <fullName>Digital Bible Library Test Project (GNT)</fullName>
+      <name>DBLTEST</name>
+      <id>2880c78491b2f8ce8b3a4e0b2c2ef4610f4ffabe</id>
+    </systemId>
+    <dateCompleted>1990-03-11</dateCompleted>
+    <bundleProducer>Paratext</bundleProducer>
+    <abbreviation>DBLTEST</abbreviation>
+    <abbreviationLocal>DBLTESTLOCAL</abbreviationLocal>
+    <scope>Portions</scope>
+  </identification>
+  <type>
+    <medium>text</medium>
+    <isConfidential>false</isConfidential>
+    <hasCharacters>true</hasCharacters>
+    <isTranslation>true</isTranslation>
+    <isExpression>false</isExpression>
+    <translationType>Revision</translationType>
+    <audience>Common</audience>
+  </type>
+  <relationships/>
+  <agencies>
+    <rightsHolder>
+      <abbr>TEST</abbr>
+      <url>http://thedigitalbiblelibrary.org</url>
+      <local>DBL Testing</local>
+      <uid>54650cfa5117ad690fb05fb6</uid>
+      <name>Organization for DBL Testing</name>
+    </rightsHolder>
+    <contributor>
+      <content>true</content>
+      <publication>true</publication>
+      <management>true</management>
+      <qa>true</qa>
+      <uid>54650cd05117ad67b3826e99</uid>
+      <name>American Bible Society</name>
+    </contributor>
+    <rightsAdmin>
+      <url>http://thedigitalbiblelibrary.org</url>
+      <uid>54650cfa5117ad690fb05fb6</uid>
+      <name>Organization for DBL Testing</name>
+    </rightsAdmin>
+  </agencies>
+  <language>
+    <iso>eng</iso>
+    <name>English</name>
+    <nameLocal>A North American English-like dialect</nameLocal>
+    <ldml>ENG_US</ldml>
+    <rod>12345</rod>
+    <script>Latn</script>
+    <scriptDirection>LTR</scriptDirection>
+    <numerals>Arabic</numerals>
+  </language>
+  <country>
+    <iso>USA</iso>
+    <name>United States of America</name>
+    <nameLocal>The United States of America</nameLocal>
+  </country>
+  <format>
+    <versedParagraphs>false</versedParagraphs>
+  </format>
+  <manifest>
+    <container uri="sources">
+      <resource uri="aSourceArchive.zip" size="1748921" checksum="b95daf7d53dbb0f390759dcb7b7dff2f" mimeType="application/zip"/>
+    </container>
+  </manifest>
+  <names>
+    <name id="zippy">
+      <abbr>Source</abbr>
+      <short>PT source zip</short>
+      <long>PT source zip (with arbitrary name because DBL doesn't care)</long>
+    </name>
+    <name id="MAT">
+      <short>Matthew</short>
+    </name>
+    <name id="MRK">
+      <short>Mark</short>
+      <long>Gospel of Mark</long>
+    </name>
+    <name id="LUK">
+      <abbr>Mk</abbr>
+      <short>Luke</short>
+    </name>
+    <name id="JHN">
+      <abbr>Jn</abbr>
+      <short>John</short>
+      <long>Gospel of John</long>
+    </name>
+    <name id="ACT">
+      <short>Acts</short>
+    </name>
+  </names>
+  <source>
+    <canonicalContent>
+      <book code="MAT" />
+      <book code="MRK" />
+      <book code="LUK" />
+      <book code="JHN" />
+      <book code="ACT" />
+    </canonicalContent>
+    <content name="zippy" src="sources/aSourceArchive.zip" role="sourceZip"/>
+  </source>
+  <copyright>
+    <!-- Allow XHTML: <h1> <h2> <h3> <p> <blockquote> <ul> <ol> <li> <br> <strong> <em> <a> -->
+    <statement contentType="xhtml">
+      <p>Good News Translation (Today’s English Version, Second Edition) © 1992 American Bible Society. All rights reserved.</p>
+    </statement>
+  </copyright>
+  <promotion>
+    <!-- Allow XHTML: <h1> <h2> <h3> <p> <blockquote> <ul> <ol> <li> <br> <strong> <em> <a> -->
+    <promoVersionInfo contentType="xhtml">
+      <p>
+        The <em>Good News Translation</em> of the Bible is a translation which seeks to state clearly and accurately the meaning of the original texts in words and forms that are widely accepted by people who use English as a means of communication. This translation does not follow the traditional vocabulary and style found in the historic English Bible versions. Rather it attempts for our time to set forth the biblical content and message in the standard, everyday, natural form of English.
+      </p>
+      <p>The aim of this Bible is to give today's reader best possible understanding of the content of the original texts. The Preface sets forth the basic principles which the translators followed in their work and explains the nature of special aids for readers.</p>
+      <p>The bk Good News Translation was translated and published by the United Bible Societies for use throughout the world. The Bible Societies trust that the reading and study of this translation will result in a better understanding of the meaning of the Bible. We also earnestly pray that readers will discover the message of saving faith and hope for all people, which the Bible announces anew to each generation.</p>
+    </promoVersionInfo>
+    <!-- Allow XHTML: <h1> <h2> <h3> <p> <blockquote> <ul> <ol> <li> <br> <strong> <em> <a> -->
+  </promotion>
+  <archiveStatus>
+    <archivistName>Bev Cope</archivistName>
+    <dateArchived>1970-10-14T01:04:30</dateArchived>
+    <dateUpdated>1970-10-30T00:00:00</dateUpdated>
+    <comments>tt</comments>
+  </archiveStatus>
+</DBLMetadata>
