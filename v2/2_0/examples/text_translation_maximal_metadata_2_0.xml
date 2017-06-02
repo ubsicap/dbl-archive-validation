@@ -11,6 +11,9 @@
     <systemId type="tms">
       <id>800ffc90-61c7-4eee-9d2e-3b846d211d34</id>
     </systemId>
+    <systemId type="biblica">
+      <id>7001</id>
+    </systemId>
     <systemId type="paratext">
       <csetId>3078f7f2788978ff000285727c11cee4ab6c7047</csetId>
       <fullName>Digital Bible Library Test Project (GNT)</fullName>
