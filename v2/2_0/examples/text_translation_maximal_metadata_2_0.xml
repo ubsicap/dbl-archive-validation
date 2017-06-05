@@ -144,17 +144,6 @@
       <statementContent type="plain">© 1992 American Bible Society. All rights reserved.</statementContent>
     </shortStatement>
   </copyright>
-  <promotion>
-    <!-- Allow XHTML: <h1> <h2> <h3> <p> <blockquote> <ul> <ol> <li> <br> <strong> <em> <a> -->
-    <promoVersionInfo contentType="xhtml">
-      <p>
-        The <em>Good News Translation</em> of the Bible is a translation which seeks to state clearly and accurately the meaning of the original texts in words and forms that are widely accepted by people who use English as a means of communication. This translation does not follow the traditional vocabulary and style found in the historic English Bible versions. Rather it attempts for our time to set forth the biblical content and message in the standard, everyday, natural form of English.
-      </p>
-      <p>The aim of this Bible is to give today's reader best possible understanding of the content of the original texts. The Preface sets forth the basic principles which the translators followed in their work and explains the nature of special aids for readers.</p>
-      <p>The bk Good News Translation was translated and published by the United Bible Societies for use throughout the world. The Bible Societies trust that the reading and study of this translation will result in a better understanding of the meaning of the Bible. We also earnestly pray that readers will discover the message of saving faith and hope for all people, which the Bible announces anew to each generation.</p>
-    </promoVersionInfo>
-    <!-- Allow XHTML: <h1> <h2> <h3> <p> <blockquote> <ul> <ol> <li> <br> <strong> <em> <a> -->
-  </promotion>
   <archiveStatus>
     <archivistName>Bev Cope</archivistName>
     <dateArchived>1970-10-14T01:04:30</dateArchived>
