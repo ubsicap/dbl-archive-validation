@@ -2,13 +2,33 @@
 <DBLMetadata version="2.0" id="a4ecd655fac4de61" revision="1">
   <identification>
     <name>DBL Test Version with DC</name>
-    <nameLocal>DBL Test Version with DC Local</nameLocal>
-    <description>English: DBL Test Version with DC Local New Testament</description>
-    <dateCompleted>1970-03-11</dateCompleted>
-    <bundleProducer>Paratext</bundleProducer>
+    <nameLocal>DBL Test Version with DC (localized)</nameLocal>
     <abbreviation>DBLTEST</abbreviation>
-    <abbreviationLocal>DBLTEST</abbreviationLocal>
+    <abbreviationLocal>DBLTESTLOCAL</abbreviationLocal>
+    <description>English: DBL Test Version with DC Local New Testament</description>
+    <descriptionLocal>Localized English: DBL Test Version with DC Local New Testament</descriptionLocal>
     <scope>Portions</scope>
+    <canonSpec type="OT, NT">
+      <component>westernOT</component>
+      <component>westernNT</component>
+    </canonSpec>
+    <dateCompleted>1990-03-11</dateCompleted>
+    <systemId type="gbc">
+      <id>542abd435117ad138f57440d</id>
+    </systemId>
+    <systemId type="tms">
+      <id>800ffc90-61c7-4eee-9d2e-3b846d211d34</id>
+    </systemId>
+    <systemId type="biblica">
+      <id>7001</id>
+    </systemId>
+    <systemId type="paratext">
+      <csetId>3078f7f2788978ff000285727c11cee4ab6c7047</csetId>
+      <fullName>Digital Bible Library Test Project (GNT)</fullName>
+      <name>DBLTEST</name>
+      <id>2880c78491b2f8ce8b3a4e0b2c2ef4610f4ffabe</id>
+    </systemId>
+    <bundleProducer>Paratext</bundleProducer>
   </identification>
   <type>
     <medium>text</medium>
