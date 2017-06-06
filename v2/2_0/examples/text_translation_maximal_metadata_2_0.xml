@@ -48,6 +48,11 @@
       <uid>54650cfa5117ad690fb05fb6</uid>
       <name>Organization for DBL Testing</name>
     </rightsHolder>
+    <rightsAdmin>
+      <url>http://thedigitalbiblelibrary.org</url>
+      <uid>54650cfa5117ad690fb05fb6</uid>
+      <name>Organization for DBL Testing</name>
+    </rightsAdmin>
     <contributor>
       <content>true</content>
       <publication>true</publication>
@@ -56,11 +61,6 @@
       <uid>54650cd05117ad67b3826e99</uid>
       <name>American Bible Society</name>
     </contributor>
-    <rightsAdmin>
-      <url>http://thedigitalbiblelibrary.org</url>
-      <uid>54650cfa5117ad690fb05fb6</uid>
-      <name>Organization for DBL Testing</name>
-    </rightsAdmin>
   </agencies>
   <language>
     <iso>eng</iso>
