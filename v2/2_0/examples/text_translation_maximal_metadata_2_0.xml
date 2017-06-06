@@ -68,10 +68,10 @@
     <nameLocal>A North American English-like dialect</nameLocal>
     <ldml>ENG_US</ldml>
     <rod>12345</rod>
+    <numerals>Arabic</numerals>
     <scriptCode>Latn</scriptCode>
     <script>Latin</script>
     <scriptDirection>LTR</scriptDirection>
-    <numerals>Arabic</numerals>
   </language>
   <countries>
    <country>
