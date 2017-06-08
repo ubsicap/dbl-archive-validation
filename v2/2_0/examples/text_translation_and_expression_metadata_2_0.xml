@@ -140,18 +140,18 @@
       <description>The first 5 books of DBLTEST NT</description>
       <descriptionLocal>The first 5 books of DBLTEST NT</descriptionLocal>
       <canonicalContent>
-	<book code="MAT" />
-	<book code="MRK" />
-	<book code="LUK" />
-	<book code="JHN" />
-	<book code="ACT" />
+        <book code="MAT" />
+        <book code="MRK" />
+        <book code="LUK" />
+        <book code="JHN" />
+        <book code="ACT" />
       </canonicalContent>
       <structure>
-	<content name="Matthew" src="MAT.usx" role="MAT"/>
-	<content name="Mark" src="MRK.usx" role="MRK"/>
-	<content name="gospel-of-luke" src="LUK.usx" role="LUK"/>
-	<content name="non-synoptic-gospel" src="JHN.usx" role="JHN"/>
-	<content name="ACT" src="ACT.usx" role="ACT"/>
+        <content name="Matthew" src="MAT.usx" role="MAT"/>
+        <content name="Mark" src="MRK.usx" role="MRK"/>
+        <content name="gospel-of-luke" src="LUK.usx" role="LUK"/>
+        <content name="non-synoptic-gospel" src="JHN.usx" role="JHN"/>
+        <content name="ACT" src="ACT.usx" role="ACT"/>
       </structure>
     </publication>
   </publications>
@@ -169,6 +169,7 @@
     </promoVersionInfo>
   </promotion>
   <archiveStatus>
+    <bundleCreatorName>PersonsNameIfDifferentThanArchivistName</bundleCreatorName>
     <archivistName>Bev Cope</archivistName>
     <dateArchived>1970-10-30T00:00:00</dateArchived>
     <dateUpdated>1970-10-30T00:00:00</dateUpdated>
