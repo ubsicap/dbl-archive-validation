@@ -1,0 +1,34 @@
+shBlockElement = (
+    shP |
+    shH1 |
+    shH2 |
+    shH3 |
+    shUl |
+    shOl |
+    shBr |
+    shBlockquote
+)
+
+shP = element p { any_content }
+
+shH1 = element h1 { any_content }
+
+shH2 = element h2 { any_content }
+
+shH3 = element h3 { any_content }
+
+shOl = element ol { shLi+ }
+
+shUl = element ul { shLi+ }
+
+shLi = element li { any_content }
+
+shBr = element br { empty }
+
+shBlockquote = element blockquote { any_content }
+
+any_content = any_element* & text
+
+any_element = element * { any_attribute*, any_content }
+
+any_attribute = attribute * { text }

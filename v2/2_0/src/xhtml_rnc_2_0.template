@@ -2,62 +2,6 @@
 
 simplifiedHtml = shBlockElement+
 
-shBlockElement = (
-    shP |
-    shH1 |
-    shH2 |
-    shH3 |
-    shUl |
-    shOl |
-    shBlockquote
-)
-
-shP = element p { nonEmptyString* & shCharMarkup* }
-
-shH1 = element h1 { nonEmptyString* & shCharMarkup* }
-
-shH2 = element h2 { nonEmptyString* & shCharMarkup* }
-
-shH3 = element h3 { nonEmptyString* & shCharMarkup* }
-
-shOl = element ol { shLi+ }
-
-shUl = element ul { shLi+ }
-
-shLi = element li { nonEmptyString* & shCharMarkup* & shBlockElement }
-
-shBlockquote = element blockquote { shBlockElement+ }
-
-shCharMarkup = (
-  shA |
-  shImg |
-  shBr |
-  shStrong |
-  shB |
-  shEm |
-  shI
-)
-
-shA =
-  element a {
-    attribute href { anyURI },
-    (nonEmptyString* & shCharMarkup* )
-  }
-
-shImg =
-  element img {
-    attribute src { anyURI },
-    attribute alt { lenGe1String }
-  }
-
-shBr = element br { empty }
-
-shStrong = element strong { nonEmptyString* & shCharMarkup* }
-
-shB = element b { nonEmptyString* & shCharMarkup* }
-
-shEm = element em { nonEmptyString* & shCharMarkup* }
-
-shI = element i { nonEmptyString* & shCharMarkup* }
+%%insert xhtml_text_rnc_2_0.template%%
 
 %%insert generic_text_rnc_2_0.template%%
