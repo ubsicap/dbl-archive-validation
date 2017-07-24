@@ -1,0 +1,52 @@
+<metadataModel name="audioExpressionMetadata">
+	<!-- Tabs describe a section of UI, in a plausible order for previous/next-type navigation -->
+	<tabs>
+		<tab name="document">
+			<prompt>Document Settings</prompt>
+			<field name="version">
+				<type>xs:decimal</type>
+				<source>@version</source>
+				<readOnly>true</readOnly>
+			</field>
+			<field name="id">
+				<type>bundleIdString</type>
+				<source>@id</source>
+				<prompt>Bundle Id</prompt>
+			</field>
+			<field name="revision">
+				<type>xs:integer</type>
+				<source>@revision</source>
+				<default>0</default>
+				<prompt>Revision</prompt>
+			</field>
+			<field name="lax">
+				<fieldOptional>true</fieldOptional>
+				<valueOptional>false</valueOptional>
+				<type>xs:boolean</type>
+				<source>@lax</source>
+				<default>false</default>
+				<readOnly>true</readOnly>
+			</field>
+		</tab>
+		<tab name="language">
+			<prompt>Language</prompt>
+			<elementField name="languageIso">
+				<prompt>ISO 639-3 Code</prompt>
+				<type>languageIsoString</type>
+			</elementField>
+			<elementField name="languageName">
+				<prompt>Name</prompt>
+				<type>lenGe2String</type>
+			</elementField>
+		</tab>
+	</tabs>
+	<!-- Type information for individual strings (either regex or list) -->
+	<types>
+		<stringType name="bundleIdString">
+			<pattern>[a-f0-9]{16}</pattern>
+		</stringType>
+		<stringType name="languageIsoString">
+			<pattern>[a-z][a-z][a-z]</pattern>
+		</stringType>
+	</types>
+</metadataModel>
