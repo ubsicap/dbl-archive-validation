@@ -1,0 +1,64 @@
+<metadataModel name="audioExpressionMetadata">
+	<!-- Metadata structure, with validation information -->
+	<document>
+		<element name="DBLMetadata">
+			<attribute name="version" optional="false" readOnly="true">
+				<text type="xsd:decimal">2.0</text>
+			</attribute>
+			<attribute name="id" optional="false">
+				<text type="bundleIdString"></text>
+			</attribute>
+			<attribute name="revision" optional="true">
+				<text type="xsd:integer"></text>
+			</attribute>
+			<attribute name="lax" optional="true" readOnly="true">
+				<text type="xsd:integer">false</text>
+			</attribute>
+			<element name="language" number="1">
+				<element name="iso">
+					<text type="languageIsoString">eng</text>
+				</element>
+				<element name="name">
+					<text type="lenGe2String"/>
+				</element>
+				<element name="nameLocal" number="?">
+					<text type="lenGe2String" fallback="/DBLMetadata/language/name/text()"/>
+				</element>
+			</element>
+		</element>
+	</document>
+	<!-- Type information for individual strings (either regex or list) -->
+	<types>
+		<stringType name="bundleIdString">
+			<pattern>[a-f0-9]{16}</pattern>
+		</stringType>
+		<stringType name="languageIsoString">
+			<pattern>[a-z][a-z][a-z]</pattern>
+		</stringType>
+	</types>
+	<!-- Tabs describe a section of UI, in a plausible order for previous/next-type navigation -->
+	<tabs>
+		<tab name="document">
+			<prompt>Document Settings</prompt>
+			<field name="id">
+				<source>/DBLMetadata/@id</source>
+				<prompt>Bundle Id</prompt>
+			</field>
+			<field name="revision">
+				<source>@revision</source>
+				<prompt>Revision</prompt>
+			</field>
+		</tab>
+		<tab name="language">
+			<prompt>Language</prompt>
+			<elementField name="languageIso">
+				<prompt>ISO 639-3 Code</prompt>
+				<type>languageIsoString</type>
+			</elementField>
+			<elementField name="languageName">
+				<prompt>Name</prompt>
+				<type>lenGe2String</type>
+			</elementField>
+		</tab>
+	</tabs>
+</metadataModel>
