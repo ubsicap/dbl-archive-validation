@@ -1,3 +1,6 @@
+
+simplifiedHtml = shBlockElement+
+
 shBlockElement = (
     shP |
     shH1 |

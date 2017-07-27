@@ -1,7 +1,5 @@
 # html
 
-simplifiedHtml = shBlockElement+
-
 %%insert xhtml_text_rnc_2_0.template%%
 
 %%insert generic_text_rnc_2_0.template%%
