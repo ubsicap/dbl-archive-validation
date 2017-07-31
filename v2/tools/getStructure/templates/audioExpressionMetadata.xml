@@ -14,7 +14,7 @@
 			<attribute name="lax" optional="true" readOnly="true">
 				<text type="xsd:integer">false</text>
 			</attribute>
-			<element name="language" number="1">
+			<element name="language">
 				<element name="iso">
 					<text type="languageIsoString">eng</text>
 				</element>
@@ -22,7 +22,20 @@
 					<text type="lenGe2String"/>
 				</element>
 				<element name="nameLocal" number="?">
-					<text type="lenGe2String" fallback="/DBLMetadata/language/name/text()"/>
+					<text type="lenGe2String" fallback="./name/text()"/>
+				</element>
+				<element name="countries">
+					<element name="country" number="+">
+						<element name="iso">
+							<text type="countryIsoString"/>
+						</element>
+						<element name="name">
+							<text type="lenGe2String"/>
+						</element>
+						<element name="nameLocal" number="?">
+							<text type="lenGe2String" fallback="./name/text()"/>
+						</element>
+					</element>
 				</element>
 			</element>
 		</element>
@@ -35,30 +48,52 @@
 		<stringType name="languageIsoString">
 			<pattern>[a-z][a-z][a-z]</pattern>
 		</stringType>
+		<stringType name="countryIsoString">
+			<pattern>[A-Z][A-Z]</pattern>
+		</stringType>
 	</types>
-	<!-- Tabs describe a section of UI, in a plausible order for previous/next-type navigation -->
+	<!-- Sections describe a UI form, in a plausible order for previous/next-type navigation -->
 	<tabs>
-		<tab name="document">
+		<section name="document">
 			<prompt>Document Settings</prompt>
 			<field name="id">
 				<source>/DBLMetadata/@id</source>
 				<prompt>Bundle Id</prompt>
 			</field>
 			<field name="revision">
-				<source>@revision</source>
+				<source>/DBLMetadata/@revision</source>
 				<prompt>Revision</prompt>
 			</field>
-		</tab>
-		<tab name="language">
+		</section>
+		<section name="language">
 			<prompt>Language</prompt>
-			<elementField name="languageIso">
+			<field name="languageIso">
+				<source>/DBLMetadata/language/iso/text()</source>
 				<prompt>ISO 639-3 Code</prompt>
-				<type>languageIsoString</type>
-			</elementField>
-			<elementField name="languageName">
+			</field>
+			<field name="languageName">
+				<source>/DBLMetadata/language/name/text()</source>
 				<prompt>Name</prompt>
-				<type>lenGe2String</type>
-			</elementField>
-		</tab>
+			</field>
+		</section>
+		<section name="countries">
+			<prompt>Countries</prompt>
+			<collection>
+				<source>/DBLMetadata/countries</source>
+				<countains>country</countains>
+				<field name="countryIso" collectionId="true">
+					<source>./iso/text()</source>
+					<prompt>ISO Alpha 2 Code</prompt>
+				</field>
+				<field name="countryName" uniqueInCollection="true">
+					<source>./name/text()</source>
+					<prompt>Name</prompt>
+				</field>
+				<field name="countryNameLocal" uniqueInCollection="true" optional="true">
+					<source>./nameLocal/text()</source>
+					<prompt>Local Name</prompt>
+				</field>
+			</collection>
+		</section>
 	</tabs>
 </metadataModel>
