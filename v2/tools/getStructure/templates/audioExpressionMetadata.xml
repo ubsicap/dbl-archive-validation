@@ -22,7 +22,7 @@
 					<text type="lenGe2String"/>
 				</element>
 				<element name="nameLocal" number="?">
-					<text type="lenGe2String" fallback="./name/text()"/>
+					<text type="lenGe2String" fallback="./name"/>
 				</element>
 				<element name="countries">
 					<element name="country" number="+">
@@ -33,7 +33,7 @@
 							<text type="lenGe2String"/>
 						</element>
 						<element name="nameLocal" number="?">
-							<text type="lenGe2String" fallback="./name/text()"/>
+							<text type="lenGe2String" fallback="./name"/>
 						</element>
 					</element>
 				</element>
@@ -53,7 +53,7 @@
 		</stringType>
 	</types>
 	<!-- Sections describe a UI form, in a plausible order for previous/next-type navigation -->
-	<tabs>
+	<sections>
 		<section name="document">
 			<prompt>Document Settings</prompt>
 			<field name="id">
@@ -68,11 +68,11 @@
 		<section name="language">
 			<prompt>Language</prompt>
 			<field name="languageIso">
-				<source>/DBLMetadata/language/iso/text()</source>
+				<source>/DBLMetadata/language/iso</source>
 				<prompt>ISO 639-3 Code</prompt>
 			</field>
 			<field name="languageName">
-				<source>/DBLMetadata/language/name/text()</source>
+				<source>/DBLMetadata/language/name</source>
 				<prompt>Name</prompt>
 			</field>
 		</section>
@@ -80,20 +80,20 @@
 			<prompt>Countries</prompt>
 			<collection>
 				<source>/DBLMetadata/countries</source>
-				<countains>country</countains>
+				<contains>country</contains>
 				<field name="countryIso" collectionId="true">
-					<source>./iso/text()</source>
+					<source>./iso</source>
 					<prompt>ISO Alpha 2 Code</prompt>
 				</field>
 				<field name="countryName" uniqueInCollection="true">
-					<source>./name/text()</source>
+					<source>./name</source>
 					<prompt>Name</prompt>
 				</field>
 				<field name="countryNameLocal" uniqueInCollection="true" optional="true">
-					<source>./nameLocal/text()</source>
+					<source>./nameLocal</source>
 					<prompt>Local Name</prompt>
 				</field>
 			</collection>
 		</section>
-	</tabs>
+	</sections>
 </metadataModel>
