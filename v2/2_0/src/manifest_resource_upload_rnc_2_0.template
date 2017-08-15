@@ -4,14 +4,13 @@ translationManifestResource =
   element resource {(
     commonManifestResourceAtts &
     attribute progress { xsd:positiveInteger { maxInclusive = "999" } }?),
-    atomElement+
+    atomElement*
   }
 
 nonTranslationManifestResource =
   element resource {
     commonManifestResourceAtts,
-    atomElement+
-
+    atomElement*
   }
 
 commonManifestResourceAtts = (
