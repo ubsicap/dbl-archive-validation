@@ -29,4 +29,4 @@ atomElement =
     attribute status { atomStatus }?
   }
 
-atomStatus = ("claimed"|"complete"|"unclaimed")
+atomStatus = ("claimed"|"complete"|"unclaimed"|"taken"|"owned")
