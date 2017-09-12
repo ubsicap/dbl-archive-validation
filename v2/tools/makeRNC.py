@@ -46,9 +46,21 @@ with open(inputFilename, 'r') as inputFileHandle:
             maybeFilename = '_'.join(components)
             maybeFilePath = os.path.join(directory, maybeFilename)
             if os.path.exists(maybeFilePath):
-               # only replace the file name if the lax version exists.
-               #print 'replacing %s with %s' % (insertFilename, maybeFilename)
                insertFilename = maybeFilename
+         if mode == "template": # based on lax
+            components = insertFilename.split('_')
+            components.insert(1, 'template')
+            maybeFilename = '_'.join(components)
+            maybeFilePath = os.path.join(directory, maybeFilename)
+            if os.path.exists(maybeFilePath):
+               insertFilename = maybeFilename
+            else:
+               components = insertFilename.split('_')
+               components.insert(1, 'lax')
+               maybeFilename = '_'.join(components)
+               maybeFilePath = os.path.join(directory, maybeFilename)
+               if os.path.exists(maybeFilePath):
+                  insertFilename = maybeFilename
          elif mode != "strict" and os.path.exists(os.path.join(directory, re.sub("_rnc", "_{0}_rnc".format(mode), insertFilename))):
             insertFilename = re.sub("_rnc", "_{0}_rnc".format(mode), insertFilename)
          insertFilePath = os.path.join(directory, insertFilename)

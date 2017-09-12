@@ -12,6 +12,8 @@ echo "   metadata-lax.rnc"
 ./makeRNC.py --mode lax --quiet $srcDir/src/metadata_standalone_rnc_2_0.template $srcDir/schemas/metadata-lax.rnc
 echo "   metadata-upload.rnc"
 ./makeRNC.py --mode upload --quiet $srcDir/src/metadata_standalone_rnc_2_0.template $srcDir/schemas/metadata-upload.rnc
+echo "   metadata-template.rnc"
+./makeRNC.py --mode template --quiet $srcDir/src/metadata_standalone_rnc_2_0.template $srcDir/schemas/metadata-template.rnc
 echo "   job-spec-upload.rnc"
 ./makeRNC.py --mode upload --quiet $srcDir/src/job_specification_standalone_rnc_2_0.template $srcDir/schemas/job-spec-upload.rnc
 echo "   dbl-xhtml.rnc"
@@ -24,6 +26,8 @@ echo "   metadata-lax.rng"
 java -jar ./trang.jar -I rnc -O rng $srcDir/schemas/metadata-lax.rnc $srcDir/schemas/metadata-lax.rng
 echo "   metadata-upload.rng"
 java -jar ./trang.jar -I rnc -O rng $srcDir/schemas/metadata-upload.rnc $srcDir/schemas/metadata-upload.rng
+echo "   metadata-template.rng"
+java -jar ./trang.jar -I rnc -O rng $srcDir/schemas/metadata-template.rnc $srcDir/schemas/metadata-template.rng
 echo "   job-spec-upload.rnc"
 java -jar ./trang.jar -I rnc -O rng $srcDir/schemas/job-spec-upload.rnc $srcDir/schemas/job-spec-upload.rng
 echo "   dbl-xhtml.rnc"
