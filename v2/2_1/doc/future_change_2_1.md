@@ -1,0 +1,1 @@
+# Changes to consider for future metadata schema
