@@ -2,9 +2,15 @@
 
 1. Make DBLMetadata/@revision optional in metadata_upload.rng
 
+1. Remove optional @lax
+
 1. Require /identification/abbreviation for text expressions
 
 1. Make csetId optional for Paratext systemIds
+
+1. Allow Biblica systemIds to start with 0
+
+1. Add dbp systemId
 
 1. Make type/audience and type/translationType optional for text
 
@@ -23,6 +29,8 @@
 1. Make "name" attribute optional for sourceStructureContent?
 
 1. Require a publication for expressions
+
+1. Make @name for content optional
 
 1. Handle mixed XHTML content better
 
