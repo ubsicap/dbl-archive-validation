@@ -1,8 +1,6 @@
 # Changes rejected during pre-metadata 2.1 review
 
-1. Allow one and only one of each xhtml or plain in copyright full and short statements
-
-1. ALL make archiveStatus [archivistName, dateArchived, dateUpdated] optional in metadata_upload.rng ?
+1. ALL make archiveStatus [archivistName] optional in metadata_upload.rng ?
 
 1. TEXT: Require /identification/systemId/@type=paratext?
 
@@ -13,4 +11,3 @@
 1. Why promoVersionInfo/@contenttype="xhtml" vs statementContent/ @type="xhtml"?
 
 1. New roleIds for variant material Psa151inPsa, LjeInBar, DagPartial?
-
