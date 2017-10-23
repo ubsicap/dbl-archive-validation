@@ -2,6 +2,8 @@
 
 1. ALL make archiveStatus [archivistName] optional in metadata_upload.rng ?
 
+1. Make abbr in rightsHolder optional
+
 1. TEXT: Require /identification/systemId/@type=paratext?
 
 1. ALL make atoms optional for bundle making validation
