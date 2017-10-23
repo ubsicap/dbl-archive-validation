@@ -249,6 +249,13 @@
       <param name="pattern">\S.*\S</param>
     </data>
   </define>
+  <define name="lenGe1Le255String">
+    <data type="string">
+      <param name="minLength">1</param>
+      <param name="maxLength">255</param>
+      <param name="pattern">\S(.*\S)?</param>
+    </data>
+  </define>
   <define name="lenLe255String">
     <data type="string">
       <param name="maxLength">255</param>
@@ -1565,7 +1572,7 @@
         </element>
         <optional>
           <element name="abbr">
-            <ref name="lenGe2Le255String"/>
+            <ref name="lenGe1Le255String"/>
           </element>
         </optional>
       </interleave>
