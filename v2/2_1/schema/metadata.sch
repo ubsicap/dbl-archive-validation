@@ -30,4 +30,12 @@
             </sch:assert>
         </sch:rule>
     </sch:pattern>
+    <sch:pattern>
+        <sch:rule context="canonicalContent/book">
+            <sch:let name="bookCode" value="@code"/>
+            <sch:assert test="count(preceding-sibling::*[@code = $bookCode]) = 0">
+                <sch:value-of select="count(preceding-sibling::*[@code = $bookCode])"/> previous occurence(s) of book code '<sch:value-of select="@code"/>' in canonicalContent
+            </sch:assert>
+       </sch:rule>
+    </sch:pattern>
 </sch:schema>

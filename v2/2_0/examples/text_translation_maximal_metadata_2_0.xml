@@ -122,13 +122,15 @@
   </names>
   <source>
     <canonicalContent>
-      <book code="MAT" />
-      <book code="MRK" />
-      <book code="LUK" />
-      <book code="JHN" />
-      <book code="ACT" />
+      <book code="MAT"/>
+      <book code="MRK"/>
+      <book code="LUK"/>
+      <book code="JHN"/>
+      <book code="ACT"/>
     </canonicalContent>
-    <content name="zippy" src="sources/aSourceArchive.zip" role="sourceZip"/>
+    <structure>
+      <content name="zippy" src="sources/aSourceArchive.zip" role="sourceZip"/>
+    </structure>
   </source>
   <copyright>
     <fullStatement>
