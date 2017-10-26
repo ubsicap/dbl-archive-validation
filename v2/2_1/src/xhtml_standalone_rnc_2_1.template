@@ -1,0 +1,5 @@
+# Standalone xhtml schema
+
+start = element * { simplifiedHtml }
+
+%%insert xhtml_rnc_2_1.template%%

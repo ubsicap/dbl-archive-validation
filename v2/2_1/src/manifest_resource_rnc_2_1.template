@@ -1,0 +1,19 @@
+# Manifest resource
+
+translationManifestResource =
+  element resource {(
+    commonManifestResourceAtts &
+    attribute progress { xsd:positiveInteger { maxInclusive = "999" } }?)
+  }
+
+nonTranslationManifestResource =
+  element resource {
+    commonManifestResourceAtts
+  }
+
+commonManifestResourceAtts = (
+  attribute uri { anyURI},
+  attribute size { xsd:integer },
+  attribute checksum { s3Checksum }?,
+  attribute mimeType { mimeTypeString }
+)

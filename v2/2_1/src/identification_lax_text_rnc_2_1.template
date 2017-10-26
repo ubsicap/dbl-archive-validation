@@ -1,0 +1,23 @@
+# identification text (lax)
+
+abbreviationString = text
+
+localAbbreviationString = text
+
+biblicaId = text
+
+gbcId = text
+
+tmsId = text
+
+ptId = text
+
+ptregId = text
+
+reapId = text
+
+dateCompletedValue = text
+
+scopeEnum = text
+
+%%insert generic_text_rnc_2_1.template%%

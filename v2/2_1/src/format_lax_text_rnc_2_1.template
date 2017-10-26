@@ -1,0 +1,17 @@
+# format text (lax)
+
+measurementString = text
+
+percentageString = text
+
+screenResolution = text
+
+audioCompressionEnum = text
+
+audioTrackEnum = text
+
+printOrientationEnum = text
+
+printColorEnum = text
+
+printFontEnum = text

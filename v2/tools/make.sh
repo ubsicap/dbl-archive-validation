@@ -3,21 +3,23 @@
 set -e
 set -u
 
-srcDir=$1
+version=$1 # eg 2_1
+srcDir="../"$version
+echo $srcDir
 
 echo "Make RNC"
 echo "   metadata.rnc"
-./makeRNC.py --quiet $srcDir/src/metadata_standalone_rnc_2_0.template $srcDir/schemas/metadata.rnc
+./makeRNC.py --quiet $srcDir/src/metadata_standalone_rnc_$version.template $srcDir/schemas/metadata.rnc
 echo "   metadata-lax.rnc"
-./makeRNC.py --mode lax --quiet $srcDir/src/metadata_standalone_rnc_2_0.template $srcDir/schemas/metadata-lax.rnc
+./makeRNC.py --mode lax --quiet $srcDir/src/metadata_standalone_rnc_$version.template $srcDir/schemas/metadata-lax.rnc
 echo "   metadata-upload.rnc"
-./makeRNC.py --mode upload --quiet $srcDir/src/metadata_standalone_rnc_2_0.template $srcDir/schemas/metadata-upload.rnc
+./makeRNC.py --mode upload --quiet $srcDir/src/metadata_standalone_rnc_$version.template $srcDir/schemas/metadata-upload.rnc
 echo "   metadata-template.rnc"
-./makeRNC.py --mode template --quiet $srcDir/src/metadata_standalone_rnc_2_0.template $srcDir/schemas/metadata-template.rnc
+./makeRNC.py --mode template --quiet $srcDir/src/metadata_standalone_rnc_$version.template $srcDir/schemas/metadata-template.rnc
 echo "   job-spec-upload.rnc"
-./makeRNC.py --mode upload --quiet $srcDir/src/job_specification_standalone_rnc_2_0.template $srcDir/schemas/job-spec-upload.rnc
+./makeRNC.py --mode upload --quiet $srcDir/src/job_specification_standalone_rnc_$version.template $srcDir/schemas/job-spec-upload.rnc
 echo "   dbl-xhtml.rnc"
-./makeRNC.py --quiet $srcDir/src/xhtml_standalone_rnc_2_0.template $srcDir/schemas/dbl-xhtml.rnc
+./makeRNC.py --quiet $srcDir/src/xhtml_standalone_rnc_$version.template $srcDir/schemas/dbl-xhtml.rnc
 
 echo "Make RNG"
 echo "   metadata.rng"

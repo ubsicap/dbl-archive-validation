@@ -1,0 +1,13 @@
+# generic text (lax)
+
+nonEmptyString = text
+
+lenGe1String = text
+
+lenGe2String = text
+
+lenGe2Le255String = text
+
+lenLe255String = text
+
+anyURI = text

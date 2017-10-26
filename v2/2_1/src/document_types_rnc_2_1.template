@@ -1,0 +1,129 @@
+# Document types
+
+dblMetadataElement = (translationMetadata | expressionMetadata | translationAndExpressionMetadata)
+
+translationMetadata = textTranslationMetadata | audioTranslationMetadata | videoTranslationMetadata
+
+expressionMetadata = textExpressionMetadata | audioExpressionMetadata | printExpressionMetadata | videoExpressionMetadata | brailleExpressionMetadata
+
+translationAndExpressionMetadata = textTranslationAndExpressionMetadata | audioTranslationAndExpressionMetadata | videoTranslationAndExpressionMetadata
+
+textTranslationMetadata = element DBLMetadata {
+  dblMetadataCommonAtts &
+  translationCommonElements &
+  fullLanguageElement &
+  textTranslationTypeElement &
+  textFormatElement
+}
+
+audioTranslationMetadata = element DBLMetadata {
+  dblMetadataCommonAtts &
+  translationCommonElements &
+  shortLanguageElement &
+  audioTranslationTypeElement &
+  audioFormatElement
+}
+
+videoTranslationMetadata = element DBLMetadata {
+  dblMetadataCommonAtts &
+  translationCommonElements &
+  shortLanguageElement &
+  videoTranslationTypeElement &
+  videoFormatElement
+}
+
+textExpressionMetadata = element DBLMetadata {
+  dblMetadataCommonAtts &
+  expressionCommonElements &
+  shortLanguageElement &
+  textExpressionTypeElement &
+  textFormatElement
+}
+
+printExpressionMetadata = element DBLMetadata {
+  dblMetadataCommonAtts &
+  expressionCommonElements &
+  shortLanguageElement &
+  printExpressionTypeElement &
+  printFormatElement
+}
+
+audioExpressionMetadata = element DBLMetadata {
+  dblMetadataCommonAtts &
+  expressionCommonElements &
+  shortLanguageElement &
+  audioExpressionTypeElement &
+  audioFormatElement
+}
+
+videoExpressionMetadata = element DBLMetadata {
+  dblMetadataCommonAtts &
+  expressionCommonElements &
+  shortLanguageElement &
+  videoExpressionTypeElement &
+  videoFormatElement
+}
+
+brailleExpressionMetadata = element DBLMetadata {
+  dblMetadataCommonAtts &
+  expressionCommonElements &
+  shortLanguageElement &
+  brailleExpressionTypeElement &
+  brailleFormatElement
+}
+
+textTranslationAndExpressionMetadata = element DBLMetadata {
+  dblMetadataCommonAtts &
+  translationAndExpressionCommonElements &
+  fullLanguageElement &
+  textTranslationAndExpressionTypeElement &
+  textFormatElement
+}
+
+audioTranslationAndExpressionMetadata = element DBLMetadata {
+  dblMetadataCommonAtts &
+  translationAndExpressionCommonElements &
+  fullLanguageElement &
+  audioTranslationAndExpressionTypeElement &
+  audioFormatElement
+}
+
+videoTranslationAndExpressionMetadata = element DBLMetadata {
+  dblMetadataCommonAtts &
+  translationAndExpressionCommonElements &
+  fullLanguageElement &
+  videoTranslationAndExpressionTypeElement &
+  videoFormatElement
+}
+
+translationCommonElements = (
+  commonElements &
+  translationManifestElement &
+  translationSourceElement
+)
+
+expressionCommonElements = (
+  commonElements &
+  promotionElement &
+  nonTranslationManifestElement &
+  publicationsElement &
+  translationSourceElement?
+)
+
+translationAndExpressionCommonElements = (
+  commonElements &
+  promotionElement &
+  translationManifestElement &
+  publicationsElement &
+  translationSourceElement
+)
+
+commonElements = (
+  identificationElement &
+  relationshipsElement &
+  agenciesElement &
+  countriesElement &
+  namesElement &
+  copyrightElement &
+  archiveStatusElement
+)
