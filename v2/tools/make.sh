@@ -3,9 +3,10 @@
 set -e
 set -u
 
-version=$1 # eg 2_1
+version=${1:-"2_1"}
 srcDir="../"$version
-echo $srcDir
+
+echo "Making v$version"
 
 echo "Make RNC"
 echo "   metadata.rnc"
