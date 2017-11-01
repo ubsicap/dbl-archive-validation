@@ -11,7 +11,7 @@ rightsHolderElement =
   element rightsHolder {
     element abbr { lenGe2String } &
     element url { anyURI }? &
-    element local { lenGe2String }? &
+    element nameLocal { lenGe2String }? &
     element uid { agenciesUID } &
     element name { lenGe2String }
   }
