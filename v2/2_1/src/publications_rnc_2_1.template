@@ -1,7 +1,7 @@
 # publications
 
 publicationsElement = # DCMI: tableOfContents
-  element publications { publicationElement* }
+  element publications { publicationElement+ }
 
 publicationElement =
   element publication {
@@ -40,7 +40,7 @@ publicationStructureDivision =
 
 publicationStructureContent =
   element content {
-    attribute name {nameIdString} &
+    attribute name {nameIdString}? &
     attribute src {srcPathString} &
     attribute role {roleId}?
   }

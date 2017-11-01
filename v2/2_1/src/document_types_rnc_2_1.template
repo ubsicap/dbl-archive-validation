@@ -10,6 +10,7 @@ translationAndExpressionMetadata = textTranslationAndExpressionMetadata | audioT
 
 textTranslationMetadata = element DBLMetadata {
   dblMetadataCommonAtts &
+  textIdentificationElement &
   translationCommonElements &
   fullLanguageElement &
   textTranslationTypeElement &
@@ -18,6 +19,7 @@ textTranslationMetadata = element DBLMetadata {
 
 audioTranslationMetadata = element DBLMetadata {
   dblMetadataCommonAtts &
+  identificationElement &
   translationCommonElements &
   shortLanguageElement &
   audioTranslationTypeElement &
@@ -26,6 +28,7 @@ audioTranslationMetadata = element DBLMetadata {
 
 videoTranslationMetadata = element DBLMetadata {
   dblMetadataCommonAtts &
+  identificationElement &
   translationCommonElements &
   shortLanguageElement &
   videoTranslationTypeElement &
@@ -34,6 +37,7 @@ videoTranslationMetadata = element DBLMetadata {
 
 textExpressionMetadata = element DBLMetadata {
   dblMetadataCommonAtts &
+  textIdentificationElement &
   expressionCommonElements &
   shortLanguageElement &
   textExpressionTypeElement &
@@ -42,6 +46,7 @@ textExpressionMetadata = element DBLMetadata {
 
 printExpressionMetadata = element DBLMetadata {
   dblMetadataCommonAtts &
+  identificationElement &
   expressionCommonElements &
   shortLanguageElement &
   printExpressionTypeElement &
@@ -50,6 +55,7 @@ printExpressionMetadata = element DBLMetadata {
 
 audioExpressionMetadata = element DBLMetadata {
   dblMetadataCommonAtts &
+  identificationElement &
   expressionCommonElements &
   shortLanguageElement &
   audioExpressionTypeElement &
@@ -57,6 +63,7 @@ audioExpressionMetadata = element DBLMetadata {
 }
 
 videoExpressionMetadata = element DBLMetadata {
+  identificationElement &
   dblMetadataCommonAtts &
   expressionCommonElements &
   shortLanguageElement &
@@ -66,6 +73,7 @@ videoExpressionMetadata = element DBLMetadata {
 
 brailleExpressionMetadata = element DBLMetadata {
   dblMetadataCommonAtts &
+  identificationElement &
   expressionCommonElements &
   shortLanguageElement &
   brailleExpressionTypeElement &
@@ -74,6 +82,7 @@ brailleExpressionMetadata = element DBLMetadata {
 
 textTranslationAndExpressionMetadata = element DBLMetadata {
   dblMetadataCommonAtts &
+  textIdentificationElement &
   translationAndExpressionCommonElements &
   fullLanguageElement &
   textTranslationAndExpressionTypeElement &
@@ -82,6 +91,7 @@ textTranslationAndExpressionMetadata = element DBLMetadata {
 
 audioTranslationAndExpressionMetadata = element DBLMetadata {
   dblMetadataCommonAtts &
+  identificationElement &
   translationAndExpressionCommonElements &
   fullLanguageElement &
   audioTranslationAndExpressionTypeElement &
@@ -90,6 +100,7 @@ audioTranslationAndExpressionMetadata = element DBLMetadata {
 
 videoTranslationAndExpressionMetadata = element DBLMetadata {
   dblMetadataCommonAtts &
+  identificationElement &
   translationAndExpressionCommonElements &
   fullLanguageElement &
   videoTranslationAndExpressionTypeElement &
@@ -119,7 +130,6 @@ translationAndExpressionCommonElements = (
 )
 
 commonElements = (
-  identificationElement &
   relationshipsElement &
   agenciesElement &
   countriesElement &

@@ -139,8 +139,8 @@ commonVideoExpressionTypeElements = (
 
 commonTranslationTypeElements = (
   commonTypeElements &
-  element translationType { translationTypeEnum } &
-  element audience { translationLevelEnum }
+  element translationType { translationTypeEnum }? &
+  element audience { translationLevelEnum }?
 )
 
 commonExpressionTypeElements = (

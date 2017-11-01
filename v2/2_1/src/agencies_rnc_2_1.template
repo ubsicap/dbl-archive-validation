@@ -4,15 +4,14 @@ agenciesElement =
   element agencies {
     rightsHolderElement+ &
     rightsAdminElement? &
-    contributorElement+ &
-    etenPartnerElement?
+    contributorElement+
   }
 
 rightsHolderElement =
   element rightsHolder {
     element abbr { lenGe2String } &
-    element url { anyURI } &
-    element local { lenGe2String } &
+    element url { anyURI }? &
+    element local { lenGe2String }? &
     element uid { agenciesUID } &
     element name { lenGe2String }
   }
@@ -35,11 +34,5 @@ contributorElement =
     element uid { agenciesUID } &
     element name { lenGe2String }
     }
-
-etenPartnerElement =
-  element etenPartner {
-    element uid { lenGe2String }? &
-    element name { lenGe2String }?
-  }
 
 %%insert agencies_text_rnc_2_1.template%%

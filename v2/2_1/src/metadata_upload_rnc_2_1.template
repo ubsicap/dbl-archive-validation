@@ -1,11 +1,11 @@
-# DBLMetadata
+# DBLMetadata (Upload)
 
 %%insert document_types_rnc_2_1.template%%
 
 dblMetadataCommonAtts = (
   attribute version { "2.1" } &
   attribute id { bundleIdString } &
-  attribute revision { revisionValue }
+  attribute revision { revisionValue }?
 )
 
 %%insert metadata_text_rnc_2_1.template%%

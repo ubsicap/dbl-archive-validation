@@ -15,7 +15,7 @@ sourceStructureDivision =
 
 sourceStructureContent =
   element content {
-    attribute name {nameIdString} &
+    attribute name {nameIdString}? &
     attribute src {srcPathString} &
     attribute role {roleId}?
   }

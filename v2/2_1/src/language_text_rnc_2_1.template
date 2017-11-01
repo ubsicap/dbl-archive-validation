@@ -2,7 +2,7 @@
 
 languageIsoString = xsd:string { pattern = "[a-z][a-z][a-z]" }
 
-ldmlString = xsd:string { pattern = "[A-Za-z]{2,3}([\-_][A-Za-z0-9]+){0,3}" }
+ldmlString = xsd:string { pattern = "[A-Za-z]{2,3}([\-_][A-Za-z0-9]+){0,4}" }
 
 iso15924String = ( # ISO 15924
   "Adlm" |

@@ -6,8 +6,8 @@ namesElement =
 namesName =
   element name {
     attribute id { nameIdString } &
-    element long { lenGe2Le255String }? &
-    element short { lenGe2Le255String } &
+    element long { lenGe1Le1024String }? &
+    element short { lenGe1Le255String } &
     element abbr { lenGe2Le255String }?
   }
 

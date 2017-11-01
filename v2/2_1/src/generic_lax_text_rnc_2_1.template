@@ -8,6 +8,10 @@ lenGe2String = text
 
 lenGe2Le255String = text
 
+lenGe1Le255String = text
+
+lenGe1Le1024String = text
+
 lenLe255String = text
 
 anyURI = text

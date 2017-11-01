@@ -16,6 +16,22 @@ identificationElement =
     element bundleProducer { lenGe2String }
     }
 
+textIdentificationElement =
+  element identification {
+    element name { lenGe2String } &
+    element nameLocal { lenGe2String }? &
+    element abbreviation { abbreviationString } &
+    element abbreviationLocal { localAbbreviationString }? &
+    element description { lenGe2String } &
+    element descriptionLocal { lenGe2String }? &
+    element scope { scopeEnum } &
+    canonSpecElement? &
+
+    element dateCompleted { dateCompletedValue }? &
+    (gbcSystemId | ptSystemId | reapSystemId | biblicaSystemId | tmsSystemId | ptregSystemId | dbpSystemId)* &
+    element bundleProducer { lenGe2String }
+    }
+
 gbcSystemId =
   element systemId {
     attribute type { "gbc" },
@@ -53,7 +69,7 @@ ptSystemId =
 ptElements =
   element name { lenGe2String } &
   element fullName { lenGe2String } &
-  element csetId { lenGe2String } &
+  element csetId { lenGe2String }? &
   element id { ptId }
 
 ptregElements =
@@ -76,6 +92,15 @@ biblicaSystemId =
 
 biblicaElements =
   element id { biblicaId }
+
+dbpSystemId =
+  element systemId {
+    attribute type { "dbp" },
+    dbpElements
+  }
+
+dbpElements =
+  element id { dbpId }
 
 %%insert canon_rnc_2_1.template%%
 

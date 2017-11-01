@@ -5,7 +5,8 @@ audioTypeDramatizationEnum = "Dramatized" | "Non-Dramatized" | "Single-Voice"
 translationTypeEnum = (
   "First" |
   "New" |
-  "Revision"
+  "Revision" |
+  "Study / Help Material"
 )
 
 translationLevelEnum = (
@@ -13,5 +14,6 @@ translationLevelEnum = (
   "Common" |
   "Common - Literary" |
   "Literary" |
-  "Liturgical"
+  "Liturgical" |
+  "Children"
 )

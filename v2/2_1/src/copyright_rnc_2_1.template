@@ -2,7 +2,7 @@
 
 copyrightElement =
   element copyright {
-    copyrightFullStatementElement &
+    copyrightFullStatementElement? &
     copyrightShortStatementElement?
   }
 
