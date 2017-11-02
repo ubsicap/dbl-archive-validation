@@ -1,0 +1,29 @@
+# copyright
+
+copyrightElement =
+  element copyright {
+    copyrightFullStatementElement? &
+    copyrightShortStatementElement?
+  }
+
+copyrightFullStatementElement =
+  element fullStatement { statementContent+ }
+
+copyrightShortStatementElement =
+  element shortStatement { statementContent+ }
+  
+statementContent = htmlStatementContent | plainStatementContent
+
+htmlStatementContent =
+  element statementContent {
+    attribute type { "xhtml" },
+    simplifiedHtml+
+  }
+  
+plainStatementContent =
+  element statementContent {
+    attribute type { "plain" },
+    text
+  }
+
+%%insert xhtml_rnc_2_1.template%%

@@ -1,0 +1,7 @@
+# metadata text
+
+revisionValue = xsd:integer
+
+bundleIdString = xsd:string { pattern = "[a-f0-9]{16}" }
+
+%%insert generic_text_rnc_2_1.template%%
