@@ -1,0 +1,10 @@
+# archive_status
+
+archiveStatusElement =
+  element archiveStatus {
+    element bundleCreatorName {lenGe2String}? &
+    element archivistName { lenGe2String } &
+    element dateArchived { text }? &
+    element dateUpdated { text }? &
+    element comments { lenLe255String }
+  }

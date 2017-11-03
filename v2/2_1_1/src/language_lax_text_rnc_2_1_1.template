@@ -1,0 +1,15 @@
+# language text (lax)
+
+languageIsoString = text
+
+ldmlString = text
+
+iso15924String = text
+
+rodString = text
+
+languageScriptDirectionEnum = text
+
+numeralSystemEnum = text
+
+%%insert generic_text_rnc_2_1_1.template%%
