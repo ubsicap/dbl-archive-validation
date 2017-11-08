@@ -135,5 +135,6 @@ commonElements = (
   countriesElement &
   namesElement &
   copyrightElement &
+  progressElement? &
   archiveStatusElement
 )

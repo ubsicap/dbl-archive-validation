@@ -8,7 +8,7 @@ namesName =
     attribute id { nameIdString } &
     element long { lenGe1Le1024String }? &
     element short { lenGe1Le255String } &
-    element abbr { lenGe2Le255String }?
+    element abbr { lenGe1Le255String }?
   }
 
 %%insert names_text_rnc_2_1.template%%

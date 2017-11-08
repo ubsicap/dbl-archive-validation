@@ -1,4 +1,4 @@
-# archive_status
+# archive_status (and progress)
 
 archiveStatusElement =
   element archiveStatus {
@@ -7,4 +7,12 @@ archiveStatusElement =
     element dateArchived { xsd:dateTime } &
     element dateUpdated { xsd:dateTime } &
     element comments { lenLe255String }
+  }
+
+progressElement =
+  element progress {
+    element book {
+      attribute code {canonicalBookIdEnum},
+      attribute stage {xsd:integer { minInclusive="1" maxInclusive="6" } }
+    }+
   }
