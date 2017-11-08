@@ -1,0 +1,69 @@
+# format
+
+textFormatElement =
+  element format {
+    element versedParagraphs { xsd:boolean }
+  }
+
+audioFormatElement = # DCMI: format
+  element format { audioSubelements}
+  
+audioSubelements = 
+    element compression { audioCompressionEnum }? &
+    element trackConfiguration { audioTrackEnum }? &
+    element bitRate { xsd:integer }? &
+    element bitDepth { xsd:integer }? &
+    element samplingRate { xsd:integer }?
+
+printFormatElement =
+  element format {
+    element pod { xsd:boolean } &
+    element width { measurementString } &
+    element height { measurementString } &
+    element scale { percentageString } &
+    element orientation { printOrientationEnum } &
+    element color { printColorEnum } &
+    element fonts { printFormatFontElement* }
+  }
+
+printFormatFontElement =
+  element font {
+    attribute type { printFontEnum },
+    text
+  }
+
+videoFormatElement =
+  element format {
+    element container {"MP4"} &
+      videoFormatVideoStream &
+      videoFormatAudioStream? &
+      videoFormatSubtitleStream?
+    }
+
+videoFormatVideoStream =
+  element videoStream {
+      element codec { xsd:string } &
+      element bitRate { xsd:positiveInteger } &
+      element frameRate { xsd:decimal } &
+      element screenResolution { screenResolution }
+  }
+
+videoFormatAudioStream =
+  element audioStream { audioSubelements }
+ 
+videoFormatSubtitleStream = element subtitleStream { empty }
+
+brailleFormatElement =
+  element format {
+    element isContracted { xsd:boolean } &
+    element rules { any_element* } &
+    element pageFormat { any_element* } &
+    element titlePage { any_element* }?
+  }
+
+# TEMPORARY WHILE WE DEFINE BRAILLE FORMAT SECTION
+any_content = any_element* & text
+any_element = element * { any_attribute*, any_content }
+any_attribute = attribute * { text }
+
+%%insert format_text_rnc_2_1_1.template%%

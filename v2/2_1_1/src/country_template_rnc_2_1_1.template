@@ -1,0 +1,11 @@
+# country
+
+countriesElement = element countries { countryElement* }
+
+countryElement = element country {
+  element iso { countryIsoString } &
+  element name { lenGe2String } &
+  element nameLocal { lenGe2String }?
+}
+
+%%insert country_text_rnc_2_1_1.template%%

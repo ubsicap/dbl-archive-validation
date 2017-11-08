@@ -1,0 +1,7 @@
+# type text (lax)
+
+audioTypeDramatizationEnum = text
+
+translationTypeEnum = text
+
+translationLevelEnum = text

@@ -1,0 +1,23 @@
+# manifest
+
+nonTranslationManifestElement =
+  element manifest { (nonTranslationManifestContainer | nonTranslationManifestResource)+ }
+
+translationManifestElement =
+  element manifest { (translationManifestContainer | translationManifestResource)+ }
+
+nonTranslationManifestContainer =
+  element container {
+    attribute uri { anyURI },
+    (nonTranslationManifestContainer | nonTranslationManifestResource)+
+  }
+
+translationManifestContainer =
+  element container {
+    attribute uri { anyURI },
+    (translationManifestContainer | translationManifestResource)+
+  }
+
+%%insert manifest_resource_rnc_2_1_1.template%%
+
+%%insert manifest_text_rnc_2_1_1.template%%

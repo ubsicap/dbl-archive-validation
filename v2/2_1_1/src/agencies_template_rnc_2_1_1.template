@@ -1,0 +1,45 @@
+# agencies
+
+agenciesElement =
+  element agencies {
+    rightsHolderElement* &
+    rightsAdminElement? &
+    contributorElement* &
+    etenPartnerElement?
+  }
+
+rightsHolderElement =
+  element rightsHolder {
+    element abbr { lenGe2String } &
+    element url { anyURI } &
+    element local { lenGe2String } &
+    element uid { agenciesUID } &
+    element name { lenGe2String }
+  }
+
+
+rightsAdminElement =
+  element rightsAdmin {
+    element url { anyURI }? &
+    element uid { agenciesUID } &
+    element name { lenGe2String }
+  }
+
+contributorElement =
+  element contributor {
+    element content { xsd:boolean } &
+    element publication { xsd:boolean }? &
+    element management { xsd:boolean }? &
+    element finance { xsd:boolean }? &
+    element qa { xsd:boolean }? &
+    element uid { agenciesUID } &
+    element name { lenGe2String }
+    }
+
+etenPartnerElement =
+  element etenPartner {
+    element uid { lenGe2String }? &
+    element name { lenGe2String }?
+  }
+
+%%insert agencies_text_rnc_2_1_1.template%%

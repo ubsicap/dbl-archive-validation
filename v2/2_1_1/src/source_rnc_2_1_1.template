@@ -1,0 +1,23 @@
+# source
+
+translationSourceElement =
+  element source {
+    empty |
+    ( element canonicalContent { canonicalContentBook+} & element structure { (sourceStructureDivision | sourceStructureContent)+ } )
+  }
+
+sourceStructureDivision =
+  element division {
+    attribute name {nameIdString},
+    attribute role {roleId}?,
+    (sourceStructureDivision | sourceStructureContent)+
+  }
+
+sourceStructureContent =
+  element content {
+    attribute name {nameIdString}? &
+    attribute src {srcPathString} &
+    attribute role {roleId}?
+  }
+
+%%insert source_text_rnc_2_1_1.template%%

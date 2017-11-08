@@ -1,0 +1,3 @@
+# name text
+
+nameIdString = xsd:string { pattern = "[A-Za-z][\-A-Za-z0-9_]+" }
