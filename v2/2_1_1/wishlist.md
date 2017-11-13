@@ -33,15 +33,22 @@ Auxiliary
 Consultant Notes
 
 <systemId type="paratext">
-  <projectType>Auxiliary</projectType>
-  <basedOn>
-    <name>engWEB14</name>
-    <id>9879dbb7cfe39e4d5d6f7f9dbd0c6414691a036e</id>
-  </basedOn>
+    <projectType>Auxiliary</projectType>
+    <basedOn>
+           <name>engWEB14</name>
+            <id>9879dbb7cfe39e4d5d6f7f9dbd0c6414691a036e</id>
+    </basedOn>
 </systemId>
+```
+Where optional `<projectType>` can be `Standard|Daughter|StudyBible|StudyBibleAdditions|BackTranslation|Auxiliary|TransliterationManual|TransliterationWithEncoder|ConsultantNotes|GlobalConsultantNotes|GlobalAnthropologyNotes`
 
-Where optional can be Standard|Daughter|StudyBible|StudyBibleAdditions|BackTranslation|Auxiliary|TransliterationManual|TransliterationWithEncoder|ConsultantNotes|GlobalConsultantNotes|GlobalAnthropologyNotes
+Where optional `<basedOn>` has required `<name>` (lenGe2String) and required `<id>` (ptId)`
 
-Where optional has required (lenGe2String) and required (ptId)
+In text metadata.rng 1.5 (for xslt 1.5 > 2.1 and 2.1 > 1.5):
+```
+<systemId type="paratext"  
+projectType="Auxiliary" 
+basedOnName="engWEB14"
+basedOnId="9879dbb7cfe39e4d5d6f7f9dbd0c6414691a036e"></systemId>
 ```
 *MVH*: I think some XML examples may have been lost through multiple copy and paste between systems. I also wonder if it's useful to denormalize the name of the basedOn text in this way because the names of entries are not stable and, in any case, engWEB14 doesn't look like an identification/name.
