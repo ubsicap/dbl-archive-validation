@@ -52,3 +52,7 @@ basedOnName="engWEB14"
 basedOnId="9879dbb7cfe39e4d5d6f7f9dbd0c6414691a036e"></systemId>
 ```
 *MVH*: I think some XML examples may have been lost through multiple copy and paste between systems. I also wonder if it's useful to denormalize the name of the basedOn text in this way because the names of entries are not stable and, in any case, engWEB14 doesn't look like an identification/name.
+
+### Allow chapter 0 in \@role
+
+*MVH*: This is in response to the discovery of 000.mp3 in some audio. We assume this is audio for an introduction. "1TH 0" is not currently allowed as a role, so the current options are to not put include that file in the publication at all or to include it with no role. "1TH 0" would be an admittedly ugly way to label introductions. (It wouldn't work well for USX containing multiple introductions, for example.)
