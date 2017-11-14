@@ -4,6 +4,54 @@
 
 *MVH*: This mainly involves finalising the content of the format section for this medium.
 
+#### Support for liblouis tables in multiple languages
+
+*MVH*: From Jake:
+```
+2. Where title page contains some English and some local language:
+ 
+If local language uses a completely different script eg. Malayalam or Urdu then an English table can be included in the main table because there will be no cross-over – at least for the word characters. So only 1 table needed. In fact many of these tables already include an English table because they do use Roman punctuation characters.
+ 
+If local language uses Roman script  and has some unique contractions eg. Luganda (which has a contraction for letters “nga” even in its generally uncontracted braille) then English table will need to be separate. It will need to be indicated on the title page template to use this table where relevant.
+ 
+3. Literal braille:
+I can only envisage this on the title page so it could be marked up on the title page template to use the literal table.
+ 
+4. Odd original language words in the Scriptures:
+I see there are USX character styles “wg” and “wh”. So these could indicate to the program to look for a greek or hebrew table if desired.
+ 
+5. One extra case is where most of the bible is contracted (grade 2) but part is uncontracted (grade 1). 
+ 
+So in the unlikely scenario of all of the above how about something like this, with all apart from “main” as optional:
+ 
+<tables>
+    <table src= “lg-ug-g2.utb” type= “main”>
+        <name>Luganda Braille Grade 2</name>
+    </table>
+    <table src= “lg-ug-g1.utb” type= “main-uncontracted”> <!—Only necessary if “main” is contracted –>
+        <name>Luganda Braille Grade 1</name>
+    </table>
+    <table src= “en-ueb-g2.ctb” type= “secondary”>
+        <name>Unified English Braille Grade 2</name>
+    </table>
+    <table src= “unicode-braille.cti” type= “unicode-braille”>
+        <name>Unicode braille characters table</name>
+    </table>
+    <table src= “ascii-braille.cti” type= “ascii-braille”>
+        <name>ASCII braille characters table</name>
+    </table>
+    <table src= “gr-bb.ctb type= “greek”>
+        <name>Septuagint and New Testament Greek Braille</name>
+    </table>
+    <table src= “he.ctb type= “hebrew”>
+        <name>Biblical Hebrew Braille</name>
+    </table>
+</tables>
+ 
+NB. Some table names are taken from Liblouis current list, others are made up but could exist.
+It may be a bit overkill and you may prefer different attribute names and values but something like this should cover most of the bases.
+```
+
 ### Add optional @publicationId to relation element (for braille)
 
 *MVH*: This is needed because braille is generated directly from the related text, and the software that does this needs to know which publication running order to use. If it's optional it shouldn't break anything. It could be useful for audio too if different publications in the text have different USX for the same book.
