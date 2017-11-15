@@ -101,6 +101,48 @@ basedOnId="9879dbb7cfe39e4d5d6f7f9dbd0c6414691a036e"></systemId>
 ```
 *MVH*: I think some XML examples may have been lost through multiple copy and paste between systems. I also wonder if it's useful to denormalize the name of the basedOn text in this way because the names of entries are not stable and, in any case, engWEB14 doesn't look like an identification/name.
 
+*EDP*: @klassenjm how should we proceed on this to unblock Lois who is trying to upload to DBL a (transliteration) project that has already been uploaded? (https://thedigitalbiblelibrary.org/entry?id=19b20027201977c5)
+
+1. I can remove (at least partially) my restriction in Paratext from uploading projects with a basedOn text.
+2. We can prioritize fixing 1.5 and 2.1.1 to support basedOn elements to capture metadata for these types of uploads.
+
+*JK*:
+My current thoughts:
+
+That we **not** support upload of the following as regular DBL entries (resource only uploads excepted):
+* StudyBibleAdditions
+* ConsultantNotes
+* GlobalConsultantNotes
+* GlobalAnthropologyNotes
+
+It would be very nice if we could retain basedOn. What do we capture there? The PT project GUID? a name? If we could capture the GUID and see if that was already an entry in DBL - and then set up a relation in the DBL metadata -- would that be good? (I think so -- but I don't feel like I want to come across as though it's a requirement yet).
+
+*EDP*: 
+@klassenjm I know that Biblica and others were hoping we'd support Auxiliary, so they have a workflow that supports forking active projects before uploading it to DBL. I don't remember where that discussion landed given that PT Registry does not host those projects, except that perhaps the PT uploader could potentially borrow the needed metadata from basedOn (unless that just is not workable in all cases).
+
+also fwiw, DBL already has GlobalAnthropologyNotes as resourceOnly. Certainly the PT uploader should have certain precautions about projects that typically get uploaded, but resourceOnly does allow non-typical projects. We aren't technically running the same schema validation for resourceOnly uploads, but at the same time we are using the same metadata structure for transporting metadata with resourceOnly uploads.
+
+*JK*:
+@ericpyle I changed my "current thoughts". Will look at updating the wishlist.
+
+*EDP*:
+@klassenjm what are your "current thoughts"?
+
+**Re: basedOn**. 
+> What do we capture there? The PT project GUID? a name?
+
+Both, as you can see in the example snippet:
+```
+    <basedOn>
+           <name>engWEB14</name>
+            <id>9879dbb7cfe39e4d5d6f7f9dbd0c6414691a036e</id>
+    </basedOn>
+```
+
+> If we could capture the GUID and see if that was already an entry in DBL - and then set up a relation in the DBL metadata -- would that be good? (I think so -- but I don't feel like I want to come across as though it's a requirement yet).
+
+I had asked @mvahowe or you about this in the past re: relationships element, and was advised against that (can't remember the reason). Perhaps it's in the old trello card. It would be good to support some kind of actionable linkage on the DBL webpage, at least.
+
 ### Allow chapter 0 in \@role
 
 *MVH*: This is in response to the discovery of 000.mp3 in some audio. We assume this is audio for an introduction. "1TH 0" is not currently allowed as a role, so the current options are to not put include that file in the publication at all or to include it with no role. "1TH 0" would be an admittedly ugly way to label introductions. (It wouldn't work well for USX containing multiple introductions, for example.)
