@@ -16,6 +16,8 @@ ptregId = text
 
 reapId = text
 
+dbpId = text
+
 dateCompletedValue = text
 
 scopeEnum = text
