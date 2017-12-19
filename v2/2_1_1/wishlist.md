@@ -143,6 +143,8 @@ Both, as you can see in the example snippet:
 
 I had asked @mvahowe or you about this in the past re: relationships element, and was advised against that (can't remember the reason). Perhaps it's in the old trello card. It would be good to support some kind of actionable linkage on the DBL webpage, at least.
 
+*JK*: I think it would be quite good to express the basedOn metadata also as a relationships/relation if the basedOn GUID is also a DBL entry. I agree about the desireability of having a presentation of these relationship associations in DBL. If there is a reason to not do this, please explain.
+
 ### Allow chapter 0 in \@role
 
 *MVH*: This is in response to the discovery of 000.mp3 in some audio. We assume this is audio for an introduction. "1TH 0" is not currently allowed as a role, so the current options are to not put include that file in the publication at all or to include it with no role. "1TH 0" would be an admittedly ugly way to label introductions. (It wouldn't work well for USX containing multiple introductions, for example.)
