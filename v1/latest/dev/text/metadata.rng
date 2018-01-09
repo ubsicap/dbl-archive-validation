@@ -970,6 +970,7 @@ DCMI: format</a:documentation>
       <value>First</value>
       <value>New</value>
       <value>Revision</value>
+      <value>Study / Help Material</value>
     </choice>
   </define>
   <define name="translationLevel.enum">

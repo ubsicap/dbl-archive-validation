@@ -686,7 +686,8 @@ numeralSystem.enum = (
 translationType.enum = (
            "First"
          | "New"
-         | "Revision")
+         | "Revision"
+         | "Study / Help Material")
 
 translationLevel.enum = (
            "Basic"
