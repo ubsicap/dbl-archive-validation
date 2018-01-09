@@ -437,7 +437,7 @@
         <a:documentation>DCMI: language/ldml</a:documentation>
         <optional>
           <data type="string">
-            <param name="pattern">[A-Za-z]{2,3}([\-_][A-Za-z0-9]+){0,3}</param>
+            <param name="pattern">[A-Za-z]{2,3}([\-_][A-Za-z0-9]+){0,4}</param>
           </data>
         </optional>
       </element>
