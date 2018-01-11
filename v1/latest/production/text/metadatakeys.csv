@@ -1,43 +1,42 @@
 entrytype,typeversion,key,name,xpath,sort,important,xhtml
-text,1.4,id,Project Archive ID,@id,14,TRUE,FALSE
-text,1.4,revision,Revision,@revision,15,TRUE,FALSE
-text,1.4,typeVersion,Bundle Type Version,@typeVersion,16,TRUE,FALSE
-text,1.4,nameCommon,Common Version Name,identification/name,5,TRUE,FALSE
-text,1.4,nameCommonLocal,Common Version Name Local,identification/nameLocal,999,FALSE,FALSE
-text,1.4,nameAbbreviation,Version Abbreviation,identification/abbreviation,6,TRUE,FALSE
-text,1.4,nameAbbreviationLocal,Version Abbreviation Local,identification/abbreviationLocal,999,FALSE,FALSE
-text,1.4,scope,Scope,identification/scope,7,TRUE,FALSE
-text,1.4,description,Description,identification/description,999,FALSE,FALSE
-text,1.4,dateCompleted,Completion Date,identification/dateCompleted,8,TRUE,FALSE
-text,1.4,idGBC,GBC Entry Id,identification/systemId[@type='gbc'],999,FALSE,FALSE
-text,1.4,idTMS,TMS Project Id,identification/systemId[@type='tms'],999,FALSE,FALSE
-text,1.4,idSIL,SIL Project Id,identification/systemId[@type='reap'],999,FALSE,FALSE
-text,1.4,idBiblica,Biblica Project Id,identification/systemId[@type='biblica'],999,FALSE,FALSE
-text,1.4,idParatext,Paratext GUID,identification/systemId[@type='paratext'],999,FALSE,FALSE
-text,1.4,idParatextCset,Paratext Changeset Id,identification/systemId[@type='paratext']/@csetid,999,FALSE,FALSE
-text,1.4,idParatextName,Paratext Project Name,identification/systemId[@type='paratext']/@name,999,FALSE,FALSE
-text,1.4,idParatextFullName,Paratext Project Full Name,identification/systemId[@type='paratext']/@fullname,999,FALSE,FALSE
-text,1.4,bundleProducer,Bundle Producer,identification/bundleProducer,999,FALSE,FALSE
-text,1.4,confidential,Confidential Project,confidential,999,FALSE,FALSE
-text,1.4,agencyETEN,ETEN Partner Agency,agencies/etenPartner,9,TRUE,FALSE
-text,1.4,agencyETENUID,ETEN Partner Agency UID,agencies/etenPartner/@uid,999,FALSE,FALSE
-text,1.4,rightsAdmin,Rights Administrator Name,agencies/rightsAdmin,999,FALSE,FALSE
-text,1.4,rightsAdminURL,Rights Administrator URL,agencies/rightsAdmin/@url,999,FALSE,FALSE
-text,1.4,rightsAdminUID,Rights Administrator UID,agencies/rightsAdmin/@uid,999,FALSE,FALSE
-text,1.4,languageCode,Language Code,language/iso,2,TRUE,FALSE
-text,1.4,languageName,Language Name,language/name,1,TRUE,FALSE
-text,1.4,languageScript,Script,language/script,3,TRUE,FALSE
-text,1.4,languageScriptDirection,Script Direction,language/scriptDirection,999,FALSE,FALSE
-text,1.4,languageLDMLId,Unicode LDML Language ID,language/ldml,999,FALSE,FALSE
-text,1.4,languageDialectCode,HIS Dialect Code,language/rod,999,FALSE,FALSE
-text,1.4,languageNumerals,Numeral System,language/numerals,999,FALSE,FALSE
-text,1.4,countryCode,Country Code,country/iso,999,FALSE,FALSE
-text,1.4,countryName,Country Name,country/name,4,TRUE,FALSE
-text,1.4,translationType,Translation Type,type/translationType,999,FALSE,FALSE
-text,1.4,languageLevel,Language Level,type/audience,999,FALSE,FALSE
-text,1.4,copyrightStatement,Rights Information Statement,copyright/statement,999,FALSE,TRUE
-text,1.4,pubPromoVersionInfo,Promotion Version Info,promotion/promoVersionInfo,999,FALSE,TRUE
-text,1.4,archivist,Archivist,archiveStatus/archivistName,999,FALSE,FALSE
-text,1.4,dateArchived,Original Archive Date,archiveStatus/dateArchived,999,FALSE,FALSE
-text,1.4,dateUpdated,Last Archive Date,archiveStatus/dateUpdated,12,TRUE,FALSE
-text,1.4,comments,Comments,archiveStatus/comments,13,TRUE,FALSE
+text,1.5,id,Project Archive ID,@id,14,TRUE,FALSE
+text,1.5,revision,Revision,@revision,15,TRUE,FALSE
+text,1.5,typeVersion,Bundle Type Version,@typeVersion,16,TRUE,FALSE
+text,1.5,nameCommon,Common Version Name,identification/name,6,TRUE,FALSE
+text,1.5,nameCommonLocal,Common Version Name Local,identification/nameLocal,999,FALSE,FALSE
+text,1.5,nameAbbreviation,Version Abbreviation,identification/abbreviation,7,TRUE,FALSE
+text,1.5,nameAbbreviationLocal,Version Abbreviation Local,identification/abbreviationLocal,999,FALSE,FALSE
+text,1.5,scope,Scope,identification/scope,8,TRUE,FALSE
+text,1.5,description,Description,identification/description,999,FALSE,FALSE
+text,1.5,dateCompleted,Completion Date,identification/dateCompleted,9,TRUE,FALSE
+text,1.5,idGBC,GBC Entry Id,identification/systemId[@type='gbc'],999,FALSE,FALSE
+text,1.5,idTMS,TMS Project Id,identification/systemId[@type='tms'],999,FALSE,FALSE
+text,1.5,idSIL,SIL Project Id,identification/systemId[@type='reap'],999,FALSE,FALSE
+text,1.5,idBiblica,Biblica Project Id,identification/systemId[@type='biblica'],999,FALSE,FALSE
+text,1.5,idParatext,Paratext GUID,identification/systemId[@type='paratext'],999,FALSE,FALSE
+text,1.5,idParatextCset,Paratext Changeset Id,identification/systemId[@type='paratext']/@csetid,999,FALSE,FALSE
+text,1.5,idParatextName,Paratext Project Name,identification/systemId[@type='paratext']/@name,999,FALSE,FALSE
+text,1.5,idParatextFullName,Paratext Project Full Name,identification/systemId[@type='paratext']/@fullname,999,FALSE,FALSE
+text,1.5,bundleProducer,Bundle Producer,identification/bundleProducer,999,FALSE,FALSE
+text,1.5,confidential,Confidential Project,confidential,999,FALSE,FALSE
+text,1.5,rightsAdmin,Rights Administrator Name,agencies/rightsAdmin,999,FALSE,FALSE
+text,1.5,rightsAdminURL,Rights Administrator URL,agencies/rightsAdmin/@url,999,FALSE,FALSE
+text,1.5,rightsAdminUID,Rights Administrator UID,agencies/rightsAdmin/@uid,999,FALSE,FALSE
+text,1.5,languageCode,Language Code,language/iso,3,TRUE,FALSE
+text,1.5,languageName,Language Name,language/name,1,TRUE,FALSE
+text,1.5,languageNameLocal,Language Local Name,language/nameLocal,2,TRUE,FALSE
+text,1.5,languageScript,Script,language/script,4,TRUE,FALSE
+text,1.5,languageScriptDirection,Script Direction,language/scriptDirection,999,FALSE,FALSE
+text,1.5,languageLDMLId,Unicode LDML Language ID,language/ldml,999,FALSE,FALSE
+text,1.5,languageDialectCode,HIS Dialect Code,language/rod,999,FALSE,FALSE
+text,1.5,languageNumerals,Numeral System,language/numerals,999,FALSE,FALSE
+text,1.5,countryCode,Country Code,country/iso,999,FALSE,FALSE
+text,1.5,countryName,Country Name,country/name,5,TRUE,FALSE
+text,1.5,translationType,Translation Type,type/translationType,999,FALSE,FALSE
+text,1.5,languageLevel,Language Level,type/audience,999,FALSE,FALSE
+text,1.5,copyrightStatement,Rights Information Statement,copyright/statement,999,FALSE,TRUE
+text,1.5,pubPromoVersionInfo,Promotion Version Info,promotion/promoVersionInfo,999,FALSE,TRUE
+text,1.5,archivist,Archivist,archiveStatus/archivistName,999,FALSE,FALSE
+text,1.5,dateArchived,Original Archive Date,archiveStatus/dateArchived,999,FALSE,FALSE
+text,1.5,dateUpdated,Last Archive Date,archiveStatus/dateUpdated,12,TRUE,FALSE
+text,1.5,comments,Comments,archiveStatus/comments,13,TRUE,FALSE

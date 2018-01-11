@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<DBLMetadata type="text" typeVersion="1.4" id="" revision="">
+<DBLMetadata type="text" typeVersion="1.5" id="" revision="">
   <identification>
     <name></name>
     <nameLocal></nameLocal>
@@ -12,16 +12,17 @@
     <systemId type="tms"></systemId>
     <systemId type="reap"></systemId>
     <systemId type="paratext" name="" fullname="" csetid=""></systemId>
+    <systemId type="ptreg"></systemId>
     <systemId type="biblica"></systemId>
     <bundleProducer></bundleProducer>
   </identification>
   <confidential></confidential>
   <agencies>
-    <etenPartner></etenPartner>
   </agencies>
   <language>
     <iso></iso>
     <name></name>
+    <nameLocal></nameLocal>
     <ldml></ldml>
     <rod></rod>
     <script></script>
