@@ -4,8 +4,8 @@ archiveStatusElement =
   element archiveStatus {
     element bundleCreatorName {lenGe2String}? &
     element archivistName { lenGe2String } &
-    element dateArchived { text } &
-    element dateUpdated { text } &
+    element dateArchived {  xsd:dateTime } &
+    element dateUpdated {  xsd:dateTime } &
     element comments { lenLe255String }
   }
 
