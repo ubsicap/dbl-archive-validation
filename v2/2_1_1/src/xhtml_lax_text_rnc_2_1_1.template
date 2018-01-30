@@ -1,7 +1,1 @@
 simplifiedHtml = any_content
-
-any_content = any_element* & text
-
-any_element = element * { any_attribute*, any_content }
-
-any_attribute = attribute * { text }

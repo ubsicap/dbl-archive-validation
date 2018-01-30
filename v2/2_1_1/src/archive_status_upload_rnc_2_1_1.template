@@ -8,3 +8,11 @@ archiveStatusElement =
     element dateUpdated { text }? &
     element comments { lenLe255String }
   }
+
+progressElement =
+  element progress {
+    element book {
+      attribute code {canonicalBookIdEnum},
+      attribute stage {xsd:integer { minInclusive="1" maxInclusive="6" } }
+    }+
+  }
