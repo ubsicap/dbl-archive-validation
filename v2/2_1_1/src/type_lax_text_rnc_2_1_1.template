@@ -5,3 +5,5 @@ audioTypeDramatizationEnum = text
 translationTypeEnum = text
 
 translationLevelEnum = text
+
+dbpId = text
