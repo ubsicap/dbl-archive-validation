@@ -16,6 +16,17 @@ identificationElement =
     element bundleProducer { lenGe2String }
     }
 
+resourceOnlyIdentificationElement =
+  element identification {
+    element name { lenGe2String } &
+    element nameLocal { lenGe2String }? &
+    element abbreviation { abbreviationString } &
+    element abbreviationLocal { localAbbreviationString }? &
+    element dateCompleted { dateCompletedValue }? &
+    (gbcSystemId | ptSystemId | reapSystemId | biblicaSystemId | tmsSystemId | ptregSystemId | dbpSystemId)* &
+    element bundleProducer { lenGe2String }
+    }
+
 textIdentificationElement =
   element identification {
     element name { lenGe2String } &

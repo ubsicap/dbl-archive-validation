@@ -6,6 +6,11 @@ translationSourceElement =
     ( element canonicalContent { canonicalContentBook+} & element structure { (sourceStructureDivision | sourceStructureContent)+ } )
   }
 
+resourceOnlySourceElement =
+  element source {
+    element structure { (sourceStructureDivision | sourceStructureContent)+ }
+  }
+
 sourceStructureDivision =
   element division {
     attribute name {nameIdString},

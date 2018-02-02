@@ -1,0 +1,67 @@
+<DBLMetadata version="2.1" id="d825aeedcdfea7ae" revision="2">
+    <identification>
+        <name>English: NT Background Notes - Craig Keener</name>
+        <abbreviation>NTBN</abbreviation>
+        <bundleProducer>Paratext/7.6.54.151</bundleProducer>
+        <systemId type="paratext">
+            <id>d825aeedcdfea7ae4e1fe9d33aade4ea1e70fd16</id>
+            <csetId>81764f7cba5f6e4d4d7a4af1923f41bba215ec0b</csetId>
+            <name>NTBN</name>
+            <fullName>English: NT Background Notes - Craig Keener</fullName>
+        </systemId>
+    </identification>
+    <type>
+        <medium>resourceOnly</medium>
+        <isConfidential>false</isConfidential>
+        <hasCharacters>true</hasCharacters>
+        <isTranslation>false</isTranslation>
+        <isExpression>false</isExpression>
+        <projectType>Background Notes</projectType>
+        <basedOn>klingonNT</basedOn>
+    </type>
+    <relationships/>
+    <agencies>
+        <rightsHolder>
+            <abbr>WBT</abbr>
+            <url>http://www.wycliffe.org</url>
+            <nameLocal>Wycliffe Bible Translators, Inc.</nameLocal>
+            <uid>545d2cb00be06579ca809b57</uid>
+            <name>Wycliffe Bible Translators, Inc.</name>
+        </rightsHolder>
+    </agencies>
+    <language>
+        <iso>eng</iso>
+        <name>English</name>
+    </language>
+    <manifest>
+        <container uri="source">
+            <container uri="p8z-manifests">
+                <resource checksum="fe83e7f6782a3fd81ce38e0acde98146" mimeType="application/octet-stream" size="1185" uri="b6637c1ae4af999a" />
+            </container>
+            <resource checksum="a823f3657a18b73fdeb577e49de5a7b8" mimeType="application/zip" size="1478909" uri="source.zip" />
+        </container>
+    </manifest>
+    <source>
+    <structure>
+        <content src="source/source.zip" role="sourceZip" />
+    </structure>
+    </source>
+    <publications>
+        <publication id="resources">
+            <structure>
+                <content src="source.zip" srcPart="zip://some/path/MAT.sfm" role="MAT"/>
+                <content src="source.zip" srcPart="zip://some/path/MRK.sfm" role="MRK"/>
+                <content src="source.zip" srcPart="zip://some/path/LUK.sfm" role="LUK"/>
+                <content src="source.zip" srcPart="zip://some/path/JHN.sfm" role="JHN"/>
+                <content src="source.zip" srcPart="zip://some/path/GLO.sfm" role="GLO"/>
+            </structure>
+        </publication>
+    </publications>
+    <copyright/>
+    <archiveStatus>
+        <archivistName>Lois Gourley</archivistName>
+        <dateArchived>2017-07-19T21:36:30.284353</dateArchived>
+        <dateUpdated>2017-11-01T17:23:53.336625</dateUpdated>
+        <comments>Need a comment here</comments>
+    </archiveStatus>
+</DBLMetadata>

@@ -112,6 +112,17 @@ videoTranslationAndExpressionTypeElement =
     element isConfidential { xsd:boolean }
 }
 
+resourceOnlyTypeElement =
+  element type {
+    element medium { "resourceOnly" } &
+    element hasCharacters { "true" } &
+    element isTranslation { "false" } &
+    element isExpression { "false" } &
+    element isConfidential { xsd:boolean } &
+    element projectType { text } &
+    element basedOn {text }?
+}
+
 commonTextTranslationTypeElements = (
   commonTranslationTypeElements
 )

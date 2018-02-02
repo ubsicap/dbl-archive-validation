@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DBLMetadata version="2.1.1" id="REQUIRED" revision="REQUIRED (after upload)">
+    <identification>
+        <name>REQUIRED</name>
+        <description/>
+        <abbreviation>REQUIRED</abbreviation>
+        <scope/>
+        <bundleProducer>REQUIRED</bundleProducer>
+        <systemId type="paratext">
+            <id>REQUIRED</id>
+            <csetId>REQUIRED</csetId>
+            <name>REQUIRED</name>
+            <fullName>REQUIRED</fullName>
+            **<projectType>REQUIRED</projectType>**
+            **<basedOn></basedOn>**
+        </systemId>
+        <systemId type="ptreg">
+            <id/>
+        </systemId>
+    </identification>
+    <type>
+        <medium>text</medium>
+        **<isParatextResource>true</isParatextResource>**
+        <isConfidential>**true**</isConfidential>
+        <hasCharacters>**true**</hasCharacters>
+        <isTranslation>**true**</isTranslation>
+        <isExpression>**false**</isExpression>
+        <translationType></translationType>
+        <audience></audience>
+    </type>
+    <relationships/>
+    <agencies>
+        <rightsHolder>
+            <abbr>REQUIRED</abbr>
+            <url></url>
+            <local></local>
+            <uid>REQUIRED</uid>
+            <name>REQUIRED</name>
+        </rightsHolder>
+    </agencies>
+    <language>
+        <iso>REQUIRED</iso>
+        <name>REQUIRED</name>
+        <script/>
+        <scriptCode></scriptCode>
+        <scriptDirection></scriptDirection>
+        <ldml>REQUIRED</ldml>
+    </language>
+    <countries/>
+    <format>
+        <versedParagraphs>REQUIRED?</versedParagraphs>
+    </format>
+    <names/>
+    <manifest>
+        <container uri="source">
+            <resource checksum="REQUIRED" mimeType="application/zip" size="REQUIRED" uri="source.zip"/>
+        </container>
+    </manifest>
+    <source>
+        <canonicalContent>REQUIRED Unless projectType is ConsultantNotes|GlobalConsultantNotes|GlobalAnthropologyNotes</canonicalContent>
+        **<paratextResource>REQUIRED Unless projectType is ConsultantNotes|GlobalConsultantNotes|GlobalAnthropologyNotes<book code="REQUIRED(Canonical|Peripheral)"/></paratextResource>**
+        <structure>
+            <content src="source/source.zip" role="sourceZip"/>
+        </structure>
+    </source>
+    <copyright/>
+    <progress/>
+    <archiveStatus>
+        <archivistName>REQUIRED</archivistName>
+        <dateArchived>REQUIRED (after upload)</dateArchived>
+        <dateUpdated>REQUIRED (after upload)</dateUpdated>
+        <comments/>
+    </archiveStatus>
+</DBLMetadata>
