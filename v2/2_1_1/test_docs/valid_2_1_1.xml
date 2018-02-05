@@ -8,6 +8,8 @@
             <csetId>81764f7cba5f6e4d4d7a4af1923f41bba215ec0b</csetId>
             <name>NTBN</name>
             <fullName>English: NT Background Notes - Craig Keener</fullName>
+            <baseId>0123456789abcdef0123456789abcdef01234567</baseId>
+            <baseName>StPaulsShorterNotesOnHowToWriteTheBible</baseName>
         </systemId>
     </identification>
     <type>
@@ -16,8 +18,7 @@
         <hasCharacters>true</hasCharacters>
         <isTranslation>false</isTranslation>
         <isExpression>false</isExpression>
-        <projectType>Background Notes</projectType>
-        <basedOn>klingonNT</basedOn>
+        <projectType>BackTranslation</projectType>
     </type>
     <relationships/>
     <agencies>

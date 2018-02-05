@@ -81,7 +81,11 @@ ptElements =
   element name { lenGe2String } &
   element fullName { lenGe2String } &
   element csetId { lenGe2String }? &
-  element id { ptId }
+  element id { ptId } &
+  (
+    element baseId { ptId } &
+    element baseName { lenGe2String }
+  )?
 
 ptregElements =
   element id { ptregId }

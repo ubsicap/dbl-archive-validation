@@ -17,3 +17,17 @@ translationLevelEnum = (
   "Liturgical" |
   "Children"
 )
+
+resourceOnlyProjectType = (
+    "Standard" |
+    "Daughter" |
+    "StudyBible" |
+    "StudyBibleAdditions" |
+    "BackTranslation" |
+    "Auxiliary" |
+    "TransliterationManual"|
+    "TransliterationWithEncoder" |
+    "ConsultantNotes" |
+    "GlobalConsultantNotes" |
+    "GlobalAnthropologyNotes"
+)
