@@ -1,0 +1,315 @@
+from Eric's uri: ```<DBLMetadata version="2.1" id="d825aeedcdfea7ae" revision="2">
+    <identification>
+        <name>English: NT Background Notes - Craig Keener</name>
+        <description/>
+        <abbreviation>NTBN</abbreviation>
+        <scope/>
+        <bundleProducer>Paratext/7.6.54.151</bundleProducer>
+        <systemId type="paratext">
+            <id>d825aeedcdfea7ae4e1fe9d33aade4ea1e70fd16</id>
+            <csetId>81764f7cba5f6e4d4d7a4af1923f41bba215ec0b</csetId>
+            <name>NTBN</name>
+            <fullName>English: NT Background Notes - Craig Keener</fullName>
+        </systemId>
+    </identification>
+    <type>
+        <medium>text</medium>
+        <isConfidential>true</isConfidential>
+        <hasCharacters>true</hasCharacters>
+        <isTranslation>true</isTranslation>
+        <isExpression>true</isExpression>
+        <translationType>Revision</translationType>
+        <audience>Common</audience>
+    </type>
+    <relationships/>
+    <agencies>
+        <rightsHolder>
+            <abbr>WBT</abbr>
+            <url>http://www.wycliffe.org</url>
+            <local>Wycliffe Bible Translators, Inc.</local>
+            <uid>545d2cb00be06579ca809b57</uid>
+            <name>Wycliffe Bible Translators, Inc.</name>
+        </rightsHolder>
+    </agencies>
+    <language>
+        <iso>eng</iso>
+        <name>English</name>
+        <script/>
+        <scriptCode>Zzzz</scriptCode>
+        <scriptDirection>LTR</scriptDirection>
+        <ldml>en</ldml>
+    </language>
+    <countries>
+        <country>
+            <iso/>
+            <name/>
+        </country>
+    </countries>
+    <format>
+        <versedParagraphs>false</versedParagraphs>
+    </format>
+    <names>
+        <name id="book-mat">
+            <abbr>Matt</abbr>
+            <short>Matthew</short>
+            <long>MATTHEW</long>
+        </name>
+        <name id="book-mrk">
+            <abbr>Mk</abbr>
+            <short>Mark</short>
+            <long>MARK</long>
+        </name>
+        <name id="book-luk">
+            <abbr>Lk</abbr>
+            <short>Luke</short>
+            <long>LUKE</long>
+        </name>
+        <name id="book-jhn">
+            <abbr>Jn</abbr>
+            <short>John</short>
+            <long>JOHN</long>
+        </name>
+        <name id="book-act">
+            <abbr>Acts</abbr>
+            <short>Acts</short>
+            <long>ACTS</long>
+        </name>
+        <name id="book-rom">
+            <abbr>Rom</abbr>
+            <short>Romans</short>
+            <long>ROMANS</long>
+        </name>
+        <name id="book-1co">
+            <abbr>1 Cor</abbr>
+            <short>1 Corinthians</short>
+            <long>1 CORINTHIANS</long>
+        </name>
+        <name id="book-2co">
+            <abbr>2 Cor</abbr>
+            <short>2 Corinthians</short>
+            <long>2 CORINTHIANS</long>
+        </name>
+        <name id="book-gal">
+            <abbr>Gal</abbr>
+            <short>Galatians</short>
+            <long>GALATIANS</long>
+        </name>
+        <name id="book-eph">
+            <abbr>Eph</abbr>
+            <short>Ephesians</short>
+            <long>EPHESIANS</long>
+        </name>
+        <name id="book-php">
+            <abbr>Phil</abbr>
+            <short>Philippians</short>
+            <long>PHILIPPIANS</long>
+        </name>
+        <name id="book-col">
+            <abbr>Col</abbr>
+            <short>Colossians</short>
+            <long>COLOSSIANS</long>
+        </name>
+        <name id="book-1th">
+            <abbr>1 Thess</abbr>
+            <short>1 Thessalonians</short>
+            <long>1 THESSALONIANS</long>
+        </name>
+        <name id="book-2th">
+            <abbr>2 Thess</abbr>
+            <short>2 Thessalonians</short>
+            <long>2 THESSALONIANS</long>
+        </name>
+        <name id="book-1ti">
+            <abbr>1 Tim</abbr>
+            <short>1 Timothy</short>
+            <long>1 TIMOTHY</long>
+        </name>
+        <name id="book-2ti">
+            <abbr>2 Tim</abbr>
+            <short>2 Timothy</short>
+            <long>2 TIMOTHY</long>
+        </name>
+        <name id="book-tit">
+            <abbr>Tit</abbr>
+            <short>Titus</short>
+            <long>TITUS</long>
+        </name>
+        <name id="book-phm">
+            <abbr>Phlm</abbr>
+            <short>Philemon</short>
+            <long>PHILEMON</long>
+        </name>
+        <name id="book-heb">
+            <abbr>Heb</abbr>
+            <short>Hebrews</short>
+            <long>HEBREWS</long>
+        </name>
+        <name id="book-jas">
+            <abbr>Jms</abbr>
+            <short>James</short>
+            <long>JAMES</long>
+        </name>
+        <name id="book-1pe">
+            <abbr>1 Pet</abbr>
+            <short>1 Peter</short>
+            <long>1 PETER</long>
+        </name>
+        <name id="book-2pe">
+            <abbr>2 Pet</abbr>
+            <short>2 Peter</short>
+            <long>2 PETER</long>
+        </name>
+        <name id="book-1jn">
+            <abbr>1 Jn</abbr>
+            <short>1 John</short>
+            <long>1 JOHN</long>
+        </name>
+        <name id="book-2jn">
+            <abbr>2 Jn</abbr>
+            <short>2 John</short>
+            <long>2 JOHN</long>
+        </name>
+        <name id="book-3jn">
+            <abbr>3 Jn</abbr>
+            <short>3 John</short>
+            <long>3 JOHN</long>
+        </name>
+        <name id="book-jud">
+            <abbr>Jude</abbr>
+            <short>Jude</short>
+            <long>JUDE</long>
+        </name>
+        <name id="book-rev">
+            <abbr>Rev</abbr>
+            <short>Revelation</short>
+            <long>REVELATION</long>
+        </name>
+        <name id="book-tob">
+            <abbr>Tob</abbr>
+            <short>Tobit</short>
+        </name>
+        <name id="book-glo">
+            <short>Glossary</short>
+            <long>Glossary</long>
+        </name>
+    </names>
+    <manifest>
+        <container uri="source">
+            <container uri="p8z-manifests">
+                <resource checksum="fe83e7f6782a3fd81ce38e0acde98146" mimeType="application/octet-stream" size="1185" uri="b6637c1ae4af999a" />
+            </container>
+            <resource checksum="a823f3657a18b73fdeb577e49de5a7b8" mimeType="application/zip" size="1478909" uri="source.zip" />
+        </container>
+    </manifest>
+    <source>
+    <canonicalContent>
+        <book code="1CO" />
+        <book code="1JN" />
+        <book code="1PE" />
+        <book code="1TH" />
+        <book code="1TI" />
+        <book code="2CO" />
+        <book code="2JN" />
+        <book code="2PE" />
+        <book code="2TH" />
+        <book code="2TI" />
+        <book code="3JN" />
+        <book code="ACT" />
+        <book code="COL" />
+        <book code="EPH" />
+        <book code="GAL" />
+        <book code="GLO" />
+        <book code="HEB" />
+        <book code="JAS" />
+        <book code="JHN" />
+        <book code="JUD" />
+        <book code="LUK" />
+        <book code="MAT" />
+        <book code="MRK" />
+        <book code="PHM" />
+        <book code="PHP" />
+        <book code="REV" />
+        <book code="ROM" />
+        <book code="TIT" />
+        <book code="TOB" />
+    </canonicalContent>
+    <structure>
+        <content src="source/source.zip" role="sourceZip" />
+    </structure>
+    </source>
+    <publications>
+        <publication id="p0" default="true">
+            <name>AdHocCanon_BooksPresent_IncludePeripherals</name>
+            <canonicalContent>
+                <book code="1CO" />
+                <book code="1JN" />
+                <book code="1PE" />
+                <book code="1TH" />
+                <book code="1TI" />
+                <book code="2CO" />
+                <book code="2JN" />
+                <book code="2PE" />
+                <book code="2TH" />
+                <book code="2TI" />
+                <book code="3JN" />
+                <book code="ACT" />
+                <book code="COL" />
+                <book code="EPH" />
+                <book code="GAL" />
+                <book code="GLO" />
+                <book code="HEB" />
+                <book code="JAS" />
+                <book code="JHN" />
+                <book code="JUD" />
+                <book code="LUK" />
+                <book code="MAT" />
+                <book code="MRK" />
+                <book code="PHM" />
+                <book code="PHP" />
+                <book code="REV" />
+                <book code="ROM" />
+                <book code="TIT" />
+                <book code="TOB" />
+            </canonicalContent>
+            <structure>
+                <content name="book-mat" src="release/USX_0/MAT.usx" role="MAT" />
+                <content name="book-mrk" src="release/USX_0/MRK.usx" role="MRK" />
+                <content name="book-luk" src="release/USX_0/LUK.usx" role="LUK" />
+                <content name="book-jhn" src="release/USX_0/JHN.usx" role="JHN" />
+                <content name="book-act" src="release/USX_0/ACT.usx" role="ACT" />
+                <content name="book-rom" src="release/USX_0/ROM.usx" role="ROM" />
+                <content name="book-1co" src="release/USX_0/1CO.usx" role="1CO" />
+                <content name="book-2co" src="release/USX_0/2CO.usx" role="2CO" />
+                <content name="book-gal" src="release/USX_0/GAL.usx" role="GAL" />
+                <content name="book-eph" src="release/USX_0/EPH.usx" role="EPH" />
+                <content name="book-php" src="release/USX_0/PHP.usx" role="PHP" />
+                <content name="book-col" src="release/USX_0/COL.usx" role="COL" />
+                <content name="book-1th" src="release/USX_0/1TH.usx" role="1TH" />
+                <content name="book-2th" src="release/USX_0/2TH.usx" role="2TH" />
+                <content name="book-1ti" src="release/USX_0/1TI.usx" role="1TI" />
+                <content name="book-2ti" src="release/USX_0/2TI.usx" role="2TI" />
+                <content name="book-tit" src="release/USX_0/TIT.usx" role="TIT" />
+                <content name="book-phm" src="release/USX_0/PHM.usx" role="PHM" />
+                <content name="book-heb" src="release/USX_0/HEB.usx" role="HEB" />
+                <content name="book-jas" src="release/USX_0/JAS.usx" role="JAS" />
+                <content name="book-1pe" src="release/USX_0/1PE.usx" role="1PE" />
+                <content name="book-2pe" src="release/USX_0/2PE.usx" role="2PE" />
+                <content name="book-1jn" src="release/USX_0/1JN.usx" role="1JN" />
+                <content name="book-2jn" src="release/USX_0/2JN.usx" role="2JN" />
+                <content name="book-3jn" src="release/USX_0/3JN.usx" role="3JN" />
+                <content name="book-jud" src="release/USX_0/JUD.usx" role="JUD" />
+                <content name="book-rev" src="release/USX_0/REV.usx" role="REV" />
+                <content name="book-tob" src="release/USX_0/TOB.usx" role="TOB" />
+                <content name="book-glo" src="release/USX_0/GLO.usx" role="GLO" />
+            </structure>
+        </publication>
+    </publications>
+    <copyright/>
+    <promotion/>
+    <archiveStatus>
+        <archivistName>Lois Gourley</archivistName>
+        <dateArchived>2017-07-19T21:36:30.284353</dateArchived>
+        <dateUpdated>2017-11-01T17:23:53.336625</dateUpdated>
+        <comments/>
+    </archiveStatus>
+</DBLMetadata>```

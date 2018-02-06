@@ -1,6 +1,6 @@
 # Document types
 
-dblMetadataElement = (translationMetadata | expressionMetadata | translationAndExpressionMetadata)
+dblMetadataElement = (translationMetadata | expressionMetadata | translationAndExpressionMetadata | paratextZipResourceMetadata)
 
 translationMetadata = textTranslationMetadata | audioTranslationMetadata | videoTranslationMetadata
 
@@ -105,6 +105,20 @@ videoTranslationAndExpressionMetadata = element DBLMetadata {
   fullLanguageElement &
   videoTranslationAndExpressionTypeElement &
   videoFormatElement
+}
+
+paratextZipResourceMetadata = element DBLMetadata {
+  dblMetadataCommonAtts &
+  paratextZipResourceIdentificationElement &
+  paratextZipResourceTypeElement &
+  relationshipsElement &
+  paratextZipResourceAgenciesElement &
+  shortLanguageElement &
+  translationManifestElement &
+  paratextZipResourceSourceElement &
+  paratextZipResourcePublicationsElement &
+  copyrightElement &
+  archiveStatusElement
 }
 
 translationCommonElements = (

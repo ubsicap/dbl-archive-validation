@@ -7,6 +7,13 @@ agenciesElement =
     contributorElement+
   }
 
+paratextZipResourceAgenciesElement =
+  element agencies {
+    rightsHolderElement+ &
+    rightsAdminElement? &
+    contributorElement?
+  }
+
 rightsHolderElement =
   element rightsHolder {
     element abbr { lenGe2String } &
@@ -15,7 +22,6 @@ rightsHolderElement =
     element uid { agenciesUID } &
     element name { lenGe2String }
   }
-
 
 rightsAdminElement =
   element rightsAdmin {

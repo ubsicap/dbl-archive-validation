@@ -10,9 +10,19 @@ identificationElement =
     element descriptionLocal { lenGe2String }? &
     element scope { scopeEnum } &
     canonSpecElement? &
-
     element dateCompleted { dateCompletedValue }? &
-    (gbcSystemId | ptSystemId | reapSystemId | biblicaSystemId | tmsSystemId | ptregSystemId)* &
+    (gbcSystemId | reapSystemId | biblicaSystemId | tmsSystemId | ptregSystemId | dbpSystemId)* &
+    element bundleProducer { lenGe2String }
+    }
+
+paratextZipResourceIdentificationElement =
+  element identification {
+    element name { lenGe2String } &
+    element nameLocal { lenGe2String }? &
+    element abbreviation { abbreviationString } &
+    element abbreviationLocal { localAbbreviationString }? &
+    element dateCompleted { dateCompletedValue }? &
+    (ptSystemId | gbcSystemId | reapSystemId | biblicaSystemId | tmsSystemId | ptregSystemId | dbpSystemId)* &
     element bundleProducer { lenGe2String }
     }
 
@@ -26,9 +36,8 @@ textIdentificationElement =
     element descriptionLocal { lenGe2String }? &
     element scope { scopeEnum } &
     canonSpecElement? &
-
     element dateCompleted { dateCompletedValue }? &
-    (gbcSystemId | ptSystemId | reapSystemId | biblicaSystemId | tmsSystemId | ptregSystemId | dbpSystemId)* &
+    (ptSystemId | gbcSystemId | reapSystemId | biblicaSystemId | tmsSystemId | ptregSystemId | dbpSystemId)* &
     element bundleProducer { lenGe2String }
     }
 
@@ -70,7 +79,11 @@ ptElements =
   element name { lenGe2String } &
   element fullName { lenGe2String } &
   element csetId { lenGe2String }? &
-  element id { ptId }
+  element id { ptId } &
+  (
+    element baseId { ptId } &
+    element baseName { lenGe2String }
+  )?
 
 ptregElements =
   element id { ptregId }

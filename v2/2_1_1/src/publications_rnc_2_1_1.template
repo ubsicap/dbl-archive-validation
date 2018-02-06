@@ -3,11 +3,21 @@
 publicationsElement = # DCMI: tableOfContents
   element publications { publicationElement+ }
 
+paratextZipResourcePublicationsElement =
+  element publications { paratextZipResourcePublicationElement+ }
+
 publicationElement =
   element publication {
   attribute id { publicationId },
   attribute default { xsd:boolean }?,
   publicationChildElements
+  }
+
+paratextZipResourcePublicationElement =
+  element publication {
+  attribute id { publicationId },
+  attribute default { xsd:boolean }?,
+  paratextZipResourcePublicationChildElements
   }
 
 publicationChildElements = (
@@ -21,6 +31,11 @@ publicationChildElements = (
   element scope { scopeEnum }? &
   canonSpecElement? &
   element canonicalContent { canonicalContentBook+} &
+  element structure { (publicationStructureDivision | publicationStructureContent)+ }
+)
+paratextZipResourcePublicationChildElements = (
+  element name { lenGe2String }? &
+  element nameLocal { lenGe2String }? &
   element structure { (publicationStructureDivision | publicationStructureContent)+ }
 )
 
@@ -42,7 +57,8 @@ publicationStructureContent =
   element content {
     attribute name {nameIdString}? &
     attribute src {srcPathString} &
-    attribute role {roleId}?
+    attribute role {roleId}? &
+    attribute srcPart {srcPathPartString}?
   }
 
 %%insert canon_rnc_2_1_1.template%%
