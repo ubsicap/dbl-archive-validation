@@ -13,7 +13,7 @@
         </systemId>
     </identification>
     <type>
-        <medium>resourceOnly</medium>
+        <medium>paratextZipResource</medium>
         <isConfidential>false</isConfidential>
         <hasCharacters>true</hasCharacters>
         <isTranslation>false</isTranslation>
@@ -36,9 +36,6 @@
     </language>
     <manifest>
         <container uri="source">
-            <container uri="p8z-manifests">
-                <resource checksum="fe83e7f6782a3fd81ce38e0acde98146" mimeType="application/octet-stream" size="1185" uri="b6637c1ae4af999a" />
-            </container>
             <resource checksum="a823f3657a18b73fdeb577e49de5a7b8" mimeType="application/zip" size="1478909" uri="source.zip" />
         </container>
     </manifest>
