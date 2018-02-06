@@ -10,9 +10,8 @@ identificationElement =
     element descriptionLocal { lenGe2String }? &
     element scope { scopeEnum } &
     canonSpecElement? &
-
     element dateCompleted { dateCompletedValue }? &
-    (gbcSystemId | ptSystemId | reapSystemId | biblicaSystemId | tmsSystemId | ptregSystemId)* &
+    (gbcSystemId | reapSystemId | biblicaSystemId | tmsSystemId | ptregSystemId | dbpSystemId)* &
     element bundleProducer { lenGe2String }
     }
 
@@ -23,7 +22,7 @@ paratextZipResourceIdentificationElement =
     element abbreviation { abbreviationString } &
     element abbreviationLocal { localAbbreviationString }? &
     element dateCompleted { dateCompletedValue }? &
-    (ptSystemId | gbcSystemId | reapSystemId? | biblicaSystemId | tmsSystemId? | ptregSystemId | dbpSystemId)* &
+    (ptSystemId | gbcSystemId | reapSystemId | biblicaSystemId | tmsSystemId | ptregSystemId | dbpSystemId)* &
     element bundleProducer { lenGe2String }
     }
 
@@ -37,9 +36,8 @@ textIdentificationElement =
     element descriptionLocal { lenGe2String }? &
     element scope { scopeEnum } &
     canonSpecElement? &
-
     element dateCompleted { dateCompletedValue }? &
-    (gbcSystemId | reapSystemId | biblicaSystemId | tmsSystemId | ptregSystemId | dbpSystemId)* &
+    (ptSystemId | gbcSystemId | reapSystemId | biblicaSystemId | tmsSystemId | ptregSystemId | dbpSystemId)* &
     element bundleProducer { lenGe2String }
     }
 
