@@ -7,7 +7,7 @@ agenciesElement =
     contributorElement+
   }
 
-resourceOnlyAgenciesElement =
+paratextZipResourceAgenciesElement =
   element agencies {
     rightsHolderElement+ &
     rightsAdminElement? &

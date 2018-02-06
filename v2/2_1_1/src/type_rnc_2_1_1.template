@@ -112,14 +112,14 @@ videoTranslationAndExpressionTypeElement =
     element isConfidential { xsd:boolean }
 }
 
-resourceOnlyTypeElement =
+paratextZipResourceTypeElement =
   element type {
-    element medium { "resourceOnly" } &
+    element medium { "paratextZipResource" } &
     element hasCharacters { "true" } &
     element isTranslation { "false" } &
     element isExpression { "false" } &
     element isConfidential { xsd:boolean } &
-    element projectType { resourceOnlyProjectType }
+    element projectType { paratextZipResourceProjectType }
 }
 
 commonTextTranslationTypeElements = (

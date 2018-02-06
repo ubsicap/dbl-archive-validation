@@ -6,7 +6,7 @@ translationSourceElement =
     ( element canonicalContent { canonicalContentBook+} & element structure { (sourceStructureDivision | sourceStructureContent)+ } )
   }
 
-resourceOnlySourceElement =
+paratextZipResourceSourceElement =
   element source {
     element structure { (sourceStructureDivision | sourceStructureContent)+ }
   }

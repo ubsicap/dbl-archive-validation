@@ -16,14 +16,14 @@ identificationElement =
     element bundleProducer { lenGe2String }
     }
 
-resourceOnlyIdentificationElement =
+paratextZipResourceIdentificationElement =
   element identification {
     element name { lenGe2String } &
     element nameLocal { lenGe2String }? &
     element abbreviation { abbreviationString } &
     element abbreviationLocal { localAbbreviationString }? &
     element dateCompleted { dateCompletedValue }? &
-    (gbcSystemId | ptSystemId | reapSystemId | biblicaSystemId | tmsSystemId | ptregSystemId | dbpSystemId)* &
+    (ptSystemId | gbcSystemId | reapSystemId? | biblicaSystemId | tmsSystemId? | ptregSystemId | dbpSystemId)* &
     element bundleProducer { lenGe2String }
     }
 
@@ -39,7 +39,7 @@ textIdentificationElement =
     canonSpecElement? &
 
     element dateCompleted { dateCompletedValue }? &
-    (gbcSystemId | ptSystemId | reapSystemId | biblicaSystemId | tmsSystemId | ptregSystemId | dbpSystemId)* &
+    (gbcSystemId | reapSystemId | biblicaSystemId | tmsSystemId | ptregSystemId | dbpSystemId)* &
     element bundleProducer { lenGe2String }
     }
 

@@ -3,8 +3,8 @@
 publicationsElement = # DCMI: tableOfContents
   element publications { publicationElement+ }
 
-resourceOnlyPublicationsElement =
-  element publications { resourceOnlyPublicationElement+ }
+paratextZipResourcePublicationsElement =
+  element publications { paratextZipResourcePublicationElement+ }
 
 publicationElement =
   element publication {
@@ -13,11 +13,11 @@ publicationElement =
   publicationChildElements
   }
 
-resourceOnlyPublicationElement =
+paratextZipResourcePublicationElement =
   element publication {
   attribute id { publicationId },
   attribute default { xsd:boolean }?,
-  resourceOnlyPublicationChildElements
+  paratextZipResourcePublicationChildElements
   }
 
 publicationChildElements = (
@@ -33,7 +33,7 @@ publicationChildElements = (
   element canonicalContent { canonicalContentBook+} &
   element structure { (publicationStructureDivision | publicationStructureContent)+ }
 )
-resourceOnlyPublicationChildElements = (
+paratextZipResourcePublicationChildElements = (
   element name { lenGe2String }? &
   element nameLocal { lenGe2String }? &
   element structure { (publicationStructureDivision | publicationStructureContent)+ }
