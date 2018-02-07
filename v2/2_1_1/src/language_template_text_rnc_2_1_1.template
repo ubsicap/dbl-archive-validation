@@ -1,4 +1,4 @@
-# language text (lax)
+# language text (Template)
 
 languageIsoString = text
 
