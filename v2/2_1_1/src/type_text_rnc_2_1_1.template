@@ -18,7 +18,7 @@ translationLevelEnum = (
   "Children"
 )
 
-paratextZipResourceProjectType = (
+textProjectType = (
     "Standard" |
     "Daughter" |
     "StudyBible" |
@@ -26,7 +26,11 @@ paratextZipResourceProjectType = (
     "BackTranslation" |
     "Auxiliary" |
     "TransliterationManual"|
-    "TransliterationWithEncoder" |
+    "TransliterationWithEncoder"
+)
+
+paratextZipResourceProjectType = (
+    textProjectType |
     "ConsultantNotes" |
     "GlobalConsultantNotes" |
     "GlobalAnthropologyNotes"
