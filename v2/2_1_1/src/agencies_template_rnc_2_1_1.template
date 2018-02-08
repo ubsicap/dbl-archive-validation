@@ -1,4 +1,4 @@
-# agencies
+# agencies (template)
 
 agenciesElement =
   element agencies {
@@ -16,7 +16,13 @@ rightsHolderElement =
     element uid { agenciesUID } &
     element name { lenGe2String }
   }
-
+  
+paratextZipResourceAgenciesElement =
+  element agencies {
+    rightsHolderElement+ &
+    rightsAdminElement? &
+    contributorElement?
+  }
 
 rightsAdminElement =
   element rightsAdmin {
