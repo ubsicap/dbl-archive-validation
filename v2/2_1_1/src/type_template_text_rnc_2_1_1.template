@@ -7,3 +7,7 @@ translationTypeEnum = text
 translationLevelEnum = text
 
 dbpId = text
+
+textProjectType = text
+
+paratextZipResourceProjectType = text
