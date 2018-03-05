@@ -33,8 +33,7 @@
     <sch:pattern>
         <sch:title>GlobalAnthropologyNotes b1bb2a840333b52f</sch:title>
         <sch:rule context="/DBLMetadata[@id='b1bb2a840333b52f']">
-            <sch:assert test="@resourceOnly = 'true'">resourceOnly is not set to true</sch:assert>
-            <sch:assert test="/DBLMetadata[identification/systemId[@type='paratext']/@projectType = 'GlobalAnthropologyNotes']">No paratext systemId projectType GlobalAnthropologyNotes</sch:assert>
+            <sch:assert test="identification/systemId[@type='paratext']/@projectType = 'GlobalAnthropologyNotes'">No paratext systemId projectType GlobalAnthropologyNotes</sch:assert>
         </sch:rule>
     </sch:pattern>
 </sch:schema>
