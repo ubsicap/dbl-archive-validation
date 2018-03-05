@@ -3,6 +3,7 @@
     <sch:pattern>
         <sch:title>validate_paratext_resource_only_fields</sch:title>
         <sch:rule context="/DBLMetadata">
+            <sch:assert test="@resourceOnly = 'true'">resourceOnly is not set to true</sch:assert>
             <sch:assert test="string-length(identification/name) &gt; 0">Empty or missing identification/name</sch:assert>
             <sch:assert test="string-length(identification/abbreviation) &gt; 0">Empty or missing identification/abbreviation</sch:assert>
         </sch:rule>
