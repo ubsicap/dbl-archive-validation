@@ -3,6 +3,7 @@
     <sch:pattern>
         <sch:title>validate_paratext_resource_only_fields</sch:title>
         <sch:rule context="/DBLMetadata">
+            <sch:assert test="@resourceOnly = 'true'">resourceOnly is not set to true</sch:assert>
             <sch:assert test="string-length(identification/name) &gt; 0">Empty or missing identification/name</sch:assert>
             <sch:assert test="string-length(identification/abbreviation) &gt; 0">Empty or missing identification/abbreviation</sch:assert>
         </sch:rule>
@@ -27,6 +28,12 @@
         <sch:rule context="/DBLMetadata[identification/systemId[@type='paratext']/@projectType != 'GlobalAnthropologyNotes']">
             <sch:assert test="count(contents/bookList/books/book) &gt; 0">No book elements in contents</sch:assert>
             <sch:assert test="count(bookNames/book) &gt; 0">No book elements in bookNames</sch:assert>
+        </sch:rule>
+    </sch:pattern>
+    <sch:pattern>
+        <sch:title>GlobalAnthropologyNotes b1bb2a840333b52f</sch:title>
+        <sch:rule context="/DBLMetadata[@id='b1bb2a840333b52f']">
+            <sch:assert test="identification/systemId[@type='paratext']/@projectType = 'GlobalAnthropologyNotes'">No paratext systemId projectType GlobalAnthropologyNotes</sch:assert>
         </sch:rule>
     </sch:pattern>
 </sch:schema>
