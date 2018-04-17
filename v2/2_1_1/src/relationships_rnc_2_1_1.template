@@ -10,7 +10,8 @@ sourceRelationElement =
     attribute relationType { "source" },
     attribute type { "text" | "audio" },
     attribute id { bundleIdString },
-    attribute revision { xsd:integer }
+    attribute revision { xsd:integer },
+    attribute publicationId {publicationId}?
   }
 
 expressionRelationElement =
@@ -18,6 +19,7 @@ expressionRelationElement =
     attribute relationType { "expression" },
     attribute type { "audio" | "print" },
     attribute id { bundleIdString },
-    attribute revision { xsd:integer }
+    attribute revision { xsd:integer },
+    attribute publicationId {publicationId}?
   }
 
