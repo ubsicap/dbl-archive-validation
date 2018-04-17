@@ -23,7 +23,13 @@ printFormatElement =
     element scale { percentageString } &
     element orientation { printOrientationEnum } &
     element color { printColorEnum } &
-    element fonts { printFormatFontElement* }
+    element fonts { printFormatFontElement* } &
+    element edgeSpace {
+        element top { measurementString } &
+        element bottom { measurementString } &
+        element inside { measurementString } &
+        element outside { measurementString }
+        }
   }
 
 printFormatFontElement =
@@ -56,9 +62,68 @@ videoFormatSubtitleStream = element subtitleStream { empty }
 brailleFormatElement =
   element format {
     element isContracted { xsd:boolean } &
-    element rules { any_element* } &
-    element pageFormat { any_element* } &
-    element titlePage { any_element* }?
+    brailleLiblouisElement &
+    brailleHyphenationDictionaryElement &
+    brailleNumberSignElement &
+    braillePoetryElement &
+    brailleContentElement &
+    braillePageElement
   }
+
+brailleLiblouisElement = element liblouis {
+    element version { xsd:string } &
+    element tables {
+        element table {
+            attribute src { xsd:string },
+            element name { xsd:string }
+        }
+    }
+}
+
+brailleHyphenationDictionaryElement = element hyphenationDictionary {
+    attribute src { xsd:string },
+    element name { xsd:string }
+}
+
+brailleNumberSignElement = element numberSign {
+    element character { brailleString } &
+    element useInMargin { xsd:boolean }
+}
+
+braillePoetryElement = element poetry {
+    element continuous { "false" } |
+    (
+    element continuous { "true" } &
+    element startIndicator { brailleString }? &
+    element lineIndicator { brailleString }? &
+    element lineIndicatorSpaced { "never" | "always" | "sometimes" } &
+    element endIndicator { brailleString } ?
+    )
+}
+
+brailleContentElement = element content {
+    element chapterNumber {"lower" | "upper" } &
+    element chapterHeadingsNumberFirst { xsd:boolean } &
+    element versedParagraphs { xsd:boolean } &
+    element verseSeparator { brailleString } &
+    element includeIntro { xsd:boolean } &
+    element characterStyles {
+        element emphasizedWord { brailleString }? &
+        element emphasizedPassageStart { brailleString }? &
+        element emphasizedPassageEnd { brailleString }?
+    }? &
+    element callerSymbols {
+        element crossReference { brailleString }? &
+        element footnote { brailleString }?
+    }
+}
+
+braillePageElement = element page {
+    element charsPerLine { xsd:positiveInteger } &
+    element linesPerPage { xsd:positiveInteger } &
+    element defaultMarginWidth { xsd:positiveInteger } &
+    element versoLastLineBlank { xsd:boolean } &
+    element carryLines { xsd:positiveInteger }
+}
 
 %%insert format_text_rnc_2_1_1.template%%
