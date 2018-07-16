@@ -1,0 +1,38 @@
+# type text
+
+audioTypeDramatizationEnum = "Dramatized" | "Non-Dramatized" | "Single-Voice"
+
+translationTypeEnum = (
+  "First" |
+  "New" |
+  "Revision" |
+  "Study / Help Material"
+)
+
+translationLevelEnum = (
+  "Basic" |
+  "Common" |
+  "Common - Literary" |
+  "Literary" |
+  "Liturgical" |
+  "Children"
+)
+
+textProjectType = (
+    "Standard" |
+    "Daughter" |
+    "StudyBible" |
+    "StudyBibleAdditions" |
+    "BackTranslation" |
+    "Auxiliary" |
+    "TransliterationManual"|
+    "TransliterationWithEncoder" |
+    "Unknown"
+)
+
+paratextZipResourceProjectType = (
+    textProjectType |
+    "ConsultantNotes" |
+    "GlobalConsultantNotes" |
+    "GlobalAnthropologyNotes"
+)
