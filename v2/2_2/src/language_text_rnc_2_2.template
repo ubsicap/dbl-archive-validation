@@ -1,0 +1,215 @@
+# language text
+
+languageIsoString = xsd:string { pattern = "[a-z][a-z][a-z]" }
+
+ldmlString = xsd:string { pattern = "[A-Za-z]{2,3}([\-_][A-Za-z0-9]+){0,4}" }
+
+iso15924String = ( # ISO 15924
+  "Adlm" |
+  "Afak" |
+  "Aghb" |
+  "Ahom" |
+  "Arab" |
+  "Aran" |
+  "Armi" |
+  "Armn" |
+  "Avst" |
+  "Bali" |
+  "Bamu" |
+  "Bass" |
+  "Batk" |
+  "Beng" |
+  "Blis" |
+  "Bopo" |
+  "Brah" |
+  "Brai" |
+  "Bugi" |
+  "Buhd" |
+  "Cakm" |
+  "Cans" |
+  "Cari" |
+  "Cham" |
+  "Cher" |
+  "Cirt" |
+  "Copt" |
+  "Cprt" |
+  "Cyrl" |
+  "Cyrs" |
+  "Deva" |
+  "Dsrt" |
+  "Dupl" |
+  "Egyd" |
+  "Egyh" |
+  "Egyp" |
+  "Elba" |
+  "Ethi" |
+  "Geok" |
+  "Geor" |
+  "Glag" |
+  "Goth" |
+  "Gran" |
+  "Grek" |
+  "Gujr" |
+  "Guru" |
+  "Hang" |
+  "Hani" |
+  "Hano" |
+  "Hans" |
+  "Hant" |
+  "Hatr" |
+  "Hebr" |
+  "Hira" |
+  "Hluw" |
+  "Hmng" |
+  "Hrkt" |
+  "Hung" |
+  "Inds" |
+  "Ital" |
+  "Java" |
+  "Jpan" |
+  "Jurc" |
+  "Kali" |
+  "Kana" |
+  "Khar" |
+  "Khmr" |
+  "Khoj" |
+  "Kitl" |
+  "Kits" |
+  "Knda" |
+  "Kore" |
+  "Kpel" |
+  "Kthi" |
+  "Lana" |
+  "Laoo" |
+  "Latn" |
+  "Latf" |
+  "Latg" |
+  "Lepc" |
+  "Limb" |
+  "Lina" |
+  "Linb" |
+  "Lisu" |
+  "Loma" |
+  "Lyci" |
+  "Lydi" |
+  "Mahj" |
+  "Mand" |
+  "Mani" |
+  "Marc" |
+  "Maya" |
+  "Mend" |
+  "Merc" |
+  "Mero" |
+  "Mlym" |
+  "Modi" |
+  "Mong" |
+  "Moon" |
+  "Mroo" |
+  "Mtei" |
+  "Mult" |
+  "Mymr" |
+  "Narb" |
+  "Nbat" |
+  "Nkgb" |
+  "Nkoo" |
+  "Nshu" |
+  "Ogam" |
+  "Olck" |
+  "Orkh" |
+  "Orya" |
+  "Osge" |
+  "Osma" |
+  "Palm" |
+  "Pauc" |
+  "Perm" |
+  "Phag" |
+  "Phli" |
+  "Phlp" |
+  "Phlv" |
+  "Phnx" |
+  "Plrd" |
+  "Prti" |
+  "Rjng" |
+  "Roro" |
+  "Runr" |
+  "Samr" |
+  "Sara" |
+  "Sarb" |
+  "Saur" |
+  "Sgnw" |
+  "Shaw" |
+  "Shrd" |
+  "Sidd" |
+  "Sind" |
+  "Sinh" |
+  "Sora" |
+  "Sund" |
+  "Sylo" |
+  "Syrc" |
+  "Syre" |
+  "Syrj" |
+  "Syrn" |
+  "Tagb" |
+  "Takr" |
+  "Tale" |
+  "Talu" |
+  "Taml" |
+  "Tang" |
+  "Tavt" |
+  "Telu" |
+  "Teng" |
+  "Tfng" |
+  "Tglg" |
+  "Thaa" |
+  "Thai" |
+  "Tibt" |
+  "Tirh" |
+  "Ugar" |
+  "Vaii" |
+  "Visp" |
+  "Wara" |
+  "Wole" |
+  "Xpeo" |
+  "Xsux" |
+  "Yiii" |
+  "Zinh" |
+  "Zmth" |
+  "Zsym" |
+  "Zxxx" |
+  "Zyyy" |
+  "Zzzz"
+  )
+
+rodString = xsd:string { pattern = "[0-9]{5}" }
+
+languageScriptDirectionEnum = (
+  "LTR" | # Left to Right
+  "RTL"   # RTL (Right to Left)
+)
+
+numeralSystemEnum = (
+  "Arabic" | # (a.k.a. 'Hindu') = 0123456789
+  "Bengali" |
+  "Burmese" |
+  "Chinese" |
+  "Cyrillic" |
+  "Devanagari" |
+  "Ethiopic" |
+  "Farsi" |
+  "Gujarati" |
+  "Gurmukhi" |
+  "Hebrew" |
+  "Hindi" | # (i.e. 'Arabic' as used in Egypt)
+  "Kannada" |
+  "Khmer" |
+  "Malayalam" |
+  "Roman" |
+  "Oriya" |
+  "Roman" |
+  "Tamil" |
+  "Telugu" |
+  "Thai" |
+  "Tibetan"
+)
+
+%%insert generic_text_rnc_2_2.template%%
