@@ -124,7 +124,7 @@ paratextZipResourceTypeElement =
 
 commonTextTranslationTypeElements = (
   commonTranslationTypeElements &
-  element projectType { textProjectType }
+  element projectType { textProjectType }?
 )
 
 commonAudioTranslationTypeElements = (
