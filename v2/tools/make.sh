@@ -3,7 +3,7 @@
 set -e
 set -u
 
-version=${1:-"2_1"}
+version=${1:-"2_2"}
 srcDir="../"$version
 
 echo "Making v$version"
