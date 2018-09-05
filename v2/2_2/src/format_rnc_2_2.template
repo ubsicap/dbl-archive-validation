@@ -18,6 +18,7 @@ audioSubelements =
 printFormatElement =
   element format {
     element pod { xsd:boolean } &
+    element pageCount { xsd:positiveInteger } &
     element width { measurementString } &
     element height { measurementString } &
     element scale { percentageString } &
