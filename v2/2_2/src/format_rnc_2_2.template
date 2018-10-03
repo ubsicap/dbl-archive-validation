@@ -64,20 +64,18 @@ brailleFormatElement =
   element format {
     element isContracted { xsd:boolean } &
     brailleLiblouisElement &
-    brailleHyphenationDictionaryElement &
+    brailleHyphenationDictionaryElement? &
     brailleNumberSignElement &
-    braillePoetryElement &
+    brailleContnuousPoetryElement? &
     brailleContentElement &
     braillePageElement
   }
 
 brailleLiblouisElement = element liblouis {
     element version { xsd:string } &
-    element tables {
-        element table {
-            attribute src { xsd:string },
-            element name { xsd:string }
-        }
+    element table {
+        attribute src { xsd:string },
+        element name { xsd:string }
     }
 }
 
@@ -91,32 +89,31 @@ brailleNumberSignElement = element numberSign {
     element useInMargin { xsd:boolean }
 }
 
-braillePoetryElement = element poetry {
-    element continuous { "false" } |
-    (
+brailleContinuousPoetryElement = element poetry {
     element continuous { "true" } &
     element startIndicator { brailleString }? &
     element lineIndicator { brailleString }? &
     element lineIndicatorSpaced { "never" | "always" | "sometimes" } &
     element endIndicator { brailleString } ?
-    )
 }
 
 brailleContentElement = element content {
-    element chapterNumber {"lower" | "upper" } &
+    element chapterNumberStyle {"lower" | "upper" } &
     element chapterHeadingsNumberFirst { xsd:boolean } &
     element versedParagraphs { xsd:boolean } &
     element verseSeparator { brailleString } &
     element includeIntro { xsd:boolean } &
+    element footnotes {
+        element callerSymbol{ brailleString }
+    }? &
+    element crossReferences {
+        element callerSymbol{ brailleString }
+    }? &
     element characterStyles {
         element emphasizedWord { brailleString }? &
         element emphasizedPassageStart { brailleString }? &
         element emphasizedPassageEnd { brailleString }?
-    }? &
-    element callerSymbols {
-        element crossReference { brailleString }? &
-        element footnote { brailleString }?
-    }
+    }?
 }
 
 braillePageElement = element page {
