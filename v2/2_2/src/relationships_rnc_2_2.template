@@ -17,7 +17,7 @@ sourceRelationElement =
 expressionRelationElement =
   element relation {
     attribute relationType { "expression" },
-    attribute type { "audio" | "print" },
+    attribute type { "audio" | "print" | "video" | "braille" },
     attribute id { bundleIdString },
     attribute revision { xsd:integer },
     attribute publicationId {publicationId}?
