@@ -1,0 +1,22 @@
+# publication structure
+
+publicationDivisionsOrContent = (publicationStructureDivision | publicationStructureContent)+
+
+publicationStructureDivision =
+  element division {
+    attribute name {nameIdString},
+    attribute role {roleId}?,
+    publicationDivisionsOrContent
+  }
+
+publicationStructureContent =
+  element content {
+    attribute name {nameIdString}? &
+    attribute src {srcPathString} &
+    attribute role {roleId}? &
+    attribute srcPart {srcPathPartString}?
+  }
+
+%%insert publications_text_rnc_2_2.template%%
+%%insert names_text_rnc_2_2.template%%
+%%insert source_text_rnc_2_2.template%%

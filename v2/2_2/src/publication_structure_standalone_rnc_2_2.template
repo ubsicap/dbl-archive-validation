@@ -1,0 +1,5 @@
+# Standalone publication_structure
+
+start = element structure { publicationDivisionsOrContent }
+
+%%insert publication_structure_children_rnc_2_2.template%%
