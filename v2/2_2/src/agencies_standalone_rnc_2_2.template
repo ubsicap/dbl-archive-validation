@@ -1,0 +1,5 @@
+# Standalone agencies
+
+start = agenciesElement
+
+%%insert agencies_rnc_2_2.template%%

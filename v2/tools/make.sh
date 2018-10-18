@@ -25,6 +25,8 @@ echo "   publication-division.rnc"
 ./makeRNC.py --quiet $srcDir/src/publication_division_standalone_rnc_$version.template $srcDir/schemas/publication-division.rnc
 echo "   publication-content.rnc"
 ./makeRNC.py --quiet $srcDir/src/publication_content_standalone_rnc_$version.template $srcDir/schemas/publication-content.rnc
+echo "   agencies.rnc"
+./makeRNC.py --quiet $srcDir/src/agencies_standalone_rnc_$version.template $srcDir/schemas/agencies.rnc
 
 echo "Make RNG and validate"
 echo "   metadata.rng"
@@ -59,6 +61,10 @@ echo "   publication-content.rng"
 java -jar ./trang.jar -I rnc -O rng $srcDir/schemas/publication-content.rnc $srcDir/schemas/publication-content.rng
 xmllint --relaxng relaxng.rng -noout $srcDir/schemas/publication-content.rng 2> /dev/null
 ./validate_rng.py $srcDir/schemas/publication-content.rng
+echo "   agencies.rng"
+java -jar ./trang.jar -I rnc -O rng $srcDir/schemas/agencies.rnc $srcDir/schemas/agencies.rng
+xmllint --relaxng relaxng.rng -noout $srcDir/schemas/agencies.rng 2> /dev/null
+./validate_rng.py $srcDir/schemas/agencies.rng
 
 echo "Make XSD"
 echo "   dbl-xhtml.xsd"
