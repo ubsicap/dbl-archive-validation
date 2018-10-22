@@ -89,8 +89,7 @@ brailleNumberSignElement = element numberSign {
     element useInMargin { xsd:boolean }
 }
 
-brailleContinuousPoetryElement = element poetry {
-    element continuous { "true" } &
+brailleContinuousPoetryElement = element continuousPoetry {
     element startIndicator { brailleString }? &
     element lineIndicator { brailleString }? &
     element lineIndicatorSpaced { "never" | "always" | "sometimes" } &
@@ -102,7 +101,7 @@ brailleContentElement = element content {
     element chapterHeadingsNumberFirst { xsd:boolean } &
     element versedParagraphs { xsd:boolean } &
     element verseSeparator { brailleString } &
-    element includeIntro { xsd:boolean } &
+    element includeIntros { xsd:boolean } &
     element footnotes {
         element callerSymbol{ brailleString }
     }? &
