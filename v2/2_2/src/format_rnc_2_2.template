@@ -74,7 +74,7 @@ brailleFormatElement =
 brailleLiblouisElement = element liblouis {
     element version { xsd:string } &
     element table {
-        attribute src { xsd:string },
+        element source { xsd:string },
         element name { xsd:string }
     }
 }
