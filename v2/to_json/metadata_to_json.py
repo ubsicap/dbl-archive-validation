@@ -57,6 +57,7 @@ class MetadataAsJson():
         process_root_atts(self.xml_dom, ret)
         process_identification_section(self.xml_dom, ret)
         process_relationships_section(self.xml_dom, ret)
+        process_agencies_section(self.xml_dom, ret)
         return ret
 
     def dom_from_dict(self):

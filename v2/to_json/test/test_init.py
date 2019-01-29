@@ -92,6 +92,8 @@ def test_complete_xml_init(source):
         assert "relationships" in maj.json_dict
         for relation in maj.json_dict["relationships"].values():
             assert "type" in relation
+    assert len([a for a in maj.json_dict["agencies"].values() if a["type"] == "rightsHolder"]) > 0
+    assert len([a for a in maj.json_dict["agencies"].values() if a["type"] == "contributor"]) > 0
 
 @pytest.mark.parametrize(
     'source',
