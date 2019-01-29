@@ -2,7 +2,8 @@ import json
 from lxml import etree
 
 from .metadata_as_json_exception import MetadataAsJsonException
-
+from .root_atts import process_root_atts
+from .sections import *
 
 class MetadataAsJson():
     """
@@ -45,7 +46,18 @@ class MetadataAsJson():
         """
         Return a dictionary based on xml_dom
         """
-        return {}
+        if self.xml_dom.tag != "DBLMetadata":
+            raise MetadataAsJsonException(
+                {
+                    "code": "DOM-001",
+                    "printable": "Expected DBLMetadata in DOM, found {0}".format(self.xml_dom.tag)
+                }
+            )
+        ret = {}
+        process_root_atts(self.xml_dom, ret)
+        process_identification_section(self.xml_dom, ret)
+        process_relationships_section(self.xml_dom, ret)
+        return ret
 
     def dom_from_dict(self):
         """

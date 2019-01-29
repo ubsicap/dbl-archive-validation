@@ -46,6 +46,14 @@ def test_multiple_source_fail():
         MetadataAsJson(json_doc="{'foo': 'baa'}", json_dict={"foo": "baa"})
     _no_exception_surprises(exc, "ARGS-001", "exactly one")
 
+def test_bad_root_tag_fail():
+    """
+    Init should fail if the provided DOM does not have DBLMetadata as the root element.
+    """
+    with pytest.raises(MetadataAsJsonException) as exc:
+        MetadataAsJson(xml_doc="<foo/>")
+    _no_exception_surprises(exc, "DOM-001", "DBLMetadata.*foo")
+
 @pytest.mark.parametrize(
     'source',
     ["text.xml", "audio.xml", "video.xml", "print.xml", "braille.xml"]
@@ -60,6 +68,30 @@ def test_template_xml_init(source):
     maj = MetadataAsJson(xml_doc=doc)
     dom = etree.fromstring(doc)
     maj = MetadataAsJson(xml_dom=dom)
+    assert type(maj.json_dict["version"]) == float
+
+@pytest.mark.parametrize(
+    'source',
+    ["dbl_test_text.xml", "dbl_test_audio.xml", "dbl_test_print.xml"]
+)
+def test_complete_xml_init(source):
+    """
+    Init should work with valid metadata.
+    """
+    fq_source = os.path.join(_test_data_dir(), "xml", "complete_metadata", source)
+    with open(fq_source, "rb") as xml_in:
+        doc = xml_in.read()
+    maj = MetadataAsJson(xml_doc=doc)
+    dom = etree.fromstring(doc)
+    maj = MetadataAsJson(xml_dom=dom)
+    assert type(maj.json_dict["version"]) == float
+    assert "name" in maj.json_dict["identification"]
+    if source == "dbl_text_text.xml":
+        assert "systemIds" in maj.json_dict["identification"]
+    if source in ["dbl_test_audio.xml", "dbl_test_print.xml"]:
+        assert "relationships" in maj.json_dict
+        for relation in maj.json_dict["relationships"].values():
+            assert "type" in relation
 
 @pytest.mark.parametrize(
     'source',
