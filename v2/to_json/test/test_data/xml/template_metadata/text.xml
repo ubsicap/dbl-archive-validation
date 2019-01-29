@@ -1,0 +1,24 @@
+<?xml version="1.0" standalone="yes"?>
+<DBLMetadata id="" revision="" version="2.2">
+  <identification/>
+  <type>
+    <medium>text</medium>
+    <hasCharacters>true</hasCharacters>
+    <isTranslation>true</isTranslation>
+    <isExpression>true</isExpression>
+  </type>
+  <relationships/>
+  <agencies/>
+  <language/>
+  <countries/>
+  <format>
+    <versedParagraphs>false</versedParagraphs>
+  </format>
+  <names/>
+  <manifest/>
+  <source/>
+  <publications/>
+  <copyright/>
+  <promotion/>
+  <archiveStatus/>
+</DBLMetadata>

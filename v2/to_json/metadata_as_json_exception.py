@@ -1,0 +1,2 @@
+class MetadataAsJsonException(Exception):
+    pass

@@ -1,0 +1,25 @@
+<?xml version="1.0" standalone="yes"?>
+<DBLMetadata version="2.2" revision="" id="">
+    <identification/>
+    <type>
+        <medium>video</medium>
+        <hasCharacters>false</hasCharacters>
+        <isTranslation>false</isTranslation>
+        <isExpression>true</isExpression>
+        <isConfidential>false</isConfidential>
+    </type>
+    <relationships/>
+    <agencies/>
+    <language/>
+    <countries/>
+    <format>
+      <videoStream/>
+    </format>
+    <names/>
+    <manifest/>
+    <source/>
+    <publications/>
+    <copyright/>
+    <promotion/>
+    <archiveStatus/>
+</DBLMetadata>
