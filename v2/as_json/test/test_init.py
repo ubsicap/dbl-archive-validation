@@ -72,7 +72,7 @@ def test_template_xml_init(source):
 
 @pytest.mark.parametrize(
     'source',
-    ["dbl_test_text.xml", "dbl_test_audio.xml", "dbl_test_print.xml"]
+    ["dbl_test_text.xml", "dbl_test_audio.xml", "dbl_test_print.xml", "armenian_video.xml", "assamese_braille.xml"]
 )
 def test_complete_xml_init(source):
     """
@@ -102,9 +102,37 @@ def test_complete_xml_init(source):
     if source in ["dbl_test_text.xml", "dbl_test_audio.xml"]:
         assert len(maj.json_dict["names"]) > 0
     assert "comments" in maj.json_dict["archiveStatus"]
-    if source == "dbl_text_text.xml":
+    if source == "dbl_test_text.xml":
+        assert "versedParagraphs" in maj.json_dict["format"]
+        assert type(maj.json_dict["format"]["versedParagraphs"]) == bool
         assert "MAT" in maj.json_dict["progress"]
         assert type(maj.json_dict["progress"]["MAT"]["stage"]) == int
+    elif source == "dbl_test_audio.xml":
+        assert "compression" in maj.json_dict["format"]
+        assert type(maj.json_dict["format"]["compression"]) == str
+        assert "bitRate" in maj.json_dict["format"]
+        assert type(maj.json_dict["format"]["bitRate"]) == int
+    elif source == "dbl_test_print.xml":
+        assert "width" in maj.json_dict["format"]
+        assert type(maj.json_dict["format"]["width"]) == str
+        assert "pod" in maj.json_dict["format"]
+        assert type(maj.json_dict["format"]["pod"]) == bool
+        assert "pageCount" in maj.json_dict["format"]
+        assert type(maj.json_dict["format"]["pageCount"]) == int
+        assert len(maj.json_dict["format"]["fonts"]) > 0
+        assert "type" in maj.json_dict["format"]["fonts"][0]
+        assert "name" in maj.json_dict["format"]["fonts"][0]
+        assert "top" in maj.json_dict["format"]["edgeSpace"]
+        assert type(maj.json_dict["format"]["edgeSpace"]["top"]) == str
+    elif source == "armenian_video.xml":
+        assert "container" in maj.json_dict["format"]
+        assert "codec" in maj.json_dict["format"]["videoStream"]
+        assert type(maj.json_dict["format"]["videoStream"]["codec"]) == str
+        assert "bitRate" in maj.json_dict["format"]["videoStream"]
+        assert type(maj.json_dict["format"]["videoStream"]["bitRate"]) == int
+        assert "frameRate" in maj.json_dict["format"]["videoStream"]
+        assert type(maj.json_dict["format"]["videoStream"]["frameRate"]) == float
+
 
 @pytest.mark.parametrize(
     'source',

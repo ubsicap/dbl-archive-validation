@@ -4,6 +4,7 @@ def process_type_section(dom, json_dict):
         type_section = type_sections[0]
         json_dict["type"] = {}
         for string_field in [
+            "medium",
             "iso",
             "name",
             "nameLocal",

@@ -4,7 +4,7 @@ from .agencies import process_agencies_section
 from .language import process_language_section
 from .countries import process_countries_section
 from .type import process_type_section
-# from .format import process_format_section
+from .format import process_format_section
 from .names import process_names_section
 # from .manifest import process_manifest_section
 # from .source import process_source_section

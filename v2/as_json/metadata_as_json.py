@@ -61,7 +61,12 @@ class MetadataAsJson():
         process_language_section(self.xml_dom, ret)
         process_countries_section(self.xml_dom, ret)
         process_type_section(self.xml_dom, ret)
-        # process_format_section(self.xml_dom, ret)
+        metadata_medium = None
+        try:
+            metadata_medium = ret["type"]["medium"]
+        except:
+            pass
+        process_format_section(self.xml_dom, ret, metadata_medium)
         process_names_section(self.xml_dom, ret)
         # process_manifest_section(self.xml_dom, ret)
         # process_source_section(self.xml_dom, ret)
