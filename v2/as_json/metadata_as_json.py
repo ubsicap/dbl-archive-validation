@@ -3,7 +3,7 @@ from lxml import etree
 
 from .metadata_as_json_exception import MetadataAsJsonException
 from .root_atts import process_root_atts
-from .sections import *
+from .dom_sections import *
 
 class MetadataAsJson():
     """
@@ -58,6 +58,18 @@ class MetadataAsJson():
         process_identification_section(self.xml_dom, ret)
         process_relationships_section(self.xml_dom, ret)
         process_agencies_section(self.xml_dom, ret)
+        process_language_section(self.xml_dom, ret)
+        process_countries_section(self.xml_dom, ret)
+        process_type_section(self.xml_dom, ret)
+        # process_format_section(self.xml_dom, ret)
+        process_names_section(self.xml_dom, ret)
+        # process_manifest_section(self.xml_dom, ret)
+        # process_source_section(self.xml_dom, ret)
+        # process_publications_section(self.xml_dom, ret)
+        # process_copyright_section(self.xml_dom, ret)
+        # process_promotion_section(self.xml_dom, ret)
+        process_archive_status_section(self.xml_dom, ret)
+        process_progress_section(self.xml_dom, ret)
         return ret
 
     def dom_from_dict(self):

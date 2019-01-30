@@ -7,7 +7,7 @@ import re
 from lxml import etree
 
 
-from ..metadata_to_json import MetadataAsJson
+from ..metadata_as_json import MetadataAsJson
 from ..metadata_as_json_exception import MetadataAsJsonException
 
 def _no_exception_surprises(exc, code, printable_regex):
@@ -94,6 +94,17 @@ def test_complete_xml_init(source):
             assert "type" in relation
     assert len([a for a in maj.json_dict["agencies"].values() if a["type"] == "rightsHolder"]) > 0
     assert len([a for a in maj.json_dict["agencies"].values() if a["type"] == "contributor"]) > 0
+    assert "iso" in maj.json_dict["language"]
+    assert len(maj.json_dict["countries"]) > 0
+    assert "iso" in list(maj.json_dict["countries"].values())[0]
+    assert "isConfidential" in maj.json_dict["type"]
+    assert type(maj.json_dict["type"]["hasCharacters"]) == bool
+    if source in ["dbl_test_text.xml", "dbl_test_audio.xml"]:
+        assert len(maj.json_dict["names"]) > 0
+    assert "comments" in maj.json_dict["archiveStatus"]
+    if source == "dbl_text_text.xml":
+        assert "MAT" in maj.json_dict["progress"]
+        assert type(maj.json_dict["progress"]["MAT"]["stage"]) == int
 
 @pytest.mark.parametrize(
     'source',
