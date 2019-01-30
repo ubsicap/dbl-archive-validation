@@ -132,7 +132,20 @@ def test_complete_xml_init(source):
         assert type(maj.json_dict["format"]["videoStream"]["bitRate"]) == int
         assert "frameRate" in maj.json_dict["format"]["videoStream"]
         assert type(maj.json_dict["format"]["videoStream"]["frameRate"]) == float
-
+    elif source == "assamese_braille.xml":
+        assert "isContracted" in maj.json_dict["format"]
+        assert type(maj.json_dict["format"]["isContracted"]) == bool
+        assert "version" in maj.json_dict["format"]["liblouis"]
+        assert "source" in maj.json_dict["format"]["liblouis"]["table"]
+        assert "src" in maj.json_dict["format"]["hyphenationDictionary"]
+        assert "character" in maj.json_dict["format"]["numberSign"]
+        assert "useInMargin" in maj.json_dict["format"]["numberSign"]
+        assert type(maj.json_dict["format"]["numberSign"]["useInMargin"]) == bool
+        assert "chapterNumberStyle" in maj.json_dict["format"]["content"]
+        assert "charsPerLine" in maj.json_dict["format"]["page"]
+        assert type(maj.json_dict["format"]["page"]["charsPerLine"]) == int
+        assert "versoLastLineBlank" in maj.json_dict["format"]["page"]
+        assert type(maj.json_dict["format"]["page"]["versoLastLineBlank"]) == bool
 
 @pytest.mark.parametrize(
     'source',
