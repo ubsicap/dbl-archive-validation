@@ -86,12 +86,6 @@ def test_complete_xml_init(source):
     maj = MetadataAsJson(xml_dom=dom)
     assert type(maj.json_dict["version"]) == float
     assert "name" in maj.json_dict["identification"]
-    if source == "dbl_text_text.xml":
-        assert "systemIds" in maj.json_dict["identification"]
-    if source in ["dbl_test_audio.xml", "dbl_test_print.xml"]:
-        assert "relationships" in maj.json_dict
-        for relation in maj.json_dict["relationships"].values():
-            assert "type" in relation
     assert len([a for a in maj.json_dict["agencies"].values() if a["type"] == "rightsHolder"]) > 0
     assert len([a for a in maj.json_dict["agencies"].values() if a["type"] == "contributor"]) > 0
     assert "iso" in maj.json_dict["language"]
@@ -99,10 +93,22 @@ def test_complete_xml_init(source):
     assert "iso" in list(maj.json_dict["countries"].values())[0]
     assert "isConfidential" in maj.json_dict["type"]
     assert type(maj.json_dict["type"]["hasCharacters"]) == bool
+    assert "comments" in maj.json_dict["archiveStatus"]
+    assert "fullStatement" in maj.json_dict["copyright"]
+    assert "xhtml" in maj.json_dict["copyright"]["fullStatement"]
+    assert len(maj.json_dict["copyright"]["fullStatement"]["xhtml"]) > 0
+    if "promoVersionInfo" in maj.json_dict["promotion"]:
+        assert "contentType" in maj.json_dict["promotion"]["promoVersionInfo"]
+        assert "content" in maj.json_dict["promotion"]["promoVersionInfo"]
+        assert type(maj.json_dict["promotion"]["promoVersionInfo"]["content"]) == str
     if source in ["dbl_test_text.xml", "dbl_test_audio.xml"]:
         assert len(maj.json_dict["names"]) > 0
-    assert "comments" in maj.json_dict["archiveStatus"]
+    if source in ["dbl_test_audio.xml", "dbl_test_print.xml"]:
+        assert "relationships" in maj.json_dict
+        for relation in maj.json_dict["relationships"].values():
+            assert "type" in relation
     if source == "dbl_test_text.xml":
+        assert "systemIds" in maj.json_dict["identification"]
         assert "versedParagraphs" in maj.json_dict["format"]
         assert type(maj.json_dict["format"]["versedParagraphs"]) == bool
         assert "MAT" in maj.json_dict["progress"]

@@ -9,7 +9,7 @@ from .names import process_names_section
 # from .manifest import process_manifest_section
 # from .source import process_source_section
 # from .publications import process_publications_section
-# from .copyright import process_copyright_section
-# from .promotion import process_promotion_section
+from .copyright import process_copyright_section
+from .promotion import process_promotion_section
 from .archive_status import process_archive_status_section
 from .progress import process_progress_section
