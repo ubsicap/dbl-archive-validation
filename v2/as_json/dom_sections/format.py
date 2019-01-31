@@ -314,7 +314,7 @@ def process_braille_content_character_styles(dom, json_dict):
         for string_field in [
             "emphasizedWord",
             "emphasizedPassageStart",
-            "emphaizedPassageEnd"
+            "emphasizedPassageEnd"
         ]:
             field_nodes = character_element.xpath(string_field)
             if len(field_nodes) > 0:

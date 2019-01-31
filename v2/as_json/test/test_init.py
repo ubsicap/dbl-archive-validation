@@ -93,10 +93,15 @@ def test_complete_xml_init(source):
     assert "iso" in list(maj.json_dict["countries"].values())[0]
     assert "isConfidential" in maj.json_dict["type"]
     assert type(maj.json_dict["type"]["hasCharacters"]) == bool
-    assert "comments" in maj.json_dict["archiveStatus"]
+    assert len(maj.json_dict["manifest"]) > 0
+    for resource in maj.json_dict["manifest"]:
+        assert "uri" in maj.json_dict["manifest"][resource]
+        assert "size" in maj.json_dict["manifest"][resource]
+        assert type(maj.json_dict["manifest"][resource]["size"]) == int
     assert "fullStatement" in maj.json_dict["copyright"]
     assert "xhtml" in maj.json_dict["copyright"]["fullStatement"]
     assert len(maj.json_dict["copyright"]["fullStatement"]["xhtml"]) > 0
+    assert "comments" in maj.json_dict["archiveStatus"]
     if "promoVersionInfo" in maj.json_dict["promotion"]:
         assert "contentType" in maj.json_dict["promotion"]["promoVersionInfo"]
         assert "content" in maj.json_dict["promotion"]["promoVersionInfo"]

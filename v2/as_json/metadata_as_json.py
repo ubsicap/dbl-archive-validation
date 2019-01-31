@@ -68,7 +68,7 @@ class MetadataAsJson():
             pass
         process_format_section(self.xml_dom, ret, metadata_medium)
         process_names_section(self.xml_dom, ret)
-        # process_manifest_section(self.xml_dom, ret)
+        process_manifest_section(self.xml_dom, ret)
         # process_source_section(self.xml_dom, ret)
         # process_publications_section(self.xml_dom, ret)
         process_copyright_section(self.xml_dom, ret)
