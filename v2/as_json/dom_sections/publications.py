@@ -1,5 +1,6 @@
 from .countries import process_countries_section
 from .canonical_content import process_canonical_content
+from .structure import process_structure
 
 
 def process_publications_section(dom, json_dict):
@@ -29,6 +30,7 @@ def process_publication(dom, json_dict):
         process_canon_spec(dom, json_dict)
         process_countries_section(dom, json_dict)
         process_canonical_content(dom, json_dict)
+        process_structure(dom, json_dict)
 
 
 def process_canon_spec(dom, json_dict):

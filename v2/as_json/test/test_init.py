@@ -189,4 +189,3 @@ def test_serialize_json(source):
         doc = xml_in.read()
     maj = MetadataAsJson(xml_doc=doc)
     serialized = maj.json()
-    print(serialized)
