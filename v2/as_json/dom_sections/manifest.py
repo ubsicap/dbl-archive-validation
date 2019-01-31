@@ -8,7 +8,7 @@ def process_manifest_section(dom, json_dict):
     def _flatten(dom):
         xslt_path = os.path.abspath(os.path.join(os.path.dirname(__file__), "flatten_manifest.xsl"))
         manifest_flattener = etree.XSLT(etree.parse(xslt_path))
-        xslt_result = manifest_flattener(manifest_section)
+        xslt_result = manifest_flattener(dom)
         return etree.fromstring(etree.tostring(xslt_result))
 
     manifest_sections = dom.xpath("manifest")

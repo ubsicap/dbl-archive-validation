@@ -70,7 +70,7 @@ class MetadataAsJson():
         process_names_section(self.xml_dom, ret)
         process_manifest_section(self.xml_dom, ret)
         # process_source_section(self.xml_dom, ret)
-        # process_publications_section(self.xml_dom, ret)
+        process_publications_section(self.xml_dom, ret)
         process_copyright_section(self.xml_dom, ret)
         process_promotion_section(self.xml_dom, ret)
         process_archive_status_section(self.xml_dom, ret)
@@ -82,3 +82,9 @@ class MetadataAsJson():
         Return dom based on json_dict
         """
         return etree.Element("DBLMetadata")
+
+    def json(self):
+        """
+        Serialize json_dict.
+        """
+        return json.dumps(self.json_dict, indent=2)

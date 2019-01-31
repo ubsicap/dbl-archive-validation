@@ -118,6 +118,9 @@ def test_complete_xml_init(source):
         assert type(maj.json_dict["format"]["versedParagraphs"]) == bool
         assert "MAT" in maj.json_dict["progress"]
         assert type(maj.json_dict["progress"]["MAT"]["stage"]) == int
+        assert "p1" in maj.json_dict["publications"]
+        assert len(maj.json_dict["publications"]["p1"]["canonicalContent"]) > 0
+        assert len(maj.json_dict["publications"]["p1"]["canonicalContent"][0]) == 3
     elif source == "dbl_test_audio.xml":
         assert "compression" in maj.json_dict["format"]
         assert type(maj.json_dict["format"]["compression"]) == str
@@ -172,3 +175,18 @@ def test_template_json_init(source):
     maj = MetadataAsJson(json_doc=doc)
     json_dict = json.loads(doc)
     maj = MetadataAsJson(json_dict=json_dict)
+
+@pytest.mark.parametrize(
+    'source',
+    ["dbl_test_text.xml", "dbl_test_audio.xml", "dbl_test_print.xml", "armenian_video.xml", "assamese_braille.xml"]
+)
+def test_serialize_json(source):
+    """
+    Export JSON after init from DOM.
+    """
+    fq_source = os.path.join(_test_data_dir(), "xml", "complete_metadata", source)
+    with open(fq_source, "rb") as xml_in:
+        doc = xml_in.read()
+    maj = MetadataAsJson(xml_doc=doc)
+    serialized = maj.json()
+    print(serialized)

@@ -33,9 +33,10 @@ def process_canon_spec(dom, json_dict):
             json_dict["canonSpec"]["type"] = str(canon_spec.attrib["type"])
         components = canon_spec.xpath("component")
         if len(components) > 0:
-            json_spec["canonSpec"]["components"] = []
+            json_dict["canonSpec"]["components"] = []
             for component in components:
-                json_spec["canonSpec"]["components"] += str(component.text)
+                json_dict["canonSpec"]["components"] += [str(component.text)]
+
 
 def process_system_id(dom, json_dict):
     if "type" in dom.attrib:
