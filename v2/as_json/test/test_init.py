@@ -86,8 +86,8 @@ def test_complete_xml_init(source):
     maj = MetadataAsJson(xml_dom=dom)
     assert type(maj.json_dict["version"]) == float
     assert "name" in maj.json_dict["identification"]
-    assert len([a for a in maj.json_dict["agencies"].values() if a["type"] == "rightsHolder"]) > 0
-    assert len([a for a in maj.json_dict["agencies"].values() if a["type"] == "contributor"]) > 0
+    assert len(maj.json_dict["agencies"]["rightsHolder"]) > 0
+    assert len(maj.json_dict["agencies"]["contributor"]) > 0
     assert "iso" in maj.json_dict["language"]
     assert len(maj.json_dict["countries"]) > 0
     assert "iso" in list(maj.json_dict["countries"].values())[0]
@@ -98,6 +98,7 @@ def test_complete_xml_init(source):
         assert "uri" in maj.json_dict["manifest"][resource]
         assert "size" in maj.json_dict["manifest"][resource]
         assert type(maj.json_dict["manifest"][resource]["size"]) == int
+    assert "source" in maj.json_dict
     assert "fullStatement" in maj.json_dict["copyright"]
     assert "xhtml" in maj.json_dict["copyright"]["fullStatement"]
     assert len(maj.json_dict["copyright"]["fullStatement"]["xhtml"]) > 0
@@ -112,6 +113,11 @@ def test_complete_xml_init(source):
         assert "relationships" in maj.json_dict
         for relation in maj.json_dict["relationships"].values():
             assert "type" in relation
+    if source in ["dbl_test_text.xml", "dbl_test_print.xml"]:
+            assert "canonicalContent" in maj.json_dict["source"]
+            assert "structure" in maj.json_dict["source"]
+            assert len(maj.json_dict["source"]["canonicalContent"]) > 0
+            assert len(maj.json_dict["source"]["structure"]) > 0
     if source == "dbl_test_text.xml":
         assert "systemIds" in maj.json_dict["identification"]
         assert "versedParagraphs" in maj.json_dict["format"]

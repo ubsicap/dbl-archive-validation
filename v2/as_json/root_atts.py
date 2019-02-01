@@ -10,4 +10,8 @@ def process_root_atts(dom, json_dict):
     if "id" in dom.attrib:
         json_dict["id"] = str(dom.attrib["id"])
     if "revision" in dom.attrib:
-        json_dict["revision"] = str(dom.attrib["revision"])
+        try:
+            revision_number = int(dom.attrib["revision"])
+        except:
+            revision_number = 0
+        json_dict["revision"] = revision_number

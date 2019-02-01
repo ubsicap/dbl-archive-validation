@@ -15,22 +15,24 @@ def process_publications_section(dom, json_dict):
 
 
 def process_publication(dom, json_dict):
-        for field in [
-            "name",
-            "nameLocal",
-            "abbreviation",
-            "abbreviationLocal",
-            "description",
-            "descriptionLocal",
-            "scope"
-        ]:
-            field_nodes = dom.xpath(field)
-            if len(field_nodes) > 0:
-                json_dict[field] = str(field_nodes[0].text)
-        process_canon_spec(dom, json_dict)
-        process_countries_section(dom, json_dict)
-        process_canonical_content(dom, json_dict)
-        process_structure(dom, json_dict)
+    if "default" in dom.attrib:
+        json_dict["default"] = dom.attrib["default"] == "true"
+    for field in [
+        "name",
+        "nameLocal",
+        "abbreviation",
+        "abbreviationLocal",
+        "description",
+        "descriptionLocal",
+        "scope"
+    ]:
+        field_nodes = dom.xpath(field)
+        if len(field_nodes) > 0:
+            json_dict[field] = str(field_nodes[0].text)
+    process_canon_spec(dom, json_dict)
+    process_countries_section(dom, json_dict)
+    process_canonical_content(dom, json_dict)
+    process_structure(dom, json_dict)
 
 
 def process_canon_spec(dom, json_dict):

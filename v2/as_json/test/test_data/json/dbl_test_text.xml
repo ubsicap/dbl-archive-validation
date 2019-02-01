@@ -1,7 +1,7 @@
 {
   "version": 2.1,
   "id": "2880c78491b2f8ce",
-  "revision": "89",
+  "revision": 89,
   "identification": {
     "name": "DBL Test Version with DC",
     "systemIds": {
@@ -27,30 +27,53 @@
   },
   "relationships": {},
   "agencies": {
-    "rightsHolder/54650cfa5117ad690fb05fb6": {
-      "type": "rightsHolder",
-      "uid": "54650cfa5117ad690fb05fb6",
-      "abbr": "TEST",
-      "url": "http://thedigitalbiblelibrary.org",
-      "nameLocal": "DBL Testing",
-      "name": "Organization for DBL Testing"
+    "rightsHolder": {
+      "54650cfa5117ad690fb05fb6": {
+        "uid": "54650cfa5117ad690fb05fb6",
+        "abbr": "TEST",
+        "url": "http://thedigitalbiblelibrary.org",
+        "nameLocal": "DBL Testing",
+        "name": "Organization for DBL Testing"
+      },
+      "545d2cb0c1fbcec540df3e8d": {
+        "uid": "545d2cb0c1fbcec540df3e8d",
+        "abbr": "EIPC",
+        "url": "http://www.dblipc.org",
+        "name": "Example Intellectual Property Contributor"
+      },
+      "54650cd05117ad67b3826e99": {
+        "uid": "54650cd05117ad67b3826e99",
+        "name": "American Bible Society",
+        "content": true,
+        "publication": true,
+        "management": true,
+        "finance": false,
+        "qa": true
+      }
     },
-    "rightsHolder/545d2cb0c1fbcec540df3e8d": {
-      "type": "rightsHolder",
-      "uid": "545d2cb0c1fbcec540df3e8d",
-      "abbr": "EIPC",
-      "url": "http://www.dblipc.org",
-      "name": "Example Intellectual Property Contributor"
-    },
-    "contributor/54650cd05117ad67b3826e99": {
-      "type": "contributor",
-      "uid": "54650cd05117ad67b3826e99",
-      "name": "American Bible Society",
-      "content": true,
-      "publication": true,
-      "management": true,
-      "finance": false,
-      "qa": true
+    "contributor": {
+      "54650cfa5117ad690fb05fb6": {
+        "uid": "54650cfa5117ad690fb05fb6",
+        "abbr": "TEST",
+        "url": "http://thedigitalbiblelibrary.org",
+        "nameLocal": "DBL Testing",
+        "name": "Organization for DBL Testing"
+      },
+      "545d2cb0c1fbcec540df3e8d": {
+        "uid": "545d2cb0c1fbcec540df3e8d",
+        "abbr": "EIPC",
+        "url": "http://www.dblipc.org",
+        "name": "Example Intellectual Property Contributor"
+      },
+      "54650cd05117ad67b3826e99": {
+        "uid": "54650cd05117ad67b3826e99",
+        "name": "American Bible Society",
+        "content": true,
+        "publication": true,
+        "management": true,
+        "finance": false,
+        "qa": true
+      }
     }
   },
   "language": {
@@ -1644,9 +1667,101 @@
       "size": 6577818
     }
   },
+  "source": {
+    "canonicalContent": [
+      "1CH",
+      "1CO",
+      "1ES",
+      "1JN",
+      "1KI",
+      "1MA",
+      "1PE",
+      "1SA",
+      "1TH",
+      "1TI",
+      "2CH",
+      "2CO",
+      "2ES",
+      "2JN",
+      "2KI",
+      "2MA",
+      "2PE",
+      "2SA",
+      "2TH",
+      "2TI",
+      "3JN",
+      "ACT",
+      "AMO",
+      "BAR",
+      "BEL",
+      "COL",
+      "DAN",
+      "DEU",
+      "ECC",
+      "EPH",
+      "ESG",
+      "EST",
+      "EXO",
+      "EZK",
+      "EZR",
+      "GAL",
+      "GEN",
+      "HAB",
+      "HAG",
+      "HEB",
+      "HOS",
+      "ISA",
+      "JAS",
+      "JDG",
+      "JDT",
+      "JER",
+      "JHN",
+      "JOB",
+      "JOL",
+      "JON",
+      "JOS",
+      "JUD",
+      "LAM",
+      "LEV",
+      "LJE",
+      "LUK",
+      "MAL",
+      "MAN",
+      "MAT",
+      "MIC",
+      "MRK",
+      "NAM",
+      "NEH",
+      "NUM",
+      "OBA",
+      "PHM",
+      "PHP",
+      "PRO",
+      "PSA",
+      "REV",
+      "ROM",
+      "RUT",
+      "S3Y",
+      "SIR",
+      "SNG",
+      "SUS",
+      "TIT",
+      "TOB",
+      "WIS",
+      "ZEC",
+      "ZEP"
+    ],
+    "structure": [
+      {
+        "src": "source/source.zip",
+        "role": "sourceZip"
+      }
+    ]
+  },
   "publications": {
     "p1": {
       "id": "p1",
+      "default": true,
       "description": "Catholic Interconfessional Bible",
       "descriptionLocal": "Catholic Interconfessional Bible",
       "canonicalContent": [
@@ -1731,6 +1846,413 @@
         "WIS",
         "ZEC",
         "ZEP"
+      ],
+      "structure": [
+        {
+          "src": "release/USX_1/GEN.usx",
+          "role": "GEN",
+          "name": "book-gen"
+        },
+        {
+          "src": "release/USX_1/EXO.usx",
+          "role": "EXO",
+          "name": "book-exo"
+        },
+        {
+          "src": "release/USX_1/LEV.usx",
+          "role": "LEV",
+          "name": "book-lev"
+        },
+        {
+          "src": "release/USX_1/NUM.usx",
+          "role": "NUM",
+          "name": "book-num"
+        },
+        {
+          "src": "release/USX_1/DEU.usx",
+          "role": "DEU",
+          "name": "book-deu"
+        },
+        {
+          "src": "release/USX_1/JOS.usx",
+          "role": "JOS",
+          "name": "book-jos"
+        },
+        {
+          "src": "release/USX_1/JDG.usx",
+          "role": "JDG",
+          "name": "book-jdg"
+        },
+        {
+          "src": "release/USX_1/RUT.usx",
+          "role": "RUT",
+          "name": "book-rut"
+        },
+        {
+          "src": "release/USX_1/1SA.usx",
+          "role": "1SA",
+          "name": "book-1sa"
+        },
+        {
+          "src": "release/USX_1/2SA.usx",
+          "role": "2SA",
+          "name": "book-2sa"
+        },
+        {
+          "src": "release/USX_1/1KI.usx",
+          "role": "1KI",
+          "name": "book-1ki"
+        },
+        {
+          "src": "release/USX_1/2KI.usx",
+          "role": "2KI",
+          "name": "book-2ki"
+        },
+        {
+          "src": "release/USX_1/1CH.usx",
+          "role": "1CH",
+          "name": "book-1ch"
+        },
+        {
+          "src": "release/USX_1/2CH.usx",
+          "role": "2CH",
+          "name": "book-2ch"
+        },
+        {
+          "src": "release/USX_1/EZR.usx",
+          "role": "EZR",
+          "name": "book-ezr"
+        },
+        {
+          "src": "release/USX_1/NEH.usx",
+          "role": "NEH",
+          "name": "book-neh"
+        },
+        {
+          "src": "release/USX_1/EST.usx",
+          "role": "EST",
+          "name": "book-est"
+        },
+        {
+          "src": "release/USX_1/JOB.usx",
+          "role": "JOB",
+          "name": "book-job"
+        },
+        {
+          "src": "release/USX_1/PSA.usx",
+          "role": "PSA",
+          "name": "book-psa"
+        },
+        {
+          "src": "release/USX_1/PRO.usx",
+          "role": "PRO",
+          "name": "book-pro"
+        },
+        {
+          "src": "release/USX_1/ECC.usx",
+          "role": "ECC",
+          "name": "book-ecc"
+        },
+        {
+          "src": "release/USX_1/SNG.usx",
+          "role": "SNG",
+          "name": "book-sng"
+        },
+        {
+          "src": "release/USX_1/ISA.usx",
+          "role": "ISA",
+          "name": "book-isa"
+        },
+        {
+          "src": "release/USX_1/JER.usx",
+          "role": "JER",
+          "name": "book-jer"
+        },
+        {
+          "src": "release/USX_1/LAM.usx",
+          "role": "LAM",
+          "name": "book-lam"
+        },
+        {
+          "src": "release/USX_1/EZK.usx",
+          "role": "EZK",
+          "name": "book-ezk"
+        },
+        {
+          "src": "release/USX_1/DAN.usx",
+          "role": "DAN",
+          "name": "book-dan"
+        },
+        {
+          "src": "release/USX_1/HOS.usx",
+          "role": "HOS",
+          "name": "book-hos"
+        },
+        {
+          "src": "release/USX_1/JOL.usx",
+          "role": "JOL",
+          "name": "book-jol"
+        },
+        {
+          "src": "release/USX_1/AMO.usx",
+          "role": "AMO",
+          "name": "book-amo"
+        },
+        {
+          "src": "release/USX_1/OBA.usx",
+          "role": "OBA",
+          "name": "book-oba"
+        },
+        {
+          "src": "release/USX_1/JON.usx",
+          "role": "JON",
+          "name": "book-jon"
+        },
+        {
+          "src": "release/USX_1/MIC.usx",
+          "role": "MIC",
+          "name": "book-mic"
+        },
+        {
+          "src": "release/USX_1/NAM.usx",
+          "role": "NAM",
+          "name": "book-nam"
+        },
+        {
+          "src": "release/USX_1/HAB.usx",
+          "role": "HAB",
+          "name": "book-hab"
+        },
+        {
+          "src": "release/USX_1/ZEP.usx",
+          "role": "ZEP",
+          "name": "book-zep"
+        },
+        {
+          "src": "release/USX_1/HAG.usx",
+          "role": "HAG",
+          "name": "book-hag"
+        },
+        {
+          "src": "release/USX_1/ZEC.usx",
+          "role": "ZEC",
+          "name": "book-zec"
+        },
+        {
+          "src": "release/USX_1/MAL.usx",
+          "role": "MAL",
+          "name": "book-mal"
+        },
+        {
+          "src": "release/USX_1/1ES.usx",
+          "role": "1ES",
+          "name": "book-1es"
+        },
+        {
+          "src": "release/USX_1/2ES.usx",
+          "role": "2ES",
+          "name": "book-2es"
+        },
+        {
+          "src": "release/USX_1/TOB.usx",
+          "role": "TOB",
+          "name": "book-tob"
+        },
+        {
+          "src": "release/USX_1/JDT.usx",
+          "role": "JDT",
+          "name": "book-jdt"
+        },
+        {
+          "src": "release/USX_1/ESG.usx",
+          "role": "ESG",
+          "name": "book-esg"
+        },
+        {
+          "src": "release/USX_1/WIS.usx",
+          "role": "WIS",
+          "name": "book-wis"
+        },
+        {
+          "src": "release/USX_1/SIR.usx",
+          "role": "SIR",
+          "name": "book-sir"
+        },
+        {
+          "src": "release/USX_1/BAR.usx",
+          "role": "BAR",
+          "name": "book-bar"
+        },
+        {
+          "src": "release/USX_1/LJE.usx",
+          "role": "LJE",
+          "name": "book-lje"
+        },
+        {
+          "src": "release/USX_1/S3Y.usx",
+          "role": "S3Y",
+          "name": "book-s3y"
+        },
+        {
+          "src": "release/USX_1/SUS.usx",
+          "role": "SUS",
+          "name": "book-sus"
+        },
+        {
+          "src": "release/USX_1/BEL.usx",
+          "role": "BEL",
+          "name": "book-bel"
+        },
+        {
+          "src": "release/USX_1/MAN.usx",
+          "role": "MAN",
+          "name": "book-man"
+        },
+        {
+          "src": "release/USX_1/1MA.usx",
+          "role": "1MA",
+          "name": "book-1ma"
+        },
+        {
+          "src": "release/USX_1/2MA.usx",
+          "role": "2MA",
+          "name": "book-2ma"
+        },
+        {
+          "src": "release/USX_1/MAT.usx",
+          "role": "MAT",
+          "name": "book-mat"
+        },
+        {
+          "src": "release/USX_1/MRK.usx",
+          "role": "MRK",
+          "name": "book-mrk"
+        },
+        {
+          "src": "release/USX_1/LUK.usx",
+          "role": "LUK",
+          "name": "book-luk"
+        },
+        {
+          "src": "release/USX_1/JHN.usx",
+          "role": "JHN",
+          "name": "book-jhn"
+        },
+        {
+          "src": "release/USX_1/ACT.usx",
+          "role": "ACT",
+          "name": "book-act"
+        },
+        {
+          "src": "release/USX_1/ROM.usx",
+          "role": "ROM",
+          "name": "book-rom"
+        },
+        {
+          "src": "release/USX_1/1CO.usx",
+          "role": "1CO",
+          "name": "book-1co"
+        },
+        {
+          "src": "release/USX_1/2CO.usx",
+          "role": "2CO",
+          "name": "book-2co"
+        },
+        {
+          "src": "release/USX_1/GAL.usx",
+          "role": "GAL",
+          "name": "book-gal"
+        },
+        {
+          "src": "release/USX_1/EPH.usx",
+          "role": "EPH",
+          "name": "book-eph"
+        },
+        {
+          "src": "release/USX_1/PHP.usx",
+          "role": "PHP",
+          "name": "book-php"
+        },
+        {
+          "src": "release/USX_1/COL.usx",
+          "role": "COL",
+          "name": "book-col"
+        },
+        {
+          "src": "release/USX_1/1TH.usx",
+          "role": "1TH",
+          "name": "book-1th"
+        },
+        {
+          "src": "release/USX_1/2TH.usx",
+          "role": "2TH",
+          "name": "book-2th"
+        },
+        {
+          "src": "release/USX_1/1TI.usx",
+          "role": "1TI",
+          "name": "book-1ti"
+        },
+        {
+          "src": "release/USX_1/2TI.usx",
+          "role": "2TI",
+          "name": "book-2ti"
+        },
+        {
+          "src": "release/USX_1/TIT.usx",
+          "role": "TIT",
+          "name": "book-tit"
+        },
+        {
+          "src": "release/USX_1/PHM.usx",
+          "role": "PHM",
+          "name": "book-phm"
+        },
+        {
+          "src": "release/USX_1/HEB.usx",
+          "role": "HEB",
+          "name": "book-heb"
+        },
+        {
+          "src": "release/USX_1/JAS.usx",
+          "role": "JAS",
+          "name": "book-jas"
+        },
+        {
+          "src": "release/USX_1/1PE.usx",
+          "role": "1PE",
+          "name": "book-1pe"
+        },
+        {
+          "src": "release/USX_1/2PE.usx",
+          "role": "2PE",
+          "name": "book-2pe"
+        },
+        {
+          "src": "release/USX_1/1JN.usx",
+          "role": "1JN",
+          "name": "book-1jn"
+        },
+        {
+          "src": "release/USX_1/2JN.usx",
+          "role": "2JN",
+          "name": "book-2jn"
+        },
+        {
+          "src": "release/USX_1/3JN.usx",
+          "role": "3JN",
+          "name": "book-3jn"
+        },
+        {
+          "src": "release/USX_1/JUD.usx",
+          "role": "JUD",
+          "name": "book-jud"
+        },
+        {
+          "src": "release/USX_1/REV.usx",
+          "role": "REV",
+          "name": "book-rev"
+        }
       ]
     },
     "p2": {
@@ -1808,6 +2330,338 @@
         "TIT",
         "ZEC",
         "ZEP"
+      ],
+      "structure": [
+        {
+          "src": "release/USX_2/GEN.usx",
+          "role": "GEN",
+          "name": "book-gen"
+        },
+        {
+          "src": "release/USX_2/EXO.usx",
+          "role": "EXO",
+          "name": "book-exo"
+        },
+        {
+          "src": "release/USX_2/LEV.usx",
+          "role": "LEV",
+          "name": "book-lev"
+        },
+        {
+          "src": "release/USX_2/NUM.usx",
+          "role": "NUM",
+          "name": "book-num"
+        },
+        {
+          "src": "release/USX_2/DEU.usx",
+          "role": "DEU",
+          "name": "book-deu"
+        },
+        {
+          "src": "release/USX_2/JOS.usx",
+          "role": "JOS",
+          "name": "book-jos"
+        },
+        {
+          "src": "release/USX_2/JDG.usx",
+          "role": "JDG",
+          "name": "book-jdg"
+        },
+        {
+          "src": "release/USX_2/RUT.usx",
+          "role": "RUT",
+          "name": "book-rut"
+        },
+        {
+          "src": "release/USX_2/1SA.usx",
+          "role": "1SA",
+          "name": "book-1sa"
+        },
+        {
+          "src": "release/USX_2/2SA.usx",
+          "role": "2SA",
+          "name": "book-2sa"
+        },
+        {
+          "src": "release/USX_2/1KI.usx",
+          "role": "1KI",
+          "name": "book-1ki"
+        },
+        {
+          "src": "release/USX_2/2KI.usx",
+          "role": "2KI",
+          "name": "book-2ki"
+        },
+        {
+          "src": "release/USX_2/1CH.usx",
+          "role": "1CH",
+          "name": "book-1ch"
+        },
+        {
+          "src": "release/USX_2/2CH.usx",
+          "role": "2CH",
+          "name": "book-2ch"
+        },
+        {
+          "src": "release/USX_2/EZR.usx",
+          "role": "EZR",
+          "name": "book-ezr"
+        },
+        {
+          "src": "release/USX_2/NEH.usx",
+          "role": "NEH",
+          "name": "book-neh"
+        },
+        {
+          "src": "release/USX_2/EST.usx",
+          "role": "EST",
+          "name": "book-est"
+        },
+        {
+          "src": "release/USX_2/JOB.usx",
+          "role": "JOB",
+          "name": "book-job"
+        },
+        {
+          "src": "release/USX_2/PSA.usx",
+          "role": "PSA",
+          "name": "book-psa"
+        },
+        {
+          "src": "release/USX_2/PRO.usx",
+          "role": "PRO",
+          "name": "book-pro"
+        },
+        {
+          "src": "release/USX_2/ECC.usx",
+          "role": "ECC",
+          "name": "book-ecc"
+        },
+        {
+          "src": "release/USX_2/SNG.usx",
+          "role": "SNG",
+          "name": "book-sng"
+        },
+        {
+          "src": "release/USX_2/ISA.usx",
+          "role": "ISA",
+          "name": "book-isa"
+        },
+        {
+          "src": "release/USX_2/JER.usx",
+          "role": "JER",
+          "name": "book-jer"
+        },
+        {
+          "src": "release/USX_2/LAM.usx",
+          "role": "LAM",
+          "name": "book-lam"
+        },
+        {
+          "src": "release/USX_2/EZK.usx",
+          "role": "EZK",
+          "name": "book-ezk"
+        },
+        {
+          "src": "release/USX_2/DAN.usx",
+          "role": "DAN",
+          "name": "book-dan"
+        },
+        {
+          "src": "release/USX_2/HOS.usx",
+          "role": "HOS",
+          "name": "book-hos"
+        },
+        {
+          "src": "release/USX_2/JOL.usx",
+          "role": "JOL",
+          "name": "book-jol"
+        },
+        {
+          "src": "release/USX_2/AMO.usx",
+          "role": "AMO",
+          "name": "book-amo"
+        },
+        {
+          "src": "release/USX_2/OBA.usx",
+          "role": "OBA",
+          "name": "book-oba"
+        },
+        {
+          "src": "release/USX_2/JON.usx",
+          "role": "JON",
+          "name": "book-jon"
+        },
+        {
+          "src": "release/USX_2/MIC.usx",
+          "role": "MIC",
+          "name": "book-mic"
+        },
+        {
+          "src": "release/USX_2/NAM.usx",
+          "role": "NAM",
+          "name": "book-nam"
+        },
+        {
+          "src": "release/USX_2/HAB.usx",
+          "role": "HAB",
+          "name": "book-hab"
+        },
+        {
+          "src": "release/USX_2/ZEP.usx",
+          "role": "ZEP",
+          "name": "book-zep"
+        },
+        {
+          "src": "release/USX_2/HAG.usx",
+          "role": "HAG",
+          "name": "book-hag"
+        },
+        {
+          "src": "release/USX_2/ZEC.usx",
+          "role": "ZEC",
+          "name": "book-zec"
+        },
+        {
+          "src": "release/USX_2/MAL.usx",
+          "role": "MAL",
+          "name": "book-mal"
+        },
+        {
+          "src": "release/USX_2/MAT.usx",
+          "role": "MAT",
+          "name": "book-mat"
+        },
+        {
+          "src": "release/USX_2/MRK.usx",
+          "role": "MRK",
+          "name": "book-mrk"
+        },
+        {
+          "src": "release/USX_2/LUK.usx",
+          "role": "LUK",
+          "name": "book-luk"
+        },
+        {
+          "src": "release/USX_2/JHN.usx",
+          "role": "JHN",
+          "name": "book-jhn"
+        },
+        {
+          "src": "release/USX_2/ACT.usx",
+          "role": "ACT",
+          "name": "book-act"
+        },
+        {
+          "src": "release/USX_2/ROM.usx",
+          "role": "ROM",
+          "name": "book-rom"
+        },
+        {
+          "src": "release/USX_2/1CO.usx",
+          "role": "1CO",
+          "name": "book-1co"
+        },
+        {
+          "src": "release/USX_2/2CO.usx",
+          "role": "2CO",
+          "name": "book-2co"
+        },
+        {
+          "src": "release/USX_2/GAL.usx",
+          "role": "GAL",
+          "name": "book-gal"
+        },
+        {
+          "src": "release/USX_2/EPH.usx",
+          "role": "EPH",
+          "name": "book-eph"
+        },
+        {
+          "src": "release/USX_2/PHP.usx",
+          "role": "PHP",
+          "name": "book-php"
+        },
+        {
+          "src": "release/USX_2/COL.usx",
+          "role": "COL",
+          "name": "book-col"
+        },
+        {
+          "src": "release/USX_2/1TH.usx",
+          "role": "1TH",
+          "name": "book-1th"
+        },
+        {
+          "src": "release/USX_2/2TH.usx",
+          "role": "2TH",
+          "name": "book-2th"
+        },
+        {
+          "src": "release/USX_2/1TI.usx",
+          "role": "1TI",
+          "name": "book-1ti"
+        },
+        {
+          "src": "release/USX_2/2TI.usx",
+          "role": "2TI",
+          "name": "book-2ti"
+        },
+        {
+          "src": "release/USX_2/TIT.usx",
+          "role": "TIT",
+          "name": "book-tit"
+        },
+        {
+          "src": "release/USX_2/PHM.usx",
+          "role": "PHM",
+          "name": "book-phm"
+        },
+        {
+          "src": "release/USX_2/HEB.usx",
+          "role": "HEB",
+          "name": "book-heb"
+        },
+        {
+          "src": "release/USX_2/JAS.usx",
+          "role": "JAS",
+          "name": "book-jas"
+        },
+        {
+          "src": "release/USX_2/1PE.usx",
+          "role": "1PE",
+          "name": "book-1pe"
+        },
+        {
+          "src": "release/USX_2/2PE.usx",
+          "role": "2PE",
+          "name": "book-2pe"
+        },
+        {
+          "src": "release/USX_2/1JN.usx",
+          "role": "1JN",
+          "name": "book-1jn"
+        },
+        {
+          "src": "release/USX_2/2JN.usx",
+          "role": "2JN",
+          "name": "book-2jn"
+        },
+        {
+          "src": "release/USX_2/3JN.usx",
+          "role": "3JN",
+          "name": "book-3jn"
+        },
+        {
+          "src": "release/USX_2/JUD.usx",
+          "role": "JUD",
+          "name": "book-jud"
+        },
+        {
+          "src": "release/USX_2/REV.usx",
+          "role": "REV",
+          "name": "book-rev"
+        }
       ]
     },
     "p3": {
@@ -1846,6 +2700,143 @@
         "REV",
         "ROM",
         "TIT"
+      ],
+      "structure": [
+        {
+          "src": "release/USX_3/MAT.usx",
+          "role": "MAT",
+          "name": "book-mat"
+        },
+        {
+          "src": "release/USX_3/MRK.usx",
+          "role": "MRK",
+          "name": "book-mrk"
+        },
+        {
+          "src": "release/USX_3/LUK.usx",
+          "role": "LUK",
+          "name": "book-luk"
+        },
+        {
+          "src": "release/USX_3/JHN.usx",
+          "role": "JHN",
+          "name": "book-jhn"
+        },
+        {
+          "src": "release/USX_3/ACT.usx",
+          "role": "ACT",
+          "name": "book-act"
+        },
+        {
+          "src": "release/USX_3/ROM.usx",
+          "role": "ROM",
+          "name": "book-rom"
+        },
+        {
+          "src": "release/USX_3/1CO.usx",
+          "role": "1CO",
+          "name": "book-1co"
+        },
+        {
+          "src": "release/USX_3/2CO.usx",
+          "role": "2CO",
+          "name": "book-2co"
+        },
+        {
+          "src": "release/USX_3/GAL.usx",
+          "role": "GAL",
+          "name": "book-gal"
+        },
+        {
+          "src": "release/USX_3/EPH.usx",
+          "role": "EPH",
+          "name": "book-eph"
+        },
+        {
+          "src": "release/USX_3/PHP.usx",
+          "role": "PHP",
+          "name": "book-php"
+        },
+        {
+          "src": "release/USX_3/COL.usx",
+          "role": "COL",
+          "name": "book-col"
+        },
+        {
+          "src": "release/USX_3/1TH.usx",
+          "role": "1TH",
+          "name": "book-1th"
+        },
+        {
+          "src": "release/USX_3/2TH.usx",
+          "role": "2TH",
+          "name": "book-2th"
+        },
+        {
+          "src": "release/USX_3/1TI.usx",
+          "role": "1TI",
+          "name": "book-1ti"
+        },
+        {
+          "src": "release/USX_3/2TI.usx",
+          "role": "2TI",
+          "name": "book-2ti"
+        },
+        {
+          "src": "release/USX_3/TIT.usx",
+          "role": "TIT",
+          "name": "book-tit"
+        },
+        {
+          "src": "release/USX_3/PHM.usx",
+          "role": "PHM",
+          "name": "book-phm"
+        },
+        {
+          "src": "release/USX_3/HEB.usx",
+          "role": "HEB",
+          "name": "book-heb"
+        },
+        {
+          "src": "release/USX_3/JAS.usx",
+          "role": "JAS",
+          "name": "book-jas"
+        },
+        {
+          "src": "release/USX_3/1PE.usx",
+          "role": "1PE",
+          "name": "book-1pe"
+        },
+        {
+          "src": "release/USX_3/2PE.usx",
+          "role": "2PE",
+          "name": "book-2pe"
+        },
+        {
+          "src": "release/USX_3/1JN.usx",
+          "role": "1JN",
+          "name": "book-1jn"
+        },
+        {
+          "src": "release/USX_3/2JN.usx",
+          "role": "2JN",
+          "name": "book-2jn"
+        },
+        {
+          "src": "release/USX_3/3JN.usx",
+          "role": "3JN",
+          "name": "book-3jn"
+        },
+        {
+          "src": "release/USX_3/JUD.usx",
+          "role": "JUD",
+          "name": "book-jud"
+        },
+        {
+          "src": "release/USX_3/REV.usx",
+          "role": "REV",
+          "name": "book-rev"
+        }
       ]
     }
   },
