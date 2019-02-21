@@ -1,0 +1,219 @@
+{
+  "version": 2.1,
+  "id": "6e0d81a24efbb679",
+  "revision": 9,
+  "identification": {
+    "name": "TEST Audio Bible",
+    "nameLocal": "TEST Audio Bible - Local",
+    "abbreviation": "DBLTD",
+    "description": "TEST Audio Bible - Description",
+    "scope": "New Testament",
+    "bundleProducer": "Paratext/8.0.30.1"
+  },
+  "relationships": {
+    "2880c78491b2f8ce/89": {
+      "relationType": "source",
+      "type": "text",
+      "id": "2880c78491b2f8ce",
+      "revision": 89
+    }
+  },
+  "agencies": {
+    "rightsHolder": {
+      "54650cfa5117ad690fb05fb6": {
+        "uid": "54650cfa5117ad690fb05fb6",
+        "abbr": "TEST",
+        "url": "http://thedigitalbiblelibrary.org",
+        "name": "Organization for DBL Testing"
+      },
+      "54650ce75117ad68c4c49e91": {
+        "uid": "54650ce75117ad68c4c49e91",
+        "name": "Test Creator",
+        "content": true,
+        "publication": false,
+        "management": false,
+        "finance": false,
+        "qa": false
+      },
+      "54650ce85117ad68c4c49e99": {
+        "uid": "54650ce85117ad68c4c49e99",
+        "name": "Test Publisher",
+        "content": false,
+        "publication": true,
+        "management": false,
+        "finance": false,
+        "qa": false
+      }
+    },
+    "contributor": {
+      "54650cfa5117ad690fb05fb6": {
+        "uid": "54650cfa5117ad690fb05fb6",
+        "abbr": "TEST",
+        "url": "http://thedigitalbiblelibrary.org",
+        "name": "Organization for DBL Testing"
+      },
+      "54650ce75117ad68c4c49e91": {
+        "uid": "54650ce75117ad68c4c49e91",
+        "name": "Test Creator",
+        "content": true,
+        "publication": false,
+        "management": false,
+        "finance": false,
+        "qa": false
+      },
+      "54650ce85117ad68c4c49e99": {
+        "uid": "54650ce85117ad68c4c49e99",
+        "name": "Test Publisher",
+        "content": false,
+        "publication": true,
+        "management": false,
+        "finance": false,
+        "qa": false
+      }
+    }
+  },
+  "language": {
+    "iso": "eng",
+    "name": "English",
+    "ldml": "en",
+    "scriptCode": "Latn",
+    "script": "Latin",
+    "scriptDirection": "LTR"
+  },
+  "countries": {
+    "US": {
+      "iso": "US",
+      "name": "United States"
+    }
+  },
+  "type": {
+    "medium": "audio",
+    "dramatization": "Dramatized",
+    "hasCharacters": false,
+    "isTranslation": false,
+    "isExpression": true,
+    "isConfidential": false
+  },
+  "format": {
+    "compression": "MP3",
+    "trackConfiguration": "2/0 (Stereo)",
+    "bitRate": 128000,
+    "bitDepth": 16,
+    "samplingRate": 44100
+  },
+  "names": {
+    "book-gen": {
+      "id": "book-gen",
+      "abbr": "Gn",
+      "short": "Genesis",
+      "long": "Genesis"
+    },
+    "book-mat": {
+      "id": "book-mat",
+      "abbr": "Mt",
+      "short": "Matthew",
+      "long": "The Gospel according to Matthew"
+    }
+  },
+  "manifest": {
+    "release/audio/GEN/GEN_001.mp3": {
+      "uri": "release/audio/GEN/GEN_001.mp3",
+      "checksum": "b5fd441feb7eed02c68dca3d8dbbfe80",
+      "mimeType": "audio/mpeg",
+      "size": 10168353
+    },
+    "release/audio/GEN/GEN_002.mp3": {
+      "uri": "release/audio/GEN/GEN_002.mp3",
+      "checksum": "d8737c9c4339b95ab0c876a6867415af",
+      "mimeType": "audio/mpeg",
+      "size": 7977633
+    },
+    "release/audio/GEN/GEN_003.mp3": {
+      "uri": "release/audio/GEN/GEN_003.mp3",
+      "checksum": "e5d4e332ac7070a66915ce2f898f85f6",
+      "mimeType": "audio/mpeg",
+      "size": 9992673
+    },
+    "release/audio/MAT/MAT_001.mp3": {
+      "uri": "release/audio/MAT/MAT_001.mp3",
+      "checksum": "48e2d311b4de8a61b1f311ddb2be970f",
+      "mimeType": "audio/mpeg",
+      "size": 8399073
+    },
+    "release/audio/MAT/MAT_002.mp3": {
+      "uri": "release/audio/MAT/MAT_002.mp3",
+      "checksum": "f5fad0278058706de82fdcc800da83ff",
+      "mimeType": "audio/mpeg",
+      "size": 10095393
+    },
+    "release/audio/MAT/MAT_003.mp3": {
+      "uri": "release/audio/MAT/MAT_003.mp3",
+      "checksum": "8019d42da92d9ad42be0e0c75ef4fddb",
+      "mimeType": "audio/mpeg",
+      "size": 6794913
+    }
+  },
+  "source": {},
+  "publications": {
+    "p1": {
+      "id": "p1",
+      "canonicalContent": [
+        "GEN",
+        "MAT"
+      ],
+      "structure": [
+        {
+          "name": "book-gen",
+          "contains": [
+            {
+              "src": "release/audio/GEN/GEN_001.mp3",
+              "role": "GEN 1"
+            },
+            {
+              "src": "release/audio/GEN/GEN_002.mp3",
+              "role": "GEN 2"
+            },
+            {
+              "src": "release/audio/GEN/GEN_003.mp3",
+              "role": "GEN 3"
+            }
+          ]
+        },
+        {
+          "name": "book-mat",
+          "contains": [
+            {
+              "src": "release/audio/MAT/MAT_001.mp3",
+              "role": "MAT 1"
+            },
+            {
+              "src": "release/audio/MAT/MAT_002.mp3",
+              "role": "MAT 2"
+            },
+            {
+              "src": "release/audio/MAT/MAT_003.mp3",
+              "role": "MAT 3"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "copyright": {
+    "fullStatement": {
+      "xhtml": "\n <p>Test Copyright. All rights reserved.</p>\n \n "
+    }
+  },
+  "promotion": {
+    "promoVersionInfo": {
+      "contentType": "xhtml",
+      "content": "\n <p>Audio background and promotion information.</p>\n \n "
+    }
+  },
+  "archiveStatus": {
+    "archivistName": "Eric Pyle",
+    "dateArchived": "2015-02-26T22:32:52.214958",
+    "dateUpdated": "2018-03-15T19:38:40.762935",
+    "comments": "Updated with working audio files for GEN 1-3 and MAT 1-3, test browser open on success"
+  }
+}

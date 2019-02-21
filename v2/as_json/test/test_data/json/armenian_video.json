@@ -1,0 +1,376 @@
+{
+  "version": 2.2,
+  "id": "8122623517434eb3",
+  "revision": 2,
+  "identification": {
+    "name": "New Etchmiadzin Bible in Sign Language",
+    "nameLocal": "\u0531\u0580\u0587\u0565\u056c\u0561\u0570\u0561\u0575\u0565\u0580\u0565\u0576 \u0576\u0578\u0580 \u056d\u0574\u0562\u0561\u0563\u0580\u0578\u0582\u0569\u0575\u0578\u0582\u0576",
+    "abbreviation": "NEB",
+    "abbreviationLocal": "\u0546\u0537\u0531",
+    "description": "The Word of God is heard in the sign language",
+    "scope": "Portions",
+    "bundleProducer": "nathanael/0.16.1"
+  },
+  "relationships": {
+    "8fe6349333a0b137/1": {
+      "relationType": "source",
+      "type": "text",
+      "id": "8fe6349333a0b137",
+      "revision": 1
+    }
+  },
+  "agencies": {
+    "rightsHolder": {
+      "c33fac56df48614e6ba9a5eb": {
+        "uid": "c33fac56df48614e6ba9a5eb",
+        "name": "Bible Society of Armenia",
+        "content": true,
+        "publication": true,
+        "management": true,
+        "finance": true,
+        "qa": true
+      }
+    },
+    "rightsAdmin": {
+      "c33fac56df48614e6ba9a5eb": {
+        "uid": "c33fac56df48614e6ba9a5eb",
+        "name": "Bible Society of Armenia",
+        "content": true,
+        "publication": true,
+        "management": true,
+        "finance": true,
+        "qa": true
+      }
+    },
+    "contributor": {
+      "c33fac56df48614e6ba9a5eb": {
+        "uid": "c33fac56df48614e6ba9a5eb",
+        "name": "Bible Society of Armenia",
+        "content": true,
+        "publication": true,
+        "management": true,
+        "finance": true,
+        "qa": true
+      }
+    }
+  },
+  "language": {
+    "iso": "aen",
+    "name": "Armenian Sign Language",
+    "nameLocal": "\u0570\u0561\u0575\u0565\u0580\u0567\u0576",
+    "ldml": "hy",
+    "numerals": "Arabic",
+    "scriptCode": "Armn",
+    "script": "Armenian",
+    "scriptDirection": "LTR"
+  },
+  "countries": {
+    "AM": {
+      "iso": "AM",
+      "name": "Armenia"
+    }
+  },
+  "type": {
+    "medium": "video",
+    "hasCharacters": false,
+    "isTranslation": false,
+    "isExpression": true,
+    "isConfidential": false
+  },
+  "format": {
+    "container": "MP4",
+    "videoStream": {
+      "codec": "H.264 AVC",
+      "screenResolution": "1280x720",
+      "bitRate": 16700000,
+      "frameRate": 25.0
+    }
+  },
+  "names": {
+    "book-luk": {
+      "id": "book-luk",
+      "abbr": "\u0542\u0578\u0582\u056f.",
+      "short": "\u0542\u0548\u0552\u053f\u0531\u054d",
+      "long": "\u0531\u054e\u0535\u054f\u0531\u0550\u0531\u0546 \u0538\u054d\u054f \u0542\u0548\u0552\u053f\u0531\u054d\u053b"
+    }
+  },
+  "manifest": {
+    "LUK/LUK_1.mp4": {
+      "uri": "LUK/LUK_1.mp4",
+      "checksum": "95f8c0914637cc517fc41872be52119b",
+      "mimeType": "text/plain",
+      "size": 822419386
+    },
+    "LUK/LUK_10.mp4": {
+      "uri": "LUK/LUK_10.mp4",
+      "checksum": "bcc1e9d2bbc896ffad3f3708dbd2ac65",
+      "mimeType": "text/plain",
+      "size": 575323922
+    },
+    "LUK/LUK_11.mp4": {
+      "uri": "LUK/LUK_11.mp4",
+      "checksum": "ec98b52fc269f41b4d0b75f43b00ac17",
+      "mimeType": "text/plain",
+      "size": 421433747
+    },
+    "LUK/LUK_12.mp4": {
+      "uri": "LUK/LUK_12.mp4",
+      "checksum": "df645cf210274447d50e7896401cb5d8",
+      "mimeType": "text/plain",
+      "size": 477026205
+    },
+    "LUK/LUK_13.mp4": {
+      "uri": "LUK/LUK_13.mp4",
+      "checksum": "aa8dc4f93a8f6bb502ae7bf356af8345",
+      "mimeType": "text/plain",
+      "size": 474641919
+    },
+    "LUK/LUK_14.mp4": {
+      "uri": "LUK/LUK_14.mp4",
+      "checksum": "6981d4bb76af1252b5d01151b42a53de",
+      "mimeType": "text/plain",
+      "size": 688333135
+    },
+    "LUK/LUK_15.mp4": {
+      "uri": "LUK/LUK_15.mp4",
+      "checksum": "b47624fe03ddcf502cb81bac3f7efc19",
+      "mimeType": "text/plain",
+      "size": 619469192
+    },
+    "LUK/LUK_16.mp4": {
+      "uri": "LUK/LUK_16.mp4",
+      "checksum": "fbafd5acf54e2328b9f1d7519072d7fa",
+      "mimeType": "text/plain",
+      "size": 497676316
+    },
+    "LUK/LUK_17.mp4": {
+      "uri": "LUK/LUK_17.mp4",
+      "checksum": "73cb1c0bc517ad9b6d338df6f5a008d2",
+      "mimeType": "text/plain",
+      "size": 397258062
+    },
+    "LUK/LUK_18.mp4": {
+      "uri": "LUK/LUK_18.mp4",
+      "checksum": "4837cc8d7dbbcf01fcc4819803c83ceb",
+      "mimeType": "text/plain",
+      "size": 748477534
+    },
+    "LUK/LUK_19.mp4": {
+      "uri": "LUK/LUK_19.mp4",
+      "checksum": "05c5e0c5e8394007ae2a69aadbea400d",
+      "mimeType": "text/plain",
+      "size": 907000620
+    },
+    "LUK/LUK_2.mp4": {
+      "uri": "LUK/LUK_2.mp4",
+      "checksum": "fcb525d3154913ff83ff38f1ae38f34c",
+      "mimeType": "text/plain",
+      "size": 717321538
+    },
+    "LUK/LUK_20.mp4": {
+      "uri": "LUK/LUK_20.mp4",
+      "checksum": "3d4def2ad5041c502e0f089431743452",
+      "mimeType": "text/plain",
+      "size": 395855298
+    },
+    "LUK/LUK_21.mp4": {
+      "uri": "LUK/LUK_21.mp4",
+      "checksum": "e627883a6857ee3a6328c7147aebf62f",
+      "mimeType": "text/plain",
+      "size": 157168468
+    },
+    "LUK/LUK_22.mp4": {
+      "uri": "LUK/LUK_22.mp4",
+      "checksum": "80b27e16a2852b8cb09a108b954d124f",
+      "mimeType": "text/plain",
+      "size": 1027147975
+    },
+    "LUK/LUK_23.mp4": {
+      "uri": "LUK/LUK_23.mp4",
+      "checksum": "a63e98a05bac53be8f4aed7e42654de3",
+      "mimeType": "text/plain",
+      "size": 1029917835
+    },
+    "LUK/LUK_24.mp4": {
+      "uri": "LUK/LUK_24.mp4",
+      "checksum": "0102ca3275fcbb9424b908ee1190cfa2",
+      "mimeType": "text/plain",
+      "size": 644415780
+    },
+    "LUK/LUK_3.mp4": {
+      "uri": "LUK/LUK_3.mp4",
+      "checksum": "1936f4b118d05a6b58264702155587db",
+      "mimeType": "text/plain",
+      "size": 367618306
+    },
+    "LUK/LUK_4.mp4": {
+      "uri": "LUK/LUK_4.mp4",
+      "checksum": "2015320f6d441a5f75de93df0cdff78b",
+      "mimeType": "text/plain",
+      "size": 582412433
+    },
+    "LUK/LUK_5.mp4": {
+      "uri": "LUK/LUK_5.mp4",
+      "checksum": "8fbf06bac6aa1c649b914bd70dc4a0a6",
+      "mimeType": "text/plain",
+      "size": 689138501
+    },
+    "LUK/LUK_6.mp4": {
+      "uri": "LUK/LUK_6.mp4",
+      "checksum": "d021180b1e3d9fda9d218ecc1660123a",
+      "mimeType": "text/plain",
+      "size": 806864190
+    },
+    "LUK/LUK_7.mp4": {
+      "uri": "LUK/LUK_7.mp4",
+      "checksum": "d4ba03ca8de6f97483c0d0d7536c5407",
+      "mimeType": "text/plain",
+      "size": 626480858
+    },
+    "LUK/LUK_8.mp4": {
+      "uri": "LUK/LUK_8.mp4",
+      "checksum": "67e01d185db573ea70a5162ea00dd034",
+      "mimeType": "text/plain",
+      "size": 897251136
+    },
+    "LUK/LUK_9.mp4": {
+      "uri": "LUK/LUK_9.mp4",
+      "checksum": "41f440a2a460985a2d4c9cf703fada90",
+      "mimeType": "text/plain",
+      "size": 546540277
+    }
+  },
+  "source": {},
+  "publications": {
+    "p1": {
+      "id": "p1",
+      "canonSpec": {
+        "type": "OT+, NT",
+        "components": [
+          "armenianApostolicOT",
+          "armenianNT"
+        ]
+      },
+      "canonicalContent": [
+        "LUK"
+      ],
+      "structure": [
+        {
+          "name": "book-luk",
+          "role": "LUK",
+          "contains": [
+            {
+              "src": "LUK/LUK_1.mp4",
+              "role": "LUK 1"
+            },
+            {
+              "src": "LUK/LUK_10.mp4",
+              "role": "LUK 10"
+            },
+            {
+              "src": "LUK/LUK_11.mp4",
+              "role": "LUK 11"
+            },
+            {
+              "src": "LUK/LUK_12.mp4",
+              "role": "LUK 12"
+            },
+            {
+              "src": "LUK/LUK_13.mp4",
+              "role": "LUK 13"
+            },
+            {
+              "src": "LUK/LUK_14.mp4",
+              "role": "LUK 14"
+            },
+            {
+              "src": "LUK/LUK_15.mp4",
+              "role": "LUK 15"
+            },
+            {
+              "src": "LUK/LUK_16.mp4",
+              "role": "LUK 16"
+            },
+            {
+              "src": "LUK/LUK_17.mp4",
+              "role": "LUK 17"
+            },
+            {
+              "src": "LUK/LUK_18.mp4",
+              "role": "LUK 18"
+            },
+            {
+              "src": "LUK/LUK_19.mp4",
+              "role": "LUK 19"
+            },
+            {
+              "src": "LUK/LUK_2.mp4",
+              "role": "LUK 2"
+            },
+            {
+              "src": "LUK/LUK_20.mp4",
+              "role": "LUK 20"
+            },
+            {
+              "src": "LUK/LUK_21.mp4",
+              "role": "LUK 21"
+            },
+            {
+              "src": "LUK/LUK_22.mp4",
+              "role": "LUK 22"
+            },
+            {
+              "src": "LUK/LUK_23.mp4",
+              "role": "LUK 23"
+            },
+            {
+              "src": "LUK/LUK_24.mp4",
+              "role": "LUK 24"
+            },
+            {
+              "src": "LUK/LUK_3.mp4",
+              "role": "LUK 3"
+            },
+            {
+              "src": "LUK/LUK_4.mp4",
+              "role": "LUK 4"
+            },
+            {
+              "src": "LUK/LUK_5.mp4",
+              "role": "LUK 5"
+            },
+            {
+              "src": "LUK/LUK_6.mp4",
+              "role": "LUK 6"
+            },
+            {
+              "src": "LUK/LUK_7.mp4",
+              "role": "LUK 7"
+            },
+            {
+              "src": "LUK/LUK_8.mp4",
+              "role": "LUK 8"
+            },
+            {
+              "src": "LUK/LUK_9.mp4",
+              "role": "LUK 9"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "copyright": {
+    "fullStatement": {
+      "xhtml": "\n <p>&#169; Bible Society in Armenia</p>\n \n "
+    }
+  },
+  "promotion": {},
+  "archiveStatus": {
+    "bundleCreatorName": "Elbert Boot",
+    "archivistName": "Elbert Boot",
+    "dateArchived": "2018-11-07T13:55:33.473788",
+    "dateUpdated": "2018-11-27T14:10:37.472960",
+    "comments": "First Submit"
+  }
+}

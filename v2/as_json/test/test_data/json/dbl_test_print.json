@@ -1,0 +1,199 @@
+{
+  "version": 2.2,
+  "id": "ad9db258845aead5",
+  "revision": 2,
+  "identification": {
+    "name": "DBL Test Version with DC",
+    "nameLocal": "DBL Test Version with DC Local",
+    "abbreviation": "DBLTD",
+    "description": "English: DBL Test Version with DC Local New Testament",
+    "scope": "New Testament",
+    "dateCompleted": "1992-10-01",
+    "bundleProducer": "Publishing Assistant/6.1.0.0"
+  },
+  "relationships": {
+    "2880c78491b2f8ce/89": {
+      "relationType": "source",
+      "type": "text",
+      "id": "2880c78491b2f8ce",
+      "revision": 89
+    }
+  },
+  "agencies": {
+    "rightsHolder": {
+      "54650cfa5117ad690fb05fb6": {
+        "uid": "54650cfa5117ad690fb05fb6",
+        "abbr": "TEST",
+        "url": "http://thedigitalbiblelibrary.org",
+        "nameLocal": "DBL Testing",
+        "name": "Organization for DBL Testing"
+      },
+      "545d2cb0c1fbcec540df3e8d": {
+        "uid": "545d2cb0c1fbcec540df3e8d",
+        "abbr": "EIPC",
+        "url": "http://www.dblipc.org",
+        "name": "Example Intellectual Property Contributor"
+      },
+      "54650cd05117ad67b3826e99": {
+        "uid": "54650cd05117ad67b3826e99",
+        "name": "American Bible Society",
+        "content": true,
+        "publication": true,
+        "management": true,
+        "qa": true
+      }
+    },
+    "contributor": {
+      "54650cfa5117ad690fb05fb6": {
+        "uid": "54650cfa5117ad690fb05fb6",
+        "abbr": "TEST",
+        "url": "http://thedigitalbiblelibrary.org",
+        "nameLocal": "DBL Testing",
+        "name": "Organization for DBL Testing"
+      },
+      "545d2cb0c1fbcec540df3e8d": {
+        "uid": "545d2cb0c1fbcec540df3e8d",
+        "abbr": "EIPC",
+        "url": "http://www.dblipc.org",
+        "name": "Example Intellectual Property Contributor"
+      },
+      "54650cd05117ad67b3826e99": {
+        "uid": "54650cd05117ad67b3826e99",
+        "name": "American Bible Society",
+        "content": true,
+        "publication": true,
+        "management": true,
+        "qa": true
+      }
+    }
+  },
+  "language": {
+    "iso": "eng",
+    "name": "English",
+    "ldml": "en",
+    "numerals": "Arabic",
+    "scriptCode": "Latn",
+    "script": "Latin",
+    "scriptDirection": "LTR"
+  },
+  "countries": {
+    "US": {
+      "iso": "US",
+      "name": "United States"
+    }
+  },
+  "type": {
+    "medium": "print",
+    "hasCharacters": true,
+    "isTranslation": false,
+    "isExpression": true,
+    "isConfidential": false
+  },
+  "format": {
+    "width": "140mm",
+    "height": "210mm",
+    "scale": "100%",
+    "orientation": "portrait",
+    "color": "CMYK",
+    "pageCount": 193,
+    "pod": true,
+    "fonts": [
+      {
+        "type": "OpenType",
+        "name": "Times New Roman Regular"
+      },
+      {
+        "type": "OpenType",
+        "name": "Times New Roman BoldBold"
+      },
+      {
+        "type": "OpenType",
+        "name": "Times New Roman ItalicItalic"
+      },
+      {
+        "type": "OpenType",
+        "name": "Segoe UI Symbol Regular"
+      }
+    ],
+    "edgeSpace": {
+      "top": "5mm",
+      "bottom": "9mm",
+      "inside": "13mm",
+      "outside": "9mm"
+    }
+  },
+  "names": {},
+  "manifest": {
+    "release/Inside.pdf": {
+      "uri": "release/Inside.pdf",
+      "checksum": "ea6cf3aaab5e87d4844a839f55712a2b",
+      "mimeType": "application/pdf",
+      "size": 21742731
+    },
+    "release/Cover.pdf": {
+      "uri": "release/Cover.pdf",
+      "checksum": "1f4f62edc964bb34d5aab1a3e8490862",
+      "mimeType": "application/pdf",
+      "size": 69152
+    },
+    "source/zzzPADBL_2018POD_Source.zip": {
+      "uri": "source/zzzPADBL_2018POD_Source.zip",
+      "checksum": "301fdbc3e4fac0b1d54652428f0425e9",
+      "mimeType": "application/zip",
+      "size": 12859191
+    }
+  },
+  "source": {
+    "canonicalContent": [
+      "ACT",
+      "JHN",
+      "LUK",
+      "MAT",
+      "MRK"
+    ],
+    "structure": [
+      {
+        "src": "source/zzzPADBL_2018POD_Source.zip",
+        "role": "sourceZip"
+      }
+    ]
+  },
+  "publications": {
+    "p0": {
+      "id": "p0",
+      "name": "Print bundle",
+      "canonicalContent": [
+        "ACT",
+        "JHN",
+        "LUK",
+        "MAT",
+        "MRK"
+      ],
+      "structure": [
+        {
+          "src": "release/Inside.pdf"
+        },
+        {
+          "src": "release/Cover.pdf"
+        }
+      ]
+    }
+  },
+  "copyright": {
+    "fullStatement": {
+      "xhtml": "\n <p>Good News Translation (Today&#8217;s English Version, Second Edition) &#169; 1992 American Bible Society. All rights reserved.</p>\n \n "
+    }
+  },
+  "promotion": {
+    "promoVersionInfo": {
+      "contentType": "xhtml",
+      "content": "\n <p>Good News Translation with Deuterocanonicals/Apocrypha. Scripture taken from the Good News Translation (r) (Today's English Version, Second Edition). Copyright (c) 1992 American Bible Society. Used by permission.</p>\n <p>This is a Digital Bible Library demonstration bundle. It should NOT BE USED for any publication purposes</p>\n \n "
+    }
+  },
+  "archiveStatus": {
+    "archivistName": "Bev Cope",
+    "dateArchived": "2018-10-25T17:29:34.3478951+00:00",
+    "dateUpdated": "2018-10-25T20:50:46.990084",
+    "comments": "update to test dates"
+  }
+}
