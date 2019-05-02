@@ -68,7 +68,9 @@ def test_template_xml_init(source):
     maj = MetadataAsJson(xml_doc=doc)
     dom = etree.fromstring(doc)
     maj = MetadataAsJson(xml_dom=dom)
-    assert type(maj.json_dict["version"]) == float
+    assert type(maj.json_dict["version"]) == list
+    for v in maj.json_dict["version"]:
+        assert type(v) == int
 
 @pytest.mark.parametrize(
     'source',
@@ -84,10 +86,13 @@ def test_complete_xml_init(source):
     maj = MetadataAsJson(xml_doc=doc)
     dom = etree.fromstring(doc)
     maj = MetadataAsJson(xml_dom=dom)
-    assert type(maj.json_dict["version"]) == float
+    assert type(maj.json_dict["version"]) == list
+    for v in maj.json_dict["version"]:
+        assert type(v) == int
     assert "name" in maj.json_dict["identification"]
-    assert len(maj.json_dict["agencies"]["rightsHolder"]) > 0
-    assert len(maj.json_dict["agencies"]["contributor"]) > 0
+    assert len(maj.json_dict["agencies"]) > 0
+    assert len([a for a in maj.json_dict["agencies"] if a["type"] == "rightsHolder"]) > 0
+    assert len([a for a in maj.json_dict["agencies"] if a["type"] == "contributor"]) > 0
     assert "iso" in maj.json_dict["language"]
     assert len(maj.json_dict["countries"]) > 0
     assert "iso" in list(maj.json_dict["countries"].values())[0]
@@ -122,8 +127,6 @@ def test_complete_xml_init(source):
         assert "systemIds" in maj.json_dict["identification"]
         assert "versedParagraphs" in maj.json_dict["format"]
         assert type(maj.json_dict["format"]["versedParagraphs"]) == bool
-        assert "MAT" in maj.json_dict["progress"]
-        assert type(maj.json_dict["progress"]["MAT"]["stage"]) == int
         assert "p1" in maj.json_dict["publications"]
         assert len(maj.json_dict["publications"]["p1"]["canonicalContent"]) > 0
         assert len(maj.json_dict["publications"]["p1"]["canonicalContent"][0]) == 3
