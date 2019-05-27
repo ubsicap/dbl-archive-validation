@@ -1,5 +1,5 @@
 # source text
 
-srcPathString = xsd:string { pattern = "[A-Za-z0-9][\-A-Za-z0-9_\.]+(/[A-Za-z0-9][\-A-Za-z0-9_\.]+)*" }
+srcPathString = xsd:string { pattern = "[A-Za-z0-9][\-A-Za-z0-9_+\.]+(/[A-Za-z0-9][\-A-Za-z0-9_+\.]+)*" }
 
 srcPathPartString = xsd:string { pattern = "(((zip|xpath)://)|#).+" }
