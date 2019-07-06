@@ -1,0 +1,11 @@
+# promotion
+
+promotionElement =
+  element promotion {
+    element promoVersionInfo {
+      attribute contentType { "xhtml" },
+      simplifiedHtml+
+    }?
+  }
+
+%%insert xhtml_rnc_2_2_1.template%%

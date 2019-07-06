@@ -1,0 +1,25 @@
+# relationships
+
+relationshipsElement =
+  element relationships {
+    (sourceRelationElement | expressionRelationElement)*
+  }
+
+sourceRelationElement =
+  element relation {
+    attribute relationType { "source" },
+    attribute type { "text" | "audio" },
+    attribute id { bundleIdString },
+    attribute revision { xsd:integer },
+    attribute publicationId {publicationId}?
+  }
+
+expressionRelationElement =
+  element relation {
+    attribute relationType { "expression" },
+    attribute type { "audio" | "print" | "video" | "braille" },
+    attribute id { bundleIdString },
+    attribute revision { xsd:integer },
+    attribute publicationId {publicationId}?
+  }
+

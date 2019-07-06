@@ -1,0 +1,120 @@
+# identification
+
+identificationElement =
+  element identification {
+    element name { lenGe2String } &
+    element nameLocal { lenGe2String }? &
+    element abbreviation { abbreviationString }? &
+    element abbreviationLocal { localAbbreviationString }? &
+    element description { lenGe2String } &
+    element descriptionLocal { lenGe2String }? &
+    element scope { scopeEnum } &
+    canonSpecElement? &
+    element dateCompleted { dateCompletedValue }? &
+    (gbcSystemId | reapSystemId | biblicaSystemId | tmsSystemId | ptregSystemId | dbpSystemId)* &
+    element bundleProducer { lenGe2String }
+    }
+
+paratextZipResourceIdentificationElement =
+  element identification {
+    element name { lenGe2String } &
+    element nameLocal { lenGe2String }? &
+    element abbreviation { abbreviationString } &
+    element abbreviationLocal { localAbbreviationString }? &
+    element dateCompleted { dateCompletedValue }? &
+    (ptSystemId | gbcSystemId | reapSystemId | biblicaSystemId | tmsSystemId | ptregSystemId | dbpSystemId)* &
+    element bundleProducer { lenGe2String }
+    }
+
+textIdentificationElement =
+  element identification {
+    element name { lenGe2String } &
+    element nameLocal { lenGe2String }? &
+    element abbreviation { abbreviationString } &
+    element abbreviationLocal { localAbbreviationString }? &
+    element description { lenGe2String } &
+    element descriptionLocal { lenGe2String }? &
+    element scope { scopeEnum } &
+    canonSpecElement? &
+    element dateCompleted { dateCompletedValue }? &
+    (ptSystemId | gbcSystemId | reapSystemId | biblicaSystemId | tmsSystemId | ptregSystemId | dbpSystemId)* &
+    element bundleProducer { lenGe2String }
+    }
+
+gbcSystemId =
+  element systemId {
+    attribute type { "gbc" },
+    gbcElements
+  }
+
+gbcElements =
+  element id {
+    gbcId
+  }
+
+ptregSystemId =
+  element systemId {
+    attribute type { "ptreg" },
+    ptregElements
+ }
+
+tmsSystemId =
+  element systemId {
+    attribute type { "tms" },
+    tmsElements
+  }
+
+tmsElements =
+  element id {
+    tmsId
+  }
+
+ptSystemId =
+  element systemId {
+    attribute type { "paratext" },
+    ptElements
+  }
+
+ptElements =
+  element name { lenGe2String } &
+  element fullName { lenGe2String } &
+  element csetId { lenGe2String }? &
+  element id { ptId } &
+  (
+    element baseId { ptId } &
+    element baseName { lenGe2String }
+  )?
+
+ptregElements =
+  element id { ptregId }
+
+reapSystemId =
+  element systemId {
+    attribute type { "reap" },
+    reapElements
+  }
+
+reapElements =
+  element id { reapId }
+
+biblicaSystemId =
+  element systemId {
+    attribute type { "biblica" },
+    biblicaElements
+  }
+
+biblicaElements =
+  element id { biblicaId }
+
+dbpSystemId =
+  element systemId {
+    attribute type { "dbp" },
+    dbpElements
+  }
+
+dbpElements =
+  element id { dbpId }
+
+%%insert canon_rnc_2_2_1.template%%
+
+%%insert identification_text_rnc_2_2_1.template%%

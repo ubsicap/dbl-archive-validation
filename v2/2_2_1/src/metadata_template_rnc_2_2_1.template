@@ -1,0 +1,39 @@
+# DBLMetadata (Template)
+
+%%insert document_types_rnc_2_2_1.template%%
+
+dblMetadataCommonAtts = (
+  attribute version { "2.1" | "2.1.1" | "2.2" } &
+  attribute id { bundleIdString } &
+  attribute revision { revisionValue }?
+)
+
+%%insert metadata_text_rnc_2_2_1.template%%
+
+%%insert identification_rnc_2_2_1.template%%
+
+%%insert relationships_rnc_2_2_1.template%%
+
+%%insert agencies_rnc_2_2_1.template%%
+
+%%insert language_rnc_2_2_1.template%%
+
+%%insert country_rnc_2_2_1.template%%
+
+%%insert type_rnc_2_2_1.template%%
+
+%%insert format_rnc_2_2_1.template%%
+
+%%insert names_rnc_2_2_1.template%%
+
+%%insert manifest_rnc_2_2_1.template%%
+
+%%insert source_rnc_2_2_1.template%%
+
+%%insert publications_rnc_2_2_1.template%%
+
+%%insert copyright_rnc_2_2_1.template%%
+
+%%insert promotion_rnc_2_2_1.template%%
+
+%%insert archive_status_rnc_2_2_1.template%%

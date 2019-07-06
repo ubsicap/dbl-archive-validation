@@ -1,0 +1,5 @@
+# Standalone publication division
+
+start = publicationStructureDivision
+
+%%insert publication_structure_children_rnc_2_2_1.template%%
