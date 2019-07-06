@@ -2,7 +2,8 @@
 
 textFormatElement =
   element format {
-    element versedParagraphs { xsd:boolean }
+    element versedParagraphs { xsd:boolean } &
+    element usxVersion { "3.0" }?
   }
 
 audioFormatElement = # DCMI: format
@@ -13,7 +14,9 @@ audioSubelements =
     element trackConfiguration { audioTrackEnum }? &
     element bitRate { xsd:integer }? &
     element bitDepth { xsd:integer }? &
-    element samplingRate { xsd:integer }?
+    element samplingRate { xsd:integer }? &
+    element timingDir { lenGe2Le255String }? &
+    element contentByChapter { xsd:boolean }?
 
 printFormatElement =
   element format {
@@ -44,7 +47,9 @@ videoFormatElement =
     element container {"MP4"} &
       videoFormatVideoStream &
       videoFormatAudioStream? &
-      videoFormatSubtitleStream?
+      videoFormatSubtitleStream? &
+      element timingDir { lenGe2Le255String }? &
+      element contentByChapter { xsd:boolean }?
     }
 
 videoFormatVideoStream =
@@ -99,7 +104,7 @@ brailleContinuousPoetryElement = element continuousPoetry {
 brailleContentElement = element content {
     element chapterNumberStyle {"lower" | "upper" } &
     element chapterHeadingsNumberFirst { xsd:boolean } &
-    element versedParagraphs { xsd:boolean } &
+    element versedParagraphs { xsd:boolean | brailleVersedBook+ } &
     element verseSeparator { brailleString } &
     element includeIntros { xsd:boolean } &
     element footnotes {
@@ -114,6 +119,10 @@ brailleContentElement = element content {
         element emphasizedPassageEnd { brailleString }?
     }?
 }
+
+brailleVersedBook =   element book {
+    attribute code { canonicalBookIdEnum }
+  }
 
 braillePageElement = element page {
     element charsPerLine { xsd:positiveInteger } &
