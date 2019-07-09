@@ -1,0 +1,51 @@
+# publications
+
+publicationsElement = # DCMI: tableOfContents
+  element publications { publicationElement+ }
+
+paratextZipResourcePublicationsElement =
+  element publications { paratextZipResourcePublicationElement+ }
+
+publicationElement =
+  element publication {
+  attribute id { publicationId },
+  attribute default { xsd:boolean }?,
+  publicationChildElements
+  }
+
+paratextZipResourcePublicationElement =
+  element publication {
+  attribute id { publicationId },
+  attribute default { xsd:boolean }?,
+  paratextZipResourcePublicationChildElements
+  }
+
+publicationChildElements = (
+  element name { lenGe2String }? &
+  element nameLocal { lenGe2String }? &
+  element abbreviation { lenGe2String }? &
+  element abbreviationLocal { lenGe2String }? &
+  element description { lenGe2String }? &
+  element descriptionLocal { lenGe2String }? &
+  publicationCountriesElement? &
+  element scope { scopeEnum }? &
+  canonSpecElement? &
+  element canonicalContent { canonicalContentBook+} &
+  element structure { publicationDivisionsOrContent }
+)
+paratextZipResourcePublicationChildElements = (
+  element name { lenGe2String }? &
+  element nameLocal { lenGe2String }? &
+  element structure { publicationDivisionsOrContent }
+)
+
+publicationCountriesElement = element countries { countryElement+ }
+
+canonicalContentBook =
+  element book {
+    attribute code { canonicalBookIdEnum }
+  }
+
+%%insert publication_structure_children_rnc_2_2_1.template%%
+%%insert canon_rnc_2_2_1.template%%
+%%insert publications_text_rnc_2_2_1.template%%

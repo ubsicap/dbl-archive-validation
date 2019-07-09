@@ -1,0 +1,6 @@
+default namespace = ""
+namespace a = "http://relaxng.org/ns/compatibility/annotations/1.0"
+
+start = dblMetadataElement
+
+%%insert metadata_rnc_2_2_1.template%%

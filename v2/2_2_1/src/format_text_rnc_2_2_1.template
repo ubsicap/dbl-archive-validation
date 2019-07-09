@@ -1,0 +1,43 @@
+# format text
+
+measurementString = xsd:string { pattern = "[1-9][0-9]{1,4}mm" }
+
+smallMeasurementString = xsd:string { pattern = "[1-9][0-9]{0,2}mm" }
+
+percentageString = xsd:string { pattern = "[1-9][0-9]{1,3}%" }
+
+screenResolution = xsd:string { pattern = "[1-9][0-9]{0,3}x[1-9][0-9]{0,3}" }
+
+audioCompressionEnum = (
+  "MP3"  |
+  "FLAC" |
+  "WAV" |
+  "AAC"
+)
+
+audioTrackEnum = (
+    "1/0 (Mono)"   |
+    "Dual mono"    |
+    "2/0 (Stereo)" |
+    "5.1 Surround"
+)
+
+printOrientationEnum = (
+  "portrait" |
+  "landscape"
+)
+
+printColorEnum = (
+  "CMYK" |
+  "RGB"
+)
+
+printFontEnum = (
+  "OpenType" |
+  "Other" |
+  "Bitmap" |
+  "TrueType" |
+  "Type1"
+)
+
+brailleString = xsd:string { pattern = "([⠀-⣿])*" }

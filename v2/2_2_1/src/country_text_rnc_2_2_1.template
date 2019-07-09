@@ -1,0 +1,3 @@
+# country text
+
+countryIsoString = xsd:string { pattern = "[A-Z][A-Z]" }

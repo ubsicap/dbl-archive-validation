@@ -1,0 +1,158 @@
+# Document types
+
+dblMetadataElement = (translationMetadata | expressionMetadata | translationAndExpressionMetadata | paratextZipResourceMetadata)
+
+translationMetadata = textTranslationMetadata | audioTranslationMetadata | videoTranslationMetadata
+
+expressionMetadata = textExpressionMetadata | audioExpressionMetadata | printExpressionMetadata | videoExpressionMetadata | brailleExpressionMetadata
+
+translationAndExpressionMetadata = textTranslationAndExpressionMetadata | audioTranslationAndExpressionMetadata | videoTranslationAndExpressionMetadata
+
+textTranslationMetadata = element DBLMetadata {
+  dblMetadataCommonAtts &
+  textIdentificationElement &
+  translationCommonElements &
+  fullLanguageElement &
+  textTranslationTypeElement &
+  textFormatElement
+}
+
+audioTranslationMetadata = element DBLMetadata {
+  dblMetadataCommonAtts &
+  identificationElement &
+  translationCommonElements &
+  shortLanguageElement &
+  audioTranslationTypeElement &
+  audioFormatElement
+}
+
+videoTranslationMetadata = element DBLMetadata {
+  dblMetadataCommonAtts &
+  identificationElement &
+  translationCommonElements &
+  shortLanguageElement &
+  videoTranslationTypeElement &
+  videoFormatElement
+}
+
+textExpressionMetadata = element DBLMetadata {
+  dblMetadataCommonAtts &
+  textIdentificationElement &
+  expressionCommonElements &
+  shortLanguageElement &
+  textExpressionTypeElement &
+  textFormatElement
+}
+
+printExpressionMetadata = element DBLMetadata {
+  dblMetadataCommonAtts &
+  identificationElement &
+  expressionCommonElements &
+  shortLanguageElement &
+  printExpressionTypeElement &
+  printFormatElement
+}
+
+audioExpressionMetadata = element DBLMetadata {
+  dblMetadataCommonAtts &
+  identificationElement &
+  expressionCommonElements &
+  shortLanguageElement &
+  audioExpressionTypeElement &
+  audioFormatElement
+}
+
+videoExpressionMetadata = element DBLMetadata {
+  identificationElement &
+  dblMetadataCommonAtts &
+  expressionCommonElements &
+  shortLanguageElement &
+  videoExpressionTypeElement &
+  videoFormatElement
+}
+
+brailleExpressionMetadata = element DBLMetadata {
+  dblMetadataCommonAtts &
+  identificationElement &
+  expressionCommonElements &
+  shortLanguageElement &
+  brailleExpressionTypeElement &
+  brailleFormatElement
+}
+
+textTranslationAndExpressionMetadata = element DBLMetadata {
+  dblMetadataCommonAtts &
+  textIdentificationElement &
+  translationAndExpressionCommonElements &
+  fullLanguageElement &
+  textTranslationAndExpressionTypeElement &
+  textFormatElement
+}
+
+audioTranslationAndExpressionMetadata = element DBLMetadata {
+  dblMetadataCommonAtts &
+  identificationElement &
+  translationAndExpressionCommonElements &
+  fullLanguageElement &
+  audioTranslationAndExpressionTypeElement &
+  audioFormatElement
+}
+
+videoTranslationAndExpressionMetadata = element DBLMetadata {
+  dblMetadataCommonAtts &
+  identificationElement &
+  translationAndExpressionCommonElements &
+  fullLanguageElement &
+  videoTranslationAndExpressionTypeElement &
+  videoFormatElement
+}
+
+paratextZipResourceMetadata = element DBLMetadata {
+  dblMetadataCommonAtts &
+  paratextZipResourceIdentificationElement &
+  paratextZipResourceTypeElement &
+  relationshipsElement &
+  paratextZipResourceAgenciesElement &
+  shortLanguageElement &
+  translationManifestElement &
+  paratextZipResourceSourceElement &
+  paratextZipResourcePublicationsElement &
+  copyrightElement &
+  archiveStatusElement
+}
+
+translationCommonElements = (
+  commonElements &
+  translationManifestElement &
+  translationSourceElement
+)
+
+expressionCommonElements = (
+  commonElements &
+  promotionElement &
+  nonTranslationManifestElement &
+  publicationsElement &
+  translationSourceElement?
+)
+
+translationAndExpressionCommonElements = (
+  commonElements &
+  promotionElement &
+  translationManifestElement &
+  publicationsElement &
+  translationSourceElement
+)
+
+commonElements = (
+  relationshipsElement &
+  agenciesElement &
+  countriesElement &
+  namesElement &
+  copyrightElement &
+  progressElement? &
+  archiveStatusElement
+)
+
+any_content = any_element* & text
+any_element = element * { any_attribute*, any_content }
+any_attribute = attribute * { text }

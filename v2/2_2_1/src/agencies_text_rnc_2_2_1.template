@@ -1,0 +1,5 @@
+# agencies text
+
+agenciesUID = xsd:string { pattern = "[a-f0-9]{24}" }
+
+%%insert generic_text_rnc_2_2_1.template%%

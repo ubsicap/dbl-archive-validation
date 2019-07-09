@@ -1,0 +1,60 @@
+
+simplifiedHtml = shBlockElement+
+
+shBlockElement = (
+    shP |
+    shH1 |
+    shH2 |
+    shH3 |
+    shUl |
+    shOl |
+    shBlockquote
+)
+
+shP = element p { mixed { shCharMarkup* } }
+
+shH1 = element h1 { mixed { shCharMarkup* } }
+
+shH2 = element h2 { mixed { shCharMarkup* } }
+
+shH3 = element h3 { mixed { shCharMarkup* } }
+
+shOl = element ol { shLi+ }
+
+shUl = element ul { shLi+ }
+
+shLi = element li { mixed { shCharMarkup* & shBlockElement* } }
+
+shBlockquote = element blockquote { shBlockElement+ }
+
+shCharMarkup = (
+  shA |
+  shImg |
+  shBr |
+  shStrong |
+  shB |
+  shEm |
+  shI
+)
+
+shA =
+  element a {
+    attribute href { anyURI },
+    mixed { shCharMarkup*  }
+  }
+
+shImg =
+  element img {
+    attribute src { anyURI },
+    attribute alt { lenGe1String }
+  }
+
+shBr = element br { empty }
+
+shStrong = element strong { mixed { shCharMarkup* } }
+
+shB = element b { mixed { shCharMarkup* } }
+
+shEm = element em { mixed { shCharMarkup* } }
+
+shI = element i { mixed { shCharMarkup* } }
