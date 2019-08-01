@@ -1,6 +1,6 @@
 # canon text
 
-canonTypes = "DC" | "NT" | "OT, DC, NT" | "OT, NT, DC" | "OT, NT" | "OT+, NT" | "OT" | "OT+"
+canonTypes = "DC" | "NT" | "OT, DC, NT" | "OT, NT, DC" | "OT, NT" | "NT, OT" | "OT+, NT" | "OT" | "OT+"
 
 canonComponentEnum =
     "armenianApostolicDC" |

@@ -3,7 +3,7 @@
 %%insert document_types_rnc_2_2_1.template%%
 
 dblMetadataCommonAtts = (
-  attribute version { "2.1" | "2.1.1" | "2.2" } &
+  attribute version { metadataVersionString } &
   attribute id { bundleIdString } &
   attribute revision { revisionValue }?
 )
