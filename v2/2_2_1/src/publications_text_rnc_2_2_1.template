@@ -10,7 +10,7 @@ extensionRole = xsd:string { pattern = "X-[A-Za-z0-9][A-Za-z0-9\-]*" }
 
 canonicalBookIdEnum = (OTBookIdEnum | NTBookIdEnum | DCBookIdEnum)
 
-peripheralRole = xsd:string { pattern = "(sign|concept|place)( \S(.*\S)?)?" } | "credits"
+peripheralRole = xsd:string { pattern = "(sign|concept|name|place)( \S(.*\S)?)?" } | "credits"
 
 OTBookIdEnum = (
   "GEN" | # Genesis
