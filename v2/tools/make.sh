@@ -1,9 +1,12 @@
 #!/bin/bash
+# On windows 10:
+# - enable "Windows subsystem for linux" https://www.howtogeek.com/249966/how-to-install-and-use-the-linux-bash-shell-on-windows-10/
+# - include python3.exe in your path (may need to disable "python3" windows execution alias https://stackoverflow.com/a/57168165) 
 
 set -e
 set -u
 
-version=${1:-"2_2"}
+version=${1:-"2_2_1"}
 srcDir="../"$version
 
 echo "Making v$version"
