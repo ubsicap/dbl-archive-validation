@@ -2,8 +2,9 @@
 # On windows 10:
 # - enable "Windows subsystem for linux" https://www.howtogeek.com/249966/how-to-install-and-use-the-linux-bash-shell-on-windows-10/
 # - include python3.exe in your path (may need to disable "python3" windows execution alias https://stackoverflow.com/a/57168165) 
+# - install xmllint https://stackoverflow.com/questions/19546854/installing-xmllint (or don't?)
 
-set -e
+# set -e # NOTE The -e flag "exits with a non-zero status" but for some reason on win10 this bails after xmllint
 set -u
 
 version=${1:-"2_2_1"}
