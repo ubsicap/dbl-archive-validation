@@ -1,21 +1,27 @@
 # manifest
 
 nonTranslationManifestElement =
-  element manifest { (nonTranslationManifestContainer | nonTranslationManifestResource)+ }
+  element manifest { (nonTranslationManifestContainer | nonTranslationManifestResource | unitManifestContainer)+ }
 
 translationManifestElement =
-  element manifest { (translationManifestContainer | translationManifestResource)+ }
+  element manifest { (translationManifestContainer | translationManifestResource | unitManifestContainer)+ }
 
 nonTranslationManifestContainer =
   element container {
     attribute uri { anyURI },
-    (nonTranslationManifestContainer | nonTranslationManifestResource)+
+    (nonTranslationManifestContainer | nonTranslationManifestResource | unitManifestContainer)+
   }
 
 translationManifestContainer =
   element container {
     attribute uri { anyURI },
-    (translationManifestContainer | translationManifestResource)+
+    (translationManifestContainer | translationManifestResource | unitManifestContainer)+
+  }
+
+unitManifestContainer =
+  element container {
+    attribute uri { unitId },
+    (translationManifestResource | nonTranslationManifestResource)+
   }
 
 %%insert manifest_resource_rnc_2_2_1.template%%
