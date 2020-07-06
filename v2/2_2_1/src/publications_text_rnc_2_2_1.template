@@ -14,7 +14,7 @@ canonicalBookIdEnum = (OTBookIdEnum | NTBookIdEnum | DCBookIdEnum)
 
 peripheralRole = xsd:string { pattern = "(sign|concept|name|place)(\s.*\S)?" } | "credits"
 
-storyUnitRole = xsd:string { pattern = "(background|bridge|credits|diagram|gloss|illustration|introduction|scripture|teaching|timing)(\s.*\S)?" }
+storyUnitRole = xsd:string { pattern = "(background|bridge|credits|diagram|gloss|illustration|introduction|scripture|teaching|timing|title)(\s.*\S)?" }
 
 OTBookIdEnum = (
   "GEN" | # Genesis
