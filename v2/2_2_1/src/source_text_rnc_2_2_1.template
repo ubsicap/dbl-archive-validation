@@ -1,5 +1,5 @@
 # source text
 
-srcPathString = xsd:anyURI
+srcPathString = xsd:string
 
 srcPathPartString = xsd:string { pattern = "(((zip|xpath)://)|#).+" }
