@@ -18,3 +18,4 @@ lenLe255String = xsd:string { maxLength = "255" pattern="\S.*\S" }
 
 anyURI = xsd:anyURI
 
+unitId = xsd:string { minLength = "6" maxLength = "255" pattern="(unit_([A-Za-z0-9_]+))(\s.*\S)?" }

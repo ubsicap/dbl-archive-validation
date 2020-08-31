@@ -49,4 +49,4 @@ canonComponentEnum =
     "westernInterconfessionalDC2" |
     "westernNT" |
     "westernOT" |
-    xsd:string { pattern = "X-[A-Za-z0-9][A-Za-z0-9\-]*" }
+    extensionPattern
