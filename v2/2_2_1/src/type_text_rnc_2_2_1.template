@@ -25,7 +25,7 @@ textProjectType = (
     "StudyBibleAdditions" |
     "BackTranslation" |
     "Auxiliary" |
-    "TransliterationManual"|
+    "Transliteration"|
     "TransliterationWithEncoder" |
     "Unknown"
 )

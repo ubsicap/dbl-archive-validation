@@ -1631,7 +1631,7 @@
       <value>StudyBibleAdditions</value>
       <value>BackTranslation</value>
       <value>Auxiliary</value>
-      <value>TransliterationManual</value>
+      <value>Transliteration</value>
       <value>TransliterationWithEncoder</value>
       <value>Unknown</value>
     </choice>
